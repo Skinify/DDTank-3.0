@@ -71,6 +71,11 @@
         /// </summary>
         EDITION_ERROR = 0x0c,
 
+        ///<summary
+        /// qua
+        /// </summary>
+        DAILY_OPEN = 0xdb,
+
         /// <summary>
         /// 日常奖励
         /// </summary>
@@ -889,18 +894,18 @@
         MARRY_ROOM_UPDATE = 0xff,
         //HOTSPRING FUNCTION;
         HOTSPRING_CMD = 0xbf,
-        HOTSPRING_ENTER = 187,
-        HOTSPRING_ROOM_CREATE = 175,
-        HOTSPRING_ROOM_REMOVE = 174,
-        HOTSPRING_ROOM_ADD_OR_UPDATE = 173,
-        HOTSPRING_ROOM_LIST_GET = 197,
-        HOTSPRING_ROOM_QUICK_ENTER = 190,
-        HOTSPRING_ROOM_ENTER = 202,
-        HOTSPRING_ROOM_ENTER_VIEW = 201,
-        HOTSPRING_ROOM_PLAYER_ADD = 198,
-        HOTSPRING_ROOM_PLAYER_REMOVE = 169,
-        HOTSPRING_ROOM_PLAYER_REMOVE_NOTICE = 199,
-        HOTSPRING_ROOM_ENTER_CONFIRM = 212,
+        HOTSPRING_ENTER = 0xbb,
+        HOTSPRING_ROOM_CREATE = 0xaf,
+        HOTSPRING_ROOM_REMOVE = 0xae,
+        HOTSPRING_ROOM_ADD_OR_UPDATE = 0xad,
+        HOTSPRING_ROOM_LIST_GET = 0xc5,
+        HOTSPRING_ROOM_QUICK_ENTER = 0xbe,
+        HOTSPRING_ROOM_ENTER = 0xca,
+        HOTSPRING_ROOM_ENTER_VIEW = 0xc9,
+        HOTSPRING_ROOM_PLAYER_ADD = 0xc6,
+        HOTSPRING_ROOM_PLAYER_REMOVE = 0xa9,
+        HOTSPRING_ROOM_PLAYER_REMOVE_NOTICE = 0xc7,
+        HOTSPRING_ROOM_ENTER_CONFIRM = 0xd4,
         USER_GET_GIFTS = 218,
         USER_SEND_GIFTS = 221,
         USER_UPDATE_GIFT = 220,

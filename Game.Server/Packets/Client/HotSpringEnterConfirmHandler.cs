@@ -12,10 +12,6 @@ namespace Game.Server.Packets.Client
         public int HandlePacket(GameClient client, GSPacketIn packet)
         {
             var roomId = packet.ReadInt();
-            //if (client.Player.CurrentHotSpringRoom != null)
-            //{
-            //    client.Player.CurrentHotSpringRoom.ProcessData(client.Player, packet);
-            //}
             GSPacketIn pkg = new GSPacketIn((byte)ePackageType.HOTSPRING_ROOM_ENTER_CONFIRM);
             pkg.WriteInt(roomId);
             client.SendTCP(pkg);

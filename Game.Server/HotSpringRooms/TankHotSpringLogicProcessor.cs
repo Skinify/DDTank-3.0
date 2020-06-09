@@ -37,25 +37,10 @@ namespace Game.Server.HotSpringRooms
                 if(room != null)
                 {
                     room.KickAllPlayer();
-
-                    //using(PlayerBussiness db = new PlayerBussiness())
-                    //{
-                    //    db.DisposeHotSpringRoomInfo(room.Info.ID);
-                    //}
-
-                    //GameServer.Instance.LoginServer.SendUpdatePlayerMarriedStates(room.Info.GroomID);
-                    //GameServer.Instance.LoginServer.SendUpdatePlayerMarriedStates(room.Info.BrideID);
-
-                    //GameServer.Instance.LoginServer.SendHotSpringRoomInfoToPlayer(room.Info.GroomID, false, room.Info);
-                    //GameServer.Instance.LoginServer.SendHotSpringRoomInfoToPlayer(room.Info.BrideID, false, room.Info);
-
-                    //HotSpringRoomMgr.RemoveHotSpringRoom(room);
-
                     GSPacketIn pkg = new GSPacketIn((short)ePackageType.MARRY_ROOM_DISPOSE);
                     pkg.WriteInt(room.Info.ID);
                     WorldMgr.MarryScene.SendToALL(pkg);
-
-                    room.StopTimer();
+                    room.StopTimer();   
                 }
             }
             catch(Exception ex)
@@ -67,7 +52,18 @@ namespace Game.Server.HotSpringRooms
 
         public override void OnGameData(HotSpringRoom room, GamePlayer player, GSPacketIn packet)
         {
-            HotSpringCmdType type = (HotSpringCmdType)packet.ReadByte();
+            Console.WriteLine(packet.ReadByte());
+            HotSpringCmdType type;
+
+            if(Enum.IsDefined(typeof(HotSpringCmdType), (int)packet.ReadByte()))
+            {
+                type = (HotSpringCmdType)packet.ReadByte();
+            }
+            else
+            {
+                type = HotSpringCmdType.TARGET_POINT;
+            }
+
             try
             {
                 IHotSpringCommandHandler handleCommand = _commandMgr.LoadCommandHandler((int)type);

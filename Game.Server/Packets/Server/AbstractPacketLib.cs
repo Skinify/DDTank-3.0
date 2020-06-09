@@ -14,6 +14,7 @@ using Game.Server.SceneMarryRooms;
 using Game.Server.Quests;
 using Game.Server.Buffer;
 using System.Configuration;
+using Game.Server.HotSpringRooms;
 
 namespace Game.Base.Packets
 {
@@ -1060,7 +1061,7 @@ namespace Game.Base.Packets
                 SendUpdateCardData(bag);
                 return;
             }
-             GSPacketIn pkg;
+            GSPacketIn pkg;
      
              pkg = new GSPacketIn((byte)ePackageType.GRID_GOODS, m_gameClient.Player.PlayerCharacter.ID, 10240);
             pkg.WriteInt(bag.BagType);
@@ -1621,6 +1622,11 @@ namespace Game.Base.Packets
             return pkg;
         }
 
+        public GSPacketIn SendContinuation(GamePlayer player, HotSpringRoomInfo info)
+        {
+            throw new NotImplementedException();
+        }
+
         public GSPacketIn SendMarryProp(GamePlayer player, MarryProp info)
         {
             GSPacketIn pkg = new GSPacketIn((byte)ePackageType.MARRYPROP_GET, player.PlayerCharacter.ID);
@@ -1633,6 +1639,28 @@ namespace Game.Base.Packets
             SendTCP(pkg);
             return pkg;
         }
+
+        public GSPacketIn SendHotSpringRoomInfo(GamePlayer player, HotSpringRoom room)
+        {
+            GSPacketIn packet = new GSPacketIn(0xc5, player.PlayerCharacter.ID);
+            packet.WriteInt(0x12);
+            packet.WriteInt(room.Info.ID);
+            packet.WriteInt(room.Info.ID);
+            packet.WriteString(room.Info.Name);
+            packet.WriteString(room.Info.Pwd);
+            packet.WriteInt(0);
+            packet.WriteInt(room.Count);
+            packet.WriteInt(player.PlayerCharacter.ID);
+            packet.WriteString("abc");
+            packet.WriteDateTime(DateTime.Now.AddDays(-50.0));
+            packet.WriteString(room.Info.RoomIntroduction);
+            packet.WriteInt(1);
+            packet.WriteInt(room.Info.MaxCount);
+            this.SendTCP(packet);
+            return packet;
+        }
+
+
 
 
         #endregion

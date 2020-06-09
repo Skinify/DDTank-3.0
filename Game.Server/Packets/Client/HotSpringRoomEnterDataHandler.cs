@@ -1,8 +1,12 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Data.SqlClient;
 using System.Linq;
 using System.Text;
 using Game.Base.Packets;
+using Game.Server.HotSpringRooms;
+using SqlDataProvider.BaseClass;
+using SqlDataProvider.Data;
 
 namespace Game.Server.Packets.Client
 {
@@ -11,40 +15,45 @@ namespace Game.Server.Packets.Client
     {
         public int HandlePacket(GameClient client, GSPacketIn packet)
         {
-            var roomId = packet.ReadInt();
-            var passString = packet.ReadString();
-
-            GSPacketIn pkg = new GSPacketIn((byte)ePackageType.HOTSPRING_ROOM_ENTER);
-            pkg.WriteInt(roomId);
-            pkg.WriteInt(roomId);
-           
-            //_loc_3.roomID = _loc_2.readInt();
-            //_loc_3.roomNumber = _loc_2.readInt();
-            //_loc_3.roomName = _loc_2.readUTF();
+            int num = packet.ReadInt();
+            try
+            {
+                TankHotSpringLogicProcessor processor = new TankHotSpringLogicProcessor();
+                HotSpringRoomInfo info = new HotSpringRoomInfo
+                {
+                    ID = num
+                };
+                client.Player.CurrentHotSpringRoom = new HotSpringRoom(info, processor);
+            }
+            catch
+            {
+                Console.WriteLine("LOi");
+            }
+            Sql_DbObject obj2 = new Sql_DbObject("AppConfig", "conString");
+            try
+            {
+                SqlParameter[] sqlParameters = new SqlParameter[] { new SqlParameter("@RoomID", num), new SqlParameter("@CurCount", 1) };
+                obj2.RunProcedure("SP_Update_HotSpring", sqlParameters);
+            }
+            catch
+            {
+            }
+            string str = packet.ReadString();
+            GSPacketIn pkg = new GSPacketIn(0xca);
+            pkg.WriteInt(num);
+            pkg.WriteInt(num);
             pkg.WriteString("RoomName");
-            //_loc_3.roomPassword = _loc_2.readUTF();
             pkg.WriteString("");
-
-            //_loc_2.effectiveTime = _loc_3.readInt();
             pkg.WriteInt(1);
-            //_loc_2.curCount = _loc_3.readInt();
             pkg.WriteInt(1);
-            //_loc_2.playerID = _loc_3.readInt();
             pkg.WriteInt(client.Player.PlayerCharacter.ID);
-            //_loc_2.playerName = _loc_3.readUTF();
             pkg.WriteString("abc");
-            //_loc_2.startTime = _loc_3.readDate();
-            pkg.WriteDateTime(DateTime.Now.AddDays(-50));
-            //_loc_2.roomIntroduction = _loc_3.readUTF();
+            pkg.WriteDateTime(DateTime.Now.AddDays(-50.0));
             pkg.WriteString("Room Intro");
-            //_loc_2.roomType = _loc_3.readInt();
             pkg.WriteInt(1);
-            //_loc_2.maxCount = _loc_3.readInt();
             pkg.WriteInt(10);
-            //this._playerEnterRoomTime = _loc_2.readDate();
-            //this._playerEffectiveTime = _loc_2.readInt();
             pkg.WriteDateTime(DateTime.Now);
-            pkg.WriteDateTime(DateTime.Now.AddDays(1));
+            pkg.WriteInt(10);
             client.SendTCP(pkg);
             return 0;
         }

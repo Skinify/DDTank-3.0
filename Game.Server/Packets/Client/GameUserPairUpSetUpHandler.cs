@@ -3,22 +3,23 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using Game.Base.Packets;
+using Game.Logic;
 using Game.Server.GameObjects;
-using Game.Server.SceneGames;
+//using Game.Server.SceneGames;
 
 namespace Game.Server.Packets.Client
 {
-    [PacketHandler((byte)ePackageType.GAME_PAIRUP_ROOM_SETUP, "撮合房间设置")]
+    //[PacketHandler((byte)ePackageType.GAME_PAIRUP_ROOM_SETUP, "撮合房间设置")]
     public class GameUserPairUpSetUpHandler:IPacketHandler
     {
         public int HandlePacket(GameClient client, GSPacketIn packet)
         {
-            if(client.Player != client.Player.CurrentGame.Player)
+            /*if(client.Player != client.Player.CurrentRoom.Host)
             {
                 return 0;
             }
             
-            if ( client.Player.CurrentGame.GameState ==eGameState.PAIRUP)
+            if ( client.Player.CurrentRoom.GameState ==eGameState.PAIRUP)
             {
                 eGameClass gameClass = (eGameClass)packet.ReadByte();
 
@@ -88,7 +89,7 @@ namespace Game.Server.Packets.Client
                     client.Player.CurrentGame.GameClass = eGameClass.FREE;
                     client.Player.CurrentGame.SendRoomInfo();
                 }
-            }
+            }*/
             return 0;
         }
     }

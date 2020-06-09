@@ -1,0 +1,9 @@
+D:\DDT\DDTank-3.0\SqlDataProvider\bin\x86\Debug\SqlDataProvider.dll
+D:\DDT\DDTank-3.0\SqlDataProvider\bin\x86\Debug\SqlDataProvider.pdb
+D:\DDT\DDTank-3.0\SqlDataProvider\bin\x86\Debug\log4net.dll
+D:\DDT\DDTank-3.0\SqlDataProvider\bin\x86\Debug\log4net.xml
+D:\DDT\DDTank-3.0\SqlDataProvider\obj\x86\Debug\SqlDataProvider.csprojAssemblyReference.cache
+D:\DDT\DDTank-3.0\SqlDataProvider\obj\x86\Debug\SqlDataProvider.csproj.CoreCompileInputs.cache
+D:\DDT\DDTank-3.0\SqlDataProvider\obj\x86\Debug\SqlDataProvider.csproj.CopyComplete
+D:\DDT\DDTank-3.0\SqlDataProvider\obj\x86\Debug\SqlDataProvider.dll
+D:\DDT\DDTank-3.0\SqlDataProvider\obj\x86\Debug\SqlDataProvider.pdb

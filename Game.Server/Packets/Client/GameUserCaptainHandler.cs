@@ -2,17 +2,18 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
-using Game.Server.SceneGames;
+//using Game.Server.SceneGames;
 using Game.Base.Packets;
 
 namespace Game.Server.Packets.Client
 {
-    [PacketHandler((int)ePackageType.GAME_CAPTAIN_CHOICE,"选择队长")]
+    
+    //[PacketHandler((int)ePackageType.GAME_CAPTAIN_CHOICE,"选择队长")]
     public class GameUserCaptainHandler : IPacketHandler
     {
         public int HandlePacket(GameClient client, GSPacketIn packet)
         {
-            bool result = packet.ReadBoolean();
+            /*bool result = packet.ReadBoolean();
             if (client.Player.CurrentGame != null && client.Player.CurrentGame.GameState == eGameState.LOAD && client.Player.CurrentGame.GameMode == eGameMode.FLAG)
             {
                 packet.ClientID = (client.Player.PlayerCharacter.ID);
@@ -29,7 +30,7 @@ namespace Game.Server.Packets.Client
 
                 client.Player.CurrentGame.SendToAll(packet);
 
-            }
+            }*/
             return 0;
         }
 

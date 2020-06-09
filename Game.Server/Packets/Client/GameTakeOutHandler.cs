@@ -1,15 +1,15 @@
 ﻿using SqlDataProvider.Data;
 using Game.Base.Packets;
-using Phy.Object;
+//using Phy.Object;
 
 namespace Game.Server.Packets.Client
 {
-    [PacketHandler((byte)ePackageType.GAME_TAKE_OUT,"抽取物品")]
+    //[PacketHandler((byte)ePackageType.GAME_TAKE_OUT,"抽取物品")]
     public class GameTakeOutHandler:IPacketHandler
     {
         public int HandlePacket(GameClient client, GSPacketIn packet)
         {
-            if (client.Player.CurrentGame == null)
+            /*if (client.Player.CurrentGame == null)
                 return 0;
 
             //GSPacketIn pkg = packet.Clone();
@@ -87,7 +87,7 @@ namespace Game.Server.Packets.Client
             //{
             //    client.Player.CurrentGame.ShowArk(client.Player.CurrentGame, client.Player);
             //}
-
+            */
             return 0;
         }
     }

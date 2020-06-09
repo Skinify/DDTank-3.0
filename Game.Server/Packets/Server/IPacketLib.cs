@@ -7,6 +7,7 @@ using Game.Server.GameUtils;
 using Game.Server.SceneMarryRooms;
 using Game.Server.Quests;
 using Game.Server.Buffer;
+using Game.Server.HotSpringRooms;
 
 namespace Game.Base.Packets
 {
@@ -105,6 +106,10 @@ namespace Game.Base.Packets
         GSPacketIn SendMarryInfo(GamePlayer player, MarryInfo info);
 
         GSPacketIn SendContinuation(GamePlayer player, MarryRoomInfo info);
+
+        GSPacketIn SendContinuation(GamePlayer player, HotSpringRoomInfo info);
+
+        GSPacketIn SendHotSpringRoomInfo(GamePlayer player, HotSpringRoom room);
 
         GSPacketIn SendMarryProp(GamePlayer player, MarryProp info);
 

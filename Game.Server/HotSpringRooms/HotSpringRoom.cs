@@ -383,7 +383,7 @@ namespace Game.Server.HotSpringRooms
 
         public void KickAllPlayer()
         {
-            GamePlayer[] players = GetAllPlayers();
+            GamePlayer[] players = this.GetAllPlayers();
             foreach(GamePlayer p in players)
             {
                 RemovePlayer(p);
@@ -409,7 +409,7 @@ namespace Game.Server.HotSpringRooms
         public void RoomContinuation(int time)
         { 
             TimeSpan timeLeft = DateTime.Now - Info.BeginTime;
-            int newTime = Info.AvailTime * 60 - timeLeft.Minutes + time * 60;
+            int newTime = (Info.AvailTime * 60 - timeLeft.Minutes) + time * 60;
             Info.AvailTime += time;
             //更新数据库
             //using(PlayerBussiness db = new PlayerBussiness())

@@ -1,0 +1,195 @@
+08:15:56,695 - [19] - ERROR - Game.Base.Packets.StreamProcessor - HandlePacket(pak)
+System.NullReferenceException: Referência de objeto não definida para uma instância de um objeto.
+   em Game.Base.Packets.PacketProcessor.HandlePacket(GSPacketIn packet) na D:\DDT\DDTank-3.0\Game.Server\Packets\Server\PacketProcessor.cs:linha 65
+   em Game.Server.GameClient.OnRecvPacket(GSPacketIn pkg) na D:\DDT\DDTank-3.0\Game.Server\GameClient.cs:linha 129
+   em Game.Base.Packets.StreamProcessor.ReceiveBytes(Int32 numBytes) na D:\DDT\DDTank-3.0\Game.Base\Packets\StreamProcessor.cs:linha 387
+08:16:12,625 - [20] - ERROR - Game.Base.Packets.StreamProcessor - HandlePacket(pak)
+System.NullReferenceException: Referência de objeto não definida para uma instância de um objeto.
+   em Game.Base.Packets.PacketProcessor.HandlePacket(GSPacketIn packet) na D:\DDT\DDTank-3.0\Game.Server\Packets\Server\PacketProcessor.cs:linha 65
+   em Game.Server.GameClient.OnRecvPacket(GSPacketIn pkg) na D:\DDT\DDTank-3.0\Game.Server\GameClient.cs:linha 129
+   em Game.Base.Packets.StreamProcessor.ReceiveBytes(Int32 numBytes) na D:\DDT\DDTank-3.0\Game.Base\Packets\StreamProcessor.cs:linha 387
+08:18:13,027 - [23] - ERROR - Game.Base.Packets.PacketProcessor - Error while processing packet (handler=Game.Server.Packets.Client.HotSpringCmdDataHandler  client: 127.0.0.1:50308)
+System.ArgumentException: O tipo subjacente a enum e o objeto devem ser do mesmo tipo ou objeto deve ser um String. O tipo transmitido foi 'System.Byte'; o tipo subjacente a enum era 'System.Int32'.
+   em System.RuntimeType.IsEnumDefined(Object value)
+   em Game.Server.HotSpringRooms.TankHotSpringLogicProcessor.OnGameData(HotSpringRoom room, GamePlayer player, GSPacketIn packet) na D:\DDT\DDTank-3.0\Game.Server\HotSpringRooms\TankHotSpringLogicProcessor.cs:linha 58
+   em Game.Server.HotSpringRooms.HotSpringRoom.ProcessData(GamePlayer player, GSPacketIn data) na D:\DDT\DDTank-3.0\Game.Server\HotSpringRooms\HotSpringRoom.cs:linha 347
+   em Game.Server.Packets.Client.HotSpringCmdDataHandler.HandlePacket(GameClient client, GSPacketIn packet) na D:\DDT\DDTank-3.0\Game.Server\Packets\Client\HotSpringCmdDataHandler.cs:linha 24
+   em Game.Base.Packets.PacketProcessor.HandlePacket(GSPacketIn packet) na D:\DDT\DDTank-3.0\Game.Server\Packets\Server\PacketProcessor.cs:linha 81
+08:18:13,039 - [23] - ERROR - Game.Base.Packets.PacketProcessor - Package Buffer:
+0000: 71 AB 00 42 07 55 00 BF 00 00 00 56 00 00 00 00   q..B.U.....V....
+0010: 00 00 00 00 01 00 17 34 35 39 2C 35 30 39 2C 34   .......459,509,4
+0020: 37 35 2C 35 31 35 2C 35 33 35 2C 34 38 39 00 00   75,515,535,489..
+0030: 00 56 00 00 01 2C 00 00 01 90 00 00 00 01 00 00   .V...,..........
+0040: 00 03                                             ..              
+
+08:18:13,590 - [23] - ERROR - Game.Base.Packets.PacketProcessor - Error while processing packet (handler=Game.Server.Packets.Client.HotSpringCmdDataHandler  client: 127.0.0.1:50308)
+System.ArgumentException: O tipo subjacente a enum e o objeto devem ser do mesmo tipo ou objeto deve ser um String. O tipo transmitido foi 'System.Byte'; o tipo subjacente a enum era 'System.Int32'.
+   em System.RuntimeType.IsEnumDefined(Object value)
+   em Game.Server.HotSpringRooms.TankHotSpringLogicProcessor.OnGameData(HotSpringRoom room, GamePlayer player, GSPacketIn packet) na D:\DDT\DDTank-3.0\Game.Server\HotSpringRooms\TankHotSpringLogicProcessor.cs:linha 58
+   em Game.Server.HotSpringRooms.HotSpringRoom.ProcessData(GamePlayer player, GSPacketIn data) na D:\DDT\DDTank-3.0\Game.Server\HotSpringRooms\HotSpringRoom.cs:linha 347
+   em Game.Server.Packets.Client.HotSpringCmdDataHandler.HandlePacket(GameClient client, GSPacketIn packet) na D:\DDT\DDTank-3.0\Game.Server\Packets\Client\HotSpringCmdDataHandler.cs:linha 24
+   em Game.Base.Packets.PacketProcessor.HandlePacket(GSPacketIn packet) na D:\DDT\DDTank-3.0\Game.Server\Packets\Server\PacketProcessor.cs:linha 81
+08:18:13,598 - [23] - ERROR - Game.Base.Packets.PacketProcessor - Package Buffer:
+0000: 71 AB 00 32 05 24 00 BF 00 00 00 56 00 00 00 00   q..2.$.....V....
+0010: 00 00 00 00 01 00 07 35 34 38 2C 35 37 33 00 00   .......548,573..
+0020: 00 56 00 00 01 CB 00 00 01 FD 00 00 00 01 00 00   .V..............
+0030: 00 03                                             ..              
+
+08:18:42,649 - [26] - ERROR - Game.Base.Packets.PacketProcessor - Error while processing packet (handler=Game.Server.Packets.Client.HotSpringCmdDataHandler  client: 127.0.0.1:50308)
+System.ArgumentException: O tipo subjacente a enum e o objeto devem ser do mesmo tipo ou objeto deve ser um String. O tipo transmitido foi 'System.Byte'; o tipo subjacente a enum era 'System.Int32'.
+   em System.RuntimeType.IsEnumDefined(Object value)
+   em Game.Server.HotSpringRooms.TankHotSpringLogicProcessor.OnGameData(HotSpringRoom room, GamePlayer player, GSPacketIn packet) na D:\DDT\DDTank-3.0\Game.Server\HotSpringRooms\TankHotSpringLogicProcessor.cs:linha 58
+   em Game.Server.HotSpringRooms.HotSpringRoom.ProcessData(GamePlayer player, GSPacketIn data) na D:\DDT\DDTank-3.0\Game.Server\HotSpringRooms\HotSpringRoom.cs:linha 347
+   em Game.Server.Packets.Client.HotSpringCmdDataHandler.HandlePacket(GameClient client, GSPacketIn packet) na D:\DDT\DDTank-3.0\Game.Server\Packets\Client\HotSpringCmdDataHandler.cs:linha 24
+   em Game.Base.Packets.PacketProcessor.HandlePacket(GSPacketIn packet) na D:\DDT\DDTank-3.0\Game.Server\Packets\Server\PacketProcessor.cs:linha 81
+08:18:42,652 - [26] - ERROR - Game.Base.Packets.PacketProcessor - Package Buffer:
+0000: 71 AB 00 32 03 32 00 BF 00 00 00 56 00 00 00 00   q..2.2.....V....
+0010: 00 00 00 00 01 00 07 34 30 30 2C 36 30 38 00 00   .......400,608..
+0020: 00 56 00 00 02 24 00 00 02 3D 00 00 00 01 00 00   .V...$...=......
+0030: 00 04                                             ..              
+
+08:18:43,459 - [26] - ERROR - Game.Base.Packets.PacketProcessor - Error while processing packet (handler=Game.Server.Packets.Client.HotSpringCmdDataHandler  client: 127.0.0.1:50308)
+System.ArgumentException: O tipo subjacente a enum e o objeto devem ser do mesmo tipo ou objeto deve ser um String. O tipo transmitido foi 'System.Byte'; o tipo subjacente a enum era 'System.Int32'.
+   em System.RuntimeType.IsEnumDefined(Object value)
+   em Game.Server.HotSpringRooms.TankHotSpringLogicProcessor.OnGameData(HotSpringRoom room, GamePlayer player, GSPacketIn packet) na D:\DDT\DDTank-3.0\Game.Server\HotSpringRooms\TankHotSpringLogicProcessor.cs:linha 58
+   em Game.Server.HotSpringRooms.HotSpringRoom.ProcessData(GamePlayer player, GSPacketIn data) na D:\DDT\DDTank-3.0\Game.Server\HotSpringRooms\HotSpringRoom.cs:linha 347
+   em Game.Server.Packets.Client.HotSpringCmdDataHandler.HandlePacket(GameClient client, GSPacketIn packet) na D:\DDT\DDTank-3.0\Game.Server\Packets\Client\HotSpringCmdDataHandler.cs:linha 24
+   em Game.Base.Packets.PacketProcessor.HandlePacket(GSPacketIn packet) na D:\DDT\DDTank-3.0\Game.Server\Packets\Server\PacketProcessor.cs:linha 81
+08:18:43,461 - [26] - ERROR - Game.Base.Packets.PacketProcessor - Package Buffer:
+0000: 71 AB 00 42 07 09 00 BF 00 00 00 56 00 00 00 00   q..B.......V....
+0010: 00 00 00 00 01 00 17 35 34 32 2C 35 37 35 2C 35   .......542,575,5
+0020: 35 37 2C 35 36 35 2C 36 38 36 2C 35 34 34 00 00   57,565,686,544..
+0030: 00 56 00 00 01 90 00 00 02 60 00 00 00 01 00 00   .V.......`......
+0040: 00 01                                             ..              
+
+08:18:43,805 - [26] - ERROR - Game.Base.Packets.PacketProcessor - Error while processing packet (handler=Game.Server.Packets.Client.HotSpringCmdDataHandler  client: 127.0.0.1:50308)
+System.ArgumentException: O tipo subjacente a enum e o objeto devem ser do mesmo tipo ou objeto deve ser um String. O tipo transmitido foi 'System.Byte'; o tipo subjacente a enum era 'System.Int32'.
+   em System.RuntimeType.IsEnumDefined(Object value)
+   em Game.Server.HotSpringRooms.TankHotSpringLogicProcessor.OnGameData(HotSpringRoom room, GamePlayer player, GSPacketIn packet) na D:\DDT\DDTank-3.0\Game.Server\HotSpringRooms\TankHotSpringLogicProcessor.cs:linha 58
+   em Game.Server.HotSpringRooms.HotSpringRoom.ProcessData(GamePlayer player, GSPacketIn data) na D:\DDT\DDTank-3.0\Game.Server\HotSpringRooms\HotSpringRoom.cs:linha 347
+   em Game.Server.Packets.Client.HotSpringCmdDataHandler.HandlePacket(GameClient client, GSPacketIn packet) na D:\DDT\DDTank-3.0\Game.Server\Packets\Client\HotSpringCmdDataHandler.cs:linha 24
+   em Game.Base.Packets.PacketProcessor.HandlePacket(GSPacketIn packet) na D:\DDT\DDTank-3.0\Game.Server\Packets\Server\PacketProcessor.cs:linha 81
+08:18:43,807 - [26] - ERROR - Game.Base.Packets.PacketProcessor - Package Buffer:
+0000: 71 AB 00 32 03 2D 00 BF 00 00 00 56 00 00 00 00   q..2.-.....V....
+0010: 00 00 00 00 01 00 07 36 31 34 2C 35 33 31 00 00   .......614,531..
+0020: 00 56 00 00 02 1E 00 00 02 3F 00 00 00 01 00 00   .V.......?......
+0030: 00 01                                             ..              
+
+08:26:43,439 - [26] - ERROR - Game.Base.Packets.PacketProcessor - Error while processing packet (handler=Game.Server.Packets.Client.HotSpringCmdDataHandler  client: 127.0.0.1:50308)
+System.ArgumentException: O tipo subjacente a enum e o objeto devem ser do mesmo tipo ou objeto deve ser um String. O tipo transmitido foi 'System.Byte'; o tipo subjacente a enum era 'System.Int32'.
+   em System.RuntimeType.IsEnumDefined(Object value)
+   em Game.Server.HotSpringRooms.TankHotSpringLogicProcessor.OnGameData(HotSpringRoom room, GamePlayer player, GSPacketIn packet) na D:\DDT\DDTank-3.0\Game.Server\HotSpringRooms\TankHotSpringLogicProcessor.cs:linha 58
+   em Game.Server.HotSpringRooms.HotSpringRoom.ProcessData(GamePlayer player, GSPacketIn data) na D:\DDT\DDTank-3.0\Game.Server\HotSpringRooms\HotSpringRoom.cs:linha 347
+   em Game.Server.Packets.Client.HotSpringCmdDataHandler.HandlePacket(GameClient client, GSPacketIn packet) na D:\DDT\DDTank-3.0\Game.Server\Packets\Client\HotSpringCmdDataHandler.cs:linha 24
+   em Game.Base.Packets.PacketProcessor.HandlePacket(GSPacketIn packet) na D:\DDT\DDTank-3.0\Game.Server\Packets\Server\PacketProcessor.cs:linha 81
+08:26:43,446 - [26] - ERROR - Game.Base.Packets.PacketProcessor - Package Buffer:
+0000: 71 AB 00 32 03 5E 00 BF 00 00 00 56 00 00 00 00   q..2.^.....V....
+0010: 00 00 00 00 01 00 07 35 39 38 2C 35 33 38 00 00   .......598,538..
+0020: 00 56 00 00 02 66 00 00 02 13 00 00 00 01 00 00   .V...f..........
+0030: 00 04                                             ..              
+
+08:26:43,683 - [26] - ERROR - Game.Base.Packets.PacketProcessor - Error while processing packet (handler=Game.Server.Packets.Client.HotSpringCmdDataHandler  client: 127.0.0.1:50308)
+System.ArgumentException: O tipo subjacente a enum e o objeto devem ser do mesmo tipo ou objeto deve ser um String. O tipo transmitido foi 'System.Byte'; o tipo subjacente a enum era 'System.Int32'.
+   em System.RuntimeType.IsEnumDefined(Object value)
+   em Game.Server.HotSpringRooms.TankHotSpringLogicProcessor.OnGameData(HotSpringRoom room, GamePlayer player, GSPacketIn packet) na D:\DDT\DDTank-3.0\Game.Server\HotSpringRooms\TankHotSpringLogicProcessor.cs:linha 58
+   em Game.Server.HotSpringRooms.HotSpringRoom.ProcessData(GamePlayer player, GSPacketIn data) na D:\DDT\DDTank-3.0\Game.Server\HotSpringRooms\HotSpringRoom.cs:linha 347
+   em Game.Server.Packets.Client.HotSpringCmdDataHandler.HandlePacket(GameClient client, GSPacketIn packet) na D:\DDT\DDTank-3.0\Game.Server\Packets\Client\HotSpringCmdDataHandler.cs:linha 24
+   em Game.Base.Packets.PacketProcessor.HandlePacket(GSPacketIn packet) na D:\DDT\DDTank-3.0\Game.Server\Packets\Server\PacketProcessor.cs:linha 81
+08:26:43,689 - [26] - ERROR - Game.Base.Packets.PacketProcessor - Package Buffer:
+0000: 71 AB 00 32 03 46 00 BF 00 00 00 56 00 00 00 00   q..2.F.....V....
+0010: 00 00 00 00 01 00 07 35 36 30 2C 35 34 33 00 00   .......560,543..
+0020: 00 56 00 00 02 56 00 00 02 1A 00 00 00 01 00 00   .V...V..........
+0030: 00 04                                             ..              
+
+08:26:44,478 - [26] - ERROR - Game.Base.Packets.PacketProcessor - Error while processing packet (handler=Game.Server.Packets.Client.HotSpringCmdDataHandler  client: 127.0.0.1:50308)
+System.ArgumentException: O tipo subjacente a enum e o objeto devem ser do mesmo tipo ou objeto deve ser um String. O tipo transmitido foi 'System.Byte'; o tipo subjacente a enum era 'System.Int32'.
+   em System.RuntimeType.IsEnumDefined(Object value)
+   em Game.Server.HotSpringRooms.TankHotSpringLogicProcessor.OnGameData(HotSpringRoom room, GamePlayer player, GSPacketIn packet) na D:\DDT\DDTank-3.0\Game.Server\HotSpringRooms\TankHotSpringLogicProcessor.cs:linha 58
+   em Game.Server.HotSpringRooms.HotSpringRoom.ProcessData(GamePlayer player, GSPacketIn data) na D:\DDT\DDTank-3.0\Game.Server\HotSpringRooms\HotSpringRoom.cs:linha 347
+   em Game.Server.Packets.Client.HotSpringCmdDataHandler.HandlePacket(GameClient client, GSPacketIn packet) na D:\DDT\DDTank-3.0\Game.Server\Packets\Client\HotSpringCmdDataHandler.cs:linha 24
+   em Game.Base.Packets.PacketProcessor.HandlePacket(GSPacketIn packet) na D:\DDT\DDTank-3.0\Game.Server\Packets\Server\PacketProcessor.cs:linha 81
+08:26:44,484 - [26] - ERROR - Game.Base.Packets.PacketProcessor - Package Buffer:
+0000: 71 AB 00 32 03 31 00 BF 00 00 00 56 00 00 00 00   q..2.1.....V....
+0010: 00 00 00 00 01 00 07 34 39 33 2C 35 35 39 00 00   .......493,559..
+0020: 00 56 00 00 02 30 00 00 02 1F 00 00 00 01 00 00   .V...0..........
+0030: 00 04                                             ..              
+
+08:26:45,140 - [26] - ERROR - Game.Base.Packets.PacketProcessor - Error while processing packet (handler=Game.Server.Packets.Client.HotSpringCmdDataHandler  client: 127.0.0.1:50308)
+System.ArgumentException: O tipo subjacente a enum e o objeto devem ser do mesmo tipo ou objeto deve ser um String. O tipo transmitido foi 'System.Byte'; o tipo subjacente a enum era 'System.Int32'.
+   em System.RuntimeType.IsEnumDefined(Object value)
+   em Game.Server.HotSpringRooms.TankHotSpringLogicProcessor.OnGameData(HotSpringRoom room, GamePlayer player, GSPacketIn packet) na D:\DDT\DDTank-3.0\Game.Server\HotSpringRooms\TankHotSpringLogicProcessor.cs:linha 58
+   em Game.Server.HotSpringRooms.HotSpringRoom.ProcessData(GamePlayer player, GSPacketIn data) na D:\DDT\DDTank-3.0\Game.Server\HotSpringRooms\HotSpringRoom.cs:linha 347
+   em Game.Server.Packets.Client.HotSpringCmdDataHandler.HandlePacket(GameClient client, GSPacketIn packet) na D:\DDT\DDTank-3.0\Game.Server\Packets\Client\HotSpringCmdDataHandler.cs:linha 24
+   em Game.Base.Packets.PacketProcessor.HandlePacket(GSPacketIn packet) na D:\DDT\DDTank-3.0\Game.Server\Packets\Server\PacketProcessor.cs:linha 81
+08:26:45,147 - [26] - ERROR - Game.Base.Packets.PacketProcessor - Package Buffer:
+0000: 71 AB 00 32 04 78 00 BF 00 00 00 56 00 00 00 00   q..2.x.....V....
+0010: 00 00 00 00 01 00 07 34 32 38 2C 35 38 33 00 00   .......428,583..
+0020: 00 56 00 00 01 ED 00 00 02 2F 00 00 00 01 00 00   .V......./......
+0030: 00 04                                             ..              
+
+08:26:45,561 - [26] - ERROR - Game.Base.Packets.PacketProcessor - Error while processing packet (handler=Game.Server.Packets.Client.HotSpringCmdDataHandler  client: 127.0.0.1:50308)
+System.ArgumentException: O tipo subjacente a enum e o objeto devem ser do mesmo tipo ou objeto deve ser um String. O tipo transmitido foi 'System.Byte'; o tipo subjacente a enum era 'System.Int32'.
+   em System.RuntimeType.IsEnumDefined(Object value)
+   em Game.Server.HotSpringRooms.TankHotSpringLogicProcessor.OnGameData(HotSpringRoom room, GamePlayer player, GSPacketIn packet) na D:\DDT\DDTank-3.0\Game.Server\HotSpringRooms\TankHotSpringLogicProcessor.cs:linha 58
+   em Game.Server.HotSpringRooms.HotSpringRoom.ProcessData(GamePlayer player, GSPacketIn data) na D:\DDT\DDTank-3.0\Game.Server\HotSpringRooms\HotSpringRoom.cs:linha 347
+   em Game.Server.Packets.Client.HotSpringCmdDataHandler.HandlePacket(GameClient client, GSPacketIn packet) na D:\DDT\DDTank-3.0\Game.Server\Packets\Client\HotSpringCmdDataHandler.cs:linha 24
+   em Game.Base.Packets.PacketProcessor.HandlePacket(GSPacketIn packet) na D:\DDT\DDTank-3.0\Game.Server\Packets\Server\PacketProcessor.cs:linha 81
+08:26:45,564 - [26] - ERROR - Game.Base.Packets.PacketProcessor - Package Buffer:
+0000: 71 AB 00 32 04 49 00 BF 00 00 00 56 00 00 00 00   q..2.I.....V....
+0010: 00 00 00 00 01 00 07 36 33 32 2C 35 33 38 00 00   .......632,538..
+0020: 00 56 00 00 01 AC 00 00 02 47 00 00 00 01 00 00   .V.......G......
+0030: 00 01                                             ..              
+
+08:26:49,723 - [26] - ERROR - Game.Base.Packets.PacketProcessor - Error while processing packet (handler=Game.Server.Packets.Client.HotSpringCmdDataHandler  client: 127.0.0.1:50308)
+System.ArgumentException: O tipo subjacente a enum e o objeto devem ser do mesmo tipo ou objeto deve ser um String. O tipo transmitido foi 'System.Byte'; o tipo subjacente a enum era 'System.Int32'.
+   em System.RuntimeType.IsEnumDefined(Object value)
+   em Game.Server.HotSpringRooms.TankHotSpringLogicProcessor.OnGameData(HotSpringRoom room, GamePlayer player, GSPacketIn packet) na D:\DDT\DDTank-3.0\Game.Server\HotSpringRooms\TankHotSpringLogicProcessor.cs:linha 58
+   em Game.Server.HotSpringRooms.HotSpringRoom.ProcessData(GamePlayer player, GSPacketIn data) na D:\DDT\DDTank-3.0\Game.Server\HotSpringRooms\HotSpringRoom.cs:linha 347
+   em Game.Server.Packets.Client.HotSpringCmdDataHandler.HandlePacket(GameClient client, GSPacketIn packet) na D:\DDT\DDTank-3.0\Game.Server\Packets\Client\HotSpringCmdDataHandler.cs:linha 24
+   em Game.Base.Packets.PacketProcessor.HandlePacket(GSPacketIn packet) na D:\DDT\DDTank-3.0\Game.Server\Packets\Server\PacketProcessor.cs:linha 81
+08:26:49,729 - [26] - ERROR - Game.Base.Packets.PacketProcessor - Package Buffer:
+0000: 71 AB 00 32 03 6F 00 BF 00 00 00 56 00 00 00 00   q..2.o.....V....
+0010: 00 00 00 00 01 00 07 38 36 33 2C 35 32 39 00 00   .......863,529..
+0020: 00 56 00 00 02 78 00 00 02 1A 00 00 00 01 00 00   .V...x..........
+0030: 00 01                                             ..              
+
+08:26:50,164 - [26] - ERROR - Game.Base.Packets.PacketProcessor - Error while processing packet (handler=Game.Server.Packets.Client.HotSpringCmdDataHandler  client: 127.0.0.1:50308)
+System.ArgumentException: O tipo subjacente a enum e o objeto devem ser do mesmo tipo ou objeto deve ser um String. O tipo transmitido foi 'System.Byte'; o tipo subjacente a enum era 'System.Int32'.
+   em System.RuntimeType.IsEnumDefined(Object value)
+   em Game.Server.HotSpringRooms.TankHotSpringLogicProcessor.OnGameData(HotSpringRoom room, GamePlayer player, GSPacketIn packet) na D:\DDT\DDTank-3.0\Game.Server\HotSpringRooms\TankHotSpringLogicProcessor.cs:linha 58
+   em Game.Server.HotSpringRooms.HotSpringRoom.ProcessData(GamePlayer player, GSPacketIn data) na D:\DDT\DDTank-3.0\Game.Server\HotSpringRooms\HotSpringRoom.cs:linha 347
+   em Game.Server.Packets.Client.HotSpringCmdDataHandler.HandlePacket(GameClient client, GSPacketIn packet) na D:\DDT\DDTank-3.0\Game.Server\Packets\Client\HotSpringCmdDataHandler.cs:linha 24
+   em Game.Base.Packets.PacketProcessor.HandlePacket(GSPacketIn packet) na D:\DDT\DDTank-3.0\Game.Server\Packets\Server\PacketProcessor.cs:linha 81
+08:26:50,170 - [26] - ERROR - Game.Base.Packets.PacketProcessor - Package Buffer:
+0000: 71 AB 00 32 03 4A 00 BF 00 00 00 56 00 00 00 00   q..2.J.....V....
+0010: 00 00 00 00 01 00 07 39 37 36 2C 35 31 31 00 00   .......976,511..
+0020: 00 56 00 00 03 5F 00 00 02 11 00 00 00 01 00 00   .V..._..........
+0030: 00 01                                             ..              
+
+08:26:52,300 - [26] - ERROR - Game.Base.Packets.PacketProcessor - Error while processing packet (handler=Game.Server.Packets.Client.HotSpringCmdDataHandler  client: 127.0.0.1:50308)
+System.ArgumentException: O tipo subjacente a enum e o objeto devem ser do mesmo tipo ou objeto deve ser um String. O tipo transmitido foi 'System.Byte'; o tipo subjacente a enum era 'System.Int32'.
+   em System.RuntimeType.IsEnumDefined(Object value)
+   em Game.Server.HotSpringRooms.TankHotSpringLogicProcessor.OnGameData(HotSpringRoom room, GamePlayer player, GSPacketIn packet) na D:\DDT\DDTank-3.0\Game.Server\HotSpringRooms\TankHotSpringLogicProcessor.cs:linha 58
+   em Game.Server.HotSpringRooms.HotSpringRoom.ProcessData(GamePlayer player, GSPacketIn data) na D:\DDT\DDTank-3.0\Game.Server\HotSpringRooms\HotSpringRoom.cs:linha 347
+   em Game.Server.Packets.Client.HotSpringCmdDataHandler.HandlePacket(GameClient client, GSPacketIn packet) na D:\DDT\DDTank-3.0\Game.Server\Packets\Client\HotSpringCmdDataHandler.cs:linha 24
+   em Game.Base.Packets.PacketProcessor.HandlePacket(GSPacketIn packet) na D:\DDT\DDTank-3.0\Game.Server\Packets\Server\PacketProcessor.cs:linha 81
+08:26:52,302 - [26] - ERROR - Game.Base.Packets.PacketProcessor - Package Buffer:
+0000: 71 AB 00 4D 0A 08 00 BF 00 00 00 56 00 00 00 00   q..M.......V....
+0010: 00 00 00 00 01 00 22 31 30 31 37 2C 34 31 38 2C   ......"1017,418,
+0020: 31 30 31 37 2C 34 31 35 2C 31 30 32 32 2C 33 39   1017,415,1022,39
+0030: 38 2C 39 38 36 2C 33 35 39 00 00 00 56 00 00 03   8,986,359...V...
+0040: D0 00 00 01 FF 00 00 00 01 00 00 00 01            .............   
+
+08:26:52,545 - [26] - ERROR - Game.Base.Packets.PacketProcessor - Error while processing packet (handler=Game.Server.Packets.Client.HotSpringCmdDataHandler  client: 127.0.0.1:50308)
+System.ArgumentException: O tipo subjacente a enum e o objeto devem ser do mesmo tipo ou objeto deve ser um String. O tipo transmitido foi 'System.Byte'; o tipo subjacente a enum era 'System.Int32'.
+   em System.RuntimeType.IsEnumDefined(Object value)
+   em Game.Server.HotSpringRooms.TankHotSpringLogicProcessor.OnGameData(HotSpringRoom room, GamePlayer player, GSPacketIn packet) na D:\DDT\DDTank-3.0\Game.Server\HotSpringRooms\TankHotSpringLogicProcessor.cs:linha 58
+   em Game.Server.HotSpringRooms.HotSpringRoom.ProcessData(GamePlayer player, GSPacketIn data) na D:\DDT\DDTank-3.0\Game.Server\HotSpringRooms\HotSpringRoom.cs:linha 347
+   em Game.Server.Packets.Client.HotSpringCmdDataHandler.HandlePacket(GameClient client, GSPacketIn packet) na D:\DDT\DDTank-3.0\Game.Server\Packets\Client\HotSpringCmdDataHandler.cs:linha 24
+   em Game.Base.Packets.PacketProcessor.HandlePacket(GSPacketIn packet) na D:\DDT\DDTank-3.0\Game.Server\Packets\Server\PacketProcessor.cs:linha 81
+08:26:52,547 - [26] - ERROR - Game.Base.Packets.PacketProcessor - Package Buffer:
+0000: 71 AB 00 33 05 22 00 BF 00 00 00 56 00 00 00 00   q..3.".....V....
+0010: 00 00 00 00 01 00 08 31 30 36 33 2C 33 36 37 00   .......1063,367.
+0020: 00 00 56 00 00 03 F9 00 00 01 A2 00 00 00 01 00   ..V.............
+0030: 00 00 01                                          ...             
+

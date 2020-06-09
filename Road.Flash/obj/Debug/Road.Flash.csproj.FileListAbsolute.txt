@@ -38,3 +38,13 @@ C:\Users\Welington\Documents\Server3.0\Road.Flash\bin\Debug\SqlDataProvider.pdb
 C:\Users\Welington\Documents\Server3.0\Road.Flash\obj\Debug\ResolveAssemblyReference.cache
 C:\Users\Welington\Documents\Server3.0\Road.Flash\obj\Debug\Road.Flash.dll
 C:\Users\Welington\Documents\Server3.0\Road.Flash\obj\Debug\Road.Flash.pdb
+D:\DDT\DDTank-3.0\Road.Flash\bin\Debug\Road.Flash.dll
+D:\DDT\DDTank-3.0\Road.Flash\bin\Debug\Road.Flash.pdb
+D:\DDT\DDTank-3.0\Road.Flash\bin\Debug\Newtonsoft.Json.dll
+D:\DDT\DDTank-3.0\Road.Flash\bin\Debug\SqlDataProvider.dll
+D:\DDT\DDTank-3.0\Road.Flash\bin\Debug\SqlDataProvider.pdb
+D:\DDT\DDTank-3.0\Road.Flash\obj\Debug\Road.Flash.csprojAssemblyReference.cache
+D:\DDT\DDTank-3.0\Road.Flash\obj\Debug\Road.Flash.csproj.CoreCompileInputs.cache
+D:\DDT\DDTank-3.0\Road.Flash\obj\Debug\Road.Flash.csproj.CopyComplete
+D:\DDT\DDTank-3.0\Road.Flash\obj\Debug\Road.Flash.dll
+D:\DDT\DDTank-3.0\Road.Flash\obj\Debug\Road.Flash.pdb

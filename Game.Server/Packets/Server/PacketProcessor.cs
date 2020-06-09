@@ -59,7 +59,18 @@ namespace Game.Base.Packets
 
             IPacketHandler packetHandler = null;
             if (code < m_packetHandlers.Length)
+            {
                 packetHandler = m_packetHandlers[code];
+                Console.WriteLine(string.Concat(new object[] { packet.ClientID, " --- ", code, "(", $"0x{code:x}", ")" }));
+                try
+                {
+                    Console.WriteLine(packetHandler.ToString());
+                }
+                catch
+                {
+                    Console.WriteLine("Game.Server.Packets.Client.Null");
+                }
+            }
             else if (log.IsErrorEnabled)
             {
                 log.ErrorFormat("Received packet code is outside of m_packetHandlers array bounds! " + m_client.ToString());

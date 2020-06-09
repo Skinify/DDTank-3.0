@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using Game.Base.Packets;
+using SqlDataProvider.Data;
 
 namespace Game.Server.Packets.Client
 {
@@ -16,7 +17,7 @@ namespace Game.Server.Packets.Client
             //    client.Player.CurrentHotSpringRoom.ProcessData(client.Player, packet);
             //}
             GSPacketIn pkg = new GSPacketIn((byte)ePackageType.HOTSPRING_ROOM_PLAYER_ADD);
-            var player = client.Player.PlayerCharacter;
+            PlayerInfo player = client.Player.PlayerCharacter;
             pkg.WriteInt(player.ID);
             pkg.WriteInt(player.Grade);
             pkg.WriteInt(player.Hide);
@@ -30,13 +31,13 @@ namespace Game.Server.Packets.Client
             pkg.WriteString(player.Style);
             pkg.WriteString(player.Colors);
             pkg.WriteString(player.Skin);
-            pkg.WriteInt(405);
-            pkg.WriteInt(405);
+            pkg.WriteInt(300);
+            pkg.WriteInt(400);
             //var _loc_6:* = new Point(_loc_2.readInt(), _loc_2.readInt());
             pkg.WriteInt(player.FightPower);
             pkg.WriteInt(player.Win);
             pkg.WriteInt(player.Total);
-            pkg.WriteInt(45);
+            pkg.WriteInt(1);
             //_loc_5.FightPower = _loc_2.readInt();
             //_loc_5.WinCount = _loc_2.readInt();
             //_loc_5.TotalCount = _loc_2.readInt();

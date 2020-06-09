@@ -1,0 +1,10 @@
+D:\DDT\DDTank-3.0\Game.Base\bin\x64\Debug\Game.Base.dll
+D:\DDT\DDTank-3.0\Game.Base\bin\x64\Debug\Game.Base.pdb
+D:\DDT\DDTank-3.0\Game.Base\bin\x64\Debug\log4net.dll
+D:\DDT\DDTank-3.0\Game.Base\bin\x64\Debug\zlib.net.dll
+D:\DDT\DDTank-3.0\Game.Base\bin\x64\Debug\log4net.xml
+D:\DDT\DDTank-3.0\Game.Base\obj\x64\Debug\Game.Base.csprojAssemblyReference.cache
+D:\DDT\DDTank-3.0\Game.Base\obj\x64\Debug\Game.Base.csproj.CoreCompileInputs.cache
+D:\DDT\DDTank-3.0\Game.Base\obj\x64\Debug\Game.Base.csproj.CopyComplete
+D:\DDT\DDTank-3.0\Game.Base\obj\x64\Debug\Game.Base.dll
+D:\DDT\DDTank-3.0\Game.Base\obj\x64\Debug\Game.Base.pdb

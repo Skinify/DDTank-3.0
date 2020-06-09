@@ -54,8 +54,7 @@ namespace Bussiness.Managers
             {
                 ItemBoxInfo[] infos = db.GetItemBoxInfos();
                 return infos;    
-            }
-            return null;            
+            }         
         }
 
         /// <summary>

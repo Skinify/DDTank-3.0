@@ -1,0 +1,2 @@
+D:\DDT\DDTank-3.0\GameServerScript\obj\x64\Debug\GameServerScript.csprojAssemblyReference.cache
+D:\DDT\DDTank-3.0\GameServerScript\obj\x64\Debug\GameServerScript.csproj.CoreCompileInputs.cache

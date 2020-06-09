@@ -27,7 +27,7 @@ namespace Game.Server.HotSpringRooms.TankHandle
             if (player.CurrentHotSpringRoom == null)
             {
                 return false;
-            }
+            }   
 
             if (player.PlayerCharacter.ID != player.CurrentHotSpringRoom.Info.GroomID && player.PlayerCharacter.ID != player.CurrentHotSpringRoom.Info.BrideID)
             {

@@ -1,0 +1,17 @@
+D:\DDT\DDTank-3.0\Bussiness\bin\x64\Debug\Languages\Language-vn.txt
+D:\DDT\DDTank-3.0\Bussiness\bin\x64\Debug\Languages\Language-zh_cn.txt
+D:\DDT\DDTank-3.0\Bussiness\bin\x64\Debug\Bussiness.dll.config
+D:\DDT\DDTank-3.0\Bussiness\bin\x64\Debug\Bussiness.dll
+D:\DDT\DDTank-3.0\Bussiness\bin\x64\Debug\Bussiness.pdb
+D:\DDT\DDTank-3.0\Bussiness\bin\x64\Debug\Game.Base.dll
+D:\DDT\DDTank-3.0\Bussiness\bin\x64\Debug\log4net.dll
+D:\DDT\DDTank-3.0\Bussiness\bin\x64\Debug\SqlDataProvider.dll
+D:\DDT\DDTank-3.0\Bussiness\bin\x64\Debug\zlib.net.dll
+D:\DDT\DDTank-3.0\Bussiness\bin\x64\Debug\Game.Base.pdb
+D:\DDT\DDTank-3.0\Bussiness\bin\x64\Debug\SqlDataProvider.pdb
+D:\DDT\DDTank-3.0\Bussiness\bin\x64\Debug\log4net.xml
+D:\DDT\DDTank-3.0\Bussiness\obj\x64\Debug\Bussiness.csprojAssemblyReference.cache
+D:\DDT\DDTank-3.0\Bussiness\obj\x64\Debug\Bussiness.csproj.CoreCompileInputs.cache
+D:\DDT\DDTank-3.0\Bussiness\obj\x64\Debug\Bussiness.csproj.CopyComplete
+D:\DDT\DDTank-3.0\Bussiness\obj\x64\Debug\Bussiness.dll
+D:\DDT\DDTank-3.0\Bussiness\obj\x64\Debug\Bussiness.pdb

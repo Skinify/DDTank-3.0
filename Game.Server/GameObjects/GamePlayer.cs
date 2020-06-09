@@ -19,7 +19,7 @@ using Bussiness.Managers;
 using System.Collections;
 using Game.Logic.Phy.Object;
 using Game.Server.ChatServer;
-//using Game.Server.HotSpringRooms;
+using Game.Server.HotSpringRooms;
 
 
 namespace Game.Server.GameObjects
@@ -1213,7 +1213,7 @@ namespace Game.Server.GameObjects
 
         #region  Room/Game Properties/Events
         private BaseRoom m_currentRoom;
-        public BaseRoom CurrentRoom
+        public BaseRoom CurrentRoom 
         {
             get { return m_currentRoom; }
             set
@@ -1458,46 +1458,46 @@ namespace Game.Server.GameObjects
             }
         }
         #endregion
-        //#region Marry
-        //public int Hot_X;
-        //public int Hot_Y;
-        //public int Hot_Map;
+        #region Marry
+        public int Hot_X;
+        public int Hot_Y;
+        public int Hot_Map;
 
-        //private HotSpringRoom _currentHotSpringRoom;
-        //public HotSpringRoom CurrentHotSpringRoom
-        //{
-        //    get
-        //    {
-        //        return _currentHotSpringRoom;
-        //    }
-        //    set
-        //    {
-        //        _currentHotSpringRoom = value;
-        //    }
-        //}
-        //public bool IsInHotSpringRoom
-        //{
-        //    get
-        //    {
-        //        return _currentHotSpringRoom != null;
-        //    }
-        //}
-        //public void LoadHotSpringProp()
-        //{
-        //    using (PlayerBussiness db = new PlayerBussiness())
-        //    {
-        //        MarryProp info = db.GetMarryProp(PlayerCharacter.ID);
-        //        PlayerCharacter.IsMarried = info.IsMarried;
-        //        PlayerCharacter.SpouseID = info.SpouseID;
-        //        PlayerCharacter.SpouseName = info.SpouseName;
-        //        PlayerCharacter.IsCreatedMarryRoom = info.IsCreatedMarryRoom;
-        //        PlayerCharacter.SelfMarryRoomID = info.SelfMarryRoomID;
-        //        PlayerCharacter.IsGotRing = info.IsGotRing;
+        private HotSpringRoom _currentHotSpringRoom;
+        public HotSpringRoom CurrentHotSpringRoom
+        {
+            get
+            {
+                return _currentHotSpringRoom;
+            }
+            set
+            {
+                _currentHotSpringRoom = value;
+            }
+        }
+        public bool IsInHotSpringRoom
+        {
+            get
+            {
+                return _currentHotSpringRoom != null;
+            }
+        }
+        public void LoadHotSpringProp()
+        {
+            using (PlayerBussiness db = new PlayerBussiness())
+            {
+                MarryProp info = db.GetMarryProp(PlayerCharacter.ID);
+                PlayerCharacter.IsMarried = info.IsMarried;
+                PlayerCharacter.SpouseID = info.SpouseID;
+                PlayerCharacter.SpouseName = info.SpouseName;
+                PlayerCharacter.IsCreatedMarryRoom = info.IsCreatedMarryRoom;
+                PlayerCharacter.SelfMarryRoomID = info.SelfMarryRoomID;
+                PlayerCharacter.IsGotRing = info.IsGotRing;
 
-        //        Out.SendMarryProp(this, info);
-        //    }
-        //}
-        //#endregion
+                Out.SendMarryProp(this, info);
+            }
+        }
+        #endregion
 
         #region ToString
         public override string ToString()

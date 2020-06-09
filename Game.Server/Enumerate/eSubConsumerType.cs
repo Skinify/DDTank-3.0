@@ -31,5 +31,6 @@ namespace Game.Server.Enumerate
         /// 公会捐献
         /// </summary>
         Consortia_Riches_Offer = 5,
+        Marry_HotSpringRoom = 6
     }
 }

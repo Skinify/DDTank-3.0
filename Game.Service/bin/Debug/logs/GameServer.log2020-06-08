@@ -1,0 +1,1699 @@
+18:46:59,788 - [MAIN] - INFO  - Bussiness.GameProperties - Refreshing game properties!
+18:47:00,678 - [MAIN] - INFO  - Game.Server.GameServer - Recompile Scripts: True
+18:47:00,680 - [MAIN] - INFO  - Game.Server.GameServer - Server rules: true
+18:47:00,716 - [MAIN] - INFO  - Game.Server.GameServer - Registering global event handlers: true
+18:47:00,716 - [MAIN] - INFO  - Game.Server.GameServer - Script components: True
+18:47:00,717 - [MAIN] - INFO  - Game.Server.GameServer - Edition:21000: True
+18:47:00,720 - [MAIN] - INFO  - Game.Server.GameServer - InitSocket Port:9200: True
+18:47:00,763 - [MAIN] - INFO  - Game.Server.GameServer - AllocatePacketBuffers(): True
+18:47:00,770 - [MAIN] - INFO  - Game.Server.GameServer - LogMgr Init: True
+18:47:00,775 - [MAIN] - INFO  - Game.Server.GameServer - WorldMgr Init: True
+18:47:03,486 - [MAIN] - INFO  - Game.Server.GameServer - MapMgr Init: True
+18:47:03,833 - [MAIN] - INFO  - Game.Server.GameServer - ItemMgr Init: True
+18:47:03,925 - [MAIN] - INFO  - Game.Server.GameServer - ItemBox Init: True
+18:47:04,032 - [MAIN] - ERROR - Game.Logic.BallMgr - can't find bomb file:bomb\6.bomb
+18:47:04,038 - [MAIN] - ERROR - Game.Logic.BallMgr - can't find bomb file:bomb\9.bomb
+18:47:04,210 - [MAIN] - ERROR - Game.Logic.BallMgr - can't find bomb file:bomb\60.bomb
+18:47:04,259 - [MAIN] - ERROR - Game.Logic.BallMgr - can't find bomb file:bomb\69.bomb
+18:47:04,260 - [MAIN] - ERROR - Game.Logic.BallMgr - can't find bomb file:bomb\71.bomb
+18:47:04,262 - [MAIN] - ERROR - Game.Logic.BallMgr - can't find bomb file:bomb\73.bomb
+18:47:04,276 - [MAIN] - ERROR - Game.Logic.BallMgr - can't find bomb file:bomb\88.bomb
+18:47:04,283 - [MAIN] - ERROR - Game.Logic.BallMgr - can't find bomb file:bomb\106.bomb
+18:47:04,283 - [MAIN] - ERROR - Game.Logic.BallMgr - can't find bomb file:bomb\109.bomb
+18:47:04,296 - [MAIN] - ERROR - Game.Logic.BallMgr - can't find bomb file:bomb\116.bomb
+18:47:04,297 - [MAIN] - ERROR - Game.Logic.BallMgr - can't find bomb file:bomb\118.bomb
+18:47:04,312 - [MAIN] - ERROR - Game.Logic.BallMgr - can't find bomb file:bomb\126.bomb
+18:47:04,325 - [MAIN] - ERROR - Game.Logic.BallMgr - can't find bomb file:bomb\136.bomb
+18:47:04,339 - [MAIN] - ERROR - Game.Logic.BallMgr - can't find bomb file:bomb\146.bomb
+18:47:04,344 - [MAIN] - ERROR - Game.Logic.BallMgr - can't find bomb file:bomb\157.bomb
+18:47:04,350 - [MAIN] - ERROR - Game.Logic.BallMgr - can't find bomb file:bomb\166.bomb
+18:47:04,362 - [MAIN] - ERROR - Game.Logic.BallMgr - can't find bomb file:bomb\176.bomb
+18:47:04,367 - [MAIN] - ERROR - Game.Logic.BallMgr - can't find bomb file:bomb\185.bomb
+18:47:04,372 - [MAIN] - ERROR - Game.Logic.BallMgr - can't find bomb file:bomb\195.bomb
+18:47:04,378 - [MAIN] - ERROR - Game.Logic.BallMgr - can't find bomb file:bomb\205.bomb
+18:47:04,383 - [MAIN] - ERROR - Game.Logic.BallMgr - can't find bomb file:bomb\215.bomb
+18:47:04,388 - [MAIN] - ERROR - Game.Logic.BallMgr - can't find bomb file:bomb\225.bomb
+18:47:04,393 - [MAIN] - ERROR - Game.Logic.BallMgr - can't find bomb file:bomb\235.bomb
+18:47:04,398 - [MAIN] - ERROR - Game.Logic.BallMgr - can't find bomb file:bomb\245.bomb
+18:47:04,404 - [MAIN] - ERROR - Game.Logic.BallMgr - can't find bomb file:bomb\255.bomb
+18:47:04,409 - [MAIN] - ERROR - Game.Logic.BallMgr - can't find bomb file:bomb\265.bomb
+18:47:04,415 - [MAIN] - ERROR - Game.Logic.BallMgr - can't find bomb file:bomb\275.bomb
+18:47:04,421 - [MAIN] - ERROR - Game.Logic.BallMgr - can't find bomb file:bomb\285.bomb
+18:47:04,426 - [MAIN] - ERROR - Game.Logic.BallMgr - can't find bomb file:bomb\295.bomb
+18:47:04,432 - [MAIN] - ERROR - Game.Logic.BallMgr - can't find bomb file:bomb\305.bomb
+18:47:04,437 - [MAIN] - ERROR - Game.Logic.BallMgr - can't find bomb file:bomb\315.bomb
+18:47:04,442 - [MAIN] - ERROR - Game.Logic.BallMgr - can't find bomb file:bomb\326.bomb
+18:47:04,448 - [MAIN] - ERROR - Game.Logic.BallMgr - can't find bomb file:bomb\336.bomb
+18:47:04,487 - [MAIN] - ERROR - Game.Logic.BallMgr - can't find bomb file:bomb\346.bomb
+18:47:04,492 - [MAIN] - ERROR - Game.Logic.BallMgr - can't find bomb file:bomb\356.bomb
+18:47:04,498 - [MAIN] - ERROR - Game.Logic.BallMgr - can't find bomb file:bomb\366.bomb
+18:47:04,503 - [MAIN] - ERROR - Game.Logic.BallMgr - can't find bomb file:bomb\376.bomb
+18:47:04,508 - [MAIN] - ERROR - Game.Logic.BallMgr - can't find bomb file:bomb\386.bomb
+18:47:04,514 - [MAIN] - ERROR - Game.Logic.BallMgr - can't find bomb file:bomb\396.bomb
+18:47:04,520 - [MAIN] - ERROR - Game.Logic.BallMgr - can't find bomb file:bomb\406.bomb
+18:47:04,525 - [MAIN] - ERROR - Game.Logic.BallMgr - can't find bomb file:bomb\417.bomb
+18:47:04,530 - [MAIN] - ERROR - Game.Logic.BallMgr - can't find bomb file:bomb\425.bomb
+18:47:04,536 - [MAIN] - ERROR - Game.Logic.BallMgr - can't find bomb file:bomb\435.bomb
+18:47:04,541 - [MAIN] - ERROR - Game.Logic.BallMgr - can't find bomb file:bomb\445.bomb
+18:47:04,547 - [MAIN] - ERROR - Game.Logic.BallMgr - can't find bomb file:bomb\455.bomb
+18:47:04,552 - [MAIN] - ERROR - Game.Logic.BallMgr - can't find bomb file:bomb\466.bomb
+18:47:04,553 - [MAIN] - ERROR - Game.Logic.BallMgr - can't find bomb file:bomb\467.bomb
+18:47:04,558 - [MAIN] - ERROR - Game.Logic.BallMgr - can't find bomb file:bomb\476.bomb
+18:47:04,559 - [MAIN] - ERROR - Game.Logic.BallMgr - can't find bomb file:bomb\477.bomb
+18:47:04,564 - [MAIN] - ERROR - Game.Logic.BallMgr - can't find bomb file:bomb\486.bomb
+18:47:04,569 - [MAIN] - ERROR - Game.Logic.BallMgr - can't find bomb file:bomb\496.bomb
+18:47:04,576 - [MAIN] - ERROR - Game.Logic.BallMgr - can't find bomb file:bomb\505.bomb
+18:47:04,582 - [MAIN] - ERROR - Game.Logic.BallMgr - can't find bomb file:bomb\515.bomb
+18:47:04,587 - [MAIN] - ERROR - Game.Logic.BallMgr - can't find bomb file:bomb\525.bomb
+18:47:04,592 - [MAIN] - ERROR - Game.Logic.BallMgr - can't find bomb file:bomb\535.bomb
+18:47:04,598 - [MAIN] - ERROR - Game.Logic.BallMgr - can't find bomb file:bomb\545.bomb
+18:47:04,603 - [MAIN] - ERROR - Game.Logic.BallMgr - can't find bomb file:bomb\555.bomb
+18:47:04,609 - [MAIN] - ERROR - Game.Logic.BallMgr - can't find bomb file:bomb\565.bomb
+18:47:04,615 - [MAIN] - ERROR - Game.Logic.BallMgr - can't find bomb file:bomb\575.bomb
+18:47:04,620 - [MAIN] - ERROR - Game.Logic.BallMgr - can't find bomb file:bomb\585.bomb
+18:47:04,654 - [MAIN] - ERROR - Game.Logic.BallMgr - can't find bomb file:bomb\595.bomb
+18:47:04,654 - [MAIN] - ERROR - Game.Logic.BallMgr - can't find bomb file:bomb\601.bomb
+18:47:04,655 - [MAIN] - ERROR - Game.Logic.BallMgr - can't find bomb file:bomb\602.bomb
+18:47:04,656 - [MAIN] - ERROR - Game.Logic.BallMgr - can't find bomb file:bomb\603.bomb
+18:47:04,657 - [MAIN] - ERROR - Game.Logic.BallMgr - can't find bomb file:bomb\604.bomb
+18:47:04,657 - [MAIN] - ERROR - Game.Logic.BallMgr - can't find bomb file:bomb\605.bomb
+18:47:04,663 - [MAIN] - ERROR - Game.Logic.BallMgr - can't find bomb file:bomb\615.bomb
+18:47:04,664 - [MAIN] - ERROR - Game.Logic.BallMgr - can't find bomb file:bomb\621.bomb
+18:47:04,666 - [MAIN] - ERROR - Game.Logic.BallMgr - can't find bomb file:bomb\622.bomb
+18:47:04,666 - [MAIN] - ERROR - Game.Logic.BallMgr - can't find bomb file:bomb\623.bomb
+18:47:04,667 - [MAIN] - ERROR - Game.Logic.BallMgr - can't find bomb file:bomb\624.bomb
+18:47:04,667 - [MAIN] - ERROR - Game.Logic.BallMgr - can't find bomb file:bomb\625.bomb
+18:47:04,668 - [MAIN] - ERROR - Game.Logic.BallMgr - can't find bomb file:bomb\631.bomb
+18:47:04,668 - [MAIN] - ERROR - Game.Logic.BallMgr - can't find bomb file:bomb\632.bomb
+18:47:04,669 - [MAIN] - ERROR - Game.Logic.BallMgr - can't find bomb file:bomb\633.bomb
+18:47:04,669 - [MAIN] - ERROR - Game.Logic.BallMgr - can't find bomb file:bomb\634.bomb
+18:47:04,670 - [MAIN] - ERROR - Game.Logic.BallMgr - can't find bomb file:bomb\635.bomb
+18:47:04,675 - [MAIN] - ERROR - Game.Logic.BallMgr - can't find bomb file:bomb\645.bomb
+18:47:04,708 - [MAIN] - ERROR - Game.Logic.BallMgr - can't find bomb file:bomb\655.bomb
+18:47:04,747 - [MAIN] - ERROR - Game.Logic.BallMgr - can't find bomb file:bomb\666.bomb
+18:47:04,781 - [MAIN] - ERROR - Game.Logic.BallMgr - can't find bomb file:bomb\676.bomb
+18:47:04,781 - [MAIN] - ERROR - Game.Logic.BallMgr - can't find bomb file:bomb\681.bomb
+18:47:04,782 - [MAIN] - ERROR - Game.Logic.BallMgr - can't find bomb file:bomb\682.bomb
+18:47:04,783 - [MAIN] - ERROR - Game.Logic.BallMgr - can't find bomb file:bomb\683.bomb
+18:47:04,784 - [MAIN] - ERROR - Game.Logic.BallMgr - can't find bomb file:bomb\684.bomb
+18:47:04,785 - [MAIN] - ERROR - Game.Logic.BallMgr - can't find bomb file:bomb\685.bomb
+18:47:04,785 - [MAIN] - ERROR - Game.Logic.BallMgr - can't find bomb file:bomb\691.bomb
+18:47:04,786 - [MAIN] - ERROR - Game.Logic.BallMgr - can't find bomb file:bomb\692.bomb
+18:47:04,786 - [MAIN] - ERROR - Game.Logic.BallMgr - can't find bomb file:bomb\693.bomb
+18:47:04,787 - [MAIN] - ERROR - Game.Logic.BallMgr - can't find bomb file:bomb\694.bomb
+18:47:04,787 - [MAIN] - ERROR - Game.Logic.BallMgr - can't find bomb file:bomb\695.bomb
+18:47:04,793 - [MAIN] - ERROR - Game.Logic.BallMgr - can't find bomb file:bomb\706.bomb
+18:47:04,809 - [MAIN] - ERROR - Game.Logic.BallMgr - can't find bomb file:bomb\716.bomb
+18:47:04,814 - [MAIN] - ERROR - Game.Logic.BallMgr - can't find bomb file:bomb\725.bomb
+18:47:04,814 - [MAIN] - ERROR - Game.Logic.BallMgr - can't find bomb file:bomb\731.bomb
+18:47:04,815 - [MAIN] - ERROR - Game.Logic.BallMgr - can't find bomb file:bomb\732.bomb
+18:47:04,816 - [MAIN] - ERROR - Game.Logic.BallMgr - can't find bomb file:bomb\733.bomb
+18:47:04,816 - [MAIN] - ERROR - Game.Logic.BallMgr - can't find bomb file:bomb\734.bomb
+18:47:04,817 - [MAIN] - ERROR - Game.Logic.BallMgr - can't find bomb file:bomb\735.bomb
+18:47:04,820 - [MAIN] - ERROR - Game.Logic.BallMgr - can't find bomb file:bomb\742.bomb
+18:47:04,820 - [MAIN] - ERROR - Game.Logic.BallMgr - can't find bomb file:bomb\743.bomb
+18:47:04,821 - [MAIN] - ERROR - Game.Logic.BallMgr - can't find bomb file:bomb\744.bomb
+18:47:04,821 - [MAIN] - ERROR - Game.Logic.BallMgr - can't find bomb file:bomb\745.bomb
+18:47:04,822 - [MAIN] - ERROR - Game.Logic.BallMgr - can't find bomb file:bomb\751.bomb
+18:47:04,822 - [MAIN] - ERROR - Game.Logic.BallMgr - can't find bomb file:bomb\752.bomb
+18:47:04,823 - [MAIN] - ERROR - Game.Logic.BallMgr - can't find bomb file:bomb\753.bomb
+18:47:04,824 - [MAIN] - ERROR - Game.Logic.BallMgr - can't find bomb file:bomb\754.bomb
+18:47:04,824 - [MAIN] - ERROR - Game.Logic.BallMgr - can't find bomb file:bomb\755.bomb
+18:47:04,825 - [MAIN] - ERROR - Game.Logic.BallMgr - can't find bomb file:bomb\761.bomb
+18:47:04,826 - [MAIN] - ERROR - Game.Logic.BallMgr - can't find bomb file:bomb\762.bomb
+18:47:04,826 - [MAIN] - ERROR - Game.Logic.BallMgr - can't find bomb file:bomb\763.bomb
+18:47:04,827 - [MAIN] - ERROR - Game.Logic.BallMgr - can't find bomb file:bomb\764.bomb
+18:47:04,827 - [MAIN] - ERROR - Game.Logic.BallMgr - can't find bomb file:bomb\765.bomb
+18:47:04,831 - [MAIN] - ERROR - Game.Logic.BallMgr - can't find bomb file:bomb\771.bomb
+18:47:04,832 - [MAIN] - ERROR - Game.Logic.BallMgr - can't find bomb file:bomb\772.bomb
+18:47:04,832 - [MAIN] - ERROR - Game.Logic.BallMgr - can't find bomb file:bomb\773.bomb
+18:47:04,833 - [MAIN] - ERROR - Game.Logic.BallMgr - can't find bomb file:bomb\774.bomb
+18:47:04,834 - [MAIN] - ERROR - Game.Logic.BallMgr - can't find bomb file:bomb\775.bomb
+18:47:04,834 - [MAIN] - ERROR - Game.Logic.BallMgr - can't find bomb file:bomb\801.bomb
+18:47:04,835 - [MAIN] - ERROR - Game.Logic.BallMgr - can't find bomb file:bomb\802.bomb
+18:47:04,835 - [MAIN] - ERROR - Game.Logic.BallMgr - can't find bomb file:bomb\803.bomb
+18:47:04,836 - [MAIN] - ERROR - Game.Logic.BallMgr - can't find bomb file:bomb\804.bomb
+18:47:04,836 - [MAIN] - ERROR - Game.Logic.BallMgr - can't find bomb file:bomb\805.bomb
+18:47:04,837 - [MAIN] - ERROR - Game.Logic.BallMgr - can't find bomb file:bomb\811.bomb
+18:47:04,838 - [MAIN] - ERROR - Game.Logic.BallMgr - can't find bomb file:bomb\812.bomb
+18:47:04,838 - [MAIN] - ERROR - Game.Logic.BallMgr - can't find bomb file:bomb\813.bomb
+18:47:04,839 - [MAIN] - ERROR - Game.Logic.BallMgr - can't find bomb file:bomb\814.bomb
+18:47:04,839 - [MAIN] - ERROR - Game.Logic.BallMgr - can't find bomb file:bomb\815.bomb
+18:47:04,842 - [MAIN] - ERROR - Game.Logic.BallMgr - can't find bomb file:bomb\821.bomb
+18:47:04,843 - [MAIN] - ERROR - Game.Logic.BallMgr - can't find bomb file:bomb\822.bomb
+18:47:04,843 - [MAIN] - ERROR - Game.Logic.BallMgr - can't find bomb file:bomb\823.bomb
+18:47:04,844 - [MAIN] - ERROR - Game.Logic.BallMgr - can't find bomb file:bomb\824.bomb
+18:47:04,845 - [MAIN] - ERROR - Game.Logic.BallMgr - can't find bomb file:bomb\825.bomb
+18:47:04,845 - [MAIN] - ERROR - Game.Logic.BallMgr - can't find bomb file:bomb\831.bomb
+18:47:04,846 - [MAIN] - ERROR - Game.Logic.BallMgr - can't find bomb file:bomb\832.bomb
+18:47:04,847 - [MAIN] - ERROR - Game.Logic.BallMgr - can't find bomb file:bomb\833.bomb
+18:47:04,847 - [MAIN] - ERROR - Game.Logic.BallMgr - can't find bomb file:bomb\834.bomb
+18:47:04,848 - [MAIN] - ERROR - Game.Logic.BallMgr - can't find bomb file:bomb\835.bomb
+18:47:04,849 - [MAIN] - ERROR - Game.Logic.BallMgr - can't find bomb file:bomb\841.bomb
+18:47:04,851 - [MAIN] - ERROR - Game.Logic.BallMgr - can't find bomb file:bomb\842.bomb
+18:47:04,853 - [MAIN] - ERROR - Game.Logic.BallMgr - can't find bomb file:bomb\843.bomb
+18:47:04,854 - [MAIN] - ERROR - Game.Logic.BallMgr - can't find bomb file:bomb\844.bomb
+18:47:04,855 - [MAIN] - ERROR - Game.Logic.BallMgr - can't find bomb file:bomb\845.bomb
+18:47:04,855 - [MAIN] - ERROR - Game.Logic.BallMgr - can't find bomb file:bomb\851.bomb
+18:47:04,856 - [MAIN] - ERROR - Game.Logic.BallMgr - can't find bomb file:bomb\852.bomb
+18:47:04,856 - [MAIN] - ERROR - Game.Logic.BallMgr - can't find bomb file:bomb\853.bomb
+18:47:04,857 - [MAIN] - ERROR - Game.Logic.BallMgr - can't find bomb file:bomb\854.bomb
+18:47:04,858 - [MAIN] - ERROR - Game.Logic.BallMgr - can't find bomb file:bomb\855.bomb
+18:47:04,858 - [MAIN] - ERROR - Game.Logic.BallMgr - can't find bomb file:bomb\861.bomb
+18:47:04,859 - [MAIN] - ERROR - Game.Logic.BallMgr - can't find bomb file:bomb\862.bomb
+18:47:04,859 - [MAIN] - ERROR - Game.Logic.BallMgr - can't find bomb file:bomb\863.bomb
+18:47:04,860 - [MAIN] - ERROR - Game.Logic.BallMgr - can't find bomb file:bomb\864.bomb
+18:47:04,861 - [MAIN] - ERROR - Game.Logic.BallMgr - can't find bomb file:bomb\865.bomb
+18:47:04,865 - [MAIN] - ERROR - Game.Logic.BallMgr - can't find bomb file:bomb\871.bomb
+18:47:04,865 - [MAIN] - ERROR - Game.Logic.BallMgr - can't find bomb file:bomb\872.bomb
+18:47:04,866 - [MAIN] - ERROR - Game.Logic.BallMgr - can't find bomb file:bomb\873.bomb
+18:47:04,866 - [MAIN] - ERROR - Game.Logic.BallMgr - can't find bomb file:bomb\874.bomb
+18:47:04,867 - [MAIN] - ERROR - Game.Logic.BallMgr - can't find bomb file:bomb\875.bomb
+18:47:04,869 - [MAIN] - ERROR - Game.Logic.BallMgr - can't find bomb file:bomb\885.bomb
+18:47:04,869 - [MAIN] - ERROR - Game.Logic.BallMgr - can't find bomb file:bomb\886.bomb
+18:47:04,869 - [MAIN] - ERROR - Game.Logic.BallMgr - can't find bomb file:bomb\887.bomb
+18:47:04,870 - [MAIN] - ERROR - Game.Logic.BallMgr - can't find bomb file:bomb\888.bomb
+18:47:04,871 - [MAIN] - ERROR - Game.Logic.BallMgr - can't find bomb file:bomb\890.bomb
+18:47:04,872 - [MAIN] - ERROR - Game.Logic.BallMgr - can't find bomb file:bomb\892.bomb
+18:47:04,872 - [MAIN] - ERROR - Game.Logic.BallMgr - can't find bomb file:bomb\893.bomb
+18:47:04,872 - [MAIN] - ERROR - Game.Logic.BallMgr - can't find bomb file:bomb\894.bomb
+18:47:04,873 - [MAIN] - ERROR - Game.Logic.BallMgr - can't find bomb file:bomb\895.bomb
+18:47:04,880 - [MAIN] - ERROR - Game.Logic.BallMgr - can't find bomb file:bomb\991.bomb
+18:47:04,881 - [MAIN] - ERROR - Game.Logic.BallMgr - can't find bomb file:bomb\992.bomb
+18:47:04,881 - [MAIN] - ERROR - Game.Logic.BallMgr - can't find bomb file:bomb\993.bomb
+18:47:04,882 - [MAIN] - ERROR - Game.Logic.BallMgr - can't find bomb file:bomb\994.bomb
+18:47:04,883 - [MAIN] - ERROR - Game.Logic.BallMgr - can't find bomb file:bomb\995.bomb
+18:47:04,883 - [MAIN] - ERROR - Game.Logic.BallMgr - can't find bomb file:bomb\1001.bomb
+18:47:04,884 - [MAIN] - ERROR - Game.Logic.BallMgr - can't find bomb file:bomb\1002.bomb
+18:47:04,884 - [MAIN] - ERROR - Game.Logic.BallMgr - can't find bomb file:bomb\1003.bomb
+18:47:04,886 - [MAIN] - ERROR - Game.Logic.BallMgr - can't find bomb file:bomb\1004.bomb
+18:47:04,887 - [MAIN] - ERROR - Game.Logic.BallMgr - can't find bomb file:bomb\1005.bomb
+18:47:04,898 - [MAIN] - ERROR - Game.Logic.BallMgr - can't find bomb file:bomb\1061.bomb
+18:47:04,898 - [MAIN] - ERROR - Game.Logic.BallMgr - can't find bomb file:bomb\1062.bomb
+18:47:04,909 - [MAIN] - ERROR - Game.Logic.BallMgr - can't find bomb file:bomb\1261.bomb
+18:47:04,909 - [MAIN] - ERROR - Game.Logic.BallMgr - can't find bomb file:bomb\1262.bomb
+18:47:04,920 - [MAIN] - ERROR - Game.Logic.BallMgr - can't find bomb file:bomb\1461.bomb
+18:47:04,921 - [MAIN] - ERROR - Game.Logic.BallMgr - can't find bomb file:bomb\1462.bomb
+18:47:04,932 - [MAIN] - ERROR - Game.Logic.BallMgr - can't find bomb file:bomb\1661.bomb
+18:47:04,932 - [MAIN] - ERROR - Game.Logic.BallMgr - can't find bomb file:bomb\1662.bomb
+18:47:04,933 - [MAIN] - ERROR - Game.Logic.BallMgr - can't find bomb file:bomb\1811.bomb
+18:47:04,933 - [MAIN] - ERROR - Game.Logic.BallMgr - can't find bomb file:bomb\1812.bomb
+18:47:04,934 - [MAIN] - ERROR - Game.Logic.BallMgr - can't find bomb file:bomb\1821.bomb
+18:47:04,935 - [MAIN] - ERROR - Game.Logic.BallMgr - can't find bomb file:bomb\1822.bomb
+18:47:04,935 - [MAIN] - ERROR - Game.Logic.BallMgr - can't find bomb file:bomb\1831.bomb
+18:47:04,936 - [MAIN] - ERROR - Game.Logic.BallMgr - can't find bomb file:bomb\1832.bomb
+18:47:04,937 - [MAIN] - ERROR - Game.Logic.BallMgr - can't find bomb file:bomb\1841.bomb
+18:47:04,937 - [MAIN] - ERROR - Game.Logic.BallMgr - can't find bomb file:bomb\1842.bomb
+18:47:04,938 - [MAIN] - ERROR - Game.Logic.BallMgr - can't find bomb file:bomb\1851.bomb
+18:47:04,939 - [MAIN] - ERROR - Game.Logic.BallMgr - can't find bomb file:bomb\1852.bomb
+18:47:04,940 - [MAIN] - ERROR - Game.Logic.BallMgr - can't find bomb file:bomb\2011.bomb
+18:47:04,940 - [MAIN] - ERROR - Game.Logic.BallMgr - can't find bomb file:bomb\2012.bomb
+18:47:04,943 - [MAIN] - ERROR - Game.Logic.BallMgr - can't find bomb file:bomb\2021.bomb
+18:47:04,943 - [MAIN] - ERROR - Game.Logic.BallMgr - can't find bomb file:bomb\2022.bomb
+18:47:04,944 - [MAIN] - ERROR - Game.Logic.BallMgr - can't find bomb file:bomb\2031.bomb
+18:47:04,945 - [MAIN] - ERROR - Game.Logic.BallMgr - can't find bomb file:bomb\2032.bomb
+18:47:04,945 - [MAIN] - ERROR - Game.Logic.BallMgr - can't find bomb file:bomb\2041.bomb
+18:47:04,946 - [MAIN] - ERROR - Game.Logic.BallMgr - can't find bomb file:bomb\2042.bomb
+18:47:04,948 - [MAIN] - ERROR - Game.Logic.BallMgr - can't find bomb file:bomb\2051.bomb
+18:47:04,948 - [MAIN] - ERROR - Game.Logic.BallMgr - can't find bomb file:bomb\2052.bomb
+18:47:04,949 - [MAIN] - ERROR - Game.Logic.BallMgr - can't find bomb file:bomb\2211.bomb
+18:47:04,949 - [MAIN] - ERROR - Game.Logic.BallMgr - can't find bomb file:bomb\2212.bomb
+18:47:04,950 - [MAIN] - ERROR - Game.Logic.BallMgr - can't find bomb file:bomb\2221.bomb
+18:47:04,951 - [MAIN] - ERROR - Game.Logic.BallMgr - can't find bomb file:bomb\2222.bomb
+18:47:04,951 - [MAIN] - ERROR - Game.Logic.BallMgr - can't find bomb file:bomb\2231.bomb
+18:47:04,954 - [MAIN] - ERROR - Game.Logic.BallMgr - can't find bomb file:bomb\2232.bomb
+18:47:04,954 - [MAIN] - ERROR - Game.Logic.BallMgr - can't find bomb file:bomb\2241.bomb
+18:47:04,955 - [MAIN] - ERROR - Game.Logic.BallMgr - can't find bomb file:bomb\2242.bomb
+18:47:04,956 - [MAIN] - ERROR - Game.Logic.BallMgr - can't find bomb file:bomb\2251.bomb
+18:47:04,957 - [MAIN] - ERROR - Game.Logic.BallMgr - can't find bomb file:bomb\2252.bomb
+18:47:04,958 - [MAIN] - ERROR - Game.Logic.BallMgr - can't find bomb file:bomb\2411.bomb
+18:47:04,959 - [MAIN] - ERROR - Game.Logic.BallMgr - can't find bomb file:bomb\2412.bomb
+18:47:04,959 - [MAIN] - ERROR - Game.Logic.BallMgr - can't find bomb file:bomb\2421.bomb
+18:47:04,960 - [MAIN] - ERROR - Game.Logic.BallMgr - can't find bomb file:bomb\2422.bomb
+18:47:04,960 - [MAIN] - ERROR - Game.Logic.BallMgr - can't find bomb file:bomb\2431.bomb
+18:47:04,961 - [MAIN] - ERROR - Game.Logic.BallMgr - can't find bomb file:bomb\2432.bomb
+18:47:04,962 - [MAIN] - ERROR - Game.Logic.BallMgr - can't find bomb file:bomb\2441.bomb
+18:47:04,962 - [MAIN] - ERROR - Game.Logic.BallMgr - can't find bomb file:bomb\2442.bomb
+18:47:04,965 - [MAIN] - ERROR - Game.Logic.BallMgr - can't find bomb file:bomb\2451.bomb
+18:47:04,966 - [MAIN] - ERROR - Game.Logic.BallMgr - can't find bomb file:bomb\2452.bomb
+18:47:04,967 - [MAIN] - ERROR - Game.Logic.BallMgr - can't find bomb file:bomb\2611.bomb
+18:47:04,967 - [MAIN] - ERROR - Game.Logic.BallMgr - can't find bomb file:bomb\2612.bomb
+18:47:04,968 - [MAIN] - ERROR - Game.Logic.BallMgr - can't find bomb file:bomb\2621.bomb
+18:47:04,969 - [MAIN] - ERROR - Game.Logic.BallMgr - can't find bomb file:bomb\2622.bomb
+18:47:04,969 - [MAIN] - ERROR - Game.Logic.BallMgr - can't find bomb file:bomb\2631.bomb
+18:47:04,970 - [MAIN] - ERROR - Game.Logic.BallMgr - can't find bomb file:bomb\2632.bomb
+18:47:04,971 - [MAIN] - ERROR - Game.Logic.BallMgr - can't find bomb file:bomb\2641.bomb
+18:47:04,972 - [MAIN] - ERROR - Game.Logic.BallMgr - can't find bomb file:bomb\2642.bomb
+18:47:04,973 - [MAIN] - ERROR - Game.Logic.BallMgr - can't find bomb file:bomb\2651.bomb
+18:47:04,973 - [MAIN] - ERROR - Game.Logic.BallMgr - can't find bomb file:bomb\2652.bomb
+18:47:04,976 - [MAIN] - ERROR - Game.Logic.BallMgr - can't find bomb file:bomb\2811.bomb
+18:47:04,976 - [MAIN] - ERROR - Game.Logic.BallMgr - can't find bomb file:bomb\2812.bomb
+18:47:04,977 - [MAIN] - ERROR - Game.Logic.BallMgr - can't find bomb file:bomb\2821.bomb
+18:47:04,977 - [MAIN] - ERROR - Game.Logic.BallMgr - can't find bomb file:bomb\2822.bomb
+18:47:04,978 - [MAIN] - ERROR - Game.Logic.BallMgr - can't find bomb file:bomb\2831.bomb
+18:47:04,978 - [MAIN] - ERROR - Game.Logic.BallMgr - can't find bomb file:bomb\2832.bomb
+18:47:04,979 - [MAIN] - ERROR - Game.Logic.BallMgr - can't find bomb file:bomb\2841.bomb
+18:47:04,980 - [MAIN] - ERROR - Game.Logic.BallMgr - can't find bomb file:bomb\2842.bomb
+18:47:04,980 - [MAIN] - ERROR - Game.Logic.BallMgr - can't find bomb file:bomb\2851.bomb
+18:47:04,981 - [MAIN] - ERROR - Game.Logic.BallMgr - can't find bomb file:bomb\2852.bomb
+18:47:04,982 - [MAIN] - ERROR - Game.Logic.BallMgr - can't find bomb file:bomb\3011.bomb
+18:47:04,982 - [MAIN] - ERROR - Game.Logic.BallMgr - can't find bomb file:bomb\3012.bomb
+18:47:04,983 - [MAIN] - ERROR - Game.Logic.BallMgr - can't find bomb file:bomb\3021.bomb
+18:47:04,983 - [MAIN] - ERROR - Game.Logic.BallMgr - can't find bomb file:bomb\3022.bomb
+18:47:04,986 - [MAIN] - ERROR - Game.Logic.BallMgr - can't find bomb file:bomb\3031.bomb
+18:47:04,987 - [MAIN] - ERROR - Game.Logic.BallMgr - can't find bomb file:bomb\3032.bomb
+18:47:04,988 - [MAIN] - ERROR - Game.Logic.BallMgr - can't find bomb file:bomb\3041.bomb
+18:47:04,988 - [MAIN] - ERROR - Game.Logic.BallMgr - can't find bomb file:bomb\3042.bomb
+18:47:04,989 - [MAIN] - ERROR - Game.Logic.BallMgr - can't find bomb file:bomb\3051.bomb
+18:47:04,990 - [MAIN] - ERROR - Game.Logic.BallMgr - can't find bomb file:bomb\3052.bomb
+18:47:05,001 - [MAIN] - ERROR - Game.Logic.BallMgr - can't find bomb file:bomb\3261.bomb
+18:47:05,002 - [MAIN] - ERROR - Game.Logic.BallMgr - can't find bomb file:bomb\3262.bomb
+18:47:05,013 - [MAIN] - ERROR - Game.Logic.BallMgr - can't find bomb file:bomb\3461.bomb
+18:47:05,013 - [MAIN] - ERROR - Game.Logic.BallMgr - can't find bomb file:bomb\3462.bomb
+18:47:05,033 - [MAIN] - ERROR - Game.Logic.BallMgr - can't find bomb file:bomb\3661.bomb
+18:47:05,034 - [MAIN] - ERROR - Game.Logic.BallMgr - can't find bomb file:bomb\3662.bomb
+18:47:05,044 - [MAIN] - ERROR - Game.Logic.BallMgr - can't find bomb file:bomb\3861.bomb
+18:47:05,044 - [MAIN] - ERROR - Game.Logic.BallMgr - can't find bomb file:bomb\3862.bomb
+18:47:05,078 - [MAIN] - ERROR - Game.Logic.BallMgr - can't find bomb file:bomb\4061.bomb
+18:47:05,079 - [MAIN] - ERROR - Game.Logic.BallMgr - can't find bomb file:bomb\4062.bomb
+18:47:05,079 - [MAIN] - ERROR - Game.Logic.BallMgr - can't find bomb file:bomb\4211.bomb
+18:47:05,080 - [MAIN] - ERROR - Game.Logic.BallMgr - can't find bomb file:bomb\4212.bomb
+18:47:05,081 - [MAIN] - ERROR - Game.Logic.BallMgr - can't find bomb file:bomb\4221.bomb
+18:47:05,081 - [MAIN] - ERROR - Game.Logic.BallMgr - can't find bomb file:bomb\4222.bomb
+18:47:05,082 - [MAIN] - ERROR - Game.Logic.BallMgr - can't find bomb file:bomb\4231.bomb
+18:47:05,083 - [MAIN] - ERROR - Game.Logic.BallMgr - can't find bomb file:bomb\4232.bomb
+18:47:05,083 - [MAIN] - ERROR - Game.Logic.BallMgr - can't find bomb file:bomb\4241.bomb
+18:47:05,084 - [MAIN] - ERROR - Game.Logic.BallMgr - can't find bomb file:bomb\4242.bomb
+18:47:05,085 - [MAIN] - ERROR - Game.Logic.BallMgr - can't find bomb file:bomb\4251.bomb
+18:47:05,085 - [MAIN] - ERROR - Game.Logic.BallMgr - can't find bomb file:bomb\4252.bomb
+18:47:05,086 - [MAIN] - ERROR - Game.Logic.BallMgr - can't find bomb file:bomb\4411.bomb
+18:47:05,089 - [MAIN] - ERROR - Game.Logic.BallMgr - can't find bomb file:bomb\4412.bomb
+18:47:05,090 - [MAIN] - ERROR - Game.Logic.BallMgr - can't find bomb file:bomb\4421.bomb
+18:47:05,090 - [MAIN] - ERROR - Game.Logic.BallMgr - can't find bomb file:bomb\4422.bomb
+18:47:05,091 - [MAIN] - ERROR - Game.Logic.BallMgr - can't find bomb file:bomb\4431.bomb
+18:47:05,091 - [MAIN] - ERROR - Game.Logic.BallMgr - can't find bomb file:bomb\4432.bomb
+18:47:05,092 - [MAIN] - ERROR - Game.Logic.BallMgr - can't find bomb file:bomb\4441.bomb
+18:47:05,092 - [MAIN] - ERROR - Game.Logic.BallMgr - can't find bomb file:bomb\4442.bomb
+18:47:05,093 - [MAIN] - ERROR - Game.Logic.BallMgr - can't find bomb file:bomb\4451.bomb
+18:47:05,094 - [MAIN] - ERROR - Game.Logic.BallMgr - can't find bomb file:bomb\4452.bomb
+18:47:05,104 - [MAIN] - ERROR - Game.Logic.BallMgr - can't find bomb file:bomb\4661.bomb
+18:47:05,104 - [MAIN] - ERROR - Game.Logic.BallMgr - can't find bomb file:bomb\4662.bomb
+18:47:05,105 - [MAIN] - ERROR - Game.Logic.BallMgr - can't find bomb file:bomb\4671.bomb
+18:47:05,106 - [MAIN] - ERROR - Game.Logic.BallMgr - can't find bomb file:bomb\4672.bomb
+18:47:05,116 - [MAIN] - ERROR - Game.Logic.BallMgr - can't find bomb file:bomb\4861.bomb
+18:47:05,116 - [MAIN] - ERROR - Game.Logic.BallMgr - can't find bomb file:bomb\4862.bomb
+18:47:05,117 - [MAIN] - ERROR - Game.Logic.BallMgr - can't find bomb file:bomb\5011.bomb
+18:47:05,119 - [MAIN] - ERROR - Game.Logic.BallMgr - can't find bomb file:bomb\5012.bomb
+18:47:05,119 - [MAIN] - ERROR - Game.Logic.BallMgr - can't find bomb file:bomb\5021.bomb
+18:47:05,120 - [MAIN] - ERROR - Game.Logic.BallMgr - can't find bomb file:bomb\5022.bomb
+18:47:05,121 - [MAIN] - ERROR - Game.Logic.BallMgr - can't find bomb file:bomb\5031.bomb
+18:47:05,121 - [MAIN] - ERROR - Game.Logic.BallMgr - can't find bomb file:bomb\5032.bomb
+18:47:05,122 - [MAIN] - ERROR - Game.Logic.BallMgr - can't find bomb file:bomb\5041.bomb
+18:47:05,123 - [MAIN] - ERROR - Game.Logic.BallMgr - can't find bomb file:bomb\5042.bomb
+18:47:05,124 - [MAIN] - ERROR - Game.Logic.BallMgr - can't find bomb file:bomb\5051.bomb
+18:47:05,124 - [MAIN] - ERROR - Game.Logic.BallMgr - can't find bomb file:bomb\5052.bomb
+18:47:05,125 - [MAIN] - ERROR - Game.Logic.BallMgr - can't find bomb file:bomb\5211.bomb
+18:47:05,125 - [MAIN] - ERROR - Game.Logic.BallMgr - can't find bomb file:bomb\5212.bomb
+18:47:05,126 - [MAIN] - ERROR - Game.Logic.BallMgr - can't find bomb file:bomb\5221.bomb
+18:47:05,126 - [MAIN] - ERROR - Game.Logic.BallMgr - can't find bomb file:bomb\5222.bomb
+18:47:05,129 - [MAIN] - ERROR - Game.Logic.BallMgr - can't find bomb file:bomb\5231.bomb
+18:47:05,130 - [MAIN] - ERROR - Game.Logic.BallMgr - can't find bomb file:bomb\5232.bomb
+18:47:05,133 - [MAIN] - ERROR - Game.Logic.BallMgr - can't find bomb file:bomb\5241.bomb
+18:47:05,134 - [MAIN] - ERROR - Game.Logic.BallMgr - can't find bomb file:bomb\5242.bomb
+18:47:05,135 - [MAIN] - ERROR - Game.Logic.BallMgr - can't find bomb file:bomb\5251.bomb
+18:47:05,136 - [MAIN] - ERROR - Game.Logic.BallMgr - can't find bomb file:bomb\5252.bomb
+18:47:05,136 - [MAIN] - ERROR - Game.Logic.BallMgr - can't find bomb file:bomb\5411.bomb
+18:47:05,137 - [MAIN] - ERROR - Game.Logic.BallMgr - can't find bomb file:bomb\5412.bomb
+18:47:05,140 - [MAIN] - ERROR - Game.Logic.BallMgr - can't find bomb file:bomb\5421.bomb
+18:47:05,141 - [MAIN] - ERROR - Game.Logic.BallMgr - can't find bomb file:bomb\5422.bomb
+18:47:05,141 - [MAIN] - ERROR - Game.Logic.BallMgr - can't find bomb file:bomb\5431.bomb
+18:47:05,142 - [MAIN] - ERROR - Game.Logic.BallMgr - can't find bomb file:bomb\5432.bomb
+18:47:05,143 - [MAIN] - ERROR - Game.Logic.BallMgr - can't find bomb file:bomb\5441.bomb
+18:47:05,143 - [MAIN] - ERROR - Game.Logic.BallMgr - can't find bomb file:bomb\5442.bomb
+18:47:05,144 - [MAIN] - ERROR - Game.Logic.BallMgr - can't find bomb file:bomb\5451.bomb
+18:47:05,145 - [MAIN] - ERROR - Game.Logic.BallMgr - can't find bomb file:bomb\5452.bomb
+18:47:05,145 - [MAIN] - ERROR - Game.Logic.BallMgr - can't find bomb file:bomb\5611.bomb
+18:47:05,147 - [MAIN] - ERROR - Game.Logic.BallMgr - can't find bomb file:bomb\5612.bomb
+18:47:05,148 - [MAIN] - ERROR - Game.Logic.BallMgr - can't find bomb file:bomb\5621.bomb
+18:47:05,150 - [MAIN] - ERROR - Game.Logic.BallMgr - can't find bomb file:bomb\5622.bomb
+18:47:05,151 - [MAIN] - ERROR - Game.Logic.BallMgr - can't find bomb file:bomb\5631.bomb
+18:47:05,152 - [MAIN] - ERROR - Game.Logic.BallMgr - can't find bomb file:bomb\5632.bomb
+18:47:05,153 - [MAIN] - ERROR - Game.Logic.BallMgr - can't find bomb file:bomb\5641.bomb
+18:47:05,153 - [MAIN] - ERROR - Game.Logic.BallMgr - can't find bomb file:bomb\5642.bomb
+18:47:05,154 - [MAIN] - ERROR - Game.Logic.BallMgr - can't find bomb file:bomb\5651.bomb
+18:47:05,154 - [MAIN] - ERROR - Game.Logic.BallMgr - can't find bomb file:bomb\5652.bomb
+18:47:05,155 - [MAIN] - ERROR - Game.Logic.BallMgr - can't find bomb file:bomb\5811.bomb
+18:47:05,156 - [MAIN] - ERROR - Game.Logic.BallMgr - can't find bomb file:bomb\5812.bomb
+18:47:05,158 - [MAIN] - ERROR - Game.Logic.BallMgr - can't find bomb file:bomb\5821.bomb
+18:47:05,158 - [MAIN] - ERROR - Game.Logic.BallMgr - can't find bomb file:bomb\5822.bomb
+18:47:05,160 - [MAIN] - ERROR - Game.Logic.BallMgr - can't find bomb file:bomb\5831.bomb
+18:47:05,161 - [MAIN] - ERROR - Game.Logic.BallMgr - can't find bomb file:bomb\5832.bomb
+18:47:05,162 - [MAIN] - ERROR - Game.Logic.BallMgr - can't find bomb file:bomb\5841.bomb
+18:47:05,162 - [MAIN] - ERROR - Game.Logic.BallMgr - can't find bomb file:bomb\5842.bomb
+18:47:05,163 - [MAIN] - ERROR - Game.Logic.BallMgr - can't find bomb file:bomb\5851.bomb
+18:47:05,164 - [MAIN] - ERROR - Game.Logic.BallMgr - can't find bomb file:bomb\5852.bomb
+18:47:05,165 - [MAIN] - ERROR - Game.Logic.BallMgr - can't find bomb file:bomb\6011.bomb
+18:47:05,165 - [MAIN] - ERROR - Game.Logic.BallMgr - can't find bomb file:bomb\6012.bomb
+18:47:05,166 - [MAIN] - ERROR - Game.Logic.BallMgr - can't find bomb file:bomb\6021.bomb
+18:47:05,166 - [MAIN] - ERROR - Game.Logic.BallMgr - can't find bomb file:bomb\6022.bomb
+18:47:05,167 - [MAIN] - ERROR - Game.Logic.BallMgr - can't find bomb file:bomb\6031.bomb
+18:47:05,168 - [MAIN] - ERROR - Game.Logic.BallMgr - can't find bomb file:bomb\6032.bomb
+18:47:05,168 - [MAIN] - ERROR - Game.Logic.BallMgr - can't find bomb file:bomb\6041.bomb
+18:47:05,171 - [MAIN] - ERROR - Game.Logic.BallMgr - can't find bomb file:bomb\6042.bomb
+18:47:05,171 - [MAIN] - ERROR - Game.Logic.BallMgr - can't find bomb file:bomb\6051.bomb
+18:47:05,172 - [MAIN] - ERROR - Game.Logic.BallMgr - can't find bomb file:bomb\6052.bomb
+18:47:05,173 - [MAIN] - ERROR - Game.Logic.BallMgr - can't find bomb file:bomb\6211.bomb
+18:47:05,173 - [MAIN] - ERROR - Game.Logic.BallMgr - can't find bomb file:bomb\6212.bomb
+18:47:05,174 - [MAIN] - ERROR - Game.Logic.BallMgr - can't find bomb file:bomb\6221.bomb
+18:47:05,174 - [MAIN] - ERROR - Game.Logic.BallMgr - can't find bomb file:bomb\6222.bomb
+18:47:05,175 - [MAIN] - ERROR - Game.Logic.BallMgr - can't find bomb file:bomb\6231.bomb
+18:47:05,175 - [MAIN] - ERROR - Game.Logic.BallMgr - can't find bomb file:bomb\6232.bomb
+18:47:05,176 - [MAIN] - ERROR - Game.Logic.BallMgr - can't find bomb file:bomb\6241.bomb
+18:47:05,177 - [MAIN] - ERROR - Game.Logic.BallMgr - can't find bomb file:bomb\6242.bomb
+18:47:05,178 - [MAIN] - ERROR - Game.Logic.BallMgr - can't find bomb file:bomb\6251.bomb
+18:47:05,179 - [MAIN] - ERROR - Game.Logic.BallMgr - can't find bomb file:bomb\6252.bomb
+18:47:05,179 - [MAIN] - ERROR - Game.Logic.BallMgr - can't find bomb file:bomb\6411.bomb
+18:47:05,182 - [MAIN] - ERROR - Game.Logic.BallMgr - can't find bomb file:bomb\6412.bomb
+18:47:05,183 - [MAIN] - ERROR - Game.Logic.BallMgr - can't find bomb file:bomb\6421.bomb
+18:47:05,183 - [MAIN] - ERROR - Game.Logic.BallMgr - can't find bomb file:bomb\6422.bomb
+18:47:05,184 - [MAIN] - ERROR - Game.Logic.BallMgr - can't find bomb file:bomb\6431.bomb
+18:47:05,185 - [MAIN] - ERROR - Game.Logic.BallMgr - can't find bomb file:bomb\6432.bomb
+18:47:05,185 - [MAIN] - ERROR - Game.Logic.BallMgr - can't find bomb file:bomb\6441.bomb
+18:47:05,186 - [MAIN] - ERROR - Game.Logic.BallMgr - can't find bomb file:bomb\6442.bomb
+18:47:05,187 - [MAIN] - ERROR - Game.Logic.BallMgr - can't find bomb file:bomb\6451.bomb
+18:47:05,187 - [MAIN] - ERROR - Game.Logic.BallMgr - can't find bomb file:bomb\6452.bomb
+18:47:05,200 - [MAIN] - ERROR - Game.Logic.BallMgr - can't find bomb file:bomb\6661.bomb
+18:47:05,200 - [MAIN] - ERROR - Game.Logic.BallMgr - can't find bomb file:bomb\6662.bomb
+18:47:05,202 - [MAIN] - ERROR - Game.Logic.BallMgr - can't find bomb file:bomb\6811.bomb
+18:47:05,202 - [MAIN] - ERROR - Game.Logic.BallMgr - can't find bomb file:bomb\6812.bomb
+18:47:05,204 - [MAIN] - ERROR - Game.Logic.BallMgr - can't find bomb file:bomb\6821.bomb
+18:47:05,205 - [MAIN] - ERROR - Game.Logic.BallMgr - can't find bomb file:bomb\6822.bomb
+18:47:05,206 - [MAIN] - ERROR - Game.Logic.BallMgr - can't find bomb file:bomb\6831.bomb
+18:47:05,207 - [MAIN] - ERROR - Game.Logic.BallMgr - can't find bomb file:bomb\6832.bomb
+18:47:05,207 - [MAIN] - ERROR - Game.Logic.BallMgr - can't find bomb file:bomb\6841.bomb
+18:47:05,208 - [MAIN] - ERROR - Game.Logic.BallMgr - can't find bomb file:bomb\6842.bomb
+18:47:05,208 - [MAIN] - ERROR - Game.Logic.BallMgr - can't find bomb file:bomb\6851.bomb
+18:47:05,209 - [MAIN] - ERROR - Game.Logic.BallMgr - can't find bomb file:bomb\6852.bomb
+18:47:05,220 - [MAIN] - ERROR - Game.Logic.BallMgr - can't find bomb file:bomb\7061.bomb
+18:47:05,220 - [MAIN] - ERROR - Game.Logic.BallMgr - can't find bomb file:bomb\7062.bomb
+18:47:05,221 - [MAIN] - ERROR - Game.Logic.BallMgr - can't find bomb file:bomb\7211.bomb
+18:47:05,223 - [MAIN] - ERROR - Game.Logic.BallMgr - can't find bomb file:bomb\7212.bomb
+18:47:05,223 - [MAIN] - ERROR - Game.Logic.BallMgr - can't find bomb file:bomb\7221.bomb
+18:47:05,224 - [MAIN] - ERROR - Game.Logic.BallMgr - can't find bomb file:bomb\7222.bomb
+18:47:05,225 - [MAIN] - ERROR - Game.Logic.BallMgr - can't find bomb file:bomb\7231.bomb
+18:47:05,226 - [MAIN] - ERROR - Game.Logic.BallMgr - can't find bomb file:bomb\7232.bomb
+18:47:05,227 - [MAIN] - ERROR - Game.Logic.BallMgr - can't find bomb file:bomb\7241.bomb
+18:47:05,227 - [MAIN] - ERROR - Game.Logic.BallMgr - can't find bomb file:bomb\7242.bomb
+18:47:05,228 - [MAIN] - ERROR - Game.Logic.BallMgr - can't find bomb file:bomb\7251.bomb
+18:47:05,228 - [MAIN] - ERROR - Game.Logic.BallMgr - can't find bomb file:bomb\7252.bomb
+18:47:05,229 - [MAIN] - ERROR - Game.Logic.BallMgr - can't find bomb file:bomb\7411.bomb
+18:47:05,230 - [MAIN] - ERROR - Game.Logic.BallMgr - can't find bomb file:bomb\7412.bomb
+18:47:05,231 - [MAIN] - ERROR - Game.Logic.BallMgr - can't find bomb file:bomb\7421.bomb
+18:47:05,233 - [MAIN] - ERROR - Game.Logic.BallMgr - can't find bomb file:bomb\7422.bomb
+18:47:05,234 - [MAIN] - ERROR - Game.Logic.BallMgr - can't find bomb file:bomb\7431.bomb
+18:47:05,234 - [MAIN] - ERROR - Game.Logic.BallMgr - can't find bomb file:bomb\7432.bomb
+18:47:05,235 - [MAIN] - ERROR - Game.Logic.BallMgr - can't find bomb file:bomb\7441.bomb
+18:47:05,237 - [MAIN] - ERROR - Game.Logic.BallMgr - can't find bomb file:bomb\7442.bomb
+18:47:05,238 - [MAIN] - ERROR - Game.Logic.BallMgr - can't find bomb file:bomb\7451.bomb
+18:47:05,238 - [MAIN] - ERROR - Game.Logic.BallMgr - can't find bomb file:bomb\7452.bomb
+18:47:05,239 - [MAIN] - ERROR - Game.Logic.BallMgr - can't find bomb file:bomb\7611.bomb
+18:47:05,239 - [MAIN] - ERROR - Game.Logic.BallMgr - can't find bomb file:bomb\7612.bomb
+18:47:05,240 - [MAIN] - ERROR - Game.Logic.BallMgr - can't find bomb file:bomb\7621.bomb
+18:47:05,240 - [MAIN] - ERROR - Game.Logic.BallMgr - can't find bomb file:bomb\7622.bomb
+18:47:05,241 - [MAIN] - ERROR - Game.Logic.BallMgr - can't find bomb file:bomb\7631.bomb
+18:47:05,241 - [MAIN] - ERROR - Game.Logic.BallMgr - can't find bomb file:bomb\7632.bomb
+18:47:05,244 - [MAIN] - ERROR - Game.Logic.BallMgr - can't find bomb file:bomb\7641.bomb
+18:47:05,245 - [MAIN] - ERROR - Game.Logic.BallMgr - can't find bomb file:bomb\7642.bomb
+18:47:05,245 - [MAIN] - ERROR - Game.Logic.BallMgr - can't find bomb file:bomb\7651.bomb
+18:47:05,246 - [MAIN] - ERROR - Game.Logic.BallMgr - can't find bomb file:bomb\7652.bomb
+18:47:05,247 - [MAIN] - ERROR - Game.Logic.BallMgr - can't find bomb file:bomb\8011.bomb
+18:47:05,247 - [MAIN] - ERROR - Game.Logic.BallMgr - can't find bomb file:bomb\8012.bomb
+18:47:05,248 - [MAIN] - ERROR - Game.Logic.BallMgr - can't find bomb file:bomb\8021.bomb
+18:47:05,248 - [MAIN] - ERROR - Game.Logic.BallMgr - can't find bomb file:bomb\8022.bomb
+18:47:05,249 - [MAIN] - ERROR - Game.Logic.BallMgr - can't find bomb file:bomb\8031.bomb
+18:47:05,249 - [MAIN] - ERROR - Game.Logic.BallMgr - can't find bomb file:bomb\8032.bomb
+18:47:05,250 - [MAIN] - ERROR - Game.Logic.BallMgr - can't find bomb file:bomb\8041.bomb
+18:47:05,251 - [MAIN] - ERROR - Game.Logic.BallMgr - can't find bomb file:bomb\8042.bomb
+18:47:05,252 - [MAIN] - ERROR - Game.Logic.BallMgr - can't find bomb file:bomb\8051.bomb
+18:47:05,252 - [MAIN] - ERROR - Game.Logic.BallMgr - can't find bomb file:bomb\8052.bomb
+18:47:05,255 - [MAIN] - ERROR - Game.Logic.BallMgr - can't find bomb file:bomb\8211.bomb
+18:47:05,256 - [MAIN] - ERROR - Game.Logic.BallMgr - can't find bomb file:bomb\8212.bomb
+18:47:05,256 - [MAIN] - ERROR - Game.Logic.BallMgr - can't find bomb file:bomb\8221.bomb
+18:47:05,257 - [MAIN] - ERROR - Game.Logic.BallMgr - can't find bomb file:bomb\8222.bomb
+18:47:05,258 - [MAIN] - ERROR - Game.Logic.BallMgr - can't find bomb file:bomb\8231.bomb
+18:47:05,258 - [MAIN] - ERROR - Game.Logic.BallMgr - can't find bomb file:bomb\8232.bomb
+18:47:05,259 - [MAIN] - ERROR - Game.Logic.BallMgr - can't find bomb file:bomb\8241.bomb
+18:47:05,260 - [MAIN] - ERROR - Game.Logic.BallMgr - can't find bomb file:bomb\8242.bomb
+18:47:05,260 - [MAIN] - ERROR - Game.Logic.BallMgr - can't find bomb file:bomb\8251.bomb
+18:47:05,261 - [MAIN] - ERROR - Game.Logic.BallMgr - can't find bomb file:bomb\8252.bomb
+18:47:05,262 - [MAIN] - ERROR - Game.Logic.BallMgr - can't find bomb file:bomb\8411.bomb
+18:47:05,262 - [MAIN] - ERROR - Game.Logic.BallMgr - can't find bomb file:bomb\8412.bomb
+18:47:05,263 - [MAIN] - ERROR - Game.Logic.BallMgr - can't find bomb file:bomb\8421.bomb
+18:47:05,264 - [MAIN] - ERROR - Game.Logic.BallMgr - can't find bomb file:bomb\8422.bomb
+18:47:05,267 - [MAIN] - ERROR - Game.Logic.BallMgr - can't find bomb file:bomb\8431.bomb
+18:47:05,267 - [MAIN] - ERROR - Game.Logic.BallMgr - can't find bomb file:bomb\8432.bomb
+18:47:05,268 - [MAIN] - ERROR - Game.Logic.BallMgr - can't find bomb file:bomb\8441.bomb
+18:47:05,269 - [MAIN] - ERROR - Game.Logic.BallMgr - can't find bomb file:bomb\8442.bomb
+18:47:05,269 - [MAIN] - ERROR - Game.Logic.BallMgr - can't find bomb file:bomb\8451.bomb
+18:47:05,270 - [MAIN] - ERROR - Game.Logic.BallMgr - can't find bomb file:bomb\8452.bomb
+18:47:05,270 - [MAIN] - ERROR - Game.Logic.BallMgr - can't find bomb file:bomb\8611.bomb
+18:47:05,272 - [MAIN] - ERROR - Game.Logic.BallMgr - can't find bomb file:bomb\8612.bomb
+18:47:05,273 - [MAIN] - ERROR - Game.Logic.BallMgr - can't find bomb file:bomb\8621.bomb
+18:47:05,274 - [MAIN] - ERROR - Game.Logic.BallMgr - can't find bomb file:bomb\8622.bomb
+18:47:05,277 - [MAIN] - ERROR - Game.Logic.BallMgr - can't find bomb file:bomb\8631.bomb
+18:47:05,277 - [MAIN] - ERROR - Game.Logic.BallMgr - can't find bomb file:bomb\8632.bomb
+18:47:05,278 - [MAIN] - ERROR - Game.Logic.BallMgr - can't find bomb file:bomb\8641.bomb
+18:47:05,279 - [MAIN] - ERROR - Game.Logic.BallMgr - can't find bomb file:bomb\8642.bomb
+18:47:05,279 - [MAIN] - ERROR - Game.Logic.BallMgr - can't find bomb file:bomb\8651.bomb
+18:47:05,280 - [MAIN] - ERROR - Game.Logic.BallMgr - can't find bomb file:bomb\8652.bomb
+18:47:05,280 - [MAIN] - ERROR - Game.Logic.BallMgr - can't find bomb file:bomb\8811.bomb
+18:47:05,281 - [MAIN] - ERROR - Game.Logic.BallMgr - can't find bomb file:bomb\8812.bomb
+18:47:05,282 - [MAIN] - ERROR - Game.Logic.BallMgr - can't find bomb file:bomb\8821.bomb
+18:47:05,283 - [MAIN] - ERROR - Game.Logic.BallMgr - can't find bomb file:bomb\8822.bomb
+18:47:05,284 - [MAIN] - ERROR - Game.Logic.BallMgr - can't find bomb file:bomb\8831.bomb
+18:47:05,285 - [MAIN] - ERROR - Game.Logic.BallMgr - can't find bomb file:bomb\8832.bomb
+18:47:05,285 - [MAIN] - ERROR - Game.Logic.BallMgr - can't find bomb file:bomb\8841.bomb
+18:47:05,288 - [MAIN] - ERROR - Game.Logic.BallMgr - can't find bomb file:bomb\8842.bomb
+18:47:05,288 - [MAIN] - ERROR - Game.Logic.BallMgr - can't find bomb file:bomb\8851.bomb
+18:47:05,289 - [MAIN] - ERROR - Game.Logic.BallMgr - can't find bomb file:bomb\8852.bomb
+18:47:05,290 - [MAIN] - ERROR - Game.Logic.BallMgr - can't find bomb file:bomb\9911.bomb
+18:47:05,290 - [MAIN] - ERROR - Game.Logic.BallMgr - can't find bomb file:bomb\9912.bomb
+18:47:05,291 - [MAIN] - ERROR - Game.Logic.BallMgr - can't find bomb file:bomb\9921.bomb
+18:47:05,292 - [MAIN] - ERROR - Game.Logic.BallMgr - can't find bomb file:bomb\9922.bomb
+18:47:05,292 - [MAIN] - ERROR - Game.Logic.BallMgr - can't find bomb file:bomb\9931.bomb
+18:47:05,293 - [MAIN] - ERROR - Game.Logic.BallMgr - can't find bomb file:bomb\9932.bomb
+18:47:05,293 - [MAIN] - ERROR - Game.Logic.BallMgr - can't find bomb file:bomb\9941.bomb
+18:47:05,294 - [MAIN] - ERROR - Game.Logic.BallMgr - can't find bomb file:bomb\9942.bomb
+18:47:05,295 - [MAIN] - ERROR - Game.Logic.BallMgr - can't find bomb file:bomb\9951.bomb
+18:47:05,295 - [MAIN] - ERROR - Game.Logic.BallMgr - can't find bomb file:bomb\9952.bomb
+18:47:05,296 - [MAIN] - ERROR - Game.Logic.BallMgr - can't find bomb file:bomb\10001.bomb
+18:47:05,297 - [MAIN] - ERROR - Game.Logic.BallMgr - can't find bomb file:bomb\10002.bomb
+18:47:05,300 - [MAIN] - ERROR - Game.Logic.BallMgr - can't find bomb file:bomb\10003.bomb
+18:47:05,301 - [MAIN] - ERROR - Game.Logic.BallMgr - can't find bomb file:bomb\10004.bomb
+18:47:05,301 - [MAIN] - ERROR - Game.Logic.BallMgr - can't find bomb file:bomb\10005.bomb
+18:47:05,302 - [MAIN] - ERROR - Game.Logic.BallMgr - can't find bomb file:bomb\10006.bomb
+18:47:05,303 - [MAIN] - ERROR - Game.Logic.BallMgr - can't find bomb file:bomb\10007.bomb
+18:47:05,303 - [MAIN] - ERROR - Game.Logic.BallMgr - can't find bomb file:bomb\10008.bomb
+18:47:05,304 - [MAIN] - ERROR - Game.Logic.BallMgr - can't find bomb file:bomb\10009.bomb
+18:47:05,304 - [MAIN] - ERROR - Game.Logic.BallMgr - can't find bomb file:bomb\10010.bomb
+18:47:05,305 - [MAIN] - ERROR - Game.Logic.BallMgr - can't find bomb file:bomb\10011.bomb
+18:47:05,306 - [MAIN] - ERROR - Game.Logic.BallMgr - can't find bomb file:bomb\10012.bomb
+18:47:05,306 - [MAIN] - ERROR - Game.Logic.BallMgr - can't find bomb file:bomb\10013.bomb
+18:47:05,307 - [MAIN] - ERROR - Game.Logic.BallMgr - can't find bomb file:bomb\10014.bomb
+18:47:05,309 - [MAIN] - ERROR - Game.Logic.BallMgr - can't find bomb file:bomb\10015.bomb
+18:47:05,312 - [MAIN] - ERROR - Game.Logic.BallMgr - can't find bomb file:bomb\10016.bomb
+18:47:05,314 - [MAIN] - ERROR - Game.Logic.BallMgr - can't find bomb file:bomb\10017.bomb
+18:47:05,315 - [MAIN] - ERROR - Game.Logic.BallMgr - can't find bomb file:bomb\10018.bomb
+18:47:05,317 - [MAIN] - ERROR - Game.Logic.BallMgr - can't find bomb file:bomb\10019.bomb
+18:47:05,318 - [MAIN] - ERROR - Game.Logic.BallMgr - can't find bomb file:bomb\10020.bomb
+18:47:05,319 - [MAIN] - ERROR - Game.Logic.BallMgr - can't find bomb file:bomb\10021.bomb
+18:47:05,319 - [MAIN] - ERROR - Game.Logic.BallMgr - can't find bomb file:bomb\11021.bomb
+18:47:05,322 - [MAIN] - ERROR - Game.Logic.BallMgr - can't find bomb file:bomb\11022.bomb
+18:47:05,323 - [MAIN] - ERROR - Game.Logic.BallMgr - can't find bomb file:bomb\11023.bomb
+18:47:05,324 - [MAIN] - ERROR - Game.Logic.BallMgr - can't find bomb file:bomb\11024.bomb
+18:47:05,325 - [MAIN] - ERROR - Game.Logic.BallMgr - can't find bomb file:bomb\11025.bomb
+18:47:05,326 - [MAIN] - ERROR - Game.Logic.BallMgr - can't find bomb file:bomb\11031.bomb
+18:47:05,327 - [MAIN] - ERROR - Game.Logic.BallMgr - can't find bomb file:bomb\11032.bomb
+18:47:05,328 - [MAIN] - ERROR - Game.Logic.BallMgr - can't find bomb file:bomb\11033.bomb
+18:47:05,328 - [MAIN] - ERROR - Game.Logic.BallMgr - can't find bomb file:bomb\11034.bomb
+18:47:05,329 - [MAIN] - ERROR - Game.Logic.BallMgr - can't find bomb file:bomb\11035.bomb
+18:47:05,330 - [MAIN] - ERROR - Game.Logic.BallMgr - can't find bomb file:bomb\11081.bomb
+18:47:05,330 - [MAIN] - ERROR - Game.Logic.BallMgr - can't find bomb file:bomb\11082.bomb
+18:47:05,334 - [MAIN] - ERROR - Game.Logic.BallMgr - can't find bomb file:bomb\11083.bomb
+18:47:05,335 - [MAIN] - ERROR - Game.Logic.BallMgr - can't find bomb file:bomb\11084.bomb
+18:47:05,336 - [MAIN] - ERROR - Game.Logic.BallMgr - can't find bomb file:bomb\11085.bomb
+18:47:05,336 - [MAIN] - ERROR - Game.Logic.BallMgr - can't find bomb file:bomb\11091.bomb
+18:47:05,337 - [MAIN] - ERROR - Game.Logic.BallMgr - can't find bomb file:bomb\11092.bomb
+18:47:05,339 - [MAIN] - ERROR - Game.Logic.BallMgr - can't find bomb file:bomb\11093.bomb
+18:47:05,340 - [MAIN] - ERROR - Game.Logic.BallMgr - can't find bomb file:bomb\11094.bomb
+18:47:05,340 - [MAIN] - ERROR - Game.Logic.BallMgr - can't find bomb file:bomb\11095.bomb
+18:47:05,341 - [MAIN] - ERROR - Game.Logic.BallMgr - can't find bomb file:bomb\11101.bomb
+18:47:05,342 - [MAIN] - ERROR - Game.Logic.BallMgr - can't find bomb file:bomb\11102.bomb
+18:47:05,345 - [MAIN] - ERROR - Game.Logic.BallMgr - can't find bomb file:bomb\11103.bomb
+18:47:05,346 - [MAIN] - ERROR - Game.Logic.BallMgr - can't find bomb file:bomb\11104.bomb
+18:47:05,349 - [MAIN] - ERROR - Game.Logic.BallMgr - can't find bomb file:bomb\11105.bomb
+18:47:05,350 - [MAIN] - ERROR - Game.Logic.BallMgr - can't find bomb file:bomb\11111.bomb
+18:47:05,350 - [MAIN] - ERROR - Game.Logic.BallMgr - can't find bomb file:bomb\11112.bomb
+18:47:05,351 - [MAIN] - ERROR - Game.Logic.BallMgr - can't find bomb file:bomb\11113.bomb
+18:47:05,352 - [MAIN] - ERROR - Game.Logic.BallMgr - can't find bomb file:bomb\11114.bomb
+18:47:05,352 - [MAIN] - ERROR - Game.Logic.BallMgr - can't find bomb file:bomb\11115.bomb
+18:47:05,353 - [MAIN] - ERROR - Game.Logic.BallMgr - can't find bomb file:bomb\11121.bomb
+18:47:05,354 - [MAIN] - ERROR - Game.Logic.BallMgr - can't find bomb file:bomb\11122.bomb
+18:47:05,356 - [MAIN] - ERROR - Game.Logic.BallMgr - can't find bomb file:bomb\11123.bomb
+18:47:05,357 - [MAIN] - ERROR - Game.Logic.BallMgr - can't find bomb file:bomb\11124.bomb
+18:47:05,358 - [MAIN] - ERROR - Game.Logic.BallMgr - can't find bomb file:bomb\11125.bomb
+18:47:05,358 - [MAIN] - ERROR - Game.Logic.BallMgr - can't find bomb file:bomb\11126.bomb
+18:47:05,359 - [MAIN] - ERROR - Game.Logic.BallMgr - can't find bomb file:bomb\11127.bomb
+18:47:05,360 - [MAIN] - ERROR - Game.Logic.BallMgr - can't find bomb file:bomb\11128.bomb
+18:47:05,361 - [MAIN] - ERROR - Game.Logic.BallMgr - can't find bomb file:bomb\11129.bomb
+18:47:05,361 - [MAIN] - ERROR - Game.Logic.BallMgr - can't find bomb file:bomb\11130.bomb
+18:47:05,362 - [MAIN] - ERROR - Game.Logic.BallMgr - can't find bomb file:bomb\11211.bomb
+18:47:05,362 - [MAIN] - ERROR - Game.Logic.BallMgr - can't find bomb file:bomb\11212.bomb
+18:47:05,363 - [MAIN] - ERROR - Game.Logic.BallMgr - can't find bomb file:bomb\110221.bomb
+18:47:05,364 - [MAIN] - ERROR - Game.Logic.BallMgr - can't find bomb file:bomb\110222.bomb
+18:47:05,367 - [MAIN] - ERROR - Game.Logic.BallMgr - can't find bomb file:bomb\110231.bomb
+18:47:05,368 - [MAIN] - ERROR - Game.Logic.BallMgr - can't find bomb file:bomb\110232.bomb
+18:47:05,369 - [MAIN] - ERROR - Game.Logic.BallMgr - can't find bomb file:bomb\110241.bomb
+18:47:05,369 - [MAIN] - ERROR - Game.Logic.BallMgr - can't find bomb file:bomb\110242.bomb
+18:47:05,370 - [MAIN] - ERROR - Game.Logic.BallMgr - can't find bomb file:bomb\110251.bomb
+18:47:05,370 - [MAIN] - ERROR - Game.Logic.BallMgr - can't find bomb file:bomb\110252.bomb
+18:47:05,371 - [MAIN] - ERROR - Game.Logic.BallMgr - can't find bomb file:bomb\110811.bomb
+18:47:05,372 - [MAIN] - ERROR - Game.Logic.BallMgr - can't find bomb file:bomb\110812.bomb
+18:47:05,373 - [MAIN] - ERROR - Game.Logic.BallMgr - can't find bomb file:bomb\110821.bomb
+18:47:05,373 - [MAIN] - ERROR - Game.Logic.BallMgr - can't find bomb file:bomb\110822.bomb
+18:47:05,374 - [MAIN] - ERROR - Game.Logic.BallMgr - can't find bomb file:bomb\110831.bomb
+18:47:05,375 - [MAIN] - ERROR - Game.Logic.BallMgr - can't find bomb file:bomb\110832.bomb
+18:47:05,375 - [MAIN] - ERROR - Game.Logic.BallMgr - can't find bomb file:bomb\110841.bomb
+18:47:05,378 - [MAIN] - ERROR - Game.Logic.BallMgr - can't find bomb file:bomb\110842.bomb
+18:47:05,378 - [MAIN] - ERROR - Game.Logic.BallMgr - can't find bomb file:bomb\110851.bomb
+18:47:05,379 - [MAIN] - ERROR - Game.Logic.BallMgr - can't find bomb file:bomb\110852.bomb
+18:47:05,380 - [MAIN] - ERROR - Game.Logic.BallMgr - can't find bomb file:bomb\111011.bomb
+18:47:05,381 - [MAIN] - ERROR - Game.Logic.BallMgr - can't find bomb file:bomb\111012.bomb
+18:47:05,383 - [MAIN] - ERROR - Game.Logic.BallMgr - can't find bomb file:bomb\111021.bomb
+18:47:05,383 - [MAIN] - ERROR - Game.Logic.BallMgr - can't find bomb file:bomb\111022.bomb
+18:47:05,384 - [MAIN] - ERROR - Game.Logic.BallMgr - can't find bomb file:bomb\111031.bomb
+18:47:05,385 - [MAIN] - ERROR - Game.Logic.BallMgr - can't find bomb file:bomb\111032.bomb
+18:47:05,385 - [MAIN] - ERROR - Game.Logic.BallMgr - can't find bomb file:bomb\111041.bomb
+18:47:05,386 - [MAIN] - ERROR - Game.Logic.BallMgr - can't find bomb file:bomb\111042.bomb
+18:47:05,386 - [MAIN] - ERROR - Game.Logic.BallMgr - can't find bomb file:bomb\111051.bomb
+18:47:05,389 - [MAIN] - ERROR - Game.Logic.BallMgr - can't find bomb file:bomb\111052.bomb
+18:47:05,390 - [MAIN] - ERROR - Game.Logic.BallMgr - can't find bomb file:bomb\111211.bomb
+18:47:05,390 - [MAIN] - ERROR - Game.Logic.BallMgr - can't find bomb file:bomb\111212.bomb
+18:47:05,391 - [MAIN] - ERROR - Game.Logic.BallMgr - can't find bomb file:bomb\111221.bomb
+18:47:05,392 - [MAIN] - ERROR - Game.Logic.BallMgr - can't find bomb file:bomb\111222.bomb
+18:47:05,393 - [MAIN] - ERROR - Game.Logic.BallMgr - can't find bomb file:bomb\111231.bomb
+18:47:05,394 - [MAIN] - ERROR - Game.Logic.BallMgr - can't find bomb file:bomb\111232.bomb
+18:47:05,395 - [MAIN] - ERROR - Game.Logic.BallMgr - can't find bomb file:bomb\111241.bomb
+18:47:05,396 - [MAIN] - ERROR - Game.Logic.BallMgr - can't find bomb file:bomb\111242.bomb
+18:47:05,396 - [MAIN] - ERROR - Game.Logic.BallMgr - can't find bomb file:bomb\111251.bomb
+18:47:05,397 - [MAIN] - ERROR - Game.Logic.BallMgr - can't find bomb file:bomb\111252.bomb
+18:47:05,400 - [MAIN] - INFO  - Game.Server.GameServer - BallMgr Init: True
+18:47:05,435 - [MAIN] - INFO  - Game.Server.GameServer - BallConfigMgr Init: True
+18:47:05,473 - [MAIN] - INFO  - Game.Server.GameServer - FusionMgr Init: True
+18:47:05,517 - [MAIN] - INFO  - Game.Server.GameServer - AwardMgr Init: True
+18:47:05,590 - [MAIN] - INFO  - Game.Server.GameServer - NPCInfoMgr Ini18:51:11,580 - [MAIN] - INFO  - Bussiness.GameProperties - Refreshing game properties!
+18:51:12,331 - [MAIN] - INFO  - Game.Server.GameServer - Recompile Scripts: True
+18:51:12,333 - [MAIN] - INFO  - Game.Server.GameServer - Server rules: true
+18:51:12,369 - [MAIN] - INFO  - Game.Server.GameServer - Registering global event handlers: true
+18:51:12,370 - [MAIN] - INFO  - Game.Server.GameServer - Script components: True
+18:51:12,370 - [MAIN] - INFO  - Game.Server.GameServer - Edition:21000: True
+18:51:12,374 - [MAIN] - INFO  - Game.Server.GameServer - InitSocket Port:9200: True
+18:51:12,413 - [MAIN] - INFO  - Game.Server.GameServer - AllocatePacketBuffers(): True
+18:51:12,419 - [MAIN] - INFO  - Game.Server.GameServer - LogMgr Init: True
+18:51:12,424 - [MAIN] - INFO  - Game.Server.GameServer - WorldMgr Init: True
+18:51:12,713 - [MAIN] - INFO  - Game.Server.GameServer - MapMgr Init: True
+18:51:12,939 - [MAIN] - INFO  - Game.Server.GameServer - ItemMgr Init: True
+18:51:12,960 - [MAIN] - INFO  - Game.Server.GameServer - ItemBox Init: True
+18:51:14,054 - [MAIN] - INFO  - Game.Server.GameServer - BallMgr Init: True
+18:51:18,727 - [MAIN] - INFO  - Game.Server.GameServer - BallConfigMgr Init: True
+18:51:21,563 - [MAIN] - INFO  - Game.Server.GameServer - FusionMgr Init: True
+18:51:21,572 - [MAIN] - INFO  - Game.Server.GameServer - AwardMgr Init: True
+18:51:21,588 - [MAIN] - INFO  - Game.Server.GameServer - NPCInfoMgr Init: True
+18:51:21,601 - [MAIN] - INFO  - Game.Server.GameServer - MissionInfoMgr Init: True
+18:51:21,611 - [MAIN] - INFO  - Game.Server.GameServer - PveInfoMgr Init: True
+18:51:21,636 - [MAIN] - INFO  - Game.Server.GameServer - Drop Init: True
+18:51:21,643 - [MAIN] - INFO  - Game.Server.GameServer - FightRateMgr Init: True
+18:51:21,652 - [MAIN] - INFO  - Game.Server.GameServer - ConsortiaLevelMgr Init: True
+18:51:21,659 - [MAIN] - INFO  - Game.Server.GameServer - RefineryMgr Init: True
+18:51:21,675 - [MAIN] - INFO  - Game.Server.GameServer - StrengthenMgr Init: True
+18:51:21,684 - [MAIN] - INFO  - Game.Server.GameServer - PropItemMgr Init: True
+18:51:21,807 - [MAIN] - INFO  - Game.Server.GameServer - ShopMgr Init: True
+18:51:21,836 - [MAIN] - INFO  - Game.Server.GameServer - QuestMgr Init: True
+18:51:21,839 - [MAIN] - INFO  - Game.Server.GameServer - RoomMgr.Setup: True
+18:51:21,840 - [MAIN] - INFO  - Game.Server.GameServer - GameMgr.Start(): True
+18:51:21,853 - [MAIN] - INFO  - Game.Server.GameServer - ConsortiaMgr Init: True
+18:51:21,860 - [MAIN] - INFO  - Game.Server.GameServer - LanguageMgr Init: True
+18:51:21,865 - [MAIN] - INFO  - Game.Server.GameServer - ExperienceRateMgr Init: True
+18:51:21,867 - [MAIN] - INFO  - Game.Server.GameServer - MacroDropMgr Init: True
+18:51:21,878 - [MAIN] - INFO  - Game.Server.Battle.BattleMgr - Battle server 127.0.0.1:9208 loaded...
+18:51:21,883 - [MAIN] - INFO  - Game.Server.Battle.BattleMgr - Total 1 battle server loaded.
+18:51:21,884 - [MAIN] - INFO  - Game.Server.GameServer - BattleMgr Setup: True
+18:51:21,886 - [MAIN] - INFO  - Game.Server.GameServer - Init Global Timers: True
+18:51:21,898 - [MAIN] - INFO  - Game.Server.GameServer - MarryRoomMgr Init: True
+18:51:21,904 - [MAIN] - ERROR - Game.Server.GameServer - Failed to start the server
+System.ArgumentException: Já foi adicionado um item com a mesma chave.
+   em System.ThrowHelper.ThrowArgumentException(ExceptionResource resource)
+   em System.Collections.Generic.Dictionary`2.Insert(TKey key, TValue value, Boolean add)
+   em Game.Server.HotSpringRooms.TankHandle.HotSpringCommandMgr.RegisterCommandHandler(Int32 code, IHotSpringCommandHandler handle) na D:\DDT\DDTank-3.0\Game.Server\HotSpringRooms\TankHandle\HotSpringCommandMgr.cs:linha 50
+   em Game.Server.HotSpringRooms.TankHandle.HotSpringCommandMgr.SearchCommandHandlers(Assembly assembly) na D:\DDT\DDTank-3.0\Game.Server\HotSpringRooms\TankHandle\HotSpringCommandMgr.cs:linha 42
+   em Game.Server.HotSpringRooms.TankHandle.HotSpringCommandMgr..ctor() na D:\DDT\DDTank-3.0\Game.Server\HotSpringRooms\TankHandle\HotSpringCommandMgr.c19:21:14,962 - [MAIN] - INFO  - Bussiness.GameProperties - Refreshing game properties!
+19:21:15,730 - [MAIN] - INFO  - Game.Server.GameServer - Recompile Scripts: True
+19:21:15,732 - [MAIN] - INFO  - Game.Server.GameServer - Server rules: true
+19:21:16,252 - [MAIN] - INFO  - Game.Server.GameServer - Registering global event handlers: true
+19:21:16,252 - [MAIN] - INFO  - Game.Server.GameServer - Script components: True
+19:21:16,252 - [MAIN] - INFO  - Game.Server.GameServer - Edition:21000: True
+19:21:16,258 - [MAIN] - INFO  - Game.Server.GameServer - InitSocket Port:9200: True
+19:21:16,304 - [MAIN] - INFO  - Game.Server.GameServer - AllocatePacketBuffers(): True
+19:21:16,319 - [MAIN] - INFO  - Game.Server.GameServer - LogMgr Init: True
+19:21:16,324 - [MAIN] - INFO  - Game.Server.GameServer - WorldMgr Init: True
+19:21:17,353 - [MAIN] - INFO  - Game.Server.GameServer - MapMgr Init: True
+19:21:17,575 - [MAIN] - INFO  - Game.Server.GameServer - ItemMgr Init: True
+19:21:17,595 - [MAIN] - INFO  - Game.Server.GameServer - ItemBox Init: True
+19:21:19,234 - [MAIN] - INFO  - Game.Server.GameServer - BallMgr Init: True
+19:21:19,242 - [MAIN] - INFO  - Game.Server.GameServer - BallConfigMgr Init: True
+19:21:19,248 - [MAIN] - INFO  - Game.Server.GameServer - FusionMgr Init: True
+19:21:19,254 - [MAIN] - INFO  - Game.Server.GameServer - AwardMgr Init: True
+19:21:19,267 - [MAIN] - INFO  - Game.Server.GameServer - NPCInfoMgr Init: True
+19:21:19,275 - [MAIN] - INFO  - Game.Server.GameServer - MissionInfoMgr Init: True
+19:21:19,284 - [MAIN] - INFO  - Game.Server.GameServer - PveInfoMgr Init: True
+19:21:19,299 - [MAIN] - INFO  - Game.Server.GameServer - Drop Init: True
+19:21:19,305 - [MAIN] - INFO  - Game.Server.GameServer - FightRateMgr Init: True
+19:21:19,311 - [MAIN] - INFO  - Game.Server.GameServer - ConsortiaLevelMgr Init: True
+19:21:19,317 - [MAIN] - INFO  - Game.Server.GameServer - RefineryMgr Init: True
+19:21:19,332 - [MAIN] - INFO  - Game.Server.GameServer - StrengthenMgr Init: True
+19:21:19,339 - [MAIN] - INFO  - Game.Server.GameServer - PropItemMgr Init: True
+19:21:19,447 - [MAIN] - INFO  - Game.Server.GameServer - ShopMgr Init: True
+19:21:19,475 - [MAIN] - INFO  - Game.Server.GameServer - QuestMgr Init: True
+19:21:19,477 - [MAIN] - INFO  - Game.Server.GameServer - RoomMgr.Setup: True
+19:21:19,478 - [MAIN] - INFO  - Game.Server.GameServer - GameMgr.Start(): True
+19:21:19,491 - [MAIN] - INFO  - Game.Server.GameServer - ConsortiaMgr Init: True
+19:21:19,497 - [MAIN] - INFO  - Game.Server.GameServer - LanguageMgr Init: True
+19:21:19,501 - [MAIN] - INFO  - Game.Server.GameServer - ExperienceRateMgr Init: True
+19:21:19,503 - [MAIN] - INFO  - Game.Server.GameServer - MacroDropMgr Init: True
+19:21:19,732 - [MAIN] - INFO  - Game.Server.Battle.BattleMgr - Battle server 127.0.0.1:9208 loaded...
+19:21:19,738 - [MAIN] - INFO  - Game.Server.Battle.BattleMgr - Total 1 battle server loaded.
+19:21:19,738 - [MAIN] - INFO  - Game.Server.GameServer - BattleMgr Setup: True
+19:21:19,740 - [MAIN] - INFO  - Game.Server.GameServer - Init Global Timers: True
+19:21:19,751 - [MAIN] - INFO  - Game.Server.GameServer - MarryRoomMgr Init: True
+19:21:19,776 - [MAIN] - INFO  - Game.Server.GameServer - HotSpringRoomMgr Init: True
+19:21:19,778 - [MAIN] - INFO  - Game.Server.GameServer - LogMgr Setup: True
+19:21:19,801 - [MAIN] - INFO  - Game.Base.Packets.PacketProcessor - PacketProcessor: Loaded 149 handlers from GameServer Assembly!
+19:21:19,808 - [MAIN] - INFO  - Game.Base.CommandMgr - Loaded 7 commands!
+19:21:19,817 - [MAIN] - INFO  - Game.Logic.Spells.SpellMgr - SpellMgr: Loaded 15 spell handlers from GameServer Assembly!
+19:21:19,819 - [MAIN] - INFO  - Game.Base.BaseConnector - Connected to 127.0.0.1:9202
+19:21:19,821 - [MAIN] - INFO  - Game.Server.GameServer - Login To CenterServer: True
+19:21:20,826 - [MAIN] - ERROR - Game.Base.BaseConnector - Connect 127.0.0.1:9208 failed!
+19:21:20,829 - [MAIN] - INFO  - Game.Server.GameServer - base.Start(): True
+19:21:20,854 - [MAIN] - INFO  - Game.Server.GameServer - GameServ19:30:58,956 - [MAIN] - INFO  - Bussiness.GameProperties - Refreshing game properties!
+19:30:59,796 - [MAIN] - INFO  - Game.Server.GameServer - Recompile Scripts: True
+19:30:59,994 - [MAIN] - INFO  - Game.Server.GameServer - Server rules: true
+19:31:00,056 - [MAIN] - INFO  - Game.Server.GameServer - Registering global event handlers: true
+19:31:00,056 - [MAIN] - INFO  - Game.Server.GameServer - Script components: True
+19:31:00,056 - [MAIN] - INFO  - Game.Server.GameServer - Edition:21000: True
+19:31:00,061 - [MAIN] - INFO  - Game.Server.GameServer - InitSocket Port:9200: True
+19:31:00,107 - [MAIN] - INFO  - Game.Server.GameServer - AllocatePacketBuffers(): True
+19:31:00,114 - [MAIN] - INFO  - Game.Server.GameServer - LogMgr Init: True
+19:31:00,120 - [MAIN] - INFO  - Game.Server.GameServer - WorldMgr Init: True
+19:31:00,306 - [MAIN] - INFO  - Game.Server.GameServer - MapMgr Init: True
+19:31:00,532 - [MAIN] - INFO  - Game.Server.GameServer - ItemMgr Init: True
+19:31:00,553 - [MAIN] - INFO  - Game.Server.GameServer - ItemBox Init: True
+19:31:00,798 - [MAIN] - INFO  - Game.Server.GameServer - BallMgr Init: True
+19:31:00,806 - [MAIN] - INFO  - Game.Server.GameServer - BallConfigMgr Init: True
+19:31:00,812 - [MAIN] - INFO  - Game.Server.GameServer - FusionMgr Init: True
+19:31:00,818 - [MAIN] - INFO  - Game.Server.GameServer - AwardMgr Init: True
+19:31:00,830 - [MAIN] - INFO  - Game.Server.GameServer - NPCInfoMgr Init: True
+19:31:00,838 - [MAIN] - INFO  - Game.Server.GameServer - MissionInfoMgr Init: True
+19:31:00,846 - [MAIN] - INFO  - Game.Server.GameServer - PveInfoMgr Init: True
+19:31:00,860 - [MAIN] - INFO  - Game.Server.GameServer - Drop Init: True
+19:31:00,866 - [MAIN] - INFO  - Game.Server.GameServer - FightRateMgr Init: True
+19:31:00,872 - [MAIN] - INFO  - Game.Server.GameServer - ConsortiaLevelMgr Init: True
+19:31:00,878 - [MAIN] - INFO  - Game.Server.GameServer - RefineryMgr Init: True
+19:31:00,892 - [MAIN] - INFO  - Game.Server.GameServer - StrengthenMgr Init: True
+19:31:00,900 - [MAIN] - INFO  - Game.Server.GameServer - PropItemMgr Init: True
+19:31:01,007 - [MAIN] - INFO  - Game.Server.GameServer - ShopMgr Init: True
+19:31:01,034 - [MAIN] - INFO  - Game.Server.GameServer - QuestMgr Init: True
+19:31:01,037 - [MAIN] - INFO  - Game.Server.GameServer - RoomMgr.Setup: True
+19:31:01,038 - [MAIN] - INFO  - Game.Server.GameServer - GameMgr.Start(): True
+19:31:01,051 - [MAIN] - INFO  - Game.Server.GameServer - ConsortiaMgr Init: True
+19:31:01,056 - [MAIN] - INFO  - Game.Server.GameServer - LanguageMgr Init: True
+19:31:01,061 - [MAIN] - INFO  - Game.Server.GameServer - ExperienceRateMgr Init: True
+19:31:01,063 - [MAIN] - INFO  - Game.Server.GameServer - MacroDropMgr Init: True
+19:31:01,073 - [MAIN] - INFO  - Game.Server.Battle.BattleMgr - Battle server 127.0.0.1:9208 loaded...
+19:31:01,079 - [MAIN] - INFO  - Game.Server.Battle.BattleMgr - Total 1 battle server loaded.
+19:31:01,079 - [MAIN] - INFO  - Game.Server.GameServer - BattleMgr Setup: True
+19:31:01,083 - [MAIN] - INFO  - Game.Server.GameServer - Init Global Timers: True
+19:31:01,094 - [MAIN] - INFO  - Game.Server.GameServer - MarryRoomMgr Init: True
+19:31:01,121 - [MAIN] - INFO  - Game.Server.GameServer - HotSpringRoomMgr Init: True
+19:31:01,123 - [MAIN] - INFO  - Game.Server.GameServer - LogMgr Setup: True
+19:31:01,147 - [MAIN] - INFO  - Game.Base.Packets.PacketProcessor - PacketProcessor: Loaded 149 handlers from GameServer Assembly!
+19:31:01,153 - [MAIN] - INFO  - Game.Base.CommandMgr - Loaded 7 commands!
+19:31:01,161 - [MAIN] - INFO  - Game.Logic.Spells.SpellMgr - SpellMgr: Loaded 15 spell handlers from GameServer Assembly!
+19:31:01,164 - [MAIN] - INFO  - Game.Base.BaseConnector - Connected to 127.0.0.1:9202
+19:31:01,165 - [MAIN] - INFO  - Game.Server.GameServer - Login To CenterServer: True
+19:31:01,169 - [MAIN] - INFO  - Game.Base.BaseConnector - Connected to 127.0.0.1:9208
+19:31:01,172 - [MAIN] - INFO  - Game.Server.GameServer - base.Start(): True
+19:31:01,201 - [MAIN] - INFO  - Game.Server.GameServer - GameServer 22:05:02,271 - [MAIN] - INFO  - Bussiness.GameProperties - Refreshing game properties!
+22:05:03,912 - [MAIN] - INFO  - Game.Server.GameServer - Recompile Scripts: True
+22:05:03,914 - [MAIN] - INFO  - Game.Server.GameServer - Server rules: true
+22:05:03,951 - [MAIN] - INFO  - Game.Server.GameServer - Registering global event handlers: true
+22:05:03,951 - [MAIN] - INFO  - Game.Server.GameServer - Script components: True
+22:05:03,951 - [MAIN] - INFO  - Game.Server.GameServer - Edition:21000: True
+22:05:03,955 - [MAIN] - INFO  - Game.Server.GameServer - InitSocket Port:9200: True
+22:05:03,996 - [MAIN] - INFO  - Game.Server.GameServer - AllocatePacketBuffers(): True
+22:05:04,003 - [MAIN] - INFO  - Game.Server.GameServer - LogMgr Init: True
+22:05:04,010 - [MAIN] - INFO  - Game.Server.GameServer - WorldMgr Init: True
+22:05:05,244 - [MAIN] - INFO  - Game.Server.GameServer - MapMgr Init: True
+22:05:05,466 - [MAIN] - INFO  - Game.Server.GameServer - ItemMgr Init: True
+22:05:05,546 - [MAIN] - INFO  - Game.Server.GameServer - ItemBox Init: True
+22:05:07,618 - [MAIN] - INFO  - Game.Server.GameServer - BallMgr Init: True
+22:05:07,632 - [MAIN] - INFO  - Game.Server.GameServer - BallConfigMgr Init: True
+22:05:07,664 - [MAIN] - INFO  - Game.Server.GameServer - FusionMgr Init: True
+22:05:07,687 - [MAIN] - INFO  - Game.Server.GameServer - AwardMgr Init: True
+22:05:07,699 - [MAIN] - INFO  - Game.Server.GameServer - NPCInfoMgr Init: True
+22:05:07,733 - [MAIN] - INFO  - Game.Server.GameServer - MissionInfoMgr Init: True
+22:05:07,754 - [MAIN] - INFO  - Game.Server.GameServer - PveInfoMgr Init: True
+22:05:07,769 - [MAIN] - INFO  - Game.Server.GameServer - Drop Init: True
+22:05:07,788 - [MAIN] - INFO  - Game.Server.GameServer - FightRateMgr Init: True
+22:05:07,795 - [MAIN] - INFO  - Game.Server.GameServer - ConsortiaLevelMgr Init: True
+22:05:07,802 - [MAIN] - INFO  - Game.Server.GameServer - RefineryMgr Init: True
+22:05:07,825 - [MAIN] - INFO  - Game.Server.GameServer - StrengthenMgr Init: True
+22:05:07,833 - [MAIN] - INFO  - Game.Server.GameServer - PropItemMgr Init: True
+22:05:07,954 - [MAIN] - INFO  - Game.Server.GameServer - ShopMgr Init: True
+22:05:08,029 - [MAIN] - INFO  - Game.Server.GameServer - QuestMgr Init: True
+22:05:08,032 - [MAIN] - INFO  - Game.Server.GameServer - RoomMgr.Setup: True
+22:05:08,034 - [MAIN] - INFO  - Game.Server.GameServer - GameMgr.Start(): True
+22:05:08,059 - [MAIN] - INFO  - Game.Server.GameServer - ConsortiaMgr Init: True
+22:05:08,108 - [MAIN] - INFO  - Game.Server.GameServer - LanguageMgr Init: True
+22:05:08,118 - [MAIN] - INFO  - Game.Server.GameServer - ExperienceRateMgr Init: True
+22:05:08,119 - [MAIN] - INFO  - Game.Server.GameServer - MacroDropMgr Init: True
+22:05:08,142 - [MAIN] - INFO  - Game.Server.Battle.BattleMgr - Battle server 127.0.0.1:9208 loaded...
+22:05:08,148 - [MAIN] - INFO  - Game.Server.Battle.BattleMgr - Total 1 battle server loaded.
+22:05:08,149 - [MAIN] - INFO  - Game.Server.GameServer - BattleMgr Setup: True
+22:05:08,150 - [MAIN] - INFO  - Game.Server.GameServer - Init Global Timers: True
+22:05:08,186 - [MAIN] - INFO  - Game.Server.GameServer - MarryRoomMgr Init: True
+22:05:08,187 - [MAIN] - INFO  - Game.Server.GameServer - LogMgr Setup: True
+22:05:08,243 - [MAIN] - INFO  - Game.Base.Packets.PacketProcessor - PacketProcessor: Loaded 149 handlers from GameServer Assembly!
+22:05:08,250 - [MAIN] - INFO  - Game.Base.CommandMgr - Loaded 7 commands!
+22:05:08,267 - [MAIN] - INFO  - Game.Logic.Spells.SpellMgr - SpellMgr: Loaded 15 spell handlers from GameServer Assembly!
+22:05:08,269 - [MAIN] - INFO  - Game.Base.BaseConnector - Connected to 127.0.0.1:9202
+22:05:08,271 - [MAIN] - INFO  - Game.Server.GameServer - Login To CenterServer: True
+22:05:08,274 - [MAIN] - INFO  - Game.Base.BaseConnector - Connected to 127.0.0.1:9208
+22:05:08,279 - [MAIN] - INFO  - Game.Server.GameServer - base.Start(): True
+22:05:08,306 - [MAIN] - INFO  - Game.Server.GameServer - GameServer is now open for connections!
+22:05:33,920 - [5] - INFO  - Game.Base.BaseServer - Incoming connection from 127.0.0.1:64750
+22:05:33,935 - [5] - INFO  - Game.Base.BaseClient - Disconnecting client (127.0.0.1:64750), received bytes=0
+22:05:33,953 - [19] - INFO  - Game.Base.BaseServer - Incoming connection from 127.0.0.1:64751
+22:05:48,083 - [5] - ERROR - Game.Server.HotSpringRooms.TankHotSpringLogicProcessor - IP:127.0.0.1:64751, OnGameData is Error: System.Collections.Generic.KeyNotFoundException: A chave fornecida não estava presente no dicionário.
+   em System.ThrowHelper.ThrowKeyNotFoundException()
+   em System.Collections.Generic.Dictionary`2.get_Item(TKey key)
+   em Game.Server.HotSpringRooms.TankHandle.HotSpringCommandMgr.LoadCommandHandler(Int32 code) na D:\DDT\DDTank-3.0\Game.Server\HotSpringRooms\TankHandle\HotSpringCommandMgr.cs:linha 15
+   em Game.Server.HotSpringRooms.TankHotSpringLogicProcessor.OnGameData(HotSpringRoom room, GamePlayer player, GSPacketIn packet) na D:\DDT\DDTank-3.0\Game.Server\HotSpringRooms\TankHotSpringLogicProcessor.cs:linha 73
+22:05:49,247 - [5] - ERROR - Game.Server.HotSpringRooms.TankHotSpringLogicProcessor - IP:127.0.0.1:64751, OnGameData is Error: System.Collections.Generic.KeyNotFoundException: A chave fornecida não estava presente no dicionário.
+   em System.ThrowHelper.ThrowKeyNotFoundException()
+   em System.Collections.Generic.Dictionary`2.get_Item(TKey key)
+   em Game.Server.HotSpringRooms.TankHandle.HotSpringCommandMgr.LoadCommandHandler(Int32 code) na D:\DDT\DDTank-3.0\Game.Server\HotSpringRooms\TankHandle\HotSpringCommandMgr.cs:linha 15
+   em Game.Server.HotSpringRooms.TankHotSpringLogicProcessor.OnGameData(HotSpringRoom room, GamePlayer player, GSPacketIn packet) na D:\DDT\DDTank-3.0\Game.Server\HotSpringRooms\TankHotSpringLogicProcessor.cs:linha 73
+22:05:49,568 - [5] - ERROR - Game.Server.HotSpringRooms.TankHotSpringLogicProcessor - IP:127.0.0.1:64751, OnGameData is Error: System.Collections.Generic.KeyNotFoundException: A chave fornecida não estava presente no dicionário.
+   em System.ThrowHelper.ThrowKeyNotFoundException()
+   em System.Collections.Generic.Dictionary`2.get_Item(TKey key)
+   em Game.Server.HotSpringRooms.TankHandle.HotSpringCommandMgr.LoadCommandHandler(Int32 code) na D:\DDT\DDTank-3.0\Game.Server\HotSpringRooms\TankHandle\HotSpringCommandMgr.cs:linha 15
+   em Game.Server.HotSpringRooms.TankHotSpringLogicProcessor.OnGameData(HotSpringRoom room, GamePlayer player, GSPacketIn packet) na D:\DDT\DDTank-3.0\Game.Server\HotSpringRooms\TankHotSpringLogicProcessor.cs:linha 73
+22:05:57,253 - [5] - ERROR - Game.Server.HotSpringRooms.TankHotSpringLogicProcessor - IP:127.0.0.1:64751, OnGameData is Error: System.Collections.Generic.KeyNotFoundException: A chave fornecida não estava presente no dicionário.
+   em System.ThrowHelper.ThrowKeyNotFoundException()
+   em System.Collections.Generic.Dictionary`2.get_Item(TKey key)
+   em Game.Server.HotSpringRooms.TankHandle.HotSpringCommandMgr.LoadCommandHandler(Int32 code) na D:\DDT\DDTank-3.0\Game.Server\HotSpringRooms\TankHandle\HotSpringCommandMgr.cs:linha 15
+   em Game.Server.HotSpringRooms.TankHotSpringLogicProcessor.OnGameData(HotSpringRoom room, GamePlayer player, GSPacketIn packet) na D:\DDT\DDTank-3.0\Game.Server\HotSpringRooms\TankHotSpringLogicProcessor.cs:linha 73
+22:05:57,971 - [5] - ERROR - Game.Server.HotSpringRooms.TankHotSpringLogicProcessor - IP:127.0.0.1:64751, OnGameData is Error: System.Collections.Generic.KeyNotFoundException: A chave fornecida não estava presente no dicionário.
+   em System.ThrowHelper.ThrowKeyNotFoundException()
+   em System.Collections.Generic.Dictionary`2.get_Item(TKey key)
+   em Game.Server.HotSpringRooms.TankHandle.HotSpringCommandMgr.LoadCommandHandler(Int32 code) na D:\DDT\DDTank-3.0\Game.Server\HotSpringRooms\TankHandle\HotSpringCommandMgr.cs:linha 15
+   em Game.Server.HotSpringRooms.TankHotSpringLogicProcessor.OnGameData(HotSpringRoom room, GamePlayer player, GSPacketIn packet) na D:\DDT\DDTank-3.0\Game.Server\HotSpringRooms\TankHotSpringLogicProcessor.cs:linha 73
+22:05:58,297 - [5] - ERROR - Game.Server.HotSpringRooms.TankHotSpringLogicProcessor - IP:127.0.0.1:64751, OnGameData is Error: System.Collections.Generic.KeyNotFoundException: A chave fornecida não estava presente no dicionário.
+   em System.ThrowHelper.ThrowKeyNotFoundException()
+   em System.Collections.Generic.Dictionary`2.get_Item(TKey key)
+   em Game.Server.HotSpringRooms.TankHandle.HotSpringCommandMgr.LoadCommandHandler(Int32 code) na D:\DDT\DDTank-3.0\Game.Server\HotSpringRooms\TankHandle\HotSpringCommandMgr.cs:linha 15
+   em Game.Server.HotSpringRooms.TankHotSpringLogicProcessor.OnGameData(HotSpringRoom room, GamePlayer player, GSPacketIn packet) na D:\DDT\DDTank-3.0\Game.Server\HotSpringRooms\TankHotSpringLogicProcessor.cs:linha 73
+22:05:58,563 - [5] - ERROR - Game.Server.HotSpringRooms.TankHotSpringLogicProcessor - IP:127.0.0.1:64751, OnGameData is Error: System.Collections.Generic.KeyNotFoundException: A chave fornecida não estava presente no dicionário.
+   em System.ThrowHelper.ThrowKeyNotFoundException()
+   em System.Collections.Generic.Dictionary`2.get_Item(TKey key)
+   em Game.Server.HotSpringRooms.TankHandle.HotSpringCommandMgr.LoadCommandHandler(Int32 code) na D:\DDT\DDTank-3.0\Game.Server\HotSpringRooms\TankHandle\HotSpringCommandMgr.cs:linha 15
+   em Game.Server.HotSpringRooms.TankHotSpringLogicProcessor.OnGameData(HotSpringRoom room, GamePlayer player, GSPacketIn packet) na D:\DDT\DDTank-3.0\Game.Server\HotSpringRooms\TankHotSpringLogicProcessor.cs:linha 73
+22:05:59,504 - [5] - ERROR - Game.Server.HotSpringRooms.TankHotSpringLogicProcessor - IP:127.0.0.1:64751, OnGameData is Error: System.Collections.Generic.KeyNotFoundException: A chave fornecida não estava presente no dicionário.
+   em System.ThrowHelper.ThrowKeyNotFoundException()
+   em System.Collections.Generic.Dictionary`2.get_Item(TKey key)
+   em Game.Server.HotSpringRooms.TankHandle.HotSpringCommandMgr.LoadCommandHandler(Int32 code) na D:\DDT\DDTank-3.0\Game.Server\HotSpringRooms\TankHandle\HotSpringCommandMgr.cs:linha 15
+   em Game.Server.HotSpringRooms.TankHotSpringLogicProcessor.OnGameData(HotSpringRoom room, GamePlayer player, GSPacketIn packet) na D:\DDT\DDTank-3.0\Game.Server\HotSpringRooms\TankHotSpringLogicProcessor.cs:linha 73
+22:05:59,906 - [5] - ERROR - Game.Server.HotSpringRooms.TankHotSpringLogicProcessor - IP:127.0.0.1:64751, OnGameData is Error: System.Collections.Generic.KeyNotFoundException: A chave fornecida não estava presente no dicionário.
+   em System.ThrowHelper.ThrowKeyNotFoundException()
+   em System.Collections.Generic.Dictionary`2.get_Item(TKey key)
+   em Game.Server.HotSpringRooms.TankHandle.HotSpringCommandMgr.LoadCommandHandler(Int32 code) na D:\DDT\DDTank-3.0\Game.Server\HotSpringRooms\TankHandle\HotSpringCommandMgr.cs:linha 15
+   em Game.Server.HotSpringRooms.TankHotSpringLogicProcessor.OnGameData(HotSpringRoom room, GamePlayer player, GSPacketIn packet) na D:\DDT\DDTank-3.0\Game.Server\HotSpringRooms\TankHotSpringLogicProcessor.cs:linha 73
+22:06:00,483 - [5] - ERROR - Game.Server.HotSpringRooms.TankHotSpringLogicProcessor - IP:127.0.0.1:64751, OnGameData is Error: System.Collections.Generic.KeyNotFoundException: A chave fornecida não estava presente no dicionário.
+   em System.ThrowHelper.ThrowKeyNotFoundException()
+   em System.Collections.Generic.Dictionary`2.get_Item(TKey key)
+   em Game.Server.HotSpringRooms.TankHandle.HotSpringCommandMgr.LoadCommandHandler(Int32 code) na D:\DDT\DDTank-3.0\Game.Server\HotSpringRooms\TankHandle\HotSpringCommandMgr.cs:linha 15
+   em Game.Server.HotSpringRooms.TankHotSpringLogicProcessor.OnGameData(HotSpringRoom room, GamePlayer player, GSPacketIn packet) na D:\DDT\DDTank-3.0\Game.Server\HotSpringRooms\TankHotSpringLogicProcessor.cs:linha 73
+22:06:01,170 - [5] - ERROR - Game.Server.HotSpringRooms.TankHotSpringLogicProcessor - IP:127.0.0.1:64751, OnGameData is Error: System.Collections.Generic.KeyNotFoundException: A chave fornecida não estava presente no dicionário.
+   em System.ThrowHelper.ThrowKeyNotFoundException()
+   em System.Collections.Generic.Dictionary`2.get_Item(TKey key)
+   em Game.Server.HotSpringRooms.TankHandle.HotSpringCommandMgr.LoadCommandHandler(Int32 code) na D:\DDT\DDTank-3.0\Game.Server\HotSpringRooms\TankHandle\HotSpringCommandMgr.cs:linha 15
+   em Game.Server.HotSpringRooms.TankHotSpringLogicProcessor.OnGameData(HotSpringRoom room, GamePlayer player, GSPacketIn packet) na D:\DDT\DDTank-3.0\Game.Server\HotSpringRooms\TankHotSpringLogicProcessor.cs:linha 73
+22:06:06,036 - [5] - ERROR - Game.Server.HotSpringRooms.TankHotSpringLogicProcessor - IP:127.0.0.1:64751, OnGameData is Error: System.Collections.Generic.KeyNotFoundException: A chave fornecida não estava presente no dicionário.
+   em System.ThrowHelper.ThrowKeyNotFoundException()
+   em System.Collections.Generic.Dictionary`2.get_Item(TKey key)
+   em Game.Server.HotSpringRooms.TankHandle.HotSpringCommandMgr.LoadCommandHandler(Int32 code) na D:\DDT\DDTank-3.0\Game.Server\HotSpringRooms\TankHandle\HotSpringCommandMgr.cs:linha 15
+   em Game.Server.HotSpringRooms.TankHotSpringLogicProcessor.OnGameData(HotSpringRoom room, GamePlayer player, GSPacketIn packet) na D:\DDT\DDTank-3.0\Game.Server\HotSpringRooms\TankHotSpringLogicProcessor.cs:linha 73
+22:06:06,650 - [5] - ERROR - Game.Server.HotSpringRooms.TankHotSpringLogicProcessor - IP:127.0.0.1:64751, OnGameData is Error: System.Collections.Generic.KeyNotFoundException: A chave fornecida não estava presente no dicionário.
+   em System.ThrowHelper.ThrowKeyNotFoundException()
+   em System.Collections.Generic.Dictionary`2.get_Item(TKey key)
+   em Game.Server.HotSpringRooms.TankHandle.HotSpringCommandMgr.LoadCommandHandler(Int32 code) na D:\DDT\DDTank-3.0\Game.Server\HotSpringRooms\TankHandle\HotSpringCommandMgr.cs:linha 15
+   em Game.Server.HotSpringRooms.TankHotSpringLogicProcessor.OnGameData(HotSpringRoom room, GamePlayer player, GSPacketIn packet) na D:\DDT\DDTank-3.0\Game.Server\HotSpringRooms\TankHotSpringLogicProcessor.cs:linha 73
+22:06:07,394 - [5] - ERROR - Game.Server.HotSpringRooms.TankHotSpringLogicProcessor - IP:127.0.0.1:64751, OnGameData is Error: System.Collections.Generic.KeyNotFoundException: A chave fornecida não estava presente no dicionário.
+   em System.ThrowHelper.ThrowKeyNotFoundException()
+   em System.Collections.Generic.Dictionary`2.get_Item(TKey key)
+   em Game.Server.HotSpringRooms.TankHandle.HotSpringCommandMgr.LoadCommandHandler(Int32 code) na D:\DDT\DDTank-3.0\Game.Server\HotSpringRooms\TankHandle\HotSpringCommandMgr.cs:linha 15
+   em Game.Server.HotSpringRooms.TankHotSpringLogicProcessor.OnGameData(HotSpringRoom room, GamePlayer player, GSPacketIn packet) na D:\DDT\DDTank-3.0\Game.Server\HotSpringRooms\TankHotSpringLogicProcessor.cs:linha 73
+22:06:07,628 - [5] - ERROR - Game.Server.HotSpringRooms.TankHotSpringLogicProcessor - IP:127.0.0.1:64751, OnGameData is Error: System.Collections.Generic.KeyNotFoundException: A chave fornecida não estava presente no dicionário.
+   em System.ThrowHelper.ThrowKeyNotFoundException()
+   em System.Collections.Generic.Dictionary`2.get_Item(TKey key)
+   em Game.Server.HotSpringRooms.TankHandle.HotSpringCommandMgr.LoadCommandHandler(Int32 code) na D:\DDT\DDTank-3.0\Game.Server\HotSpringRooms\TankHandle\HotSpringCommandMgr.cs:linha 15
+   em Game.Server.HotSpringRooms.TankHotSpringLogicProcessor.OnGameData(HotSpringRoom room, GamePlayer player, GSPacketIn packet) na D:\DDT\DDTank-3.0\Game.Server\HotSpringRooms\TankHotSpringLogicProcessor.cs:linha 73
+22:06:08,157 - [18] - INFO  - Game.Server.GameServer - Buff Scaning ...
+22:06:08,158 - [18] - INFO  - Game.Server.GameServer - Buff Scan complete!
+22:06:08,159 - [18] - INFO  - Game.Server.GameServer - Buff all 1 players in 0ms
+22:06:08,386 - [5] - ERROR - Game.Server.HotSpringRooms.TankHotSpringLogicProcessor - IP:127.0.0.1:64751, OnGameData is Error: System.Collections.Generic.KeyNotFoundException: A chave fornecida não estava presente no dicionário.
+   em System.ThrowHelper.ThrowKeyNotFoundException()
+   em System.Collections.Generic.Dictionary`2.get_Item(TKey key)
+   em Game.Server.HotSpringRooms.TankHandle.HotSpringCommandMgr.LoadCommandHandler(Int32 code) na D:\DDT\DDTank-3.0\Game.Server\HotSpringRooms\TankHandle\HotSpringCommandMgr.cs:linha 15
+   em Game.Server.HotSpringRooms.TankHotSpringLogicProcessor.OnGameData(HotSpringRoom room, GamePlayer player, GSPacketIn packet) na D:\DDT\DDTank-3.0\Game.Server\HotSpringRooms\TankHotSpringLogicProcessor.cs:linha 73
+22:06:10,170 - [5] - ERROR - Game.Server.HotSpringRooms.TankHotSpringLogicProcessor - IP:127.0.0.1:64751, OnGameData is Error: System.Collections.Generic.KeyNotFoundException: A chave fornecida não estava presente no dicionário.
+   em System.ThrowHelper.ThrowKeyNotFoundException()
+   em System.Collections.Generic.Dictionary`2.get_Item(TKey key)
+   em Game.Server.HotSpringRooms.TankHandle.HotSpringCommandMgr.LoadCommandHandler(Int32 code) na D:\DDT\DDTank-3.0\Game.Server\HotSpringRooms\TankHandle\HotSpringCommandMgr.cs:linha 15
+   em Game.Server.HotSpringRooms.TankHotSpringLogicProcessor.OnGameData(HotSpringRoom room, GamePlayer player, GSPacketIn packet) na D:\DDT\DDTank-3.0\Game.Server\HotSpringRooms\TankHotSpringLogicProcessor.cs:linha 73
+22:06:10,379 - [5] - ERROR - Game.Server.HotSpringRooms.TankHotSpringLogicProcessor - IP:127.0.0.1:64751, OnGameData is Error: System.Collections.Generic.KeyNotFoundException: A chave fornecida não estava presente no dicionário.
+   em System.ThrowHelper.ThrowKeyNotFoundException()
+   em System.Collections.Generic.Dictionary`2.get_Item(TKey key)
+   em Game.Server.HotSpringRooms.TankHandle.HotSpringCommandMgr.LoadCommandHandler(Int32 code) na D:\DDT\DDTank-3.0\Game.Server\HotSpringRooms\TankHandle\HotSpringCommandMgr.cs:linha 15
+   em Game.Server.HotSpringRooms.TankHotSpringLogicProcessor.OnGameData(HotSpringRoom room, GamePlayer player, GSPacketIn packet) na D:\DDT\DDTank-3.0\Game.Server\HotSpringRooms\TankHotSpringLogicProcessor.cs:linha 73
+22:06:14,703 - [22] - ERROR - Game.Server.HotSpringRooms.TankHotSpringLogicProcessor - IP:127.0.0.1:64751, OnGameData is Error: System.Collections.Generic.KeyNotFoundException: A chave fornecida não estava presente no dicionário.
+   em System.ThrowHelper.ThrowKeyNotFoundException()
+   em System.Collections.Generic.Dictionary`2.get_Item(TKey key)
+   em Game.Server.HotSpringRooms.TankHandle.HotSpringCommandMgr.LoadCommandHandler(Int32 code) na D:\DDT\DDTank-3.0\Game.Server\HotSpringRooms\TankHandle\HotSpringCommandMgr.cs:linha 15
+   em Game.Server.HotSpringRooms.TankHotSpringLogicProcessor.OnGameData(HotSpringRoom room, GamePlayer player, GSPacketIn packet) na D:\DDT\DDTank-3.0\Game.Server\HotSpringRooms\TankHotSpringLogicProcessor.cs:linha 73
+22:06:15,083 - [22] - ERROR - Game.Server.HotSpringRooms.TankHotSpringLogicProcessor - IP:127.0.0.1:64751, OnGameData is Error: System.Collections.Generic.KeyNotFoundException: A chave fornecida não estava presente no dicionário.
+   em System.ThrowHelper.ThrowKeyNotFoundException()
+   em System.Collections.Generic.Dictionary`2.get_Item(TKey key)
+   em Game.Server.HotSpringRooms.TankHandle.HotSpringCommandMgr.LoadCommandHandler(Int32 code) na D:\DDT\DDTank-3.0\Game.Server\HotSpringRooms\TankHandle\HotSpringCommandMgr.cs:linha 15
+   em Game.Server.HotSpringRooms.TankHotSpringLogicProcessor.OnGameData(HotSpringRoom room, GamePlayer player, GSPacketIn packet) na D:\DDT\DDTank-3.0\Game.Server\HotSpringRooms\TankHotSpringLogicProcessor.cs:linha 73
+22:06:17,186 - [22] - ERROR - Game.Server.HotSpringRooms.TankHotSpringLogicProcessor - IP:127.0.0.1:64751, OnGameData is Error: System.Collections.Generic.KeyNotFoundException: A chave fornecida não estava presente no dicionário.
+   em System.ThrowHelper.ThrowKeyNotFoundException()
+   em System.Collections.Generic.Dictionary`2.get_Item(TKey key)
+   em Game.Server.HotSpringRooms.TankHandle.HotSpringCommandMgr.LoadCommandHandler(Int32 code) na D:\DDT\DDTank-3.0\Game.Server\HotSpringRooms\TankHandle\HotSpringCommandMgr.cs:linha 15
+   em Game.Server.HotSpringRooms.TankHotSpringLogicProcessor.OnGameData(HotSpringRoom room, GamePlayer player, GSPacketIn packet) na D:\DDT\DDTank-3.0\Game.Server\HotSpringRooms\TankHotSpringLogicProcessor.cs:linha 73
+22:06:17,515 - [22] - ERROR - Game.Server.HotSpringRooms.TankHotSpringLogicProcessor - IP:127.0.0.1:64751, OnGameData is Error: System.Collections.Generic.KeyNotFoundException: A chave fornecida não estava presente no dicionário.
+   em System.ThrowHelper.ThrowKeyNotFoundException()
+   em System.Collections.Generic.Dictionary`2.get_Item(TKey key)
+   em Game.Server.HotSpringRooms.TankHandle.HotSpringCommandMgr.LoadCommandHandler(Int32 code) na D:\DDT\DDTank-3.0\Game.Server\HotSpringRooms\TankHandle\HotSpringCommandMgr.cs:linha 15
+   em Game.Server.HotSpringRooms.TankHotSpringLogicProcessor.OnGameData(HotSpringRoom room, GamePlayer player, GSPacketIn packet) na D:\DDT\DDTank-3.0\Game.Server\HotSpringRooms\TankHotSpringLogicProcessor.cs:linha 73
+22:06:17,739 - [22] - ERROR - Game.Server.HotSpringRooms.TankHotSpringLogicProcessor - IP:127.0.0.1:64751, OnGameData is Error: System.Collections.Generic.KeyNotFoundException: A chave fornecida não estava presente no dicionário.
+   em System.ThrowHelper.ThrowKeyNotFoundException()
+   em System.Collections.Generic.Dictionary`2.get_Item(TKey key)
+   em Game.Server.HotSpringRooms.TankHandle.HotSpringCommandMgr.LoadCommandHandler(Int32 code) na D:\DDT\DDTank-3.0\Game.Server\HotSpringRooms\TankHandle\HotSpringCommandMgr.cs:linha 15
+   em Game.Server.HotSpringRooms.TankHotSpringLogicProcessor.OnGameData(HotSpringRoom room, GamePlayer player, GSPacketIn packet) na D:\DDT\DDTank-3.0\Game.Server\HotSpringRooms\TankHotSpringLogicProcessor.cs:linha 73
+22:06:18,019 - [22] - ERROR - Game.Server.HotSpringRooms.TankHotSpringLogicProcessor - IP:127.0.0.1:64751, OnGameData is Error: System.Collections.Generic.KeyNotFoundException: A chave fornecida não estava presente no dicionário.
+   em System.ThrowHelper.ThrowKeyNotFoundException()
+   em System.Collections.Generic.Dictionary`2.get_Item(TKey key)
+   em Game.Server.HotSpringRooms.TankHandle.HotSpringCommandMgr.LoadCommandHandler(Int32 code) na D:\DDT\DDTank-3.0\Game.Server\HotSpringRooms\TankHandle\HotSpringCommandMgr.cs:linha 15
+   em Game.Server.HotSpringRooms.TankHotSpringLogicProcessor.OnGameData(HotSpringRoom room, GamePlayer player, GSPacketIn packet) na D:\DDT\DDTank-3.0\Game.Server\HotSpringRooms\TankHotSpringLogicProcessor.cs:linha 73
+22:06:18,826 - [22] - ERROR - Game.Server.HotSpringRooms.TankHotSpringLogicProcessor - IP:127.0.0.1:64751, OnGameData is Error: System.Collections.Generic.KeyNotFoundException: A chave fornecida não estava presente no dicionário.
+   em System.ThrowHelper.ThrowKeyNotFoundException()
+   em System.Collections.Generic.Dictionary`2.get_Item(TKey key)
+   em Game.Server.HotSpringRooms.TankHandle.HotSpringCommandMgr.LoadCommandHandler(Int32 code) na D:\DDT\DDTank-3.0\Game.Server\HotSpringRooms\TankHandle\HotSpringCommandMgr.cs:linha 15
+   em Game.Server.HotSpringRooms.TankHotSpringLogicProcessor.OnGameData(HotSpringRoom room, GamePlayer player, GSPacketIn packet) na D:\DDT\DDTank-3.0\Game.Server\HotSpringRooms\TankHotSpringLogicProcessor.cs:linha 73
+22:06:19,202 - [22] - ERROR - Game.Server.HotSpringRooms.TankHotSpringLogicProcessor - IP:127.0.0.1:64751, OnGameData is Error: System.Collections.Generic.KeyNotFoundException: A chave fornecida não estava presente no dicionário.
+   em System.ThrowHelper.ThrowKeyNotFoundException()
+   em System.Collections.Generic.Dictionary`2.get_Item(TKey key)
+   em Game.Server.HotSpringRooms.TankHandle.HotSpringCommandMgr.LoadCommandHandler(Int32 code) na D:\DDT\DDTank-3.0\Game.Server\HotSpringRooms\TankHandle\HotSpringCommandMgr.cs:linha 15
+   em Game.Server.HotSpringRooms.TankHotSpringLogicProcessor.OnGameData(HotSpringRoom room, GamePlayer player, GSPacketIn packet) na D:\DDT\DDTank-3.0\Game.Server\HotSpringRooms\TankHotSpringLogicProcessor.cs:linha 73
+22:06:19,649 - [22] - ERROR - Game.Server.HotSpringRooms.TankHotSpringLogicProcessor - IP:127.0.0.1:64751, OnGameData is Error: System.Collections.Generic.KeyNotFoundException: A chave fornecida não estava presente no dicionário.
+   em System.ThrowHelper.ThrowKeyNotFoundException()
+   em System.Collections.Generic.Dictionary`2.get_Item(TKey key)
+   em Game.Server.HotSpringRooms.TankHandle.HotSpringCommandMgr.LoadCommandHandler(Int32 code) na D:\DDT\DDTank-3.0\Game.Server\HotSpringRooms\TankHandle\HotSpringCommandMgr.cs:linha 15
+   em Game.Server.HotSpringRooms.TankHotSpringLogicProcessor.OnGameData(HotSpringRoom room, GamePlayer player, GSPacketIn packet) na D:\DDT\DDTank-3.0\Game.Server\HotSpringRooms\TankHotSpringLogicProcessor.cs:linha 73
+22:06:19,865 - [22] - ERROR - Game.Server.HotSpringRooms.TankHotSpringLogicProcessor - IP:127.0.0.1:64751, OnGameData is Error: System.Collections.Generic.KeyNotFoundException: A chave fornecida não estava presente no dicionário.
+   em System.ThrowHelper.ThrowKeyNotFoundException()
+   em System.Collections.Generic.Dictionary`2.get_Item(TKey key)
+   em Game.Server.HotSpringRooms.TankHandle.HotSpringCommandMgr.LoadCommandHandler(Int32 code) na D:\DDT\DDTank-3.0\Game.Server\HotSpringRooms\TankHandle\HotSpringCommandMgr.cs:linha 15
+   em Game.Server.HotSpringRooms.TankHotSpringLogicProcessor.OnGameData(HotSpringRoom room, GamePlayer player, GSPacketIn packet) na D:\DDT\DDTank-3.0\Game.Server\HotSpringRooms\TankHotSpringLogicProcessor.cs:linha 73
+22:06:20,106 - [22] - ERROR - Game.Server.HotSpringRooms.TankHotSpringLogicProcessor - IP:127.0.0.1:64751, OnGameData is Error: System.Collections.Generic.KeyNotFoundException: A chave fornecida não estava presente no dicionário.
+   em System.ThrowHelper.ThrowKeyNotFoundException()
+   em System.Collections.Generic.Dictionary`2.get_Item(TKey key)
+   em Game.Server.HotSpringRooms.TankHandle.HotSpringCommandMgr.LoadCommandHandler(Int32 code) na D:\DDT\DDTank-3.0\Game.Server\HotSpringRooms\TankHandle\HotSpringCommandMgr.cs:linha 15
+   em Game.Server.HotSpringRooms.TankHotSpringLogicProcessor.OnGameData(HotSpringRoom room, GamePlayer player, GSPacketIn packet) na D:\DDT\DDTank-3.0\Game.Server\HotSpringRooms\TankHotSpringLogicProcessor.cs:linha 73
+22:06:20,340 - [22] - ERROR - Game.Server.HotSpringRooms.TankHotSpringLogicProcessor - IP:127.0.0.1:64751, OnGameData is Error: System.Collections.Generic.KeyNotFoundException: A chave fornecida não estava presente no dicionário.
+   em System.ThrowHelper.ThrowKeyNotFoundException()
+   em System.Collections.Generic.Dictionary`2.get_Item(TKey key)
+   em Game.Server.HotSpringRooms.TankHandle.HotSpringCommandMgr.LoadCommandHandler(Int32 code) na D:\DDT\DDTank-3.0\Game.Server\HotSpringRooms\TankHandle\HotSpringCommandMgr.cs:linha 15
+   em Game.Server.HotSpringRooms.TankHotSpringLogicProcessor.OnGameData(HotSpringRoom room, GamePlayer player, GSPacketIn packet) na D:\DDT\DDTank-3.0\Game.Server\HotSpringRooms\TankHotSpringLogicProcessor.cs:linha 73
+22:06:20,618 - [22] - ERROR - Game.Server.HotSpringRooms.TankHotSpringLogicProcessor - IP:127.0.0.1:64751, OnGameData is Error: System.Collections.Generic.KeyNotFoundException: A chave fornecida não estava presente no dicionário.
+   em System.ThrowHelper.ThrowKeyNotFoundException()
+   em System.Collections.Generic.Dictionary`2.get_Item(TKey key)
+   em Game.Server.HotSpringRooms.TankHandle.HotSpringCommandMgr.LoadCommandHandler(Int32 code) na D:\DDT\DDTank-3.0\Game.Server\HotSpringRooms\TankHandle\HotSpringCommandMgr.cs:linha 15
+   em Game.Server.HotSpringRooms.TankHotSpringLogicProcessor.OnGameData(HotSpringRoom room, GamePlayer player, GSPacketIn packet) na D:\DDT\DDTank-3.0\Game.Server\HotSpringRooms\TankHotSpringLogicProcessor.cs:linha 73
+22:06:20,964 - [22] - ERROR - Game.Server.HotSpringRooms.TankHotSpringLogicProcessor - IP:127.0.0.1:64751, OnGameData is Error: System.Collections.Generic.KeyNotFoundException: A chave fornecida não estava presente no dicionário.
+   em System.ThrowHelper.ThrowKeyNotFoundException()
+   em System.Collections.Generic.Dictionary`2.get_Item(TKey key)
+   em Game.Server.HotSpringRooms.TankHandle.HotSpringCommandMgr.LoadCommandHandler(Int32 code) na D:\DDT\DDTank-3.0\Game.Server\HotSpringRooms\TankHandle\HotSpringCommandMgr.cs:linha 15
+   em Game.Server.HotSpringRooms.TankHotSpringLogicProcessor.OnGameData(HotSpringRoom room, GamePlayer player, GSPacketIn packet) na D:\DDT\DDTank-3.0\Game.Server\HotSpringRooms\TankHotSpringLogicProcessor.cs:linha 73
+22:06:21,498 - [22] - ERROR - Game.Server.HotSpringRooms.TankHotSpringLogicProcessor - IP:127.0.0.1:64751, OnGameData is Error: System.Collections.Generic.KeyNotFoundException: A chave fornecida não estava presente no dicionário.
+   em System.ThrowHelper.ThrowKeyNotFoundException()
+   em System.Collections.Generic.Dictionary`2.get_Item(TKey key)
+   em Game.Server.HotSpringRooms.TankHandle.HotSpringCommandMgr.LoadCommandHandler(Int32 code) na D:\DDT\DDTank-3.0\Game.Server\HotSpringRooms\TankHandle\HotSpringCommandMgr.cs:linha 15
+   em Game.Server.HotSpringRooms.TankHotSpringLogicProcessor.OnGameData(HotSpringRoom room, GamePlayer player, GSPacketIn packet) na D:\DDT\DDTank-3.0\Game.Server\HotSpringRooms\TankHotSpringLogicProcessor.cs:linha 73
+22:06:21,847 - [22] - ERROR - Game.Server.HotSpringRooms.TankHotSpringLogicProcessor - IP:127.0.0.1:64751, OnGameData is Error: System.Collections.Generic.KeyNotFoundException: A chave fornecida não estava presente no dicionário.
+   em System.ThrowHelper.ThrowKeyNotFoundException()
+   em System.Collections.Generic.Dictionary`2.get_Item(TKey key)
+   em Game.Server.HotSpringRooms.TankHandle.HotSpringCommandMgr.LoadCommandHandler(Int32 code) na D:\DDT\DDTank-3.0\Game.Server\HotSpringRooms\TankHandle\HotSpringCommandMgr.cs:linha 15
+   em Game.Server.HotSpringRooms.TankHotSpringLogicProcessor.OnGameData(HotSpringRoom room, GamePlayer player, GSPacketIn packet) na D:\DDT\DDTank-3.0\Game.Server\HotSpringRooms\TankHotSpringLogicProcessor.cs:linha 73
+22:06:24,238 - [22] - ERROR - Game.Server.HotSpringRooms.TankHotSpringLogicProcessor - IP:127.0.0.1:64751, OnGameData is Error: System.Collections.Generic.KeyNotFoundException: A chave fornecida não estava presente no dicionário.
+   em System.ThrowHelper.ThrowKeyNotFoundException()
+   em System.Collections.Generic.Dictionary`2.get_Item(TKey key)
+   em Game.Server.HotSpringRooms.TankHandle.HotSpringCommandMgr.LoadCommandHandler(Int32 code) na D:\DDT\DDTank-3.0\Game.Server\HotSpringRooms\TankHandle\HotSpringCommandMgr.cs:linha 15
+   em Game.Server.HotSpringRooms.TankHotSpringLogicProcessor.OnGameData(HotSpringRoom room, GamePlayer player, GSPacketIn packet) na D:\DDT\DDTank-3.0\Game.Server\HotSpringRooms\TankHotSpringLogicProcessor.cs:linha 73
+22:07:08,156 - [18] - INFO  - Game.Server.GameServer - Buff Scaning ...
+22:08:08,151 - [21] - INFO  - Game.Server.GameServer - Begin ping check....
+22:08:08,157 - [16] - INFO  - Game.Server.GameServer - Buff Scaning ...
+22:08:08,483 - [18] - INFO  - Game.Server.GameServer - Buff Scan complete!
+22:08:08,490 - [21] - INFO  - Game.Server.GameServer - End ping check....
+22:08:08,497 - [16] - INFO  - Game.Server.GameServer - Buff Scan complete!
+22:08:08,507 - [22] - ERROR - Game.Server.HotSpringRooms.TankHotSpringLogicProcessor - IP:127.0.0.1:64751, OnGameData is Error: System.Collections.Generic.KeyNotFoundException: A chave fornecida não estava presente no dicionário.
+   em System.ThrowHelper.ThrowKeyNotFoundException()
+   em System.Collections.Generic.Dictionary`2.get_Item(TKey key)
+   em Game.Server.HotSpringRooms.TankHandle.HotSpringCommandMgr.LoadCommandHandler(Int32 code) na D:\DDT\DDTank-3.0\Game.Server\HotSpringRooms\TankHandle\HotSpringCommandMgr.cs:linha 15
+   em Game.Server.HotSpringRooms.TankHotSpringLogicProcessor.OnGameData(HotSpringRoom room, GamePlayer player, GSPacketIn packet) na D:\DDT\DDTank-3.0\Game.Server\HotSpringRooms\TankHotSpringLogicProcessor.cs:linha 73
+22:08:08,506 - [18] - INFO  - Game.Server.GameServer - Buff all 1 players in 60313ms
+22:08:08,507 - [21] - INFO  - Game.Server.GameServer - Begin ping center check....
+22:08:08,508 - [16] - INFO  - Game.Server.GameServer - Buff all 1 players in 328ms
+22:08:08,517 - [21] - INFO  - Game.Server.GameServer - End ping center check....
+22:08:08,516 - [22] - WARN  - Game.Base.Packets.PacketProcessor - (127.0.0.1:64751) Handle packet Thread 22 Game.Server.Packets.Client.HotSpringCmdDataHandler took 11360ms!
+22:08:08,533 - [25] - ERROR - Game.Server.HotSpringRooms.TankHotSpringLogicProcessor - IP:127.0.0.1:64751, OnGameData is Error: System.Collections.Generic.KeyNotFoundException: A chave fornecida não estava presente no dicionário.
+   em System.ThrowHelper.ThrowKeyNotFoundException()
+   em System.Collections.Generic.Dictionary`2.get_Item(TKey key)
+   em Game.Server.HotSpringRooms.TankHandle.HotSpringCommandMgr.LoadCommandHandler(Int32 code) na D:\DDT\DDTank-3.0\Game.Server\HotSpringRooms\TankHandle\HotSpringCommandMgr.cs:linha 15
+   em Game.Server.HotSpringRooms.TankHotSpringLogicProcessor.OnGameData(HotSpringRoom room, GamePlayer player, GSPacketIn packet) na D:\DDT\DDTank-3.0\Game.Server\HotSpringRooms\TankHotSpringLogicProcessor.cs:linha 73
+22:08:08,550 - [25] - ERROR - Game.Server.HotSpringRooms.TankHotSpringLogicProcessor - IP:127.0.0.1:64751, OnGameData is Error: System.Collections.Generic.KeyNotFoundException: A chave fornecida não estava presente no dicionário.
+   em System.ThrowHelper.ThrowKeyNotFoundException()
+   em System.Collections.Generic.Dictionary`2.get_Item(TKey key)
+   em Game.Server.HotSpringRooms.TankHandle.HotSpringCommandMgr.LoadCommandHandler(Int32 code) na D:\DDT\DDTank-3.0\Game.Server\HotSpringRooms\TankHandle\HotSpringCommandMgr.cs:linha 15
+   em Game.Server.HotSpringRooms.TankHotSpringLogicProcessor.OnGameData(HotSpringRoom room, GamePlayer player, GSPacketIn packet) na D:\DDT\DDTank-3.0\Game.Server\HotSpringRooms\TankHotSpringLogicProcessor.cs:linha 73
+22:08:08,563 - [25] - ERROR - Game.Server.HotSpringRooms.TankHotSpringLogicProcessor - IP:127.0.0.1:64751, OnGameData is Error: System.Collections.Generic.KeyNotFoundException: A chave fornecida não estava presente no dicionário.
+   em System.ThrowHelper.ThrowKeyNotFoundException()
+   em System.Collections.Generic.Dictionary`2.get_Item(TKey key)
+   em Game.Server.HotSpringRooms.TankHandle.HotSpringCommandMgr.LoadCommandHandler(Int32 code) na D:\DDT\DDTank-3.0\Game.Server\HotSpringRooms\TankHandle\HotSpringCommandMgr.cs:linha 15
+   em Game.Server.HotSpringRooms.TankHotSpringLogicProcessor.OnGameData(HotSpringRoom room, GamePlayer player, GSPacketIn packet) na D:\DDT\DDTank-3.0\Game.Server\HotSpringRooms\TankHotSpringLogicProcessor.cs:linha 73
+22:08:08,608 - [25] - ERROR - Game.Server.HotSpringRooms.TankHotSpringLogicProcessor - IP:127.0.0.1:64751, OnGameData is Error: System.Collections.Generic.KeyNotFoundException: A chave fornecida não estava presente no dicionário.
+   em System.ThrowHelper.ThrowKeyNotFoundException()
+   em System.Collections.Generic.Dictionary`2.get_Item(TKey key)
+   em Game.Server.HotSpringRooms.TankHandle.HotSpringCommandMgr.LoadCommandHandler(Int32 code) na D:\DDT\DDTank-3.0\Game.Server\HotSpringRooms\TankHandle\HotSpringCommandMgr.cs:linha 15
+   em Game.Server.HotSpringRooms.TankHotSpringLogicProcessor.OnGameData(HotSpringRoom room, GamePlayer player, GSPacketIn packet) na D:\DDT\DDTank-3.0\Game.Server\HotSpringRooms\TankHotSpringLogicProcessor.cs:linha 73
+22:08:09,517 - [25] - ERROR - Game.Server.HotSpringRooms.TankHotSpringLogicProcessor - IP:127.0.0.1:64751, OnGameData is Error: System.Collections.Generic.KeyNotFoundException: A chave fornecida não estava presente no dicionário.
+   em System.ThrowHelper.ThrowKeyNotFoundException()
+   em System.Collections.Generic.Dictionary`2.get_Item(TKey key)
+   em Game.Server.HotSpringRooms.TankHandle.HotSpringCommandMgr.LoadCommandHandler(Int32 code) na D:\DDT\DDTank-3.0\Game.Server\HotSpringRooms\TankHandle\HotSpringCommandMgr.cs:linha 15
+   em Game.Server.HotSpringRooms.TankHotSpringLogicProcessor.OnGameData(HotSpringRoom room, GamePlayer player, GSPacketIn packet) na D:\DDT\DDTank-3.0\Game.Server\HotSpringRooms\TankHotSpringLogicProcessor.cs:linha 73
+22:08:09,874 - [25] - ERROR - Game.Server.HotSpringRooms.TankHotSpringLogicProcessor - IP:127.0.0.1:64751, OnGameData is Error: System.Collections.Generic.KeyNotFoundException: A chave fornecida não estava presente no dicionário.
+   em System.ThrowHelper.ThrowKeyNotFoundException()
+   em System.Collections.Generic.Dictionary`2.get_Item(TKey key)
+   em Game.Server.HotSpringRooms.TankHandle.HotSpringCommandMgr.LoadCommandHandler(Int32 code) na D:\DDT\DDTank-3.0\Game.Server\HotSpringRooms\TankHandle\HotSpringCommandMgr.cs:linha 15
+   em Game.Server.HotSpringRooms.TankHotSpringLogicProcessor.OnGameData(HotSpringRoom room, GamePlayer player, GSPacketIn packet) na D:\DDT\DDTank-3.0\Game.Server\HotSpringRooms\TankHotSpringLogicProcessor.cs:linha 73
+22:09:08,159 - [18] - INFO  - Game.Server.GameServer - Buff Scaning ...
+22:10:08,158 - [24] - INFO  - Game.Server.GameServer - Saving Record...
+22:10:08,172 - [17] - INFO  - Game.Server.GameServer - Buff Scaning ...
+22:11:08,159 - [21] - INFO  - Game.Server.GameServer - Begin ping check....
+22:11:08,174 - [16] - INFO  - Game.Server.GameServer - Buff Scaning ...
+22:12:08,188 - [28] - INFO  - Game.Server.GameServer - Buff Scaning ...
+22:13:08,202 - [27] - INFO  - Game.Server.GameServer - Buff Scaning ...
+22:14:08,175 - [26] - INFO  - Game.Server.GameServer - Begin ping check....
+22:14:08,203 - [29] - INFO  - Game.Server.GameServer - Buff Scaning ...
+22:15:08,157 - [30] - INFO  - Game.Server.GameServer - Saving Record...
+22:15:09,159 - [31] - INFO  - Game.Server.GameServer - Saving database...
+22:15:10,158 - [32] - INFO  - Game.Server.GameServer - Buff Scaning ...
+22:16:10,174 - [33] - INFO  - Game.Server.GameServer - Buff Scaning ...
+22:17:08,188 - [34] - INFO  - Game.Server.GameServer - Begin ping check....
+22:17:11,188 - [35] - INFO  - Game.Server.GameServer - Buff Scaning ...
+22:18:11,189 - [36] - INFO  - Game.Server.GameServer - Buff Scaning ...
+22:19:11,189 - [38] - INFO  - Game.Server.GameServer - Buff Scaning ...
+22:20:08,158 - [39] - INFO  - Game.Server.GameServer - Saving Record...
+22:20:09,112 - [40] - INFO  - Game.Server.GameServer - Begin ping check....
+22:20:11,190 - [41] - INFO  - Game.Server.GameServer - Buff Scaning ...
+22:21:11,203 - [42] - INFO  - Game.Server.GameServer - Buff Scaning ...
+22:22:11,204 - [43] - INFO  - Game.Server.GameServer - Buff Scaning ...
+22:23:09,127 - [44] - INFO  - Game.Server.GameServer - Begin ping check....
+22:23:11,205 - [45] - INFO  - Game.Server.GameServer - Buff Scaning ...
+22:24:11,219 - [47] - INFO  - Game.Server.GameServer - Buff Scaning ...
+22:25:08,158 - [46] - INFO  - Game.Server.GameServer - Saving Record...
+22:25:09,061 - [48] - INFO  - Game.Server.GameServer - Saving database...
+22:25:11,219 - [49] - INFO  - Game.Server.GameServer - Buff Scaning ...
+22:26:09,128 - [50] - INFO  - Game.Server.GameServer - Begin ping check....
+22:26:11,220 - [51] - INFO  - Game.Server.GameServer - Buff Scaning ...
+22:27:11,235 - [52] - INFO  - Game.Server.GameServer - Buff Scaning ...
+22:28:11,251 - [53] - INFO  - Game.Server.GameServer - Buff Scaning ...
+22:29:09,141 - [55] - INFO  - Game.Server.GameServer - Begin ping check....
+22:29:12,266 - [56] - INFO  - Game.Server.GameServer - Buff Scaning ...
+22:30:08,174 - [57] - INFO  - Game.Server.GameServer - Saving Record...
+22:30:12,268 - [58] - INFO  - Game.Server.GameServer - Buff Scaning ...
+22:30:33,980 - [18] - INFO  - Game.Server.GameServer - Buff Scan complete!
+22:30:33,982 - [17] - INFO  - Game.Server.GameServer - Buff Scan complete!
+22:30:33,985 - [21] - INFO  - Game.Server.GameServer - End ping check....
+22:30:33,998 - [16] - INFO  - Game.Server.GameServer - Buff Scan complete!
+22:30:34,000 - [28] - INFO  - Game.Server.GameServer - Buff Scan complete!
+22:30:33,999 - [37] - ERROR - Game.Server.HotSpringRooms.TankHotSpringLogicProcessor - IP:127.0.0.1:64751, OnGameData is Error: System.Collections.Generic.KeyNotFoundException: A chave fornecida não estava presente no dicionário.
+   em System.ThrowHelper.ThrowKeyNotFoundException()
+   em System.Collections.Generic.Dictionary`2.get_Item(TKey key)
+   em Game.Server.HotSpringRooms.TankHandle.HotSpringCommandMgr.LoadCommandHandler(Int32 code) na D:\DDT\DDTank-3.0\Game.Server\HotSpringRooms\TankHandle\HotSpringCommandMgr.cs:linha 15
+   em Game.Server.HotSpringRooms.TankHotSpringLogicProcessor.OnGameData(HotSpringRoom room, GamePlayer player, GSPacketIn packet) na D:\DDT\DDTank-3.0\Game.Server\HotSpringRooms\TankHotSpringLogicProcessor.cs:linha 73
+22:30:34,001 - [27] - INFO  - Game.Server.GameServer - Buff Scan complete!
+22:30:34,004 - [26] - INFO  - Game.Server.GameServer - End ping check....
+22:30:34,014 - [34] - INFO  - Game.Server.GameServer - End ping check....
+22:30:34,011 - [24] - INFO  - Game.Server.GameServer - Saving Record complete!
+22:30:34,013 - [29] - INFO  - Game.Server.GameServer - Buff Scan complete!
+22:30:34,017 - [35] - INFO  - Game.Server.GameServer - Buff Scan complete!
+22:30:34,017 - [38] - INFO  - Game.Server.GameServer - Buff Scan complete!
+22:30:34,014 - [30] - INFO  - Game.Server.GameServer - Saving Record complete!
+22:30:34,024 - [40] - INFO  - Game.Server.GameServer - End ping check....
+22:30:34,027 - [44] - INFO  - Game.Server.GameServer - End ping check....
+22:30:34,026 - [32] - INFO  - Game.Server.GameServer - Buff Scan complete!
+22:30:34,026 - [33] - INFO  - Game.Server.GameServer - Buff Scan complete!
+22:30:34,028 - [42] - INFO  - Game.Server.GameServer - Buff Scan complete!
+22:30:34,028 - [36] - INFO  - Game.Server.GameServer - Buff Scan complete!
+22:30:34,030 - [43] - INFO  - Game.Server.GameServer - Buff Scan complete!
+22:30:34,031 - [50] - INFO  - Game.Server.GameServer - End ping check....
+22:30:34,040 - [55] - INFO  - Game.Server.GameServer - End ping check....
+22:30:34,043 - [18] - INFO  - Game.Server.GameServer - Buff all 1 players in 1285813ms
+22:30:34,044 - [21] - INFO  - Game.Server.GameServer - Begin ping center check....
+22:30:34,043 - [17] - INFO  - Game.Server.GameServer - Buff all 1 players in 1225797ms
+22:30:34,050 - [16] - INFO  - Game.Server.GameServer - Buff all 1 players in 1165812ms
+22:30:34,046 - [46] - INFO  - Game.Server.GameServer - Saving Record complete!
+22:30:34,053 - [39] - INFO  - Game.Server.GameServer - Saving Record complete!
+22:30:34,058 - [29] - INFO  - Game.Server.GameServer - Buff all 1 players in 985797ms
+22:30:34,082 - [29] - WARN  - Game.Server.GameServer - Scan all Buff and 1 players in 985797 ms
+22:30:34,058 - [35] - INFO  - Game.Server.GameServer - Buff all 1 players in 802828ms
+22:30:34,064 - [41] - INFO  - Game.Server.GameServer - Buff Scan complete!
+22:30:34,051 - [28] - INFO  - Game.Server.GameServer - Buff all 1 players in 1105812ms
+22:30:34,064 - [45] - INFO  - Game.Server.GameServer - Buff Scan complete!
+22:30:34,064 - [47] - INFO  - Game.Server.GameServer - Buff Scan complete!
+22:30:34,065 - [30] - WARN  - Game.Server.GameServer - Saved all Record  in 925844 ms
+22:30:34,067 - [32] - INFO  - Game.Server.GameServer - Buff all 1 players in 923860ms
+22:30:34,053 - [37] - WARN  - Game.Base.Packets.PacketProcessor - (not connected) Handle packet Thread 37 Game.Server.Packets.Client.HotSpringCmdDataHandler took 114000ms!
+22:30:34,068 - [33] - INFO  - Game.Server.GameServer - Buff all 1 players in 863844ms
+22:30:34,054 - [27] - INFO  - Game.Server.GameServer - Buff all 1 players in 1045797ms
+22:30:34,056 - [34] - INFO  - Game.Server.GameServer - Begin ping center check....
+22:30:34,069 - [36] - INFO  - Game.Server.GameServer - Buff all 1 players in 742828ms
+22:30:34,070 - [50] - INFO  - Game.Server.GameServer - Begin ping center check....
+22:30:34,073 - [21] - INFO  - Game.Server.GameServer - End ping center check....
+22:30:34,073 - [18] - WARN  - Game.Server.GameServer - Scan all Buff and 1 players in 1285813 ms
+22:30:34,058 - [24] - WARN  - Game.Server.GameServer - Saved all Record  in 1225844 ms
+22:30:34,055 - [26] - INFO  - Game.Server.GameServer - Begin ping center check....
+22:30:34,078 - [16] - WARN  - Game.Server.GameServer - Scan all Buff and 1 players in 1165812 ms
+22:30:34,081 - [39] - WARN  - Game.Server.GameServer - Saved all Record  in 625891 ms
+22:30:34,066 - [40] - INFO  - Game.Server.GameServer - Begin ping center check....
+22:30:34,092 - [47] - INFO  - Game.Server.GameServer - Buff all 1 players in 382844ms
+22:30:34,090 - [41] - INFO  - Game.Server.GameServer - Buff all 1 players in 62222:34:03,414 - [MAIN] - INFO  - Bussiness.GameProperties - Refreshing game properties!
+22:34:05,071 - [MAIN] - INFO  - Game.Server.GameServer - Recompile Scripts: True
+22:34:05,073 - [MAIN] - INFO  - Game.Server.GameServer - Server rules: true
+22:34:05,108 - [MAIN] - INFO  - Game.Server.GameServer - Registering global event handlers: true
+22:34:05,108 - [MAIN] - INFO  - Game.Server.GameServer - Script components: True
+22:34:05,109 - [MAIN] - INFO  - Game.Server.GameServer - Edition:21000: True
+22:34:05,113 - [MAIN] - INFO  - Game.Server.GameServer - InitSocket Port:9200: True
+22:34:05,157 - [MAIN] - INFO  - Game.Server.GameServer - AllocatePacketBuffers(): True
+22:34:05,164 - [MAIN] - INFO  - Game.Server.GameServer - LogMgr Init: True
+22:34:05,168 - [MAIN] - INFO  - Game.Server.GameServer - WorldMgr Init: True
+22:34:05,477 - [MAIN] - INFO  - Game.Server.GameServer - MapMgr Init: True
+22:34:05,769 - [MAIN] - INFO  - Game.Server.GameServer - ItemMgr Init: True
+22:34:05,811 - [MAIN] - INFO  - Game.Server.GameServer - ItemBox Init: True
+22:34:06,075 - [MAIN] - INFO  - Game.Server.GameServer - BallMgr Init: True
+22:34:06,083 - [MAIN] - INFO  - Game.Server.GameServer - BallConfigMgr Init: True
+22:34:06,120 - [MAIN] - INFO  - Game.Server.GameServer - FusionMgr Init: True
+22:34:06,136 - [MAIN] - INFO  - Game.Server.GameServer - AwardMgr Init: True
+22:34:06,149 - [MAIN] - INFO  - Game.Server.GameServer - NPCInfoMgr Init: True
+22:34:06,179 - [MAIN] - INFO  - Game.Server.GameServer - MissionInfoMgr Init: True
+22:34:06,192 - [MAIN] - INFO  - Game.Server.GameServer - PveInfoMgr Init: True
+22:34:06,207 - [MAIN] - INFO  - Game.Server.GameServer - Drop Init: True
+22:34:06,216 - [MAIN] - INFO  - Game.Server.GameServer - FightRateMgr Init: True
+22:34:06,222 - [MAIN] - INFO  - Game.Server.GameServer - ConsortiaLevelMgr Init: True
+22:34:06,231 - [MAIN] - INFO  - Game.Server.GameServer - RefineryMgr Init: True
+22:34:06,253 - [MAIN] - INFO  - Game.Server.GameServer - StrengthenMgr Init: True
+22:34:06,260 - [MAIN] - INFO  - Game.Server.GameServer - PropItemMgr Init: True
+22:34:06,383 - [MAIN] - INFO  - Game.Server.GameServer - ShopMgr Init: True
+22:34:06,457 - [MAIN] - INFO  - Game.Server.GameServer - QuestMgr Init: True
+22:34:06,459 - [MAIN] - INFO  - Game.Server.GameServer - RoomMgr.Setup: True
+22:34:06,460 - [MAIN] - INFO  - Game.Server.GameServer - GameMgr.Start(): True
+22:34:06,486 - [MAIN] - INFO  - Game.Server.GameServer - ConsortiaMgr Init: True
+22:34:06,506 - [MAIN] - INFO  - Game.Server.GameServer - LanguageMgr Init: True
+22:34:06,516 - [MAIN] - INFO  - Game.Server.GameServer - ExperienceRateMgr Init: True
+22:34:06,519 - [MAIN] - INFO  - Game.Server.GameServer - MacroDropMgr Init: True
+22:34:06,541 - [MAIN] - INFO  - Game.Server.Battle.BattleMgr - Battle server 127.0.0.1:9208 loaded...
+22:34:06,548 - [MAIN] - INFO  - Game.Server.Battle.BattleMgr - Total 1 battle server loaded.
+22:34:06,548 - [MAIN] - INFO  - Game.Server.GameServer - BattleMgr Setup: True
+22:34:06,550 - [MAIN] - INFO  - Game.Server.GameServer - Init Global Timers: True
+22:34:06,567 - [MAIN] - INFO  - Game.Server.GameServer - MarryRoomMgr Init: True
+22:34:06,568 - [MAIN] - INFO  - Game.Server.GameServer - LogMgr Setup: True
+22:34:06,590 - [MAIN] - INFO  - Game.Base.Packets.PacketProcessor - PacketProcessor: Loaded 149 handlers from GameServer Assembly!
+22:34:06,597 - [MAIN] - INFO  - Game.Base.CommandMgr - Loaded 7 commands!
+22:34:06,604 - [MAIN] - INFO  - Game.Logic.Spells.SpellMgr - SpellMgr: Loaded 15 spell handlers from GameServer Assembly!
+22:34:06,607 - [MAIN] - INFO  - Game.Base.BaseConnector - Connected to 127.0.0.1:9202
+22:34:06,608 - [MAIN] - INFO  - Game.Server.GameServer - Login To CenterServer: True
+22:34:06,612 - [MAIN] - INFO  - Game.Base.BaseConnector - Connected to 127.0.0.1:9208
+22:34:06,617 - [MAIN] - INFO  - Game.Server.GameServer - base.Start(): True
+22:34:06,640 - [MAIN] - INFO  - Game.Server.GameServer - GameServer is now open for connections!
+22:35:06,552 - [16] - INFO  - Game.Server.GameServer - Buff Scaning ...
+22:35:08,467 - [16] - INFO  - Game.Server.GameServer - Buff Scan complete!
+22:35:08,469 - [16] - INFO  - Game.Server.GameServer - Buff all 0 players in 1906ms
+22:35:35,593 - [5] - INFO  - Game.Base.BaseServer - Incoming connection from 127.0.0.1:64811
+22:35:35,601 - [5] - INFO  - Game.Base.BaseClient - Disconnecting client (127.0.0.1:64811), received bytes=0
+22:35:35,625 - [5] - INFO  - Game.Base.BaseServer - Incoming connection from 127.0.0.1:64812
+22:36:06,550 - [16] - INFO  - Game.Server.GameServer - Buff Scaning ...
+22:36:06,550 - [16] - INFO  - Game.Server.GameServer - Buff Scan complete!
+22:36:06,551 - [16] - INFO  - Game.Server.GameServer - Buff all 1 players in 0ms
+22:36:21,444 - [22] - ERROR - Game.Server.HotSpringRooms.TankHotSpringLogicProcessor - IP:127.0.0.1:64812, OnGameData is Error: System.Collections.Generic.KeyNotFoundException: A chave fornecida não estava presente no dicionário.
+   em System.ThrowHelper.ThrowKeyNotFoundException()
+   em System.Collections.Generic.Dictionary`2.get_Item(TKey key)
+   em Game.Server.HotSpringRooms.TankHandle.HotSpringCommandMgr.LoadCommandHandler(Int32 code) na D:\DDT\DDTank-3.0\Game.Server\HotSpringRooms\TankHandle\HotSpringCommandMgr.cs:linha 15
+   em Game.Server.HotSpringRooms.TankHotSpringLogicProcessor.OnGameData(HotSpringRoom room, GamePlayer player, GSPacketIn packet) na D:\DDT\DDTank-3.0\Game.Server\HotSpringRooms\TankHotSpringLogicProcessor.cs:linha 73
+22:36:32,140 - [22] - ERROR - Game.Server.HotSpringRooms.TankHotSpringLogicProcessor - IP:127.0.0.1:64812, OnGameData is Error: System.Collections.Generic.KeyNotFoundException: A chave fornecida não estava presente no dicionário.
+   em System.ThrowHelper.ThrowKeyNotFoundException()
+   em System.Collections.Generic.Dictionary`2.get_Item(TKey key)
+   em Game.Server.HotSpringRooms.TankHandle.HotSpringCommandMgr.LoadCommandHandler(Int32 code) na D:\DDT\DDTank-3.0\Game.Server\HotSpringRooms\TankHandle\HotSpringCommandMgr.cs:linha 15
+   em Game.Server.HotSpringRooms.TankHotSpringLogicProcessor.OnGameData(HotSpringRoom room, GamePlayer player, GSPacketIn packet) na D:\DDT\DDTank-3.0\Game.Server\HotSpringRooms\TankHotSpringLogicProcessor.cs:linha 73
+22:36:32,758 - [22] - ERROR - Game.Server.HotSpringRooms.TankHotSpringLogicProcessor - IP:127.0.0.1:64812, OnGameData is Error: System.Collections.Generic.KeyNotFoundException: A chave fornecida não estava presente no dicionário.
+   em System.ThrowHelper.ThrowKeyNotFoundException()
+   em System.Collections.Generic.Dictionary`2.get_Item(TKey key)
+   em Game.Server.HotSpringRooms.TankHandle.HotSpringCommandMgr.LoadCommandHandler(Int32 code) na D:\DDT\DDTank-3.0\Game.Server\HotSpringRooms\TankHandle\HotSpringCommandMgr.cs:linha 15
+   em Game.Server.HotSpringRooms.TankHotSpringLogicProcessor.OnGameData(HotSpringRoom room, GamePlayer player, GSPacketIn packet) na D:\DDT\DDTank-3.0\Game.Server\HotSpringRooms\TankHotSpringLogicProcessor.cs:linha 73
+22:36:33,156 - [22] - ERROR - Game.Server.HotSpringRooms.TankHotSpringLogicProcessor - IP:127.0.0.1:64812, OnGameData is Error: System.Collections.Generic.KeyNotFoundException: A chave fornecida não estava presente no dicionário.
+   em System.ThrowHelper.ThrowKeyNotFoundException()
+   em System.Collections.Generic.Dictionary`2.get_Item(TKey key)
+   em Game.Server.HotSpringRooms.TankHandle.HotSpringCommandMgr.LoadCommandHandler(Int32 code) na D:\DDT\DDTank-3.0\Game.Server\HotSpringRooms\TankHandle\HotSpringCommandMgr.cs:linha 15
+   em Game.Server.HotSpringRooms.TankHotSpringLogicProcessor.OnGameData(HotSpringRoom room, GamePlayer player, GSPacketIn packet) na D:\DDT\DDTank-3.0\Game.Server\HotSpringRooms\TankHotSpringLogicProcessor.cs:linha 73
+22:36:33,781 - [22] - ERROR - Game.Server.HotSpringRooms.TankHotSpringLogicProcessor - IP:127.0.0.1:64812, OnGameData is Error: System.Collections.Generic.KeyNotFoundException: A chave fornecida não estava presente no dicionário.
+   em System.ThrowHelper.ThrowKeyNotFoundException()
+   em System.Collections.Generic.Dictionary`2.get_Item(TKey key)
+   em Game.Server.HotSpringRooms.TankHandle.HotSpringCommandMgr.LoadCommandHandler(Int32 code) na D:\DDT\DDTank-3.0\Game.Server\HotSpringRooms\TankHandle\HotSpringCommandMgr.cs:linha 15
+   em Game.Server.HotSpringRooms.TankHotSpringLogicProcessor.OnGameData(HotSpringRoom room, GamePlayer player, GSPacketIn packet) na D:\DDT\DDTank-3.0\Game.Server\HotSpringRooms\TankHotSpringLogicProcessor.cs:linha 73
+22:36:34,012 - [22] - ERROR - Game.Server.HotSpringRooms.TankHotSpringLogicProcessor - IP:127.0.0.1:64812, OnGameData is Error: System.Collections.Generic.KeyNotFoundException: A chave fornecida não estava presente no dicionário.
+   em System.ThrowHelper.ThrowKeyNotFoundException()
+   em System.Collections.Generic.Dictionary`2.get_Item(TKey key)
+   em Game.Server.HotSpringRooms.TankHandle.HotSpringCommandMgr.LoadCommandHandler(Int32 code) na D:\DDT\DDTank-3.0\Game.Server\HotSpringRooms\TankHandle\HotSpringCommandMgr.cs:linha 15
+   em Game.Server.HotSpringRooms.TankHotSpringLogicProcessor.OnGameData(HotSpringRoom room, GamePlayer player, GSPacketIn packet) na D:\DDT\DDTank-3.0\Game.Server\HotSpringRooms\TankHotSpringLogicProcessor.cs:linha 73
+22:36:41,500 - [22] - ERROR - Game.Server.HotSpringRooms.TankHotSpringLogicProcessor - IP:127.0.0.1:64812, OnGameData is Error: System.Collections.Generic.KeyNotFoundException: A chave fornecida não estava presente no dicionário.
+   em System.ThrowHelper.ThrowKeyNotFoundException()
+   em System.Collections.Generic.Dictionary`2.get_Item(TKey key)
+   em Game.Server.HotSpringRooms.TankHandle.HotSpringCommandMgr.LoadCommandHandler(Int32 code) na D:\DDT\DDTank-3.0\Game.Server\HotSpringRooms\TankHandle\HotSpringCommandMgr.cs:linha 15
+   em Game.Server.HotSpringRooms.TankHotSpringLogicProcessor.OnGameData(HotSpringRoom room, GamePlayer player, GSPacketIn packet) na D:\DDT\DDTank-3.0\Game.Server\HotSpringRooms\TankHotSpringLogicProcessor.cs:linha 73
+22:36:41,740 - [22] - ERROR - Game.Server.HotSpringRooms.TankHotSpringLogicProcessor - IP:127.0.0.1:64812, OnGameData is Error: System.Collections.Generic.KeyNotFoundException: A chave fornecida não estava presente no dicionário.
+   em System.ThrowHelper.ThrowKeyNotFoundException()
+   em System.Collections.Generic.Dictionary`2.get_Item(TKey key)
+   em Game.Server.HotSpringRooms.TankHandle.HotSpringCommandMgr.LoadCommandHandler(Int32 code) na D:\DDT\DDTank-3.0\Game.Server\HotSpringRooms\TankHandle\HotSpringCommandMgr.cs:linha 15
+   em Game.Server.HotSpringRooms.TankHotSpringLogicProcessor.OnGameData(HotSpringRoom room, GamePlayer player, GSPacketIn packet) na D:\DDT\DDTank-3.0\Game.Server\HotSpringRooms\TankHotSpringLogicProcessor.cs:linha 73
+22:36:41,948 - [22] - ERROR - Game.Server.HotSpringRooms.TankHotSpringLogicProcessor - IP:127.0.0.1:64812, OnGameData is Error: System.Collections.Generic.KeyNotFoundException: A chave fornecida não estava presente no dicionário.
+   em System.ThrowHelper.ThrowKeyNotFoundException()
+   em System.Collections.Generic.Dictionary`2.get_Item(TKey key)
+   em Game.Server.HotSpringRooms.TankHandle.HotSpringCommandMgr.LoadCommandHandler(Int32 code) na D:\DDT\DDTank-3.0\Game.Server\HotSpringRooms\TankHandle\HotSpringCommandMgr.cs:linha 15
+   em Game.Server.HotSpringRooms.TankHotSpringLogicProcessor.OnGameData(HotSpringRoom room, GamePlayer player, GSPacketIn packet) na D:\DDT\DDTank-3.0\Game.Server\HotSpringRooms\TankHotSpringLogicProcessor.cs:linha 73
+22:36:42,388 - [22] - ERROR - Game.Server.HotSpringRooms.TankHotSpringLogicProcessor - IP:127.0.0.1:64812, OnGameData is Error: System.Collections.Generic.KeyNotFoundException: A chave fornecida não estava presente no dicionário.
+   em System.ThrowHelper.ThrowKeyNotFoundException()
+   em System.Collections.Generic.Dictionary`2.get_Item(TKey key)
+   em Game.Server.HotSpringRooms.TankHandle.HotSpringCommandMgr.LoadCommandHandler(Int32 code) na D:\DDT\DDTank-3.0\Game.Server\HotSpringRooms\TankHandle\HotSpringCommandMgr.cs:linha 15
+   em Game.Server.HotSpringRooms.TankHotSpringLogicProcessor.OnGameData(HotSpringRoom room, GamePlayer player, GSPacketIn packet) na D23:04:38,380 - [MAIN] - INFO  - Bussiness.GameProperties - Refreshing game properties!
+23:04:39,809 - [MAIN] - INFO  - Game.Server.GameServer - Recompile Scripts: True
+23:04:39,811 - [MAIN] - INFO  - Game.Server.GameServer - Server rules: true
+23:04:39,845 - [MAIN] - INFO  - Game.Server.GameServer - Registering global event handlers: true
+23:04:40,645 - [MAIN] - INFO  - Game.Server.GameServer - Script components: True
+23:04:40,645 - [MAIN] - INFO  - Game.Server.GameServer - Edition:21000: True
+23:04:40,651 - [MAIN] - INFO  - Game.Server.GameServer - InitSocket Port:9200: True
+23:04:40,689 - [MAIN] - INFO  - Game.Server.GameServer - AllocatePacketBuffers(): True
+23:04:40,696 - [MAIN] - INFO  - Game.Server.GameServer - LogMgr Init: True
+23:04:40,700 - [MAIN] - INFO  - Game.Server.GameServer - WorldMgr Init: True
+23:04:41,018 - [MAIN] - INFO  - Game.Server.GameServer - MapMgr Init: True
+23:04:41,242 - [MAIN] - INFO  - Game.Server.GameServer - ItemMgr Init: True
+23:04:41,264 - [MAIN] - INFO  - Game.Server.GameServer - ItemBox Init: True
+23:04:41,512 - [MAIN] - INFO  - Game.Server.GameServer - BallMgr Init: True
+23:04:41,519 - [MAIN] - INFO  - Game.Server.GameServer - BallConfigMgr Init: True
+23:04:41,526 - [MAIN] - INFO  - Game.Server.GameServer - FusionMgr Init: True
+23:04:41,532 - [MAIN] - INFO  - Game.Server.GameServer - AwardMgr Init: True
+23:04:41,544 - [MAIN] - INFO  - Game.Server.GameServer - NPCInfoMgr Init: True
+23:04:41,552 - [MAIN] - INFO  - Game.Server.GameServer - MissionInfoMgr Init: True
+23:04:41,560 - [MAIN] - INFO  - Game.Server.GameServer - PveInfoMgr Init: True
+23:04:41,575 - [MAIN] - INFO  - Game.Server.GameServer - Drop Init: True
+23:04:41,582 - [MAIN] - INFO  - Game.Server.GameServer - FightRateMgr Init: True
+23:04:41,587 - [MAIN] - INFO  - Game.Server.GameServer - ConsortiaLevelMgr Init: True
+23:04:41,594 - [MAIN] - INFO  - Game.Server.GameServer - RefineryMgr Init: True
+23:04:41,609 - [MAIN] - INFO  - Game.Server.GameServer - StrengthenMgr Init: True
+23:04:41,616 - [MAIN] - INFO  - Game.Server.GameServer - PropItemMgr Init: True
+23:04:41,723 - [MAIN] - INFO  - Game.Server.GameServer - ShopMgr Init: True
+23:04:41,752 - [MAIN] - INFO  - Game.Server.GameServer - QuestMgr Init: True
+23:04:41,755 - [MAIN] - INFO  - Game.Server.GameServer - RoomMgr.Setup: True
+23:04:41,756 - [MAIN] - INFO  - Game.Server.GameServer - GameMgr.Start(): True
+23:04:41,769 - [MAIN] - INFO  - Game.Server.GameServer - ConsortiaMgr Init: True
+23:04:41,789 - [MAIN] - INFO  - Game.Server.GameServer - LanguageMgr Init: True
+23:04:41,794 - [MAIN] - INFO  - Game.Server.GameServer - ExperienceRateMgr Init: True
+23:04:41,796 - [MAIN] - INFO  - Game.Server.GameServer - MacroDropMgr Init: True
+23:04:41,818 - [MAIN] - INFO  - Game.Server.Battle.BattleMgr - Battle server 127.0.0.1:9208 loaded...
+23:04:41,824 - [MAIN] - INFO  - Game.Server.Battle.BattleMgr - Total 1 battle server loaded.
+23:04:41,824 - [MAIN] - INFO  - Game.Server.GameServer - BattleMgr Setup: True
+23:04:41,826 - [MAIN] - INFO  - Game.Server.GameServer - Init Global Timers: True
+23:04:41,836 - [MAIN] - INFO  - Game.Server.GameServer - MarryRoomMgr Init: True
+23:04:41,837 - [MAIN] - INFO  - Game.Server.GameServer - LogMgr Setup: True
+23:04:41,859 - [MAIN] - INFO  - Game.Base.Packets.PacketProcessor - PacketProcessor: Loaded 149 handlers from GameServer Assembly!
+23:04:41,866 - [MAIN] - INFO  - Game.Base.CommandMgr - Loaded 7 commands!
+23:04:41,874 - [MAIN] - INFO  - Game.Logic.Spells.SpellMgr - SpellMgr: Loaded 15 spell handlers from GameServer Assembly!
+23:04:41,877 - [MAIN] - INFO  - Game.Base.BaseConnector - Connected to 127.0.0.1:9202
+23:04:41,878 - [MAIN] - INFO  - Game.Server.GameServer - Login To CenterServer: True
+23:04:41,882 - [MAIN] - INFO  - Game.Base.BaseConnector - Connected to 127.0.0.1:9208
+23:04:41,887 - [MAIN] - INFO  - Game.Server.GameServer - base.Start(): True
+23:04:41,914 - [MAIN] - INFO  - Game.Server.GameServer - GameServer is now open for connections!
+23:05:20,516 - [5] - INFO  - Game.Base.BaseServer - Incoming connection from 127.0.0.1:64875
+23:05:41,839 - [17] - INFO  - Game.Server.GameServer - Buff Scaning ...
+23:05:49,969 - [17] - INFO  - Game.Server.GameServer - Buff Scan complete!
+23:05:49,972 - [17] - INFO  - Game.Server.GameServer - Buff all 0 players in 8141ms
+23:05:49,968 - [19] - INFO  - Game.Base.BaseClient - Disconnecting client (not connected), received bytes=0
+23:06:15,413 - [19] - INFO  - Game.Base.BaseServer - Incoming connection from 127.0.0.1:64883
+23:06:15,415 - [20] - INFO  - Game.Base.BaseClient - Disconnecting client (127.0.0.1:64883), received bytes=0
+23:06:15,462 - [19] - INFO  - Game.Base.BaseServer - Incoming connection from 127.0.0.1:64884
+23:06:41,845 - [16] - INFO  - Game.Server.GameServer - Buff Scaning ...
+23:06:41,846 - [16] - INFO  - Game.Server.GameServer - Buff Scan complete!
+23:06:41,848 - [16] - INFO  - Game.Server.GameServer - Buff all 1 players in 0ms
+23:07:41,829 - [22] - INFO  - Game.Server.GameServer - Begin ping check....
+23:07:41,831 - [22] - INFO  - Game.Server.GameServer - End ping check....
+23:07:41,831 - [22] - INFO  - Game.Server.GameServer - Begin ping center check....
+23:07:41,832 - [22] - INFO  - Game.Server.GameServer - End ping center check....
+23:07:41,845 - [17] - INFO  - Game.Server.GameServer - Buff Scaning ...
+23:07:41,845 - [17] - INFO  - Game.Server.GameServer - Buff Scan complete!
+23:07:41,845 - [17] - INFO  - Game.Server.GameServer - Buff all 1 players in 0ms
+23:07:55,461 - [23] - ERROR - Game.Server.HotSpringRooms.TankHotSpringLogicProcessor - IP:127.0.0.1:64884, OnGameData is Error: System.Collections.Generic.KeyNotFoundException: A chave fornecida não estava presente no dicionário.
+   em System.ThrowHelper.ThrowKeyNotFoundException()
+   em System.Collections.Generic.Dictionary`2.get_Item(TKey key)
+   em Game.Server.HotSpringRooms.TankHandle.HotSpringCommandMgr.LoadCommandHandler(Int32 code) na D:\DDT\DDTank-3.0\Game.Server\HotSpringRooms\TankHandle\HotSpringCommandMgr.cs:linha 15
+   em Game.Server.HotSpringRooms.TankHotSpringLogicProcessor.OnGameData(HotSpringRoom room, GamePlayer player, GSPacketIn packet) na D:\DDT\DDTank-3.0\Game.Server\HotSpringRooms\TankHotSpringLogicProcessor.cs:linha 74
+23:07:55,738 - [23] - ERROR - Game.Server.HotSpringRooms.TankHotSpringLogicProcessor - IP:127.0.0.1:64884, OnGameData is Error: System.Collections.Generic.KeyNotFoundException: A chave fornecida não estava presente no dicionário.
+   em System.ThrowHelper.ThrowKeyNotFoundException()
+   em System.Collections.Generic.Dictionary`2.get_Item(TKey key)
+   em Game.Server.HotSpringRooms.TankHandle.HotSpringCommandMgr.LoadCommandHandler(Int32 code) na D:\DDT\DDTank-3.0\Game.Server\HotSpringRooms\TankHandle\HotSpringCommandMgr.cs:linha 15
+   em Game.Server.HotSpringRooms.TankHotSpringLogicProcessor.OnGameData(HotSpringRoom room, GamePlayer player, GSPacketIn packet) na D:\DDT\DDTank-3.0\Game.Server\HotSpringRooms\TankHotSpringLogicProcessor.cs:linha 74
+23:08:05,447 - [23] - ERROR - Game.Server.HotSpringRooms.TankHotSpringLogicProcessor - IP:127.0.0.1:64884, OnGameData is Error: System.Collections.Generic.KeyNotFoundException: A chave fornecida não estava presente no dicionário.
+   em System.ThrowHelper.ThrowKeyNotFoundException()
+   em System.Collections.Generic.Dictionary`2.get_Item(TKey key)
+   em Game.Server.HotSpringRooms.TankHandle.HotSpringCommandMgr.LoadCommandHandler(Int32 code) na D:\DDT\DDTank-3.0\Game.Server\HotSpringRooms\TankHandle\HotSpringCommandMgr.cs:linha 15
+   em Game.Server.HotSpringRooms.TankHotSpringLogicProcessor.OnGameData(HotSpringRoom room, GamePlayer player, GSPacketIn packet) na D:\DDT\DDTank-3.0\Game.Server\HotSpringRooms\TankHotSpringLogicProcessor.cs:linha 74
+23:08:05,751 - [23] - ERROR - Game.Server.HotSpringRooms.TankHotSpringLogicProcessor - IP:127.0.0.1:64884, OnGameData is Error: System.Collections.Generic.KeyNotFoundException: A chave fornecida não estava presente no dicionário.
+   em System.ThrowHelper.ThrowKeyNotFoundException()
+   em System.Collections.Generic.Dictionary`2.get_Item(TKey key)
+   em Game.Server.HotSpringRooms.TankHandle.HotSpringCommandMgr.LoadCommandHandler(Int32 code) na D:\DDT\DDTank-3.0\Game.Server\HotSpringRooms\TankHandle\HotSpringCommandMgr.cs:linha 15
+   em Game.Server.HotSpringRooms.TankHotSpringLogicProcessor.OnGameData(HotSpringRoom room, GamePlayer player, GSPacketIn packet) na D:\DDT\DDTank-3.0\Game.Server\HotSpringRooms\TankHotSpringLogicProcessor.cs:linha 74
+23:08:37,262 - [23] - ERROR - Game.Server.HotSpringRooms.TankHotSpringLogicProcessor - IP:127.0.0.1:64884, OnGameData is Error: System.Collections.Generic.KeyNotFoundException: A chave fornecida não estava presente no dicionário.
+   em System.ThrowHelper.ThrowKeyNotFoundException()
+   em System.Collections.Generic.Dictionary`2.get_Item(TKey key)
+   em Game.Server.HotSpringRooms.TankHandle.HotSpringCommandMgr.LoadCommandHandler(Int32 code) na D:\DDT\DDTank-3.0\Game.Server\HotSpringRooms\TankHandle\HotSpringCommandMgr.cs:linha 15
+   em Game.Server.HotSpringRooms.TankHotSpringLogicProcessor.OnGameData(HotSpringRoom room, GamePlayer player, GSPacketIn packet) na D:\DDT\DDTank-3.0\Game.Server\HotSpringRooms\TankHotSpringLogicProcessor.cs:linha 74
+23:08:40,829 - [23] - ERROR - Game.Server.HotSpringRooms.TankHotSpringLogicProcessor - IP:127.0.0.1:64884, OnGameData is Error: System.Collections.Generic.KeyNotFoundException: A chave fornecida não estava presente no dicionário.
+   em System.ThrowHelper.ThrowKeyNotFoundException()
+   em System.Collections.Generic.Dictionary`2.get_Item(TKey key)
+   em Game.Server.HotSpringRooms.TankHandle.HotSpringCommandMgr.LoadCommandHandler(Int32 code) na D:\DDT\DDTank-3.0\Game.Server\HotSpringRooms\TankHandle\HotSpringCommandMgr.cs:linha 15
+   em Game.Server.HotSpringRooms.TankHotSpringLogicProcessor.OnGameData(HotSpringRoom room, GamePlayer player, GSPacketIn packet) na D:\DDT\DDTank-3.0\Game.Server\HotSpringRooms\TankHotSpringLogicProcessor.cs:linha 74
+23:08:41,109 - [23] - ERROR - Game.Server.HotSpringRooms.TankHotSpringLogicProcessor - IP:127.0.0.1:64884, OnGameData is Error: System.Collections.Generic.KeyNotFoundException: A chave fornecida não estava presente no dicionário.
+   em System.ThrowHelper.ThrowKeyNotFoundException()
+   em System.Collections.Generic.Dictionary`2.get_Item(TKey key)
+   em Game.Server.HotSpringRooms.TankHandle.HotSpringCommandMgr.LoadCommandHandler(Int32 code) na D:\DDT\DDTank-3.0\Game.Server\HotSpringRooms\TankHandle\HotSpringCommandMgr.cs:linha 15
+   em Game.Server.HotSpringRooms.TankHotSpringLogicProcessor.OnGameData(HotSpringRoom room, GamePlayer player, GSPacketIn packet) na D:\DDT\DDTank-3.0\Game.Server\HotSpringRooms\TankHotSpringLogicProcessor.cs:linha 74
+23:08:41,845 - [17] - INFO  - Game.Server.GameServer - Buff Scaning ...
+23:08:41,845 - [17] - INFO  - Game.Server.GameServer - Buff Scan complete!
+23:08:41,848 - [17] - INFO  - Game.Server.GameServer - Buff all 1 players in 0ms
+23:08:45,763 - [23] - ERROR - Game.Server.HotSpringRooms.TankHotSpringLogicProcessor - IP:127.0.0.1:64884, OnGameData is Error: System.Collections.Generic.KeyNotFoundException: A chave fornecida não estava presente no dicionário.
+   em System.ThrowHelper.ThrowKeyNotFoundException()
+   em System.Collections.Generic.Dictionary`2.get_Item(TKey key)
+   em Game.Server.HotSpringRooms.TankHandle.HotSpringCommandMgr.LoadCommandHandler(Int32 code) na D:\DDT\DDTank-3.0\Game.Server\HotSpringRooms\TankHandle\HotSpringCommandMgr.cs:linha 15
+   em Game.Server.HotSpringRooms.TankHotSpringLogicProcessor.OnGameData(HotSpringRoom room, GamePlayer player, GSPacketIn packet) na D:\DDT\DDTank-3.0\Game.Server\HotSpringRooms\TankHotSpringLogicProcessor.cs:linha 74
+23:08:48,228 - [23] - ERROR - Game.Server.HotSpringRooms.TankHotSpringLogicProcessor - IP:127.0.0.1:64884, OnGameData is Error: System.Collections.Generic.KeyNotFoundException: A chave fornecida não estava presente no dicionário.
+   em System.ThrowHelper.ThrowKeyNotFoundException()
+   em System.Collections.Generic.Dictionary`2.get_Item(TKey key)
+   em Game.Server.HotSpringRooms.TankHandle.HotSpringCommandMgr.LoadCommandHandler(Int32 code) na D:\DDT\DDTank-3.0\Game.Server\HotSpringRooms\TankHandle\HotSpringCommandMgr.cs:linha 15
+   em Game.Server.HotSpringRooms.TankHotSpringLogicProcessor.OnGameData(HotSpringRoom room, GamePlayer player, GSPacketIn packet) na D:\DDT\DDTank-3.0\Game.Server\HotSpringRooms\TankHotSpringLogicProcessor.cs:linha 74
+23:08:52,896 - [23] - ERROR - Game.Server.HotSpringRooms.TankHotSpringLogicProcessor - IP:127.0.0.1:64884, OnGameData is Error: System.Collections.Generic.KeyNotFoundException: A chave fornecida não estava presente no dicionário.
+   em System.ThrowHelper.ThrowKeyNotFoundException()
+   em System.Collections.Generic.Dictionary`2.get_Item(TKey key)
+   em Game.Server.HotSpringRooms.TankHandle.HotSpringCommandMgr.LoadCommandHandler(Int32 code) na D:\DDT\DDTank-3.0\Game.Server\HotSpringRooms\TankHandle\HotSpringCommandMgr.cs:linha 15
+   em Game.Server.HotSpringRooms.TankHotSpringLogicProcessor.OnGameData(HotSpringRoom room, GamePlayer player, GSPacketIn packet) na D:\DDT\DDTank-3.0\Game.Server\HotSpringRooms\TankHotSpringLogicProcessor.cs:linha 74
+23:08:59,433 - [23] - ERROR - Game.Server.HotSpringRooms.TankHotSpringLogicProcessor - IP:127.0.0.1:64884, OnGameData is Error: System.Collections.Generic.KeyNotFoundException: A chave fornecida não estava presente no dicionário.
+   em System.ThrowHelper.ThrowKeyNotFoundException()
+   em System.Collections.Generic.Dictionary`2.get_Item(TKey key)
+   em Game.Server.HotSpringRooms.TankHandle.HotSpringCommandMgr.LoadCommandHandler(Int32 code) na D:\DDT\DDTank-3.0\Game.Server\HotSpringRooms\TankHandle\HotSpringCommandMgr.cs:linha 15
+   em Game.Server.HotSpringRooms.TankHotSpringLogicProcessor.OnGameData(HotSpringRoom room, GamePlayer player, GSPacketIn packet) na D:\DDT\DDTank-3.0\Game.Server\HotSpringRooms\TankHotSpringLogicProcessor.cs:linha 74
+23:08:59,754 - [23] - ERROR - Game.Server.HotSpringRooms.TankHotSpringLogicProcessor - IP:127.0.0.1:64884, OnGameData is Error: System.Collections.Generic.KeyNotFoundException: A chave fornecida não estava presente no dicionário.
+   em System.ThrowHelper.ThrowKeyNotFoundException()
+   em System.Collections.Generic.Dictionary`2.get_Item(TKey key)
+   em Game.Server.HotSpringRooms.TankHandle.HotSpringCommandMgr.LoadCommandHandler(Int32 code) na D:\DDT\DDTank-3.0\Game.Server\HotSpringRooms\TankHandle\HotSpringCommandMgr.cs:linha 15
+   em Game.Server.HotSpringRooms.TankHotSpringLogicProcessor.OnGameData(HotSpringRoom room, GamePlayer player, GSPacketIn packet) na D:\DDT\DDTank-3.0\Game.Server\HotSpringRooms\TankHotSpringLogicProcessor.cs:linha 74
+23:09:00,515 - [23] - ERROR - Game.Server.HotSpringRooms.TankHotSpringLogicProcessor - IP:127.0.0.1:64884, OnGameData is Error: System.Collections.Generic.KeyNotFoundException: A chave fornecida não estava presente no dicionário.
+   em System.ThrowHelper.ThrowKeyNotFoundException()
+   em System.Collections.Generic.Dictionary`2.get_Item(TKey key)
+   em Game.Server.HotSpringRooms.TankHandle.HotSpringCommandMgr.LoadCommandHandler(Int32 code) na D:\DDT\DDTank-3.0\Game.Server\HotSpringRooms\TankHandle\HotSpringCommandMgr.cs:linha 15
+   em Game.Server.HotSpringRooms.TankHotSpringLogicProcessor.OnGameData(HotSpringRoom room, GamePlayer player, GSPacketIn packet) na D:\DDT\DDTank-3.0\Game.Server\HotSpringRooms\TankHotSpringLogicProcessor.cs:linha 74
+23:09:01,038 - [23] - ERROR - Game.Server.HotSpringRooms.TankHotSpringLogicProcessor - IP:127.0.0.1:64884, OnGameData is Error: System.Collections.Generic.KeyNotFoundException: A chave fornecida não estava presente no dicionário.
+   em System.ThrowHelper.ThrowKeyNotFoundException()
+   em System.Collections.Generic.Dictionary`2.get_Item(TKey key)
+   em Game.Server.HotSpringRooms.TankHandle.HotSpringCommandMgr.LoadCommandHandler(Int32 code) na D:\DDT\DDTank-3.0\Game.Server\HotSpringRooms\TankHandle\HotSpringCommandMgr.cs:linha 15
+   em Game.Server.HotSpringRooms.TankHotSpringLogicProcessor.OnGameData(HotSpringRoom room, GamePlayer player, GSPacketIn packet) na D:\DDT\DDTank-3.0\Game.Server\HotSpringRooms\TankHotSpringLogicProcessor.cs:linha 74
+23:09:01,654 - [23] - ERROR - Game.Server.HotSpringRooms.TankHotSpringLogicProcessor - IP:127.0.0.1:64884, OnGameData is Error: System.Collections.Generic.KeyNotFoundException: A chave fornecida não estava presente no dicionário.
+   em System.ThrowHelper.ThrowKeyNotFoundException()
+   em System.Collections.Generic.Dictionary`2.get_Item(TKey key)
+   em Game.Server.HotSpringRooms.TankHandle.HotSpringCommandMgr.LoadCommandHandler(Int32 code) na D:\DDT\DDTank-3.0\Game.Server\HotSpringRooms\TankHandle\HotSpringCommandMgr.cs:linha 15
+   em Game.Server.HotSpringRooms.TankHotSpringLogicProcessor.OnGameData(HotSpringRoom room, GamePlayer player, GSPacketIn packet) na D:\DDT\DDTank-3.0\Game.Server\HotSpringRooms\TankHotSpringLogicProcessor.cs:linha 74
+23:09:02,133 - [23] - ERROR - Game.Server.HotSpringRooms.TankHotSpringLogicProcessor - IP:127.0.0.1:64884, OnGameData is Error: System.Collections.Generic.KeyNotFoundException: A chave fornecida não estava presente no dicionário.
+   em System.ThrowHelper.ThrowKeyNotFoundException()
+   em System.Collections.Generic.Dictionary`2.get_Item(TKey key)
+   em Game.Server.HotSpringRooms.TankHandle.HotSpringCommandMgr.LoadCommandHandler(Int32 code) na D:\DDT\DDTank-3.0\Game.Server\HotSpringRooms\TankHandle\HotSpringCommandMgr.cs:linha 15
+   em Game.Server.HotSpringRooms.TankHotSpringLogicProcessor.OnGameData(HotSpringRoom room, GamePlayer player, GSPacketIn packet) na D:\DDT\DDTank-3.0\Game.Server\HotSpringRooms\TankHotSpringLogicProcessor.cs:linha 74
+23:09:04,237 - [23] - ERROR - Game.Server.HotSpringRooms.TankHotSpringLogicProcessor - IP:127.0.0.1:64884, OnGameData is Error: System.Collections.Generic.KeyNotFoundException: A chave fornecida não estava presente no dicionário.
+   em System.ThrowHelper.ThrowKeyNotFoundException()
+   em System.Collections.Generic.Dictionary`2.get_Item(TKey key)
+   em Game.Server.HotSpringRooms.TankHandle.HotSpringCommandMgr.LoadCommandHandler(Int32 code) na D:\DDT\DDTank-3.0\Game.Server\HotSpringRooms\TankHandle\HotSpringCommandMgr.cs:linha 15
+   em Game.Server.HotSpringRooms.TankHotSpringLogicProcessor.OnGameData(HotSpringRoom room, GamePlayer player, GSPacketIn packet) na D:\DDT\DDTank-3.0\Game.Server\HotSpringRooms\TankHotSpringLogicProcessor.cs:linha 74
+23:09:07,932 - [23] - ERROR - Game.Server.HotSpringRooms.TankHotSpringLogicProcessor - IP:127.0.0.1:64884, OnGameData is Error: System.Collections.Generic.KeyNotFoundException: A chave fornecida não estava presente no dicionário.
+   em System.ThrowHelper.ThrowKeyNotFoundException()
+   em System.Collections.Generic.Dictionary`2.get_Item(TKey key)
+   em Game.Server.HotSpringRooms.TankHandle.HotSpringCommandMgr.LoadCommandHandler(Int32 code) na D:\DDT\DDTank-3.0\Game.Server\HotSpringRooms\TankHandle\HotSpringCommandMgr.cs:linha 15
+   em Game.Server.HotSpringRooms.TankHotSpringLogicProcessor.OnGameData(HotSpringRoom room, GamePlayer player, GSPacketIn packet) na D:\DDT\DDTank-3.0\Game.Server\HotSpringRooms\TankHotSpringLogicProcessor.cs:linha 74
+23:09:08,527 - [23] - ERROR - Game.Server.HotSpringRooms.TankHotSpringLogicProcessor - IP:127.0.0.1:64884, OnGameData is Error: System.Collections.Generic.KeyNotFoundException: A chave fornecida não estava presente no dicionário.
+   em System.ThrowHelper.ThrowKeyNotFoundException()
+   em System.Collections.Generic.Dictionary`2.get_Item(TKey key)
+   em Game.Server.HotSpringRooms.TankHandle.HotSpringCommandMgr.LoadCommandHandler(Int32 code) na D:\DDT\DDTank-3.0\Game.Server\HotSpringRooms\TankHandle\HotSpringCommandMgr.cs:linha 15
+   em Game.Server.HotSpringRooms.TankHotSpringLogicProcessor.OnGameData(HotSpringRoom room, GamePlayer player, GSPacketIn packet) na D:\DDT\DDTank-3.0\Game.Server\HotSpringRooms\TankHotSpringLogicProcessor.cs:linha 74
+23:09:09,369 - [23] - ERROR - Game.Server.HotSpringRooms.TankHotSpringLogicProcessor - IP:127.0.0.1:64884, OnGameData is Error: System.Collections.Generic.KeyNotFoundException: A chave fornecida não estava presente no dicionário.
+   em System.ThrowHelper.ThrowKeyNotFoundException()
+   em System.Collections.Generic.Dictionary`2.get_Item(TKey key)
+   em Game.Server.HotSpringRooms.TankHandle.HotSpringCommandMgr.LoadCommandHandler(Int32 code) na D:\DDT\DDTank-3.0\Game.Server\HotSpringRooms\TankHandle\HotSpringCommandMgr.cs:linha 15
+   em Game.Server.HotSpringRooms.TankHotSpringLogicProcessor.OnGameData(HotSpringRoom room, GamePlayer player, GSPacketIn packet) na D:\DDT\DDTank-3.0\Game.Server\HotSpringRooms\TankHotSpringLogicProcessor.cs:linha 74
+23:09:09,854 - [23] - ERROR - Game.Server.HotSpringRooms.TankHotSpringLogicProcessor - IP:127.0.0.1:64884, OnGameData is Error: System.Collections.Generic.KeyNotFoundException: A chave fornecida não estava presente no dicionário.
+   em System.ThrowHelper.ThrowKeyNotFoundException()
+   em System.Collections.Generic.Dictionary`2.get_Item(TKey key)
+   em Game.Server.HotSpringRooms.TankHandle.HotSpringCommandMgr.LoadCommandHandler(Int32 code) na D:\DDT\DDTank-3.0\Game.Server\HotSpringRooms\TankHandle\HotSpringCommandMgr.cs:linha 15
+   em Game.Server.HotSpringRooms.TankHotSpringLogicProcessor.OnGameData(HotSpringRoom room, GamePlayer player, GSPacketIn packet) na D:\DDT\DDTank-3.0\Game.Server\HotSpringRooms\TankHotSpringLogicProcessor.cs:linha 74
+23:09:10,264 - [23] - ERROR - Game.Server.HotSpringRooms.TankHotSpringLogicProcessor - IP:127.0.0.1:64884, OnGameData is Error: System.Collections.Generic.KeyNotFoundException: A chave fornecida não estava presente no dicionário.
+   em System.ThrowHelper.ThrowKeyNotFoundException()
+   em System.Collections.Generic.Dictionary`2.get_Item(TKey key)
+   em Game.Server.HotSpringRooms.TankHandle.HotSpringCommandMgr.LoadCommandHandler(Int32 code) na D:\DDT\DDTank-3.0\Game.Server\HotSpringRooms\TankHandle\HotSpringCommandMgr.cs:linha 15
+   em Game.Server.HotSpringRooms.TankHotSpringLogicProcessor.OnGameData(HotSpringRoom room, GamePlayer player, GSPacketIn packet) na D:\DDT\DDTank-3.0\Game.Server\HotSpringRooms\TankHotSpringLogicProcessor.cs:linha 74
+23:09:11,287 - [23] - ERROR - Game.Server.HotSpringRooms.TankHotSpringLogicProcessor - IP:127.0.0.1:64884, OnGameData is Error: System.Collections.Generic.KeyNotFoundException: A chave fornecida não estava presente no dicionário.
+   em System.ThrowHelper.ThrowKeyNotFoundException()
+   em System.Collections.Generic.Dictionary`2.get_Item(TKey key)
+   em Game.Server.HotSpringRooms.TankHandle.HotSpringCommandMgr.LoadCommandHandler(Int32 code) na D:\DDT\DDTank-3.0\Game.Server\HotSpringRooms\TankHandle\HotSpringCommandMgr.cs:linha 15
+   em Game.Server.HotSpringRooms.TankHotSpringLogicProcessor.OnGameData(HotSpringRoom room, GamePlayer player, GSPacketIn packet) na D:\DDT\DDTank-3.0\Game.Server\HotSpringRooms\TankHotSpringLogicProcessor.cs:linha 74
+23:09:11,710 - [23] - ERROR - Game.Server.HotSpringRooms.TankHotSpringLogicProcessor - IP:127.0.0.1:64884, OnGameData is Error: System.Collections.Generic.KeyNotFoundException: A chave fornecida não estava presente no dicionário.
+   em System.ThrowHelper.ThrowKeyNotFoundException()
+   em System.Collections.Generic.Dictionary`2.get_Item(TKey key)
+   em Game.Server.HotSpringRooms.TankHandle.HotSpringCommandMgr.LoadCommandHandler(Int32 code) na D:\DDT\DDTank-3.0\Game.Server\HotSpringRooms\TankHandle\HotSpringCommandMgr.cs:linha 15
+   em Game.Server.HotSpringRooms.TankHotSpringLogicProcessor.OnGameData(HotSpringRoom room, GamePlayer player, GSPacketIn packet) na D:\DDT\DDTank-3.0\Game.Server\HotSpringRooms\TankHotSpringLogicProcessor.cs:linha 74
+23:09:12,077 - [23] - ERROR - Game.Server.HotSpringRooms.TankHotSpringLogicProcessor - IP:127.0.0.1:64884, OnGameData is Error: System.Collections.Generic.KeyNotFoundException: A chave fornecida não estava presente no dicionário.
+   em System.ThrowHelper.ThrowKeyNotFoundException()
+   em System.Collections.Generic.Dictionary`2.get_Item(TKey key)
+   em Game.Server.HotSpringRooms.TankHandle.HotSpringCommandMgr.LoadCommandHandler(Int32 code) na D:\DDT\DDTank-3.0\Game.Server\HotSpringRooms\TankHandle\HotSpringCommandMgr.cs:linha 15
+   em Game.Server.HotSpringRooms.TankHotSpringLogicProcessor.OnGameData(HotSpringRoom room, GamePlayer player, GSPacketIn packet) na D:\DDT\DDTank-3.0\Game.Server\HotSpringRooms\TankHotSpringLogicProcessor.cs:linha 74
+23:09:12,541 - [23] - ERROR - Game.Server.HotSpringRooms.TankHotSpringLogicProcessor - IP:127.0.0.1:64884, OnGameData is Error: System.Collections.Generic.KeyNotFoundException: A chave fornecida não estava presente no dicionário.
+   em System.ThrowHelper.ThrowKeyNotFoundException()
+   em System.Collections.Generic.Dictionary`2.get_Item(TKey key)
+   em Game.Server.HotSpringRooms.TankHandle.HotSpringCommandMgr.LoadCommandHandler(Int32 code) na D:\DDT\DDTank-3.0\Game.Server\HotSpringRooms\TankHandle\HotSpringCommandMgr.cs:linha 15
+   em Game.Server.HotSpringRooms.TankHotSpringLogicProcessor.OnGameData(HotSpringRoom room, GamePlayer player, GSPacketIn packet) na D:\DDT\DDTank-3.0\Game.Server\HotSpringRooms\TankHotSpringLogicProcessor.cs:linha 74
+23:09:13,485 - [23] - ERROR - Game.Server.HotSpringRooms.TankHotSpringLogicProcessor - IP:127.0.0.1:64884, OnGameData is Error: System.Collections.Generic.KeyNotFoundException: A chave fornecida não estava presente no dicionário.
+   em System.ThrowHelper.ThrowKeyNotFoundException()
+   em System.Collections.Generic.Dictionary`2.get_Item(TKey key)
+   em Game.Server.HotSpringRooms.TankHandle.HotSpringCommandMgr.LoadCommandHandler(Int32 code) na D:\DDT\DDTank-3.0\Game.Server\HotSpringRooms\TankHandle\HotSpringCommandMgr.cs:linha 15
+   em Game.Server.HotSpringRooms.TankHotSpringLogicProcessor.OnGameData(HotSpringRoom room, GamePlayer player, GSPacketIn packet) na D:\DDT\DDTank-3.0\Game.Server\HotSpringRooms\TankHotSpringLogicProcessor.cs:linha 74
+23:09:14,053 - [23] - ERROR - Game.Server.HotSpringRooms.TankHotSpringLogicProcessor - IP:127.0.0.1:64884, OnGameData is Error: System.Collections.Generic.KeyNotFoundException: A chave fornecida não estava presente no dicionário.
+   em System.ThrowHelper.ThrowKeyNotFoundException()
+   em System.Collections.Generic.Dictionary`2.get_Item(TKey key)
+   em Game.Server.HotSpringRooms.TankHandle.HotSpringCommandMgr.LoadCommandHandler(Int32 code) na D:\DDT\DDTank-3.0\Game.Server\HotSpringRooms\TankHandle\HotSpringCommandMgr.cs:linha 15
+   em Game.Server.HotSpringRooms.TankHotSpringLogicProcessor.OnGameData(HotSpringRoom room, GamePlayer player, GSPacketIn packet) na D:\DDT\DDTank-3.0\Game.Server\HotSpringRooms\TankHotSpringLogicProcessor.cs:linha 74
+23:09:41,837 - [16] - INFO  - Game.Server.GameServer - Saving Record...
+23:09:41,846 - [22] - INFO  - Game.Server.GameServer - Buff Scaning ...
+23:09:41,846 - [22] - INFO  - Game.Server.GameServer - Buff Scan complete!
+23:09:41,848 - [22] - INFO  - Game.Server.GameServer - Buff all 1 players in 0ms
+23:09:41,856 - [16] - INFO  - Game.Server.GameServer - Saving Record complete!
+23:10:41,829 - [16] - INFO  - Game.Server.GameServer - Begin ping check....
+23:10:41,829 - [16] - INFO  - Game.Server.GameServer - End ping check....
+23:10:41,830 - [16] - INFO  - Game.Server.GameServer - Begin ping center check....
+23:10:41,831 - [16] - INFO  - Game.Server.GameServer - End ping center check....
+23:10:41,860 - [22] - INFO  - Game.Server.GameServer - Buff Scaning ...
+23:10:41,860 - [22] - INFO  - Game.Server.GameServer - Buff Scan complete!
+23:10:41,861 - [22] - INFO  - Game.Server.GameServer - Buff all 1 players in 0ms
+23:11:03,352 - [24] - ERROR - Game.Server.HotSpringRooms.TankHotSpringLogicProcessor - IP:127.0.0.1:64884, OnGameData is Error: System.Collections.Generic.KeyNotFoundException: A chave fornecida não estava presente no dicionário.
+   em System.ThrowHelper.ThrowKeyNotFoundException()
+   em System.Collections.Generic.Dictionary`2.get_Item(TKey key)
+   em Game.Server.HotSpringRooms.TankHandle.HotSpringCommandMgr.LoadCommandHandler(Int32 code) na D:\DDT\DDTank-3.0\Game.Server\HotSpringRooms\TankHandle\HotSpringCommandMgr.cs:linha 15
+   em Game.Server.HotSpringRooms.TankHotSpringLogicProcessor.OnGameData(HotSpringRoom room, GamePlayer player, GSPacketIn packet) na D:\DDT\DDTank-3.0\Game.Server\HotSpringRooms\TankHotSpringLogicProcessor.cs:linha 723:13:26,369 - [MAIN] - INFO  - Bussiness.GameProperties - Refreshing game properties!
+23:13:27,498 - [MAIN] - INFO  - Game.Server.GameServer - Recompile Scripts: True
+23:13:27,500 - [MAIN] - INFO  - Game.Server.GameServer - Server rules: true
+23:13:27,537 - [MAIN] - INFO  - Game.Server.GameServer - Registering global event handlers: true
+23:13:27,782 - [MAIN] - INFO  - Game.Server.GameServer - Script components: True
+23:13:27,782 - [MAIN] - INFO  - Game.Server.GameServer - Edition:21000: True
+23:13:27,788 - [MAIN] - INFO  - Game.Server.GameServer - InitSocket Port:9200: True
+23:13:27,826 - [MAIN] - INFO  - Game.Server.GameServer - AllocatePacketBuffers(): True
+23:13:27,833 - [MAIN] - INFO  - Game.Server.GameServer - LogMgr Init: True
+23:13:27,837 - [MAIN] - INFO  - Game.Server.GameServer - WorldMgr Init: True
+23:13:28,098 - [MAIN] - INFO  - Game.Server.GameServer - MapMgr Init: True
+23:13:28,328 - [MAIN] - INFO  - Game.Server.GameServer - ItemMgr Init: True
+23:13:28,351 - [MAIN] - INFO  - Game.Server.GameServer - ItemBox Init: True
+23:13:28,604 - [MAIN] - INFO  - Game.Server.GameServer - BallMgr Init: True
+23:13:28,612 - [MAIN] - INFO  - Game.Server.GameServer - BallConfigMgr Init: True
+23:13:28,618 - [MAIN] - INFO  - Game.Server.GameServer - FusionMgr Init: True
+23:13:28,624 - [MAIN] - INFO  - Game.Server.GameServer - AwardMgr Init: True
+23:13:28,636 - [MAIN] - INFO  - Game.Server.GameServer - NPCInfoMgr Init: True
+23:13:28,644 - [MAIN] - INFO  - Game.Server.GameServer - MissionInfoMgr Init: True
+23:13:28,652 - [MAIN] - INFO  - Game.Server.GameServer - PveInfoMgr Init: True
+23:13:28,667 - [MAIN] - INFO  - Game.Server.GameServer - Drop Init: True
+23:13:28,673 - [MAIN] - INFO  - Game.Server.GameServer - FightRateMgr Init: True
+23:13:28,679 - [MAIN] - INFO  - Game.Server.GameServer - ConsortiaLevelMgr Init: True
+23:13:28,686 - [MAIN] - INFO  - Game.Server.GameServer - RefineryMgr Init: True
+23:13:28,700 - [MAIN] - INFO  - Game.Server.GameServer - StrengthenMgr Init: True
+23:13:28,707 - [MAIN] - INFO  - Game.Server.GameServer - PropItemMgr Init: True
+23:13:28,816 - [MAIN] - INFO  - Game.Server.GameServer - ShopMgr Init: True
+23:13:28,844 - [MAIN] - INFO  - Game.Server.GameServer - QuestMgr Init: True
+23:13:28,846 - [MAIN] - INFO  - Game.Server.GameServer - RoomMgr.Setup: True
+23:13:28,847 - [MAIN] - INFO  - Game.Server.GameServer - GameMgr.Start(): True
+23:13:28,862 - [MAIN] - INFO  - Game.Server.GameServer - ConsortiaMgr Init: True
+23:13:28,887 - [MAIN] - INFO  - Game.Server.GameServer - LanguageMgr Init: True
+23:13:28,892 - [MAIN] - INFO  - Game.Server.GameServer - ExperienceRateMgr Init: True
+23:13:28,894 - [MAIN] - INFO  - Game.Server.GameServer - MacroDropMgr Init: True
+23:13:28,919 - [MAIN] - INFO  - Game.Server.Battle.BattleMgr - Battle server 127.0.0.1:9208 loaded...
+23:13:28,926 - [MAIN] - INFO  - Game.Server.Battle.BattleMgr - Total 1 battle server loaded.
+23:13:28,926 - [MAIN] - INFO  - Game.Server.GameServer - BattleMgr Setup: True
+23:13:28,929 - [MAIN] - INFO  - Game.Server.GameServer - Init Global Timers: True
+23:13:28,944 - [MAIN] - INFO  - Game.Server.GameServer - MarryRoomMgr Init: True
+23:13:28,945 - [MAIN] - INFO  - Game.Server.GameServer - LogMgr Setup: True
+23:13:28,980 - [MAIN] - INFO  - Game.Base.Packets.PacketProcessor - PacketProcessor: Loaded 149 handlers from GameServer Assembly!
+23:13:28,988 - [MAIN] - INFO  - Game.Base.CommandMgr - Loaded 7 commands!
+23:13:28,997 - [MAIN] - INFO  - Game.Logic.Spells.SpellMgr - SpellMgr: Loaded 15 spell handlers from GameServer Assembly!
+23:13:29,000 - [MAIN] - INFO  - Game.Base.BaseConnector - Connected to 127.0.0.1:9202
+23:13:29,002 - [MAIN] - INFO  - Game.Server.GameServer - Login To CenterServer: True
+23:13:29,006 - [MAIN] - INFO  - Game.Base.BaseConnector - Connected to 127.0.0.1:9208
+23:13:29,011 - [MAIN] - INFO  - Game.Server.GameServer - base.Start(): True
+23:13:29,039 - [MAIN] - INFO  - Game.Server.GameServer - GameServer is now open for connections!
+23:13:59,954 - [5] - INFO  - Game.Base.BaseServer - Incoming connection from 127.0.0.1:64904
+23:13:59,968 - [5] - INFO  - Game.Base.BaseClient - Disconnecting client (127.0.0.1:64904), received bytes=0
+23:13:59,980 - [5] - INFO  - Game.Base.BaseServer - Incoming connection from 127.0.0.1:64905
+23:14:00,398 - [5] - ERROR - Game.Base.Packets.StreamProcessor - HandlePacket(pak)
+System.NullReferenceException: Referência de objeto não definida para uma instância de um objeto.
+   em Game.Base.Packets.PacketProcessor.HandlePacket(GSPacketIn packet) na D:\DDT\DDTank-3.0\Game.Server\Packets\Server\PacketProcessor.cs:linha 65
+   em Game.Server.GameClient.OnRecvPacket(GSPacketIn pkg) na D:\DDT\DDTank-3.0\Game.Server\GameClient.cs:linha 129
+   em Game.Base.Packets.StreamProcessor.ReceiveBytes(Int32 numBytes) na D:\DDT\DDTank-3.0\Game.Base\Packets\StreamProcessor.cs:linha 387
+23:14:05,280 - [20] - ERROR - Game.Base.Packets.StreamProcessor - HandlePacket(pak)
+System.NullReferenceException: Referência de objeto não definida para uma instância de um objeto.
+   em Game.Base.Packets.PacketProcessor.HandlePacket(GSPacketIn packet) na D:\DDT\DDTank-3.0\Game.Server\Packets\Server\PacketProcessor.cs:linha 65
+   em Game.Server.GameClient.OnRecvPacket(GSPacketIn pkg) na D:\DDT\DDTank-3.0\Game.Server\GameClient.cs:linha 129
+   em Game.Base.Packets.StreamProcessor.ReceiveBytes(Int32 numBytes) na D:\DDT\DDTank-3.0\Game.Base\Packets\StreamProcessor.cs:linha 387
+23:14:10,906 - [20] - ERROR - Game.Base.Packets.StreamProcessor - HandlePacket(pak)
+System.NullReferenceException: Referência de objeto não definida para uma instância de um objeto.
+   em Game.Base.Packets.PacketProcessor.HandlePacket(GSPacketIn packet) na D:\DDT\DDTank-3.0\Game.Server\Packets\Server\PacketProcessor.cs:linha 65
+   em Game.Server.GameClient.OnRecvPacket(GSPacketIn pkg) na D:\DDT\DDTank-3.0\Game.Server\GameClient.cs:linha 129
+   em Game.Base.Packets.StreamProcessor.ReceiveBytes(Int32 numBytes) na D:\DDT\DDTank-3.0\Game.Base\Packets\StreamProcessor.cs:linha 387
+23:14:28,939 - [16] - INFO  - Game.Server.GameServer - Buff Scaning ...
+23:14:28,940 - [16] - INFO  - Game.Server.GameServer - Buff Scan complete!
+23:14:28,942 - [16] - INFO  - Game.Server.GameServer - Buff all 1 players in 0ms
+23:14:29,278 - [22] - ERROR - Game.Server.HotSpringRooms.TankHotSpringLogicProcessor - IP:127.0.0.1:64905, OnGameData is Error: System.Collections.Generic.KeyNotFoundException: A chave fornecida não estava presente no dicionário.
+   em System.ThrowHelper.ThrowKeyNotFoundException()
+   em System.Collections.Generic.Dictionary`2.get_Item(TKey key)
+   em Game.Server.HotSpringRooms.TankHandle.HotSpringCommandMgr.LoadCommandHandler(Int32 code) na D:\DDT\DDTank-3.0\Game.Server\HotSpringRooms\TankHandle\HotSpringCommandMgr.cs:linha 15
+   em Game.Server.HotSpringRooms.TankHotSpringLogicProcessor.OnGameData(HotSpringRoom room, GamePlayer player, GSPacketIn packet) na D:\DDT\DDTank-3.0\Game.Server\HotSpringRooms\TankHotSpringLogicProcessor.cs:linha 83
+23:14:42,954 - [22] - ERROR - Game.Server.HotSpringRooms.TankHotSpringLogicProcessor - IP:127.0.0.1:64905, OnGameData is Error: System.Collections.Generic.KeyNotFoundException: A chave fornecida não estava presente no dicionário.
+   em System.ThrowHelper.ThrowKeyNotFoundException()
+   em System.Collections.Generic.Dictionary`2.get_Item(TKey key)
+   em Game.Server.HotSpringRooms.TankHandle.HotSpringCommandMgr.LoadCommandHandler(Int32 code) na D:\DDT\DDTank-3.0\Game.Server\HotSpringRooms\TankHandle\HotSpringCommandMgr.cs:linha 15
+   em Game.Server.HotSpringRooms.TankHotSpringLogicProcessor.OnGameData(HotSpringRoom room, GamePlayer player, GSPacketIn packet) na D:\DDT\DDTank-3.0\Game.Server\HotSpringRooms\TankHotSpringLogicProcessor.cs:linha 83
+23:15:28,939 - [16] - INFO  - Game.Server.GameServer - Buff Scaning ...
+23:15:28,939 - [16] - INFO  - Game.Server.GameServer - Buff Scan complete!
+23:15:28,940 - [16] - INFO  - Game.Server.GameServer - Buff all 1 players in 0ms
+23:15:38,005 - [22] - ERROR - Game.Server.HotSpringRooms.TankHotSpringLogicProcessor - IP:127.0.0.1:64905, OnGameData is Error: System.Collections.Generic.KeyNotFoundException: A chave fornecida não estava presente no dicionário.
+   em System.ThrowHelper.ThrowKeyNotFoundException()
+   em System.Collections.Generic.Dictionary`2.get_Item(TKey key)
+   em Game.Server.HotSpringRooms.TankHandle.HotSpringCommandMgr.LoadCommandHandler(Int32 code) na D:\DDT\DDTank-3.0\Game.Server\HotSpringRooms\TankHandle\HotSpringCommandMgr.cs:linha 15
+   em Game.Server.HotSpringRooms.TankHotSpringLogicProcessor.OnGameData(HotSpringRoom room, GamePlayer player, GSPacketIn packet) na D:\DDT\DDTank-3.0\Game.Server\HotSpringRooms\TankHotSpringLogicProcessor.cs:linha 83
+23:15:40,735 - [22] - ERROR - Game.Server.HotSpringRooms.TankHotSpringLogicProcessor - IP:127.0.0.1:64905, OnGameData is Error: System.Collections.Generic.KeyNotFoundException: A chave fornecida não estava presente no dicionário.
+   em System.ThrowHelper.ThrowKeyNotFoundException()
+   em System.Collections.Generic.Dictionary`2.get_Item(TKey key)
+   em Game.Server.HotSpringRooms.TankHandle.HotSpringCommandMgr.LoadCommandHandler(Int32 code) na D:\DDT\DDTank-3.0\Game.Server\HotSpringRooms\TankHandle\HotSpringCommandMgr.cs:linha 15
+   em Game.Server.HotSpringRooms.TankHotSpringLogicProcessor.OnGameData(HotSpringRoom room, GamePlayer player, GSPacketIn packet) na D:\DDT\DDTank-3.0\Game.Server\HotSpringRooms\TankHotSpringLogicProcessor.cs:linha 83
+23:15:45,213 - [22] - ERROR - Game.Server.HotSpringRooms.TankHotSpringLogicProcessor - IP:127.0.0.1:64905, OnGameData is Error: System.Collections.Generic.KeyNotFoundException: A chave fornecida não estava presente no dicionário.
+   em System.ThrowHelper.ThrowKeyNotFoundException()
+   em System.Collections.Generic.Dictionary`2.get_Item(TKey key)
+   em Game.Server.HotSpringRooms.TankHandle.HotSpringCommandMgr.LoadCommandHandler(Int32 code) na D:\DDT\DDTank-3.0\Game.Server\HotSpringRooms\TankHandle\HotSpringCommandMgr.cs:linha 15
+   em Game.Server.HotSpringRooms.TankHotSpringLogicProcessor.OnGameData(HotSpringRoom room, GamePlayer player, GSPacketIn packet) na D:\DDT\DDTank-3.0\Game.Server\HotSpringRooms\TankHotSpringLogicProcessor.cs:linha 83
+23:15:47,334 - [22] - ERROR - Game.Server.HotSpringRooms.TankHotSpringLogicProcessor - IP:127.0.0.1:64905, OnGameData is Error: System.Collections.Generic.KeyNotFoundException: A chave fornecida não estava presente no dicionário.
+   em System.ThrowHelper.ThrowKeyNotFoundException()
+   em System.Collections.Generic.Dictionary`2.get_Item(TKey key)
+   em Game.Server.HotSpringRooms.TankHandle.HotSpringCommandMgr.LoadCommandHandler(Int32 code) na D:\DDT\DDTank-3.0\Game.Server\HotSpringRooms\TankHandle\HotSpringCommandMgr.cs:linha 15
+   em Game.Server.HotSpringRooms.TankHotSpringLogicProcessor.OnGameData(HotSpringRoom room, GamePlayer player, GSPacketIn packet) na D:\DDT\DDTank-3.0\Game.Server\HotSpringRooms\TankHotSpringLogicProcessor.cs:linha 83
+23:15:47,683 - [22] - ERROR - Game.Server.HotSpringRooms.TankHotSpringLogicProcessor - IP:127.0.0.1:64905, OnGameData is Error: System.Collections.Generic.KeyNotFoundException: A chave fornecida não estava presente no dicionário.
+   em System.ThrowHelper.ThrowKeyNotFoundException()
+   em System.Collections.Generic.Dictionary`2.get_Item(TKey key)
+   em Game.Server.HotSpringRooms.TankHandle.HotSpringCommandMgr.LoadCommandHandler(Int32 code) na D:\DDT\DDTank-3.0\Game.Server\HotSpringRooms\TankHandle\HotSpringCommandMgr.cs:linha 15
+   em Game.Server.HotSpringRooms.TankHotSpringLogicProcessor.OnGameData(HotSpringRoom room, GamePlayer player, GSPacketIn packet) na D:\DDT\DDTank-3.0\Game.Server\HotSpringRooms\TankHotSpringLogicProcessor.cs:linha 83
+23:15:50,081 - [22] - ERROR - Game.Server.HotSpringRooms.TankHotSpringLogicProcessor - IP:127.0.0.1:64905, OnGameData is Error: System.Collections.Generic.KeyNotFoundException: A chave fornecida não estava presente no dicionário.
+   em System.ThrowHelper.ThrowKeyNotFoundException()
+   em System.Collections.Generic.Dictionary`2.get_Item(TKey key)
+   em Game.Server.HotSpringRooms.TankHandle.HotSpringCommandMgr.LoadCommandHandler(Int32 code) na D:\DDT\DDTank-3.0\Game.Server\HotSpringRooms\TankHandle\HotSpringCommandMgr.cs:linha 15
+   em Game.Server.HotSpringRooms.TankHotSpringLogicProcessor.OnGameData(HotSpringRoom room, GamePlayer player, GSPacketIn packet) na D:\DDT\DDTank-3.0\Game.Server\HotSpringRooms\TankHotSpringLogicProcessor.cs:linha 83
+23:15:52,732 - [22] - ERROR - Game.Server.HotSpringRooms.TankHotSpringLogicProcessor - IP:127.0.0.1:64905, OnGameData is Error: System.Collections.Generic.KeyNotFoundException: A chave fornecida não estava presente no dicionário.
+   em System.ThrowHelper.ThrowKeyNotFoundException()
+   em System.Collections.Generic.Dictionary`2.get_Item(TKey key)
+   em Game.Server.HotSpringRooms.TankHandle.HotSpringCommandMgr.LoadCommandHandler(Int32 code) na D:\DDT\DDTank-3.0\Game.Server\HotSpringRooms\TankHandle\HotSpringCommandMgr.cs:linha 15
+   em Game.Server.HotSpringRooms.TankHotSpringLogicProcessor.OnGameData(HotSpringRoom room, GamePlayer player, GSPacketIn packet) na D:\DDT\DDTank-3.0\Game.Server\HotSpringRooms\TankHotSpringLogicProcessor.cs:linha 83
+23:15:58,209 - [22] - ERROR - Game.Server.HotSpringRooms.TankHotSpringLogicProcessor - IP:127.0.0.1:64905, OnGameData is Error: System.Collections.Generic.KeyNotFoundException: A chave fornecida não estava presente no dicionário.
+   em System.ThrowHelper.ThrowKeyNotFoundException()
+   em System.Collections.Generic.Dictionary`2.get_Item(TKey key)
+   em Game.Server.HotSpringRooms.TankHandle.HotSpringCommandMgr.LoadCommandHandler(Int32 code) na D:\DDT\DDTank-3.0\Game.Server\HotSpringRooms\TankHandle\HotSpringCommandMgr.cs:linha 15
+   em Game.Server.HotSpringRooms.TankHotSpringLogicProcessor.OnGameData(HotSpringRoom room, GamePlayer player, GSPacketIn packet) na D:\DDT\DDTank-3.0\Game.Server\HotSpringRooms\TankHotSpringLogicProcessor.cs:linha 83
+23:16:28,930 - [16] - INFO  - Game.Server.GameServer - Begin ping check....
+23:16:28,940 - [19] - INFO  - Game.Server.GameServer - Buff Scaning ...
+23:16:35,388 - [19] - INFO  - Game.Server.GameServer - Buff Scan complete!
+23:16:35,389 - [19] - INFO  - Game.Server.GameServer - Buff all 1 players in 6437ms
+23:16:35,388 - [16] - INFO  - Game.Server.GameServer - End ping check....
+23:16:35,390 - [16] - INFO  - Game.Server.GameServer - Begin ping center check....
+23:16:35,393 - [16] - INFO  - Game.Server.GameServer - End ping center check....
+23:17:27,686 - [23] - ERROR - Game.Server.HotSpringRooms.TankHotSpringLogicProcessor - IP:127.0.0.1:64905, OnGameData is Error: System.Collections.Generic.KeyNotFoundException: A chave fornecida não estava presente no dicionário.
+   em System.ThrowHelper.ThrowKeyNotFoundException()
+   em System.Collections.Generic.Dictionary`2.get_Item(TKey key)
+   em Game.Server.HotSpringRooms.TankHandle.HotSpringCommandMgr.LoadCommandHandler(Int32 code) na D:\DDT\DDTank-3.0\Game.Server\HotSpringRooms\TankHandle\HotSpringCommandMgr.cs:linha 15
+   em Game.Server.HotSpringRooms.TankHotSpringLogicProcessor.OnGameData(HotSpringRoom room, GamePlayer player, GSPacketIn packet) na D:\DDT\DDTank-3.0\Game.Server\HotSpringRooms\TankHotSpringLogicProcessor.cs:linha 83
+23:17:28,940 - [19] - INFO  - Game.Server.GameServer - Buff Scaning ...
+23:17:28,940 - [19] - INFO  - Game.Server.GameServer - Buff Scan complete!
+23:17:28,941 - [19] - INFO  - Game.Server.GameServer - Buff all 1 players in 0ms
+23:17:31,615 - [23] - ERROR - Game.Server.HotSpringRooms.TankHotSpringLogicProcessor - IP:127.0.0.1:64905, OnGameData is Error: System.Collections.Generic.KeyNotFoundException: A chave fornecida não estava presente no dicionário.
+   em System.ThrowHelper.ThrowKeyNotFoundException()
+   em System.Collections.Generic.Dictionary`2.get_Item(TKey key)
+   em Game.Server.HotSpringRooms.TankHandle.HotSpringCommandMgr.LoadCommandHandler(Int32 code) na D:\DDT\DDTank-3.0\Game.Server\HotSpringRooms\TankHandle\HotSpringCommandMgr.cs:linha 15
+   em Game.Server.HotSpringRooms.TankHotSpringLogicProcessor.OnGameData(HotSpringRoom room, GamePlayer player, GSPacketIn packet) na D:\DDT\DDTank-3.0\Game.Server\HotSpringRooms\TankHotSpringLogicProcessor.cs:linha 83
+23:18:00,941 - [23] - ERROR - Game.Server.HotSpringRooms.TankHotSpringLogicProcessor - IP:127.0.0.1:64905, OnGameData is Error: System.Collections.Generic.KeyNotFoundException: A chave fornecida não estava presente no dicionário.
+   em System.ThrowHelper.ThrowKeyNotFoundException()
+   em System.Collections.Generic.Dictionary`2.get_Item(TKey key)
+   em Game.Server.HotSpringRooms.TankHandle.HotSpringCommandMgr.LoadCommandHandler(Int32 code) na D:\DDT\DDTank-3.0\Game.Server\HotSpringRooms\TankHandle\HotSpringCommandMgr.cs:linha 15
+   em Game.Server.HotSpringRooms.TankHotSpringLogicProcessor.OnGameData(HotSpringRoom room, GamePlayer player, GSPacketIn packet) na D:\DDT\DDTank-3.0\Game.Server\HotSpringRooms\TankHotSpringLogicProcessor.cs:linha 83
+23:18:03,647 - [23] - ERROR - Game.Server.HotSpringRooms.TankHotSpringLogicProcessor - IP:127.0.0.1:64905, OnGameData is Error: System.Collections.Generic.KeyNotFoundException: A chave fornecida não estava presente no dicionário.
+   em System.ThrowHelper.ThrowKeyNotFoundException()
+   em System.Collections.Generic.Dictionary`2.get_Item(TKey key)
+   em Game.Server.HotSpringRooms.TankHandle.HotSpringCommandMgr.LoadCommandHandler(Int32 code) na D:\DDT\DDTank-3.0\Game.Server\HotSpringRooms\TankHandle\HotSpringCommandMgr.cs:linha 15
+   em Game.Server.HotSpringRooms.TankHotSpringLogicProcessor.OnGameData(HotSpringRoom room, GamePlayer player, GSPacketIn packet) na D:\DDT\DDTank-3.0\Game.Server\HotSpringRooms\TankHotSpringLogicProcessor.cs:linha 83
+23:18:07,043 - [23] - ERROR - Game.Server.HotSpringRooms.TankHotSpringLogicProcessor - IP:127.0.0.1:64905, OnGameData is Error: System.Collections.Generic.KeyNotFoundException: A chave fornecida não estava presente no dicionário.
+   em System.ThrowHelper.ThrowKeyNotFoundException()
+   em System.Collections.Generic.Dictionary`2.get_Item(TKey key)
+   em Game.Server.HotSpringRooms.TankHandle.HotSpringCommandMgr.LoadCommandHandler(Int32 code) na D:\DDT\DDTank-3.0\Game.Server\HotSpringRooms\TankHandle\HotSpringCommandMgr.cs:linha 15
+   em Game.Server.HotSpringRooms.TankHotSpringLogicProcessor.OnGameData(HotSpringRoom room, GamePlayer player, GSPacketIn packet) na D:\DDT\DDTank-3.0\Game.Server\HotSpringRooms\TankHotSpringLogicProcessor.cs:linha 83
+23:18:21,001 - [23] - ERROR - Game.Server.HotSpringRooms.TankHotSpringLogicProcessor - IP:127.0.0.1:64905, OnGameData is Error: System.Collections.Generic.KeyNotFoundException: A chave fornecida não estava presente no dicionário.
+   em System.ThrowHelper.ThrowKeyNotFoundException()
+   em System.Collections.Generic.Dictionary`2.get_Item(TKey key)
+   em Game.Server.HotSpringRooms.TankHandle.HotSpringCommandMgr.LoadCommandHandler(Int32 code) na D:\DDT\DDTank-3.0\Game.Server\HotSpringRooms\TankHandle\HotSpringCommandMgr.cs:linha 15
+   em Game.Server.HotSpringRooms.TankHotSpringLogicProcessor.OnGameData(HotSpringRoom room, GamePlayer player, GSPacketIn packet) na D:\DDT\DDTank-3.0\Game.Server\HotSpringRooms\TankHotSpringLogicProcessor.cs:linha 83
+23:18:28,938 - [21] - INFO  - Game.Server.GameServer - Saving Record...
+23:18:28,953 - [21] - INFO  - Game.Server.GameServer - Saving Record complete!
+23:18:28,953 - [16] - INFO  - Game.Server.GameServer - Buff Scaning ...
+23:18:28,955 - [16] - INFO  - Game.Server.GameServer - Buff Scan complete!
+23:18:28,956 - [16] - INFO  - Game.Server.GameServer - Buff all 1 players in 0ms
+23:18:37,124 - [23] - ERROR - Game.Server.HotSpringRooms.TankHotSpringLogicProcessor - IP:127.0.0.1:64905, OnGameData is Error: System.Collections.Generic.KeyNotFoundException: A chave fornecida não estava presente no dicionário.
+   em System.ThrowHelper.ThrowKeyNotFoundException()
+   em System.Collections.Generic.Dictionary`2.get_Item(TKey key)
+   em Game.Server.HotSpringRooms.TankHandle.HotSpringCommandMgr.LoadCommandHandler(Int32 code) na D:\DDT\DDTank-3.0\Game.Server\HotSpringRooms\TankHandle\HotSpringCommandMgr.cs:linha 15
+   em Game.Server.HotSpringRooms.TankHotSpringLogicProcessor.OnGameData(HotSpringRoom room, GamePlayer player, GSPacketIn packet) na D:\DDT\DDTank-3.0\Game.Server\HotSpringRooms\TankHotSpringLogicProcessor.cs:linha 83
+23:18:38,650 - [23] - ERROR - Game.Server.HotSpringRooms.TankHotSpringLogicProcessor - IP:127.0.0.1:64905, OnGameData is Error: System.Collections.Generic.KeyNotFoundException: A chave fornecida não estava presente no dicionário.
+   em System.ThrowHelper.ThrowKeyNotFoundException()
+   em System.Collections.Generic.Dictionary`2.get_Item(TKey key)
+   em Game.Server.HotSpringRooms.TankHandle.HotSpringCommandMgr.LoadCommandHandler(Int32 code) na D:\DDT\DDTank-3.0\Game.Server\HotSpringRooms\TankHandle\HotSpringCommandMgr.cs:linha 15
+   em Game.Server.HotSpringRooms.TankHotSpringLogicProcessor.OnGameData(HotSpringRoom room, GamePlayer player, GSPacketIn packet) na D:\DDT\DDTank-3.0\Game.Server\HotSpringRooms\TankHotSpringLogicProcessor.cs:linha 83
+23:18:39,005 - [23] - ERROR - Game.Server.HotSpringRooms.TankHotSpringLogicProcessor - IP:127.0.0.1:64905, OnGameData is Error: System.Collections.Generic.KeyNotFoundException: A chave fornecida não estava presente no dicionário.
+   em System.ThrowHelper.ThrowKeyNotFoundException()
+   em System.Collections.Generic.Dictionary`2.get_Item(TKey key)
+   em Game.Server.HotSpringRooms.TankHandle.HotSpringCommandMgr.LoadCommandHandler(Int32 code) na D:\DDT\DDTank-3.0\Game.Server\HotSpringRooms\TankHandle\HotSpringCommandMgr.cs:linha 15
+   em Game.Server.HotSpringRooms.TankHotSpringLogicProcessor.OnGameData(HotSpringRoom room, GamePlayer player, GSPacketIn packet) na D:\DDT\DDTank-3.0\Game.Server\HotSpringRooms\TankHotSpringLogicProcessor.cs:linha 83
+23:18:44,253 - [23] - ERROR - Game.Server.HotSpringRooms.TankHotSpringLogicProcessor - IP:127.0.0.1:64905, OnGameData is Error: System.Collections.Generic.KeyNotFoundException: A chave fornecida não estava presente no dicionário.
+   em System.ThrowHelper.ThrowKeyNotFoundException()
+   em System.Collections.Generic.Dictionary`2.get_Item(TKey key)
+   em Game.Server.HotSpringRooms.TankHandle.HotSpringCommandMgr.LoadCommandHandler(Int32 code) na D:\DDT\DDTank-3.0\Game.Server\HotSpringRooms\TankHandle\HotSpringCommandMgr.cs:linha 15
+   em Game.Server.HotSpringRooms.TankHotSpringLogicProcessor.OnGameData(HotSpringRoom room, GamePlayer player, GSPacketIn packet) na D:\DDT\DDTank-3.0\Game.Server\HotSpringRooms\TankHotSpringLogicProcessor.cs:linha 83
+23:18:45,862 - [23] - ERROR - Game.Server.HotSpringRooms.TankHotSpringLogicProcessor - IP:127.0.0.1:64905, OnGameData is Error: System.Collections.Generic.KeyNotFoundException: A chave fornecida não estava presente no dicionário.
+   em System.ThrowHelper.ThrowKeyNotFoundException()
+   em System.Collections.Generic.Dictionary`2.get_Item(TKey key)
+   em Game.Server.HotSpringRooms.TankHandle.HotSpringCommandMgr.LoadCommandHandler(Int32 code) na D:\DDT\DDTank-3.0\Game.Server\HotSpringRooms\TankHandle\HotSpringCommandMgr.cs:linha 15
+   em Game.Server.HotSpringRooms.TankHotSpringLogicProcessor.OnGameData(HotSpringRoom room, GamePlayer player, GSPacketIn packet) na D:\DDT\DDTank-3.0\Game.Server\HotSpringRooms\TankHotSpringLogicProcessor.cs:linha 83
+23:19:28,943 - [19] - INFO  - Game.Server.GameServer - Begin ping check....
+23:19:28,946 - [19] - INFO  - Game.Server.GameServer - End ping check....
+23:19:28,947 - [19] - INFO  - Game.Server.GameServer - Begin ping center check....
+23:19:28,948 - [19] - INFO  - Game.Server.GameServer - End ping center check....
+23:19:28,954 - [17] - INFO  - Game.Server.GameServer - Buff Scaning ...
+23:19:28,955 - [17] - INFO  - Game.Server.GameServer - Buff Scan complete!
+23:19:28,956 - [17] - INFO  - Game.Server.GameServer - Buff all 1 players in 0ms
+23:19:59,581 - [24] - ERROR - Game.Server.HotSpringRooms.TankHotSpringLogicProcessor - IP:127.0.0.1:64905, OnGameData is Error: System.Collections.Generic.KeyNotFoundException: A chave fornecida não estava presente no dicionário.
+   em System.ThrowHelper.ThrowKeyNotFoundException()
+   em System.Collections.Generic.Dictionary`2.get_Item(TKey key)
+   em Game.Server.HotSpringRooms.TankHandle.HotSpringCommandMgr.LoadCommandHandler(Int32 code) na D:\DDT\DDTank-3.0\Game.Server\HotSpringRooms\TankHandle\HotSpringCommandMgr.cs:linha 15
+   em Game.Server.HotSpringRooms.TankHotSpringLogicProcessor.OnGameData(HotSpringRoom room, GamePlayer player, GSPacketIn packet) na D:\DDT\DDTank-3.0\Game.Server\HotSpringRooms\TankHotSpringLogicProcessor.cs:linha 83
+23:20:07,657 - [24] - ERROR - Game.Server.HotSpringRooms.TankHotSpringLogicProcessor - IP:127.0.0.1:64905, OnGameData is Error: System.Collections.Generic.KeyNotFoundException: A chave fornecida não estava presente no dicionário.
+   em System.ThrowHelper.ThrowKeyNotFoundException()
+   em System.Collections.Generic.Dictionary`2.get_Item(TKey key)
+   em Game.Server.HotSpringRooms.TankHandle.HotSpringCommandMgr.LoadCommandHandler(Int32 code) na D:\DDT\DDTank-3.0\Game.Server\HotSpringRooms\TankHandle\HotSpringCommandMgr.cs:linha 15
+   em Game.Server.HotSpringRooms.TankHotSpringLogicProcessor.OnGameData(HotSpringRoom room, GamePlayer player, GSPacketIn packet) na D:\DDT\DDTank-3.0\Game.Server\HotSpringRooms\TankHotSpringLogicProcessor.cs:linha 83
+23:20:08,689 - [24] - ERROR - Game.Server.HotSpringRooms.TankHotSpringLogicProcessor - IP:127.0.0.1:64905, OnGameData is Error: System.Collections.Generic.KeyNotFoundException: A chave fornecida não estava presente no dicionário.
+   em System.ThrowHelper.ThrowKeyNotFoundException()
+   em System.Collections.Generic.Dictionary`2.get_Item(TKey key)
+   em Game.Server.HotSpringRooms.TankHandle.HotSpringCommandMgr.LoadCommandHandler(Int32 code) na D:\DDT\DDTank-3.0\Game.Server\HotSpringRooms\TankHandle\HotSpringCommandMgr.cs:linha 15
+   em Game.Server.HotSpringRooms.TankHotSpringLogicProcessor.OnGameData(HotSpringRoom room, GamePlayer player, GSPacketIn packet) na D:\DDT\DDTank-3.0\Game.Server\HotSpringRooms\TankHotSpringLogicProcessor.cs:linha 83
+23:20:09,169 - [24] - ERROR - Game.Server.HotSpringRooms.TankHotSpringLogicProcessor - IP:127.0.0.1:64905, OnGameData is Error: System.Collections.Generic.KeyNotFoundException: A chave fornecida não estava presente no dicionário.
+   em System.ThrowHelper.ThrowKeyNotFoundException()
+   em System.Collections.Generic.Dictionary`2.get_Item(TKey key)
+   em Game.Server.HotSpringRooms.TankHandle.HotSpringCommandMgr.LoadCommandHandler(Int32 code) na D:\DDT\DDTank-3.0\Game.Server\HotSpringRooms\TankHandle\HotSpringCommandMgr.cs:linha 15
+   em Game.Server.HotSpringRooms.TankHotSpringLogicProcessor.OnGameData(HotSpringRoom room, GamePlayer player, GSPacketIn packet) na D:\DDT\DDTank-3.0\Game.Server\HotSpringRooms\TankHotSpringLogicProcessor.cs:linha 83
+23:20:09,651 - [24] - ERROR - Game.Server.HotSpringRooms.TankHotSpringLogicProcessor - IP:127.0.0.1:64905, OnGameData is Error: System.Collections.Generic.KeyNotFoundException: A chave fornecida não estava presente no dicionário.
+   em System.ThrowHelper.ThrowKeyNotFoundException()
+   em System.Collections.Generic.Dictionary`2.get_Item(TKey key)
+   em Game.Server.HotSpringRooms.TankHandle.HotSpringCommandMgr.LoadCommandHandler(Int32 code) na D:\DDT\DDTank-3.0\Game.Server\HotSpringRooms\TankHandle\HotSpringCommandMgr.cs:linha 15
+   em Game.Server.HotSpringRooms.TankHotSpringLogicProcessor.OnGameData(HotSpringRoom room, GamePlayer player, GSPacketIn packet) na D:\DDT\DDTank-3.0\Game.Server\HotSpringRooms\TankHotSpringLogicProcessor.cs:linha 83
+23:20:10,273 - [24] - ERROR - Game.Server.HotSpringRooms.TankHotSpringLogicProcessor - IP:127.0.0.1:64905, OnGameData is Error: System.Collections.Generic.KeyNotFoundException: A chave fornecida não estava presente no dicionário.
+   em System.ThrowHelper.ThrowKeyNotFoundException()
+   em System.Collections.Generic.Dictionary`2.get_Item(TKey key)
+   em Game.Server.HotSpringRooms.TankHandle.HotSpringCommandMgr.LoadCommandHandler(Int32 code) na D:\DDT\DDTank-3.0\Game.Server\HotSpringRooms\TankHandle\HotSpringCommandMgr.cs:linha 15
+   em Game.Server.HotSpringRooms.TankHotSpringLogicProcessor.OnGameData(HotSpringRoom room, GamePlayer player, GSPacketIn packet) na D:\DDT\DDTank-3.0\Game.Server\HotSpringRooms\TankHotSpringLogicProcessor.cs:linha 83
+23:20:12,751 - [24] - ERROR - Game.Server.HotSpringRooms.TankHotSpringLogicProcessor - IP:127.0.0.1:64905, OnGameData is Error: System.Collections.Generic.KeyNotFoundException: A chave fornecida não estava presente no dicionário.
+   em System.ThrowHelper.ThrowKeyNotFoundException()
+   em System.Collections.Generic.Dictionary`2.get_Item(TKey key)
+   em Game.Server.HotSpringRooms.TankHandle.HotSpringCommandMgr.LoadCommandHandler(Int32 code) na D:\DDT\DDTank-3.0\Game.Server\HotSpringRooms\TankHandle\HotSpringCommandMgr.cs:linha 15
+   em Game.Server.HotSpringRooms.TankHotSpringLogicProcessor.OnGameData(HotSpringRoom room, GamePlayer player, GSPacketIn packet) na D:\DDT\DDTank-3.0\Game.Server\HotSpringRooms\TankHotSpringLogicProcessor.cs:linha 83
+23:20:13,740 - [24] - ERROR - Game.Server.HotSpringRooms.TankHotSpringLogicProcessor - IP:127.0.0.1:64905, OnGameData is Error: System.Collections.Generic.KeyNotFoundException: A chave fornecida não estava presente no dicionário.
+   em System.ThrowHelper.ThrowKeyNotFoundException()
+   em System.Collections.Generic.Dictionary`2.get_Item(TKey key)
+   em Game.Server.HotSpringRooms.TankHandle.HotSpringCommandMgr.LoadCommandHandler(Int32 code) na D:\DDT\DDTank-3.0\Game.Server\HotSpringRooms\TankHandle\HotSpringCommandMgr.cs:linha 15
+   em Game.Server.HotSpringRooms.TankHotSpringLogicProcessor.OnGameData(HotSpringRoom room, GamePlayer player, GSPacketIn packet) na D:\DDT\DDTank-3.0\Game.Server\HotSpringRooms\TankHotSpringLogicProcessor.cs:linha 83
+23:20:15,082 - [24] - ERROR - Game.Server.HotSpringRooms.TankHotSpringLogicProcessor - IP:127.0.0.1:64905, OnGameData is Error: System.Collections.Generic.KeyNotFoundException: A chave fornecida não estava presente no dicionário.
+   em System.ThrowHelper.ThrowKeyNotFoundException()
+   em System.Collections.Generic.Dictionary`2.get_Item(TKey key)
+   em Game.Server.HotSpringRooms.TankHandle.HotSpringCommandMgr.LoadCommandHandler(Int32 code) na D:\DDT\DDTank-3.0\Game.Server\HotSpringRooms\TankHandle\HotSpringCommandMgr.cs:linha 15
+   em Game.Server.HotSpringRooms.TankHotSpringLogicProcessor.OnGameData(HotSpringRoom room, GamePlayer player, GSPacketIn packet) na D:\DDT\DDTank-3.0\Game.Server\HotSpringRooms\TankHotSpringLogicProcessor.cs:linha 83
+23:20:28,969 - [19] - INFO  - Game.Server.GameServer - Buff Scaning ...
+23:20:28,969 - [19] - INFO  - Game.Server.GameServer - Buff Scan complete!
+23:20:28,970 - [19] - INFO  - Game.Server.GameServer - Buff all 1 players in 0ms
+23:21:28,970 - [19] - INFO  - Game.Server.GameServer - Buff Scaning ...
+23:21:28,970 - [19] - INFO  - Game.Server.GameServer - Buff Scan complete!
+23:21:28,971 - [19] - INFO  - Game.Server.GameServer - Buff all 1 players in 0ms
+23:22:28,953 - [16] - INFO  - Game.Server.GameServer - Begin ping check....
+23:22:28,954 - [16] - INFO  - Game.Server.GameServer - End ping check....
+23:22:28,957 - [16] - INFO  - Game.Server.GameServer - Begin ping center check....
+23:22:28,958 - [16] - INFO  - Game.Server.GameServer - End ping center check....
+23:22:28,984 - [19] - INFO  - Game.Server.GameServer - Buff Scaning ...
+23:22:28,984 - [19] - INFO  - Game.Server.GameServer - Buff Scan complete!
+23:22:28,985 - [19] - INFO  - Game.Server.GameServer - Buff all 1 players in 0ms
+23:23:28,940 - [17] - INFO  - Game.Server.GameServer - Saving Record...
+23:23:28,941 - [17] - INFO  - Game.Server.GameServer - Saving Record complete!
+23:23:28,942 - [21] - INFO  - Game.Server.GameServer - Saving database...
+23:23:28,985 - [16] - INFO  - Game.Server.GameServer - Buff Scaning ...
+23:23:28,985 - [16] - INFO  - Game.Server.GameServer - Buff Scan complete!
+23:23:28,986 - [16] - INFO  - Game.Server.GameServer - Buff all 1 players in 0ms
+23:23:29,043 - [21] - INFO  - Game.Server.GameServer - Saving database complete!
+23:23:29,043 - [21] - INFO  - Game.Server.GameServer - Saved all databases and 1 players in 93ms
+23:24:27,347 - [27] - INFO  - Game.Base.BaseClient - Disconnecting client (not connected), received bytes=0
+23:24:27,422 - [27] - I

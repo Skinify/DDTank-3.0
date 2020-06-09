@@ -12,6 +12,7 @@ namespace Game.Server.HotSpringRooms
     {
         public virtual void OnGameData(HotSpringRoom game, Game.Server.GameObjects.GamePlayer player, GSPacketIn packet)
         {
+
         }
 
         public virtual void OnTick(HotSpringRoom room)

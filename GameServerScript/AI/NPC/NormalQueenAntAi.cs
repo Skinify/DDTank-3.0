@@ -187,7 +187,8 @@ namespace GameServerScript.AI.NPC
         {
             ((SimpleBoss)Body).CreateChild(npcID, brithPoint, 9, 3,9);
         }
-        public  void OnKillPlayerSay()
+
+        public override void OnKillPlayerSay()
         {
             //base.OnKillPlayerSay();
             int index = Game.Random.Next(0, KillPlayerChat.Length);

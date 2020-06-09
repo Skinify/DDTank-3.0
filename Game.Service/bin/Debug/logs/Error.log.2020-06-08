@@ -1,0 +1,167 @@
+23:14:00,398 - [5] - ERROR - Game.Base.Packets.StreamProcessor - HandlePacket(pak)
+System.NullReferenceException: Referência de objeto não definida para uma instância de um objeto.
+   em Game.Base.Packets.PacketProcessor.HandlePacket(GSPacketIn packet) na D:\DDT\DDTank-3.0\Game.Server\Packets\Server\PacketProcessor.cs:linha 65
+   em Game.Server.GameClient.OnRecvPacket(GSPacketIn pkg) na D:\DDT\DDTank-3.0\Game.Server\GameClient.cs:linha 129
+   em Game.Base.Packets.StreamProcessor.ReceiveBytes(Int32 numBytes) na D:\DDT\DDTank-3.0\Game.Base\Packets\StreamProcessor.cs:linha 387
+23:14:05,280 - [20] - ERROR - Game.Base.Packets.StreamProcessor - HandlePacket(pak)
+System.NullReferenceException: Referência de objeto não definida para uma instância de um objeto.
+   em Game.Base.Packets.PacketProcessor.HandlePacket(GSPacketIn packet) na D:\DDT\DDTank-3.0\Game.Server\Packets\Server\PacketProcessor.cs:linha 65
+   em Game.Server.GameClient.OnRecvPacket(GSPacketIn pkg) na D:\DDT\DDTank-3.0\Game.Server\GameClient.cs:linha 129
+   em Game.Base.Packets.StreamProcessor.ReceiveBytes(Int32 numBytes) na D:\DDT\DDTank-3.0\Game.Base\Packets\StreamProcessor.cs:linha 387
+23:14:10,906 - [20] - ERROR - Game.Base.Packets.StreamProcessor - HandlePacket(pak)
+System.NullReferenceException: Referência de objeto não definida para uma instância de um objeto.
+   em Game.Base.Packets.PacketProcessor.HandlePacket(GSPacketIn packet) na D:\DDT\DDTank-3.0\Game.Server\Packets\Server\PacketProcessor.cs:linha 65
+   em Game.Server.GameClient.OnRecvPacket(GSPacketIn pkg) na D:\DDT\DDTank-3.0\Game.Server\GameClient.cs:linha 129
+   em Game.Base.Packets.StreamProcessor.ReceiveBytes(Int32 numBytes) na D:\DDT\DDTank-3.0\Game.Base\Packets\StreamProcessor.cs:linha 387
+23:14:29,278 - [22] - ERROR - Game.Server.HotSpringRooms.TankHotSpringLogicProcessor - IP:127.0.0.1:64905, OnGameData is Error: System.Collections.Generic.KeyNotFoundException: A chave fornecida não estava presente no dicionário.
+   em System.ThrowHelper.ThrowKeyNotFoundException()
+   em System.Collections.Generic.Dictionary`2.get_Item(TKey key)
+   em Game.Server.HotSpringRooms.TankHandle.HotSpringCommandMgr.LoadCommandHandler(Int32 code) na D:\DDT\DDTank-3.0\Game.Server\HotSpringRooms\TankHandle\HotSpringCommandMgr.cs:linha 15
+   em Game.Server.HotSpringRooms.TankHotSpringLogicProcessor.OnGameData(HotSpringRoom room, GamePlayer player, GSPacketIn packet) na D:\DDT\DDTank-3.0\Game.Server\HotSpringRooms\TankHotSpringLogicProcessor.cs:linha 83
+23:14:42,954 - [22] - ERROR - Game.Server.HotSpringRooms.TankHotSpringLogicProcessor - IP:127.0.0.1:64905, OnGameData is Error: System.Collections.Generic.KeyNotFoundException: A chave fornecida não estava presente no dicionário.
+   em System.ThrowHelper.ThrowKeyNotFoundException()
+   em System.Collections.Generic.Dictionary`2.get_Item(TKey key)
+   em Game.Server.HotSpringRooms.TankHandle.HotSpringCommandMgr.LoadCommandHandler(Int32 code) na D:\DDT\DDTank-3.0\Game.Server\HotSpringRooms\TankHandle\HotSpringCommandMgr.cs:linha 15
+   em Game.Server.HotSpringRooms.TankHotSpringLogicProcessor.OnGameData(HotSpringRoom room, GamePlayer player, GSPacketIn packet) na D:\DDT\DDTank-3.0\Game.Server\HotSpringRooms\TankHotSpringLogicProcessor.cs:linha 83
+23:15:38,005 - [22] - ERROR - Game.Server.HotSpringRooms.TankHotSpringLogicProcessor - IP:127.0.0.1:64905, OnGameData is Error: System.Collections.Generic.KeyNotFoundException: A chave fornecida não estava presente no dicionário.
+   em System.ThrowHelper.ThrowKeyNotFoundException()
+   em System.Collections.Generic.Dictionary`2.get_Item(TKey key)
+   em Game.Server.HotSpringRooms.TankHandle.HotSpringCommandMgr.LoadCommandHandler(Int32 code) na D:\DDT\DDTank-3.0\Game.Server\HotSpringRooms\TankHandle\HotSpringCommandMgr.cs:linha 15
+   em Game.Server.HotSpringRooms.TankHotSpringLogicProcessor.OnGameData(HotSpringRoom room, GamePlayer player, GSPacketIn packet) na D:\DDT\DDTank-3.0\Game.Server\HotSpringRooms\TankHotSpringLogicProcessor.cs:linha 83
+23:15:40,735 - [22] - ERROR - Game.Server.HotSpringRooms.TankHotSpringLogicProcessor - IP:127.0.0.1:64905, OnGameData is Error: System.Collections.Generic.KeyNotFoundException: A chave fornecida não estava presente no dicionário.
+   em System.ThrowHelper.ThrowKeyNotFoundException()
+   em System.Collections.Generic.Dictionary`2.get_Item(TKey key)
+   em Game.Server.HotSpringRooms.TankHandle.HotSpringCommandMgr.LoadCommandHandler(Int32 code) na D:\DDT\DDTank-3.0\Game.Server\HotSpringRooms\TankHandle\HotSpringCommandMgr.cs:linha 15
+   em Game.Server.HotSpringRooms.TankHotSpringLogicProcessor.OnGameData(HotSpringRoom room, GamePlayer player, GSPacketIn packet) na D:\DDT\DDTank-3.0\Game.Server\HotSpringRooms\TankHotSpringLogicProcessor.cs:linha 83
+23:15:45,213 - [22] - ERROR - Game.Server.HotSpringRooms.TankHotSpringLogicProcessor - IP:127.0.0.1:64905, OnGameData is Error: System.Collections.Generic.KeyNotFoundException: A chave fornecida não estava presente no dicionário.
+   em System.ThrowHelper.ThrowKeyNotFoundException()
+   em System.Collections.Generic.Dictionary`2.get_Item(TKey key)
+   em Game.Server.HotSpringRooms.TankHandle.HotSpringCommandMgr.LoadCommandHandler(Int32 code) na D:\DDT\DDTank-3.0\Game.Server\HotSpringRooms\TankHandle\HotSpringCommandMgr.cs:linha 15
+   em Game.Server.HotSpringRooms.TankHotSpringLogicProcessor.OnGameData(HotSpringRoom room, GamePlayer player, GSPacketIn packet) na D:\DDT\DDTank-3.0\Game.Server\HotSpringRooms\TankHotSpringLogicProcessor.cs:linha 83
+23:15:47,334 - [22] - ERROR - Game.Server.HotSpringRooms.TankHotSpringLogicProcessor - IP:127.0.0.1:64905, OnGameData is Error: System.Collections.Generic.KeyNotFoundException: A chave fornecida não estava presente no dicionário.
+   em System.ThrowHelper.ThrowKeyNotFoundException()
+   em System.Collections.Generic.Dictionary`2.get_Item(TKey key)
+   em Game.Server.HotSpringRooms.TankHandle.HotSpringCommandMgr.LoadCommandHandler(Int32 code) na D:\DDT\DDTank-3.0\Game.Server\HotSpringRooms\TankHandle\HotSpringCommandMgr.cs:linha 15
+   em Game.Server.HotSpringRooms.TankHotSpringLogicProcessor.OnGameData(HotSpringRoom room, GamePlayer player, GSPacketIn packet) na D:\DDT\DDTank-3.0\Game.Server\HotSpringRooms\TankHotSpringLogicProcessor.cs:linha 83
+23:15:47,683 - [22] - ERROR - Game.Server.HotSpringRooms.TankHotSpringLogicProcessor - IP:127.0.0.1:64905, OnGameData is Error: System.Collections.Generic.KeyNotFoundException: A chave fornecida não estava presente no dicionário.
+   em System.ThrowHelper.ThrowKeyNotFoundException()
+   em System.Collections.Generic.Dictionary`2.get_Item(TKey key)
+   em Game.Server.HotSpringRooms.TankHandle.HotSpringCommandMgr.LoadCommandHandler(Int32 code) na D:\DDT\DDTank-3.0\Game.Server\HotSpringRooms\TankHandle\HotSpringCommandMgr.cs:linha 15
+   em Game.Server.HotSpringRooms.TankHotSpringLogicProcessor.OnGameData(HotSpringRoom room, GamePlayer player, GSPacketIn packet) na D:\DDT\DDTank-3.0\Game.Server\HotSpringRooms\TankHotSpringLogicProcessor.cs:linha 83
+23:15:50,081 - [22] - ERROR - Game.Server.HotSpringRooms.TankHotSpringLogicProcessor - IP:127.0.0.1:64905, OnGameData is Error: System.Collections.Generic.KeyNotFoundException: A chave fornecida não estava presente no dicionário.
+   em System.ThrowHelper.ThrowKeyNotFoundException()
+   em System.Collections.Generic.Dictionary`2.get_Item(TKey key)
+   em Game.Server.HotSpringRooms.TankHandle.HotSpringCommandMgr.LoadCommandHandler(Int32 code) na D:\DDT\DDTank-3.0\Game.Server\HotSpringRooms\TankHandle\HotSpringCommandMgr.cs:linha 15
+   em Game.Server.HotSpringRooms.TankHotSpringLogicProcessor.OnGameData(HotSpringRoom room, GamePlayer player, GSPacketIn packet) na D:\DDT\DDTank-3.0\Game.Server\HotSpringRooms\TankHotSpringLogicProcessor.cs:linha 83
+23:15:52,732 - [22] - ERROR - Game.Server.HotSpringRooms.TankHotSpringLogicProcessor - IP:127.0.0.1:64905, OnGameData is Error: System.Collections.Generic.KeyNotFoundException: A chave fornecida não estava presente no dicionário.
+   em System.ThrowHelper.ThrowKeyNotFoundException()
+   em System.Collections.Generic.Dictionary`2.get_Item(TKey key)
+   em Game.Server.HotSpringRooms.TankHandle.HotSpringCommandMgr.LoadCommandHandler(Int32 code) na D:\DDT\DDTank-3.0\Game.Server\HotSpringRooms\TankHandle\HotSpringCommandMgr.cs:linha 15
+   em Game.Server.HotSpringRooms.TankHotSpringLogicProcessor.OnGameData(HotSpringRoom room, GamePlayer player, GSPacketIn packet) na D:\DDT\DDTank-3.0\Game.Server\HotSpringRooms\TankHotSpringLogicProcessor.cs:linha 83
+23:15:58,209 - [22] - ERROR - Game.Server.HotSpringRooms.TankHotSpringLogicProcessor - IP:127.0.0.1:64905, OnGameData is Error: System.Collections.Generic.KeyNotFoundException: A chave fornecida não estava presente no dicionário.
+   em System.ThrowHelper.ThrowKeyNotFoundException()
+   em System.Collections.Generic.Dictionary`2.get_Item(TKey key)
+   em Game.Server.HotSpringRooms.TankHandle.HotSpringCommandMgr.LoadCommandHandler(Int32 code) na D:\DDT\DDTank-3.0\Game.Server\HotSpringRooms\TankHandle\HotSpringCommandMgr.cs:linha 15
+   em Game.Server.HotSpringRooms.TankHotSpringLogicProcessor.OnGameData(HotSpringRoom room, GamePlayer player, GSPacketIn packet) na D:\DDT\DDTank-3.0\Game.Server\HotSpringRooms\TankHotSpringLogicProcessor.cs:linha 83
+23:17:27,686 - [23] - ERROR - Game.Server.HotSpringRooms.TankHotSpringLogicProcessor - IP:127.0.0.1:64905, OnGameData is Error: System.Collections.Generic.KeyNotFoundException: A chave fornecida não estava presente no dicionário.
+   em System.ThrowHelper.ThrowKeyNotFoundException()
+   em System.Collections.Generic.Dictionary`2.get_Item(TKey key)
+   em Game.Server.HotSpringRooms.TankHandle.HotSpringCommandMgr.LoadCommandHandler(Int32 code) na D:\DDT\DDTank-3.0\Game.Server\HotSpringRooms\TankHandle\HotSpringCommandMgr.cs:linha 15
+   em Game.Server.HotSpringRooms.TankHotSpringLogicProcessor.OnGameData(HotSpringRoom room, GamePlayer player, GSPacketIn packet) na D:\DDT\DDTank-3.0\Game.Server\HotSpringRooms\TankHotSpringLogicProcessor.cs:linha 83
+23:17:31,615 - [23] - ERROR - Game.Server.HotSpringRooms.TankHotSpringLogicProcessor - IP:127.0.0.1:64905, OnGameData is Error: System.Collections.Generic.KeyNotFoundException: A chave fornecida não estava presente no dicionário.
+   em System.ThrowHelper.ThrowKeyNotFoundException()
+   em System.Collections.Generic.Dictionary`2.get_Item(TKey key)
+   em Game.Server.HotSpringRooms.TankHandle.HotSpringCommandMgr.LoadCommandHandler(Int32 code) na D:\DDT\DDTank-3.0\Game.Server\HotSpringRooms\TankHandle\HotSpringCommandMgr.cs:linha 15
+   em Game.Server.HotSpringRooms.TankHotSpringLogicProcessor.OnGameData(HotSpringRoom room, GamePlayer player, GSPacketIn packet) na D:\DDT\DDTank-3.0\Game.Server\HotSpringRooms\TankHotSpringLogicProcessor.cs:linha 83
+23:18:00,941 - [23] - ERROR - Game.Server.HotSpringRooms.TankHotSpringLogicProcessor - IP:127.0.0.1:64905, OnGameData is Error: System.Collections.Generic.KeyNotFoundException: A chave fornecida não estava presente no dicionário.
+   em System.ThrowHelper.ThrowKeyNotFoundException()
+   em System.Collections.Generic.Dictionary`2.get_Item(TKey key)
+   em Game.Server.HotSpringRooms.TankHandle.HotSpringCommandMgr.LoadCommandHandler(Int32 code) na D:\DDT\DDTank-3.0\Game.Server\HotSpringRooms\TankHandle\HotSpringCommandMgr.cs:linha 15
+   em Game.Server.HotSpringRooms.TankHotSpringLogicProcessor.OnGameData(HotSpringRoom room, GamePlayer player, GSPacketIn packet) na D:\DDT\DDTank-3.0\Game.Server\HotSpringRooms\TankHotSpringLogicProcessor.cs:linha 83
+23:18:03,647 - [23] - ERROR - Game.Server.HotSpringRooms.TankHotSpringLogicProcessor - IP:127.0.0.1:64905, OnGameData is Error: System.Collections.Generic.KeyNotFoundException: A chave fornecida não estava presente no dicionário.
+   em System.ThrowHelper.ThrowKeyNotFoundException()
+   em System.Collections.Generic.Dictionary`2.get_Item(TKey key)
+   em Game.Server.HotSpringRooms.TankHandle.HotSpringCommandMgr.LoadCommandHandler(Int32 code) na D:\DDT\DDTank-3.0\Game.Server\HotSpringRooms\TankHandle\HotSpringCommandMgr.cs:linha 15
+   em Game.Server.HotSpringRooms.TankHotSpringLogicProcessor.OnGameData(HotSpringRoom room, GamePlayer player, GSPacketIn packet) na D:\DDT\DDTank-3.0\Game.Server\HotSpringRooms\TankHotSpringLogicProcessor.cs:linha 83
+23:18:07,043 - [23] - ERROR - Game.Server.HotSpringRooms.TankHotSpringLogicProcessor - IP:127.0.0.1:64905, OnGameData is Error: System.Collections.Generic.KeyNotFoundException: A chave fornecida não estava presente no dicionário.
+   em System.ThrowHelper.ThrowKeyNotFoundException()
+   em System.Collections.Generic.Dictionary`2.get_Item(TKey key)
+   em Game.Server.HotSpringRooms.TankHandle.HotSpringCommandMgr.LoadCommandHandler(Int32 code) na D:\DDT\DDTank-3.0\Game.Server\HotSpringRooms\TankHandle\HotSpringCommandMgr.cs:linha 15
+   em Game.Server.HotSpringRooms.TankHotSpringLogicProcessor.OnGameData(HotSpringRoom room, GamePlayer player, GSPacketIn packet) na D:\DDT\DDTank-3.0\Game.Server\HotSpringRooms\TankHotSpringLogicProcessor.cs:linha 83
+23:18:21,001 - [23] - ERROR - Game.Server.HotSpringRooms.TankHotSpringLogicProcessor - IP:127.0.0.1:64905, OnGameData is Error: System.Collections.Generic.KeyNotFoundException: A chave fornecida não estava presente no dicionário.
+   em System.ThrowHelper.ThrowKeyNotFoundException()
+   em System.Collections.Generic.Dictionary`2.get_Item(TKey key)
+   em Game.Server.HotSpringRooms.TankHandle.HotSpringCommandMgr.LoadCommandHandler(Int32 code) na D:\DDT\DDTank-3.0\Game.Server\HotSpringRooms\TankHandle\HotSpringCommandMgr.cs:linha 15
+   em Game.Server.HotSpringRooms.TankHotSpringLogicProcessor.OnGameData(HotSpringRoom room, GamePlayer player, GSPacketIn packet) na D:\DDT\DDTank-3.0\Game.Server\HotSpringRooms\TankHotSpringLogicProcessor.cs:linha 83
+23:18:37,124 - [23] - ERROR - Game.Server.HotSpringRooms.TankHotSpringLogicProcessor - IP:127.0.0.1:64905, OnGameData is Error: System.Collections.Generic.KeyNotFoundException: A chave fornecida não estava presente no dicionário.
+   em System.ThrowHelper.ThrowKeyNotFoundException()
+   em System.Collections.Generic.Dictionary`2.get_Item(TKey key)
+   em Game.Server.HotSpringRooms.TankHandle.HotSpringCommandMgr.LoadCommandHandler(Int32 code) na D:\DDT\DDTank-3.0\Game.Server\HotSpringRooms\TankHandle\HotSpringCommandMgr.cs:linha 15
+   em Game.Server.HotSpringRooms.TankHotSpringLogicProcessor.OnGameData(HotSpringRoom room, GamePlayer player, GSPacketIn packet) na D:\DDT\DDTank-3.0\Game.Server\HotSpringRooms\TankHotSpringLogicProcessor.cs:linha 83
+23:18:38,650 - [23] - ERROR - Game.Server.HotSpringRooms.TankHotSpringLogicProcessor - IP:127.0.0.1:64905, OnGameData is Error: System.Collections.Generic.KeyNotFoundException: A chave fornecida não estava presente no dicionário.
+   em System.ThrowHelper.ThrowKeyNotFoundException()
+   em System.Collections.Generic.Dictionary`2.get_Item(TKey key)
+   em Game.Server.HotSpringRooms.TankHandle.HotSpringCommandMgr.LoadCommandHandler(Int32 code) na D:\DDT\DDTank-3.0\Game.Server\HotSpringRooms\TankHandle\HotSpringCommandMgr.cs:linha 15
+   em Game.Server.HotSpringRooms.TankHotSpringLogicProcessor.OnGameData(HotSpringRoom room, GamePlayer player, GSPacketIn packet) na D:\DDT\DDTank-3.0\Game.Server\HotSpringRooms\TankHotSpringLogicProcessor.cs:linha 83
+23:18:39,005 - [23] - ERROR - Game.Server.HotSpringRooms.TankHotSpringLogicProcessor - IP:127.0.0.1:64905, OnGameData is Error: System.Collections.Generic.KeyNotFoundException: A chave fornecida não estava presente no dicionário.
+   em System.ThrowHelper.ThrowKeyNotFoundException()
+   em System.Collections.Generic.Dictionary`2.get_Item(TKey key)
+   em Game.Server.HotSpringRooms.TankHandle.HotSpringCommandMgr.LoadCommandHandler(Int32 code) na D:\DDT\DDTank-3.0\Game.Server\HotSpringRooms\TankHandle\HotSpringCommandMgr.cs:linha 15
+   em Game.Server.HotSpringRooms.TankHotSpringLogicProcessor.OnGameData(HotSpringRoom room, GamePlayer player, GSPacketIn packet) na D:\DDT\DDTank-3.0\Game.Server\HotSpringRooms\TankHotSpringLogicProcessor.cs:linha 83
+23:18:44,253 - [23] - ERROR - Game.Server.HotSpringRooms.TankHotSpringLogicProcessor - IP:127.0.0.1:64905, OnGameData is Error: System.Collections.Generic.KeyNotFoundException: A chave fornecida não estava presente no dicionário.
+   em System.ThrowHelper.ThrowKeyNotFoundException()
+   em System.Collections.Generic.Dictionary`2.get_Item(TKey key)
+   em Game.Server.HotSpringRooms.TankHandle.HotSpringCommandMgr.LoadCommandHandler(Int32 code) na D:\DDT\DDTank-3.0\Game.Server\HotSpringRooms\TankHandle\HotSpringCommandMgr.cs:linha 15
+   em Game.Server.HotSpringRooms.TankHotSpringLogicProcessor.OnGameData(HotSpringRoom room, GamePlayer player, GSPacketIn packet) na D:\DDT\DDTank-3.0\Game.Server\HotSpringRooms\TankHotSpringLogicProcessor.cs:linha 83
+23:18:45,862 - [23] - ERROR - Game.Server.HotSpringRooms.TankHotSpringLogicProcessor - IP:127.0.0.1:64905, OnGameData is Error: System.Collections.Generic.KeyNotFoundException: A chave fornecida não estava presente no dicionário.
+   em System.ThrowHelper.ThrowKeyNotFoundException()
+   em System.Collections.Generic.Dictionary`2.get_Item(TKey key)
+   em Game.Server.HotSpringRooms.TankHandle.HotSpringCommandMgr.LoadCommandHandler(Int32 code) na D:\DDT\DDTank-3.0\Game.Server\HotSpringRooms\TankHandle\HotSpringCommandMgr.cs:linha 15
+   em Game.Server.HotSpringRooms.TankHotSpringLogicProcessor.OnGameData(HotSpringRoom room, GamePlayer player, GSPacketIn packet) na D:\DDT\DDTank-3.0\Game.Server\HotSpringRooms\TankHotSpringLogicProcessor.cs:linha 83
+23:19:59,581 - [24] - ERROR - Game.Server.HotSpringRooms.TankHotSpringLogicProcessor - IP:127.0.0.1:64905, OnGameData is Error: System.Collections.Generic.KeyNotFoundException: A chave fornecida não estava presente no dicionário.
+   em System.ThrowHelper.ThrowKeyNotFoundException()
+   em System.Collections.Generic.Dictionary`2.get_Item(TKey key)
+   em Game.Server.HotSpringRooms.TankHandle.HotSpringCommandMgr.LoadCommandHandler(Int32 code) na D:\DDT\DDTank-3.0\Game.Server\HotSpringRooms\TankHandle\HotSpringCommandMgr.cs:linha 15
+   em Game.Server.HotSpringRooms.TankHotSpringLogicProcessor.OnGameData(HotSpringRoom room, GamePlayer player, GSPacketIn packet) na D:\DDT\DDTank-3.0\Game.Server\HotSpringRooms\TankHotSpringLogicProcessor.cs:linha 83
+23:20:07,657 - [24] - ERROR - Game.Server.HotSpringRooms.TankHotSpringLogicProcessor - IP:127.0.0.1:64905, OnGameData is Error: System.Collections.Generic.KeyNotFoundException: A chave fornecida não estava presente no dicionário.
+   em System.ThrowHelper.ThrowKeyNotFoundException()
+   em System.Collections.Generic.Dictionary`2.get_Item(TKey key)
+   em Game.Server.HotSpringRooms.TankHandle.HotSpringCommandMgr.LoadCommandHandler(Int32 code) na D:\DDT\DDTank-3.0\Game.Server\HotSpringRooms\TankHandle\HotSpringCommandMgr.cs:linha 15
+   em Game.Server.HotSpringRooms.TankHotSpringLogicProcessor.OnGameData(HotSpringRoom room, GamePlayer player, GSPacketIn packet) na D:\DDT\DDTank-3.0\Game.Server\HotSpringRooms\TankHotSpringLogicProcessor.cs:linha 83
+23:20:08,689 - [24] - ERROR - Game.Server.HotSpringRooms.TankHotSpringLogicProcessor - IP:127.0.0.1:64905, OnGameData is Error: System.Collections.Generic.KeyNotFoundException: A chave fornecida não estava presente no dicionário.
+   em System.ThrowHelper.ThrowKeyNotFoundException()
+   em System.Collections.Generic.Dictionary`2.get_Item(TKey key)
+   em Game.Server.HotSpringRooms.TankHandle.HotSpringCommandMgr.LoadCommandHandler(Int32 code) na D:\DDT\DDTank-3.0\Game.Server\HotSpringRooms\TankHandle\HotSpringCommandMgr.cs:linha 15
+   em Game.Server.HotSpringRooms.TankHotSpringLogicProcessor.OnGameData(HotSpringRoom room, GamePlayer player, GSPacketIn packet) na D:\DDT\DDTank-3.0\Game.Server\HotSpringRooms\TankHotSpringLogicProcessor.cs:linha 83
+23:20:09,169 - [24] - ERROR - Game.Server.HotSpringRooms.TankHotSpringLogicProcessor - IP:127.0.0.1:64905, OnGameData is Error: System.Collections.Generic.KeyNotFoundException: A chave fornecida não estava presente no dicionário.
+   em System.ThrowHelper.ThrowKeyNotFoundException()
+   em System.Collections.Generic.Dictionary`2.get_Item(TKey key)
+   em Game.Server.HotSpringRooms.TankHandle.HotSpringCommandMgr.LoadCommandHandler(Int32 code) na D:\DDT\DDTank-3.0\Game.Server\HotSpringRooms\TankHandle\HotSpringCommandMgr.cs:linha 15
+   em Game.Server.HotSpringRooms.TankHotSpringLogicProcessor.OnGameData(HotSpringRoom room, GamePlayer player, GSPacketIn packet) na D:\DDT\DDTank-3.0\Game.Server\HotSpringRooms\TankHotSpringLogicProcessor.cs:linha 83
+23:20:09,651 - [24] - ERROR - Game.Server.HotSpringRooms.TankHotSpringLogicProcessor - IP:127.0.0.1:64905, OnGameData is Error: System.Collections.Generic.KeyNotFoundException: A chave fornecida não estava presente no dicionário.
+   em System.ThrowHelper.ThrowKeyNotFoundException()
+   em System.Collections.Generic.Dictionary`2.get_Item(TKey key)
+   em Game.Server.HotSpringRooms.TankHandle.HotSpringCommandMgr.LoadCommandHandler(Int32 code) na D:\DDT\DDTank-3.0\Game.Server\HotSpringRooms\TankHandle\HotSpringCommandMgr.cs:linha 15
+   em Game.Server.HotSpringRooms.TankHotSpringLogicProcessor.OnGameData(HotSpringRoom room, GamePlayer player, GSPacketIn packet) na D:\DDT\DDTank-3.0\Game.Server\HotSpringRooms\TankHotSpringLogicProcessor.cs:linha 83
+23:20:10,273 - [24] - ERROR - Game.Server.HotSpringRooms.TankHotSpringLogicProcessor - IP:127.0.0.1:64905, OnGameData is Error: System.Collections.Generic.KeyNotFoundException: A chave fornecida não estava presente no dicionário.
+   em System.ThrowHelper.ThrowKeyNotFoundException()
+   em System.Collections.Generic.Dictionary`2.get_Item(TKey key)
+   em Game.Server.HotSpringRooms.TankHandle.HotSpringCommandMgr.LoadCommandHandler(Int32 code) na D:\DDT\DDTank-3.0\Game.Server\HotSpringRooms\TankHandle\HotSpringCommandMgr.cs:linha 15
+   em Game.Server.HotSpringRooms.TankHotSpringLogicProcessor.OnGameData(HotSpringRoom room, GamePlayer player, GSPacketIn packet) na D:\DDT\DDTank-3.0\Game.Server\HotSpringRooms\TankHotSpringLogicProcessor.cs:linha 83
+23:20:12,751 - [24] - ERROR - Game.Server.HotSpringRooms.TankHotSpringLogicProcessor - IP:127.0.0.1:64905, OnGameData is Error: System.Collections.Generic.KeyNotFoundException: A chave fornecida não estava presente no dicionário.
+   em System.ThrowHelper.ThrowKeyNotFoundException()
+   em System.Collections.Generic.Dictionary`2.get_Item(TKey key)
+   em Game.Server.HotSpringRooms.TankHandle.HotSpringCommandMgr.LoadCommandHandler(Int32 code) na D:\DDT\DDTank-3.0\Game.Server\HotSpringRooms\TankHandle\HotSpringCommandMgr.cs:linha 15
+   em Game.Server.HotSpringRooms.TankHotSpringLogicProcessor.OnGameData(HotSpringRoom room, GamePlayer player, GSPacketIn packet) na D:\DDT\DDTank-3.0\Game.Server\HotSpringRooms\TankHotSpringLogicProcessor.cs:linha 83
+23:20:13,740 - [24] - ERROR - Game.Server.HotSpringRooms.TankHotSpringLogicProcessor - IP:127.0.0.1:64905, OnGameData is Error: System.Collections.Generic.KeyNotFoundException: A chave fornecida não estava presente no dicionário.
+   em System.ThrowHelper.ThrowKeyNotFoundException()
+   em System.Collections.Generic.Dictionary`2.get_Item(TKey key)
+   em Game.Server.HotSpringRooms.TankHandle.HotSpringCommandMgr.LoadCommandHandler(Int32 code) na D:\DDT\DDTank-3.0\Game.Server\HotSpringRooms\TankHandle\HotSpringCommandMgr.cs:linha 15
+   em Game.Server.HotSpringRooms.TankHotSpringLogicProcessor.OnGameData(HotSpringRoom room, GamePlayer player, GSPacketIn packet) na D:\DDT\DDTank-3.0\Game.Server\HotSpringRooms\TankHotSpringLogicProcessor.cs:linha 83
+23:20:15,082 - [24] - ERROR - Game.Server.HotSpringRooms.TankHotSpringLogicProcessor - IP:127.0.0.1:64905, OnGameData is Error: System.Collections.Generic.KeyNotFoundException: A chave fornecida não estava presente no dicionário.
+   em System.ThrowHelper.ThrowKeyNotFoundException()
+   em System.Collections.Generic.Dictionary`2.get_Item(TKey key)
+   em Game.Server.HotSpringRooms.TankHandle.HotSpringCommandMgr.LoadCommandHandler(Int32 code) na D:\DDT\DDTank-3.0\Game.Server\HotSpringRooms\TankHandle\HotSpringCommandMgr.cs:linha 15
+   em Game.Server.HotSpringRooms.TankHotSpringLogicProcessor.OnGameData(HotSpringRoom room, GamePlayer player, GSPacketIn packet) na D:\DDT\DDTank-3.0\Game.Server\HotSpringRooms\TankHotSpringLogicProcessor.cs:linha 83
+23:24:27,538 - [27] - ERROR - Game.Server.GameServer - Center Server Disconnect! Stopping Server
+23:24:27,540 - [27] - ERROR - Game.Server.GameServer - Start the game server again after 1 second,and left try times:3

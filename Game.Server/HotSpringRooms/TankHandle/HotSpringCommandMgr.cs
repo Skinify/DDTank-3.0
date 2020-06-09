@@ -38,14 +38,22 @@ namespace Game.Server.HotSpringRooms.TankHandle
 
                 if (attr.Length > 0)
                 {
-                    count++;
-                    RegisterCommandHandler(attr[0].Code, Activator.CreateInstance(type) as IHotSpringCommandHandler);
+                    try
+                    {
+                        count++;
+                        RegisterCommandHandler(attr[0].Code, Activator.CreateInstance(type) as IHotSpringCommandHandler);
+                    }
+                    catch (Exception ex)
+                    {
+                        //Console.WriteLine("LOI: " + attr[0].ToString());
+                        //Console.WriteLine("Ex: " + ex);
+                    }
                 }
             }
             return count;
         }
 
-        protected  void RegisterCommandHandler(int code, IHotSpringCommandHandler handle)
+        protected void RegisterCommandHandler(int code, IHotSpringCommandHandler handle)
         {
             handles.Add(code, handle);
         }

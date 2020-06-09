@@ -3,6 +3,9 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using Game.Base.Packets;
+using Game.Server.GameObjects;
+using Game.Server.HotSpringRooms;
+using SqlDataProvider.Data;
 
 namespace Game.Server.Packets.Server
 {
@@ -321,6 +324,16 @@ namespace Game.Server.Packets.Server
         }
 
         public GSPacketIn SendInsufficientMoney(Game.Server.GameObjects.GamePlayer player, int type)
+        {
+            throw new NotImplementedException();
+        }
+
+        public GSPacketIn SendContinuation(GamePlayer player, HotSpringRoomInfo info)
+        {
+            throw new NotImplementedException();
+        }
+
+        public GSPacketIn SendHotSpringRoomInfo(GamePlayer player, HotSpringRoom room)
         {
             throw new NotImplementedException();
         }

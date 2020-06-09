@@ -160,7 +160,12 @@ namespace GameServerScript.AI.Messions
                 }
             }
 
-            if (result && dieRedCount == Game.MissionInfo.TotalCount)
+            //if (result && dieRedCount == Game.MissionInfo.TotalCount)
+            //{
+            //    Game.IsWin = true;
+            //    return true;
+            //}
+            if (dieRedCount>=1)
             {
                 Game.IsWin = true;
                 return true;
@@ -182,16 +187,16 @@ namespace GameServerScript.AI.Messions
         public override void OnGameOver()
         {
             base.OnGameOver();
-            if (Game.GetLivedLivings().Count == 0)
-            {
-                Game.IsWin = true;
-            }
-            else
-            {
-                Game.IsWin = false;
-            }
+            //if (Game.GetLivedLivings().Count == 0)
+            //{
+            //    Game.IsWin = true;
+            //}
+            //else
+            //{
+            //    Game.IsWin = false;
+            //}
             List<LoadingFileInfo> loadingFileInfos = new List<LoadingFileInfo>();
-            loadingFileInfos.Add(new LoadingFileInfo(2, "image/map/2/show2", ""));
+            loadingFileInfos.Add(new LoadingFileInfo(2, "image/map/2/show2.jpg", ""));
             Game.SendLoadResource(loadingFileInfos);
         }
 

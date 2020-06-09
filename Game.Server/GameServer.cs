@@ -205,7 +205,7 @@ namespace Game.Server
                
 
                 if (!InitComponent(RecompileScripts(), "Recompile Scripts"))
-                        return false;
+                    return false;
 
                 if (!InitComponent(StartScriptComponents(), "Script components"))
                     return false;
@@ -236,6 +236,7 @@ namespace Game.Server
 
                 if (!InitComponent(BallMgr.Init(), "BallMgr Init"))
                     return false;
+
                 if (!InitComponent(BallConfigMgr.Init(), "BallConfigMgr Init"))
                     return false;
 
@@ -304,7 +305,11 @@ namespace Game.Server
 
                 if (!InitComponent(MarryRoomMgr.Init(), "MarryRoomMgr Init"))
                     return false;
-                if(!InitComponent(LogMgr.Setup(1,4,4),"LogMgr Setup"))
+
+                //if (!InitComponent(HotSpringRoomMgr.Init(), "HotSpringRoomMgr Init"))
+                    //return false;
+
+                if (!InitComponent(LogMgr.Setup(1,4,4),"LogMgr Setup"))
                     return false;
                 GameEventMgr.Notify(ScriptEvent.Loaded);
 
@@ -676,10 +681,10 @@ namespace Game.Server
 
                 log.Info("End ping check....");
             }
-            catch (Exception e)
+            catch (Exception ex)
             {
                 if (log.IsErrorEnabled)
-                    log.Error("PingCheck callback", e);
+                    log.Error("PingCheck callback", ex);
             }
 
             try
@@ -690,10 +695,10 @@ namespace Game.Server
 
                 log.Info("End ping center check....");
             }
-            catch (Exception e)
+            catch (Exception ex2)
             {
                 if (log.IsErrorEnabled)
-                    log.Error("PingCheck center callback", e);
+                    log.Error("PingCheck center callback", ex2);
             }
         }
 

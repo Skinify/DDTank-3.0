@@ -1,0 +1,9 @@
+08:13:20,339 - [MAIN] - ERROR - Game.Logic.MapMgr - MapMgr
+System.IO.IOException: O processo não pode acessar o arquivo 'D:\DDT\DDTank-3.0\Fighting.Service\bin\Debug\map\1062\fore.map' porque ele está sendo usado por outro processo.
+   em System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   em System.IO.FileStream.Init(String path, FileMode mode, FileAccess access, Int32 rights, Boolean useRights, FileShare share, Int32 bufferSize, FileOptions options, SECURITY_ATTRIBUTES secAttrs, String msgPath, Boolean bFromProxy)
+   em System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access, FileShare share, Int32 bufferSize, FileOptions options, String msgPath, Boolean bFromProxy)
+   em System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access, FileShare share)
+   em System.IO.File.Open(String path, FileMode mode)
+   em Game.Logic.Phy.Maps.Tile..ctor(String file, Boolean digable) na D:\DDT\DDTank-3.0\Game.Logic\Phy\Maps\Tile.cs:linha 91
+   em Game.Logic.MapMgr.LoadMap(Dictionary`2 maps, Dictionary`2 mapInfos) na D:\DDT\DDTank-3.0\Game.Logic\MapMgr.cs:linha 177
