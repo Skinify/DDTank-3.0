@@ -458,29 +458,6 @@ namespace Game.Server.HotSpringRooms
         public GSPacketIn SendHotSpringRoomInfoUpdateToScenePlayers(HotSpringRoom room)
         {
             GSPacketIn pkg = new GSPacketIn((short)ePackageType.HOTSPRING_ROOM_ADD_OR_UPDATE);
-            //bool result = room != null;
-            //pkg.WriteBoolean(result);
-            //if (result)
-            //{
-            //    pkg.WriteInt(room.Info.ID);
-            //    pkg.WriteBoolean(room.Info.IsHymeneal);
-            //    pkg.WriteString(room.Info.Name);
-            //    pkg.WriteBoolean(room.Info.Pwd == "" ? false : true);
-            //    pkg.WriteInt(room.Info.MapIndex);
-            //    pkg.WriteInt(room.Info.AvailTime);
-            //    pkg.WriteInt(room.Count);
-            //    pkg.WriteInt(room.Info.PlayerID);
-            //    pkg.WriteString(room.Info.PlayerName);
-            //    pkg.WriteInt(room.Info.GroomID);
-            //    pkg.WriteString(room.Info.GroomName);
-            //    pkg.WriteInt(room.Info.BrideID);
-            //    pkg.WriteString(room.Info.BrideName);
-            //    pkg.WriteDateTime(room.Info.BeginTime);
-            //    pkg.WriteByte((byte)room.RoomState);
-            //    pkg.WriteString(room.Info.RoomIntroduction);
-            //}
-
-            //SendToScenePlayer(pkg);
             return pkg;
         }
 

@@ -1,520 +1,584 @@
-08:15:20,581 - [MAIN] - INFO  - Bussiness.GameProperties - Refreshing game properties!
-08:15:21,648 - [MAIN] - INFO  - Game.Server.GameServer - Recompile Scripts: True
-08:15:21,650 - [MAIN] - INFO  - Game.Server.GameServer - Server rules: true
-08:15:21,697 - [MAIN] - INFO  - Game.Server.GameServer - Registering global event handlers: true
-08:15:21,697 - [MAIN] - INFO  - Game.Server.GameServer - Script components: True
-08:15:21,698 - [MAIN] - INFO  - Game.Server.GameServer - Edition:21000: True
-08:15:21,703 - [MAIN] - INFO  - Game.Server.GameServer - InitSocket Port:9200: True
-08:15:21,766 - [MAIN] - INFO  - Game.Server.GameServer - AllocatePacketBuffers(): True
-08:15:21,778 - [MAIN] - INFO  - Game.Server.GameServer - LogMgr Init: True
-08:15:21,791 - [MAIN] - INFO  - Game.Server.GameServer - WorldMgr Init: True
-08:15:22,062 - [MAIN] - INFO  - Game.Server.GameServer - MapMgr Init: True
-08:15:22,457 - [MAIN] - INFO  - Game.Server.GameServer - ItemMgr Init: True
-08:15:22,514 - [MAIN] - INFO  - Game.Server.GameServer - ItemBox Init: True
-08:15:22,830 - [MAIN] - INFO  - Game.Server.GameServer - BallMgr Init: True
-08:15:22,839 - [MAIN] - INFO  - Game.Server.GameServer - BallConfigMgr Init: True
-08:15:22,854 - [MAIN] - INFO  - Game.Server.GameServer - FusionMgr Init: True
-08:15:22,887 - [MAIN] - INFO  - Game.Server.GameServer - AwardMgr Init: True
-08:15:22,902 - [MAIN] - INFO  - Game.Server.GameServer - NPCInfoMgr Init: True
-08:15:22,920 - [MAIN] - INFO  - Game.Server.GameServer - MissionInfoMgr Init: True
-08:15:23,006 - [MAIN] - INFO  - Game.Server.GameServer - PveInfoMgr Init: True
-08:15:23,027 - [MAIN] - INFO  - Game.Server.GameServer - Drop Init: True
-08:15:23,136 - [MAIN] - INFO  - Game.Server.GameServer - FightRateMgr Init: True
-08:15:23,143 - [MAIN] - INFO  - Game.Server.GameServer - ConsortiaLevelMgr Init: True
-08:15:23,182 - [MAIN] - INFO  - Game.Server.GameServer - RefineryMgr Init: True
-08:15:23,338 - [MAIN] - INFO  - Game.Server.GameServer - StrengthenMgr Init: True
-08:15:23,423 - [MAIN] - INFO  - Game.Server.GameServer - PropItemMgr Init: True
-08:15:23,631 - [MAIN] - INFO  - Game.Server.GameServer - ShopMgr Init: True
-08:15:23,995 - [MAIN] - INFO  - Game.Server.GameServer - QuestMgr Init: True
-08:15:23,997 - [MAIN] - INFO  - Game.Server.GameServer - RoomMgr.Setup: True
-08:15:23,998 - [MAIN] - INFO  - Game.Server.GameServer - GameMgr.Start(): True
-08:15:24,027 - [MAIN] - INFO  - Game.Server.GameServer - ConsortiaMgr Init: True
-08:15:24,033 - [MAIN] - INFO  - Game.Server.GameServer - LanguageMgr Init: True
-08:15:24,156 - [MAIN] - INFO  - Game.Server.GameServer - ExperienceRateMgr Init: True
-08:15:24,158 - [MAIN] - INFO  - Game.Server.GameServer - MacroDropMgr Init: True
-08:15:24,169 - [MAIN] - INFO  - Game.Server.Battle.BattleMgr - Battle server 127.0.0.1:9208 loaded...
-08:15:24,176 - [MAIN] - INFO  - Game.Server.Battle.BattleMgr - Total 1 battle server loaded.
-08:15:24,176 - [MAIN] - INFO  - Game.Server.GameServer - BattleMgr Setup: True
-08:15:24,178 - [MAIN] - INFO  - Game.Server.GameServer - Init Global Timers: True
-08:15:24,345 - [MAIN] - INFO  - Game.Server.GameServer - MarryRoomMgr Init: True
-08:15:24,346 - [MAIN] - INFO  - Game.Server.GameServer - LogMgr Setup: True
-08:15:24,373 - [MAIN] - INFO  - Game.Base.Packets.PacketProcessor - PacketProcessor: Loaded 149 handlers from GameServer Assembly!
-08:15:24,381 - [MAIN] - INFO  - Game.Base.CommandMgr - Loaded 7 commands!
-08:15:24,392 - [MAIN] - INFO  - Game.Logic.Spells.SpellMgr - SpellMgr: Loaded 15 spell handlers from GameServer Assembly!
-08:15:24,395 - [MAIN] - INFO  - Game.Base.BaseConnector - Connected to 127.0.0.1:9202
-08:15:24,397 - [MAIN] - INFO  - Game.Server.GameServer - Login To CenterServer: True
-08:15:24,400 - [MAIN] - INFO  - Game.Base.BaseConnector - Connected to 127.0.0.1:9208
-08:15:24,405 - [MAIN] - INFO  - Game.Server.GameServer - base.Start(): True
-08:15:24,434 - [MAIN] - INFO  - Game.Server.GameServer - GameServer is now open for connections!
-08:15:56,257 - [5] - INFO  - Game.Base.BaseServer - Incoming connection from 127.0.0.1:50307
-08:15:56,273 - [5] - INFO  - Game.Base.BaseClient - Disconnecting client (127.0.0.1:50307), received bytes=0
-08:15:56,305 - [5] - INFO  - Game.Base.BaseServer - Incoming connection from 127.0.0.1:50308
-08:15:56,695 - [19] - ERROR - Game.Base.Packets.StreamProcessor - HandlePacket(pak)
-System.NullReferenceException: Referência de objeto não definida para uma instância de um objeto.
-   em Game.Base.Packets.PacketProcessor.HandlePacket(GSPacketIn packet) na D:\DDT\DDTank-3.0\Game.Server\Packets\Server\PacketProcessor.cs:linha 65
-   em Game.Server.GameClient.OnRecvPacket(GSPacketIn pkg) na D:\DDT\DDTank-3.0\Game.Server\GameClient.cs:linha 129
-   em Game.Base.Packets.StreamProcessor.ReceiveBytes(Int32 numBytes) na D:\DDT\DDTank-3.0\Game.Base\Packets\StreamProcessor.cs:linha 387
-08:16:12,625 - [20] - ERROR - Game.Base.Packets.StreamProcessor - HandlePacket(pak)
-System.NullReferenceException: Referência de objeto não definida para uma instância de um objeto.
-   em Game.Base.Packets.PacketProcessor.HandlePacket(GSPacketIn packet) na D:\DDT\DDTank-3.0\Game.Server\Packets\Server\PacketProcessor.cs:linha 65
-   em Game.Server.GameClient.OnRecvPacket(GSPacketIn pkg) na D:\DDT\DDTank-3.0\Game.Server\GameClient.cs:linha 129
-   em Game.Base.Packets.StreamProcessor.ReceiveBytes(Int32 numBytes) na D:\DDT\DDTank-3.0\Game.Base\Packets\StreamProcessor.cs:linha 387
-08:16:24,180 - [17] - INFO  - Game.Server.GameServer - Buff Scaning ...
-08:16:24,183 - [17] - INFO  - Game.Server.GameServer - Buff Scan complete!
-08:16:24,185 - [17] - INFO  - Game.Server.GameServer - Buff all 1 players in 0ms
-08:17:24,179 - [21] - INFO  - Game.Server.GameServer - Buff Scaning ...
-08:18:04,970 - [21] - INFO  - Game.Server.GameServer - Buff Scan complete!
-08:18:04,978 - [21] - INFO  - Game.Server.GameServer - Buff all 1 players in 40797ms
-08:18:13,027 - [23] - ERROR - Game.Base.Packets.PacketProcessor - Error while processing packet (handler=Game.Server.Packets.Client.HotSpringCmdDataHandler  client: 127.0.0.1:50308)
-System.ArgumentException: O tipo subjacente a enum e o objeto devem ser do mesmo tipo ou objeto deve ser um String. O tipo transmitido foi 'System.Byte'; o tipo subjacente a enum era 'System.Int32'.
-   em System.RuntimeType.IsEnumDefined(Object value)
-   em Game.Server.HotSpringRooms.TankHotSpringLogicProcessor.OnGameData(HotSpringRoom room, GamePlayer player, GSPacketIn packet) na D:\DDT\DDTank-3.0\Game.Server\HotSpringRooms\TankHotSpringLogicProcessor.cs:linha 58
-   em Game.Server.HotSpringRooms.HotSpringRoom.ProcessData(GamePlayer player, GSPacketIn data) na D:\DDT\DDTank-3.0\Game.Server\HotSpringRooms\HotSpringRoom.cs:linha 347
-   em Game.Server.Packets.Client.HotSpringCmdDataHandler.HandlePacket(GameClient client, GSPacketIn packet) na D:\DDT\DDTank-3.0\Game.Server\Packets\Client\HotSpringCmdDataHandler.cs:linha 24
-   em Game.Base.Packets.PacketProcessor.HandlePacket(GSPacketIn packet) na D:\DDT\DDTank-3.0\Game.Server\Packets\Server\PacketProcessor.cs:linha 81
-08:18:13,039 - [23] - ERROR - Game.Base.Packets.PacketProcessor - Package Buffer:
-0000: 71 AB 00 42 07 55 00 BF 00 00 00 56 00 00 00 00   q..B.U.....V....
-0010: 00 00 00 00 01 00 17 34 35 39 2C 35 30 39 2C 34   .......459,509,4
-0020: 37 35 2C 35 31 35 2C 35 33 35 2C 34 38 39 00 00   75,515,535,489..
-0030: 00 56 00 00 01 2C 00 00 01 90 00 00 00 01 00 00   .V...,..........
-0040: 00 03                                             ..              
-
-08:18:13,590 - [23] - ERROR - Game.Base.Packets.PacketProcessor - Error while processing packet (handler=Game.Server.Packets.Client.HotSpringCmdDataHandler  client: 127.0.0.1:50308)
-System.ArgumentException: O tipo subjacente a enum e o objeto devem ser do mesmo tipo ou objeto deve ser um String. O tipo transmitido foi 'System.Byte'; o tipo subjacente a enum era 'System.Int32'.
-   em System.RuntimeType.IsEnumDefined(Object value)
-   em Game.Server.HotSpringRooms.TankHotSpringLogicProcessor.OnGameData(HotSpringRoom room, GamePlayer player, GSPacketIn packet) na D:\DDT\DDTank-3.0\Game.Server\HotSpringRooms\TankHotSpringLogicProcessor.cs:linha 58
-   em Game.Server.HotSpringRooms.HotSpringRoom.ProcessData(GamePlayer player, GSPacketIn data) na D:\DDT\DDTank-3.0\Game.Server\HotSpringRooms\HotSpringRoom.cs:linha 347
-   em Game.Server.Packets.Client.HotSpringCmdDataHandler.HandlePacket(GameClient client, GSPacketIn packet) na D:\DDT\DDTank-3.0\Game.Server\Packets\Client\HotSpringCmdDataHandler.cs:linha 24
-   em Game.Base.Packets.PacketProcessor.HandlePacket(GSPacketIn packet) na D:\DDT\DDTank-3.0\Game.Server\Packets\Server\PacketProcessor.cs:linha 81
-08:18:13,598 - [23] - ERROR - Game.Base.Packets.PacketProcessor - Package Buffer:
-0000: 71 AB 00 32 05 24 00 BF 00 00 00 56 00 00 00 00   q..2.$.....V....
-0010: 00 00 00 00 01 00 07 35 34 38 2C 35 37 33 00 00   .......548,573..
-0020: 00 56 00 00 01 CB 00 00 01 FD 00 00 00 01 00 00   .V..............
-0030: 00 03                                             ..              
-
-08:18:24,189 - [21] - INFO  - Game.Server.GameServer - Buff Scaning ...
-08:18:24,192 - [16] - INFO  - Game.Server.GameServer - Begin ping check....
-08:18:31,506 - [21] - INFO  - Game.Server.GameServer - Buff Scan complete!
-08:18:31,508 - [21] - INFO  - Game.Server.GameServer - Buff all 1 players in 7312ms
-08:18:31,508 - [16] - INFO  - Game.Server.GameServer - End ping check....
-08:18:31,509 - [16] - INFO  - Game.Server.GameServer - Begin ping center check....
-08:18:31,509 - [16] - INFO  - Game.Server.GameServer - End ping center check....
-08:18:42,649 - [26] - ERROR - Game.Base.Packets.PacketProcessor - Error while processing packet (handler=Game.Server.Packets.Client.HotSpringCmdDataHandler  client: 127.0.0.1:50308)
-System.ArgumentException: O tipo subjacente a enum e o objeto devem ser do mesmo tipo ou objeto deve ser um String. O tipo transmitido foi 'System.Byte'; o tipo subjacente a enum era 'System.Int32'.
-   em System.RuntimeType.IsEnumDefined(Object value)
-   em Game.Server.HotSpringRooms.TankHotSpringLogicProcessor.OnGameData(HotSpringRoom room, GamePlayer player, GSPacketIn packet) na D:\DDT\DDTank-3.0\Game.Server\HotSpringRooms\TankHotSpringLogicProcessor.cs:linha 58
-   em Game.Server.HotSpringRooms.HotSpringRoom.ProcessData(GamePlayer player, GSPacketIn data) na D:\DDT\DDTank-3.0\Game.Server\HotSpringRooms\HotSpringRoom.cs:linha 347
-   em Game.Server.Packets.Client.HotSpringCmdDataHandler.HandlePacket(GameClient client, GSPacketIn packet) na D:\DDT\DDTank-3.0\Game.Server\Packets\Client\HotSpringCmdDataHandler.cs:linha 24
-   em Game.Base.Packets.PacketProcessor.HandlePacket(GSPacketIn packet) na D:\DDT\DDTank-3.0\Game.Server\Packets\Server\PacketProcessor.cs:linha 81
-08:18:42,652 - [26] - ERROR - Game.Base.Packets.PacketProcessor - Package Buffer:
-0000: 71 AB 00 32 03 32 00 BF 00 00 00 56 00 00 00 00   q..2.2.....V....
-0010: 00 00 00 00 01 00 07 34 30 30 2C 36 30 38 00 00   .......400,608..
-0020: 00 56 00 00 02 24 00 00 02 3D 00 00 00 01 00 00   .V...$...=......
-0030: 00 04                                             ..              
-
-08:18:43,459 - [26] - ERROR - Game.Base.Packets.PacketProcessor - Error while processing packet (handler=Game.Server.Packets.Client.HotSpringCmdDataHandler  client: 127.0.0.1:50308)
-System.ArgumentException: O tipo subjacente a enum e o objeto devem ser do mesmo tipo ou objeto deve ser um String. O tipo transmitido foi 'System.Byte'; o tipo subjacente a enum era 'System.Int32'.
-   em System.RuntimeType.IsEnumDefined(Object value)
-   em Game.Server.HotSpringRooms.TankHotSpringLogicProcessor.OnGameData(HotSpringRoom room, GamePlayer player, GSPacketIn packet) na D:\DDT\DDTank-3.0\Game.Server\HotSpringRooms\TankHotSpringLogicProcessor.cs:linha 58
-   em Game.Server.HotSpringRooms.HotSpringRoom.ProcessData(GamePlayer player, GSPacketIn data) na D:\DDT\DDTank-3.0\Game.Server\HotSpringRooms\HotSpringRoom.cs:linha 347
-   em Game.Server.Packets.Client.HotSpringCmdDataHandler.HandlePacket(GameClient client, GSPacketIn packet) na D:\DDT\DDTank-3.0\Game.Server\Packets\Client\HotSpringCmdDataHandler.cs:linha 24
-   em Game.Base.Packets.PacketProcessor.HandlePacket(GSPacketIn packet) na D:\DDT\DDTank-3.0\Game.Server\Packets\Server\PacketProcessor.cs:linha 81
-08:18:43,461 - [26] - ERROR - Game.Base.Packets.PacketProcessor - Package Buffer:
-0000: 71 AB 00 42 07 09 00 BF 00 00 00 56 00 00 00 00   q..B.......V....
-0010: 00 00 00 00 01 00 17 35 34 32 2C 35 37 35 2C 35   .......542,575,5
-0020: 35 37 2C 35 36 35 2C 36 38 36 2C 35 34 34 00 00   57,565,686,544..
-0030: 00 56 00 00 01 90 00 00 02 60 00 00 00 01 00 00   .V.......`......
-0040: 00 01                                             ..              
-
-08:18:43,805 - [26] - ERROR - Game.Base.Packets.PacketProcessor - Error while processing packet (handler=Game.Server.Packets.Client.HotSpringCmdDataHandler  client: 127.0.0.1:50308)
-System.ArgumentException: O tipo subjacente a enum e o objeto devem ser do mesmo tipo ou objeto deve ser um String. O tipo transmitido foi 'System.Byte'; o tipo subjacente a enum era 'System.Int32'.
-   em System.RuntimeType.IsEnumDefined(Object value)
-   em Game.Server.HotSpringRooms.TankHotSpringLogicProcessor.OnGameData(HotSpringRoom room, GamePlayer player, GSPacketIn packet) na D:\DDT\DDTank-3.0\Game.Server\HotSpringRooms\TankHotSpringLogicProcessor.cs:linha 58
-   em Game.Server.HotSpringRooms.HotSpringRoom.ProcessData(GamePlayer player, GSPacketIn data) na D:\DDT\DDTank-3.0\Game.Server\HotSpringRooms\HotSpringRoom.cs:linha 347
-   em Game.Server.Packets.Client.HotSpringCmdDataHandler.HandlePacket(GameClient client, GSPacketIn packet) na D:\DDT\DDTank-3.0\Game.Server\Packets\Client\HotSpringCmdDataHandler.cs:linha 24
-   em Game.Base.Packets.PacketProcessor.HandlePacket(GSPacketIn packet) na D:\DDT\DDTank-3.0\Game.Server\Packets\Server\PacketProcessor.cs:linha 81
-08:18:43,807 - [26] - ERROR - Game.Base.Packets.PacketProcessor - Package Buffer:
-0000: 71 AB 00 32 03 2D 00 BF 00 00 00 56 00 00 00 00   q..2.-.....V....
-0010: 00 00 00 00 01 00 07 36 31 34 2C 35 33 31 00 00   .......614,531..
-0020: 00 56 00 00 02 1E 00 00 02 3F 00 00 00 01 00 00   .V.......?......
-0030: 00 01                                             ..              
-
-2020-06-09 08:19:24,188 - [18] - INFO  - Game.Server.GameServer - Buff Scaning ...
-2020-06-09 08:20:24,190 - [17] - INFO  - Game.Server.GameServer - Buff Scaning ...
-2020-06-09 08:20:24,191 - [16] - INFO  - Game.Server.GameServer - Saving Record...
-2020-06-09 08:21:24,189 - [24] - INFO  - Game.Server.GameServer - Begin ping check....
-2020-06-09 08:21:24,204 - [21] - INFO  - Game.Server.GameServer - Buff Scaning ...
-08:22:24,204 - [29] - INFO  - Game.Server.GameServer - Buff Scaning ...
-08:23:24,204 - [28] - INFO  - Game.Server.GameServer - Buff Scaning ...
-08:24:24,204 - [31] - INFO  - Game.Server.GameServer - Begin ping check....
-08:24:24,219 - [27] - INFO  - Game.Server.GameServer - Buff Scaning ...
-08:25:24,193 - [32] - INFO  - Game.Server.GameServer - Saving Record...
-08:25:25,203 - [33] - INFO  - Game.Server.GameServer - Saving database...
-2020-06-09 08:25:26,198 - [34] - INFO  - Game.Server.GameServer - Buff Scaning ...
-2020-06-09 08:26:26,211 - [35] - INFO  - Game.Server.GameServer - Buff Scaning ...
-2020-06-09 08:26:41,156 - [24] - INFO  - Game.Server.GameServer - End ping check....
-2020-06-09 08:26:41,155 - [18] - INFO  - Game.Server.GameServer - Buff Scan complete!
-2020-06-09 08:26:41,155 - [17] - INFO  - Game.Server.GameServer - Buff Scan complete!
-2020-06-09 08:26:41,157 - [21] - INFO  - Game.Server.GameServer - Buff Scan complete!
-2020-06-09 08:26:41,167 - [29] - INFO  - Game.Server.GameServer - Buff Scan complete!
-2020-06-09 08:26:41,170 - [31] - INFO  - Game.Server.GameServer - End ping check....
-2020-06-09 08:26:41,168 - [28] - INFO  - Game.Server.GameServer - Buff Scan complete!
-2020-06-09 08:26:41,173 - [27] - INFO  - Game.Server.GameServer - Buff Scan complete!
-2020-06-09 08:26:41,197 - [27] - INFO  - Game.Server.GameServer - Buff all 1 players in 136953ms
-2020-06-09 08:26:41,195 - [31] - INFO  - Game.Server.GameServer - Begin ping center check....
-2020-06-09 08:26:41,176 - [34] - INFO  - Game.Server.GameServer - Buff Scan complete!
-2020-06-09 08:26:41,183 - [24] - INFO  - Game.Server.GameServer - Begin ping center check....
-2020-06-09 08:26:41,207 - [34] - INFO  - Game.Server.GameServer - Buff all 1 players in 74984ms
-2020-06-09 08:26:41,180 - [35] - INFO  - Game.Server.GameServer - Buff Scan complete!
-2020-06-09 08:26:41,183 - [18] - INFO  - Game.Server.GameServer - Buff all 1 players in 436953ms
-2020-06-09 08:26:41,185 - [17] - INFO  - Game.Server.GameServer - Buff all 1 players in 376953ms
-2020-06-09 08:26:41,187 - [21] - INFO  - Game.Server.GameServer - Buff all 1 players in 316953ms
-2020-06-09 08:26:41,196 - [28] - INFO  - Game.Server.GameServer - Buff all 1 players in 196953ms
-2020-06-09 08:26:41,210 - [35] - INFO  - Game.Server.GameServer - Buff all 1 players in 14969ms
-2020-06-09 08:26:41,193 - [29] - INFO  - Game.Server.GameServer - Buff all 1 players in 256953ms
-2020-06-09 08:26:41,220 - [29] - WARN  - Game.Server.GameServer - Scan all Buff and 1 players in 256953 ms
-2020-06-09 08:26:41,208 - [24] - INFO  - Game.Server.GameServer - End ping center check....
-2020-06-09 08:26:41,206 - [31] - INFO  - Game.Server.GameServer - End ping center check....
-2020-06-09 08:26:41,200 - [27] - WARN  - Game.Server.GameServer - Scan all Buff and 1 players in 136953 ms
-2020-06-09 08:26:41,211 - [18] - WARN  - Game.Server.GameServer - Scan all Buff and 1 players in 436953 ms
-2020-06-09 08:26:41,216 - [21] - WARN  - Game.Server.GameServer - Scan all Buff and 1 players in 316953 ms
-2020-06-09 08:26:41,215 - [17] - WARN  - Game.Server.GameServer - Scan all Buff and 1 players in 376953 ms
-2020-06-09 08:26:41,218 - [28] - WARN  - Game.Server.GameServer - Scan all Buff and 1 players in 196953 ms
-2020-06-09 08:26:41,344 - [33] - INFO  - Game.Server.GameServer - Saving database complete!
-2020-06-09 08:26:41,345 - [33] - INFO  - Game.Server.GameServer - Saved all databases and 1 players in 76141ms
-2020-06-09 08:26:41,416 - [16] - INFO  - Game.Server.GameServer - Saving Record complete!
-2020-06-09 08:26:41,416 - [32] - INFO  - Game.Server.GameServer - Saving Record complete!
-2020-06-09 08:26:41,417 - [16] - WARN  - Game.Server.GameServer - Saved all Record  in 377218 ms
-08:26:43,439 - [26] - ERROR - Game.Base.Packets.PacketProcessor - Error while processing packet (handler=Game.Server.Packets.Client.HotSpringCmdDataHandler  client: 127.0.0.1:50308)
-System.ArgumentException: O tipo subjacente a enum e o objeto devem ser do mesmo tipo ou objeto deve ser um String. O tipo transmitido foi 'System.Byte'; o tipo subjacente a enum era 'System.Int32'.
-   em System.RuntimeType.IsEnumDefined(Object value)
-   em Game.Server.HotSpringRooms.TankHotSpringLogicProcessor.OnGameData(HotSpringRoom room, GamePlayer player, GSPacketIn packet) na D:\DDT\DDTank-3.0\Game.Server\HotSpringRooms\TankHotSpringLogicProcessor.cs:linha 58
-   em Game.Server.HotSpringRooms.HotSpringRoom.ProcessData(GamePlayer player, GSPacketIn data) na D:\DDT\DDTank-3.0\Game.Server\HotSpringRooms\HotSpringRoom.cs:linha 347
-   em Game.Server.Packets.Client.HotSpringCmdDataHandler.HandlePacket(GameClient client, GSPacketIn packet) na D:\DDT\DDTank-3.0\Game.Server\Packets\Client\HotSpringCmdDataHandler.cs:linha 24
-   em Game.Base.Packets.PacketProcessor.HandlePacket(GSPacketIn packet) na D:\DDT\DDTank-3.0\Game.Server\Packets\Server\PacketProcessor.cs:linha 81
-08:26:43,446 - [26] - ERROR - Game.Base.Packets.PacketProcessor - Package Buffer:
-0000: 71 AB 00 32 03 5E 00 BF 00 00 00 56 00 00 00 00   q..2.^.....V....
-0010: 00 00 00 00 01 00 07 35 39 38 2C 35 33 38 00 00   .......598,538..
-0020: 00 56 00 00 02 66 00 00 02 13 00 00 00 01 00 00   .V...f..........
-0030: 00 04                                             ..              
-
-08:26:43,683 - [26] - ERROR - Game.Base.Packets.PacketProcessor - Error while processing packet (handler=Game.Server.Packets.Client.HotSpringCmdDataHandler  client: 127.0.0.1:50308)
-System.ArgumentException: O tipo subjacente a enum e o objeto devem ser do mesmo tipo ou objeto deve ser um String. O tipo transmitido foi 'System.Byte'; o tipo subjacente a enum era 'System.Int32'.
-   em System.RuntimeType.IsEnumDefined(Object value)
-   em Game.Server.HotSpringRooms.TankHotSpringLogicProcessor.OnGameData(HotSpringRoom room, GamePlayer player, GSPacketIn packet) na D:\DDT\DDTank-3.0\Game.Server\HotSpringRooms\TankHotSpringLogicProcessor.cs:linha 58
-   em Game.Server.HotSpringRooms.HotSpringRoom.ProcessData(GamePlayer player, GSPacketIn data) na D:\DDT\DDTank-3.0\Game.Server\HotSpringRooms\HotSpringRoom.cs:linha 347
-   em Game.Server.Packets.Client.HotSpringCmdDataHandler.HandlePacket(GameClient client, GSPacketIn packet) na D:\DDT\DDTank-3.0\Game.Server\Packets\Client\HotSpringCmdDataHandler.cs:linha 24
-   em Game.Base.Packets.PacketProcessor.HandlePacket(GSPacketIn packet) na D:\DDT\DDTank-3.0\Game.Server\Packets\Server\PacketProcessor.cs:linha 81
-08:26:43,689 - [26] - ERROR - Game.Base.Packets.PacketProcessor - Package Buffer:
-0000: 71 AB 00 32 03 46 00 BF 00 00 00 56 00 00 00 00   q..2.F.....V....
-0010: 00 00 00 00 01 00 07 35 36 30 2C 35 34 33 00 00   .......560,543..
-0020: 00 56 00 00 02 56 00 00 02 1A 00 00 00 01 00 00   .V...V..........
-0030: 00 04                                             ..              
-
-08:26:44,478 - [26] - ERROR - Game.Base.Packets.PacketProcessor - Error while processing packet (handler=Game.Server.Packets.Client.HotSpringCmdDataHandler  client: 127.0.0.1:50308)
-System.ArgumentException: O tipo subjacente a enum e o objeto devem ser do mesmo tipo ou objeto deve ser um String. O tipo transmitido foi 'System.Byte'; o tipo subjacente a enum era 'System.Int32'.
-   em System.RuntimeType.IsEnumDefined(Object value)
-   em Game.Server.HotSpringRooms.TankHotSpringLogicProcessor.OnGameData(HotSpringRoom room, GamePlayer player, GSPacketIn packet) na D:\DDT\DDTank-3.0\Game.Server\HotSpringRooms\TankHotSpringLogicProcessor.cs:linha 58
-   em Game.Server.HotSpringRooms.HotSpringRoom.ProcessData(GamePlayer player, GSPacketIn data) na D:\DDT\DDTank-3.0\Game.Server\HotSpringRooms\HotSpringRoom.cs:linha 347
-   em Game.Server.Packets.Client.HotSpringCmdDataHandler.HandlePacket(GameClient client, GSPacketIn packet) na D:\DDT\DDTank-3.0\Game.Server\Packets\Client\HotSpringCmdDataHandler.cs:linha 24
-   em Game.Base.Packets.PacketProcessor.HandlePacket(GSPacketIn packet) na D:\DDT\DDTank-3.0\Game.Server\Packets\Server\PacketProcessor.cs:linha 81
-08:26:44,484 - [26] - ERROR - Game.Base.Packets.PacketProcessor - Package Buffer:
-0000: 71 AB 00 32 03 31 00 BF 00 00 00 56 00 00 00 00   q..2.1.....V....
-0010: 00 00 00 00 01 00 07 34 39 33 2C 35 35 39 00 00   .......493,559..
-0020: 00 56 00 00 02 30 00 00 02 1F 00 00 00 01 00 00   .V...0..........
-0030: 00 04                                             ..              
-
-08:26:45,140 - [26] - ERROR - Game.Base.Packets.PacketProcessor - Error while processing packet (handler=Game.Server.Packets.Client.HotSpringCmdDataHandler  client: 127.0.0.1:50308)
-System.ArgumentException: O tipo subjacente a enum e o objeto devem ser do mesmo tipo ou objeto deve ser um String. O tipo transmitido foi 'System.Byte'; o tipo subjacente a enum era 'System.Int32'.
-   em System.RuntimeType.IsEnumDefined(Object value)
-   em Game.Server.HotSpringRooms.TankHotSpringLogicProcessor.OnGameData(HotSpringRoom room, GamePlayer player, GSPacketIn packet) na D:\DDT\DDTank-3.0\Game.Server\HotSpringRooms\TankHotSpringLogicProcessor.cs:linha 58
-   em Game.Server.HotSpringRooms.HotSpringRoom.ProcessData(GamePlayer player, GSPacketIn data) na D:\DDT\DDTank-3.0\Game.Server\HotSpringRooms\HotSpringRoom.cs:linha 347
-   em Game.Server.Packets.Client.HotSpringCmdDataHandler.HandlePacket(GameClient client, GSPacketIn packet) na D:\DDT\DDTank-3.0\Game.Server\Packets\Client\HotSpringCmdDataHandler.cs:linha 24
-   em Game.Base.Packets.PacketProcessor.HandlePacket(GSPacketIn packet) na D:\DDT\DDTank-3.0\Game.Server\Packets\Server\PacketProcessor.cs:linha 81
-08:26:45,147 - [26] - ERROR - Game.Base.Packets.PacketProcessor - Package Buffer:
-0000: 71 AB 00 32 04 78 00 BF 00 00 00 56 00 00 00 00   q..2.x.....V....
-0010: 00 00 00 00 01 00 07 34 32 38 2C 35 38 33 00 00   .......428,583..
-0020: 00 56 00 00 01 ED 00 00 02 2F 00 00 00 01 00 00   .V......./......
-0030: 00 04                                             ..              
-
-08:26:45,561 - [26] - ERROR - Game.Base.Packets.PacketProcessor - Error while processing packet (handler=Game.Server.Packets.Client.HotSpringCmdDataHandler  client: 127.0.0.1:50308)
-System.ArgumentException: O tipo subjacente a enum e o objeto devem ser do mesmo tipo ou objeto deve ser um String. O tipo transmitido foi 'System.Byte'; o tipo subjacente a enum era 'System.Int32'.
-   em System.RuntimeType.IsEnumDefined(Object value)
-   em Game.Server.HotSpringRooms.TankHotSpringLogicProcessor.OnGameData(HotSpringRoom room, GamePlayer player, GSPacketIn packet) na D:\DDT\DDTank-3.0\Game.Server\HotSpringRooms\TankHotSpringLogicProcessor.cs:linha 58
-   em Game.Server.HotSpringRooms.HotSpringRoom.ProcessData(GamePlayer player, GSPacketIn data) na D:\DDT\DDTank-3.0\Game.Server\HotSpringRooms\HotSpringRoom.cs:linha 347
-   em Game.Server.Packets.Client.HotSpringCmdDataHandler.HandlePacket(GameClient client, GSPacketIn packet) na D:\DDT\DDTank-3.0\Game.Server\Packets\Client\HotSpringCmdDataHandler.cs:linha 24
-   em Game.Base.Packets.PacketProcessor.HandlePacket(GSPacketIn packet) na D:\DDT\DDTank-3.0\Game.Server\Packets\Server\PacketProcessor.cs:linha 81
-08:26:45,564 - [26] - ERROR - Game.Base.Packets.PacketProcessor - Package Buffer:
-0000: 71 AB 00 32 04 49 00 BF 00 00 00 56 00 00 00 00   q..2.I.....V....
-0010: 00 00 00 00 01 00 07 36 33 32 2C 35 33 38 00 00   .......632,538..
-0020: 00 56 00 00 01 AC 00 00 02 47 00 00 00 01 00 00   .V.......G......
-0030: 00 01                                             ..              
-
-08:26:49,723 - [26] - ERROR - Game.Base.Packets.PacketProcessor - Error while processing packet (handler=Game.Server.Packets.Client.HotSpringCmdDataHandler  client: 127.0.0.1:50308)
-System.ArgumentException: O tipo subjacente a enum e o objeto devem ser do mesmo tipo ou objeto deve ser um String. O tipo transmitido foi 'System.Byte'; o tipo subjacente a enum era 'System.Int32'.
-   em System.RuntimeType.IsEnumDefined(Object value)
-   em Game.Server.HotSpringRooms.TankHotSpringLogicProcessor.OnGameData(HotSpringRoom room, GamePlayer player, GSPacketIn packet) na D:\DDT\DDTank-3.0\Game.Server\HotSpringRooms\TankHotSpringLogicProcessor.cs:linha 58
-   em Game.Server.HotSpringRooms.HotSpringRoom.ProcessData(GamePlayer player, GSPacketIn data) na D:\DDT\DDTank-3.0\Game.Server\HotSpringRooms\HotSpringRoom.cs:linha 347
-   em Game.Server.Packets.Client.HotSpringCmdDataHandler.HandlePacket(GameClient client, GSPacketIn packet) na D:\DDT\DDTank-3.0\Game.Server\Packets\Client\HotSpringCmdDataHandler.cs:linha 24
-   em Game.Base.Packets.PacketProcessor.HandlePacket(GSPacketIn packet) na D:\DDT\DDTank-3.0\Game.Server\Packets\Server\PacketProcessor.cs:linha 81
-08:26:49,729 - [26] - ERROR - Game.Base.Packets.PacketProcessor - Package Buffer:
-0000: 71 AB 00 32 03 6F 00 BF 00 00 00 56 00 00 00 00   q..2.o.....V....
-0010: 00 00 00 00 01 00 07 38 36 33 2C 35 32 39 00 00   .......863,529..
-0020: 00 56 00 00 02 78 00 00 02 1A 00 00 00 01 00 00   .V...x..........
-0030: 00 01                                             ..              
-
-08:26:50,164 - [26] - ERROR - Game.Base.Packets.PacketProcessor - Error while processing packet (handler=Game.Server.Packets.Client.HotSpringCmdDataHandler  client: 127.0.0.1:50308)
-System.ArgumentException: O tipo subjacente a enum e o objeto devem ser do mesmo tipo ou objeto deve ser um String. O tipo transmitido foi 'System.Byte'; o tipo subjacente a enum era 'System.Int32'.
-   em System.RuntimeType.IsEnumDefined(Object value)
-   em Game.Server.HotSpringRooms.TankHotSpringLogicProcessor.OnGameData(HotSpringRoom room, GamePlayer player, GSPacketIn packet) na D:\DDT\DDTank-3.0\Game.Server\HotSpringRooms\TankHotSpringLogicProcessor.cs:linha 58
-   em Game.Server.HotSpringRooms.HotSpringRoom.ProcessData(GamePlayer player, GSPacketIn data) na D:\DDT\DDTank-3.0\Game.Server\HotSpringRooms\HotSpri08:29:38,547 - [MAIN] - INFO  - Bussiness.GameProperties - Refreshing game properties!
-08:29:40,165 - [MAIN] - INFO  - Game.Server.GameServer - Recompile Scripts: True
-08:29:40,168 - [MAIN] - INFO  - Game.Server.GameServer - Server rules: true
-08:29:40,241 - [MAIN] - INFO  - Game.Server.GameServer - Registering global event handlers: true
-08:29:40,241 - [MAIN] - INFO  - Game.Server.GameServer - Script components: True
-08:29:40,241 - [MAIN] - INFO  - Game.Server.GameServer - Edition:21000: True
-08:29:40,247 - [MAIN] - INFO  - Game.Server.GameServer - InitSocket Port:9200: True
-08:29:40,296 - [MAIN] - INFO  - Game.Server.GameServer - AllocatePacketBuffers(): True
-08:29:40,305 - [MAIN] - INFO  - Game.Server.GameServer - LogMgr Init: True
-08:29:40,312 - [MAIN] - INFO  - Game.Server.GameServer - WorldMgr Init: True
-08:29:40,573 - [MAIN] - INFO  - Game.Server.GameServer - MapMgr Init: True
-08:29:40,850 - [MAIN] - INFO  - Game.Server.GameServer - ItemMgr Init: True
-08:29:40,903 - [MAIN] - INFO  - Game.Server.GameServer - ItemBox Init: True
-08:29:41,224 - [MAIN] - INFO  - Game.Server.GameServer - BallMgr Init: True
-08:29:41,244 - [MAIN] - INFO  - Game.Server.GameServer - BallConfigMgr Init: True
-08:29:41,264 - [MAIN] - INFO  - Game.Server.GameServer - FusionMgr Init: True
-08:29:41,444 - [MAIN] - INFO  - Game.Server.GameServer - AwardMgr Init: True
-08:29:41,462 - [MAIN] - INFO  - Game.Server.GameServer - NPCInfoMgr Init: True
-08:29:41,635 - [MAIN] - INFO  - Game.Server.GameServer - MissionInfoMgr Init: True
-08:29:41,659 - [MAIN] - INFO  - Game.Server.GameServer - PveInfoMgr Init: True
-08:29:41,682 - [MAIN] - INFO  - Game.Server.GameServer - Drop Init: True
-08:29:41,696 - [MAIN] - INFO  - Game.Server.GameServer - FightRateMgr Init: True
-08:29:41,704 - [MAIN] - INFO  - Game.Server.GameServer - ConsortiaLevelMgr Init: True
-08:29:41,713 - [MAIN] - INFO  - Game.Server.GameServer - RefineryMgr Init: True
-08:29:41,811 - [MAIN] - INFO  - Game.Server.GameServer - StrengthenMgr Init: True
-08:29:41,819 - [MAIN] - INFO  - Game.Server.GameServer - PropItemMgr Init: True
-08:29:41,959 - [MAIN] - INFO  - Game.Server.GameServer - ShopMgr Init: True
-08:29:41,992 - [MAIN] - INFO  - Game.Server.GameServer - QuestMgr Init: True
-08:29:41,994 - [MAIN] - INFO  - Game.Server.GameServer - RoomMgr.Setup: True
-08:29:41,995 - [MAIN] - INFO  - Game.Server.GameServer - GameMgr.Start(): True
-08:29:42,009 - [MAIN] - INFO  - Game.Server.GameServer - ConsortiaMgr Init: True
-08:29:42,027 - [MAIN] - INFO  - Game.Server.GameServer - LanguageMgr Init: True
-08:29:42,033 - [MAIN] - INFO  - Game.Server.GameServer - ExperienceRateMgr Init: True
-08:29:42,035 - [MAIN] - INFO  - Game.Server.GameServer - MacroDropMgr Init: True
-08:29:42,046 - [MAIN] - INFO  - Game.Server.Battle.BattleMgr - Battle server 127.0.0.1:9208 loaded...
-08:29:42,052 - [MAIN] - INFO  - Game.Server.Battle.BattleMgr - Total 1 battle server loaded.
-08:29:42,053 - [MAIN] - INFO  - Game.Server.GameServer - BattleMgr Setup: True
-08:29:42,054 - [MAIN] - INFO  - Game.Server.GameServer - Init Global Timers: True
-08:29:42,065 - [MAIN] - INFO  - Game.Server.GameServer - MarryRoomMgr Init: True
-08:29:42,065 - [MAIN] - INFO  - Game.Server.GameServer - LogMgr Setup: True
-08:29:42,089 - [MAIN] - INFO  - Game.Base.Packets.PacketProcessor - PacketProcessor: Loaded 149 handlers from GameServer Assembly!
-08:29:42,096 - [MAIN] - INFO  - Game.Base.CommandMgr - Loaded 7 commands!
-08:29:42,106 - [MAIN] - INFO  - Game.Logic.Spells.SpellMgr - SpellMgr: Loaded 15 spell handlers from GameServer Assembly!
-08:29:42,110 - [MAIN] - INFO  - Game.Base.BaseConnector - Connected to 127.0.0.1:9202
-08:29:42,112 - [MAIN] - INFO  - Game.Server.GameServer - Login To CenterServer: True
-08:29:42,116 - [MAIN] - INFO  - Game.Base.BaseConnector - Connected to 127.0.0.1:9208
-08:29:42,121 - [MAIN] - INFO  - Game.Server.GameServer - base.Start(): True
-08:29:42,147 - [MAIN] - INFO  - Game.Server.GameServer - GameServer is now open for connections!
-08:30:17,487 - [5] - INFO  - Game.Base.BaseServer - Incoming connection from 127.0.0.1:50503
-08:30:17,502 - [5] - INFO  - Game.Base.BaseClient - Disconnecting client (127.0.0.1:50503), received bytes=0
-08:30:17,531 - [5] - INFO  - Game.Base.BaseServer - Incoming connection from 127.0.0.1:50504
-08:30:17,819 - [19] - ERROR - Game.Base.Packets.StreamProcessor - HandlePacket(pak)
-System.NullReferenceException: Referência de objeto não definida para uma instância de um objeto.
-   em Game.Base.Packets.PacketProcessor.HandlePacket(GSPacketIn packet) na D:\DDT\DDTank-3.0\Game.Server\Packets\Server\PacketProcessor.cs:linha 65
-   em Game.Server.GameClient.OnRecvPacket(GSPacketIn pkg) na D:\DDT\DDTank-3.0\Game.Server\GameClient.cs:linha 129
-   em Game.Base.Packets.StreamProcessor.ReceiveBytes(Int32 numBytes) na D:\DDT\DDTank-3.0\Game.Base\Packets\StreamProcessor.cs:linha 387
-08:30:21,823 - [19] - ERROR - Game.Base.Packets.StreamProcessor - HandlePacket(pak)
-System.NullReferenceException: Referência de objeto não definida para uma instância de um objeto.
-   em Game.Base.Packets.PacketProcessor.HandlePacket(GSPacketIn packet) na D:\DDT\DDTank-3.0\Game.Server\Packets\Server\PacketProcessor.cs:linha 65
-   em Game.Server.GameClient.OnRecvPacket(GSPacketIn pkg) na D:\DDT\DDTank-3.0\Game.Server\GameClient.cs:linha 129
-   em Game.Base.Packets.StreamProcessor.ReceiveBytes(Int32 numBytes) na D:\DDT\DDTank-3.0\Game.Base\Packets\StreamProcessor.cs:linha 387
-08:30:22,099 - [18] - ERROR - Game.Base.Packets.StreamProcessor - HandlePacket(pak)
-System.NullReferenceException: Referência de objeto não definida para uma instância de um objeto.
-   em Game.Base.Packets.PacketProcessor.HandlePacket(GSPacketIn packet) na D:\DDT\DDTank-3.0\Game.Server\Packets\Server\PacketProcessor.cs:linha 65
-   em Game.Server.GameClient.OnRecvPacket(GSPacketIn pkg) na D:\DDT\DDTank-3.0\Game.Server\GameClient.cs:linha 129
-   em Game.Base.Packets.StreamProcessor.ReceiveBytes(Int32 numBytes) na D:\DDT\DDTank-3.0\Game.Base\Packets\StreamProcessor.cs:linha 387
-08:30:25,267 - [19] - ERROR - Game.Base.Packets.StreamProcessor - HandlePacket(pak)
-System.NullReferenceException: Referência de objeto não definida para uma instância de um objeto.
-   em Game.Base.Packets.PacketProcessor.HandlePacket(GSPacketIn packet) na D:\DDT\DDTank-3.0\Game.Server\Packets\Server\PacketProcessor.cs:linha 65
-   em Game.Server.GameClient.OnRecvPacket(GSPacketIn pkg) na D:\DDT\DDTank-3.0\Game.Server\GameClient.cs:linha 129
-   em Game.Base.Packets.StreamProcessor.ReceiveBytes(Int32 numBytes) na D:\DDT\DDTank-3.0\Game.Base\Packets\StreamProcessor.cs:linha 387
-08:30:27,206 - [18] - ERROR - Game.Base.Packets.StreamProcessor - HandlePacket(pak)
-System.NullReferenceException: Referência de objeto não definida para uma instância de um objeto.
-   em Game.Base.Packets.PacketProcessor.HandlePacket(GSPacketIn packet) na D:\DDT\DDTank-3.0\Game.Server\Packets\Server\PacketProcessor.cs:linha 65
-   em Game.Server.GameClient.OnRecvPacket(GSPacketIn pkg) na D:\DDT\DDTank-3.0\Game.Server\GameClient.cs:linha 129
-   em Game.Base.Packets.StreamProcessor.ReceiveBytes(Int32 numBytes) na D:\DDT\DDTank-3.0\Game.Base\Packets\StreamProcessor.cs:linha 387
-08:30:36,759 - [19] - ERROR - Game.Server.HotSpringRooms.TankHotSpringLogicProcessor - IP:127.0.0.1:50504, OnGameData is Error: System.Collections.Generic.KeyNotFoundException: A chave fornecida não estava presente no dicionário.
-   em System.ThrowHelper.ThrowKeyNotFoundException()
-   em System.Collections.Generic.Dictionary`2.get_Item(TKey key)
-   em Game.Server.HotSpringRooms.TankHandle.HotSpringCommandMgr.LoadCommandHandler(Int32 code) na D:\DDT\DDTank-3.0\Game.Server\HotSpringRooms\TankHandle\HotSpringCommandMgr.cs:linha 15
-   em Game.Server.HotSpringRooms.TankHotSpringLogicProcessor.OnGameData(HotSpringRoom room, GamePlayer player, GSPacketIn packet) na D:\DDT\DDTank-3.0\Game.Server\HotSpringRooms\TankHotSpringLogicProcessor.cs:linha 69
-08:30:36,968 - [19] - ERROR - Game.Server.HotSpringRooms.TankHotSpringLogicProcessor - IP:127.0.0.1:50504, OnGameData is Error: System.Collections.Generic.KeyNotFoundException: A chave fornecida não estava presente no dicionário.
-   em System.ThrowHelper.ThrowKeyNotFoundException()
-   em System.Collections.Generic.Dictionary`2.get_Item(TKey key)
-   em Game.Server.HotSpringRooms.TankHandle.HotSpringCommandMgr.LoadCommandHandler(Int32 code) na D:\DDT\DDTank-3.0\Game.Server\HotSpringRooms\TankHandle\HotSpringCommandMgr.cs:linha 15
-   em Game.Server.HotSpringRooms.TankHotSpringLogicProcessor.OnGameData(HotSpringRoom room, GamePlayer player, GSPacketIn packet) na D:\DDT\DDTank-3.0\Game.Server\HotSpringRooms\TankHotSpringLogicProcessor.cs:linha 69
-08:30:42,056 - [17] - INFO  - Game.Server.GameServer - Buff Scaning ...
-08:30:42,056 - [17] - INFO  - Game.Server.GameServer - Buff Scan complete!
-08:30:42,057 - [17] - INFO  - Game.Server.GameServer - Buff all 1 players in 0ms
-08:30:46,075 - [19] - ERROR - Game.Server.HotSpringRooms.TankHotSpringLogicProcessor - IP:127.0.0.1:50504, OnGameData is Error: System.Collections.Generic.KeyNotFoundException: A chave fornecida não estava presente no dicionário.
-   em System.ThrowHelper.ThrowKeyNotFoundException()
-   em System.Collections.Generic.Dictionary`2.get_Item(TKey key)
-   em Game.Server.HotSpringRooms.TankHandle.HotSpringCommandMgr.LoadCommandHandler(Int32 code) na D:\DDT\DDTank-3.0\Game.Server\HotSpringRooms\TankHandle\HotSpringCommandMgr.cs:linha 15
-   em Game.Server.HotSpringRooms.TankHotSpringLogicProcessor.OnGameData(HotSpringRoom room, GamePlayer player, GSPacketIn packet) na D:\DDT\DDTank-3.0\Game.Server\HotSpringRooms\TankHotSpringLogicProcessor.cs:linha 69
-08:31:42,066 - [20] - INFO  - Game.Server.GameServer - Buff Scaning ...
-08:32:04,395 - [20] - INFO  - Game.Server.GameServer - Buff Scan complete!
-08:32:04,401 - [20] - INFO  - Game.Server.GameServer - Buff all 1 players in 22328ms
-08:32:04,412 - [19] - ERROR - Game.Server.HotSpringRooms.TankHotSpringLogicProcessor - IP:127.0.0.1:50504, OnGameData is Error: System.Collections.Generic.KeyNotFoundException: A chave fornecida não estava presente no dicionário.
-   em System.ThrowHelper.ThrowKeyNotFoundException()
-   em System.Collections.Generic.Dictionary`2.get_Item(TKey key)
-   em Game.Server.HotSpringRooms.TankHandle.HotSpringCommandMgr.LoadCommandHandler(Int32 code) na D:\DDT\DDTank-3.0\Game.Server\HotSpringRooms\TankHandle\HotSpringCommandMgr.cs:linha 15
-   em Game.Server.HotSpringRooms.TankHotSpringLogicProcessor.OnGameData(HotSpringRoom room, GamePlayer player, GSPacketIn packet) na D:\DDT\DDTank-3.0\Game.Server\HotSpringRooms\TankHotSpringLogicProcessor.cs:linha 69
-08:32:05,755 - [23] - ERROR - Game.Server.HotSpringRooms.TankHotSpringLogicProcessor - IP:127.0.0.1:50504, OnGameData is Error: System.Collections.Generic.KeyNotFoundException: A chave fornecida não estava presente no dicionário.
-   em System.ThrowHelper.ThrowKeyNotFoundException()
-   em System.Collections.Generic.Dictionary`2.get_Item(TKey key)
-   em Game.Server.HotSpringRooms.TankHandle.HotSpringCommandMgr.LoadCommandHandler(Int32 code) na D:\DDT\DDTank-3.0\Game.Server\HotSpringRooms\TankHandle\HotSpringCommandMgr.cs:linha 15
-   em Game.Server.HotSpringRooms.TankHotSpringLogicProcessor.OnGameData(HotSpringRoom room, GamePlayer player, GSPacketIn packet) na D:\DDT\DDTank-3.0\Game.Server\HotSpringRooms\TankHotSpringLogicProcessor.cs:linha 69
-08:32:33,989 - [23] - ERROR - Game.Server.HotSpringRooms.TankHotSpringLogicProcessor - IP:127.0.0.1:50504, OnGameData is Error: System.Collections.Generic.KeyNotFoundException: A chave fornecida não estava presente no dicionário.
-   em System.ThrowHelper.ThrowKeyNotFoundException()
-   em System.Collections.Generic.Dictionary`2.get_Item(TKey key)
-   em Game.Server.HotSpringRooms.TankHandle.HotSpringCommandMgr.LoadCommandHandler(Int32 code) na D:\DDT\DDTank-3.0\Game.Server\HotSpringRooms\TankHandle\HotSpringCommandMgr.cs:linha 15
-   em Game.Server.HotSpringRooms.TankHotSpringLogicProcessor.OnGameData(HotSpringRoom room, GamePlayer player, GSPacketIn packet) na D:\DDT\DDTank-3.0\Game.Server\HotSpringRooms\TankHotSpringLogicProcessor.cs:linha 69
-08:32:311:42:51,922 - [MAIN] - INFO  - Bussiness.GameProperties - Refreshing game properties!
-11:42:57,371 - [MAIN] - INFO  - Game.Server.GameServer - Recompile Scripts: True
-11:42:57,373 - [MAIN] - INFO  - Game.Server.GameServer - Server rules: true
-11:42:57,415 - [MAIN] - INFO  - Game.Server.GameServer - Registering global event handlers: true
-11:42:57,415 - [MAIN] - INFO  - Game.Server.GameServer - Script components: True
-11:42:57,416 - [MAIN] - INFO  - Game.Server.GameServer - Edition:21000: True
-11:42:57,420 - [MAIN] - INFO  - Game.Server.GameServer - InitSocket Port:9200: True
-11:42:57,470 - [MAIN] - INFO  - Game.Server.GameServer - AllocatePacketBuffers(): True
-11:42:57,477 - [MAIN] - INFO  - Game.Server.GameServer - LogMgr Init: True
-11:42:57,482 - [MAIN] - INFO  - Game.Server.GameServer - WorldMgr Init: True
-11:42:57,800 - [MAIN] - INFO  - Game.Server.GameServer - MapMgr Init: True
-11:42:58,138 - [MAIN] - INFO  - Game.Server.GameServer - ItemMgr Init: True
-11:42:58,226 - [MAIN] - INFO  - Game.Server.GameServer - ItemBox Init: True
-11:42:58,540 - [MAIN] - INFO  - Game.Server.GameServer - BallMgr Init: True
-11:42:58,551 - [MAIN] - INFO  - Game.Server.GameServer - BallConfigMgr Init: True
-11:42:58,579 - [MAIN] - INFO  - Game.Server.GameServer - FusionMgr Init: True
-11:42:58,603 - [MAIN] - INFO  - Game.Server.GameServer - AwardMgr Init: True
-11:42:58,614 - [MAIN] - INFO  - Game.Server.GameServer - NPCInfoMgr Init: True
-11:42:58,639 - [MAIN] - INFO  - Game.Server.GameServer - MissionInfoMgr Init: True
-11:42:58,654 - [MAIN] - INFO  - Game.Server.GameServer - PveInfoMgr Init: True
-11:42:58,670 - [MAIN] - INFO  - Game.Server.GameServer - Drop Init: True
-11:42:58,681 - [MAIN] - INFO  - Game.Server.GameServer - FightRateMgr Init: True
-11:42:58,687 - [MAIN] - INFO  - Game.Server.GameServer - ConsortiaLevelMgr Init: True
-11:42:58,696 - [MAIN] - INFO  - Game.Server.GameServer - RefineryMgr Init: True
-11:42:58,725 - [MAIN] - INFO  - Game.Server.GameServer - StrengthenMgr Init: True
-11:42:58,733 - [MAIN] - INFO  - Game.Server.GameServer - PropItemMgr Init: True
-11:42:58,864 - [MAIN] - INFO  - Game.Server.GameServer - ShopMgr Init: True
-11:42:58,951 - [MAIN] - INFO  - Game.Server.GameServer - QuestMgr Init: True
-11:42:58,953 - [MAIN] - INFO  - Game.Server.GameServer - RoomMgr.Setup: True
-11:42:58,955 - [MAIN] - INFO  - Game.Server.GameServer - GameMgr.Start(): True
-11:42:58,969 - [MAIN] - INFO  - Game.Server.GameServer - ConsortiaMgr Init: True
-11:42:58,975 - [MAIN] - INFO  - Game.Server.GameServer - LanguageMgr Init: True
-11:42:59,013 - [MAIN] - INFO  - Game.Server.GameServer - ExperienceRateMgr Init: True
-11:42:59,015 - [MAIN] - INFO  - Game.Server.GameServer - MacroDropMgr Init: True
-11:42:59,026 - [MAIN] - INFO  - Game.Server.Battle.BattleMgr - Battle server 127.0.0.1:9208 loaded...
-11:42:59,034 - [MAIN] - INFO  - Game.Server.Battle.BattleMgr - Total 1 battle server loaded.
-11:42:59,035 - [MAIN] - INFO  - Game.Server.GameServer - BattleMgr Setup: True
-11:42:59,037 - [MAIN] - INFO  - Game.Server.GameServer - Init Global Timers: True
-11:42:59,060 - [MAIN] - INFO  - Game.Server.GameServer - MarryRoomMgr Init: True
-11:42:59,060 - [MAIN] - INFO  - Game.Server.GameServer - LogMgr Setup: True
-11:42:59,091 - [MAIN] - INFO  - Game.Base.Packets.PacketProcessor - PacketProcessor: Loaded 149 handlers from GameServer Assembly!
-11:42:59,101 - [MAIN] - INFO  - Game.Base.CommandMgr - Loaded 7 commands!
-11:42:59,114 - [MAIN] - INFO  - Game.Logic.Spells.SpellMgr - SpellMgr: Loaded 15 spell handlers from GameServer Assembly!
-11:42:59,116 - [MAIN] - INFO  - Game.Base.BaseConnector - Connected to 127.0.0.1:9202
-11:42:59,119 - [MAIN] - INFO  - Game.Server.GameServer - Login To CenterServer: True
-11:42:59,122 - [MAIN] - INFO  - Game.Base.BaseConnector - Connected to 127.0.0.1:9208
-11:42:59,128 - [MAIN] - INFO  - Game.Server.GameServer - base.Start(): True
-11:42:59,156 - [MAIN] - INFO  - Game.Server.GameServer - GameServer is now open for connections!
-11:43:17,796 - [5] - INFO  - Game.Base.BaseServer - Incoming connection from 127.0.0.1:51385
-11:43:49,681 - [18] - INFO  - Game.Base.BaseClient - Disconnecting client (not connected), received bytes=0
-11:43:59,039 - [16] - INFO  - Game.Server.GameServer - Buff Scaning ...
-11:43:59,040 - [16] - INFO  - Game.Server.GameServer - Buff Scan complete!
-11:43:59,041 - [16] - INFO  - Game.Server.GameServer - Buff all 0 players in 0ms
-11:44:14,977 - [18] - INFO  - Game.Base.BaseServer - Incoming connection from 127.0.0.1:51388
-11:44:14,989 - [18] - INFO  - Game.Base.BaseClient - Disconnecting client (127.0.0.1:51388), received bytes=0
-11:44:15,009 - [18] - INFO  - Game.Base.BaseServer - Incoming connection from 127.0.0.1:51389
-11:44:15,512 - [22] - ERROR - Game.Base.Packets.StreamProcessor - HandlePacket(pak)
-System.NullReferenceException: Referência de objeto não definida para uma instância de um objeto.
-   em Game.Base.Packets.PacketProcessor.HandlePacket(GSPacketIn packet) na D:\DDT\DDTank-3.0\Game.Server\Packets\Server\PacketProcessor.cs:linha 65
-   em Game.Server.GameClient.OnRecvPacket(GSPacketIn pkg) na D:\DDT\DDTank-3.0\Game.Server\GameClient.cs:linha 129
-   em Game.Base.Packets.StreamProcessor.ReceiveBytes(Int32 numBytes) na D:\DDT\DDTank-3.0\Game.Base\Packets\StreamProcessor.cs:linha 387
-11:44:59,039 - [16] - INFO  - Game.Server.GameServer - Buff Scaning ...
-11:45:02,546 - [16] - INFO  - Game.Server.GameServer - Buff Scan complete!
-11:45:02,546 - [16] - INFO  - Game.Server.GameServer - Buff all 1 players in 3500ms
-11:45:59,039 - [19] - INFO  - Game.Server.GameServer - Begin ping check....
-11:45:59,046 - [19] - INFO  - Game.Server.GameServer - End ping check....
-11:45:59,046 - [19] - INFO  - Game.Server.GameServer - Begin ping center check....
-11:45:59,048 - [24] - INFO  - Game.Server.GameServer - Buff Scaning ...
-11:45:59,048 - [19] - INFO  - Game.Server.GameServer - End ping center check....
-11:45:59,049 - [24] - INFO  - Game.Server.GameServer - Buff Scan complete!
-11:45:59,051 - [24] - INFO  - Game.Server.GameServer - Buff all 1 players in 0ms
-11:46:59,062 - [17] - INFO  - Game.Server.GameServer - Buff Scaning ...
-11:47:59,048 - [19] - INFO  - Game.Server.GameServer - Saving Record...
-11:47:59,063 - [16] - INFO  - Game.Server.GameServer - Buff Scaning ...
-11:48:24,799 - [16] - INFO  - Game.Server.GameServer - Buff Scan complete!
-11:48:24,799 - [17] - INFO  - Game.Server.GameServer - Buff Scan complete!
-11:48:24,800 - [17] - INFO  - Game.Server.GameServer - Buff all 1 players in 85734ms
-11:48:24,799 - [16] - INFO  - Game.Server.GameServer - Buff all 1 players in 25734ms
-11:48:24,840 - [19] - INFO  - Game.Server.GameServer - Saving Record complete!
-11:48:27,601 - [26] - ERROR - Game.Base.Packets.StreamProcessor - HandlePacket(pak)
-System.NullReferenceException: Referência de objeto não definida para uma instância de um objeto.
-   em Game.Base.Packets.PacketProcessor.HandlePacket(GSPacketIn packet) na D:\DDT\DDTank-3.0\Game.Server\Packets\Server\PacketProcessor.cs:linha 65
-   em Game.Server.GameClient.OnRecvPacket(GSPacketIn pkg) na D:\DDT\DDTank-3.0\Game.Server\GameClient.cs:linha 129
-   em Game.Base.Packets.StreamProcessor.ReceiveBytes(Int32 numBytes) na D:\DDT\DDTank-3.0\Game.Base\Packets\StreamProcessor.cs:linha 387
-11:48:42,341 - [26] - ERROR - Game.Base.Packets.StreamProcessor - HandlePacket(pak)
-System.NullReferenceException: Referência de objeto não definida para uma instância de um objeto.
-   em Game.Base.Packets.PacketProcessor.HandlePacket(GSPacketIn packet) na D:\DDT\DDTank-3.0\Game.Server\Packets\Server\PacketProcessor.cs:linha 65
-   em Game.Server.GameClient.OnRecvPacket(GSPacketIn pkg) na D:\DDT\DDTank-3.0\Game.Server\GameClient.cs:linha 129
-   em Game.Base.Packets.StreamProcessor.ReceiveBytes(Int32 numBytes) na D:\DDT\DDTank-3.0\Game.Base\Packets\StreamProcessor.cs:linha 387
-11:48:42,378 - [27] - ERROR - Game.Base.Packets.PacketProcessor - Error while processing packet (handler=Game.Server.Packets.Client.GameUserDailyAward  client: 127.0.0.1:51389)
-System.FormatException: A cadeia de caracteres de entrada não estava em um formato correto.
-   em System.Number.StringToNumber(String str, NumberStyles options, NumberBuffer& number, NumberFormatInfo info, Boolean parseDecimal)
-   em System.Number.ParseInt32(String s, NumberStyles style, NumberFormatInfo info)
-   em System.Convert.ToInt32(String value)
-   em SqlDataProvider.Data.ItemInfo.OpenHole(ItemInfo& item) na D:\DDT\DDTank-3.0\SqlDataProvider\Data\ItemInfo.cs:linha 706
-   em SqlDataProvider.Data.ItemInfo.CreateFromTemplate(ItemTemplateInfo goods, Int32 count, Int32 type) na D:\DDT\DDTank-3.0\SqlDataProvider\Data\ItemInfo.cs:linha 466
-   em Game.Server.Managers.AwardMgr.AddDailyAward(GamePlayer player) na D:\DDT\DDTank-3.0\Game.Server\Managers\AwardMgr.cs:linha 165
-   em Game.Server.Packets.Client.GameUserDailyAward.HandlePacket(GameClient client, GSPacketIn packet) na D:\DDT\DDTank-3.0\Game.Server\Packets\Client\GameUserDailyAward.cs:linha 25
-   em Game.Base.Packets.PacketProcessor.HandlePacket(GSPacketIn packet) na D:\DDT\DDTank-3.0\Game.Server\Packets\Server\PacketProcessor.cs:linha 81
-11:48:42,529 - [27] - ERROR - Game.Base.Packets.PacketProcessor - Package Buffer:
-0000: 71 AB 00 18 00 5A 00 0D 00 00 00 56 00 00 00 00   q....Z.....V....
-0010: 00 00 00 00 00 00 00 00                           ........        
-
-11:48:59,050 - [24] - INFO  - Game.Server.GameServer - Begin ping check....
-11:48:59,050 - [24] - INFO  - Game.Server.GameServer - End ping check....
-11:48:59,051 - [24] - INFO  - Game.Server.GameServer - Begin ping center check....
-11:48:59,052 - [24] - INFO  - Game.Server.GameServer - End ping center check....
-11:48:59,064 - [19] - INFO  - Game.Server.GameServer - Buff Scaning ...
-11:48:59,064 - [19] - INFO  - Game.Server.GameServer - Buff Scan complete!
-11:48:59,065 - [19] - INFO  - Game.Server.GameServer - Buff all 1 players in 0ms
-11:49:59,078 - [24] - INFO  - Game.Server.GameServer - Buff Scaning ...
-11:49:59,078 - [24] - INFO  - Game.Server.GameServer - Buff Scan complete!
-11:49:59,079 - [24] - INFO  - Game.Server.GameServer - Buff all 1 players in 0ms
-11:50:59,078 - [23] - INFO  - Game.Server.GameServer - Buff Scaning ...
-11:50:59,079 - [23] - INFO  - Game.Server.GameServer - Buff Scan complete!
-11:50:59,080 - [23] - INFO  - Game.Server.GameServer - Buff all 1 players in 0ms
-11:51:59,065 - [24] - INFO  - Game.Server.GameServer - Begin ping check....
-11:51:59,066 - [24] - INFO  - Game.Server.GameServer - End ping check....
-11:51:59,070 - [24] - INFO  - Game.Server.GameServer - Begin ping center check....
-11:51:59,071 - [24] - INFO  - Game.Server.GameServer - End ping center check....
-11:51:59,079 - [17] - INFO  - Game.Server.GameServer - Buff Scaning ...
-11:51:59,079 - [17] - INFO  - Game.Server.GameServer - Buff Scan complete!
-11:51:59,079 - [17] - INFO  - Game.Server.GameServer - Buff all 1 players in 0ms
-11:52:59,048 - [19] - INFO  - Game.Server.GameServer - Saving Record...
-11:52:59,050 - [19] - INFO  - Game.Server.GameServer - Saving Record complete!
-11:52:59,050 - [23] - INFO  - Game.Server.GameServer - Saving database...
-11:52:59,079 - [17] - INFO  - Game.Server.GameServer - Buff Scaning ...
-11:52:59,079 - [17] - INFO  - Game.Server.GameServer - Buff Scan complete!
-11:52:59,080 - [17] - INFO  - Game.Server.GameServer - Buff all 1 players in 0ms
-11:52:59,208 - [23] - INFO  - Game.Server.GameServer - Saving database complete!
-11:52:59,208 - [23] - INFO  - Game.Server.GameServer - Saved all databases and 1 players in 156ms
-11:53:59,094 - [17] - INFO  - Game.Server.GameServer - Buff Scaning ...
-11:53:59,095 - [17] - INFO  - Game.Server.GameServer - Buff Scan complete!
-11:53:59,096 - [17] - INFO  - Game.Server.GameServer - Buff all 1 players in 0ms
-11:54:59,078 - [19] - INFO  - Game.Server.GameServer - Begin ping check....
-11:54:59,079 - [19] - INFO  - Game.Server.GameServer - End ping check....
-11:54:59,080 - [19] - INFO  - Game.Server.GameServer - Begin ping center check....
-11:54:59,081 - [19] - INFO  - Game.Server.GameServer - End ping center check....
-11:54:59,094 - [24] - INFO  - Game.Server.GameServer - Buff Scaning .
+14:42:18,477 - [MAIN] - INFO  - Bussiness.GameProperties - Refreshing game properties!
+14:42:20,271 - [MAIN] - ERROR - Game.Server.Managers.ScriptMgr - Script compilation failed because: 
+14:42:20,272 - [MAIN] - ERROR - Game.Server.Managers.ScriptMgr - ; esperado
+14:42:20,273 - [MAIN] - ERROR - Game.Server.Managers.ScriptMgr -    d:\DDT\DDTank-3.0\Game.Service\bin\Debug\scripts\AI\Messions\CHM1271.cs Line:152 Col:44
+14:42:20,273 - [MAIN] - ERROR - Game.Server.Managers.ScriptMgr - Script compilation failed because: 
+14:42:20,273 - [MAIN] - ERROR - Game.Server.Managers.ScriptMgr - Token ';' inválido na declaração de membro class, struct ou interface
+14:42:20,274 - [MAIN] - ERROR - Game.Server.Managers.ScriptMgr -    d:\DDT\DDTank-3.0\Game.Service\bin\Debug\scripts\AI\Messions\CHM1271.cs Line:153 Col:37
+14:42:20,275 - [MAIN] - ERROR - Game.Server.Managers.ScriptMgr - Script compilation failed because: 
+14:42:20,275 - [MAIN] - ERROR - Game.Server.Managers.ScriptMgr - ; esperado
+14:42:20,275 - [MAIN] - ERROR - Game.Server.Managers.ScriptMgr -    d:\DDT\DDTank-3.0\Game.Service\bin\Debug\scripts\AI\Messions\CHM1274.cs Line:158 Col:44
+14:42:20,275 - [MAIN] - ERROR - Game.Server.Managers.ScriptMgr - Script compilation failed because: 
+14:42:20,276 - [MAIN] - ERROR - Game.Server.Managers.ScriptMgr - O método deve ter um tipo de retorno
+14:42:20,276 - [MAIN] - ERROR - Game.Server.Managers.ScriptMgr -    d:\DDT\DDTank-3.0\Game.Service\bin\Debug\scripts\AI\Messions\CHM1274.cs Line:159 Col:18
+14:42:20,276 - [MAIN] - ERROR - Game.Server.Managers.ScriptMgr - Script compilation failed because: 
+14:42:20,276 - [MAIN] - ERROR - Game.Server.Managers.ScriptMgr - Caractere '$' inesperado
+14:42:20,276 - [MAIN] - ERROR - Game.Server.Managers.ScriptMgr -    d:\DDT\DDTank-3.0\Game.Service\bin\Debug\scripts\AI\Messions\CHM1275.cs Line:47 Col:41
+14:42:20,276 - [MAIN] - ERROR - Game.Server.Managers.ScriptMgr - Script compilation failed because: 
+14:42:20,276 - [MAIN] - ERROR - Game.Server.Managers.ScriptMgr - Caractere '$' inesperado
+14:42:20,277 - [MAIN] - ERROR - Game.Server.Managers.ScriptMgr -    d:\DDT\DDTank-3.0\Game.Service\bin\Debug\scripts\AI\Messions\CHM1275.cs Line:149 Col:37
+14:42:20,277 - [MAIN] - ERROR - Game.Server.Managers.ScriptMgr - Script compilation failed because: 
+14:42:20,277 - [MAIN] - ERROR - Game.Server.Managers.ScriptMgr - ; esperado
+14:42:20,277 - [MAIN] - ERROR - Game.Server.Managers.ScriptMgr -    d:\DDT\DDTank-3.0\Game.Service\bin\Debug\scripts\AI\Messions\CHM1275.cs Line:163 Col:44
+14:42:20,277 - [MAIN] - ERROR - Game.Server.Managers.ScriptMgr - Script compilation failed because: 
+14:42:20,277 - [MAIN] - ERROR - Game.Server.Managers.ScriptMgr - Token ';' inválido na declaração de membro class, struct ou interface
+14:42:20,277 - [MAIN] - ERROR - Game.Server.Managers.ScriptMgr -    d:\DDT\DDTank-3.0\Game.Service\bin\Debug\scripts\AI\Messions\CHM1275.cs Line:164 Col:25
+14:42:20,278 - [MAIN] - ERROR - Game.Server.Managers.ScriptMgr - Script compilation failed because: 
+14:42:20,278 - [MAIN] - ERROR - Game.Server.Managers.ScriptMgr - ; esperado
+14:42:20,278 - [MAIN] - ERROR - Game.Server.Managers.ScriptMgr -    d:\DDT\DDTank-3.0\Game.Service\bin\Debug\scripts\AI\Messions\CHM1277.cs Line:112 Col:44
+14:42:20,278 - [MAIN] - ERROR - Game.Server.Managers.ScriptMgr - Script compilation failed because: 
+14:42:20,278 - [MAIN] - ERROR - Game.Server.Managers.ScriptMgr - Token ';' inválido na declaração de membro class, struct ou interface
+14:42:20,279 - [MAIN] - ERROR - Game.Server.Managers.ScriptMgr -    d:\DDT\DDTank-3.0\Game.Service\bin\Debug\scripts\AI\Messions\CHM1277.cs Line:113 Col:24
+14:42:20,279 - [MAIN] - ERROR - Game.Server.Managers.ScriptMgr - Script compilation failed because: 
+14:42:20,280 - [MAIN] - ERROR - Game.Server.Managers.ScriptMgr - ; esperado
+14:42:20,280 - [MAIN] - ERROR - Game.Server.Managers.ScriptMgr -    d:\DDT\DDTank-3.0\Game.Service\bin\Debug\scripts\AI\Messions\CNM1174.cs Line:156 Col:44
+14:42:20,286 - [MAIN] - ERROR - Game.Server.Managers.ScriptMgr - Script compilation failed because: 
+14:42:20,286 - [MAIN] - ERROR - Game.Server.Managers.ScriptMgr - O método deve ter um tipo de retorno
+14:42:20,286 - [MAIN] - ERROR - Game.Server.Managers.ScriptMgr -    d:\DDT\DDTank-3.0\Game.Service\bin\Debug\scripts\AI\Messions\CNM1174.cs Line:157 Col:18
+14:42:20,287 - [MAIN] - ERROR - Game.Server.Managers.ScriptMgr - Script compilation failed because: 
+14:42:20,287 - [MAIN] - ERROR - Game.Server.Managers.ScriptMgr - Caractere '$' inesperado
+14:42:20,288 - [MAIN] - ERROR - Game.Server.Managers.ScriptMgr -    d:\DDT\DDTank-3.0\Game.Service\bin\Debug\scripts\AI\Messions\CNM1175.cs Line:43 Col:41
+14:42:20,288 - [MAIN] - ERROR - Game.Server.Managers.ScriptMgr - Script compilation failed because: 
+14:42:20,289 - [MAIN] - ERROR - Game.Server.Managers.ScriptMgr - Caractere '$' inesperado
+14:42:20,289 - [MAIN] - ERROR - Game.Server.Managers.ScriptMgr -    d:\DDT\DDTank-3.0\Game.Service\bin\Debug\scripts\AI\Messions\CNM1175.cs Line:142 Col:37
+14:42:20,290 - [MAIN] - ERROR - Game.Server.Managers.ScriptMgr - Script compilation failed because: 
+14:42:20,291 - [MAIN] - ERROR - Game.Server.Managers.ScriptMgr - ; esperado
+14:42:20,291 - [MAIN] - ERROR - Game.Server.Managers.ScriptMgr -    d:\DDT\DDTank-3.0\Game.Service\bin\Debug\scripts\AI\Messions\CNM1175.cs Line:156 Col:44
+14:42:20,292 - [MAIN] - ERROR - Game.Server.Managers.ScriptMgr - Script compilation failed because: 
+14:42:20,292 - [MAIN] - ERROR - Game.Server.Managers.ScriptMgr - Token ';' inválido na declaração de membro class, struct ou interface
+14:42:20,293 - [MAIN] - ERROR - Game.Server.Managers.ScriptMgr -    d:\DDT\DDTank-3.0\Game.Service\bin\Debug\scripts\AI\Messions\CNM1175.cs Line:157 Col:25
+14:42:20,293 - [MAIN] - ERROR - Game.Server.Managers.ScriptMgr - Script compilation failed because: 
+14:42:20,296 - [MAIN] - ERROR - Game.Server.Managers.ScriptMgr - ; esperado
+14:42:20,298 - [MAIN] - ERROR - Game.Server.Managers.ScriptMgr -    d:\DDT\DDTank-3.0\Game.Service\bin\Debug\scripts\AI\Messions\CNM1177.cs Line:112 Col:44
+14:42:20,299 - [MAIN] - ERROR - Game.Server.Managers.ScriptMgr - Script compilation failed because: 
+14:42:20,300 - [MAIN] - ERROR - Game.Server.Managers.ScriptMgr - Token ';' inválido na declaração de membro class, struct ou interface
+14:42:20,300 - [MAIN] - ERROR - Game.Server.Managers.ScriptMgr -    d:\DDT\DDTank-3.0\Game.Service\bin\Debug\scripts\AI\Messions\CNM1177.cs Line:113 Col:24
+14:42:20,301 - [MAIN] - ERROR - Game.Server.Managers.ScriptMgr - Script compilation failed because: 
+14:42:20,301 - [MAIN] - ERROR - Game.Server.Managers.ScriptMgr - ; esperado
+14:42:20,302 - [MAIN] - ERROR - Game.Server.Managers.ScriptMgr -    d:\DDT\DDTank-3.0\Game.Service\bin\Debug\scripts\AI\Messions\CSM1071.cs Line:152 Col:44
+14:42:20,302 - [MAIN] - ERROR - Game.Server.Managers.ScriptMgr - Script compilation failed because: 
+14:42:20,303 - [MAIN] - ERROR - Game.Server.Managers.ScriptMgr - Token ';' inválido na declaração de membro class, struct ou interface
+14:42:20,304 - [MAIN] - ERROR - Game.Server.Managers.ScriptMgr -    d:\DDT\DDTank-3.0\Game.Service\bin\Debug\scripts\AI\Messions\CSM1071.cs Line:153 Col:37
+14:42:20,304 - [MAIN] - ERROR - Game.Server.Managers.ScriptMgr - Script compilation failed because: 
+14:42:20,307 - [MAIN] - ERROR - Game.Server.Managers.ScriptMgr - ; esperado
+14:42:20,307 - [MAIN] - ERROR - Game.Server.Managers.ScriptMgr -    d:\DDT\DDTank-3.0\Game.Service\bin\Debug\scripts\AI\Messions\CSM1074.cs Line:118 Col:44
+14:42:20,308 - [MAIN] - ERROR - Game.Server.Managers.ScriptMgr - Script compilation failed because: 
+14:42:20,308 - [MAIN] - ERROR - Game.Server.Managers.ScriptMgr - O método deve ter um tipo de retorno
+14:42:20,309 - [MAIN] - ERROR - Game.Server.Managers.ScriptMgr -    d:\DDT\DDTank-3.0\Game.Service\bin\Debug\scripts\AI\Messions\CSM1074.cs Line:119 Col:18
+14:42:20,309 - [MAIN] - ERROR - Game.Server.Managers.ScriptMgr - Script compilation failed because: 
+14:42:20,310 - [MAIN] - ERROR - Game.Server.Managers.ScriptMgr - Caractere '$' inesperado
+14:42:20,310 - [MAIN] - ERROR - Game.Server.Managers.ScriptMgr -    d:\DDT\DDTank-3.0\Game.Service\bin\Debug\scripts\AI\Messions\CSM1075.cs Line:43 Col:41
+14:42:20,311 - [MAIN] - ERROR - Game.Server.Managers.ScriptMgr - Script compilation failed because: 
+14:42:20,312 - [MAIN] - ERROR - Game.Server.Managers.ScriptMgr - Caractere '$' inesperado
+14:42:20,312 - [MAIN] - ERROR - Game.Server.Managers.ScriptMgr -    d:\DDT\DDTank-3.0\Game.Service\bin\Debug\scripts\AI\Messions\CSM1075.cs Line:141 Col:37
+14:42:20,313 - [MAIN] - ERROR - Game.Server.Managers.ScriptMgr - Script compilation failed because: 
+14:42:20,313 - [MAIN] - ERROR - Game.Server.Managers.ScriptMgr - ; esperado
+14:42:20,314 - [MAIN] - ERROR - Game.Server.Managers.ScriptMgr -    d:\DDT\DDTank-3.0\Game.Service\bin\Debug\scripts\AI\Messions\CSM1075.cs Line:155 Col:44
+14:42:20,316 - [MAIN] - ERROR - Game.Server.Managers.ScriptMgr - Script compilation failed because: 
+14:42:20,318 - [MAIN] - ERROR - Game.Server.Managers.ScriptMgr - Token ';' inválido na declaração de membro class, struct ou interface
+14:42:20,319 - [MAIN] - ERROR - Game.Server.Managers.ScriptMgr -    d:\DDT\DDTank-3.0\Game.Service\bin\Debug\scripts\AI\Messions\CSM1075.cs Line:156 Col:25
+14:42:20,320 - [MAIN] - ERROR - Game.Server.Managers.ScriptMgr - Script compilation failed because: 
+14:42:20,320 - [MAIN] - ERROR - Game.Server.Managers.ScriptMgr - ; esperado
+14:42:20,321 - [MAIN] - ERROR - Game.Server.Managers.ScriptMgr -    d:\DDT\DDTank-3.0\Game.Service\bin\Debug\scripts\AI\Messions\CSM1077.cs Line:113 Col:44
+14:42:20,322 - [MAIN] - ERROR - Game.Server.Managers.ScriptMgr - Script compilation failed because: 
+14:42:20,323 - [MAIN] - ERROR - Game.Server.Managers.ScriptMgr - Token ';' inválido na declaração de membro class, struct ou interface
+14:42:20,323 - [MAIN] - ERROR - Game.Server.Managers.ScriptMgr -    d:\DDT\DDTank-3.0\Game.Service\bin\Debug\scripts\AI\Messions\CSM1077.cs Line:114 Col:24
+14:42:20,324 - [MAIN] - ERROR - Game.Server.Managers.ScriptMgr - Script compilation failed because: 
+14:42:20,325 - [MAIN] - ERROR - Game.Server.Managers.ScriptMgr - ; esperado
+14:42:20,325 - [MAIN] - ERROR - Game.Server.Managers.ScriptMgr -    d:\DDT\DDTank-3.0\Game.Service\bin\Debug\scripts\AI\Messions\CTM1371.cs Line:151 Col:44
+14:42:20,326 - [MAIN] - ERROR - Game.Server.Managers.ScriptMgr - Script compilation failed because: 
+14:42:20,326 - [MAIN] - ERROR - Game.Server.Managers.ScriptMgr - Token ';' inválido na declaração de membro class, struct ou interface
+14:42:20,329 - [MAIN] - ERROR - Game.Server.Managers.ScriptMgr -    d:\DDT\DDTank-3.0\Game.Service\bin\Debug\scripts\AI\Messions\CTM1371.cs Line:152 Col:37
+14:42:20,330 - [MAIN] - ERROR - Game.Server.Managers.ScriptMgr - Script compilation failed because: 
+14:42:20,331 - [MAIN] - ERROR - Game.Server.Managers.ScriptMgr - ; esperado
+14:42:20,331 - [MAIN] - ERROR - Game.Server.Managers.ScriptMgr -    d:\DDT\DDTank-3.0\Game.Service\bin\Debug\scripts\AI\Messions\CTM1374.cs Line:157 Col:44
+14:42:20,332 - [MAIN] - ERROR - Game.Server.Managers.ScriptMgr - Script compilation failed because: 
+14:42:20,333 - [MAIN] - ERROR - Game.Server.Managers.ScriptMgr - O método deve ter um tipo de retorno
+14:42:20,334 - [MAIN] - ERROR - Game.Server.Managers.ScriptMgr -    d:\DDT\DDTank-3.0\Game.Service\bin\Debug\scripts\AI\Messions\CTM1374.cs Line:158 Col:18
+14:42:20,335 - [MAIN] - ERROR - Game.Server.Managers.ScriptMgr - Script compilation failed because: 
+14:42:20,335 - [MAIN] - ERROR - Game.Server.Managers.ScriptMgr - Caractere '$' inesperado
+14:42:20,336 - [MAIN] - ERROR - Game.Server.Managers.ScriptMgr -    d:\DDT\DDTank-3.0\Game.Service\bin\Debug\scripts\AI\Messions\CTM1375.cs Line:44 Col:41
+14:42:20,337 - [MAIN] - ERROR - Game.Server.Managers.ScriptMgr - Script compilation failed because: 
+14:42:20,337 - [MAIN] - ERROR - Game.Server.Managers.ScriptMgr - Caractere '$' inesperado
+14:42:20,341 - [MAIN] - ERROR - Game.Server.Managers.ScriptMgr -    d:\DDT\DDTank-3.0\Game.Service\bin\Debug\scripts\AI\Messions\CTM1375.cs Line:142 Col:37
+14:42:20,341 - [MAIN] - ERROR - Game.Server.Managers.ScriptMgr - Script compilation failed because: 
+14:42:20,342 - [MAIN] - ERROR - Game.Server.Managers.ScriptMgr - ; esperado
+14:42:20,342 - [MAIN] - ERROR - Game.Server.Managers.ScriptMgr -    d:\DDT\DDTank-3.0\Game.Service\bin\Debug\scripts\AI\Messions\CTM1375.cs Line:156 Col:44
+14:42:20,343 - [MAIN] - ERROR - Game.Server.Managers.ScriptMgr - Script compilation failed because: 
+14:42:20,344 - [MAIN] - ERROR - Game.Server.Managers.ScriptMgr - Token ';' inválido na declaração de membro class, struct ou interface
+14:42:20,344 - [MAIN] - ERROR - Game.Server.Managers.ScriptMgr -    d:\DDT\DDTank-3.0\Game.Service\bin\Debug\scripts\AI\Messions\CTM1375.cs Line:157 Col:25
+14:42:20,345 - [MAIN] - ERROR - Game.Server.Managers.ScriptMgr - Script compilation failed because: 
+14:42:20,345 - [MAIN] - ERROR - Game.Server.Managers.ScriptMgr - ; esperado
+14:42:20,346 - [MAIN] - ERROR - Game.Server.Managers.ScriptMgr -    d:\DDT\DDTank-3.0\Game.Service\bin\Debug\scripts\AI\Messions\DCNM2101.cs Line:156 Col:44
+14:42:20,348 - [MAIN] - ERROR - Game.Server.Managers.ScriptMgr - Script compilation failed because: 
+14:42:20,348 - [MAIN] - ERROR - Game.Server.Managers.ScriptMgr - Token ';' inválido na declaração de membro class, struct ou interface
+14:42:20,351 - [MAIN] - ERROR - Game.Server.Managers.ScriptMgr -    d:\DDT\DDTank-3.0\Game.Service\bin\Debug\scripts\AI\Messions\DCNM2101.cs Line:157 Col:37
+14:42:20,352 - [MAIN] - ERROR - Game.Server.Managers.ScriptMgr - Script compilation failed because: 
+14:42:20,353 - [MAIN] - ERROR - Game.Server.Managers.ScriptMgr - ; esperado
+14:42:20,353 - [MAIN] - ERROR - Game.Server.Managers.ScriptMgr -    d:\DDT\DDTank-3.0\Game.Service\bin\Debug\scripts\AI\Messions\DCSM2001.cs Line:159 Col:44
+14:42:20,354 - [MAIN] - ERROR - Game.Server.Managers.ScriptMgr - Script compilation failed because: 
+14:42:20,355 - [MAIN] - ERROR - Game.Server.Managers.ScriptMgr - Token ';' inválido na declaração de membro class, struct ou interface
+14:42:20,356 - [MAIN] - ERROR - Game.Server.Managers.ScriptMgr -    d:\DDT\DDTank-3.0\Game.Service\bin\Debug\scripts\AI\Messions\DCSM2001.cs Line:160 Col:37
+14:42:20,356 - [MAIN] - ERROR - Game.Server.Managers.ScriptMgr - Script compilation failed because: 
+14:42:20,357 - [MAIN] - ERROR - Game.Server.Managers.ScriptMgr - ; esperado
+14:42:20,358 - [MAIN] - ERROR - Game.Server.Managers.ScriptMgr -    d:\DDT\DDTank-3.0\Game.Service\bin\Debug\scripts\AI\Messions\ExplorationMission.cs Line:243 Col:44
+14:42:20,358 - [MAIN] - ERROR - Game.Server.Managers.ScriptMgr - Script compilation failed because: 
+14:42:20,359 - [MAIN] - ERROR - Game.Server.Managers.ScriptMgr - Token ';' inválido na declaração de membro class, struct ou interface
+14:42:20,360 - [MAIN] - ERROR - Game.Server.Managers.ScriptMgr -    d:\DDT\DDTank-3.0\Game.Service\bin\Debug\scripts\AI\Messions\ExplorationMission.cs Line:244 Col:37
+14:42:20,363 - [MAIN] - ERROR - Game.Server.Managers.ScriptMgr - Script compilation failed because: 
+14:42:20,364 - [MAIN] - ERROR - Game.Server.Managers.ScriptMgr - { ou ; esperado
+14:42:20,365 - [MAIN] - ERROR - Game.Server.Managers.ScriptMgr -    d:\DDT\DDTank-3.0\Game.Service\bin\Debug\scripts\AI\Messions\NpcCreateParam.cs Line:24 Col:17
+14:42:20,365 - [MAIN] - ERROR - Game.Server.Managers.ScriptMgr - Script compilation failed because: 
+14:42:20,366 - [MAIN] - ERROR - Game.Server.Managers.ScriptMgr - { ou ; esperado
+14:42:20,367 - [MAIN] - ERROR - Game.Server.Managers.ScriptMgr -    d:\DDT\DDTank-3.0\Game.Service\bin\Debug\scripts\AI\Messions\NpcCreateParam.cs Line:32 Col:17
+14:42:20,367 - [MAIN] - ERROR - Game.Server.Managers.ScriptMgr - Script compilation failed because: 
+14:42:20,368 - [MAIN] - ERROR - Game.Server.Managers.ScriptMgr - { ou ; esperado
+14:42:20,368 - [MAIN] - ERROR - Game.Server.Managers.ScriptMgr -    d:\DDT\DDTank-3.0\Game.Service\bin\Debug\scripts\AI\Messions\NpcCreateParam.cs Line:40 Col:17
+14:42:20,369 - [MAIN] - ERROR - Game.Server.Managers.ScriptMgr - Script compilation failed because: 
+14:42:20,369 - [MAIN] - ERROR - Game14:48:43,256 - [MAIN] - INFO  - Bussiness.GameProperties - Refreshing game properties!
+14:48:43,627 - [MAIN] - ERROR - Game.Server.Managers.ScriptMgr - Script compilation failed because: 
+14:48:43,628 - [MAIN] - ERROR - Game.Server.Managers.ScriptMgr - ; esperado
+14:48:43,628 - [MAIN] - ERROR - Game.Server.Managers.ScriptMgr -    d:\DDT\DDTank-3.0\Game.Service\bin\Debug\scripts\AI\Messions\CHM1271.cs Line:152 Col:44
+14:48:43,628 - [MAIN] - ERROR - Game.Server.Managers.ScriptMgr - Script compilation failed because: 
+14:48:43,629 - [MAIN] - ERROR - Game.Server.Managers.ScriptMgr - Token ';' inválido na declaração de membro class, struct ou interface
+14:48:43,629 - [MAIN] - ERROR - Game.Server.Managers.ScriptMgr -    d:\DDT\DDTank-3.0\Game.Service\bin\Debug\scripts\AI\Messions\CHM1271.cs Line:153 Col:37
+14:48:43,630 - [MAIN] - ERROR - Game.Server.Managers.ScriptMgr - Script compilation failed because: 
+14:48:43,630 - [MAIN] - ERROR - Game.Server.Managers.ScriptMgr - ; esperado
+14:48:43,630 - [MAIN] - ERROR - Game.Server.Managers.ScriptMgr -    d:\DDT\DDTank-3.0\Game.Service\bin\Debug\scripts\AI\Messions\CHM1274.cs Line:158 Col:44
+14:48:43,630 - [MAIN] - ERROR - Game.Server.Managers.ScriptMgr - Script compilation failed because: 
+14:48:43,631 - [MAIN] - ERROR - Game.Server.Managers.ScriptMgr - O método deve ter um tipo de retorno
+14:48:43,631 - [MAIN] - ERROR - Game.Server.Managers.ScriptMgr -    d:\DDT\DDTank-3.0\Game.Service\bin\Debug\scripts\AI\Messions\CHM1274.cs Line:159 Col:18
+14:48:43,631 - [MAIN] - ERROR - Game.Server.Managers.ScriptMgr - Script compilation failed because: 
+14:48:43,631 - [MAIN] - ERROR - Game.Server.Managers.ScriptMgr - Caractere '$' inesperado
+14:48:43,632 - [MAIN] - ERROR - Game.Server.Managers.ScriptMgr -    d:\DDT\DDTank-3.0\Game.Service\bin\Debug\scripts\AI\Messions\CHM1275.cs Line:47 Col:41
+14:48:43,632 - [MAIN] - ERROR - Game.Server.Managers.ScriptMgr - Script compilation failed because: 
+14:48:43,632 - [MAIN] - ERROR - Game.Server.Managers.ScriptMgr - Caractere '$' inesperado
+14:48:43,632 - [MAIN] - ERROR - Game.Server.Managers.ScriptMgr -    d:\DDT\DDTank-3.0\Game.Service\bin\Debug\scripts\AI\Messions\CHM1275.cs Line:149 Col:37
+14:48:43,632 - [MAIN] - ERROR - Game.Server.Managers.ScriptMgr - Script compilation failed because: 
+14:48:43,633 - [MAIN] - ERROR - Game.Server.Managers.ScriptMgr - ; esperado
+14:48:43,633 - [MAIN] - ERROR - Game.Server.Managers.ScriptMgr -    d:\DDT\DDTank-3.0\Game.Service\bin\Debug\scripts\AI\Messions\CHM1275.cs Line:163 Col:44
+14:48:43,633 - [MAIN] - ERROR - Game.Server.Managers.ScriptMgr - Script compilation failed because: 
+14:48:43,633 - [MAIN] - ERROR - Game.Server.Managers.ScriptMgr - Token ';' inválido na declaração de membro class, struct ou interface
+14:48:43,633 - [MAIN] - ERROR - Game.Server.Managers.ScriptMgr -    d:\DDT\DDTank-3.0\Game.Service\bin\Debug\scripts\AI\Messions\CHM1275.cs Line:164 Col:25
+14:48:43,633 - [MAIN] - ERROR - Game.Server.Managers.ScriptMgr - Script compilation failed because: 
+14:48:43,633 - [MAIN] - ERROR - Game.Server.Managers.ScriptMgr - ; esperado
+14:48:43,634 - [MAIN] - ERROR - Game.Server.Managers.ScriptMgr -    d:\DDT\DDTank-3.0\Game.Service\bin\Debug\scripts\AI\Messions\CHM1277.cs Line:112 Col:44
+14:48:43,634 - [MAIN] - ERROR - Game.Server.Managers.ScriptMgr - Script compilation failed because: 
+14:48:43,634 - [MAIN] - ERROR - Game.Server.Managers.ScriptMgr - Token ';' inválido na declaração de membro class, struct ou interface
+14:48:43,635 - [MAIN] - ERROR - Game.Server.Managers.ScriptMgr -    d:\DDT\DDTank-3.0\Game.Service\bin\Debug\scripts\AI\Messions\CHM1277.cs Line:113 Col:24
+14:48:43,635 - [MAIN] - ERROR - Game.Server.Managers.ScriptMgr - Script compilation failed because: 
+14:48:43,640 - [MAIN] - ERROR - Game.Server.Managers.ScriptMgr - ; esperado
+14:48:43,641 - [MAIN] - ERROR - Game.Server.Managers.ScriptMgr -    d:\DDT\DDTank-3.0\Game.Service\bin\Debug\scripts\AI\Messions\CNM1174.cs Line:156 Col:44
+14:48:43,641 - [MAIN] - ERROR - Game.Server.Managers.ScriptMgr - Script compilation failed because: 
+14:48:43,642 - [MAIN] - ERROR - Game.Server.Managers.ScriptMgr - O método deve ter um tipo de retorno
+14:48:43,643 - [MAIN] - ERROR - Game.Server.Managers.ScriptMgr -    d:\DDT\DDTank-3.0\Game.Service\bin\Debug\scripts\AI\Messions\CNM1174.cs Line:157 Col:18
+14:48:43,643 - [MAIN] - ERROR - Game.Server.Managers.ScriptMgr - Script compilation failed because: 
+14:48:43,644 - [MAIN] - ERROR - Game.Server.Managers.ScriptMgr - Caractere '$' inesperado
+14:48:43,645 - [MAIN] - ERROR - Game.Server.Managers.ScriptMgr -    d:\DDT\DDTank-3.0\Game.Service\bin\Debug\scripts\AI\Messions\CNM1175.cs Line:43 Col:41
+14:48:43,646 - [MAIN] - ERROR - Game.Server.Managers.ScriptMgr - Script compilation failed because: 
+14:48:43,646 - [MAIN] - ERROR - Game.Server.Managers.ScriptMgr - Caractere '$' inesperado
+14:48:43,647 - [MAIN] - ERROR - Game.Server.Managers.ScriptMgr -    d:\DDT\DDTank-3.0\Game.Service\bin\Debug\scripts\AI\Messions\CNM1175.cs Line:142 Col:37
+14:48:43,648 - [MAIN] - ERROR - Game.Server.Managers.ScriptMgr - Script compilation failed because: 
+14:48:43,648 - [MAIN] - ERROR - Game.Server.Managers.ScriptMgr - ; esperado
+14:48:43,649 - [MAIN] - ERROR - Game.Server.Managers.ScriptMgr -    d:\DDT\DDTank-3.0\Game.Service\bin\Debug\scripts\AI\Messions\CNM1175.cs Line:156 Col:44
+14:48:43,651 - [MAIN] - ERROR - Game.Server.Managers.ScriptMgr - Script compilation failed because: 
+14:48:43,652 - [MAIN] - ERROR - Game.Server.Managers.ScriptMgr - Token ';' inválido na declaração de membro class, struct ou interface
+14:48:43,653 - [MAIN] - ERROR - Game.Server.Managers.ScriptMgr -    d:\DDT\DDTank-3.0\Game.Service\bin\Debug\scripts\AI\Messions\CNM1175.cs Line:157 Col:25
+14:48:43,654 - [MAIN] - ERROR - Game.Server.Managers.ScriptMgr - Script compilation failed because: 
+14:48:43,654 - [MAIN] - ERROR - Game.Server.Managers.ScriptMgr - ; esperado
+14:48:43,655 - [MAIN] - ERROR - Game.Server.Managers.ScriptMgr -    d:\DDT\DDTank-3.0\Game.Service\bin\Debug\scripts\AI\Messions\CNM1177.cs Line:112 Col:44
+14:48:43,656 - [MAIN] - ERROR - Game.Server.Managers.ScriptMgr - Script compilation failed because: 
+14:48:43,657 - [MAIN] - ERROR - Game.Server.Managers.ScriptMgr - Token ';' inválido na declaração de membro class, struct ou interface
+14:48:43,657 - [MAIN] - ERROR - Game.Server.Managers.ScriptMgr -    d:\DDT\DDTank-3.0\Game.Service\bin\Debug\scripts\AI\Messions\CNM1177.cs Line:113 Col:24
+14:48:43,658 - [MAIN] - ERROR - Game.Server.Managers.ScriptMgr - Script compilation failed because: 
+14:48:43,658 - [MAIN] - ERROR - Game.Server.Managers.ScriptMgr - ; esperado
+14:48:43,659 - [MAIN] - ERROR - Game.Server.Managers.ScriptMgr -    d:\DDT\DDTank-3.0\Game.Service\bin\Debug\scripts\AI\Messions\CSM1071.cs Line:152 Col:44
+14:48:43,660 - [MAIN] - ERROR - Game.Server.Managers.ScriptMgr - Script compilation failed because: 
+14:48:43,662 - [MAIN] - ERROR - Game.Server.Managers.ScriptMgr - Token ';' inválido na declaração de membro class, struct ou interface
+14:48:43,663 - [MAIN] - ERROR - Game.Server.Managers.ScriptMgr -    d:\DDT\DDTank-3.0\Game.Service\bin\Debug\scripts\AI\Messions\CSM1071.cs Line:153 Col:37
+14:48:43,664 - [MAIN] - ERROR - Game.Server.Managers.ScriptMgr - Script compilation failed because: 
+14:48:43,665 - [MAIN] - ERROR - Game.Server.Managers.ScriptMgr - ; esperado
+14:48:43,665 - [MAIN] - ERROR - Game.Server.Managers.ScriptMgr -    d:\DDT\DDTank-3.0\Game.Service\bin\Debug\scripts\AI\Messions\CSM1074.cs Line:118 Col:44
+14:48:43,666 - [MAIN] - ERROR - Game.Server.Managers.ScriptMgr - Script compilation failed because: 
+14:48:43,666 - [MAIN] - ERROR - Game.Server.Managers.ScriptMgr - O método deve ter um tipo de retorno
+14:48:43,667 - [MAIN] - ERROR - Game.Server.Managers.ScriptMgr -    d:\DDT\DDTank-3.0\Game.Service\bin\Debug\scripts\AI\Messions\CSM1074.cs Line:119 Col:18
+14:48:43,668 - [MAIN] - ERROR - Game.Server.Managers.ScriptMgr - Script compilation failed because: 
+14:48:43,668 - [MAIN] - ERROR - Game.Server.Managers.ScriptMgr - Caractere '$' inesperado
+14:48:43,669 - [MAIN] - ERROR - Game.Server.Managers.ScriptMgr -    d:\DDT\DDTank-3.0\Game.Service\bin\Debug\scripts\AI\Messions\CSM1075.cs Line:43 Col:41
+14:48:43,669 - [MAIN] - ERROR - Game.Server.Managers.ScriptMgr - Script compilation failed because: 
+14:48:43,670 - [MAIN] - ERROR - Game.Server.Managers.ScriptMgr - Caractere '$' inesperado
+14:48:43,670 - [MAIN] - ERROR - Game.Server.Managers.ScriptMgr -    d:\DDT\DDTank-3.0\Game.Service\bin\Debug\scripts\AI\Messions\CSM1075.cs Line:141 Col:37
+14:48:43,673 - [MAIN] - ERROR - Game.Server.Managers.ScriptMgr - Script compilation failed because: 
+14:48:43,674 - [MAIN] - ERROR - Game.Server.Managers.ScriptMgr - ; esperado
+14:48:43,674 - [MAIN] - ERROR - Game.Server.Managers.ScriptMgr -    d:\DDT\DDTank-3.0\Game.Service\bin\Debug\scripts\AI\Messions\CSM1075.cs Line:155 Col:44
+14:48:43,675 - [MAIN] - ERROR - Game.Server.Managers.ScriptMgr - Script compilation failed because: 
+14:48:43,676 - [MAIN] - ERROR - Game.Server.Managers.ScriptMgr - Token ';' inválido na declaração de membro class, struct ou interface
+14:48:43,677 - [MAIN] - ERROR - Game.Server.Managers.ScriptMgr -    d:\DDT\DDTank-3.0\Game.Service\bin\Debug\scripts\AI\Messions\CSM1075.cs Line:156 Col:25
+14:48:43,677 - [MAIN] - ERROR - Game.Server.Managers.ScriptMgr - Script compilation failed because: 
+14:48:43,678 - [MAIN] - ERROR - Game.Server.Managers.ScriptMgr - ; esperado
+14:48:43,678 - [MAIN] - ERROR - Game.Server.Managers.ScriptMgr -    d:\DDT\DDTank-3.0\Game.Service\bin\Debug\scripts\AI\Messions\CSM1077.cs Line:113 Col:44
+14:48:43,679 - [MAIN] - ERROR - Game.Server.Managers.ScriptMgr - Script compilation failed because: 
+14:48:43,679 - [MAIN] - ERROR - Game.Server.Managers.ScriptMgr - Token ';' inválido na declaração de membro class, struct ou interface
+14:48:43,680 - [MAIN] - ERROR - Game.Server.Managers.ScriptMgr -    d:\DDT\DDTank-3.0\Game.Service\bin\Debug\scripts\AI\Messions\CSM1077.cs Line:114 Col:24
+14:48:43,681 - [MAIN] - ERROR - Game.Server.Managers.ScriptMgr - Script compilation failed because: 
+14:48:43,681 - [MAIN] - ERROR - Game.Server.Managers.ScriptMgr - ; esperado
+14:48:43,684 - [MAIN] - ERROR - Game.Server.Managers.ScriptMgr -    d:\DDT\DDTank-3.0\Game.Service\bin\Debug\scripts\AI\Messions\CTM1371.cs Line:151 Col:44
+14:48:43,685 - [MAIN] - ERROR - Game.Server.Managers.ScriptMgr - Script compilation failed because: 
+14:48:43,685 - [MAIN] - ERROR - Game.Server.Managers.ScriptMgr - Token ';' inválido na declaração de membro class, struct ou interface
+14:48:43,686 - [MAIN] - ERROR - Game.Server.Managers.ScriptMgr -    d:\DDT\DDTank-3.0\Game.Service\bin\Debug\scripts\AI\Messions\CTM1371.cs Line:152 Col:37
+14:48:43,686 - [MAIN] - ERROR - Game.Server.Managers.ScriptMgr - Script compilation failed because: 
+14:48:43,687 - [MAIN] - ERROR - Game.Server.Managers.ScriptMgr - ; esperado
+14:48:43,688 - [MAIN] - ERROR - Game.Server.Managers.ScriptMgr -    d:\DDT\DDTank-3.0\Game.Service\bin\Debug\scripts\AI\Messions\CTM1374.cs Line:157 Col:44
+14:48:43,688 - [MAIN] - ERROR - Game.Server.Managers.ScriptMgr - Script compilation failed because: 
+14:48:43,689 - [MAIN] - ERROR - Game.Server.Managers.ScriptMgr - O método deve ter um tipo de retorno
+14:48:43,689 - [MAIN] - ERROR - Game.Server.Managers.ScriptMgr -    d:\DDT\DDTank-3.0\Game.Service\bin\Debug\scripts\AI\Messions\CTM1374.cs Line:158 Col:18
+14:48:43,690 - [MAIN] - ERROR - Game.Server.Managers.ScriptMgr - Script compilation failed because: 
+14:48:43,690 - [MAIN] - ERROR - Game.Server.Managers.ScriptMgr - Caractere '$' inesperado
+14:48:43,691 - [MAIN] - ERROR - Game.Server.Managers.ScriptMgr -    d:\DDT\DDTank-3.0\Game.Service\bin\Debug\scripts\AI\Messions\CTM1375.cs Line:44 Col:41
+14:48:43,691 - [MAIN] - ERROR - Game.Server.Managers.ScriptMgr - Script compilation failed because: 
+14:48:43,692 - [MAIN] - ERROR - Game.Server.Managers.ScriptMgr - Caractere '$' inesperado
+14:48:43,692 - [MAIN] - ERROR - Game.Server.Managers.ScriptMgr -    d:\DDT\DDTank-3.0\Game.Service\bin\Debug\scripts\AI\Messions\CTM1375.cs Line:142 Col:37
+14:48:43,695 - [MAIN] - ERROR - Game.Server.Managers.ScriptMgr - Script compilation failed because: 
+14:48:43,697 - [MAIN] - ERROR - Game.Server.Managers.ScriptMgr - ; esperado
+14:48:43,698 - [MAIN] - ERROR - Game.Server.Managers.ScriptMgr -    d:\DDT\DDTank-3.0\Game.Service\bin\Debug\scripts\AI\Messions\CTM1375.cs Line:156 Col:44
+14:48:43,699 - [MAIN] - ERROR - Game.Server.Managers.ScriptMgr - Script compilation failed because: 
+14:48:43,699 - [MAIN] - ERROR - Game.Server.Managers.ScriptMgr - Token ';' inválido na declaração de membro class, struct ou interface
+14:48:43,700 - [MAIN] - ERROR - Game.Server.Managers.ScriptMgr -    d:\DDT\DDTank-3.0\Game.Service\bin\Debug\scripts\AI\Messions\CTM1375.cs Line:157 Col:25
+14:48:43,701 - [MAIN] - ERROR - Game.Server.Managers.ScriptMgr - Script compilation failed because: 
+14:48:43,701 - [MAIN] - ERROR - Game.Server.Managers.ScriptMgr - ; esperado
+14:48:43,702 - [MAIN] - ERROR - Game.Server.Managers.ScriptMgr -    d:\DDT\DDTank-3.0\Game.Service\bin\Debug\scripts\AI\Messions\DCNM2101.cs Line:156 Col:44
+14:48:43,702 - [MAIN] - ERROR - Game.Server.Managers.ScriptMgr - Script compilation failed because: 
+14:48:43,703 - [MAIN] - ERROR - Game.Server.Managers.ScriptMgr - Token ';' inválido na declaração de membro class, struct ou interface
+14:48:43,706 - [MAIN] - ERROR - Game.Server.Managers.ScriptMgr -    d:\DDT\DDTank-3.0\Game.Service\bin\Debug\scripts\AI\Messions\DCNM2101.cs Line:157 Col:37
+14:48:43,707 - [MAIN] - ERROR - Game.Server.Managers.ScriptMgr - Script compilation failed because: 
+14:48:43,708 - [MAIN] - ERROR - Game.Server.Managers.ScriptMgr - ; esperado
+14:48:43,709 - [MAIN] - ERROR - Game.Server.Managers.ScriptMgr -    d:\DDT\DDTank-3.0\Game.Service\bin\Debug\scripts\AI\Messions\DCSM2001.cs Line:159 Col:44
+14:48:43,709 - [MAIN] - ERROR - Game.Server.Managers.ScriptMgr - Script compilation failed because: 
+14:48:43,710 - [MAIN] - ERROR - Game.Server.Managers.ScriptMgr - Token ';' inválido na declaração de membro class, struct ou interface
+14:48:43,710 - [MAIN] - ERROR - Game.Server.Managers.ScriptMgr -    d:\DDT\DDTank-3.0\Game.Service\bin\Debug\scripts\AI\Messions\DCSM2001.cs Line:160 Col:37
+14:48:43,711 - [MAIN] - ERROR - Game.Server.Managers.ScriptMgr - Script compilation failed because: 
+14:48:43,711 - [MAIN] - ERROR - Game.Server.Managers.ScriptMgr - ; esperado
+14:48:43,712 - [MAIN] - ERROR - Game.Server.Managers.ScriptMgr -    d:\DDT\DDTank-3.0\Game.Service\bin\Debug\scripts\AI\Messions\ExplorationMission.cs Line:243 Col:44
+14:48:43,713 - [MAIN] - ERROR - Game.Server.Managers.ScriptMgr - Script compilation failed because: 
+14:48:43,714 - [MAIN] - ERROR - Game.Server.Managers.ScriptMgr - Token ';' inválido na declaração de membro class, struct ou interface
+14:48:43,714 - [MAIN] - ERROR - Game.Server.Managers.ScriptMgr -    d:\DDT\DDTank-3.0\Game.Service\bin\Debug\scripts\AI\Messions\ExplorationMission.cs Line:244 Col:37
+14:48:43,717 - [MAIN] - ERROR - Game.Server.Managers.ScriptMgr - Script compilation failed because: 
+14:48:43,718 - [MAIN] - ERROR - Game.Server.Managers.ScriptMgr - { ou ; esperado
+14:48:43,718 - [MAIN] - ERROR - Game.Server.Managers.ScriptMgr -    d:\DDT\DDTank-3.0\Game.Service\bin\Debug\scripts\AI\Messions\NpcCreateParam.cs Line:24 Col:17
+14:48:43,719 - [MAIN] - ERROR - Game.Server.Managers.ScriptMgr - Script compilation failed because: 
+14:48:43,720 - [MAIN] - ERROR - Game.Server.Managers.ScriptMgr - { ou ; esperado
+14:48:43,720 - [MAIN] - ERROR - Game.Server.Managers.ScriptMgr -    d:\DDT\DDTank-3.0\Game.Service\bin\Debug\scripts\AI\Messions\NpcCreateParam.cs Line:32 Col:17
+14:48:43,721 - [MAIN] - ERROR - Game.Server.Managers.ScriptMgr - Script compilation failed because: 
+14:48:43,722 - [MAIN] - ERROR - Game.Server.Managers.ScriptMgr - { ou ; esperado
+14:48:43,722 - [MAIN] - ERROR - Game.Server.Managers.ScriptMgr -    d:\DDT\DDTank-3.0\Game.Service\bin\Debug\scripts\AI\Messions\NpcCreateParam.cs Line:40 Col:17
+14:48:43,723 - [MAIN] - ERROR - Game.Server.Managers.ScriptMgr - Script compilation failed because: 
+14:48:43,724 - [MAIN] - ERROR - Game14:51:14,255 - [MAIN] - INFO  - Bussiness.GameProperties - Refreshing game properties!
+14:51:15,053 - [MAIN] - ERROR - Game.Server.Managers.ScriptMgr - Script compilation failed because: 
+14:51:16,254 - [MAIN] - ERROR - Game.Server.Managers.ScriptMgr - ; esperado
+14:51:16,254 - [MAIN] - ERROR - Game.Server.Managers.ScriptMgr -    d:\DDT\DDTank-3.0\Game.Service\bin\Debug\scripts\AI\Messions\CHM1271.cs Line:152 Col:44
+14:51:16,254 - [MAIN] - ERROR - Game.Server.Managers.ScriptMgr - Script compilation failed because: 
+14:51:16,255 - [MAIN] - ERROR - Game.Server.Managers.ScriptMgr - Token ';' inválido na declaração de membro class, struct ou interface
+14:51:16,255 - [MAIN] - ERROR - Game.Server.Managers.ScriptMgr -    d:\DDT\DDTank-3.0\Game.Service\bin\Debug\scripts\AI\Messions\CHM1271.cs Line:153 Col:37
+14:51:16,256 - [MAIN] - ERROR - Game.Server.Managers.ScriptMgr - Script compilation failed because: 
+14:51:16,256 - [MAIN] - ERROR - Game.Server.Managers.ScriptMgr - ; esperado
+14:51:16,256 - [MAIN] - ERROR - Game.Server.Managers.ScriptMgr -    d:\DDT\DDTank-3.0\Game.Service\bin\Debug\scripts\AI\Messions\CHM1274.cs Line:158 Col:44
+14:51:16,256 - [MAIN] - ERROR - Game.Server.Managers.ScriptMgr - Script compilation failed because: 
+14:51:16,257 - [MAIN] - ERROR - Game.Server.Managers.ScriptMgr - O método deve ter um tipo de retorno
+14:51:16,257 - [MAIN] - ERROR - Game.Server.Managers.ScriptMgr -    d:\DDT\DDTank-3.0\Game.Service\bin\Debug\scripts\AI\Messions\CHM1274.cs Line:159 Col:18
+14:51:16,258 - [MAIN] - ERROR - Game.Server.Managers.ScriptMgr - Script compilation failed because: 
+14:51:16,258 - [MAIN] - ERROR - Game.Server.Managers.ScriptMgr - Caractere '$' inesperado
+14:51:16,258 - [MAIN] - ERROR - Game.Server.Managers.ScriptMgr -    d:\DDT\DDTank-3.0\Game.Service\bin\Debug\scripts\AI\Messions\CHM1275.cs Line:47 Col:41
+14:51:16,258 - [MAIN] - ERROR - Game.Server.Managers.ScriptMgr - Script compilation failed because: 
+14:51:16,259 - [MAIN] - ERROR - Game.Server.Managers.ScriptMgr - Caractere '$' inesperado
+14:51:16,259 - [MAIN] - ERROR - Game.Server.Managers.ScriptMgr -    d:\DDT\DDTank-3.0\Game.Service\bin\Debug\scripts\AI\Messions\CHM1275.cs Line:149 Col:37
+14:51:16,259 - [MAIN] - ERROR - Game.Server.Managers.ScriptMgr - Script compilation failed because: 
+14:51:16,259 - [MAIN] - ERROR - Game.Server.Managers.ScriptMgr - ; esperado
+14:51:16,260 - [MAIN] - ERROR - Game.Server.Managers.ScriptMgr -    d:\DDT\DDTank-3.0\Game.Service\bin\Debug\scripts\AI\Messions\CHM1275.cs Line:163 Col:44
+14:51:16,260 - [MAIN] - ERROR - Game.Server.Managers.ScriptMgr - Script compilation failed because: 
+14:51:16,260 - [MAIN] - ERROR - Game.Server.Managers.ScriptMgr - Token ';' inválido na declaração de membro class, struct ou interface
+14:51:16,260 - [MAIN] - ERROR - Game.Server.Managers.ScriptMgr -    d:\DDT\DDTank-3.0\Game.Service\bin\Debug\scripts\AI\Messions\CHM1275.cs Line:164 Col:25
+14:51:16,261 - [MAIN] - ERROR - Game.Server.Managers.ScriptMgr - Script compilation failed because: 
+14:51:16,261 - [MAIN] - ERROR - Game.Server.Managers.ScriptMgr - ; esperado
+14:51:16,261 - [MAIN] - ERROR - Game.Server.Managers.ScriptMgr -    d:\DDT\DDTank-3.0\Game.Service\bin\Debug\scripts\AI\Messions\CHM1277.cs Line:112 Col:44
+14:51:16,261 - [MAIN] - ERROR - Game.Server.Managers.ScriptMgr - Script compilation failed because: 
+14:51:16,261 - [MAIN] - ERROR - Game.Server.Managers.ScriptMgr - Token ';' inválido na declaração de membro class, struct ou interface
+14:51:16,266 - [MAIN] - ERROR - Game.Server.Managers.ScriptMgr -    d:\DDT\DDTank-3.0\Game.Service\bin\Debug\scripts\AI\Messions\CHM1277.cs Line:113 Col:24
+14:51:16,267 - [MAIN] - ERROR - Game.Server.Managers.ScriptMgr - Script compilation failed because: 
+14:51:16,268 - [MAIN] - ERROR - Game.Server.Managers.ScriptMgr - ; esperado
+14:51:16,269 - [MAIN] - ERROR - Game.Server.Managers.ScriptMgr -    d:\DDT\DDTank-3.0\Game.Service\bin\Debug\scripts\AI\Messions\CNM1174.cs Line:156 Col:44
+14:51:16,269 - [MAIN] - ERROR - Game.Server.Managers.ScriptMgr - Script compilation failed because: 
+14:51:16,270 - [MAIN] - ERROR - Game.Server.Managers.ScriptMgr - O método deve ter um tipo de retorno
+14:51:16,270 - [MAIN] - ERROR - Game.Server.Managers.ScriptMgr -    d:\DDT\DDTank-3.0\Game.Service\bin\Debug\scripts\AI\Messions\CNM1174.cs Line:157 Col:18
+14:51:16,271 - [MAIN] - ERROR - Game.Server.Managers.ScriptMgr - Script compilation failed because: 
+14:51:16,272 - [MAIN] - ERROR - Game.Server.Managers.ScriptMgr - Caractere '$' inesperado
+14:51:16,272 - [MAIN] - ERROR - Game.Server.Managers.ScriptMgr -    d:\DDT\DDTank-3.0\Game.Service\bin\Debug\scripts\AI\Messions\CNM1175.cs Line:43 Col:41
+14:51:16,273 - [MAIN] - ERROR - Game.Server.Managers.ScriptMgr - Script compilation failed because: 
+14:51:16,273 - [MAIN] - ERROR - Game.Server.Managers.ScriptMgr - Caractere '$' inesperado
+14:51:16,274 - [MAIN] - ERROR - Game.Server.Managers.ScriptMgr -    d:\DDT\DDTank-3.0\Game.Service\bin\Debug\scripts\AI\Messions\CNM1175.cs Line:142 Col:37
+14:51:16,274 - [MAIN] - ERROR - Game.Server.Managers.ScriptMgr - Script compilation failed because: 
+14:51:16,278 - [MAIN] - ERROR - Game.Server.Managers.ScriptMgr - ; esperado
+14:51:16,278 - [MAIN] - ERROR - Game.Server.Managers.ScriptMgr -    d:\DDT\DDTank-3.0\Game.Service\bin\Debug\scripts\AI\Messions\CNM1175.cs Line:156 Col:44
+14:51:16,279 - [MAIN] - ERROR - Game.Server.Managers.ScriptMgr - Script compilation failed because: 
+14:51:16,280 - [MAIN] - ERROR - Game.Server.Managers.ScriptMgr - Token ';' inválido na declaração de membro class, struct ou interface
+14:51:16,280 - [MAIN] - ERROR - Game.Server.Managers.ScriptMgr -    d:\DDT\DDTank-3.0\Game.Service\bin\Debug\scripts\AI\Messions\CNM1175.cs Line:157 Col:25
+14:51:16,281 - [MAIN] - ERROR - Game.Server.Managers.ScriptMgr - Script compilation failed because: 
+14:51:16,282 - [MAIN] - ERROR - Game.Server.Managers.ScriptMgr - ; esperado
+14:51:16,283 - [MAIN] - ERROR - Game.Server.Managers.ScriptMgr -    d:\DDT\DDTank-3.0\Game.Service\bin\Debug\scripts\AI\Messions\CNM1177.cs Line:112 Col:44
+14:51:16,284 - [MAIN] - ERROR - Game.Server.Managers.ScriptMgr - Script compilation failed because: 
+14:51:16,285 - [MAIN] - ERROR - Game.Server.Managers.ScriptMgr - Token ';' inválido na declaração de membro class, struct ou interface
+14:51:16,286 - [MAIN] - ERROR - Game.Server.Managers.ScriptMgr -    d:\DDT\DDTank-3.0\Game.Service\bin\Debug\scripts\AI\Messions\CNM1177.cs Line:113 Col:24
+14:51:16,293 - [MAIN] - ERROR - Game.Server.Managers.ScriptMgr - Script compilation failed because: 
+14:51:16,293 - [MAIN] - ERROR - Game.Server.Managers.ScriptMgr - ; esperado
+14:51:16,295 - [MAIN] - ERROR - Game.Server.Managers.ScriptMgr -    d:\DDT\DDTank-3.0\Game.Service\bin\Debug\scripts\AI\Messions\CSM1071.cs Line:152 Col:44
+14:51:16,297 - [MAIN] - ERROR - Game.Server.Managers.ScriptMgr - Script compilation failed because: 
+14:51:16,298 - [MAIN] - ERROR - Game.Server.Managers.ScriptMgr - Token ';' inválido na declaração de membro class, struct ou interface
+14:51:16,299 - [MAIN] - ERROR - Game.Server.Managers.ScriptMgr -    d:\DDT\DDTank-3.0\Game.Service\bin\Debug\scripts\AI\Messions\CSM1071.cs Line:153 Col:37
+14:51:16,300 - [MAIN] - ERROR - Game.Server.Managers.ScriptMgr - Script compilation failed because: 
+14:51:16,303 - [MAIN] - ERROR - Game.Server.Managers.ScriptMgr - ; esperado
+14:51:16,305 - [MAIN] - ERROR - Game.Server.Managers.ScriptMgr -    d:\DDT\DDTank-3.0\Game.Service\bin\Debug\scripts\AI\Messions\CSM1074.cs Line:118 Col:44
+14:51:16,306 - [MAIN] - ERROR - Game.Server.Managers.ScriptMgr - Script compilation failed because: 
+14:51:16,307 - [MAIN] - ERROR - Game.Server.Managers.ScriptMgr - O método deve ter um tipo de retorno
+14:51:16,308 - [MAIN] - ERROR - Game.Server.Managers.ScriptMgr -    d:\DDT\DDTank-3.0\Game.Service\bin\Debug\scripts\AI\Messions\CSM1074.cs Line:119 Col:18
+14:51:16,309 - [MAIN] - ERROR - Game.Server.Managers.ScriptMgr - Script compilation failed because: 
+14:51:16,310 - [MAIN] - ERROR - Game.Server.Managers.ScriptMgr - Caractere '$' inesperado
+14:51:16,311 - [MAIN] - ERROR - Game.Server.Managers.ScriptMgr -    d:\DDT\DDTank-3.0\Game.Service\bin\Debug\scripts\AI\Messions\CSM1075.cs Line:43 Col:41
+14:51:16,317 - [MAIN] - ERROR - Game.Server.Managers.ScriptMgr - Script compilation failed because: 
+14:51:16,318 - [MAIN] - ERROR - Game.Server.Managers.ScriptMgr - Caractere '$' inesperado
+14:51:16,319 - [MAIN] - ERROR - Game.Server.Managers.ScriptMgr -    d:\DDT\DDTank-3.0\Game.Service\bin\Debug\scripts\AI\Messions\CSM1075.cs Line:141 Col:37
+14:51:16,320 - [MAIN] - ERROR - Game.Server.Managers.ScriptMgr - Script compilation failed because: 
+14:51:16,322 - [MAIN] - ERROR - Game.Server.Managers.ScriptMgr - ; esperado
+14:51:16,323 - [MAIN] - ERROR - Game.Server.Managers.ScriptMgr -    d:\DDT\DDTank-3.0\Game.Service\bin\Debug\scripts\AI\Messions\CSM1075.cs Line:155 Col:44
+14:51:16,324 - [MAIN] - ERROR - Game.Server.Managers.ScriptMgr - Script compilation failed because: 
+14:51:16,327 - [MAIN] - ERROR - Game.Server.Managers.ScriptMgr - Token ';' inválido na declaração de membro class, struct ou interface
+14:51:16,328 - [MAIN] - ERROR - Game.Server.Managers.ScriptMgr -    d:\DDT\DDTank-3.0\Game.Service\bin\Debug\scripts\AI\Messions\CSM1075.cs Line:156 Col:25
+14:51:16,328 - [MAIN] - ERROR - Game.Server.Managers.ScriptMgr - Script compilation failed because: 
+14:51:16,329 - [MAIN] - ERROR - Game.Server.Managers.ScriptMgr - ; esperado
+14:51:16,329 - [MAIN] - ERROR - Game.Server.Managers.ScriptMgr -    d:\DDT\DDTank-3.0\Game.Service\bin\Debug\scripts\AI\Messions\CSM1077.cs Line:113 Col:44
+14:51:16,330 - [MAIN] - ERROR - Game.Server.Managers.ScriptMgr - Script compilation failed because: 
+14:51:16,330 - [MAIN] - ERROR - Game.Server.Managers.ScriptMgr - Token ';' inválido na declaração de membro class, struct ou interface
+14:51:16,331 - [MAIN] - ERROR - Game.Server.Managers.ScriptMgr -    d:\DDT\DDTank-3.0\Game.Service\bin\Debug\scripts\AI\Messions\CSM1077.cs Line:114 Col:24
+14:51:16,331 - [MAIN] - ERROR - Game.Server.Managers.ScriptMgr - Script compilation failed because: 
+14:51:16,332 - [MAIN] - ERROR - Game.Server.Managers.ScriptMgr - ; esperado
+14:51:16,333 - [MAIN] - ERROR - Game.Server.Managers.ScriptMgr -    d:\DDT\DDTank-3.0\Game.Service\bin\Debug\scripts\AI\Messions\CTM1371.cs Line:151 Col:44
+14:51:16,334 - [MAIN] - ERROR - Game.Server.Managers.ScriptMgr - Script compilation failed because: 
+14:51:16,334 - [MAIN] - ERROR - Game.Server.Managers.ScriptMgr - Token ';' inválido na declaração de membro class, struct ou interface
+14:51:16,335 - [MAIN] - ERROR - Game.Server.Managers.ScriptMgr -    d:\DDT\DDTank-3.0\Game.Service\bin\Debug\scripts\AI\Messions\CTM1371.cs Line:152 Col:37
+14:51:16,335 - [MAIN] - ERROR - Game.Server.Managers.ScriptMgr - Script compilation failed because: 
+14:51:16,338 - [MAIN] - ERROR - Game.Server.Managers.ScriptMgr - ; esperado
+14:51:16,339 - [MAIN] - ERROR - Game.Server.Managers.ScriptMgr -    d:\DDT\DDTank-3.0\Game.Service\bin\Debug\scripts\AI\Messions\CTM1374.cs Line:157 Col:44
+14:51:16,340 - [MAIN] - ERROR - Game.Server.Managers.ScriptMgr - Script compilation failed because: 
+14:51:16,340 - [MAIN] - ERROR - Game.Server.Managers.ScriptMgr - O método deve ter um tipo de retorno
+14:51:16,341 - [MAIN] - ERROR - Game.Server.Managers.ScriptMgr -    d:\DDT\DDTank-3.0\Game.Service\bin\Debug\scripts\AI\Messions\CTM1374.cs Line:158 Col:18
+14:51:16,341 - [MAIN] - ERROR - Game.Server.Managers.ScriptMgr - Script compilation failed because: 
+14:51:16,342 - [MAIN] - ERROR - Game.Server.Managers.ScriptMgr - Caractere '$' inesperado
+14:51:16,342 - [MAIN] - ERROR - Game.Server.Managers.ScriptMgr -    d:\DDT\DDTank-3.0\Game.Service\bin\Debug\scripts\AI\Messions\CTM1375.cs Line:44 Col:41
+14:51:16,343 - [MAIN] - ERROR - Game.Server.Managers.ScriptMgr - Script compilation failed because: 
+14:51:16,343 - [MAIN] - ERROR - Game.Server.Managers.ScriptMgr - Caractere '$' inesperado
+14:51:16,344 - [MAIN] - ERROR - Game.Server.Managers.ScriptMgr -    d:\DDT\DDTank-3.0\Game.Service\bin\Debug\scripts\AI\Messions\CTM1375.cs Line:142 Col:37
+14:51:16,345 - [MAIN] - ERROR - Game.Server.Managers.ScriptMgr - Script compilation failed because: 
+14:51:16,345 - [MAIN] - ERROR - Game.Server.Managers.ScriptMgr - ; esperado
+14:51:16,346 - [MAIN] - ERROR - Game.Server.Managers.ScriptMgr -    d:\DDT\DDTank-3.0\Game.Service\bin\Debug\scripts\AI\Messions\CTM1375.cs Line:156 Col:44
+14:51:16,346 - [MAIN] - ERROR - Game.Server.Managers.ScriptMgr - Script compilation failed because: 
+14:51:16,349 - [MAIN] - ERROR - Game.Server.Managers.ScriptMgr - Token ';' inválido na declaração de membro class, struct ou interface
+14:51:16,350 - [MAIN] - ERROR - Game.Server.Managers.ScriptMgr -    d:\DDT\DDTank-3.0\Game.Service\bin\Debug\scripts\AI\Messions\CTM1375.cs Line:157 Col:25
+14:51:16,351 - [MAIN] - ERROR - Game.Server.Managers.ScriptMgr - Script compilation failed because: 
+14:51:16,351 - [MAIN] - ERROR - Game.Server.Managers.ScriptMgr - ; esperado
+14:51:16,352 - [MAIN] - ERROR - Game.Server.Managers.ScriptMgr -    d:\DDT\DDTank-3.0\Game.Service\bin\Debug\scripts\AI\Messions\DCNM2101.cs Line:156 Col:44
+14:51:16,353 - [MAIN] - ERROR - Game.Server.Managers.ScriptMgr - Script compilation failed because: 
+14:51:16,353 - [MAIN] - ERROR - Game.Server.Managers.ScriptMgr - Token ';' inválido na declaração de membro class, struct ou interface
+14:51:16,354 - [MAIN] - ERROR - Game.Server.Managers.ScriptMgr -    d:\DDT\DDTank-3.0\Game.Service\bin\Debug\scripts\AI\Messions\DCNM2101.cs Line:157 Col:37
+14:51:16,354 - [MAIN] - ERROR - Game.Server.Managers.ScriptMgr - Script compilation failed because: 
+14:51:16,355 - [MAIN] - ERROR - Game.Server.Managers.ScriptMgr - ; esperado
+14:51:16,355 - [MAIN] - ERROR - Game.Server.Managers.ScriptMgr -    d:\DDT\DDTank-3.0\Game.Service\bin\Debug\scripts\AI\Messions\DCSM2001.cs Line:159 Col:44
+14:51:16,356 - [MAIN] - ERROR - Game.Server.Managers.ScriptMgr - Script compilation failed because: 
+14:51:16,356 - [MAIN] - ERROR - Game.Server.Managers.ScriptMgr - Token ';' inválido na declaração de membro class, struct ou interface
+14:51:16,357 - [MAIN] - ERROR - Game.Server.Managers.ScriptMgr -    d:\DDT\DDTank-3.0\Game.Service\bin\Debug\scripts\AI\Messions\DCSM2001.cs Line:160 Col:37
+14:51:16,357 - [MAIN] - ERROR - Game.Server.Managers.ScriptMgr - Script compilation failed because: 
+14:51:16,360 - [MAIN] - ERROR - Game.Server.Managers.ScriptMgr - ; esperado
+14:51:16,361 - [MAIN] - ERROR - Game.Server.Managers.ScriptMgr -    d:\DDT\DDTank-3.0\Game.Service\bin\Debug\scripts\AI\Messions\ExplorationMission.cs Line:243 Col:44
+14:51:16,361 - [MAIN] - ERROR - Game.Server.Managers.ScriptMgr - Script compilation failed because: 
+14:51:16,362 - [MAIN] - ERROR - Game.Server.Managers.ScriptMgr - Token ';' inválido na declaração de membro class, struct ou interface
+14:51:16,363 - [MAIN] - ERROR - Game.Server.Managers.ScriptMgr -    d:\DDT\DDTank-3.0\Game.Service\bin\Debug\scripts\AI\Messions\ExplorationMission.cs Line:244 Col:37
+14:51:16,363 - [MAIN] - ERROR - Game.Server.Managers.ScriptMgr - Script compilation failed because: 
+14:51:16,364 - [MAIN] - ERROR - Game.Server.Managers.ScriptMgr - { ou ; esperado
+14:51:16,365 - [MAIN] - ERROR - Game.Server.Managers.ScriptMgr -    d:\DDT\DDTank-3.0\Game.Service\bin\Debug\scripts\AI\Messions\NpcCreateParam.cs Line:24 Col:17
+14:51:16,366 - [MAIN] - ERROR - Game.Server.Managers.ScriptMgr - Script compilation failed because: 
+14:51:16,367 - [MAIN] - ERROR - Game.Server.Managers.ScriptMgr - { ou ; esperado
+14:51:16,368 - [MAIN] - ERROR - Game.Server.Managers.ScriptMgr -    d:\DDT\DDTank-3.0\Game.Service\bin\Debug\scripts\AI\Messions\NpcCreateParam.cs Line:32 Col:17
+14:51:16,371 - [MAIN] - ERROR - Game.Server.Managers.ScriptMgr - Script compilation failed because: 
+14:51:16,371 - [MAIN] - ERROR - Game.Server.Managers.ScriptMgr - { ou ; esperado
+14:51:16,372 - [MAIN] - ERROR - Game.Server.Managers.ScriptMgr -    d:\DDT\DDTank-3.0\Game.Service\bin\Debug\scripts\AI\Messions\NpcCreateParam.cs Line:40 Col:17
+14:51:16,373 - [MAIN] - ERROR - Game.Server.Managers.ScriptMgr - Script compilation failed because: 
+14:51:16,373 - [MAIN] - ERROR - Game16:04:17,143 - [MAIN] - INFO  - Bussiness.GameProperties - Refreshing game properties!
+16:04:18,584 - [MAIN] - ERROR - Game.Server.Managers.ScriptMgr - Script compilation failed because: 
+16:04:18,585 - [MAIN] - ERROR - Game.Server.Managers.ScriptMgr - ; esperado
+16:04:18,585 - [MAIN] - ERROR - Game.Server.Managers.ScriptMgr -    d:\DDT\DDTank-3.0\Game.Service\bin\Debug\scripts\AI\Messions\CHM1271.cs Line:152 Col:44
+16:04:18,586 - [MAIN] - ERROR - Game.Server.Managers.ScriptMgr - Script compilation failed because: 
+16:04:18,586 - [MAIN] - ERROR - Game.Server.Managers.ScriptMgr - Token ';' inválido na declaração de membro class, struct ou interface
+16:04:18,586 - [MAIN] - ERROR - Game.Server.Managers.ScriptMgr -    d:\DDT\DDTank-3.0\Game.Service\bin\Debug\scripts\AI\Messions\CHM1271.cs Line:153 Col:37
+16:04:18,587 - [MAIN] - ERROR - Game.Server.Managers.ScriptMgr - Script compilation failed because: 
+16:04:18,587 - [MAIN] - ERROR - Game.Server.Managers.ScriptMgr - ; esperado
+16:04:18,587 - [MAIN] - ERROR - Game.Server.Managers.ScriptMgr -    d:\DDT\DDTank-3.0\Game.Service\bin\Debug\scripts\AI\Messions\CHM1274.cs Line:158 Col:44
+16:04:18,588 - [MAIN] - ERROR - Game.Server.Managers.ScriptMgr - Script compilation failed because: 
+16:04:18,588 - [MAIN] - ERROR - Game.Server.Managers.ScriptMgr - O método deve ter um tipo de retorno
+16:04:18,588 - [MAIN] - ERROR - Game.Server.Managers.ScriptMgr -    d:\DDT\DDTank-3.0\Game.Service\bin\Debug\scripts\AI\Messions\CHM1274.cs Line:159 Col:18
+16:04:18,588 - [MAIN] - ERROR - Game.Server.Managers.ScriptMgr - Script compilation failed because: 
+16:04:18,589 - [MAIN] - ERROR - Game.Server.Managers.ScriptMgr - Caractere '$' inesperado
+16:04:18,589 - [MAIN] - ERROR - Game.Server.Managers.ScriptMgr -    d:\DDT\DDTank-3.0\Game.Service\bin\Debug\scripts\AI\Messions\CHM1275.cs Line:47 Col:41
+16:04:18,589 - [MAIN] - ERROR - Game.Server.Managers.ScriptMgr - Script compilation failed because: 
+16:04:18,589 - [MAIN] - ERROR - Game.Server.Managers.ScriptMgr - Caractere '$' inesperado
+16:04:18,589 - [MAIN] - ERROR - Game.Server.Managers.ScriptMgr -    d:\DDT\DDTank-3.0\Game.Service\bin\Debug\scripts\AI\Messions\CHM1275.cs Line:149 Col:37
+16:04:18,590 - [MAIN] - ERROR - Game.Server.Managers.ScriptMgr - Script compilation failed because: 
+16:04:18,590 - [MAIN] - ERROR - Game.Server.Managers.ScriptMgr - ; esperado
+16:04:18,590 - [MAIN] - ERROR - Game.Server.Managers.ScriptMgr -    d:\DDT\DDTank-3.0\Game.Service\bin\Debug\scripts\AI\Messions\CHM1275.cs Line:163 Col:44
+16:04:18,590 - [MAIN] - ERROR - Game.Server.Managers.ScriptMgr - Script compilation failed because: 
+16:04:18,591 - [MAIN] - ERROR - Game.Server.Managers.ScriptMgr - Token ';' inválido na declaração de membro class, struct ou interface
+16:04:18,591 - [MAIN] - ERROR - Game.Server.Managers.ScriptMgr -    d:\DDT\DDTank-3.0\Game.Service\bin\Debug\scripts\AI\Messions\CHM1275.cs Line:164 Col:25
+16:04:18,591 - [MAIN] - ERROR - Game.Server.Managers.ScriptMgr - Script compilation failed because: 
+16:04:18,591 - [MAIN] - ERROR - Game.Server.Managers.ScriptMgr - ; esperado
+16:04:18,591 - [MAIN] - ERROR - Game.Server.Managers.ScriptMgr -    d:\DDT\DDTank-3.0\Game.Service\bin\Debug\scripts\AI\Messions\CHM1277.cs Line:112 Col:44
+16:04:18,592 - [MAIN] - ERROR - Game.Server.Managers.ScriptMgr - Script compilation failed because: 
+16:04:18,592 - [MAIN] - ERROR - Game.Server.Managers.ScriptMgr - Token ';' inválido na declaração de membro class, struct ou interface
+16:04:18,593 - [MAIN] - ERROR - Game.Server.Managers.ScriptMgr -    d:\DDT\DDTank-3.0\Game.Service\bin\Debug\scripts\AI\Messions\CHM1277.cs Line:113 Col:24
+16:04:18,597 - [MAIN] - ERROR - Game.Server.Managers.ScriptMgr - Script compilation failed because: 
+16:04:18,598 - [MAIN] - ERROR - Game.Server.Managers.ScriptMgr - ; esperado
+16:04:18,599 - [MAIN] - ERROR - Game.Server.Managers.ScriptMgr -    d:\DDT\DDTank-3.0\Game.Service\bin\Debug\scripts\AI\Messions\CNM1174.cs Line:156 Col:44
+16:04:18,599 - [MAIN] - ERROR - Game.Server.Managers.ScriptMgr - Script compilation failed because: 
+16:04:18,600 - [MAIN] - ERROR - Game.Server.Managers.ScriptMgr - O método deve ter um tipo de retorno
+16:04:18,601 - [MAIN] - ERROR - Game.Server.Managers.ScriptMgr -    d:\DDT\DDTank-3.0\Game.Service\bin\Debug\scripts\AI\Messions\CNM1174.cs Line:157 Col:18
+16:04:18,601 - [MAIN] - ERROR - Game.Server.Managers.ScriptMgr - Script compilation failed because: 
+16:04:18,602 - [MAIN] - ERROR - Game.Server.Managers.ScriptMgr - Caractere '$' inesperado
+16:04:18,603 - [MAIN] - ERROR - Game.Server.Managers.ScriptMgr -    d:\DDT\DDTank-3.0\Game.Service\bin\Debug\scripts\AI\Messions\CNM1175.cs Line:43 Col:41
+16:04:18,603 - [MAIN] - ERROR - Game.Server.Managers.ScriptMgr - Script compilation failed because: 
+16:04:18,604 - [MAIN] - ERROR - Game.Server.Managers.ScriptMgr - Caractere '$' inesperado
+16:04:18,605 - [MAIN] - ERROR - Game.Server.Managers.ScriptMgr -    d:\DDT\DDTank-3.0\Game.Service\bin\Debug\scripts\AI\Messions\CNM1175.cs Line:142 Col:37
+16:04:18,605 - [MAIN] - ERROR - Game.Server.Managers.ScriptMgr - Script compilation failed because: 
+16:04:18,608 - [MAIN] - ERROR - Game.Server.Managers.ScriptMgr - ; esperado
+16:04:18,609 - [MAIN] - ERROR - Game.Server.Managers.ScriptMgr -    d:\DDT\DDTank-3.0\Game.Service\bin\Debug\scripts\AI\Messions\CNM1175.cs Line:156 Col:44
+16:04:18,609 - [MAIN] - ERROR - Game.Server.Managers.ScriptMgr - Script compilation failed because: 
+16:04:18,610 - [MAIN] - ERROR - Game.Server.Managers.ScriptMgr - Token ';' inválido na declaração de membro class, struct ou interface
+16:04:18,611 - [MAIN] - ERROR - Game.Server.Managers.ScriptMgr -    d:\DDT\DDTank-3.0\Game.Service\bin\Debug\scripts\AI\Messions\CNM1175.cs Line:157 Col:25
+16:04:18,611 - [MAIN] - ERROR - Game.Server.Managers.ScriptMgr - Script compilation failed because: 
+16:04:18,612 - [MAIN] - ERROR - Game.Server.Managers.ScriptMgr - ; esperado
+16:04:18,612 - [MAIN] - ERROR - Game.Server.Managers.ScriptMgr -    d:\DDT\DDTank-3.0\Game.Service\bin\Debug\scripts\AI\Messions\CNM1177.cs Line:112 Col:44
+16:04:18,613 - [MAIN] - ERROR - Game.Server.Managers.ScriptMgr - Script compilation failed because: 
+16:04:18,613 - [MAIN] - ERROR - Game.Server.Managers.ScriptMgr - Token ';' inválido na declaração de membro class, struct ou interface
+16:04:18,614 - [MAIN] - ERROR - Game.Server.Managers.ScriptMgr -    d:\DDT\DDTank-3.0\Game.Service\bin\Debug\scripts\AI\Messions\CNM1177.cs Line:113 Col:24
+16:04:18,615 - [MAIN] - ERROR - Game.Server.Managers.ScriptMgr - Script compilation failed because: 
+16:04:18,615 - [MAIN] - ERROR - Game.Server.Managers.ScriptMgr - ; esperado
+16:04:18,616 - [MAIN] - ERROR - Game.Server.Managers.ScriptMgr -    d:\DDT\DDTank-3.0\Game.Service\bin\Debug\scripts\AI\Messions\CSM1071.cs Line:152 Col:44
+16:04:18,616 - [MAIN] - ERROR - Game.Server.Managers.ScriptMgr - Script compilation failed because: 
+16:04:18,619 - [MAIN] - ERROR - Game.Server.Managers.ScriptMgr - Token ';' inválido na declaração de membro class, struct ou interface
+16:04:18,620 - [MAIN] - ERROR - Game.Server.Managers.ScriptMgr -    d:\DDT\DDTank-3.0\Game.Service\bin\Debug\scripts\AI\Messions\CSM1071.cs Line:153 Col:37
+16:04:18,621 - [MAIN] - ERROR - Game.Server.Managers.ScriptMgr - Script compilation failed because: 
+16:04:18,621 - [MAIN] - ERROR - Game.Server.Managers.ScriptMgr - ; esperado
+16:04:18,622 - [MAIN] - ERROR - Game.Server.Managers.ScriptMgr -    d:\DDT\DDTank-3.0\Game.Service\bin\Debug\scripts\AI\Messions\CSM1074.cs Line:118 Col:44
+16:04:18,622 - [MAIN] - ERROR - Game.Server.Managers.ScriptMgr - Script compilation failed because: 
+16:04:18,623 - [MAIN] - ERROR - Game.Server.Managers.ScriptMgr - O método deve ter um tipo de retorno
+16:04:18,624 - [MAIN] - ERROR - Game.Server.Managers.ScriptMgr -    d:\DDT\DDTank-3.0\Game.Service\bin\Debug\scripts\AI\Messions\CSM1074.cs Line:119 Col:18
+16:04:18,624 - [MAIN] - ERROR - Game.Server.Managers.ScriptMgr - Script compilation failed because: 
+16:04:18,625 - [MAIN] - ERROR - Game.Server.Managers.ScriptMgr - Caractere '$' inesperado
+16:04:18,626 - [MAIN] - ERROR - Game.Server.Managers.ScriptMgr -    d:\DDT\DDTank-3.0\Game.Service\bin\Debug\scripts\AI\Messions\CSM1075.cs Line:43 Col:41
+16:04:18,626 - [MAIN] - ERROR - Game.Server.Managers.ScriptMgr - Script compilation failed because: 
+16:04:18,627 - [MAIN] - ERROR - Game.Server.Managers.ScriptMgr - Caractere '$' inesperado
+16:04:18,627 - [MAIN] - ERROR - Game.Server.Managers.ScriptMgr -    d:\DDT\DDTank-3.0\Game.Service\bin\Debug\scripts\AI\Messions\CSM1075.cs Line:141 Col:37
+16:04:18,630 - [MAIN] - ERROR - Game.Server.Managers.ScriptMgr - Script compilation failed because: 
+16:04:18,630 - [MAIN] - ERROR - Game.Server.Managers.ScriptMgr - ; esperado
+16:04:18,631 - [MAIN] - ERROR - Game.Server.Managers.ScriptMgr -    d:\DDT\DDTank-3.0\Game.Service\bin\Debug\scripts\AI\Messions\CSM1075.cs Line:155 Col:44
+16:04:18,631 - [MAIN] - ERROR - Game.Server.Managers.ScriptMgr - Script compilation failed because: 
+16:04:18,632 - [MAIN] - ERROR - Game.Server.Managers.ScriptMgr - Token ';' inválido na declaração de membro class, struct ou interface
+16:04:18,633 - [MAIN] - ERROR - Game.Server.Managers.ScriptMgr -    d:\DDT\DDTank-3.0\Game.Service\bin\Debug\scripts\AI\Messions\CSM1075.cs Line:156 Col:25
+16:04:18,633 - [MAIN] - ERROR - Game.Server.Managers.ScriptMgr - Script compilation failed because: 
+16:04:18,634 - [MAIN] - ERROR - Game.Server.Managers.ScriptMgr - ; esperado
+16:04:18,634 - [MAIN] - ERROR - Game.Server.Managers.ScriptMgr -    d:\DDT\DDTank-3.0\Game.Service\bin\Debug\scripts\AI\Messions\CSM1077.cs Line:113 Col:44
+16:04:18,635 - [MAIN] - ERROR - Game.Server.Managers.ScriptMgr - Script compilation failed because: 
+16:04:18,635 - [MAIN] - ERROR - Game.Server.Managers.ScriptMgr - Token ';' inválido na declaração de membro class, struct ou interface
+16:04:18,636 - [MAIN] - ERROR - Game.Server.Managers.ScriptMgr -    d:\DDT\DDTank-3.0\Game.Service\bin\Debug\scripts\AI\Messions\CSM1077.cs Line:114 Col:24
+16:04:18,636 - [MAIN] - ERROR - Game.Server.Managers.ScriptMgr - Script compilation failed because: 
+16:04:18,637 - [MAIN] - ERROR - Game.Server.Managers.ScriptMgr - ; esperado
+16:04:18,637 - [MAIN] - ERROR - Game.Server.Managers.ScriptMgr -    d:\DDT\DDTank-3.0\Game.Service\bin\Debug\scripts\AI\Messions\CTM1371.cs Line:151 Col:44
+16:04:18,638 - [MAIN] - ERROR - Game.Server.Managers.ScriptMgr - Script compilation failed because: 
+16:04:18,638 - [MAIN] - ERROR - Game.Server.Managers.ScriptMgr - Token ';' inválido na declaração de membro class, struct ou interface
+16:04:18,641 - [MAIN] - ERROR - Game.Server.Managers.ScriptMgr -    d:\DDT\DDTank-3.0\Game.Service\bin\Debug\scripts\AI\Messions\CTM1371.cs Line:152 Col:37
+16:04:18,642 - [MAIN] - ERROR - Game.Server.Managers.ScriptMgr - Script compilation failed because: 
+16:04:18,642 - [MAIN] - ERROR - Game.Server.Managers.ScriptMgr - ; esperado
+16:04:18,643 - [MAIN] - ERROR - Game.Server.Managers.ScriptMgr -    d:\DDT\DDTank-3.0\Game.Service\bin\Debug\scripts\AI\Messions\CTM1374.cs Line:157 Col:44
+16:04:18,644 - [MAIN] - ERROR - Game.Server.Managers.ScriptMgr - Script compilation failed because: 
+16:04:18,644 - [MAIN] - ERROR - Game.Server.Managers.ScriptMgr - O método deve ter um tipo de retorno
+16:04:18,645 - [MAIN] - ERROR - Game.Server.Managers.ScriptMgr -    d:\DDT\DDTank-3.0\Game.Service\bin\Debug\scripts\AI\Messions\CTM1374.cs Line:158 Col:18
+16:04:18,645 - [MAIN] - ERROR - Game.Server.Managers.ScriptMgr - Script compilation failed because: 
+16:04:18,646 - [MAIN] - ERROR - Game.Server.Managers.ScriptMgr - Caractere '$' inesperado
+16:04:18,646 - [MAIN] - ERROR - Game.Server.Managers.ScriptMgr -    d:\DDT\DDTank-3.0\Game.Service\bin\Debug\scripts\AI\Messions\CTM1375.cs Line:44 Col:41
+16:04:18,647 - [MAIN] - ERROR - Game.Server.Managers.ScriptMgr - Script compilation failed because: 
+16:04:18,647 - [MAIN] - ERROR - Game.Server.Managers.ScriptMgr - Caractere '$' inesperado
+16:04:18,648 - [MAIN] - ERROR - Game.Server.Managers.ScriptMgr -    d:\DDT\DDTank-3.0\Game.Service\bin\Debug\scripts\AI\Messions\CTM1375.cs Line:142 Col:37
+16:04:18,648 - [MAIN] - ERROR - Game.Server.Managers.ScriptMgr - Script compilation failed because: 
+16:04:18,649 - [MAIN] - ERROR - Game.Server.Managers.ScriptMgr - ; esperado
+16:04:18,649 - [MAIN] - ERROR - Game.Server.Managers.ScriptMgr -    d:\DDT\DDTank-3.0\Game.Service\bin\Debug\scripts\AI\Messions\CTM1375.cs Line:156 Col:44
+16:04:18,650 - [MAIN] - ERROR - Game.Server.Managers.ScriptMgr - Script compilation failed because: 
+16:04:18,653 - [MAIN] - ERROR - Game.Server.Managers.ScriptMgr - Token ';' inválido na declaração de membro class, struct ou interface
+16:04:18,654 - [MAIN] - ERROR - Game.Server.Managers.ScriptMgr -    d:\DDT\DDTank-3.0\Game.Service\bin\Debug\scripts\AI\Messions\CTM1375.cs Line:157 Col:25
+16:04:18,654 - [MAIN] - ERROR - Game.Server.Managers.ScriptMgr - Script compilation failed because: 
+16:04:18,655 - [MAIN] - ERROR - Game.Server.Managers.ScriptMgr - ; esperado
+16:04:18,655 - [MAIN] - ERROR - Game.Server.Managers.ScriptMgr -    d:\DDT\DDTank-3.0\Game.Service\bin\Debug\scripts\AI\Messions\DCNM2101.cs Line:156 Col:44
+16:04:18,656 - [MAIN] - ERROR - Game.Server.Managers.ScriptMgr - Script compilation failed because: 
+16:04:18,656 - [MAIN] - ERROR - Game.Server.Managers.ScriptMgr - Token ';' inválido na declaração de membro class, struct ou interface
+16:04:18,657 - [MAIN] - ERROR - Game.Server.Managers.ScriptMgr -    d:\DDT\DDTank-3.0\Game.Service\bin\Debug\scripts\AI\Messions\DCNM2101.cs Line:157 Col:37
+16:04:18,658 - [MAIN] - ERROR - Game.Server.Managers.ScriptMgr - Script compilation failed because: 
+16:04:18,658 - [MAIN] - ERROR - Game.Server.Managers.ScriptMgr - ; esperado
+16:04:18,659 - [MAIN] - ERROR - Game.Server.Managers.ScriptMgr -    d:\DDT\DDTank-3.0\Game.Service\bin\Debug\scripts\AI\Messions\DCSM2001.cs Line:159 Col:44
+16:04:18,659 - [MAIN] - ERROR - Game.Server.Managers.ScriptMgr - Script compilation failed because: 
+16:04:18,660 - [MAIN] - ERROR - Game.Server.Managers.ScriptMgr - Token ';' inválido na declaração de membro class, struct ou interface
+16:04:18,660 - [MAIN] - ERROR - Game.Server.Managers.ScriptMgr -    d:\DDT\DDTank-3.0\Game.Service\bin\Debug\scripts\AI\Messions\DCSM2001.cs Line:160 Col:37
+16:04:18,663 - [MAIN] - ERROR - Game.Server.Managers.ScriptMgr - Script compilation failed because: 
+16:04:18,663 - [MAIN] - ERROR - Game.Server.Managers.ScriptMgr - ; esperado
+16:04:18,664 - [MAIN] - ERROR - Game.Server.Managers.ScriptMgr -    d:\DDT\DDTank-3.0\Game.Service\bin\Debug\scripts\AI\Messions\ExplorationMission.cs Line:243 Col:44
+16:04:18,665 - [MAIN] - ERROR - Game.Server.Managers.ScriptMgr - Script compilation failed because: 
+16:04:18,665 - [MAIN] - ERROR - Game.Server.Managers.ScriptMgr - Token ';' inválido na declaração de membro class, struct ou interface
+16:04:18,666 - [MAIN] - ERROR - Game.Server.Managers.ScriptMgr -    d:\DDT\DDTank-3.0\Game.Service\bin\Debug\scripts\AI\Messions\ExplorationMission.cs Line:244 Col:37
+16:04:18,666 - [MAIN] - ERROR - Game.Server.Managers.ScriptMgr - Script compilation failed because: 
+16:04:18,667 - [MAIN] - ERROR - Game.Server.Managers.ScriptMgr - { ou ; esperado
+16:04:18,668 - [MAIN] - ERROR - Game.Server.Managers.ScriptMgr -    d:\DDT\DDTank-3.0\Game.Service\bin\Debug\scripts\AI\Messions\NpcCreateParam.cs Line:24 Col:17
+16:04:18,668 - [MAIN] - ERROR - Game.Server.Managers.ScriptMgr - Script compilation failed because: 
+16:04:18,669 - [MAIN] - ERROR - Game.Server.Managers.ScriptMgr - { ou ; esperado
+16:04:18,670 - [MAIN] - ERROR - Game.Server.Managers.ScriptMgr -    d:\DDT\DDTank-3.0\Game.Service\bin\Debug\scripts\AI\Messions\NpcCreateParam.cs Line:32 Col:17
+16:04:18,670 - [MAIN] - ERROR - Game.Server.Managers.ScriptMgr - Script compilation failed because: 
+16:04:18,671 - [MAIN] - ERROR - Game.Server.Managers.ScriptMgr - { ou ; esperado
+16:04:18,671 - [MAIN] - ERROR - Game.Server.Managers.ScriptMgr -    d:\DDT\DDTank-3.0\Game.Service\bin\Debug\scripts\AI\Messions\NpcCreateParam.cs Line:40 Col:17
+16:04:18,674 - [MAIN] - ERROR - Game.Server.Managers.ScriptMgr - Script compilation failed because: 
+16:04:18,675 - [MAIN] - ERROR - Game16:11:45,246 - [MAIN] - INFO  - Bussiness.GameProperties - Refreshing game properties!
+16:11:46,416 - [MAIN] - ERROR - Game.Server.Managers.ScriptMgr - Script compilation failed because: 
+16:11:46,417 - [MAIN] - ERROR - Game.Server.Managers.ScriptMgr - Caractere '$' inesperado
+16:11:46,417 - [MAIN] - ERROR - Game.Server.Managers.ScriptMgr -    d:\DDT\DDTank-3.0\Game.Service\bin\Debug\scripts\AI\Messions\CHM1275.cs Line:47 Col:41
+16:11:46,417 - [MAIN] - ERROR - Game.Server.Managers.ScriptMgr - Script compilation failed because: 
+16:11:46,418 - [MAIN] - ERROR - Game.Server.Managers.ScriptMgr - Caractere '$' inesperado
+16:11:46,418 - [MAIN] - ERROR - Game.Server.Managers.ScriptMgr -    d:\DDT\DDTank-3.0\Game.Service\bin\Debug\scripts\AI\Messions\CHM1275.cs Line:149 Col:37
+16:11:46,418 - [MAIN] - ERROR - Game.Server.Managers.ScriptMgr - Script compilation failed because: 
+16:11:46,419 - [MAIN] - ERROR - Game.Server.Managers.ScriptMgr - Caractere '$' inesperado
+16:11:46,419 - [MAIN] - ERROR - Game.Server.Managers.ScriptMgr -    d:\DDT\DDTank-3.0\Game.Service\bin\Debug\scripts\AI\Messions\CNM1175.cs Line:43 Col:41
+16:11:46,419 - [MAIN] - ERROR - Game.Server.Managers.ScriptMgr - Script compilation failed because: 
+16:11:46,419 - [MAIN] - ERROR - Game.Server.Managers.ScriptMgr - Caractere '$' inesperado
+16:11:46,419 - [MAIN] - ERROR - Game.Server.Managers.ScriptMgr -    d:\DDT\DDTank-3.0\Game.Service\bin\Debug\scripts\AI\Messions\CNM1175.cs Line:142 Col:37
+16:11:46,420 - [MAIN] - ERROR - Game.Server.Managers.ScriptMgr - Script compilation failed because: 
+16:11:46,420 - [MAIN] - ERROR - Game.Server.Managers.ScriptMgr - Caractere '$' inesperado
+16:11:46,420 - [MAIN] - ERROR - Game.Server.Managers.ScriptMgr -    d:\DDT\DDTank-3.0\Game.Service\bin\Debug\scripts\AI\Messions\CSM1075.cs Line:43 Col:41
+16:11:46,420 - [MAIN] - ERROR - Game.Server.Managers.ScriptMgr - Script compilation failed because: 
+16:11:46,420 - [MAIN] - ERROR - Game.Server.Managers.ScriptMgr - Caractere '$' inesperado
+16:11:46,421 - [MAIN] - ERROR - Game.Server.Managers.ScriptMgr -    d:\DDT\DDTank-3.0\Game.Service\bin\Debug\scripts\AI\Messions\CSM1075.cs Line:141 Col:37
+16:11:46,421 - [MAIN] - ERROR - Game.Server.Managers.ScriptMgr - Script compilation failed because: 
+16:11:46,421 - [MAIN] - ERROR - Game.Server.Managers.ScriptMgr - Caractere '$' inesperado
+16:11:46,421 - [MAIN] - ERROR - Game.Server.Managers.ScriptMgr -    d:\DDT\DDTank-3.0\Game.Service\bin\Debug\scripts\AI\Messions\CTM1375.cs Line:44 Col:41
+16:11:46,421 - [MAIN] - ERROR - Game.Server.Managers.ScriptMgr - Script compilation failed because: 
+16:11:46,422 - [MAIN] - ERROR - Game.Server.Managers.ScriptMgr - Caractere '$' inesperado
+16:11:46,422 - [MAIN] - ERROR - Game.Server.Managers.ScriptMgr -    d:\DDT\DDTank-3.0\Game.Service\bin\Debug\scripts\AI\Messions\CTM1375.cs Line:142 Col:37
+16:11:46,422 - [MAIN] - ERROR - Game.Server.Managers.ScriptMgr - Script compilation failed because: 
+16:11:46,422 - [MAIN] - ERROR - Game.Server.Managers.ScriptMgr - { ou ; esperado
+16:11:46,422 - [MAIN] - ERROR - Game.Server.Managers.ScriptMgr -    d:\DDT\DDTank-3.0\Game.Service\bin\Debug\scripts\AI\Messions\NpcCreateParam.cs Line:24 Col:17
+16:11:46,423 - [MAIN] - ERROR - Game.Server.Managers.ScriptMgr - Script compilation failed because: 
+16:11:46,423 - [MAIN] - ERROR - Game.Server.Managers.ScriptMgr - { ou ; esperado
+16:11:46,423 - [MAIN] - ERROR - Game.Server.Managers.ScriptMgr -    d:\DDT\DDTank-3.0\Game.Service\bin\Debug\scripts\AI\Messions\NpcCreateParam.cs Line:32 Col:17
+16:11:46,424 - [MAIN] - ERROR - Game.Server.Managers.ScriptMgr - Script compilation failed because: 
+16:11:46,429 - [MAIN] - ERROR - Game.Server.Managers.ScriptMgr - { ou ; esperado
+16:11:46,429 - [MAIN] - ERROR - Game.Server.Managers.ScriptMgr -    d:\DDT\DDTank-3.0\Game.Service\bin\Debug\scripts\AI\Messions\NpcCreateParam.cs Line:40 Col:17
+16:11:46,430 - [MAIN] - ERROR - Game.Server.Managers.ScriptMgr - Script compilation failed because: 
+16:11:46,431 - [MAIN] - ERROR - Game.Server.Managers.ScriptMgr - { ou

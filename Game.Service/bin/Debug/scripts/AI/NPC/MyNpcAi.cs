@@ -1,119 +1,120 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
-using System.IO;
-using Game.Logic.AI;
+﻿using Game.Logic.AI;
 using Game.Logic.Phy.Object;
-using Game.Logic;
+using System;
+using System.Collections.Generic;
 
 namespace GameServerScript.AI.NPC
 {
     public class MyNpcAi : ABrain
     {
         protected Player m_targer;
+        private static Random random = new Random();
+        private static string[] listChat = new string[] { "为了荣誉！为了胜利！！", "握紧手中的武器，不要发抖呀～", "为了国王而战！", "敌人就在眼前，大家做好战斗准备！", "感觉最近国王的行为举止越来越反常......", "为了啵咕的胜利！！兄弟们冲啊！", "快消灭敌人！", "大家一起上,人多力量大！", "大家一起速战速决！", "包围敌人，歼灭他们。", "增援！增援！我们需要更多的增援！！", "就算牺牲自己，也不会让你们轻易得逞。", "不要轻视啵咕的力量，否则你会为此付出代价。" };
 
-        public override void OnBeginSelfTurn()
+        public void Beating()
         {
-            base.OnBeginSelfTurn();
-        }
-
-        public override void OnBeginNewTurn()
-        {
-            base.OnBeginNewTurn();
-            m_body.CurrentDamagePlus = 1;
-            m_body.CurrentShootMinus = 1;
-            if (m_body.IsSay)
+            if (this.m_targer != null)
             {
-                string msg = GetOneChat();
-                int delay = Game.Random.Next(0, 5000);
-                m_body.Say(msg, 0, delay);
+                int num2;
+                Player player = base.Game.FindRandomPlayer();
+                switch (random.Next(2, 5))
+                {
+                    case 2:
+                        num2 = 0;
+                        while (num2 < 3)
+                        {
+                            base.Body.ShootPoint(player.X, player.Y, 0x33, 0x3e8, 0x2710, 1, 3f, 0x9f6);
+                            num2++;
+                        }
+                        base.Body.PlayMovie("beatA", 0x3e8, 0x7d0);
+                        break;
+
+                    case 3:
+                        num2 = 0;
+                        while (num2 < 2)
+                        {
+                            base.Body.ShootPoint(player.X, player.Y, 0x43, 0x3e8, 0x2710, 3, 3f, 0x9f6);
+                            num2++;
+                        }
+                        base.Body.PlayMovie("beatB", 0x3e8, 0x7d0);
+                        break;
+
+                    case 4:
+                        for (num2 = 0; num2 < 10; num2++)
+                        {
+                            base.Body.Shoot(0x43, random.Next(0, 500), 5, 20, 0x2d, 1, 0x7d0);
+                        }
+                        base.Body.PlayMovie("beatC", 0x3e8, 0x7d0);
+                        break;
+
+                    case 5:
+                        base.Body.PlayMovie("beatD", 0x3e8, 0x7d0);
+                        break;
+
+                    case 6:
+                        base.Body.PlayMovie("beatF", 0x3e8, 0x7d0);
+                        break;
+                }
             }
         }
 
-        public override void OnCreated()
+        public void Fall()
         {
-            base.OnCreated();
-            Body.Direction = -1;
+            base.Body.FallFrom(base.Body.X, base.Body.Y + 240, null, 0, 0, 12, new LivingCallBack(this.Beating));
         }
 
-        public override void OnStartAttacking()
+        public void FallBeat()
         {
-            base.OnStartAttacking();
-            m_targer = Game.FindNearestPlayer(Body.X, Body.Y);
-            Beating();
+            base.Body.Beat(this.m_targer, "beat", 100, 0, 0x7d0);
         }
 
-        public override void OnStopAttacking()
+        public static string GetOneChat()
         {
-            base.OnStopAttacking();
+            int index = random.Next(0, listChat.Length);
+            return listChat[index];
         }
 
-        public void MoveToPlayer(Player player)
+        public void Jump()
         {
-            int dis = (int)player.Distance(Body.X, Body.Y);
-            int ramdis = Game.Random.Next(((SimpleNpc)Body).NpcInfo.MoveMin, ((SimpleNpc)Body).NpcInfo.MoveMax);
-            if (dis > 97)
+            base.Body.Direction = 1;
+            base.Body.JumpTo(base.Body.X, base.Body.Y - 240, "Jump", 0, 2, 3, new LivingCallBack(this.Beating));
+        }
+
+        public static void LivingSay(List<Living> livings)
+        {
+            if ((livings != null) && (livings.Count != 0))
             {
-                if (dis > ((SimpleNpc)Body).NpcInfo.MoveMax)
+                int num = 0;
+                int count = livings.Count;
+                foreach (Living living in livings)
                 {
-                    dis = ramdis;
+                    living.IsSay = false;
+                }
+                if (count <= 5)
+                {
+                    num = random.Next(0, 2);
+                }
+                else if ((count > 5) && (count <= 10))
+                {
+                    num = random.Next(1, 3);
                 }
                 else
                 {
-                    dis = dis - 90;
+                    num = random.Next(1, 4);
                 }
-
-                if (player.Y < 420 && player.X < 210)
+                if (num > 0)
                 {
-                    if (Body.Y > 420)
+                    int[] numArray = new int[num];
+                    int num3 = 0;
+                    while (num3 < num)
                     {
-                        if (Body.X - dis < 50)
+                        int num4 = random.Next(0, count);
+                        if (!livings[num4].IsSay)
                         {
-                            Body.MoveTo(25, Body.Y, "walk", 1200, new LivingCallBack(Jump));
-                        }
-                        else
-                        {
-                            Body.MoveTo(Body.X - dis, Body.Y, "walk", 1200, new LivingCallBack(MoveBeat));
-                        }
-                    }
-                    else
-                    {
-                        if (player.X > Body.X)
-                        {
-                            Body.MoveTo(Body.X + dis, Body.Y, "walk", 1200, new LivingCallBack(MoveBeat));
-                        }
-                        else
-                        {
-                            Body.MoveTo(Body.X - dis, Body.Y, "walk", 1200, new LivingCallBack(MoveBeat));
-                        }
-                    }
-                }
-                else
-                {
-                    if (Body.Y < 420)
-                    {
-                        //if (Body.X > 200 && Body.X < 300)
-                        //{
-                        //    Body.FallFrom(Body.X, Body.Y + 240, null, 0, 0, 12, new LivingCallBack(FallBeat));
-                        //}
-                        //else
-                        //{
-                        //    Body.MoveTo(Body.X + dis, Body.Y, "walk", 1200, new LivingCallBack(MoveBeat));
-                        //}
-                        if (Body.X + dis > 200)
-                        {
-                            Body.MoveTo(200, Body.Y, "walk", 1200, new LivingCallBack(Fall));
-                        }
-                    }
-                    else
-                    {
-                        if (player.X > Body.X)
-                        {
-                            Body.MoveTo(Body.X + dis, Body.Y, "walk", 1200, new LivingCallBack(MoveBeat));
-                        }
-                        else
-                        {
-                            Body.MoveTo(Body.X - dis, Body.Y, "walk", 1200, new LivingCallBack(MoveBeat));
+                            livings[num4].IsSay = true;
+                            int delay = random.Next(0, 0x1388);
+                            livings[num4].Say(SimpleNpcAi.GetOneChat(), 0, delay);
+                            num3++;
                         }
                     }
                 }
@@ -122,139 +123,98 @@ namespace GameServerScript.AI.NPC
 
         public void MoveBeat()
         {
-            Body.Beat(m_targer, "beat", 100, 0, 0);
+            base.Body.Beat(this.m_targer, "beat", 100, 0, 0);
         }
 
-        public void FallBeat()
+        public void MoveToPlayer(Player player)
         {
-            Body.Beat(m_targer, "beat", 100, 0, 2000);
-        }
-
-        public void Jump()
-        {
-            Body.Direction = 1;
-            Body.JumpTo(Body.X, Body.Y - 240, "Jump", 0, 2, 3, new LivingCallBack(Beating));
-        }
-
-        public void Beating()
-        {
-            if (m_targer != null)
+            int num = (int) player.Distance(base.Body.X, base.Body.Y);
+            int num2 = base.Game.Random.Next(((SimpleNpc) base.Body).NpcInfo.MoveMin, ((SimpleNpc) base.Body).NpcInfo.MoveMax);
+            if (num > 0x61)
             {
-                Player target = Game.FindRandomPlayer();
-                //MoveToPlayer(m_targer);
-                int rand = random.Next(2, 5);
-                switch (rand)
+                if (num > ((SimpleNpc) base.Body).NpcInfo.MoveMax)
                 {
-                    case 2:
-                        for (int i = 0; i < 3; i++)
-                        {
-                            Body.ShootPoint(target.X, target.Y, 51, 1000, 10000, 1, 3.0f, 2550);
-                        }
-                        //Body.ShootPoint(m_targer.X,m_targer.Y,51,500,10000,2,100,3000);
-                        Body.PlayMovie("beatA", 1000, 2000);
-                        break;
-                    case 3:
-                        for (int i = 0; i < 2; i++)
-                        {
-                            Body.ShootPoint(target.X, target.Y, 67, 1000, 10000, 3, 3.0f, 2550);
-                        }
-                        Body.PlayMovie("beatB", 1000, 2000);
-                        break;
-                    case 4:
-                        for (int i = 0; i < 10; i++)
-                        {
-                            Body.Shoot(67, random.Next(0, 500), 5, 20, 45, 1, 2000);
-                        }
-                        Body.PlayMovie("beatC", 1000, 2000);
-                        break;
-                    case 5:
-                        Body.PlayMovie("beatD", 1000, 2000);
-                        break;
-                    case 6:
-                        Body.PlayMovie("beatF", 1000, 2000);
-                        break;
-                    default:
-                        break;
+                    num = num2;
                 }
-               // Body.ShootImp(51
-
-            }
-        }
-
-        public void Fall()
-        {
-            Body.FallFrom(Body.X, Body.Y + 240, null, 0, 0, 12, new LivingCallBack(Beating));
-        }
-
-        #region NPC 小怪说话
-
-        private static Random random = new Random();
-        private static string[] listChat = new string[] { 
-            "为了荣誉！为了胜利！！",
-            "握紧手中的武器，不要发抖呀～",
-            "为了国王而战！",
-            "敌人就在眼前，大家做好战斗准备！",
-            "感觉最近国王的行为举止越来越反常......",
-            "为了啵咕的胜利！！兄弟们冲啊！",
-            "快消灭敌人！",
-            "大家一起上,人多力量大！",
-            "大家一起速战速决！",
-            "包围敌人，歼灭他们。",
-            "增援！增援！我们需要更多的增援！！",
-            "就算牺牲自己，也不会让你们轻易得逞。",
-            "不要轻视啵咕的力量，否则你会为此付出代价。"
-        };
-
-        public static string GetOneChat()
-        {
-            int index = random.Next(0, listChat.Length);
-            return listChat[index];
-        }
-
-
-        /// <summary>
-        /// 小怪说话
-        /// </summary>
-        public static void LivingSay(List<Living> livings)
-        {
-            if (livings == null || livings.Count == 0)
-                return;
-            int sayCount = 0;
-            int livCount = livings.Count;
-            foreach (Living living in livings)
-            {
-                living.IsSay = false;
-            }
-            if (livCount <= 5)
-            {
-                sayCount = random.Next(0, 2);
-            }
-            else if (livCount > 5 && livCount <= 10)
-            {
-                sayCount = random.Next(1, 3);
-            }
-            else
-            {
-                sayCount = random.Next(1, 4);
-            }
-
-            if (sayCount > 0)
-            {
-                int[] sayIndexs = new int[sayCount];
-                for (int i = 0; i < sayCount;)
+                else
                 {
-                    int index = random.Next(0, livCount);
-                    if (livings[index].IsSay == false)
+                    num -= 90;
+                }
+                if ((player.Y < 420) && (player.X < 210))
+                {
+                    if (base.Body.Y > 420)
                     {
-                        livings[index].IsSay = true;
-                        int delay = random.Next(0, 5000);
-                        livings[index].Say(SimpleNpcAi.GetOneChat(), 0, delay);
-                        i++;
+                        if ((base.Body.X - num) < 50)
+                        {
+                            base.Body.MoveTo(0x19, base.Body.Y, "walk", 0x4b0, new LivingCallBack(this.Jump));
+                        }
+                        else
+                        {
+                            base.Body.MoveTo(base.Body.X - num, base.Body.Y, "walk", 0x4b0, new LivingCallBack(this.MoveBeat));
+                        }
+                    }
+                    else if (player.X > base.Body.X)
+                    {
+                        base.Body.MoveTo(base.Body.X + num, base.Body.Y, "walk", 0x4b0, new LivingCallBack(this.MoveBeat));
+                    }
+                    else
+                    {
+                        base.Body.MoveTo(base.Body.X - num, base.Body.Y, "walk", 0x4b0, new LivingCallBack(this.MoveBeat));
                     }
                 }
+                else if (base.Body.Y < 420)
+                {
+                    if ((base.Body.X + num) > 200)
+                    {
+                        base.Body.MoveTo(200, base.Body.Y, "walk", 0x4b0, new LivingCallBack(this.Fall));
+                    }
+                }
+                else if (player.X > base.Body.X)
+                {
+                    base.Body.MoveTo(base.Body.X + num, base.Body.Y, "walk", 0x4b0, new LivingCallBack(this.MoveBeat));
+                }
+                else
+                {
+                    base.Body.MoveTo(base.Body.X - num, base.Body.Y, "walk", 0x4b0, new LivingCallBack(this.MoveBeat));
+                }
             }
         }
 
-        #endregion
+        public override void OnBeginNewTurn()
+        {
+            base.OnBeginNewTurn();
+            base.m_body.CurrentDamagePlus = 1f;
+            base.m_body.CurrentShootMinus = 1f;
+            if (base.m_body.IsSay)
+            {
+                string oneChat = GetOneChat();
+                int delay = base.Game.Random.Next(0, 0x1388);
+                base.m_body.Say(oneChat, 0, delay);
+            }
+        }
+
+        public override void OnBeginSelfTurn()
+        {
+            base.OnBeginSelfTurn();
+        }
+
+        public override void OnCreated()
+        {
+            base.OnCreated();
+            base.Body.Direction = -1;
+        }
+
+        public override void OnStartAttacking()
+        {
+            base.OnStartAttacking();
+            this.m_targer = base.Game.FindNearestPlayer(base.Body.X, base.Body.Y);
+            this.Beating();
+        }
+
+        public override void OnStopAttacking()
+        {
+            base.OnStopAttacking();
+        }
     }
 }
+

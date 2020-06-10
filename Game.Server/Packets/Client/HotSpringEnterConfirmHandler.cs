@@ -12,7 +12,7 @@ namespace Game.Server.Packets.Client
         public int HandlePacket(GameClient client, GSPacketIn packet)
         {
             var roomId = packet.ReadInt();
-            GSPacketIn pkg = new GSPacketIn((byte)ePackageType.HOTSPRING_ROOM_ENTER_CONFIRM);
+            GSPacketIn pkg = new GSPacketIn((short)ePackageType.HOTSPRING_ROOM_ENTER_CONFIRM);
             pkg.WriteInt(roomId);
             client.SendTCP(pkg);
             return 0;

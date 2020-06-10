@@ -1,150 +1,30 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
+﻿using Game.Logic;
 using Game.Logic.AI;
 using Game.Logic.Phy.Object;
-using Game.Logic;
+using System.Collections.Generic;
 using System.Drawing;
 
 namespace GameServerScript.AI.Messions
 {
-    public class NpcCreateParam
-    {
-        private int _remoteCount;
-        private int _livingCount;
-        private int _turnCreateRemoteNum;
-        private int _turnCreateLivingNum;
-        private int _samePingMaxRemoteNum;
-        private int _samePingMaxLivingNum;
-
-        public int RemoteCount
-        {
-            get { return _remoteCount; }
-            set { _remoteCount = value; }
-        }
-        public int LivingCount
-        {
-            get { return _livingCount; }
-            set { _livingCount = value; }
-        }
-
-        public int TurnCreateRemoteNum
-        {
-            get { return _turnCreateRemoteNum; }
-            set { _turnCreateRemoteNum = value; }
-        }
-
-        public int TurnCreateLivingNum
-        {
-            get { return _turnCreateLivingNum; }
-            set { _turnCreateLivingNum = value; }
-        }
-
-        public int SamePingMaxRemoteNum
-        {
-            get { return _samePingMaxRemoteNum; }
-            set { _samePingMaxRemoteNum = value; }
-        }
-        public int SamePingMaxLivingNum
-        {
-            get { return _samePingMaxLivingNum; }
-            set { _samePingMaxLivingNum = value; }
-        }
-        /// <summary>
-        /// 设置创建NPC参数
-        /// </summary>
-        /// <param name="remoteCount">需创建远程NPC数量</param>
-        /// <param name="livingCount">需创建近身NPC数量</param>
-        /// <param name="turnCreateRemoteNum">每回合创建远程NPC数量</param>
-        /// <param name="turnCreateLivingNum">每回合创建近身NPC数量</param>
-        /// <param name="samePingMaxRemoteNum">同屏最大远程NPC数量</param>
-        /// <param name="samePingMaxLivingNum">同屏最大近身NPC数量</param>
-        public NpcCreateParam(int remoteCount, int livingCount, int turnCreateRemoteNum, int turnCreateLivingNum, int samePingMaxRemoteNum, int samePingMaxLivingNum)
-        {
-            RemoteCount = remoteCount;
-            LivingCount = livingCount;
-
-            TurnCreateRemoteNum = turnCreateRemoteNum;
-            TurnCreateLivingNum = turnCreateLivingNum;
-
-            SamePingMaxRemoteNum = samePingMaxRemoteNum;
-            SamePingMaxLivingNum = samePingMaxLivingNum;
-        }
-    }
     public class ExplorationMission : AMissionControl
     {
         public Dictionary<int, int> ballIds;
-
-        public int[] remoteIds;                
-        public int[] livingIds;                
-
-        private int remoteCount = 0;            
-        private int livingCount = 0;            
-
-        private int currentTotalLivings = 0;    // 当前近身NPC数量
-        private int currentTotalRemotIds = 0;   // 当前远程NPC数量
-
-        private int turnCreateRemoteNum = 1;    
-        private int turnCreateLivingNum = 4;    
-
-        private int samePingMaxRemoteNum = 0;   
-        private int samePingMaxLivingNum = 0;   
-
+        public int[] remoteIds;
+        public int[] livingIds;
+        private int remoteCount = 0;
+        private int livingCount = 0;
+        private int currentTotalLivings = 0;
+        private int currentTotalRemotIds = 0;
+        private int turnCreateRemoteNum = 1;
+        private int turnCreateLivingNum = 4;
+        private int samePingMaxRemoteNum = 0;
+        private int samePingMaxLivingNum = 0;
         public NpcCreateParam npcCreateParamSimple = null;
         public NpcCreateParam npcCreateParamNormal = null;
         public NpcCreateParam npcCreateParamHard = null;
         public NpcCreateParam npcCreateParamTerror = null;
-
         public List<Living> livings = new List<Living>();
         public List<SimpleBoss> remoteNpc = new List<SimpleBoss>();
-
-        public override void OnPrepareNewSession()
-        {
-            base.OnPrepareNewSession();
-            switch (Game.HandLevel)
-            {
-                case eHardLevel.Simple:
-                    remoteCount = npcCreateParamSimple.RemoteCount;
-                    livingCount = npcCreateParamSimple.LivingCount;
-                    turnCreateRemoteNum = npcCreateParamSimple.TurnCreateRemoteNum;
-                    turnCreateLivingNum = npcCreateParamSimple.TurnCreateLivingNum;
-                    samePingMaxRemoteNum = npcCreateParamSimple.SamePingMaxRemoteNum;
-                    samePingMaxLivingNum = npcCreateParamSimple.SamePingMaxLivingNum;
-                    break;
-                case eHardLevel.Normal:
-                    remoteCount = npcCreateParamNormal.RemoteCount;
-                    livingCount = npcCreateParamNormal.LivingCount;
-                    turnCreateRemoteNum = npcCreateParamNormal.TurnCreateRemoteNum;
-                    turnCreateLivingNum = npcCreateParamNormal.TurnCreateLivingNum;
-                    samePingMaxRemoteNum = npcCreateParamNormal.SamePingMaxRemoteNum;
-                    samePingMaxLivingNum = npcCreateParamNormal.SamePingMaxLivingNum;
-                    break;
-                case eHardLevel.Hard:
-                    remoteCount = npcCreateParamHard.RemoteCount;
-                    livingCount = npcCreateParamHard.LivingCount;
-                    turnCreateRemoteNum = npcCreateParamHard.TurnCreateRemoteNum;
-                    turnCreateLivingNum = npcCreateParamHard.TurnCreateLivingNum;
-                    samePingMaxRemoteNum = npcCreateParamHard.SamePingMaxRemoteNum;
-                    samePingMaxLivingNum = npcCreateParamHard.SamePingMaxLivingNum;
-                    break;
-                case eHardLevel.Terror:
-                    remoteCount = npcCreateParamTerror.RemoteCount;
-                    livingCount = npcCreateParamTerror.LivingCount;
-                    turnCreateRemoteNum = npcCreateParamTerror.TurnCreateRemoteNum;
-                    turnCreateLivingNum = npcCreateParamTerror.TurnCreateLivingNum;
-                    samePingMaxRemoteNum = npcCreateParamTerror.SamePingMaxRemoteNum;
-                    samePingMaxLivingNum = npcCreateParamTerror.SamePingMaxLivingNum;
-                    break;
-                default:
-                    remoteCount = npcCreateParamSimple.RemoteCount;
-                    livingCount = npcCreateParamSimple.LivingCount;
-                    turnCreateRemoteNum = npcCreateParamSimple.TurnCreateRemoteNum;
-                    turnCreateLivingNum = npcCreateParamSimple.TurnCreateLivingNum;
-                    samePingMaxRemoteNum = npcCreateParamSimple.SamePingMaxRemoteNum;
-                    samePingMaxLivingNum = npcCreateParamSimple.SamePingMaxLivingNum;
-                    break;
-            }
-        }
 
         public override int CalculateScoreGrade(int score)
         {
@@ -152,191 +32,219 @@ namespace GameServerScript.AI.Messions
             {
                 return 3;
             }
-            else if (score > 850)
+            if (score > 850)
             {
                 return 2;
             }
-            else if (score > 775)
+            if (score > 0x307)
             {
                 return 1;
             }
-            else
-            {
-                return 0;
-            }
-        }
-
-        public override void OnStartGame()
-        {
-            CreateLiving();
-            CreateRemote();
-            Game.TotalCount = livingCount + remoteCount;
-            Game.SendMissionInfo();
-
-        }
-
-        public override void OnNewTurnStarted()
-        {
-            int totalNpcCount = remoteCount + livingCount;
-            int currentNpcCount = currentTotalRemotIds + currentTotalLivings;
-            if (Game.TurnIndex < 2 || currentNpcCount >= totalNpcCount)
-            {
-                return;
-            }
-            CreateLiving();
-            CreateRemote();
-        }
-
-        public override void OnBeginNewTurn()
-        {
-
+            return 0;
         }
 
         public override bool CanGameOver()
         {
-            bool over = true;
-            if (Game.TurnIndex > 99)
+            bool flag = true;
+            if (base.Game.TurnIndex > 0x63)
             {
                 return true;
             }
-            foreach (SimpleBoss remoteId in remoteNpc)
+            foreach (SimpleBoss boss in this.remoteNpc)
             {
-                if (remoteId.IsLiving)
+                if (boss.IsLiving)
                 {
-                    over = false;
+                    flag = false;
                     break;
                 }
             }
-            foreach (Living livingId in livings)
+            foreach (Living living in this.livings)
             {
-                if (livingId.IsLiving)
+                if (living.IsLiving)
                 {
-                    over = false;
+                    flag = false;
                     break;
                 }
             }
-            if (over)
+            if (flag)
             {
-                Game.IsWin = true;
+                base.Game.IsWin = true;
             }
-            return over;
+            return flag;
         }
 
-        public override int UpdateUIData()
+        private void CreateLiving()
         {
-            return Game.TotalKillCount;
+            if (this.livingIds.Length != 0)
+            {
+                int count = base.Game.GetLivedLivings().Count;
+                if ((this.livingCount > 0) && (count < this.samePingMaxLivingNum) && (this.currentTotalLivings < this.livingCount))
+                {
+                    for (int i = 0; i < this.turnCreateLivingNum; i++)
+                    {
+                        if ((this.currentTotalLivings >= this.livingCount) || (count >= this.samePingMaxLivingNum))
+                        {
+                            break;
+                        }
+                        Point npcBornPos = this.GetNpcBornPos();
+                        int randomNpcId = this.GetRandomNpcId(this.livingIds);
+                        this.livings.Add(base.Game.CreateNpc(randomNpcId, npcBornPos.X, npcBornPos.Y, 0));
+                        this.currentTotalLivings++;
+                        count = base.Game.GetLivedLivings().Count;
+                    }
+                }
+            }
         }
 
-        public override void OnGameOver()
+        private void CreateRemote()
         {
-
-        }
-
-        private Point GetNpcBornPos()
-        {
-            List<Point> points = Game.MapPos.PosX1;
-            int rand = Game.Random.Next(points.Count);
-            Point point = points[rand];
-            return point;
-        }
-
-        private int GetRandomNpcId(int[] list)
-        {
-            int index = Game.Random.Next(0, list.Length);
-            return list[index];
+            if (this.remoteIds.Length != 0)
+            {
+                int livedRemoteCount = this.GetLivedRemoteCount();
+                if ((this.remoteCount > 0) && (livedRemoteCount < this.samePingMaxRemoteNum) && (this.currentTotalRemotIds < this.remoteCount))
+                {
+                    for (int i = 0; i < this.turnCreateRemoteNum; i++)
+                    {
+                        if ((this.currentTotalRemotIds >= this.remoteCount) || (livedRemoteCount >= this.samePingMaxRemoteNum))
+                        {
+                            break;
+                        }
+                        Point npcBornPos = this.GetNpcBornPos();
+                        int randomNpcId = this.GetRandomNpcId(this.remoteIds);
+                        this.remoteNpc.Add(base.Game.CreateBoss(randomNpcId, npcBornPos.X, npcBornPos.Y, -1, 0));
+                        this.remoteNpc[this.currentTotalRemotIds].NpcInfo.CurrentBallId = this.ballIds[randomNpcId];
+                        this.currentTotalRemotIds++;
+                        livedRemoteCount = this.GetLivedRemoteCount();
+                    }
+                }
+            }
         }
 
         private int GetLivedRemoteCount()
         {
-            int i = 0;
-            foreach (TurnedLiving tl in Game.TurnQueue)
+            int num = 0;
+            foreach (TurnedLiving living in base.Game.TurnQueue)
             {
-                if (tl is SimpleBoss && tl.IsLiving)
-                    i++;
+                if ((living is SimpleBoss) && living.IsLiving)
+                {
+                    num++;
+                }
             }
-            return i;
+            return num;
         }
 
         public int GetMapId(int[] mapIds, int defaultMapId)
         {
             for (int i = 0; i < 100; i++)
             {
-                int index = Game.Random.Next(0, mapIds.Length);
-                int mapId = mapIds[index];
-                if (!Game.MapHistoryIds.Contains(mapId))
+                int index = base.Game.Random.Next(0, mapIds.Length);
+                int item = mapIds[index];
+                if (!base.Game.MapHistoryIds.Contains(item))
                 {
-                    Game.MapHistoryIds.Add(mapId);
-                    return mapId;
+                    base.Game.MapHistoryIds.Add(item);
+                    return item;
                 }
             }
             return defaultMapId;
         }
 
-        private void CreateRemote()
+        private Point GetNpcBornPos()
         {
-            if (remoteIds.Length == 0)
+            List<Point> list = base.Game.MapPos.PosX1;
+            int num = base.Game.Random.Next(list.Count);
+            return list[num];
+        }
+
+        private int GetRandomNpcId(int[] list)
+        {
+            int index = base.Game.Random.Next(0, list.Length);
+            return list[index];
+        }
+
+        public override void OnBeginNewTurn()
+        {
+        }
+
+        public override void OnGameOver()
+        {
+        }
+
+        public override void OnNewTurnStarted()
+        {
+            int num = this.remoteCount + this.livingCount;
+            int num2 = this.currentTotalRemotIds + this.currentTotalLivings;
+            if ((base.Game.TurnIndex >= 2) && (num2 < num))
             {
-                return;
-            }
-            int livedRemotes = GetLivedRemoteCount();
-            if (remoteCount <= 0 || livedRemotes >= samePingMaxRemoteNum)
-            {
-                return;
-            }
-            if (currentTotalRemotIds >= remoteCount)
-            {
-                return;
-            }
-            for (int i = 0; i < turnCreateRemoteNum; i++)
-            {
-                if (currentTotalRemotIds >= remoteCount)
-                {
-                    return;
-                }
-                if (livedRemotes >= samePingMaxRemoteNum)
-                {
-                    return;
-                }
-                Point point = GetNpcBornPos();
-                int remoteId = GetRandomNpcId(remoteIds);
-                remoteNpc.Add(Game.CreateBoss(remoteId, point.X, point.Y, -1, 0));
-                remoteNpc[currentTotalRemotIds].NpcInfo.CurrentBallId = ballIds[remoteId];
-                currentTotalRemotIds++;
-                livedRemotes = GetLivedRemoteCount();
+                this.CreateLiving();
+                this.CreateRemote();
             }
         }
 
-        private void CreateLiving()
+        public override void OnPrepareNewSession()
         {
-            if (livingIds.Length == 0)
+            base.OnPrepareNewSession();
+            switch (base.Game.HandLevel)
             {
-                return;
-            }
-            int livedLivings = Game.GetLivedLivings().Count;
-            if (livingCount <= 0 || livedLivings >= samePingMaxLivingNum)
-            {
-                return;
-            }
-            if (currentTotalLivings >= livingCount)
-            {
-                return;
-            }
-            for (int i = 0; i < turnCreateLivingNum; i++)
-            {
-                if (currentTotalLivings >= livingCount)
-                {
-                    return;
-                }
-                if (livedLivings >= samePingMaxLivingNum)
-                {
-                    return;
-                }
-                Point point = GetNpcBornPos();
-                int livingId = GetRandomNpcId(livingIds);
-                livings.Add(Game.CreateNpc(livingId, point.X, point.Y, 0));
-                currentTotalLivings++;
-                livedLivings = Game.GetLivedLivings().Count;
+                case eHardLevel.Simple:
+                    this.remoteCount = this.npcCreateParamSimple.RemoteCount;
+                    this.livingCount = this.npcCreateParamSimple.LivingCount;
+                    this.turnCreateRemoteNum = this.npcCreateParamSimple.TurnCreateRemoteNum;
+                    this.turnCreateLivingNum = this.npcCreateParamSimple.TurnCreateLivingNum;
+                    this.samePingMaxRemoteNum = this.npcCreateParamSimple.SamePingMaxRemoteNum;
+                    this.samePingMaxLivingNum = this.npcCreateParamSimple.SamePingMaxLivingNum;
+                    break;
+
+                case eHardLevel.Normal:
+                    this.remoteCount = this.npcCreateParamNormal.RemoteCount;
+                    this.livingCount = this.npcCreateParamNormal.LivingCount;
+                    this.turnCreateRemoteNum = this.npcCreateParamNormal.TurnCreateRemoteNum;
+                    this.turnCreateLivingNum = this.npcCreateParamNormal.TurnCreateLivingNum;
+                    this.samePingMaxRemoteNum = this.npcCreateParamNormal.SamePingMaxRemoteNum;
+                    this.samePingMaxLivingNum = this.npcCreateParamNormal.SamePingMaxLivingNum;
+                    break;
+
+                case eHardLevel.Hard:
+                    this.remoteCount = this.npcCreateParamHard.RemoteCount;
+                    this.livingCount = this.npcCreateParamHard.LivingCount;
+                    this.turnCreateRemoteNum = this.npcCreateParamHard.TurnCreateRemoteNum;
+                    this.turnCreateLivingNum = this.npcCreateParamHard.TurnCreateLivingNum;
+                    this.samePingMaxRemoteNum = this.npcCreateParamHard.SamePingMaxRemoteNum;
+                    this.samePingMaxLivingNum = this.npcCreateParamHard.SamePingMaxLivingNum;
+                    break;
+
+                case eHardLevel.Terror:
+                    this.remoteCount = this.npcCreateParamTerror.RemoteCount;
+                    this.livingCount = this.npcCreateParamTerror.LivingCount;
+                    this.turnCreateRemoteNum = this.npcCreateParamTerror.TurnCreateRemoteNum;
+                    this.turnCreateLivingNum = this.npcCreateParamTerror.TurnCreateLivingNum;
+                    this.samePingMaxRemoteNum = this.npcCreateParamTerror.SamePingMaxRemoteNum;
+                    this.samePingMaxLivingNum = this.npcCreateParamTerror.SamePingMaxLivingNum;
+                    break;
+
+                default:
+                    this.remoteCount = this.npcCreateParamSimple.RemoteCount;
+                    this.livingCount = this.npcCreateParamSimple.LivingCount;
+                    this.turnCreateRemoteNum = this.npcCreateParamSimple.TurnCreateRemoteNum;
+                    this.turnCreateLivingNum = this.npcCreateParamSimple.TurnCreateLivingNum;
+                    this.samePingMaxRemoteNum = this.npcCreateParamSimple.SamePingMaxRemoteNum;
+                    this.samePingMaxLivingNum = this.npcCreateParamSimple.SamePingMaxLivingNum;
+                    break;
             }
         }
+
+        public override void OnStartGame()
+        {
+            this.CreateLiving();
+            this.CreateRemote();
+            base.Game.TotalCount = this.livingCount + this.remoteCount;
+            base.Game.SendMissionInfo();
+        }
+
+        public override int UpdateUIData()
+        {
+            return base.Game.TotalKillCount; 
+        }
+            
     }
 }
+

@@ -113,7 +113,7 @@ namespace Game.Server.Packets.Server
             throw new NotImplementedException();
         }
 
-        public GSPacketIn SendRoomCreate(Game.Server.Rooms.BaseRoom room)
+        public GSPacketIn SendRoomCreate(Rooms.BaseRoom room)
         {
             throw new NotImplementedException();
         }
@@ -123,12 +123,12 @@ namespace Game.Server.Packets.Server
             throw new NotImplementedException();
         }
 
-        public GSPacketIn SendRoomPlayerAdd(Game.Server.GameObjects.GamePlayer player)
+        public GSPacketIn SendRoomPlayerAdd(GamePlayer player)
         {
             throw new NotImplementedException();
         }
 
-        public GSPacketIn SendRoomPlayerRemove(Game.Server.GameObjects.GamePlayer player)
+        public GSPacketIn SendRoomPlayerRemove(GamePlayer player)
         {
             throw new NotImplementedException();
         }
@@ -143,47 +143,47 @@ namespace Game.Server.Packets.Server
             throw new NotImplementedException();
         }
 
-        public GSPacketIn SendRoomPlayerChangedTeam(Game.Server.GameObjects.GamePlayer player)
+        public GSPacketIn SendRoomPlayerChangedTeam(GamePlayer player)
         {
             throw new NotImplementedException();
         }
 
-        public GSPacketIn SendRoomPairUpStart(Game.Server.Rooms.BaseRoom room)
+        public GSPacketIn SendRoomPairUpStart(Rooms.BaseRoom room)
         {
             throw new NotImplementedException();
         }
 
-        public GSPacketIn SendRoomPairUpCancel(Game.Server.Rooms.BaseRoom room)
+        public GSPacketIn SendRoomPairUpCancel(Rooms.BaseRoom room)
         {
             throw new NotImplementedException();
         }
 
-        public GSPacketIn SendEquipChange(Game.Server.GameObjects.GamePlayer player, int place, int goodsID, string style)
+        public GSPacketIn SendEquipChange(GamePlayer player, int place, int goodsID, string style)
         {
             throw new NotImplementedException();
         }
 
-        public GSPacketIn SendRoomChange(Game.Server.Rooms.BaseRoom room)
+        public GSPacketIn SendRoomChange(Rooms.BaseRoom room)
         {
             throw new NotImplementedException();
         }
 
-        public GSPacketIn SendFusionPreview(Game.Server.GameObjects.GamePlayer player, Dictionary<int, double> previewItemList, bool isBind, int MinValid)
+        public GSPacketIn SendFusionPreview(GamePlayer player, Dictionary<int, double> previewItemList, bool isBind, int MinValid)
         {
             throw new NotImplementedException();
         }
 
-        public GSPacketIn SendFusionResult(Game.Server.GameObjects.GamePlayer player, bool result)
+        public GSPacketIn SendFusionResult(GamePlayer player, bool result)
         {
             throw new NotImplementedException();
         }
 
-        public GSPacketIn SendRefineryPreview(Game.Server.GameObjects.GamePlayer player, int templateid, bool isbind, SqlDataProvider.Data.ItemInfo item)
+        public GSPacketIn SendRefineryPreview(GamePlayer player, int templateid, bool isbind, SqlDataProvider.Data.ItemInfo item)
         {
             throw new NotImplementedException();
         }
 
-        public void SendUpdateInventorySlot(Game.Server.GameUtils.PlayerInventory bag, int[] updatedSlots)
+        public void SendUpdateInventorySlot(GameUtils.PlayerInventory bag, int[] updatedSlots)
         {
             throw new NotImplementedException();
         }
@@ -198,17 +198,17 @@ namespace Game.Server.Packets.Server
             throw new NotImplementedException();
         }
 
-        public GSPacketIn SendUpdateBuffer(Game.Server.GameObjects.GamePlayer player, SqlDataProvider.Data.BufferInfo[] infos)
+        public GSPacketIn SendUpdateBuffer(GamePlayer player, SqlDataProvider.Data.BufferInfo[] infos)
         {
             throw new NotImplementedException();
         }
 
-        public GSPacketIn SendBufferList(Game.Server.GameObjects.GamePlayer player, List<Game.Server.Buffer.AbstractBuffer> infos)
+        public GSPacketIn SendBufferList(GamePlayer player, List<Game.Server.Buffer.AbstractBuffer> infos)
         {
             throw new NotImplementedException();
         }
 
-        public GSPacketIn SendUpdateQuests(Game.Server.GameObjects.GamePlayer player, byte[] states, Game.Server.Quests.BaseQuest[] quests)
+        public GSPacketIn SendUpdateQuests(GamePlayer player, byte[] states, Game.Server.Quests.BaseQuest[] quests)
         {
             throw new NotImplementedException();
         }
@@ -218,7 +218,7 @@ namespace Game.Server.Packets.Server
             throw new NotImplementedException();
         }
 
-        public GSPacketIn SendAuctionRefresh(SqlDataProvider.Data.AuctionInfo info, int auctionID, bool isExist, SqlDataProvider.Data.ItemInfo item)
+        public GSPacketIn SendAuctionRefresh(AuctionInfo info, int auctionID, bool isExist, SqlDataProvider.Data.ItemInfo item)
         {
             throw new NotImplementedException();
         }
@@ -243,72 +243,72 @@ namespace Game.Server.Packets.Server
             throw new NotImplementedException();
         }
 
-        public GSPacketIn SendGameRoomInfo(Game.Server.GameObjects.GamePlayer player, Game.Server.Rooms.BaseRoom game)
+        public GSPacketIn SendGameRoomInfo(GamePlayer player, Game.Server.Rooms.BaseRoom game)
         {
             throw new NotImplementedException();
         }
 
-        public GSPacketIn SendMarryInfoRefresh(SqlDataProvider.Data.MarryInfo info, int ID, bool isExist)
+        public GSPacketIn SendMarryInfoRefresh(MarryInfo info, int ID, bool isExist)
         {
             throw new NotImplementedException();
         }
 
-        public GSPacketIn SendMarryRoomInfo(Game.Server.GameObjects.GamePlayer player, Game.Server.SceneMarryRooms.MarryRoom room)
+        public GSPacketIn SendMarryRoomInfo(GamePlayer player, Game.Server.SceneMarryRooms.MarryRoom room)
         {
             throw new NotImplementedException();
         }
 
-        public GSPacketIn SendPlayerEnterMarryRoom(Game.Server.GameObjects.GamePlayer player)
+        public GSPacketIn SendPlayerEnterMarryRoom(GamePlayer player)
         {
             throw new NotImplementedException();
         }
 
-        public GSPacketIn SendPlayerMarryStatus(Game.Server.GameObjects.GamePlayer player, int userID, bool isMarried)
+        public GSPacketIn SendPlayerMarryStatus(GamePlayer player, int userID, bool isMarried)
         {
             throw new NotImplementedException();
         }
 
-        public GSPacketIn SendPlayerMarryApply(Game.Server.GameObjects.GamePlayer player, int userID, string userName, string loveProclamation, int ID)
+        public GSPacketIn SendPlayerMarryApply(GamePlayer player, int userID, string userName, string loveProclamation, int ID)
         {
             throw new NotImplementedException();
         }
 
-        public GSPacketIn SendPlayerDivorceApply(Game.Server.GameObjects.GamePlayer player, bool result, bool isProposer)
+        public GSPacketIn SendPlayerDivorceApply(GamePlayer player, bool result, bool isProposer)
         {
             throw new NotImplementedException();
         }
 
-        public GSPacketIn SendMarryApplyReply(Game.Server.GameObjects.GamePlayer player, int UserID, string UserName, bool result, bool isApplicant, int ID)
+        public GSPacketIn SendMarryApplyReply(GamePlayer player, int UserID, string UserName, bool result, bool isApplicant, int ID)
         {
             throw new NotImplementedException();
         }
 
-        public GSPacketIn SendBigSpeakerMsg(Game.Server.GameObjects.GamePlayer player, string msg)
+        public GSPacketIn SendBigSpeakerMsg(GamePlayer player, string msg)
         {
             throw new NotImplementedException();
         }
 
-        public GSPacketIn SendPlayerLeaveMarryRoom(Game.Server.GameObjects.GamePlayer player)
+        public GSPacketIn SendPlayerLeaveMarryRoom(GamePlayer player)
         {
             throw new NotImplementedException();
         }
 
-        public GSPacketIn SendMarryRoomLogin(Game.Server.GameObjects.GamePlayer player, bool result)
+        public GSPacketIn SendMarryRoomLogin(GamePlayer player, bool result)
         {
             throw new NotImplementedException();
         }
 
-        public GSPacketIn SendMarryRoomInfoToPlayer(Game.Server.GameObjects.GamePlayer player, bool state, SqlDataProvider.Data.MarryRoomInfo info)
+        public GSPacketIn SendMarryRoomInfoToPlayer(GamePlayer player, bool state, SqlDataProvider.Data.MarryRoomInfo info)
         {
             throw new NotImplementedException();
         }
 
-        public GSPacketIn SendMarryInfo(Game.Server.GameObjects.GamePlayer player, SqlDataProvider.Data.MarryInfo info)
+        public GSPacketIn SendMarryInfo(GamePlayer player, SqlDataProvider.Data.MarryInfo info)
         {
             throw new NotImplementedException();
         }
 
-        public GSPacketIn SendContinuation(Game.Server.GameObjects.GamePlayer player, SqlDataProvider.Data.MarryRoomInfo info)
+        public GSPacketIn SendContinuation(GamePlayer player, SqlDataProvider.Data.MarryRoomInfo info)
         {
             throw new NotImplementedException();
         }

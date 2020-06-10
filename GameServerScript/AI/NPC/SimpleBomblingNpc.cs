@@ -1,27 +1,46 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
-using Game.Logic.AI;
+﻿using Game.Logic.AI;
 using Game.Logic.Phy.Object;
 
 namespace GameServerScript.AI.NPC
 {
     public class SimpleBomblingNpc : ABrain
     {
-        private Player m_target= null;
-
+        private Player m_target = null;
         private int m_targetDis = 0;
-        public override void OnBeginSelfTurn()
+
+        public void Beat()
         {
-            base.OnBeginSelfTurn();
+            if (this.m_targetDis < 100)
+            {
+                base.Body.PlayMovie("beat", 100, 0);
+                base.Body.RangeAttacking(base.Body.X - 100, base.Body.X + 100, "cry", 0x5dc, null);
+                base.Body.Die(0x3e8);
+            }
+        }
+
+        public void MoveToPlayer(Player player)
+        {
+            int num = base.Game.Random.Next(((SimpleNpc) base.Body).NpcInfo.MoveMin, ((SimpleNpc) base.Body).NpcInfo.MoveMax);
+            if (player.X > base.Body.X)
+            {
+                base.Body.MoveTo(base.Body.X + num, base.Body.Y, "walk", 0x7d0, new LivingCallBack(this.Beat));
+            }
+            else
+            {
+                base.Body.MoveTo(base.Body.X - num, base.Body.Y, "walk", 0x7d0, new LivingCallBack(this.Beat));
+            }
         }
 
         public override void OnBeginNewTurn()
         {
             base.OnBeginNewTurn();
-            Body.CurrentDamagePlus = 1;
-            Body.CurrentShootMinus = 1;
+            base.Body.CurrentDamagePlus = 1f;
+            base.Body.CurrentShootMinus = 1f;
+        }
 
+        public override void OnBeginSelfTurn()
+        {
+            base.OnBeginSelfTurn();
         }
 
         public override void OnCreated()
@@ -32,17 +51,17 @@ namespace GameServerScript.AI.NPC
         public override void OnStartAttacking()
         {
             base.OnStartAttacking();
-            m_target = Game.FindNearestPlayer(Body.X, Body.Y);
-            m_targetDis = (int)m_target.Distance(Body.X, Body.Y);
-            if (m_targetDis < 100)
+            this.m_target = base.Game.FindNearestPlayer(base.Body.X, base.Body.Y);
+            this.m_targetDis = (int) this.m_target.Distance(base.Body.X, base.Body.Y);
+            if (this.m_targetDis < 100)
             {
-                Body.PlayMovie("beat", 100, 0);
-                Body.RangeAttacking(Body.X - 100, Body.X + 100, "cry", 1500, null);
-                Body.Die(1000);
+                base.Body.PlayMovie("beat", 100, 0);
+                base.Body.RangeAttacking(base.Body.X - 100, base.Body.X + 100, "cry", 0x5dc, null);
+                base.Body.Die(0x3e8);
             }
             else
             {
-                MoveToPlayer(m_target);
+                this.MoveToPlayer(this.m_target);
             }
         }
 
@@ -50,28 +69,6 @@ namespace GameServerScript.AI.NPC
         {
             base.OnStopAttacking();
         }
-
-        public void MoveToPlayer(Player player)
-        {
-            int dis = Game.Random.Next(((SimpleNpc)Body).NpcInfo.MoveMin, ((SimpleNpc)Body).NpcInfo.MoveMax);
-            if (player.X > Body.X)
-            {
-                Body.MoveTo(Body.X + dis, Body.Y, "walk", 2000, new LivingCallBack (Beat));
-            }
-            else
-            {
-                Body.MoveTo(Body.X - dis, Body.Y, "walk", 2000, new LivingCallBack(Beat));
-            }
-        }
-
-        public void Beat()
-        {
-            if (m_targetDis < 100)
-            {
-                Body.PlayMovie("beat", 100, 0);
-                Body.RangeAttacking(Body.X - 100, Body.X + 100, "cry", 1500, null);
-                Body.Die(1000);
-            }
-        }
     }
 }
+

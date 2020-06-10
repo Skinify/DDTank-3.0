@@ -1,27 +1,20 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
-using Game.Logic.AI;
+﻿using Game.Logic.AI;
 using Game.Logic.Phy.Object;
 using SqlDataProvider.Data;
-using Bussiness.Managers;
-using Game.Server.Statics;
+using System.Collections.Generic;
 
 namespace GameServerScript.AI.Messions
 {
-    public class CSM3001: AMissionControl
+    public class CSM3001 : AMissionControl
     {
         private List<SimpleNpc> SomeNpc = new List<SimpleNpc>();
         private SimpleBoss boss = null;
         private PhysicalObj Tip = null;
-
         private bool result = false;
-
         private int killCount = 0;
-
         private int preKillNum = 0;
-
         private bool canPlayMovie = false;
+        public int turnCount;
 
         public override int CalculateScoreGrade(int score)
         {
@@ -30,107 +23,33 @@ namespace GameServerScript.AI.Messions
             {
                 return 3;
             }
-            else if (score > 825)
+            if (score > 0x339)
             {
                 return 2;
             }
-            else if (score > 725)
+            if (score > 0x2d5)
             {
                 return 1;
             }
-            else
+            return 0;
+        }
+
+        public override bool CanGameOver()
+        {
+            base.CanGameOver();
+            if (base.Game.TurnIndex > 0x63)
             {
-                return 0;
+                return true;
             }
-        }
-
-        public override void OnPrepareNewSession()
-        {
-            base.OnPrepareNewSession();
-            //Game.AddLoadingFile(2, "image/map/1086/object/Asset.swf", "com.map.trainer.TankTrainerAssetII");
-            Game.AddLoadingFile(1, "bombs/51.swf", "tank.resource.bombs.Bomb51");
-            Game.AddLoadingFile(1, "bombs/17.swf", "tank.resource.bombs.Bomb17");
-            Game.AddLoadingFile(1, "bombs/18.swf", "tank.resource.bombs.Bomb18");
-            Game.AddLoadingFile(1, "bombs/19.swf", "tank.resource.bombs.Bomb19");
-            Game.AddLoadingFile(1, "bombs/67.swf", "tank.resource.bombs.Bomb67");
-            //Game.AddLoadingFile(1, "bombs/67.swf", "tank.resource.bombs.Bomb67");
-            //Game.AddLoadingFile(1, "bombs/52.swf", "tank.resource.bombs.Bomb52");
-            //Game.AddLoadingFile(1, "bombs/53.swf", "tank.resource.bombs.Bomb53");
-            int[] resources = {3001,3003,3004,3005};
-            Game.LoadResources(resources);
-
-            Game.LoadNpcGameOverResources(resources);
-            Game.SetMap(1089);
-        }
-
-        public override void OnStartGame()
-        {
-            base.OnStartGame();
-            //for (int i = 0; i < 4; i++)
-            //{
-            //    SomeNpc.Add(Game.CreateNpc(3005, (i + 1) * 100, 100, 1));
-            //}
-            boss = Game.CreateBoss(3005, 2000, 1200, -1, 1);
-            boss.SetRelateDemagemRect(-42, -200, 84, 194);
-            //SomeNpc.Add(Game.CreateNpc(3005, 2000, 100, 1));
-             //SomeNpc.Add(Game.CreateNpc(3003, 300, 200, 1));
-            turnCount=1;
-           
-        }
-        public  int  turnCount;
-        public override void OnNewTurnStarted()
-        {
-            List<ItemTemplateInfo> goods = new List<ItemTemplateInfo>();
-
-            List<ItemInfo> items = new List<ItemInfo>();
-
-            //foreach (Player player in Game.GetAllFightPlayers())
-            //{
-            //    foreach (SimpleNpc npc in Game.GetLivedLivings())
-            //    {
-            //        if (npc.Distance(player.X, player.Y) <= 100)
-            //        {
-            //            canPlayMovie = true;
-            //        }
-            //    }
-            //}
-            //turnCount++;
-            //switch (turnCount)
-            //{
-            //    case 2:
-                   
-            //        break;
-            //    case 3:
-            //        break;
-            //    case 4:
-            //        break;
-
-            //}
-            #region
-            if (Game.TurnIndex > 1 && Game.CurrentPlayer.Delay > Game.PveGameDelay)
+            this.result = false;
+            foreach (SimpleNpc npc in this.SomeNpc)
             {
-                for (int i = 0; i < 3; i++)
+                if (npc.IsLiving)
                 {
-                    if (SomeNpc.Count < 7)
-                    {
-                        if (turnCount % 2 == 0)
-                        {
-
-                            SomeNpc.Add(Game.CreateNpc(3003, (i + 1) * 50, boss.Y-50, 1));
-                        }
-                        else
-                        {
-                            SomeNpc.Add(Game.CreateNpc(3003, (i + 1) * 50 + 500, boss.Y-50, 1));
-                        }
-                        turnCount++;
-                    }
-                    else
-                    {
-                        break;
-                    }
+                    this.result = true;
                 }
             }
-            #endregion
+            return !(this.result || (this.SomeNpc.Count != 15));
         }
 
         public override void OnBeginNewTurn()
@@ -138,47 +57,70 @@ namespace GameServerScript.AI.Messions
             base.OnBeginNewTurn();
         }
 
-        public override bool CanGameOver()
+        public override void OnGameOver()
         {
-            base.CanGameOver();
-            if (Game.TurnIndex > 99)
+            if (!this.result)
             {
-                return true;
-            }
-
-            result = false;
-
-            foreach (SimpleNpc npc in SomeNpc)
-            {
-                if (npc.IsLiving == true)
+                foreach (Player player in base.Game.GetAllFightPlayers())
                 {
-                    result = true;
+                    player.CanGetProp = true;
+                }
+                base.Game.IsWin = true;
+            }
+        }
+
+        public override void OnNewTurnStarted()
+        {
+            List<ItemTemplateInfo> list = new List<ItemTemplateInfo>();
+            List<ItemInfo> list2 = new List<ItemInfo>();
+            if ((base.Game.TurnIndex > 1) && (base.Game.CurrentPlayer.Delay > base.Game.PveGameDelay))
+            {
+                for (int i = 0; i < 3; i++)
+                {
+                    if (this.SomeNpc.Count >= 7)
+                    {
+                        break;
+                    }
+                    if ((this.turnCount % 2) == 0)
+                    {
+                        this.SomeNpc.Add(base.Game.CreateNpc(0xbbb, (i + 1) * 50, this.boss.Y - 50, 1));
+                    }
+                    else
+                    {
+                        this.SomeNpc.Add(base.Game.CreateNpc(0xbbb, ((i + 1) * 50) + 500, this.boss.Y - 50, 1));
+                    }
+                    this.turnCount++;
                 }
             }
+        }
 
-            if (result == false && SomeNpc.Count == 15)
-            {
-                return true;
-            }
-            return false;
+        public override void OnPrepareNewSession()
+        {
+            base.OnPrepareNewSession();
+            base.Game.AddLoadingFile(1, "bombs/51.swf", "tank.resource.bombs.Bomb51");
+            base.Game.AddLoadingFile(1, "bombs/17.swf", "tank.resource.bombs.Bomb17");
+            base.Game.AddLoadingFile(1, "bombs/18.swf", "tank.resource.bombs.Bomb18");
+            base.Game.AddLoadingFile(1, "bombs/19.swf", "tank.resource.bombs.Bomb19");
+            base.Game.AddLoadingFile(1, "bombs/67.swf", "tank.resource.bombs.Bomb67");
+            int[] npcIds = new int[] { 0xbb9, 0xbbb, 0xbbc, 0xbbd };
+            base.Game.LoadResources(npcIds);
+            base.Game.LoadNpcGameOverResources(npcIds);
+            base.Game.SetMap(0x441);
+        }
+
+        public override void OnStartGame()
+        {
+            base.OnStartGame();
+            this.boss = base.Game.CreateBoss(0xbbd, 0x7d0, 0x4b0, -1, 1);
+            this.boss.SetRelateDemagemRect(-42, -200, 0x54, 0xc2);
+            this.turnCount = 1;
         }
 
         public override int UpdateUIData()
         {
-            preKillNum = Game.TotalKillCount;
-            return Game.TotalKillCount;
-        }
-
-        public override void OnGameOver()
-        {
-            if (result == false)
-            {
-                foreach (Player player in Game.GetAllFightPlayers())
-                {
-                    player.CanGetProp = true;
-                }
-                Game.IsWin = true;
-            }
+            this.preKillNum = base.Game.TotalKillCount;
+            return base.Game.TotalKillCount;
         }
     }
 }
+

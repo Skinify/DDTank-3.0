@@ -12,7 +12,7 @@ using Game.Server.HotSpringRooms.TankHandle;
 
 namespace Game.Server.HotSpringRooms.TankHandle
 {
-    [HotSpringCommandAttribute((byte)HotSpringCmdType.HOTSPRING_ROOM_INVITE)]
+    [HotSpringCommand((byte)HotSpringCmdType.HOTSPRING_ROOM_INVITE)]
     public class InviteCommand : IHotSpringCommandHandler
     {
         public bool HandleCommand(TankHotSpringLogicProcessor process, GamePlayer player, GSPacketIn packet)
@@ -34,7 +34,7 @@ namespace Game.Server.HotSpringRooms.TankHandle
             pkg.ClearContext();
 
             int id = packet.ReadInt();
-            GamePlayer invitedplayer = Managers.WorldMgr.GetPlayerById(id);
+            GamePlayer invitedplayer = WorldMgr.GetPlayerById(id);
             if (invitedplayer != null && invitedplayer.CurrentRoom == null && invitedplayer.CurrentHotSpringRoom == null)
             {
                 pkg.WriteByte((byte)HotSpringCmdType.HOTSPRING_ROOM_INVITE);

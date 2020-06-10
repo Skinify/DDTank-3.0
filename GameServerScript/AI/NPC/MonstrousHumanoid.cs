@@ -1,25 +1,58 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Text;
-using Game.Logic.AI;
 using Game.Logic.Phy.Object;
+
+using Game.Logic.AI;
 
 namespace GameServerScript.AI.NPC
 {
-    public class MonstrousHumanoid:ABrain
+    public class MonstrousHumanoid : ABrain
     {
         private Player m_target;
 
-        public override void OnBeginSelfTurn()
+        private void NpcAttack()
         {
-            base.OnBeginSelfTurn();
+            int num = 1;
+            if (this.m_target.X > base.Body.X)
+            {
+                num = 1;
+                base.Body.ChangeDirection(1, 0);
+            }
+            else
+            {
+                num = -1;
+                base.Body.ChangeDirection(-1, 0);
+            }
+            int num2 = Math.Abs((int) (this.m_target.X - base.Body.X));
+            if (num2 < 300)
+            {
+                this.ShootAttack();
+            }
+            else
+            {
+                int num3 = base.Game.Random.Next(((SimpleBoss) base.Body).NpcInfo.MoveMin, ((SimpleBoss) base.Body).NpcInfo.MoveMax) * 3;
+                if (num3 > num2)
+                {
+                    num3 = num2 - 300;
+                }
+                num3 *= num;
+                if (!base.Body.MoveTo(base.Body.X + num3, this.m_target.Y - 20, "walk", 0, new LivingCallBack(this.ShootAttack)))
+                {
+                    this.ShootAttack();
+                }
+            }
         }
 
         public override void OnBeginNewTurn()
         {
             base.OnBeginNewTurn();
-            Body.CurrentDamagePlus = 1;
-            Body.CurrentShootMinus = 1;
+            base.Body.CurrentDamagePlus = 1f;
+            base.Body.CurrentShootMinus = 1f;
+        }
+
+        public override void OnBeginSelfTurn()
+        {
+            base.OnBeginSelfTurn();
         }
 
         public override void OnCreated()
@@ -30,108 +63,68 @@ namespace GameServerScript.AI.NPC
         public override void OnStartAttacking()
         {
             base.OnStartAttacking();
-            Body.Direction = Game.FindlivingbyDir(Body);
-            bool result = false;
-            result = ShootLowestBooldPlayer();
-            if (result == true)
-                return;
-            RandomShootPlayer();            
+            base.Body.Direction = base.Game.FindlivingbyDir(base.Body);
+            if (!this.ShootLowestBooldPlayer())
+            {
+                this.RandomShootPlayer();
+            }
         }
 
         public override void OnStopAttacking()
         {
             base.OnStopAttacking();
         }
-        
-        private bool ShootLowestBooldPlayer()
-        {
-            List<Player> players = new List<Player>();
- 
-            foreach (Player player in Game.GetAllLivingPlayers())
-            {
-                if(player.Blood < player.MaxBlood * 0.2)
-                {
-                    players.Add(player);
-                }
-            }
-
-            if (players.Count > 0)
-            {
-                int index = Game.Random.Next(0, players.Count);
-                m_target = players[index];
-                NpcAttack();
-                return true;
-            }
-            else
-            {
-                return false;
-            }
-        }
 
         private void RandomShootPlayer()
         {
-            List<Player> players = Game.GetAllLivingPlayers();
-            int index = Game.Random.Next(0, players.Count);
-            m_target = players[index];
-            NpcAttack();
-        }
-
-        private void NpcAttack()
-        {
-            int npcDirection = 1;
-            if (m_target.X > Body.X)
-            {
-                npcDirection = 1;
-                Body.ChangeDirection(1, 0);
-            }
-            else
-            {
-                npcDirection = -1;
-                Body.ChangeDirection(-1, 0);
-            }
-
-            int dis = Math.Abs(m_target.X - Body.X);
-            if (dis < 300)
-            {
-                ShootAttack();
-            }
-            else
-            {
-                int length = Game.Random.Next(((SimpleBoss)Body).NpcInfo.MoveMin, ((SimpleBoss)Body).NpcInfo.MoveMax) * 3;
-                if (length > dis)
-                {
-                    length = dis - 300;
-                }
-                length *= npcDirection;
-                if (Body.MoveTo(Body.X + length, m_target.Y - 20, "walk", 0, new LivingCallBack(ShootAttack)) == false)
-                {
-                    ShootAttack();
-                }
-            }
+            List<Player> allLivingPlayers = base.Game.GetAllLivingPlayers();
+            int num = base.Game.Random.Next(0, allLivingPlayers.Count);
+            this.m_target = allLivingPlayers[num];
+            this.NpcAttack();
         }
 
         private void ShootAttack()
         {
-            int dis = Math.Abs(m_target.X - Body.X);
-            int offset = 30;
-            if (dis < 200)
+            int num = Math.Abs((int) (this.m_target.X - base.Body.X));
+            int num2 = 30;
+            if (num < 200)
             {
-                offset = 10;
+                num2 = 10;
             }
-            else if (dis < 500)
+            else if (num < 500)
             {
-                offset = 30;
+                num2 = 30;
             }
             else
             {
-                offset = 50;
+                num2 = 50;
             }
-
-            int mtX = Game.Random.Next(m_target.X - offset, m_target.X + offset);
-            if (Body.ShootPoint(mtX, m_target.Y, ((SimpleBoss)Body).NpcInfo.CurrentBallId, 1000, 10000, 1, 2, 1700))
+            int x = base.Game.Random.Next(this.m_target.X - num2, this.m_target.X + num2);
+            if (base.Body.ShootPoint(x, this.m_target.Y, ((SimpleBoss) base.Body).NpcInfo.CurrentBallId, 0x3e8, 0x2710, 1, 2f, 0x6a4))
             {
-                Body.PlayMovie("beat", 1700, 0);
+                base.Body.PlayMovie("beat", 0x6a4, 0);
             }
+        }
+
+        private bool ShootLowestBooldPlayer()
+        {
+            List<Player> list = new List<Player>();
+            foreach (Player player in base.Game.GetAllLivingPlayers())
+            {
+                if (player.Blood < (player.MaxBlood * 0.2))
+                {
+                    list.Add(player);
+                }
+            }
+            if (list.Count > 0)
+            {
+                int num = base.Game.Random.Next(0, list.Count);
+                this.m_target = list[num];
+                this.NpcAttack();
+                return true;
+            }
+            return false;
         }
     }
 }
+

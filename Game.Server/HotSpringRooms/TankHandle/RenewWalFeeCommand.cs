@@ -16,7 +16,7 @@ using Game.Server.Enumerate;
 
 namespace Game.Server.HotSpringRooms.TankHandle
 {
-    [HotSpringCommandAttribute((byte)HotSpringCmdType.HOTSPRING_ROOM_RENEWAL_FEE)]
+    [HotSpringCommand((byte)HotSpringCmdType.HOTSPRING_ROOM_RENEWAL_FEE)]
     public class RenewWalFeeCommand : IHotSpringCommandHandler
     {
         public bool HandleCommand(TankHotSpringLogicProcessor process, GamePlayer player, GSPacketIn packet)

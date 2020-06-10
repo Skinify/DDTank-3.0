@@ -1,55 +1,49 @@
-﻿using System;
-using System.Collections.Generic;
-using System.IO;
-using Game.Logic.AI;
-using Game.Logic.Phy.Object;
-using Bussiness;
-using Game.Logic;
+﻿using Game.Logic.Phy.Object;
 
 namespace GameServerScript.AI.NPC
 {
     public class TrainingSimpleNpc : SimpleNpcAi
     {
+        private void Beat()
+        {
+            int demageAmount = base.m_targer.Blood / 10;
+            if ((base.m_targer != null) && !base.Body.Beat(base.m_targer, "beat", demageAmount, 0, 0))
+            {
+                int num3 = base.Game.Random.Next(80, 150);
+                if ((base.Body.X - base.m_targer.X) > num3)
+                {
+                    base.Body.MoveTo(base.Body.X - num3, base.m_targer.Y, "walk", 0x4b0, new LivingCallBack(this.BeatCallBack));
+                }
+                else
+                {
+                    base.Body.MoveTo(base.Body.X + num3, base.m_targer.Y, "walk", 0x4b0, new LivingCallBack(this.BeatCallBack));
+                }
+            }
+        }
+
+        public void BeatCallBack()
+        {
+            int demageAmount = base.m_targer.Blood / 10;
+            base.Body.Beat(base.m_targer, "beat", demageAmount, 0, 0);
+        }
+
         public override void OnStartAttacking()
         {
-            m_body.CurrentDamagePlus = 1;
-            m_body.CurrentShootMinus = 1;
-            m_targer = Game.FindNearestPlayer(Body.X, Body.Y);
-            if (m_targer != null)
+            base.m_body.CurrentDamagePlus = 1f;
+            base.m_body.CurrentShootMinus = 1f;
+            base.m_targer = base.Game.FindNearestPlayer(base.Body.X, base.Body.Y);
+            if (base.m_targer != null)
             {
-                if (m_targer.Blood > 200)
+                if (base.m_targer.Blood > 200)
                 {
                     base.Beating();
                 }
                 else
                 {
-                    Beat();
-                }
-            }
-        }
-        public void BeatCallBack()
-        {
-            int currentBlood = m_targer.Blood;
-            int demageAmount = currentBlood / 10;
-            Body.Beat(m_targer, "beat", demageAmount, 0,0);
-        }
-        private void Beat()
-        {
-            int currentBlood = m_targer.Blood;
-            int demageAmount = currentBlood / 10;
-            
-            if (m_targer != null && Body.Beat(m_targer, "beat", demageAmount,0,0) == false)
-            {
-                int dis = Game.Random.Next(80, 150);
-                if (Body.X - m_targer.X > dis)
-                {
-                    Body.MoveTo(Body.X - dis, m_targer.Y, "walk", 1200, new LivingCallBack(BeatCallBack));
-                }
-                else
-                {
-                    Body.MoveTo(Body.X + dis, m_targer.Y, "walk", 1200, new LivingCallBack(BeatCallBack));
+                    this.Beat();
                 }
             }
         }
     }
 }
+

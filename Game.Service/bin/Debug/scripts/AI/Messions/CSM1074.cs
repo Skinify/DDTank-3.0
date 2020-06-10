@@ -1,13 +1,14 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
+﻿using Game.Logic;
 using Game.Logic.AI;
 using Game.Logic.Phy.Object;
-using Game.Logic;
-using SqlDataProvider.Data;
+
+
 using Game.Logic.Effects;
+using System.Collections.Generic;
+
 namespace GameServerScript.AI.Messions
 {
+
     public class CSM1074 : AMissionControl
     {
         public override int CalculateScoreGrade(int score)
@@ -17,119 +18,108 @@ namespace GameServerScript.AI.Messions
             {
                 return 3;
             }
-            else if (score > 825)
+            if (score > 0x339)
             {
                 return 2;
             }
-            else if (score > 725)
+            if (score > 0x2d5)
             {
                 return 1;
             }
-            else
-            {
-                return 0;
-            }
-        }
-
-        public override void OnPrepareNewSession()
-        {
-            base.OnPrepareNewSession();
-            Game.SetMap(1074);
-        }
-
-        public override void OnStartGame()
-        {
-            base.OnStartGame();
-            
-            Game.TotalTurn = Game.PlayerCount * 3;
-   
-            Game.SendMissionInfo();
-
-            List<ItemInfo> items = new List<ItemInfo>();
-
-            for (int i = 0; i < 24; i++)
-            {
-                List<ItemInfo> infos = null;
-                DropInventory.SpecialDrop(1074, 2, ref infos);
-                if (infos != null)
-                {
-                    foreach (ItemInfo info in infos)
-                    {
-                        items.Add(info);
-                    }
-                }
-            }
-
-            //"1"黄色箱子、"2"红色箱子
-            Game.CreateBox(550, 68, "2", items[0]);
-            Game.CreateBox(750, 68, "2", items[1]);
-            Game.CreateBox(932, 68, "2", items[2]);
-            Game.CreateBox(1104, 68, "2", items[3]);
-
-            Game.CreateBox(451, 184, "1", items[4]);
-            Game.CreateBox(451, 285, "1", items[5]);
-            Game.CreateBox(451, 394, "1", items[6]);
-            Game.CreateBox(451, 499, "1", items[7]);
-            Game.CreateBox(643, 184, "1", items[8]);
-            Game.CreateBox(643, 285, "1", items[9]);
-            Game.CreateBox(643, 394, "1", items[10]);
-            Game.CreateBox(643, 499, "1", items[11]);
-            Game.CreateBox(830, 184, "1", items[12]);
-            Game.CreateBox(830, 285, "1", items[13]);
-            Game.CreateBox(830, 394, "1", items[14]);
-            Game.CreateBox(830, 499, "1", items[15]);
-            Game.CreateBox(1022, 184, "1", items[16]);
-            Game.CreateBox(1022, 285, "1", items[17]);
-            Game.CreateBox(1022, 394, "1", items[18]);
-            Game.CreateBox(1022, 499, "1", items[19]);
-            Game.CreateBox(1201, 184, "1", items[20]);
-            Game.CreateBox(1201, 285, "1", items[21]);
-            Game.CreateBox(1201, 394, "1", items[22]);
-            Game.CreateBox(1201, 499, "1", items[23]);
-        }
-
-        public override void OnNewTurnStarted()
-        {
-            base.OnNewTurnStarted();
-
-            ((Player)Game.CurrentLiving).Seal((Player)Game.CurrentLiving, 0, 0); 
-        }
-
-        public override void OnBeginNewTurn()
-        {
-            base.OnBeginNewTurn();
-            ((Player)Game.CurrentLiving).SetBall(3);
-           
+            return 0;
         }
 
         public override bool CanGameOver()
         {
             base.CanGameOver();
+            return base.Game.TurnIndex > (base.Game.TotalTurn - 1);
+        }
 
-            return Game.TurnIndex > Game.TotalTurn - 1;
+        public override void OnBeginNewTurn()
+        {
+            base.OnBeginNewTurn();
+            ((Player) base.Game.CurrentLiving).SetBall(3);
+        }
 
+        public override void OnGameOver()
+        {
+            base.OnGameOver();
+            base.Game.IsWin = true;
+            foreach (Player player in base.Game.GetAllFightPlayers())
+            {
+                SealEffect ofType = (SealEffect) player.EffectList.GetOfType(eEffectType.SealEffect);
+                if (ofType != null)
+                {
+                    ofType.Stop();
+                }
+            }
+            List<LoadingFileInfo> loadingFileInfos = new List<LoadingFileInfo> {
+                new LoadingFileInfo(2, "image/map/show5.jpg", "")
+            };
+            base.Game.SendLoadResource(loadingFileInfos);
+        }
+
+        public override void OnNewTurnStarted()
+        {
+            base.OnNewTurnStarted();
+            ((Player) base.Game.CurrentLiving).Seal((Player) base.Game.CurrentLiving, 0, 0);
+        }
+
+        public override void OnPrepareNewSession()
+        {
+            base.OnPrepareNewSession();
+            base.Game.SetMap(0x432);
+        }
+
+        public override void OnStartGame()
+        {
+            base.OnStartGame();
+            base.Game.TotalTurn = base.Game.PlayerCount * 3;
+            base.Game.SendMissionInfo();
+            List<SqlDataProvider.Data.ItemInfo> list = new List<SqlDataProvider.Data.ItemInfo>();
+            for (int i = 0; i < 0x18; i++)
+            {
+                List<SqlDataProvider.Data.ItemInfo> list2 = null;
+                DropInventory.SpecialDrop(0x432, 2, ref list2);
+                if (list2 != null)
+                {
+                    foreach (SqlDataProvider.Data.ItemInfo info in list2)
+                    {
+                        list.Add(info);
+                    }
+                }
+            }
+            base.Game.CreateBox(550, 0x44, "2", list[0]);
+            base.Game.CreateBox(750, 0x44, "2", list[1]);
+            base.Game.CreateBox(0x3a4, 0x44, "2", list[2]);
+            base.Game.CreateBox(0x450, 0x44, "2", list[3]);
+            base.Game.CreateBox(0x1c3, 0xb8, "1", list[4]);
+            base.Game.CreateBox(0x1c3, 0x11d, "1", list[5]);
+            base.Game.CreateBox(0x1c3, 0x18a, "1", list[6]);
+            base.Game.CreateBox(0x1c3, 0x1f3, "1", list[7]);
+            base.Game.CreateBox(0x283, 0xb8, "1", list[8]);
+            base.Game.CreateBox(0x283, 0x11d, "1", list[9]);
+            base.Game.CreateBox(0x283, 0x18a, "1", list[10]);
+            base.Game.CreateBox(0x283, 0x1f3, "1", list[11]);
+            base.Game.CreateBox(830, 0xb8, "1", list[12]);
+            base.Game.CreateBox(830, 0x11d, "1", list[13]);
+            base.Game.CreateBox(830, 0x18a, "1", list[14]);
+            base.Game.CreateBox(830, 0x1f3, "1", list[15]);
+            base.Game.CreateBox(0x3fe, 0xb8, "1", list[0x10]);
+            base.Game.CreateBox(0x3fe, 0x11d, "1", list[0x11]);
+            base.Game.CreateBox(0x3fe, 0x18a, "1", list[0x12]);
+            base.Game.CreateBox(0x3fe, 0x1f3, "1", list[0x13]);
+            base.Game.CreateBox(0x4b1, 0xb8, "1", list[20]);
+            base.Game.CreateBox(0x4b1, 0x11d, "1", list[0x15]);
+            base.Game.CreateBox(0x4b1, 0x18a, "1", list[0x16]);
+            base.Game.CreateBox(0x4b1, 0x1f3, "1", list[0x17]);
         }
 
         public override int UpdateUIData()
         {
             return base.UpdateUIData();
         }
-
-        public override void OnGameOver()
-        {
-            base.OnGameOver();
-            Game.IsWin = true;
-
-            foreach (Player player in Game.GetAllFightPlayers())
-            {
-                SealEffect effect = (SealEffect)player.EffectList.GetOfType(eEffectType.SealEffect);
-                if (effect != null)
-                    effect.Stop();
-            }
-
-            List<LoadingFileInfo> loadingFileInfos = new List<LoadingFileInfo>();
-            loadingFileInfos.Add(new LoadingFileInfo(2, "image/map/show5.jpg", ""));
-            Game.SendLoadResource(loadingFileInfos);
-        }
+           
     }
 }
+

@@ -1,23 +1,12 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
-using Game.Logic.AI;
-using Game.Logic;
+﻿using Game.Logic.AI;
 
 namespace GameServerScript.AI.Game
 {
+
     public class ExplorationGame : APVEGameControl
     {
         public int totalMissionCount = 0;
         public string missionIds = string.Empty;
-        public override void OnCreated()
-        {
-        }
-
-        public override void OnPrepated()
-        {
-            Game.SessionId = 0;
-        }
 
         public override int CalculateScoreGrade(int score)
         {
@@ -25,22 +14,29 @@ namespace GameServerScript.AI.Game
             {
                 return 3;
             }
-            else if (score > 725)
+            if (score > 0x2d5)
             {
                 return 2;
             }
-            else if (score > 650)
+            if (score > 650)
             {
                 return 1;
             }
-            else
-            {
-                return 0;
-            }
+            return 0;
+        }
+
+        public override void OnCreated()
+        {
         }
 
         public override void OnGameOverAllSession()
         {
         }
+
+        public override void OnPrepated()
+        {
+            base.Game.SessionId = 0;
+        }
     }
 }
+

@@ -9,10 +9,6 @@ namespace Game.Server.HotSpringRooms
     {
 
          TARGET_POINT = 1,
-         WALK = 0,
-         ENTER_WATER = 53,
-         MOON_VIEW = 57,
-         GO_MOON_VIEW = 50,
          HOTSPRING_ROOM_TIME_UPDATE = 7,
          HOTSPRING_ROOM_RENEWAL_FEE = 3,
          HOTSPRING_ROOM_INVITE = 4,

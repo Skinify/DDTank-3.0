@@ -1,0 +1,6 @@
+19:50:55,975 - [5] - ERROR - Game.Server.GameServer - Center Server Disconnect! Stopping Server
+19:50:55,977 - [5] - ERROR - Game.Server.GameServer - Start the game server again after 1 second,and left try times:3
+19:50:57,711 - [4] - FATAL - Game.Server.GameServer - Unhandled exception!
+System.NullReferenceException: Referência de objeto não definida para uma instância de um objeto.
+19:50:57,712 - [4] - FATAL - Game.Server.GameServer - Unhandled exception!
+System.NullReferenceException: Referência de objeto não definida para uma instância de um objeto.

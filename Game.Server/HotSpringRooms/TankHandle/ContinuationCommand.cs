@@ -17,7 +17,7 @@ using Game.Server.Enumerate;
 
 namespace Game.Server.HotSpringRooms.TankHandle
 {
-    [HotSpringCommandAttribute((byte)HotSpringCmdType.CONTINUATION)]
+    [HotSpringCommand((byte)HotSpringCmdType.CONTINUATION)]
     public class ContinuationCommand : IHotSpringCommandHandler
     {
         protected static readonly ILog log = LogManager.GetLogger(MethodBase.GetCurrentMethod().DeclaringType);
@@ -68,7 +68,6 @@ namespace Game.Server.HotSpringRooms.TankHandle
                 return false;
             }
 
-            //player.SetMoney(-needMoney, MoneyRemoveType.Marry);
             player.RemoveMoney(needMoney);
             LogMgr.LogMoneyAdd(LogMoneyType.Marry, LogMoneyType.Marry_RoomAdd, player.PlayerCharacter.ID, needMoney, player.PlayerCharacter.Money, 0, 0, 0, "", "", "");
 

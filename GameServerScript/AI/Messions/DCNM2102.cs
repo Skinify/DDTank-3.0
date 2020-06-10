@@ -1,142 +1,113 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
+﻿using Bussiness;
 using Game.Logic.AI;
 using Game.Logic.Phy.Object;
-using Game.Logic;
-using Bussiness;
 
 namespace GameServerScript.AI.Messions
 {
     public class DCNM2102 : AMissionControl
     {
         private SimpleBoss boss = null;
-
-        private int npcID = 2104;
-
-        private int bossID = 2103;
-
+        private int npcID = 0x838;
+        private int bossID = 0x837;
         private int kill = 0;
-
         private PhysicalObj m_moive;
-
         private PhysicalObj m_front;
 
         public override int CalculateScoreGrade(int score)
         {
             base.CalculateScoreGrade(score);
-            if (score > 1750)
+            if (score > 0x6d6)
             {
                 return 3;
             }
-            else if (score > 1675)
+            if (score > 0x68b)
             {
                 return 2;
             }
-            else if (score > 1600)
+            if (score > 0x640)
             {
                 return 1;
             }
-            else
+            return 0;
+        }
+
+        public override bool CanGameOver()
+        {
+            if (!((this.boss == null) || this.boss.IsLiving))
             {
-                return 0;
+                this.kill++;
+                return true;
+            }
+            return false;
+        }
+
+        public override void OnBeginNewTurn()
+        {
+            base.OnBeginNewTurn();
+            if (base.Game.TurnIndex > 1)
+            {
+                if (this.m_moive != null)
+                {
+                    base.Game.RemovePhysicalObj(this.m_moive, true);
+                    this.m_moive = null;
+                }
+                if (this.m_front != null)
+                {
+                    base.Game.RemovePhysicalObj(this.m_front, true);
+                    this.m_front = null;
+                }
             }
         }
 
-        public override void OnPrepareNewSession()
+        public override void OnGameOver()
         {
-            base.OnPrepareNewSession();
-            int[] resources = { bossID, npcID };
-            int[] gameOverResource = { bossID };
-            Game.LoadResources(resources);
-            Game.LoadNpcGameOverResources(gameOverResource);
-            Game.AddLoadingFile(1, "bombs/51.swf", "tank.resource.bombs.Bomb51");
-            Game.AddLoadingFile(2, "image/game/thing/BossBornBgAsset.swf", "game.asset.living.BossBgAsset");
-            Game.AddLoadingFile(2, "image/game/thing/BossBornBgAsset.swf", "game.asset.living.AntQueenAsset");
-            Game.SetMap(1121);
-        }
-        //public override void OnPrepareStartGame()
-        //{
-        //    base.OnPrepareStartGame();
-        //}
-
-        //public override void OnStartGame()
-        //{
-        //    base.OnStartGame();
-
-        //}
-
-        public override void OnStartGame()
-        {
-            base.OnStartGame();
-            m_moive = Game.Createlayer(0, 0, "moive", "game.asset.living.BossBgAsset", "out", 1, 1);
-            m_front = Game.Createlayer(1131, 150, "font", "game.asset.living.AntQueenAsset", "out", 1, 1);
-            boss = Game.CreateBoss(bossID, 1316, 444, -1, 1);
-            boss.SetRelateDemagemRect(-42, -200, 84, 194);
-            boss.Say(LanguageMgr.GetTranslation("GameServerScript.AI.Messions.DCNM2102.msg1"), 0, 200, 0);
-
-            m_moive.PlayMovie("in", 6000, 0);
-            m_front.PlayMovie("in", 6100, 0);
-            m_moive.PlayMovie("out", 10000, 1000);
-            m_front.PlayMovie("out", 9900, 0);
+            base.OnGameOver();
+            if (!((this.boss == null) || this.boss.IsLiving))
+            {
+                base.Game.IsWin = true;
+            }
+            else
+            {
+                base.Game.IsWin = false;
+            }
         }
 
         public override void OnNewTurnStarted()
         {
         }
 
-
-        public override void OnBeginNewTurn()
+        public override void OnPrepareNewSession()
         {
-            base.OnBeginNewTurn();
-
-            if (Game.TurnIndex > 1)
-            {
-                if (m_moive != null)
-                {
-                    Game.RemovePhysicalObj(m_moive, true);
-                    m_moive = null;
-                }
-                if (m_front != null)
-                {
-                    Game.RemovePhysicalObj(m_front, true);
-                    m_front = null;
-                }
-            }
+            base.OnPrepareNewSession();
+            int[] npcIds = new int[] { this.bossID, this.npcID };
+            int[] numArray2 = new int[] { this.bossID };
+            base.Game.LoadResources(npcIds);
+            base.Game.LoadNpcGameOverResources(numArray2);
+            base.Game.AddLoadingFile(1, "bombs/51.swf", "tank.resource.bombs.Bomb51");
+            base.Game.AddLoadingFile(2, "image/game/thing/BossBornBgAsset.swf", "game.asset.living.BossBgAsset");
+            base.Game.AddLoadingFile(2, "image/game/thing/BossBornBgAsset.swf", "game.asset.living.AntQueenAsset");
+            base.Game.SetMap(0x461);
         }
 
-        public override bool CanGameOver()
+        public override void OnStartGame()
         {
-            if (boss != null && boss.IsLiving == false)
-            {
-                kill++;
-                return true;
-            }
-            return false;
+            base.OnStartGame();
+            this.m_moive = base.Game.Createlayer(0, 0, "moive", "game.asset.living.BossBgAsset", "out", 1, 1);
+            this.m_front = base.Game.Createlayer(0x46b, 150, "font", "game.asset.living.AntQueenAsset", "out", 1, 1);
+            this.boss = base.Game.CreateBoss(this.bossID, 0x524, 0x1bc, -1, 1);
+            this.boss.SetRelateDemagemRect(-42, -200, 0x54, 0xc2);
+            this.boss.Say(LanguageMgr.GetTranslation("GameServerScript.AI.Messions.DCNM2102.msg1", new object[0]), 0, 200, 0);
+            this.m_moive.PlayMovie("in", 0x1770, 0);
+            this.m_front.PlayMovie("in", 0x17d4, 0);
+            this.m_moive.PlayMovie("out", 0x2710, 0x3e8);
+            this.m_front.PlayMovie("out", 0x26ac, 0);
         }
 
         public override int UpdateUIData()
         {
             base.UpdateUIData();
-            return kill;
-        }
-
-        //public override void OnPrepareGameOver()
-        //{
-        //    base.OnPrepareGameOver();
-        //}
-
-        public override void OnGameOver()
-        {
-            base.OnGameOver();
-            if (boss != null && boss.IsLiving == false)
-            {
-                Game.IsWin = true;
-            }
-            else
-            {
-                Game.IsWin = false;
-            }
+            return this.kill;
         }
     }
 }
+

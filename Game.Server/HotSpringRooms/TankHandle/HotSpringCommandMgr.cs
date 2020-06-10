@@ -10,15 +10,15 @@ namespace Game.Server.HotSpringRooms.TankHandle
     {
         private Dictionary<int, IHotSpringCommandHandler> handles = new Dictionary<int, IHotSpringCommandHandler>();
 
-        public IHotSpringCommandHandler LoadCommandHandler(int code)
-        {
-            return handles[code];
-        }
-
         public HotSpringCommandMgr()
         {
             handles.Clear();
             SearchCommandHandlers(Assembly.GetAssembly(typeof(GameServer)));
+        }
+
+        public IHotSpringCommandHandler LoadCommandHandler(int code)
+        {
+            return handles[code];
         }
 
         protected int SearchCommandHandlers(Assembly assembly)

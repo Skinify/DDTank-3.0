@@ -7,7 +7,7 @@ using Game.Base.Packets;
 
 namespace Game.Server.HotSpringRooms.TankHandle
 {
-    [HotSpringCommandAttribute((byte)HotSpringCmdType.TARGET_POINT)]
+    [HotSpringCommand((byte)HotSpringCmdType.TARGET_POINT)]
     public class Position:IHotSpringCommandHandler
     {
         public bool HandleCommand(TankHotSpringLogicProcessor process, GamePlayer player, GSPacketIn packet)

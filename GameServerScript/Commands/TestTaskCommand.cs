@@ -1,7 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
-using Game.Base;
+﻿using Game.Base;
 
 namespace GameServerScript.Commands
 {

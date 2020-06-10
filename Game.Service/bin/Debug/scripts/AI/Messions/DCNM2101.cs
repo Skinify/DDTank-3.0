@@ -1,207 +1,163 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
+﻿using Game.Logic;
 using Game.Logic.AI;
 using Game.Logic.Phy.Object;
-using Game.Logic;
+using System.Collections.Generic;
 
 namespace GameServerScript.AI.Messions
 {
     public class DCNM2101 : AMissionControl
     {
         private List<SimpleNpc> someNpc = new List<SimpleNpc>();
-
         private int dieRedCount = 0;
-
-        private int[] npcIDs = { 2101, 2102 };
-
-        private int[] birthX = { 52, 115, 183, 253, 320, 1206, 1275, 1342, 1410, 1475 };
+        private int[] npcIDs = new int[] { 0x835, 0x836 };
+        private int[] birthX = new int[] { 0x34, 0x73, 0xb7, 0xfd, 320, 0x4b6, 0x4fb, 0x53e, 0x582, 0x5c3 };
 
         public override int CalculateScoreGrade(int score)
         {
             base.CalculateScoreGrade(score);
-            if (score > 1870)
+            if (score > 0x74e)
             {
                 return 3;
             }
-            else if (score > 1825)
+            if (score > 0x721)
             {
                 return 2;
             }
-            else if (score > 1780)
+            if (score > 0x6f4)
             {
                 return 1;
             }
+            return 0;
+        }
+
+        public override bool CanGameOver()
+        {
+            bool flag = true;
+            base.CanGameOver();
+            this.dieRedCount = 0;
+            foreach (SimpleNpc npc in this.someNpc)
+            {
+                if (npc.IsLiving)
+                {
+                    flag = false;
+                }
+                else
+                {
+                    this.dieRedCount++;
+                }
+            }
+            if (flag && (this.dieRedCount == base.Game.MissionInfo.TotalCount))
+            {
+                base.Game.IsWin = true;
+                return true;
+            }
+            return false;
+        }
+
+        protected int GetNpcCountByID(int Id)
+        {
+            int num = 0;
+            foreach (SimpleNpc npc in this.someNpc)
+            {
+                if (npc.NpcInfo.ID == Id)
+                {
+                    num++;
+                }
+            }
+            return num;
+        }
+
+        public override void OnBeginNewTurn()
+        {
+            base.OnBeginNewTurn();
+        }
+
+        public override void OnGameOver()
+        {
+            base.OnGameOver();
+            if (base.Game.GetLivedLivings().Count == 0)
+            {
+                base.Game.IsWin = true;
+            }
             else
             {
-                return 0;
+                base.Game.IsWin = false;
+            }
+            List<LoadingFileInfo> loadingFileInfos = new List<LoadingFileInfo> {
+                new LoadingFileInfo(2, "image/map/2/show2", "")
+            };
+            base.Game.SendLoadResource(loadingFileInfos);
+        }
+
+        public override void OnNewTurnStarted()
+        {
+            base.OnNewTurnStarted();
+            if (base.Game.GetLivedLivings().Count == 0)
+            {
+                base.Game.PveGameDelay = 0;
+            }
+            if ((base.Game.TurnIndex > 1) && (base.Game.CurrentPlayer.Delay > base.Game.PveGameDelay) && (base.Game.GetLivedLivings().Count < 10))
+            {
+                for (int i = 0; i < (10 - base.Game.GetLivedLivings().Count); i++)
+                {
+                    if (this.someNpc.Count == base.Game.MissionInfo.TotalCount)
+                    {
+                        break;
+                    }
+                    int index = base.Game.Random.Next(0, this.birthX.Length);
+                    int x = this.birthX[index];
+                    if ((base.Game.Random.Next(0, this.npcIDs.Length) == 1) && (this.GetNpcCountByID(this.npcIDs[1]) < 10))
+                    {
+                        this.someNpc.Add(base.Game.CreateNpc(this.npcIDs[1], x, 0x1fa, 1));
+                    }
+                    else
+                    {
+                        this.someNpc.Add(base.Game.CreateNpc(this.npcIDs[0], x, 0x1fa, 1));
+                    }
+                }
             }
         }
 
         public override void OnPrepareNewSession()
         {
             base.OnPrepareNewSession();
-            int[] resources = { npcIDs[0], npcIDs[1] };
-            int[] gameOverResources = { npcIDs[1], npcIDs[0], npcIDs[0], npcIDs[0] };
-            Game.LoadResources(resources);
-            Game.LoadNpcGameOverResources(gameOverResources);
-            Game.SetMap(1120);
+            int[] npcIds = new int[] { this.npcIDs[0], this.npcIDs[1] };
+            int[] numArray2 = new int[] { this.npcIDs[1], this.npcIDs[0], this.npcIDs[0], this.npcIDs[0] };
+            base.Game.LoadResources(npcIds);
+            base.Game.LoadNpcGameOverResources(numArray2);
+            base.Game.SetMap(0x460);
         }
-
-        //public override void OnPrepareStartGame()
-        //{
-        //    base.OnPrepareStartGame();
-        //}
-        //public override void OnStartGame()
-        //{
-        //    base.OnStartGame();
-        //}
 
         public override void OnStartGame()
         {
-
             base.OnStartGame();
-            //左边五只小怪
-            int index = Game.Random.Next(0, npcIDs.Length);
-            someNpc.Add(Game.CreateNpc(npcIDs[index], 52, 506, 1));
-            index = Game.Random.Next(0, npcIDs.Length);
-            someNpc.Add(Game.CreateNpc(npcIDs[index], 100, 507, 1));
-            index = Game.Random.Next(0, npcIDs.Length);
-            someNpc.Add(Game.CreateNpc(npcIDs[index], 155, 508, 1));
-            index = Game.Random.Next(0, npcIDs.Length);
-            someNpc.Add(Game.CreateNpc(npcIDs[index], 210, 507, 1));
-            index = Game.Random.Next(0, npcIDs.Length);
-            someNpc.Add(Game.CreateNpc(npcIDs[index], 253, 507, 1));
-
-            //右边五只小怪
-            index = Game.Random.Next(0, npcIDs.Length);
-            someNpc.Add(Game.CreateNpc(npcIDs[index], 1275, 508, 1));
-            index = Game.Random.Next(0, npcIDs.Length);
-            someNpc.Add(Game.CreateNpc(npcIDs[index], 1325, 506, 1));
-            index = Game.Random.Next(0, npcIDs.Length);
-            someNpc.Add(Game.CreateNpc(npcIDs[index], 1360, 508, 1));
-            index = Game.Random.Next(0, npcIDs.Length);
-            someNpc.Add(Game.CreateNpc(npcIDs[index], 1410, 506, 1));
-            index = Game.Random.Next(0, npcIDs.Length);
-            someNpc.Add(Game.CreateNpc(npcIDs[index], 1475, 508, 1));
-        }
-
-        public override void OnNewTurnStarted()
-        {
-            base.OnNewTurnStarted();
-
-            if (Game.GetLivedLivings().Count == 0)
-            {
-                Game.PveGameDelay = 0;
-            }
-
-            if (Game.TurnIndex > 1 && Game.CurrentPlayer.Delay > Game.PveGameDelay)
-            {
-                if (Game.GetLivedLivings().Count < 10)
-                {
-                    for (int i = 0; i < 10 - Game.GetLivedLivings().Count; i++)
-                    {
-                        if (someNpc.Count == Game.MissionInfo.TotalCount)
-                        {
-                            break;
-                        }
-                        else
-                        {
-                            int index = Game.Random.Next(0, birthX.Length);
-                            int NpcX = birthX[index];
-
-                            ////int direction = -1;
-
-                            //if (NpcX <= 320)
-                            //{
-                            //    direction = 1;
-                            //}
-
-                            index = Game.Random.Next(0, npcIDs.Length);
-
-                            if (index == 1 && GetNpcCountByID(npcIDs[1]) < 10)
-                            {
-                                someNpc.Add(Game.CreateNpc(npcIDs[1], NpcX, 506, 1));
-                            }
-                            else
-                            {
-                                someNpc.Add(Game.CreateNpc(npcIDs[0], NpcX, 506, 1));
-                            }
-                        }
-                    }
-                }
-            }
-
-        }
-        public override void OnBeginNewTurn()
-        {
-            base.OnBeginNewTurn();
-        }
-
-        public override bool CanGameOver()
-        {
-            bool result = true;
-
-            base.CanGameOver();
-
-            dieRedCount = 0;
-
-            foreach (SimpleNpc redNpc in someNpc)
-            {
-                if (redNpc.IsLiving)
-                {
-                    result = false;
-                }
-                else
-                {
-                    dieRedCount++;
-                }
-            }
-
-            if (result && dieRedCount == Game.MissionInfo.TotalCount)
-            {
-                Game.IsWin = true;
-                return true;
-            }
-
-            return false;
+            int index = base.Game.Random.Next(0, this.npcIDs.Length);
+            this.someNpc.Add(base.Game.CreateNpc(this.npcIDs[index], 0x34, 0x1fa, 1));
+            index = base.Game.Random.Next(0, this.npcIDs.Length);
+            this.someNpc.Add(base.Game.CreateNpc(this.npcIDs[index], 100, 0x1fb, 1));
+            index = base.Game.Random.Next(0, this.npcIDs.Length);
+            this.someNpc.Add(base.Game.CreateNpc(this.npcIDs[index], 0x9b, 0x1fc, 1));
+            index = base.Game.Random.Next(0, this.npcIDs.Length);
+            this.someNpc.Add(base.Game.CreateNpc(this.npcIDs[index], 210, 0x1fb, 1));
+            index = base.Game.Random.Next(0, this.npcIDs.Length);
+            this.someNpc.Add(base.Game.CreateNpc(this.npcIDs[index], 0xfd, 0x1fb, 1));
+            index = base.Game.Random.Next(0, this.npcIDs.Length);
+            this.someNpc.Add(base.Game.CreateNpc(this.npcIDs[index], 0x4fb, 0x1fc, 1));
+            index = base.Game.Random.Next(0, this.npcIDs.Length);
+            this.someNpc.Add(base.Game.CreateNpc(this.npcIDs[index], 0x52d, 0x1fa, 1));
+            index = base.Game.Random.Next(0, this.npcIDs.Length);
+            this.someNpc.Add(base.Game.CreateNpc(this.npcIDs[index], 0x550, 0x1fc, 1));
+            index = base.Game.Random.Next(0, this.npcIDs.Length);
+            this.someNpc.Add(base.Game.CreateNpc(this.npcIDs[index], 0x582, 0x1fa, 1));
+            index = base.Game.Random.Next(0, this.npcIDs.Length);
+            this.someNpc.Add(base.Game.CreateNpc(this.npcIDs[index], 0x5c3, 0x1fc, 1));
         }
 
         public override int UpdateUIData()
         {
-            return Game.TotalKillCount;
+            return base.Game.TotalKillCount;
         }
-
-        //public override void OnPrepareGameOver()
-        //{
-        //    base.OnPrepareGameOver();
-        //}
-
-        public override void OnGameOver()
-        {
-            base.OnGameOver();
-            if (Game.GetLivedLivings().Count == 0)
-            {
-                Game.IsWin = true;
-            }
-            else
-            {
-                Game.IsWin = false;
-            }
-            List<LoadingFileInfo> loadingFileInfos = new List<LoadingFileInfo>();
-            loadingFileInfos.Add(new LoadingFileInfo(2, "image/map/2/show2", ""));
-            Game.SendLoadResource(loadingFileInfos);
-        }
-
-        protected int GetNpcCountByID(int Id)
-        {
-            int Count = 0;
-            foreach (SimpleNpc npc in someNpc)
-            {
-                if (npc.NpcInfo.ID == Id)
-                    Count++;
-            }
-            return Count;
-        }
+            
     }
 }
+

@@ -1,17 +1,14 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
-using Game.Server;
+﻿    using Game.Server;
 using Game.Base;
 
 namespace GameServerScript.Commands
 {
-    [CmdAttribute(
+    [Cmd(
         "&version",
         ePrivLevel.Player,
         "Get the version of the GameServer",
         "/version")]
-    public class VersionCommandHandler : AbstractCommandHandler, ICommandHandler
+    public class TestCommands : AbstractCommandHandler, ICommandHandler
     {
         public bool OnCommand(BaseClient client, string[] args)
         {

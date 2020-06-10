@@ -12,7 +12,7 @@ using Game.Server.HotSpringRooms.TankHandle;
 
 namespace Game.Server.HotSpringRooms.TankHandle
 {
-    [HotSpringCommandAttribute((byte)HotSpringCmdType.HOTSPRING_ROOM_ADMIN_REMOVE_PLAYER)]
+    [HotSpringCommand((byte)HotSpringCmdType.HOTSPRING_ROOM_ADMIN_REMOVE_PLAYER)]
     public class KickCommand : IHotSpringCommandHandler
     {
         public bool HandleCommand(TankHotSpringLogicProcessor process, GamePlayer player, GSPacketIn packet)

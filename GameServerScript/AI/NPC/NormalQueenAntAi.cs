@@ -1,93 +1,55 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
+﻿using System.Drawing;
+using Bussiness;
+using Game.Logic;
 using Game.Logic.AI;
 using Game.Logic.Phy.Object;
-using Game.Logic;
-using System.Drawing;
-using Bussiness;
-
 
 namespace GameServerScript.AI.NPC
 {
     public class NormalQueenAntAi : ABrain
     {
         private int m_attackTurn = 0;
-
-        private int npcID = 2104;
-
+        private int npcID = 0x838;
         private int isSay = 0;
+        private Point[] brithPoint = new Point[] { new Point(0x3d3, 630), new Point(0x3f5, 630), new Point(0x41c, 630), new Point(0x440, 630), new Point(0x476, 630) };
+        private static string[] AllAttackChat = new string[] { LanguageMgr.GetTranslation("GameServerScript.AI.NPC.NormalQueenAntAi.msg1", new object[0]), LanguageMgr.GetTranslation("GameServerScript.AI.NPC.NormalQueenAntAi.msg2", new object[0]), LanguageMgr.GetTranslation("GameServerScript.AI.NPC.NormalQueenAntAi.msg3", new object[0]) };
+        private static string[] ShootChat = new string[] { LanguageMgr.GetTranslation("GameServerScript.AI.NPC.NormalQueenAntAi.msg4", new object[0]), LanguageMgr.GetTranslation("GameServerScript.AI.NPC.NormalQueenAntAi.msg5", new object[0]) };
+        private static string[] KillPlayerChat = new string[] { LanguageMgr.GetTranslation("GameServerScript.AI.NPC.NormalQueenAntAi.msg6", new object[0]), LanguageMgr.GetTranslation("GameServerScript.AI.NPC.NormalQueenAntAi.msg7", new object[0]) };
+        private static string[] CallChat = new string[] { LanguageMgr.GetTranslation("GameServerScript.AI.NPC.NormalQueenAntAi.msg8", new object[0]), LanguageMgr.GetTranslation("GameServerScript.AI.NPC.NormalQueenAntAi.msg9", new object[0]) };
+        private static string[] JumpChat = new string[] { LanguageMgr.GetTranslation("GameServerScript.AI.NPC.NormalQueenAntAi.msg10", new object[0]), LanguageMgr.GetTranslation("GameServerScript.AI.NPC.NormalQueenAntAi.msg11", new object[0]), LanguageMgr.GetTranslation("GameServerScript.AI.NPC.NormalQueenAntAi.msg12", new object[0]) };
+        private static string[] KillAttackChat = new string[] { LanguageMgr.GetTranslation("GameServerScript.AI.NPC.NormalQueenAntAi.msg13", new object[0]), LanguageMgr.GetTranslation("GameServerScript.AI.NPC.NormalQueenAntAi.msg14", new object[0]) };
+        private static string[] ShootedChat = new string[] { LanguageMgr.GetTranslation("GameServerScript.AI.NPC.NormalQueenAntAi.msg15", new object[0]), LanguageMgr.GetTranslation("GameServerScript.AI.NPC.NormalQueenAntAi.msg16", new object[0]) };
+        private static string[] DiedChat = new string[] { LanguageMgr.GetTranslation("GameServerScript.AI.NPC.NormalQueenAntAi.msg17", new object[0]) };
 
-        private Point[] brithPoint = { new Point(979, 630), new Point(1013, 630), new Point(1052, 630), new Point(1088, 630), new Point(1142, 630) };
-
-        #region NPC 说话内容
-        private static string[] AllAttackChat = new string[] {
-            LanguageMgr.GetTranslation("GameServerScript.AI.NPC.NormalQueenAntAi.msg1"),
-
-            LanguageMgr.GetTranslation("GameServerScript.AI.NPC.NormalQueenAntAi.msg2"),
-
-            LanguageMgr.GetTranslation("GameServerScript.AI.NPC.NormalQueenAntAi.msg3")
-        };
-
-        private static string[] ShootChat = new string[]{
-            LanguageMgr.GetTranslation("GameServerScript.AI.NPC.NormalQueenAntAi.msg4"),
-
-            LanguageMgr.GetTranslation("GameServerScript.AI.NPC.NormalQueenAntAi.msg5")  
-        };
-
-        private static string[] KillPlayerChat = new string[]{
-            LanguageMgr.GetTranslation("GameServerScript.AI.NPC.NormalQueenAntAi.msg6"),
-
-            LanguageMgr.GetTranslation("GameServerScript.AI.NPC.NormalQueenAntAi.msg7")
-        };
-
-        private static string[] CallChat = new string[]{
-            LanguageMgr.GetTranslation("GameServerScript.AI.NPC.NormalQueenAntAi.msg8"),
-
-            LanguageMgr.GetTranslation("GameServerScript.AI.NPC.NormalQueenAntAi.msg9")
-
-        };
-
-        private static string[] JumpChat = new string[]{
-             LanguageMgr.GetTranslation("GameServerScript.AI.NPC.NormalQueenAntAi.msg10"),
-
-             LanguageMgr.GetTranslation("GameServerScript.AI.NPC.NormalQueenAntAi.msg11"),
-
-             LanguageMgr.GetTranslation("GameServerScript.AI.NPC.NormalQueenAntAi.msg12")
-        };
-
-        private static string[] KillAttackChat = new string[]{
-             LanguageMgr.GetTranslation("GameServerScript.AI.NPC.NormalQueenAntAi.msg13"),
-
-              LanguageMgr.GetTranslation("GameServerScript.AI.NPC.NormalQueenAntAi.msg14")
-        };
-
-        private static string[] ShootedChat = new string[]{
-            LanguageMgr.GetTranslation("GameServerScript.AI.NPC.NormalQueenAntAi.msg15"),
-
-            LanguageMgr.GetTranslation("GameServerScript.AI.NPC.NormalQueenAntAi.msg16")
-
-        };
-
-        private static string[] DiedChat = new string[]{
-            LanguageMgr.GetTranslation("GameServerScript.AI.NPC.NormalQueenAntAi.msg17")
-        };
-
-        #endregion
-
-        public override void OnBeginSelfTurn()
+        private void Call()
         {
-            base.OnBeginSelfTurn();
+            ((SimpleBoss) base.Body).CreateChild(this.npcID, this.brithPoint, 9, 3, 9);
+        }
+
+        private void CreateChild()
+        {
+        }
+
+        private void KillAttack(int fx, int tx)
+        {
+            int index = base.Game.Random.Next(0, KillAttackChat.Length);
+            base.Body.Say(KillAttackChat[index], 1, 0x3e8);
+            base.Body.CurrentDamagePlus = 10f;
+            base.Body.PlayMovie("beatB", 0xbb8, 0);
+            base.Body.RangeAttacking(fx, tx, "cry", 0x1388, null);
         }
 
         public override void OnBeginNewTurn()
         {
             base.OnBeginNewTurn();
+            base.Body.CurrentDamagePlus = 1f;
+            base.Body.CurrentShootMinus = 1f;
+            this.isSay = 0;
+        }
 
-            Body.CurrentDamagePlus = 1;
-            Body.CurrentShootMinus = 1;
-
-            isSay = 0;
+        public override void OnBeginSelfTurn()
+        {
+            base.OnBeginSelfTurn();
         }
 
         public override void OnCreated()
@@ -95,47 +57,68 @@ namespace GameServerScript.AI.NPC
             base.OnCreated();
         }
 
+        public override void OnDiedSay()
+        {
+        }
+
+        public void OnKillPlayerSay()
+        {
+            int index = base.Game.Random.Next(0, KillPlayerChat.Length);
+            base.Body.Say(KillPlayerChat[index], 1, 0, 0x7d0);
+        }
+
+        public void OnShootedSay(int delay)
+        {
+            int index = base.Game.Random.Next(0, ShootedChat.Length);
+            if ((this.isSay == 0) && base.Body.IsLiving)
+            {
+                base.Body.Say(ShootedChat[index], 1, delay, 0);
+                this.isSay = 1;
+            }
+            if (!base.Body.IsLiving)
+            {
+                index = base.Game.Random.Next(0, DiedChat.Length);
+                base.Body.Say(DiedChat[index], 1, delay - 800, 0x7d0);
+            }
+        }
+
         public override void OnStartAttacking()
         {
-            Body.Direction = Game.FindlivingbyDir(Body);
-            bool result = false;
-            int maxdis = 0;
-            foreach (Player player in Game.GetAllFightPlayers())
+            base.Body.Direction = base.Game.FindlivingbyDir(base.Body);
+            bool flag = false;
+            int num = 0;
+            foreach (Player player in base.Game.GetAllFightPlayers())
             {
-                if (player.IsLiving && player.X > 1169 && player.X < Game.Map.Info.ForegroundWidth + 1)
+                if (player.IsLiving && (player.X > 0x491) && (player.X < (base.Game.Map.Info.ForegroundWidth + 1)))
                 {
-                    int dis = (int)Body.Distance(player.X, player.Y);
-                    if (dis > maxdis)
+                    int num2 = (int) base.Body.Distance(player.X, player.Y);
+                    if (num2 > num)
                     {
-                        maxdis = dis;
+                        num = num2;
                     }
-                    result = true;
+                    flag = true;
                 }
             }
-
-            if (result)
+            if (flag)
             {
-                KillAttack(1169, Game.Map.Info.ForegroundWidth + 1);
-
-                return;
+                this.KillAttack(0x491, base.Game.Map.Info.ForegroundWidth + 1);
             }
-
-            if (m_attackTurn == 0)
+            else if (this.m_attackTurn == 0)
             {
-                if (((PVEGame)Game).GetLivedLivings().Count == 9)
+                if (((PVEGame) base.Game).GetLivedLivings().Count == 9)
                 {
-                    PersonalAttack();
+                    this.PersonalAttack();
                 }
                 else
                 {
-                    Summon();
+                    this.Summon();
                 }
-                m_attackTurn++;
+                this.m_attackTurn++;
             }
             else
             {
-                PersonalAttack();
-                m_attackTurn = 0;
+                this.PersonalAttack();
+                this.m_attackTurn = 0;
             }
         }
 
@@ -144,82 +127,30 @@ namespace GameServerScript.AI.NPC
             base.OnStopAttacking();
         }
 
-        private void KillAttack(int fx, int tx)
-        {
-            int index = Game.Random.Next(0, KillAttackChat.Length);
-            Body.Say(KillAttackChat[index], 1, 1000);
-            Body.CurrentDamagePlus = 10;
-            Body.PlayMovie("beatB", 3000, 0);
-            Body.RangeAttacking(fx, tx, "cry", 5000, null);
-        }
-
         private void PersonalAttack()
         {
-            Player target = Game.FindRandomPlayer();
-
-
-            if (target != null)
+            Player player = base.Game.FindRandomPlayer();
+            if (player != null)
             {
-                Body.CurrentDamagePlus = 0.8f;
-                int index = Game.Random.Next(0, ShootChat.Length);
-                Body.Say(ShootChat[index], 1, 0);
-                int dis = Game.Random.Next(670, 880);
-
-
-                int mtX = Game.Random.Next(target.X - 10, target.X + 10);
-
-                if (Body.ShootPoint(target.X, target.Y, 51, 1000, 10000, 1, 3.0f, 2550))
+                base.Body.CurrentDamagePlus = 0.8f;
+                int index = base.Game.Random.Next(0, ShootChat.Length);
+                base.Body.Say(ShootChat[index], 1, 0);
+                int num2 = base.Game.Random.Next(670, 880);
+                int num3 = base.Game.Random.Next(player.X - 10, player.X + 10);
+                if (base.Body.ShootPoint(player.X, player.Y, 0x33, 0x3e8, 0x2710, 1, 3f, 0x9f6))
                 {
-                    Body.PlayMovie("beatA", 1700, 0);
+                    base.Body.PlayMovie("beatA", 0x6a4, 0);
                 }
             }
         }
 
         private void Summon()
         {
-            int index = Game.Random.Next(0, CallChat.Length);
-            Body.Say(CallChat[index], 1, 600);
-            Body.PlayMovie("call", 1700, 2000);
-            Body.CallFuction(new LivingCallBack(Call),2000);
-        }
-
-        private void Call()
-        {
-            ((SimpleBoss)Body).CreateChild(npcID, brithPoint, 9, 3,9);
-        }
-
-        public override void OnKillPlayerSay()
-        {
-            //base.OnKillPlayerSay();
-            int index = Game.Random.Next(0, KillPlayerChat.Length);
-            Body.Say(KillPlayerChat[index], 1, 0, 2000);
-        }
-
-        public override void OnDiedSay()
-        {
-            //int index = Game.Random.Next(0, DiedChat.Length);
-            //Body.Say(DiedChat[index], 1, 0, 1500);
-        }
-
-        private void CreateChild()
-        {
-
-        }
-
-        public  void OnShootedSay(int delay)
-        {
-            int index = Game.Random.Next(0, ShootedChat.Length);
-            if (isSay == 0 && Body.IsLiving == true)
-            {                
-                Body.Say(ShootedChat[index], 1, delay, 0);
-                isSay = 1;
-            }
-
-            if (!Body.IsLiving)
-            {
-                index = Game.Random.Next(0, DiedChat.Length);
-                Body.Say(DiedChat[index], 1, delay - 800, 2000);
-            }
+            int index = base.Game.Random.Next(0, CallChat.Length);
+            base.Body.Say(CallChat[index], 1, 600);
+            base.Body.PlayMovie("call", 0x6a4, 0x7d0);
+            base.Body.CallFuction(new LivingCallBack(this.Call), 0x7d0);
         }
     }
 }
+

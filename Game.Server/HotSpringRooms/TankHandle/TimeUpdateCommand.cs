@@ -1,21 +1,15 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
+﻿using System.Linq;
 using Game.Base.Packets;
 using Game.Server.GameObjects;
 using Game.Server.Packets;
 using SqlDataProvider.Data;
-using Game.Server.Managers;
-using Game.Server.HotSpringRooms;
-using Game.Server.HotSpringRooms.TankHandle;
 using Bussiness.Managers;
 using Game.Server.Statics;
 using Bussiness;
 
 namespace Game.Server.HotSpringRooms.TankHandle
 {
-    [HotSpringCommandAttribute((byte)HotSpringCmdType.HOTSPRING_ROOM_TIME_UPDATE)]
+    [HotSpringCommand((byte)HotSpringCmdType.HOTSPRING_ROOM_TIME_UPDATE)]
     public class TimeUpdateCommand : IHotSpringCommandHandler
     {
         public bool HandleCommand(TankHotSpringLogicProcessor process, GamePlayer player, GSPacketIn packet)
@@ -35,7 +29,6 @@ namespace Game.Server.HotSpringRooms.TankHandle
                         if(player.PlayerCharacter.Gold >= temp.AValue1)
                         {
                             player.RemoveGold(temp.AValue1);
-                            //0 player.CurrentHotSpringRoom.ReturnPacket(player, packet);
                             player.CurrentHotSpringRoom.ReturnPacketForScene(player, packet);
                             player.Out.SendMessage(eMessageType.ChatNormal, LanguageMgr.GetTranslation("UserFirecrackersCommand.Successed1", temp.AValue1));
                             return true;

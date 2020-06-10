@@ -1,26 +1,18 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
+﻿using Bussiness.Managers;
+using SqlDataProvider.Data;
 using Game.Logic.AI;
 using Game.Logic.Phy.Object;
-using SqlDataProvider.Data;
-using Bussiness.Managers;
-using Game.Server.Statics;
+using System.Collections.Generic;
 
 namespace GameServerScript.AI.Messions
 {
     public class CSM1083 : AMissionControl
     {
         private List<SimpleNpc> SomeNpc = new List<SimpleNpc>();
-
         private PhysicalObj Tip = null;
-
         private bool result = false;
-
         private int killCount = 0;
-
         private int preKillNum = 0;
-
         private bool canPlayMovie = false;
 
         public override int CalculateScoreGrade(int score)
@@ -30,115 +22,33 @@ namespace GameServerScript.AI.Messions
             {
                 return 3;
             }
-            else if (score > 825)
+            if (score > 0x339)
             {
                 return 2;
             }
-            else if (score > 725)
+            if (score > 0x2d5)
             {
                 return 1;
             }
-            else
-            {
-                return 0;
-            }
+            return 0;
         }
 
-        public override void OnPrepareNewSession()
+        public override bool CanGameOver()
         {
-            base.OnPrepareNewSession();
-            Game.AddLoadingFile(2, "image/map/1086/object/Asset.swf", "com.map.trainer.TankTrainerAssetII");
-            int[] resources = {1, 2};
-            Game.LoadResources(resources);
-            Game.LoadNpcGameOverResources(resources);
-            Game.SetMap(1086);
-        }
-
-        public override void OnStartGame()
-        {
-            base.OnStartGame();
-            for (int i = 0; i < 4; i++)
+            base.CanGameOver();
+            if (base.Game.TurnIndex > 0x63)
             {
-                SomeNpc.Add(Game.CreateNpc(201, (i + 1) * 100, 500, 1));
+                return true;
             }
-            SomeNpc.Add(Game.CreateNpc(202, 500, 500, 1));
-            Tip = Game.CreateTip(390, 120, "firstFront", "com.map.trainer.TankTrainerAssetII", "Empty", 1, 0);
-        }
-
-        public override void OnNewTurnStarted()
-        {
-            List<ItemTemplateInfo> goods = new List<ItemTemplateInfo>();
-
-            List<ItemInfo> items = new List<ItemInfo>();
-
-            foreach (Player player in Game.GetAllFightPlayers())
+            this.result = false;
+            foreach (SimpleNpc npc in this.SomeNpc)
             {
-                foreach (SimpleNpc npc in Game.GetLivedLivings())
+                if (npc.IsLiving)
                 {
-                    if (npc.Distance(player.X, player.Y) <= 100)
-                    {
-                        canPlayMovie = true;
-                    }
+                    this.result = true;
                 }
             }
-
-            if (Game.TurnIndex > 1 && Game.CurrentPlayer.Delay > Game.PveGameDelay)
-            {
-                for (int i = 0; i < 5; i++)
-                {
-                    if (SomeNpc.Count < 15)
-                    {
-                        SomeNpc.Add(Game.CreateNpc(201, (i + 1) * 100, 500, 1));
-                    }
-                    else
-                    {
-                        break;
-                    }
-                }
-
-
-            }
-
-            if (Game.CurrentPlayer.Delay < Game.PveGameDelay)
-            {
-                if (Tip.CurrentAction == "Empty")
-                {
-                    Tip.PlayMovie("tip1", 0, 3000);
-                }
-                if (preKillNum < Game.TotalKillCount && killCount < 2)
-                {
-                    killCount++;
-                }
-
-                if (killCount == 2)
-                {
-                    Tip.PlayMovie("tip2", 0, 2000);
-                }
-
-                if (canPlayMovie)
-                {
-                    Tip.PlayMovie("tip3", 0, 2000);
-                }
-
-                goods.Add(Bussiness.Managers.ItemMgr.FindItemTemplate(10001));
-                goods.Add(Bussiness.Managers.ItemMgr.FindItemTemplate(10003));
-                goods.Add(Bussiness.Managers.ItemMgr.FindItemTemplate(10018));
-
-                foreach (ItemTemplateInfo info in goods)
-                {
-                    items.Add(ItemInfo.CreateFromTemplate(info, 1, 101));
-                }
-
-                foreach (Player player in Game.GetAllFightPlayers())
-                {
-                    player.CanGetProp = false;
-                    player.PlayerDetail.ClearFightBag();
-                    foreach (ItemInfo item in items)
-                    {
-                        player.PlayerDetail.AddTemplate(item, eBageType.FightBag,item.Count);
-                    }
-                }
-            }
+            return !(this.result || (this.SomeNpc.Count != 15));
         }
 
         public override void OnBeginNewTurn()
@@ -146,47 +56,113 @@ namespace GameServerScript.AI.Messions
             base.OnBeginNewTurn();
         }
 
-        public override bool CanGameOver()
+        public override void OnGameOver()
         {
-            base.CanGameOver();
-            if (Game.TurnIndex > 99)
+            if (!this.result)
             {
-                return true;
-            }
-
-            result = false;
-
-            foreach (SimpleNpc npc in SomeNpc)
-            {
-                if (npc.IsLiving == true)
+                foreach (Player player in base.Game.GetAllFightPlayers())
                 {
-                    result = true;
+                    player.CanGetProp = true;
+                }
+                base.Game.IsWin = true;
+            }
+        }
+
+        public override void OnNewTurnStarted()
+        {
+            List<ItemTemplateInfo> list = new List<ItemTemplateInfo>();
+            List<SqlDataProvider.Data.ItemInfo> list2 = new List<SqlDataProvider.Data.ItemInfo>();
+            using (List<Player>.Enumerator enumerator = base.Game.GetAllFightPlayers().GetEnumerator())
+            {
+                while (enumerator.MoveNext())
+                {
+                    foreach (SimpleNpc npc in base.Game.GetLivedLivings())
+                    {
+                        Player player = base.Game.CurrentPlayer;
+                        if (npc.Distance(player.X, player.Y) <= 100.0)
+                        {
+                            this.canPlayMovie = true;
+                        }
+                    }
                 }
             }
-
-            if (result == false && SomeNpc.Count == 15)
+            if ((base.Game.TurnIndex > 1) && (base.Game.CurrentPlayer.Delay > base.Game.PveGameDelay))
             {
-                return true;
+                for (int i = 0; i < 5; i++)
+                {
+                    if (this.SomeNpc.Count < 15)
+                    {
+                        this.SomeNpc.Add(base.Game.CreateNpc(0xc9, (i + 1) * 100, 500, 1));
+                    }
+                    else
+                    {
+                        break;
+                    }
+                }
             }
-            return false;
+            if (base.Game.CurrentPlayer.Delay < base.Game.PveGameDelay)
+            {
+                if (this.Tip.CurrentAction == "Empty")
+                {
+                    this.Tip.PlayMovie("tip1", 0, 0xbb8);
+                }
+                if ((this.preKillNum < base.Game.TotalKillCount) && (this.killCount < 2))
+                {
+                    this.killCount++;
+                }
+                if (this.killCount == 2)
+                {
+                    this.Tip.PlayMovie("tip2", 0, 0x7d0);
+                }
+                if (this.canPlayMovie)
+                {
+                    this.Tip.PlayMovie("tip3", 0, 0x7d0);
+                }
+                list.Add(ItemMgr.FindItemTemplate(0x2711));
+                list.Add(ItemMgr.FindItemTemplate(0x2713));
+                list.Add(ItemMgr.FindItemTemplate(0x2722));
+                foreach (ItemTemplateInfo info in list)
+                {
+                    list2.Add(SqlDataProvider.Data.ItemInfo.CreateFromTemplate(info, 1, 0x65));
+                }
+                foreach (Player player in base.Game.GetAllFightPlayers())
+                {
+                    player.CanGetProp = false;
+                    player.PlayerDetail.ClearFightBag();
+                    foreach (SqlDataProvider.Data.ItemInfo info2 in list2)
+                    {
+                        player.PlayerDetail.AddTemplate(info2, eBageType.FightBag, info2.Count);
+                    }
+                }
+            }
+        }
+
+        public override void OnPrepareNewSession()
+        {
+            base.OnPrepareNewSession();
+            base.Game.AddLoadingFile(2, "image/map/1086/object/Asset.swf", "com.map.trainer.TankTrainerAssetII");
+            int[] npcIds = new int[] { 1, 2 };
+            base.Game.LoadResources(npcIds);
+            base.Game.LoadNpcGameOverResources(npcIds);
+            base.Game.SetMap(0x43e);
+        }
+
+        public override void OnStartGame()
+        {
+            base.OnStartGame();
+            for (int i = 0; i < 4; i++)
+            {
+                this.SomeNpc.Add(base.Game.CreateNpc(0xc9, (i + 1) * 100, 500, 1));
+            }
+            this.SomeNpc.Add(base.Game.CreateNpc(0xca, 500, 500, 1));
+            this.Tip = base.Game.CreateTip(390, 120, "firstFront", "com.map.trainer.TankTrainerAssetII", "Empty", 1, 0);
         }
 
         public override int UpdateUIData()
         {
-            preKillNum = Game.TotalKillCount;
-            return Game.TotalKillCount;
-        }
-
-        public override void OnGameOver()
-        {
-            if (result == false)
-            {
-                foreach (Player player in Game.GetAllFightPlayers())
-                {
-                    player.CanGetProp = true;
-                }
-                Game.IsWin = true;
-            }
+            this.preKillNum = base.Game.TotalKillCount;
+            return base.Game.TotalKillCount;
         }
     }
 }
+

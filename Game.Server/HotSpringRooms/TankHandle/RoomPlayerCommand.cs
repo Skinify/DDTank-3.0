@@ -14,12 +14,11 @@ using Game.Server.Enumerate;
 
 namespace Game.Server.HotSpringRooms.TankHandle
 {
-    [HotSpringCommandAttribute((byte)HotSpringCmdType.HOTSPRING_ROOM_PLAYER_CONTINUE)]
+    [HotSpringCommand((byte)HotSpringCmdType.HOTSPRING_ROOM_PLAYER_CONTINUE)]
     public class RoomPlayerCommand:IHotSpringCommandHandler
     {
         public bool HandleCommand(TankHotSpringLogicProcessor process, GamePlayer player, GSPacketIn packet)
         {
-            
             return true;
         }
 

@@ -1,30 +1,21 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
+﻿using Bussiness.Managers;
+using SqlDataProvider.Data;
 using Game.Logic.AI;
 using Game.Logic.Phy.Object;
-using SqlDataProvider.Data;
-using Bussiness.Managers;
-using Game.Server.Statics;
-using Game.Logic;
-using Game.Base.Packets;
+using System.Collections.Generic;
 
 namespace GameServerScript.AI.Messions
 {
     public class NTM1083 : AMissionControl
     {
-        private int mapId = 1118;
-
+        private int mapId = 0x45e;
         private int indexOf = 0;
         private bool isDander = false;
-
-        private int redNpcID = 201;
-        private int blueNpcID = 202;
+        private int redNpcID = 0xc9;
+        private int blueNpcID = 0xca;
         private int totalNpcCount = 5;
-
         private bool isPlayMovie = false;
         private bool isLoadItems = false;
-
         private PhysicalObj tip = null;
         private List<SimpleNpc> simpleNpcList = new List<SimpleNpc>();
 
@@ -35,103 +26,37 @@ namespace GameServerScript.AI.Messions
             {
                 return 3;
             }
-            if (score > 825)
+            if (score > 0x339)
             {
                 return 2;
             }
-            if (score > 725)
+            if (score > 0x2d5)
             {
                 return 1;
             }
             return 0;
         }
 
-        public override void OnPrepareNewSession()
+        public override bool CanGameOver()
         {
-            base.OnPrepareNewSession();
-            int[] npcIdList = { redNpcID, blueNpcID };
-            Game.LoadResources(npcIdList);
-            Game.LoadNpcGameOverResources(npcIdList);
-            Game.AddLoadingFile(2, "image/map/1118/object/Asset.swf", "com.map.trainer.TankTrainerAssetII");
-            Game.SetMap(mapId);
-        }
-
-        public override void OnStartGame()
-        {
-            CreateNpc();
-            tip = Game.CreateTip(390, 120, "firstFront", "com.map.trainer.TankTrainerAssetII", "Empty", 1, 1);
-        }
-
-        //public override void OnPrepareNewGame()
-        //{
-        //    base.OnPrepareNewGame();
-        //}
-
-        public override void OnNewTurnStarted()
-        {
-            List<ItemInfo> items = new List<ItemInfo>();
-            List<ItemTemplateInfo> goods = new List<ItemTemplateInfo>();
-
-            if (Game.CurrentPlayer.Delay < Game.PveGameDelay)
+            foreach (SimpleNpc npc in this.simpleNpcList)
             {
-                if (tip.CurrentAction == "Empty")
+                if (npc.IsLiving)
                 {
-                    tip.PlayMovie("tip1", 0, 3000);
-                }
-
-                if (Game.TotalKillCount >= 1 && indexOf < 1)
-                {
-                    isLoadItems = true;
-                    tip.PlayMovie("tip2", 0, 2000);
-                    indexOf++;
-                }
-                if (isPlayMovie)
-                {
-                    bool isHiden = false;
-                    tip.PlayMovie("tip3", 0, 2000);
-                    foreach (Player p in Game.GetAllFightPlayers())
-                    {
-                        if (p.Dander < 200)
-                        {
-                            isHiden = true;
-                            break;
-                        }
-                    }
-                    if (isHiden)
-                        tip.PlayMovie("tip4", 0, 2000);
-                }
-
-                if (isLoadItems)
-                {
-                    goods.Add(Bussiness.Managers.ItemMgr.FindItemTemplate(10001));
-                    goods.Add(Bussiness.Managers.ItemMgr.FindItemTemplate(10003));
-                    goods.Add(Bussiness.Managers.ItemMgr.FindItemTemplate(10018));
-
-                    foreach (ItemTemplateInfo info in goods)
-                    {
-                        items.Add(ItemInfo.CreateFromTemplate(info, 1, 101));
-                    }
-
-                    foreach (Player player in Game.GetAllFightPlayers())
-                    {
-                        player.CanGetProp = false;
-                        player.PlayerDetail.ClearFightBag();
-                        foreach (ItemInfo item in items)
-                        {
-                            player.PlayerDetail.AddTemplate(item, eBageType.FightBag, item.Count);
-                        }
-
-                        if (isDander == false)
-                        {
-                            player.Dander = 200;
-                            isPlayMovie = true;
-                            isDander = true;
-
-                        }
-                    }
-                    isLoadItems = false;
+                    return false;
                 }
             }
+            return this.simpleNpcList.Count == this.totalNpcCount;
+        }
+
+        private void CreateNpc()
+        {
+            int[,] numArray = new int[,] { { 0x217, 0x229 }, { 0x27b, 0x22a }, { 0x2df, 0x229 }, { 0x343, 0x227 } };
+            for (int i = 0; i < 4; i++)
+            {
+                this.simpleNpcList.Add(base.Game.CreateNpc(this.redNpcID, numArray[i, 0], numArray[i, 1], 1));
+            }
+            this.simpleNpcList.Add(base.Game.CreateNpc(this.blueNpcID, 0x2ad, 0x229, 1));
         }
 
         public override void OnBeginNewTurn()
@@ -139,55 +64,105 @@ namespace GameServerScript.AI.Messions
             base.OnBeginNewTurn();
         }
 
-        public override bool CanGameOver()
+        public override void OnGameOver()
         {
-            foreach (SimpleNpc npc in simpleNpcList)
+            base.OnGameOver();
+            foreach (Player player in base.Game.GetAllFightPlayers())
             {
-                if (npc.IsLiving)
-                { return false; }
+                player.CanGetProp = true;
             }
-            if (simpleNpcList.Count == totalNpcCount)
-            { return true; }
+            if (base.Game.GetLivedLivings().Count == 0)
+            {
+                base.Game.IsWin = true;
+            }
             else
-            { return false; }
+            {
+                base.Game.IsWin = false;
+            }
+        }
+
+        public override void OnNewTurnStarted()
+        {
+            List<SqlDataProvider.Data.ItemInfo> list = new List<SqlDataProvider.Data.ItemInfo>();
+            List<ItemTemplateInfo> list2 = new List<ItemTemplateInfo>();
+            if (base.Game.CurrentPlayer.Delay < base.Game.PveGameDelay)
+            {
+                if (this.tip.CurrentAction == "Empty")
+                {
+                    this.tip.PlayMovie("tip1", 0, 0xbb8);
+                }
+                if ((base.Game.TotalKillCount >= 1) && (this.indexOf < 1))
+                {
+                    this.isLoadItems = true;
+                    this.tip.PlayMovie("tip2", 0, 0x7d0);
+                    this.indexOf++;
+                }
+                if (this.isPlayMovie)
+                {
+                    bool flag = false;
+                    this.tip.PlayMovie("tip3", 0, 0x7d0);
+                    foreach (Player player in base.Game.GetAllFightPlayers())
+                    {
+                        if (player.Dander < 200)
+                        {
+                            flag = true;
+                            break;
+                        }
+                    }
+                    if (flag)
+                    {
+                        this.tip.PlayMovie("tip4", 0, 0x7d0);
+                    }
+                }
+                if (this.isLoadItems)
+                {
+                    list2.Add(ItemMgr.FindItemTemplate(0x2711));
+                    list2.Add(ItemMgr.FindItemTemplate(0x2713));
+                    list2.Add(ItemMgr.FindItemTemplate(0x2722));
+                    foreach (ItemTemplateInfo info in list2)
+                    {
+                        list.Add(SqlDataProvider.Data.ItemInfo.CreateFromTemplate(info, 1, 0x65));
+                    }
+                    foreach (Player player2 in base.Game.GetAllFightPlayers())
+                    {
+                        player2.CanGetProp = false;
+                        player2.PlayerDetail.ClearFightBag();
+                        foreach (SqlDataProvider.Data.ItemInfo info2 in list)
+                        {
+                            player2.PlayerDetail.AddTemplate(info2, eBageType.FightBag, info2.Count);
+                        }
+                        if (!this.isDander)
+                        {
+                            player2.Dander = 200;
+                            this.isPlayMovie = true;
+                            this.isDander = true;
+                        }
+                    }
+                    this.isLoadItems = false;
+                }
+            }
+        }
+
+        public override void OnPrepareNewSession()
+        {
+            base.OnPrepareNewSession();
+            int[] npcIds = new int[] { this.redNpcID, this.blueNpcID };
+            base.Game.LoadResources(npcIds);
+            base.Game.LoadNpcGameOverResources(npcIds);
+            base.Game.AddLoadingFile(2, "image/map/1118/object/Asset.swf", "com.map.trainer.TankTrainerAssetII");
+            base.Game.SetMap(this.mapId);
+        }
+
+        public override void OnStartGame()
+        {
+            this.CreateNpc();
+            this.tip = base.Game.CreateTip(390, 120, "firstFront", "com.map.trainer.TankTrainerAssetII", "Empty", 1, 1);
         }
 
         public override int UpdateUIData()
         {
-            return Game.TotalKillCount;
+            return base.Game.TotalKillCount;
         }
-
-        public override void OnGameOver()
-        {
-            base.OnGameOver();
-            foreach (Player p in Game.GetAllFightPlayers())
-            {
-                p.CanGetProp = true;
-                //p.PlayerDetail.UpdateAnswerSite(30);
-            }
-            if (Game.GetLivedLivings().Count == 0)
-            {
-                Game.IsWin = true;
-            }
-            else
-            {
-                Game.IsWin = false;
-            }
-        }
-        private void CreateNpc()
-        {
-            int[,] points = new int[,]
-            {
-                { 535, 553 }, 
-                { 635, 554 }, 
-                { 735, 553 }, 
-                { 835, 551 }
-            };
-            for (int i = 0; i < 4; i++)
-            {
-                simpleNpcList.Add(Game.CreateNpc(redNpcID, points[i, 0], points[i, 1], 1 ));
-            }
-            simpleNpcList.Add(Game.CreateNpc(blueNpcID, 685, 553, 1));
-        }
+            
     }
 }

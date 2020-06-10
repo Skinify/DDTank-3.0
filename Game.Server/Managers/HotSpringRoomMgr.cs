@@ -32,7 +32,7 @@
             return ROOM.ToArray();
         }
 
-        public static HotSpringRoom GetHotRoombyID(int id, string pw, ref string msg) =>
+        public static HotSpringRoom GetHotRoombyID(int id) =>
             ROOM[id - 1];
 
         private static HotSpringRoomInfo[] GetHotRoomInfo()

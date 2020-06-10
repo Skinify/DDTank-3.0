@@ -102,7 +102,6 @@ C:\Users\Welington\Documents\Server3.0\Fighting.Service\obj\Debug\ResolveAssembl
 C:\Users\Welington\Documents\Server3.0\Fighting.Service\obj\Debug\Fighting.Service.exe.manifest
 C:\Users\Welington\Documents\Server3.0\Fighting.Service\obj\Debug\Fighting.Service.application
 D:\DDT\DDTank-3.0\Fighting.Service\bin\Debug\Languages\Language-vn.txt
-D:\DDT\DDTank-3.0\Fighting.Service\bin\Debug\Languages\Language-zh_cn.txt
 D:\DDT\DDTank-3.0\Fighting.Service\bin\Debug\logconfig.xml
 D:\DDT\DDTank-3.0\Fighting.Service\bin\Debug\Fighting.Service.exe.config
 D:\DDT\DDTank-3.0\Fighting.Service\bin\Debug\Fighting.Service.exe.manifest

@@ -1,9 +1,7 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
-using Game.Logic;
-using Game.Logic.AI;
+﻿using System.Collections.Generic;
 using Game.Logic.Phy.Object;
+
+using Game.Logic.AI;
 using Game.Logic.Effects;
 
 namespace GameServerScript.AI.NPC
@@ -11,74 +9,97 @@ namespace GameServerScript.AI.NPC
     public class NormalKingLast : ABrain
     {
         private int attackingTurn = 1;
-
         private int orchinIndex = 1;
-
         private int currentCount = 0;
-
         private int Dander = 0;
-
-        private int npcID = 1104;
-
+        private int npcID = 0x450;
         public List<SimpleNpc> orchins = new List<SimpleNpc>();
+        private static string[] AllAttackChat = new string[] { "看我的绝技！", "这招酷吧，<br/>想学不？", "消失吧！！！<br/>卑微的灰尘！", "你们会为此付出代价的！ " };
+        private static string[] ShootChat = new string[] { "你是在给我挠痒痒吗？", "我可不会像刚才那个废物一样被你打败！", "哎哟，你打的我好疼啊，<br/>哈哈哈哈！", "啧啧啧，就这样的攻击力！", "看到我是你们的荣幸！" };
+        private static string[] CallChat = new string[] { "来啊，<br/>让他们尝尝炸弹的厉害！" };
+        private static string[] AngryChat = new string[] { "是你们逼我使出绝招的！" };
+        private static string[] KillAttackChat = new string[] { "你来找死吗？" };
+        private static string[] SealChat = new string[] { "异次元放逐！" };
+        private static string[] KillPlayerChat = new string[] { "灭亡是你唯一的归宿！", "太不堪一击了！" };
 
-        #region NPC 说话内容
-        private static string[] AllAttackChat = new string[]{
-             "看我的绝技！",
-          
-             "这招酷吧，<br/>想学不？",
-          
-             "消失吧！！！<br/>卑微的灰尘！",
-
-             "你们会为此付出代价的！ "
-        };
-
-        private static string[] ShootChat = new string[]{
-             "你是在给我挠痒痒吗？",
-               
-             "我可不会像刚才那个废物一样被你打败！",
-             
-             "哎哟，你打的我好疼啊，<br/>哈哈哈哈！",
-               
-             "啧啧啧，就这样的攻击力！",
-               
-             "看到我是你们的荣幸！"          
-        };
-
-        private static string[] CallChat = new string[]{
-            "来啊，<br/>让他们尝尝炸弹的厉害！"                          
-        };
-
-        private static string[] AngryChat = new string[]{
-            "是你们逼我使出绝招的！"                          
-        };
-
-        private static string[] KillAttackChat = new string[]{
-            "你来找死吗？"                          
-        };
-
-        private static string[] SealChat = new string[]{
-            "异次元放逐！"                          
-        };
-
-        private static string[] KillPlayerChat = new string[]{
-            "灭亡是你唯一的归宿！",                  
- 
-            "太不堪一击了！"
-        };
-        #endregion
-
-
-        public override void OnBeginSelfTurn()
+        public void Angger()
         {
-            base.OnBeginSelfTurn();
+            int index = base.Game.Random.Next(0, AngryChat.Length);
+            base.Body.Say(AngryChat[index], 1, 0);
+            base.Body.State = 1;
+            this.Dander += 100;
+            ((SimpleBoss) base.Body).SetDander(this.Dander);
+            if (base.Body.Direction == -1)
+            {
+                ((SimpleBoss) base.Body).SetRelateDemagemRect(8, -252, 0x4a, 50);
+            }
+            else
+            {
+                ((SimpleBoss) base.Body).SetRelateDemagemRect(-82, -252, 0x4a, 50);
+            }
+        }
+
+        public void CreateChild()
+        {
+            ((SimpleBoss) base.Body).CreateChild(this.npcID, 520, 530, 400, 6);
+        }
+
+        public void GoOnAngger()
+        {
+            if (base.Body.State == 1)
+            {
+                base.Body.CurrentDamagePlus = 1000f;
+                base.Body.PlayMovie("beatC", 0xdac, 0);
+                base.Body.RangeAttacking(base.Body.X - 0x3e8, base.Body.X + 0x3e8, "cry", 0x15e0, null);
+                base.Body.Die(0x15e0);
+            }
+            else
+            {
+                ((SimpleBoss) base.Body).SetRelateDemagemRect(-41, -187, 0x53, 140);
+                base.Body.PlayMovie("mantra", 0, 0x7d0);
+                List<Player> allLivingPlayers = base.Game.GetAllLivingPlayers();
+                foreach (Player player in allLivingPlayers)
+                {
+                    player.AddEffect(new ContinueReduceBloodEffect(2, -50), 0);
+                }
+            }
+        }
+
+        public void HalfAttack()
+        {
+            base.Body.CurrentDamagePlus = 0.5f;
+            int index = base.Game.Random.Next(0, SealChat.Length);
+            base.Body.Say(AllAttackChat[index], 1, 500);
+            base.Body.PlayMovie("beatB", 0x9c4, 0);
+            if (base.Body.Direction == 1)
+            {
+                base.Body.RangeAttacking(base.Body.X, base.Body.X + 0x3e8, "cry", 0xce4, null);
+            }
+            else
+            {
+                base.Body.RangeAttacking(base.Body.X - 0x3e8, base.Body.X, "cry", 0xce4, null);
+            }
+        }
+
+        public void KillAttack(int fx, int mx)
+        {
+            base.Body.CurrentDamagePlus = 10f;
+            int index = base.Game.Random.Next(0, KillAttackChat.Length);
+            ((SimpleBoss) base.Body).Say(KillAttackChat[index], 1, 500);
+            base.Body.PlayMovie("beatB", 0x9c4, 0);
+            base.Body.RangeAttacking(fx, mx, "cry", 0xce4, null);
         }
 
         public override void OnBeginNewTurn()
         {
             base.OnBeginNewTurn();
-            Body.CurrentDamagePlus = 1;
-            Body.CurrentShootMinus = 1;
+            base.Body.CurrentDamagePlus = 1f;
+            base.Body.CurrentShootMinus = 1f;
+        }
+
+        public override void OnBeginSelfTurn()
+        {
+            base.OnBeginSelfTurn();
         }
 
         public override void OnCreated()
@@ -88,59 +109,54 @@ namespace GameServerScript.AI.NPC
 
         public override void OnStartAttacking()
         {
-            bool result = false;
-            int maxdis = 0;
-            foreach (Player player in Game.GetAllFightPlayers())
+            bool flag = false;
+            int num = 0;
+            foreach (Player player in base.Game.GetAllFightPlayers())
             {
-                if (player.IsLiving && player.X > 390 && player.X < 1110)
+                if (player.IsLiving && (player.X > 390) && (player.X < 0x456))
                 {
-                    int dis = (int)Body.Distance(player.X, player.Y);
-                    if (dis > maxdis)
+                    int num2 = (int) base.Body.Distance(player.X, player.Y);
+                    if (num2 > num)
                     {
-                        maxdis = dis;
+                        num = num2;
                     }
-                    result = true;
+                    flag = true;
                 }
             }
-
-            if (result)
+            if (flag)
             {
-                KillAttack(390, 1110);
-                return;
+                this.KillAttack(390, 0x456);
             }
-
-            if (result == true)
+            else if (!flag)
             {
-                return;
+                if (this.attackingTurn == 1)
+                {
+                    base.Body.Direction = base.Game.FindlivingbyDir(base.Body);
+                    this.HalfAttack();
+                }
+                else if (this.attackingTurn == 2)
+                {
+                    base.Body.Direction = -base.Body.Direction;
+                    this.Summon();
+                }
+                else if (this.attackingTurn == 3)
+                {
+                    base.Body.Direction = -base.Body.Direction;
+                    this.Seal();
+                }
+                else if (this.attackingTurn == 4)
+                {
+                    base.Body.Direction = -base.Body.Direction;
+                    this.Angger();
+                }
+                else
+                {
+                    base.Body.Direction = -base.Body.Direction;
+                    this.GoOnAngger();
+                    this.attackingTurn = 0;
+                }
+                this.attackingTurn++;
             }
-
-            if (attackingTurn == 1)
-            {
-                Body.Direction = Game.FindlivingbyDir(Body);
-                HalfAttack();
-            }
-            else if (attackingTurn == 2)
-            {
-                Body.Direction = -Body.Direction;
-                Summon();
-            }
-            else if (attackingTurn == 3)
-            {
-                Body.Direction = -Body.Direction;
-                Seal();
-            }
-            else if (attackingTurn == 4)
-            {
-                Body.Direction = -Body.Direction;
-                Angger();
-            }
-            else
-            {
-                Body.Direction = -Body.Direction;
-                GoOnAngger();
-                attackingTurn = 0;
-            }
-            attackingTurn++;
         }
 
         public override void OnStopAttacking()
@@ -148,91 +164,22 @@ namespace GameServerScript.AI.NPC
             base.OnStopAttacking();
         }
 
-        public void HalfAttack()
+        public void Seal()
         {
-            Body.CurrentDamagePlus = 0.5f;
-            int index = Game.Random.Next(0, SealChat.Length);
-            Body.Say(AllAttackChat[index], 1, 500);
-            Body.PlayMovie("beatB", 2500, 0);
-            if (Body.Direction == 1)
-            {
-                Body.RangeAttacking(Body.X, Body.X + 1000, "cry", 3300, null);
-            }
-            else
-            {
-                Body.RangeAttacking(Body.X - 1000, Body.X, "cry", 3300, null);
-            }
+            int index = base.Game.Random.Next(0, SealChat.Length);
+            ((SimpleBoss) base.Body).Say(SealChat[index], 1, 0);
+            Player player = base.Game.FindRandomPlayer();
+            base.Body.PlayMovie("mantra", 0x7d0, 0x7d0);
+            base.Body.Seal(player, 1, 0xbb8);
         }
 
         public void Summon()
         {
-            int index = Game.Random.Next(0, CallChat.Length);
-            Body.Say(CallChat[index], 1, 0);
-            Body.PlayMovie("beatA", 100, 0);
-            Body.CallFuction(new LivingCallBack(CreateChild), 2500);
-        }
-
-        public void Seal()
-        {
-            int index = Game.Random.Next(0, SealChat.Length);
-            ((SimpleBoss)Body).Say(SealChat[index], 1, 0);
-            Player m_player = Game.FindRandomPlayer();
-            Body.PlayMovie("mantra", 2000, 2000);
-            Body.Seal(m_player, 1, 3000);
-        }
-
-        public void Angger()
-        {
-            int index = Game.Random.Next(0, AngryChat.Length);
-            Body.Say(AngryChat[index], 1, 0);
-            Body.State = 1;
-            Dander = Dander + 100;
-            ((SimpleBoss)Body).SetDander(Dander);
-            if (Body.Direction == -1)
-            {
-                ((SimpleBoss)Body).SetRelateDemagemRect(8, -252, 74, 50);
-            }
-            else
-            {
-                ((SimpleBoss)Body).SetRelateDemagemRect(-82, -252, 74, 50);
-            }
-        }
-
-        public void GoOnAngger()
-        {
-            if (Body.State == 1)
-            {
-                Body.CurrentDamagePlus = 1000;
-                Body.PlayMovie("beatC", 3500, 0);
-                Body.RangeAttacking(Body.X - 1000, Body.X + 1000, "cry", 5600, null);
-                Body.Die(5600);
-            }
-            else
-            {
-                ((SimpleBoss)Body).SetRelateDemagemRect(-41, -187, 83, 140);
-
-                Body.PlayMovie("mantra", 0, 2000);
-                List<Player> players = Game.GetAllLivingPlayers();
-
-                foreach (Player player in players)
-                {
-                    player.AddEffect(new ContinueReduceBloodEffect(2,-50), 0);
-                }
-            }
-        }
-
-        public void KillAttack(int fx, int mx)
-        {
-            Body.CurrentDamagePlus = 10;
-            int index = Game.Random.Next(0, KillAttackChat.Length);
-            ((SimpleBoss)Body).Say(KillAttackChat[index], 1, 500);
-            Body.PlayMovie("beatB", 2500, 0);
-            Body.RangeAttacking(fx, mx, "cry", 3300, null);
-        }
-
-        public void CreateChild()
-        {
-            ((SimpleBoss)Body).CreateChild(npcID, 520, 530, 400, 6);
+            int index = base.Game.Random.Next(0, CallChat.Length);
+            base.Body.Say(CallChat[index], 1, 0);
+            base.Body.PlayMovie("beatA", 100, 0);
+            base.Body.CallFuction(new LivingCallBack(this.CreateChild), 0x9c4);
         }
     }
 }
+

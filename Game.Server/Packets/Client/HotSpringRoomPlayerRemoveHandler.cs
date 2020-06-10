@@ -1,4 +1,5 @@
 ﻿
+using System;
 using System.Data.SqlClient;
 using Bussiness;
 using Game.Base.Packets;
@@ -24,9 +25,10 @@ namespace Game.Server.Packets.Client
                 catch
                 {
                 }
-                GSPacketIn pkg = new GSPacketIn((int)ePackageType.HOTSPRING_ROOM_PLAYER_REMOVE);
-                client.Out.SendMessage(eMessageType.Normal, LanguageMgr.GetTranslation("HotSpringRoom.Exited"));
+                Console.WriteLine("Atenção a esse metodo");
+                GSPacketIn pkg = new GSPacketIn((short)ePackageType.HOTSPRING_ROOM_PLAYER_REMOVE);
                 client.SendTCP(pkg);
+                client.Out.SendMessage(eMessageType.Normal, LanguageMgr.GetTranslation("HotSpringRoom.Exited"));
             }
             return 0;
         }

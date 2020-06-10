@@ -20,15 +20,15 @@ namespace Game.Server.HotSpringRooms
     public class TankHotSpringLogicProcessor : AbstractHotSpringProcessor
     {
 
-        public TankHotSpringLogicProcessor()
-        {
-            _commandMgr = new HotSpringCommandMgr();
-        }
-
         private HotSpringCommandMgr _commandMgr;
         private ThreadSafeRandom random = new ThreadSafeRandom();
         public  readonly int TIMEOUT = 1 * 60 * 1000;
         private static readonly ILog log = LogManager.GetLogger(MethodBase.GetCurrentMethod().DeclaringType);
+
+        public TankHotSpringLogicProcessor()
+        {
+            _commandMgr = new HotSpringCommandMgr();
+        }
 
         public override void OnTick(HotSpringRoom room)
         {
@@ -53,16 +53,17 @@ namespace Game.Server.HotSpringRooms
         public override void OnGameData(HotSpringRoom room, GamePlayer player, GSPacketIn packet)
         {
             Console.WriteLine(packet.ReadByte());
-            HotSpringCmdType type;
+            HotSpringCmdType type = HotSpringCmdType.TARGET_POINT;
 
-            if(Enum.IsDefined(typeof(HotSpringCmdType), (int)packet.ReadByte()))
+            try
             {
-                type = (HotSpringCmdType)packet.ReadByte();
+                if (Enum.IsDefined(typeof(HotSpringCmdType), (int)packet.ReadByte()))
+                {
+                    type = (HotSpringCmdType)packet.ReadByte();
+                }
             }
-            else
-            {
-                type = HotSpringCmdType.TARGET_POINT;
-            }
+            catch { }
+
 
             try
             {
