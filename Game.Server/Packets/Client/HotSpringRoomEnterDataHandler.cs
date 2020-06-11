@@ -19,10 +19,8 @@ namespace Game.Server.Packets.Client
             try
             {
                 TankHotSpringLogicProcessor processor = new TankHotSpringLogicProcessor();
-                HotSpringRoomInfo info = new HotSpringRoomInfo
-                {
-                    ID = num
-                };
+                HotSpringRoomInfo info = new HotSpringRoomInfo();
+                info.ID = num;
                 client.Player.CurrentHotSpringRoom = new HotSpringRoom(info, processor);
             }
             catch
@@ -39,7 +37,7 @@ namespace Game.Server.Packets.Client
             {
             }
             string str = packet.ReadString();
-            GSPacketIn pkg = new GSPacketIn(0xca);
+            GSPacketIn pkg = new GSPacketIn((short)ePackageType.HOTSPRING_ROOM_ENTER);
             pkg.WriteInt(num);
             pkg.WriteInt(num);
             pkg.WriteString("RoomName");

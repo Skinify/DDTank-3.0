@@ -60,6 +60,7 @@ namespace Game.Logic.Phy.Object
         public Player(IGamePlayer player, int id, BaseGame game, int team)
             : base(id, game, team, "", "", 1000, 0, 1)                   //TODO   lastPatemer    direction
         {
+            Console.WriteLine("Game.Logic.Player.teste1");
             m_rect = new Rectangle(-15, -20, 30, 30);
             m_player = player;
             m_player.GamePlayerId = id;
@@ -75,9 +76,13 @@ namespace Game.Logic.Phy.Object
             TotalAllScore = 0;
             TotalAllCure = 0;
             m_weapon = m_player.MainWeapon;
+
+            Console.WriteLine("Game.Logic.Player.teste2");
             if (m_weapon != null)
             {
+
                 var ballConfig = BallConfigMgr.FindBall(m_weapon.TemplateID);
+                Console.WriteLine("Game.Logic.Player.teste3");
                 m_mainBallId = ballConfig.Common;
                 m_spBallId = ballConfig.Special;
                 //m_mainBallId = m_weapon.Property1;

@@ -1,8 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using Game.Base.Packets;
+﻿using Game.Base.Packets;
 
 namespace Game.Server.Packets.Client
 {

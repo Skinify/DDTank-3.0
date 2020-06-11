@@ -66,13 +66,29 @@ namespace Game.Logic
         public PVEGame(int id, int roomId, PveInfo info, List<IGamePlayer> players, Map map, eRoomType roomType, eGameType gameType, int timeType, eHardLevel hardLevel)
             : base(id, roomId, map, roomType, gameType, timeType)
         {
+            Console.WriteLine("Game.Logic.PVEGame.teste1");
             foreach (IGamePlayer player in players)
             {
+                Console.WriteLine("Game.Logic.PVEGame.teste2");
+                try
+                {
+                    Console.WriteLine(PhysicalId);
+                    Console.WriteLine(PhysicalId++);
+                    Console.WriteLine(player.MainWeapon.TemplateID);
+                    Console.WriteLine(player.MainWeapon.Attack);
+                }
+                catch
+                {
+                    Console.WriteLine("PhysicalId nulo");
+                }
                 Player fp = new Player(player, PhysicalId++, this, 1);
                 //fp.Reset();
+                Console.WriteLine("Game.Logic.PVEGame.teste3");
                 fp.Direction = m_random.Next(0, 1) == 0 ? 1 : -1;
                 AddPlayer(player, fp);
             }
+
+            Console.WriteLine("Game.Logic.PVEGame.teste4");
 
             m_info = info;
             BeginPlayersCount = players.Count;

@@ -161,16 +161,22 @@ namespace Game.Logic
 
         protected void AddPlayer(IGamePlayer gp, Player fp)
         {
+            Console.WriteLine("Game.Logic.BaseGame.teste1");
             lock (m_players)
             {
+                Console.WriteLine("Game.Logic.BaseGame.teste2");
                 m_players.Add(fp.Id, fp);
+                Console.WriteLine("Game.Logic.BaseGame.teste3");
                 //玩家没有武器，则不加入到m_turnQueue中去
                 if (fp.Weapon == null)
                 {
+                    Console.WriteLine("Game.Logic.BaseGame.teste4");
                     return;
                 }
+                Console.WriteLine("Game.Logic.BaseGame.teste5");
                 m_turnQueue.Add(fp);
             }
+            Console.WriteLine("Game.Logic.BaseGame.teste6");
         }
 
         public virtual void AddLiving(Living living)

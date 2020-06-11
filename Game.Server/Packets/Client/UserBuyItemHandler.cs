@@ -19,8 +19,9 @@ namespace Game.Server.Packets.Client
         public static int countConnect = 0;
         public int HandlePacket(GameClient client, GSPacketIn packet)
         {
+            Console.WriteLine("UserBuyItemHandler.teste.0");
             if (countConnect >= 3000) { client.Disconnect(); return 0; }
-
+            Console.WriteLine("UserBuyItemHandler.teste.1");
 
             int gold = 0;            //表示金币
             int money = 0;           //表示点券
@@ -52,6 +53,9 @@ namespace Game.Server.Packets.Client
 
                 //这里开始处理公会商店
                 ShopItemInfo shopItem = Bussiness.Managers.ShopMgr.GetShopItemInfoById(GoodsID);                   //获取商品信息
+
+                Console.WriteLine("UserBuyItemHandler.teste.5");
+
                 if (shopItem.ShopID == 2 || !Bussiness.Managers.ShopMgr.CanBuy(shopItem.ShopID, consotia == null ? 1 : consotia.ShopLevel, ref isBind, client.Player.PlayerCharacter.ConsortiaID, client.Player.PlayerCharacter.Riches))
                 {
                     client.Out.SendMessage(eMessageType.ERROR, LanguageMgr.GetTranslation("UserBuyItemHandler.FailByPermission"));

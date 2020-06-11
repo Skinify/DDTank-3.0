@@ -7,14 +7,15 @@ namespace Game.Server.HotSpringRooms.TankHandle
 {
     public class HotSpringCommandAttribute:Attribute
     {
+        public HotSpringCommandAttribute(byte code)
+        {
+            Code = code;
+        }
         public byte Code
         {
             get;
             private set;
         }
-        public HotSpringCommandAttribute(byte code)
-        {
-            Code = code;
-        }
+
     }
 }

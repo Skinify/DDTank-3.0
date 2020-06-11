@@ -431,10 +431,15 @@ namespace SqlDataProvider.Data
 
         public static ItemInfo CreateFromTemplate(ItemTemplateInfo goods, int count, int type)
         {
+            Console.WriteLine("SqlDataProvider.Data.ItemInfo.teste1");
+
             if (goods == null)
                 return null;
 
             ItemInfo userGoods = new ItemInfo(goods);
+
+            Console.WriteLine("SqlDataProvider.Data.ItemInfo.teste2");
+
             userGoods.AgilityCompose = 0;
             userGoods.AttackCompose = 0;
             userGoods.BeginDate = DateTime.Now;
@@ -462,8 +467,13 @@ namespace SqlDataProvider.Data
             userGoods.Hole5 = -1;
             userGoods.Hole6 = -1;
 
+            Console.WriteLine("SqlDataProvider.Data.ItemInfo.teste3");
+
 
             OpenHole(ref userGoods);
+
+            Console.WriteLine("SqlDataProvider.Data.ItemInfo.teste4");
+
             return userGoods;
         }
 
@@ -699,43 +709,46 @@ namespace SqlDataProvider.Data
         /// <param name="item"></param>
         public static void OpenHole(ref ItemInfo item)
         {
-            string[] Hole = item.Template.Hole.Split('|');
-            for (int i = 0; i < Hole.Length; i++)
+            if (!string.IsNullOrEmpty(item.Template.Hole))
             {
-                string[] NeedLevel = Hole[i].Split(',');
-                if (item.StrengthenLevel >= Convert.ToInt32(NeedLevel[0]) && Convert.ToInt32(NeedLevel[1]) != -1)
+                string[] Hole = item.Template.Hole.Split('|');
+                for (int i = 0; i < Hole.Length; i++)
                 {
-                    switch (i)
+                    string[] NeedLevel = Hole[i].Split(',');
+                    if (item.StrengthenLevel >= Convert.ToInt32(NeedLevel[0]) && Convert.ToInt32(NeedLevel[1]) != -1)
                     {
-                        case 0:
-                            if (item.Hole1 < 0)
-                                item.Hole1 = 0;
-                            break;
-                        case 1:
-                            if (item.Hole2 < 0)
-                                item.Hole2 = 0;
-                            break;
-                        case 2:
-                            if (item.Hole3 < 0)
-                                item.Hole3 = 0;
-                            break;
-                        case 3:
-                            if (item.Hole4 < 0)
-                                item.Hole4 = 0;
-                            break;
-                        case 4:
-                            if (item.Hole5 < 0)
-                                item.Hole5 = 0;
-                            break;
-                        case 5:
-                            if (item.Hole6 < 0)
-                                item.Hole6 = 0;
-                            break;
+                        switch (i)
+                        {
+                            case 0:
+                                if (item.Hole1 < 0)
+                                    item.Hole1 = 0;
+                                break;
+                            case 1:
+                                if (item.Hole2 < 0)
+                                    item.Hole2 = 0;
+                                break;
+                            case 2:
+                                if (item.Hole3 < 0)
+                                    item.Hole3 = 0;
+                                break;
+                            case 3:
+                                if (item.Hole4 < 0)
+                                    item.Hole4 = 0;
+                                break;
+                            case 4:
+                                if (item.Hole5 < 0)
+                                    item.Hole5 = 0;
+                                break;
+                            case 5:
+                                if (item.Hole6 < 0)
+                                    item.Hole6 = 0;
+                                break;
 
 
+                        }
                     }
-                }
 
+                }
             }
         }
     }
