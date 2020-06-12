@@ -4,9 +4,10 @@ using Game.Server.GameObjects;
 using Game.Server.Packets;
 using SqlDataProvider.Data;
 using System;
+using Game.Server.GameUtils;
 
 
-namespace Game.Server.GameUtils
+namespace Game.Server.GameUtilsNOVO
 {
     public class PlayerEquipInventory : PlayerInventory
     {

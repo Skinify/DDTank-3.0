@@ -5,8 +5,10 @@ using Game.Server.GameObjects;
 using SqlDataProvider.Data;
 using Bussiness;
 using Game.Server.Packets;
+using Game.Server.GameUtils;
 
-namespace Game.Server.GameUtilsBAK
+
+namespace Game.Server.GameUtils
 {
     public class PlayerInventory : AbstractInventory
     {
@@ -14,11 +16,12 @@ namespace Game.Server.GameUtilsBAK
 
         private bool m_saveToDb;
 
-        private List<ItemInfo> m_removedList = new List<ItemInfo>();
+        private List<ItemInfo> m_removedList;
 
         public PlayerInventory(GamePlayer player, bool saveTodb, int capibility, int type, int beginSlot, bool autoStack)
             : base(capibility, type, beginSlot, autoStack)
         {
+            m_removedList = new List<SqlDataProvider.Data.ItemInfo>();
             m_player = player;
             m_saveToDb = saveTodb;
         }
@@ -96,10 +99,7 @@ namespace Game.Server.GameUtilsBAK
                 item.IsExist = true;
                 return true;
             }
-            else
-            {
-                return false;
-            }
+            return false;
         }
 
         public override bool TakeOutItem(ItemInfo item)
@@ -142,8 +142,7 @@ namespace Game.Server.GameUtilsBAK
         public override void UpdateChangedPlaces()
         {
             int[] changedPlaces = m_changedPlaces.ToArray();
-            Console.WriteLine("aqui oooooooo");
-            //m_player.Out.SendUpdateInventorySlot(this, changedPlaces);
+            m_player.Out.SendUpdateInventorySlot(this, changedPlaces);
             base.UpdateChangedPlaces();
         }
 

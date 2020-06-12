@@ -1,4 +1,4 @@
-﻿/*using System;
+﻿using System;
 using System.Collections.Generic;
 using log4net;
 using System.Reflection;
@@ -354,8 +354,7 @@ namespace Game.Base.Packets
             GSPacketIn pkg = new GSPacketIn((byte)ePackageType.UPDATE_PRIVATE_INFO, info.ID);
 
             pkg.WriteInt(info.Money);
-            //Medal
-            pkg.WriteInt(1);
+            pkg.WriteInt(m_gameClient.Player.PropBag.GetItemCount(0x2c90));
             pkg.WriteInt(info.Gold);
             pkg.WriteInt(info.GiftToken);
             SendTCP(pkg);
@@ -1667,7 +1666,7 @@ namespace Game.Base.Packets
 
     }
 }
-*/
+/*
 
 using Bussiness;
 using Game.Server;
@@ -2844,3 +2843,4 @@ namespace Game.Base.Packets
     }
 }
 
+    */

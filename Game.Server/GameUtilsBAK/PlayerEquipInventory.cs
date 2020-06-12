@@ -10,8 +10,9 @@ using Game.Server.Packets;
 using Game.Server.Statics;
 using Bussiness.Managers;
 using Game.Logic.Phy.Object;
+using Game.Server.GameUtils;
 
-namespace Game.Server.GameUtilsBAK
+namespace Game.Server.GameUtils
 {
     public class PlayerEquipInventory : PlayerInventory
     {

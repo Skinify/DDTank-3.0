@@ -5,7 +5,7 @@ using System.Collections.Generic;
 using System.Reflection;
 using System.Threading;
 
-namespace Game.Server.GameUtils
+namespace Game.Server.GameUtilsBAK
 {
 
     public abstract class AbstractInventory

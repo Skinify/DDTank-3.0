@@ -7,7 +7,7 @@ using System.Collections.Generic;
 using System.Text;
 
 
-namespace Game.Server.GameUtils
+namespace Game.Server.GameUtilsBAK
 {
     public class PlayerInventory : AbstractInventory
     {
@@ -380,7 +380,7 @@ namespace Game.Server.GameUtils
         public override void UpdateChangedPlaces()
         {
             int[] updatedSlots = base.m_changedPlaces.ToArray();
-            this.m_player.Out.SendUpdateInventorySlot(this, updatedSlots);
+            //this.m_player.Out.SendUpdateInventorySlot(this, updatedSlots);
             base.UpdateChangedPlaces();
         }
     }

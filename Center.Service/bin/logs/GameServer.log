@@ -1514,4 +1514,640 @@
 11:47:19,337 - [12] - INFO  - Center.Server.CenterServer - Saving Record...
 11:47:19,338 - [12] - DEBUG - Center.Server.CenterServer - Save ThreadId=12
 11:47:19,337 - [11] - INFO  - Center.Server.CenterServer - Saving Record...
-11:47:19,340 - [11] - DEBUG - Center.Server.CenterServer - 
+11:47:19,340 - [11] - DEBUG - Center.Server.CenterServer - 14:51:30,020 - [MAIN] - INFO  - Bussiness.GameProperties - Refreshing game properties!
+14:51:30,170 - [MAIN] - DEBUG - Bussiness.GameProperties - Loading Edition Value is 21000
+14:51:30,172 - [MAIN] - DEBUG - Bussiness.GameProperties - Loading MustComposeGold Value is 1000
+14:51:30,172 - [MAIN] - DEBUG - Bussiness.GameProperties - Loading MustFusionGold Value is 400
+14:51:30,173 - [MAIN] - DEBUG - Bussiness.GameProperties - Loading MustStrengthenGold Value is 1000
+14:51:30,174 - [MAIN] - DEBUG - Bussiness.GameProperties - Loading CheckRewardItem Value is 11001
+14:51:30,175 - [MAIN] - DEBUG - Bussiness.GameProperties - Loading CheckCount Value is 20
+14:51:30,175 - [MAIN] - DEBUG - Bussiness.GameProperties - Loading HymenealMoney Value is 500
+14:51:30,176 - [MAIN] - DEBUG - Bussiness.GameProperties - Loading DivorcedMoney Value is 5214
+14:51:30,176 - [MAIN] - DEBUG - Bussiness.GameProperties - Loading MarryRoomCreateMoney Value is 2000,2700,3400
+14:51:30,177 - [MAIN] - DEBUG - Bussiness.GameProperties - Loading BoxAppearCondition Value is 4
+14:51:30,178 - [MAIN] - DEBUG - Bussiness.GameProperties - Loading DisableCommands Value is    
+14:51:30,179 - [MAIN] - DEBUG - Bussiness.GameProperties - Loading AssState Value is False
+14:51:30,179 - [MAIN] - DEBUG - Bussiness.GameProperties - Loading DailyAwardState Value is True
+14:51:30,180 - [MAIN] - DEBUG - Bussiness.GameProperties - Loading Cess Value is 0
+14:51:30,182 - [MAIN] - DEBUG - Bussiness.GameProperties - Loading BeginAuction Value is 45
+14:51:30,182 - [MAIN] - DEBUG - Bussiness.GameProperties - Loading EndAuction Value is 75
+14:51:30,194 - [MAIN] - INFO  - Center.Server.CenterServer - Recompile Scripts: True
+14:51:30,213 - [MAIN] - INFO  - Center.Server.CenterServer - Registering global event handlers: true
+14:51:30,213 - [MAIN] - INFO  - Center.Server.CenterServer - Script components: True
+14:51:30,214 - [MAIN] - INFO  - Center.Server.CenterServer - Check Server Edition:21000: True
+14:51:30,220 - [MAIN] - INFO  - Center.Server.CenterServer - InitSocket Port:9202: True
+14:51:32,733 - [MAIN] - INFO  - Center.Server.CenterService - Center Service started!
+14:51:32,734 - [MAIN] - INFO  - Center.Server.CenterServer - Center Service: True
+14:51:32,766 - [MAIN] - INFO  - Center.Server.ServerMgr - Load server list from db.
+14:51:32,767 - [MAIN] - INFO  - Center.Server.CenterServer - Load serverlist: True
+14:51:32,791 - [MAIN] - INFO  - Center.Server.CenterServer - Init ConsortiaLevelMgr: True
+14:51:32,808 - [MAIN] - INFO  - Center.Server.CenterServer - Init MacroDropMgr: True
+14:51:32,817 - [MAIN] - INFO  - Center.Server.CenterServer - LanguageMgr Init: True
+14:51:32,821 - [MAIN] - INFO  - Center.Server.CenterServer - Init Global Timers: True
+14:51:32,839 - [MAIN] - DEBUG - Game.Base.CommandMgr - ScriptMgr: Searching for commands in Center.Server, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+14:51:32,843 - [MAIN] - DEBUG - Game.Base.CommandMgr - Load: &gp,Manage game properties at runtime.
+14:51:32,846 - [MAIN] - DEBUG - Game.Base.CommandMgr - ScriptMgr: Searching for commands in Game.Base, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+14:51:32,846 - [MAIN] - DEBUG - Game.Base.CommandMgr - Load: &cs,Compile the C# scripts.
+14:51:32,847 - [MAIN] - DEBUG - Game.Base.CommandMgr - Load: &cmd,Config the command system.
+14:51:32,848 - [MAIN] - DEBUG - Game.Base.CommandMgr - Load: &sm,Script Manager console commands.
+14:51:32,850 - [MAIN] - INFO  - Game.Base.CommandMgr - Loaded 4 commands!
+14:51:32,856 - [MAIN] - DEBUG - Game.Base.BaseServer - Server is now listening to incoming connections!
+14:51:32,856 - [MAIN] - INFO  - Center.Server.CenterServer - base.Start(): True
+14:51:32,863 - [MAIN] - INFO  - Center.Server.CenterServer - GameServer is now open for connections!
+14:51:32,864 - [MAIN] - INFO  - Bussiness.GameProperties - Saving game properties into db!
+14:51:34,834 - [3] - INFO  - Game.Base.BaseServer - Incoming connection from 127.0.0.1:61024
+14:51:34,932 - [3] - DEBUG - Game.Base.Packets.StreamProcessor - Send Pkg to 127.0.0.1:61024 :
+0000: 71 AB 00 97 47 55 00 00 00 00 00 00 00 00 00 00   q...GU..........
+0010: 00 00 00 00 B8 2B DF 78 A8 5E 3B EA FB 40 D5 11   .....+.x.^;..@..
+0020: 9D 53 5F 31 DC 00 D1 74 9E E7 1C 80 50 BA CD F5   .S_1...t....P...
+0030: B5 6D F0 8B CF C0 8F E0 A1 2F EA 6A 02 2F 9E 59   .m......./.j./.Y
+0040: C6 BB B6 30 CC AA 75 72 4F 39 19 8D DA F6 E9 09   ...0..urO9......
+0050: 44 95 71 99 23 A0 68 4D C7 1B 88 E0 88 8D 35 73   D.q.#.hM......5s
+0060: 80 E3 21 FE A2 B1 0A 5B AA D0 74 1C FB 46 82 D3   ..!....[..t..F..
+0070: EE 94 F5 CB 1D A5 1B 2A C4 02 FF 64 DC 66 94 C8   .......*...d.f..
+0080: FB EA 8F 6E 11 98 DD CE A3 EF 45 A9 CC FB B1 6B   ...n......E....k
+0090: DD 20 D6 F5 01 00 01                              . .....         
+
+14:51:34,940 - [3] - DEBUG - Game.Base.BaseClient - Send To (127.0.0.1:61024) 151 bytes
+14:51:34,965 - [3] - DEBUG - Game.Base.Packets.StreamProcessor - Recieve Packet:
+0000: 71 AB 00 94 40 44 00 01 00 00 00 00 00 00 00 00   q...@D..........
+0010: 00 00 00 00 91 6A 6D AC DF E7 4E 57 3C 62 14 67   .....jm...NW<b.g
+0020: E4 92 FC DC 1A 78 27 08 AE 41 C6 79 DE 8A 3E C7   .....x'..A.y..>.
+0030: C0 03 A3 D9 4B 1C 95 A8 2A CD CA A9 9B 5A 27 7F   ....K...*....Z'
+0040: D5 2F 8E 4D 5E 30 26 B2 1E C3 19 CB DB 70 57 D2   ./.M^0&......pW.
+0050: 1B D5 2F 90 5D 86 C3 3E CF F6 93 41 CB 51 9C 64   ../.]..>...A.Q.d
+0060: 35 A1 90 CB 6D 9C E2 4D CB 4F 4F 21 BE E5 A0 2B   5...m..M.OO!...+
+0070: 3E 8F A6 9A BA B6 4C CE 37 3A 79 0C A1 AC ED 71   >.....L.7:y....q
+0080: D6 38 BA 41 BA 6F BB 5C DA 5D 6A 3E 40 AB 21 60   .8.A.o.\.]j>@.!`
+0090: 04 78 AA 89                                       .x..            
+
+14:51:34,976 - [3] - DEBUG - Game.Base.Packets.StreamProcessor - Send Pkg to 127.0.0.1:61024 :
+0000: 71 AB 00 16 00 00 00 08 00 00 00 00 00 00 00 00   q...............
+0010: 00 00 00 00 00 01                                 ......          
+
+14:51:34,977 - [3] - DEBUG - Game.Base.BaseClient - Send To (127.0.0.1:61024) 22 bytes
+14:51:34,978 - [7] - DEBUG - Game.Base.Packets.StreamProcessor - Recieve Packet:
+0000: 71 AB 00 1C 02 7A 00 F0 00 00 00 00 00 00 00 00   q....z..........
+0010: 00 00 00 00 7F 00 00 01 00 00 23 F0               .........#.    
+
+14:52:01,906 - [6] - DEBUG - Game.Base.Packets.StreamProcessor - Recieve Packet:
+0000: 71 AB 00 18 00 50 00 03 00 00 00 00 00 00 00 00   q....P..........
+0010: 00 00 00 00 00 00 00 56                           .......V        
+
+14:52:01,910 - [6] - DEBUG - Game.Base.Packets.StreamProcessor - Send Pkg to 127.0.0.1:61024 :
+0000: 71 AB 00 19 00 51 00 03 00 00 00 00 00 00 00 00   q....Q..........
+0010: 00 00 00 00 00 00 00 56 01                        .......V.       
+
+14:52:01,911 - [6] - DEBUG - Game.Base.BaseClient - Send To (127.0.0.1:61024) 25 bytes
+14:52:02,150 - [6] - DEBUG - Game.Base.Packets.StreamProcessor - Recieve Packet:
+0000: 71 AB 00 20 00 5D 00 05 00 00 00 00 00 00 00 00   q.. .]..........
+0010: 00 00 00 00 00 00 00 01 00 00 00 56 00 00 00 0A   ...........V....
+
+14:52:32,824 - [8] - INFO  - Center.Server.CenterServer - Saving database...
+14:52:32,825 - [8] - DEBUG - Center.Server.CenterServer - Save ThreadId=8
+14:52:32,824 - [10] - INFO  - Center.Server.CenterServer - Saving Record...
+14:52:32,826 - [10] - DEBUG - Center.Server.CenterServer - Save ThreadId=10
+14:52:32,826 - [9] - INFO  - Center.Server.CenterServer - Saving Record...
+14:52:32,829 - [9] - DEBUG - Center.Server.CenterServer - Save ThreadId=9
+14:52:32,834 - [10] - INFO  - Center.Server.CenterServer - Saving Record complete!
+14:52:32,912 - [8] - INFO  - Center.Server.CenterServer - Saving database complete!
+14:52:32,913 - [8] - INFO  - Center.Server.CenterServer - Saved all databases 78ms
+14:52:32,956 - [9] - INFO  - Center.Server.CenterServer - Scan Consortia complete!
+14:52:40,601 - [12] - INFO  - Game.Base.BaseClient - Disconnecting client (127.0.0.1:61024), received bytes=0
+14:53:32,824 - [11] - INFO  - Center.Server.CenterServer - Saving Record...
+14:53:32,824 - [9] - INFO  - Center.Server.CenterServer - Saving Record...
+14:53:32,825 - [9] - DEBUG - Center.Server.CenterServer - Save ThreadId=9
+14:53:32,824 - [11] - DEBUG - Center.Server.CenterServer - Save ThreadId=11
+14:53:32,826 - [9] - INFO  - Center.Server.CenterServer - Saving Record complete!
+14:53:32,824 - [10] - INFO  - Center.Server.CenterServer - Saving database...
+14:53:32,829 - [10] - DEBUG - Center.Server.CenterServer - Save ThreadId=10
+14:53:32,836 - [10] - INFO  - Center.Server.CenterServer - Saving database complete!
+14:53:32,837 - [10] - INFO  - Center.Server.CenterServer - Saved all databases 15ms
+14:53:32,848 - [11] - INFO  - Center.Server.CenterServer - Scan Consortia complete!
+14:54:32,824 - [11] - INFO  - Center.Server.CenterServer - Saving Record...
+14:54:32,825 - [11] - DEBUG - Center.Server.CenterServer - Save ThreadId=11
+14:54:32,824 - [9] - INFO  - Center.Server.CenterServer - Saving Record...
+14:54:32,827 - [9] - DEBUG - Center.Server.CenterServer - Save ThreadId=9
+14:54:32,826 - [11] - INFO  - Center.Server.CenterServer - Saving Record complete!
+14:54:32,824 - [8] - INFO  - Center.Server.CenterServer - Saving database...
+14:54:32,830 - [8] - DEBUG - Center.Server.CenterServer - Save ThreadId=8
+14:54:32,850 - [9] - INFO  - Center.Server.CenterServer - Scan Consortia complete!
+14:54:32,883 - [8] - INFO  - Center.Server.CenterServer - Saving database complete!
+14:54:32,883 - [8] - INFO  - Center.Server.CenterServer - Saved all databases 62ms
+14:55:32,826 - [9] - INFO  - Center.Server.CenterServer - Saving database...
+14:55:32,826 - [9] - DEBUG - Center.Server.CenterServer - Save ThreadId=9
+14:55:32,826 - [8] - INFO  - Center.Server.CenterServer - Saving Record...
+14:55:32,828 - [8] - DEBUG - Center.Server.CenterServer - Save ThreadId=8
+14:55:32,826 - [10] - INFO  - Center.Server.CenterServer - Saving Record...
+14:55:32,830 - [10] - DEBUG - Center.Server.CenterServer - Save ThreadId=10
+14:55:32,832 - [10] - INFO  - Center.Server.CenterServer - Saving Record complete!
+14:55:32,846 - [8] - INFO  - Center.Server.CenterServer - Scan Consortia complete!
+14:55:32,894 - [9] - INFO  - Center.Server.CenterServer - Saving database complete!
+14:55:32,895 - [9] - INFO  - Center.Server.CenterServer - Saved all databases 62ms
+14:55:42,204 - [7] - INFO  - Game.Base.BaseServer - Incoming connection from 127.0.0.1:61080
+14:55:42,284 - [7] - DEBUG - Game.Base.Packets.StreamProcessor - Send Pkg to 127.0.0.1:61080 :
+0000: 71 AB 00 97 3E 7A 00 00 00 00 00 00 00 00 00 00   q...>z..........
+0010: 00 00 00 00 B8 85 47 42 46 66 EE 65 A8 E1 09 E9   ......GBFf.e....
+0020: C4 8D F7 AC C6 91 88 3D F1 B7 32 22 EF 40 6F CF   .......=..2".@o.
+0030: FC 11 08 CB DC 1A 14 E0 1D A6 50 EA 88 81 99 CA   ..........P.....
+0040: 2A C1 49 4F B4 00 56 57 67 82 54 57 50 EF 48 67   *.IO..VWg.TWP.Hg
+0050: 76 53 15 62 8D E7 FB 7F 19 5C 44 CC A1 9B 5F AF   vS.b....\D..._.
+0060: 28 16 7B 46 89 7F 5A 29 D4 F2 0B 0A 65 3D 09 CF   (.{F.Z)....e=..
+0070: 42 7F 20 52 51 7C B2 9F A0 EA 7F 21 0C 7B 51 EA   B RQ|....!.{Q.
+0080: F8 95 CE 64 BC F9 84 32 E5 91 1F 14 68 9D 6A 3C   ...d...2....h.j<
+0090: A4 47 D8 D5 01 00 01                              .G.....         
+
+14:55:42,285 - [7] - DEBUG - Game.Base.BaseClient - Send To (127.0.0.1:61080) 151 bytes
+14:55:42,304 - [7] - DEBUG - Game.Base.Packets.StreamProcessor - Recieve Packet:
+0000: 71 AB 00 94 40 26 00 01 00 00 00 00 00 00 00 00   q...@&..........
+0010: 00 00 00 00 64 6B C7 12 5D C8 5E 67 5B 2D D4 5B   ....dk..].^g[-.[
+0020: B4 32 FC AE C8 26 A1 AA F3 A8 CD D4 23 36 8F 3B   .2...&......#6.;
+0030: 8C 33 46 8F 39 E3 DA 49 51 48 47 22 E1 59 D3 ED   .3F.9..IQHG".Y..
+0040: 22 B1 1F CD 3D 1E 16 34 A9 63 A6 7C 20 B5 F4 87   "...=..4.c.| ...
+0050: D9 3B 49 F4 2D 2D F7 9A 6F 63 C1 6C 7B 6F 30 96   .;I.--..oc.l{o0.
+0060: 89 45 70 36 C7 DF E4 B1 2C 51 23 AA 9A 6E 53 10   .Ep6....,Q#..nS.
+0070: 64 25 91 4B 5D C9 1A 68 6B E4 A0 7C C3 B6 BA 23   d%.K]..hk..|...#
+0080: D9 71 C2 D4 40 8E D8 E4 F5 65 E3 68 11 5C 7A E9   .q..@....e.h.\z.
+0090: 55 9E 55 C8                                       U.U.            
+
+14:55:42,306 - [7] - DEBUG - Game.Base.Packets.StreamProcessor - Send Pkg to 127.0.0.1:61080 :
+0000: 71 AB 00 16 00 00 00 08 00 00 00 00 00 00 00 00   q...............
+0010: 00 00 00 00 00 01                                 ......          
+
+14:55:42,307 - [7] - DEBUG - Game.Base.BaseClient - Send To (127.0.0.1:61080) 22 bytes
+14:55:42,307 - [7] - DEBUG - Game.Base.Packets.StreamProcessor - Recieve Packet:
+0000: 71 AB 00 1C 02 7A 00 F0 00 00 00 00 00 00 00 00   q....z..........
+0010: 00 00 00 00 7F 00 00 01 00 00 23 F0               .........#.    
+
+14:56:07,556 - [14] - DEBUG - Game.Base.Packets.StreamProcessor - Recieve Packet:
+0000: 71 AB 00 18 00 50 00 03 00 00 00 00 00 00 00 00   q....P..........
+0010: 00 00 00 00 00 00 00 56                           .......V        
+
+14:56:07,557 - [14] - DEBUG - Game.Base.Packets.StreamProcessor - Send Pkg to 127.0.0.1:61080 :
+0000: 71 AB 00 19 00 51 00 03 00 00 00 00 00 00 00 00   q....Q..........
+0010: 00 00 00 00 00 00 00 56 01                        .......V.       
+
+14:56:07,558 - [14] - DEBUG - Game.Base.BaseClient - Send To (127.0.0.1:61080) 25 bytes
+14:56:07,800 - [14] - DEBUG - Game.Base.Packets.StreamProcessor - Recieve Packet:
+0000: 71 AB 00 20 00 5D 00 05 00 00 00 00 00 00 00 00   q.. .]..........
+0010: 00 00 00 00 00 00 00 01 00 00 00 56 00 00 00 0A   ...........V....
+
+14:56:32,828 - [8] - INFO  - Center.Server.CenterServer - Saving database...
+14:56:32,828 - [8] - DEBUG - Center.Server.CenterServer - Save ThreadId=8
+14:56:32,828 - [10] - INFO  - Center.Server.CenterServer - Saving Record...
+14:56:32,829 - [10] - DEBUG - Center.Server.CenterServer - Save ThreadId=10
+14:56:32,828 - [11] - INFO  - Center.Server.CenterServer - Saving Record...
+14:56:32,832 - [11] - DEBUG - Center.Server.CenterServer - Save ThreadId=11
+14:56:32,832 - [11] - INFO  - Center.Server.CenterServer - Saving Record complete!
+14:56:32,835 - [8] - INFO  - Center.Server.CenterServer - Saving database complete!
+14:56:32,835 - [8] - INFO  - Center.Server.CenterServer - Saved all databases 15ms
+14:56:32,849 - [10] - INFO  - Center.Server.CenterServer - Scan Consortia complete!
+14:57:07,748 - [15] - INFO  - Game.Base.BaseClient - Disconnecting client (127.0.0.1:61080), received bytes=0
+14:57:32,830 - [9] - INFO  - Center.Server.CenterServer - Saving Record...
+14:57:32,830 - [9] - DEBUG - Center.Server.CenterServer - Save ThreadId=9
+14:57:32,830 - [10] - INFO  - Center.Server.CenterServer - Saving Record...
+14:57:32,830 - [11] - INFO  - Center.Server.CenterServer - Saving database...
+14:57:32,832 - [11] - DEBUG - Center.Server.CenterServer - Save ThreadId=11
+14:57:32,831 - [9] - INFO  - Center.Server.CenterServer - Saving Record complete!
+14:57:32,832 - [10] - DEBUG - Center.Server.CenterServer - Save ThreadId=10
+14:57:32,837 - [11] - INFO  - Center.Server.CenterServer - Saving database complete!
+14:57:32,837 - [11] - INFO  - Center.Server.CenterServer - Saved all databases 15ms
+14:57:32,850 - [10] - INFO  - Center.Server.CenterServer - Scan Consortia complete!
+14:58:32,823 - [10] - INFO  - Center.Server.CenterServer - Saving database...
+14:58:32,823 - [10] - DEBUG - Center.Server.CenterServer - Save ThreadId=10
+14:58:32,823 - [9] - INFO  - Center.Server.CenterServer - Saving Record...
+14:58:32,823 - [8] - INFO  - Center.Server.CenterServer - Saving Record...
+14:58:32,825 - [8] - DEBUG - Center.Server.CenterServer - Save ThreadId=8
+14:58:32,825 - [9] - DEBUG - Center.Server.CenterServer - Save ThreadId=9
+14:58:32,827 - [9] - INFO  - Center.Server.CenterServer - Saving Record complete!
+14:58:32,832 - [10] - INFO  - Center.Server.CenterServer - Saving database complete!
+14:58:32,832 - [10] - INFO  - Center.Server.CenterServer - Saved all databases 0ms
+14:58:32,852 - [8] - INFO  - Center.Server.CenterServer - Scan Consortia complete!
+14:59:32,825 - [9] - INFO  - Center.Server.CenterServer - Saving database...
+14:59:32,825 - [8] - INFO  - Center.Server.CenterServer - Saving Record...
+14:59:32,826 - [8] - DEBUG - Center.Server.CenterServer - Save ThreadId=8
+14:59:32,825 - [10] - INFO  - Center.Server.CenterServer - Saving Record...
+14:15:00:26,764 - [MAIN] - INFO  - Bussiness.GameProperties - Refreshing game properties!
+15:00:26,877 - [MAIN] - DEBUG - Bussiness.GameProperties - Loading Edition Value is 21000
+15:00:26,878 - [MAIN] - DEBUG - Bussiness.GameProperties - Loading MustComposeGold Value is 1000
+15:00:26,879 - [MAIN] - DEBUG - Bussiness.GameProperties - Loading MustFusionGold Value is 400
+15:00:26,879 - [MAIN] - DEBUG - Bussiness.GameProperties - Loading MustStrengthenGold Value is 1000
+15:00:26,880 - [MAIN] - DEBUG - Bussiness.GameProperties - Loading CheckRewardItem Value is 11001
+15:00:26,880 - [MAIN] - DEBUG - Bussiness.GameProperties - Loading CheckCount Value is 20
+15:00:26,881 - [MAIN] - DEBUG - Bussiness.GameProperties - Loading HymenealMoney Value is 500
+15:00:26,881 - [MAIN] - DEBUG - Bussiness.GameProperties - Loading DivorcedMoney Value is 5214
+15:00:26,882 - [MAIN] - DEBUG - Bussiness.GameProperties - Loading MarryRoomCreateMoney Value is 2000,2700,3400
+15:00:26,883 - [MAIN] - DEBUG - Bussiness.GameProperties - Loading BoxAppearCondition Value is 4
+15:00:26,884 - [MAIN] - DEBUG - Bussiness.GameProperties - Loading DisableCommands Value is    
+15:00:26,885 - [MAIN] - DEBUG - Bussiness.GameProperties - Loading AssState Value is False
+15:00:26,887 - [MAIN] - DEBUG - Bussiness.GameProperties - Loading DailyAwardState Value is True
+15:00:26,889 - [MAIN] - DEBUG - Bussiness.GameProperties - Loading Cess Value is 0
+15:00:26,889 - [MAIN] - DEBUG - Bussiness.GameProperties - Loading BeginAuction Value is 45
+15:00:26,890 - [MAIN] - DEBUG - Bussiness.GameProperties - Loading EndAuction Value is 75
+15:00:26,901 - [MAIN] - INFO  - Center.Server.CenterServer - Recompile Scripts: True
+15:00:26,917 - [MAIN] - INFO  - Center.Server.CenterServer - Registering global event handlers: true
+15:00:26,917 - [MAIN] - INFO  - Center.Server.CenterServer - Script components: True
+15:00:26,917 - [MAIN] - INFO  - Center.Server.CenterServer - Check Server Edition:21000: True
+15:00:26,924 - [MAIN] - INFO  - Center.Server.CenterServer - InitSocket Port:9202: True
+15:00:29,469 - [MAIN] - INFO  - Center.Server.CenterService - Center Service started!
+15:00:29,469 - [MAIN] - INFO  - Center.Server.CenterServer - Center Service: True
+15:00:29,482 - [MAIN] - INFO  - Center.Server.ServerMgr - Load server list from db.
+15:00:29,482 - [MAIN] - INFO  - Center.Server.CenterServer - Load serverlist: True
+15:00:29,497 - [MAIN] - INFO  - Center.Server.CenterServer - Init ConsortiaLevelMgr: True
+15:00:29,508 - [MAIN] - INFO  - Center.Server.CenterServer - Init MacroDropMgr: True
+15:00:29,516 - [MAIN] - INFO  - Center.Server.CenterServer - LanguageMgr Init: True
+15:00:29,520 - [MAIN] - INFO  - Center.Server.CenterServer - Init Global Timers: True
+15:00:29,535 - [MAIN] - DEBUG - Game.Base.CommandMgr - ScriptMgr: Searching for commands in Center.Server, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+15:00:29,539 - [MAIN] - DEBUG - Game.Base.CommandMgr - Load: &gp,Manage game properties at runtime.
+15:00:29,542 - [MAIN] - DEBUG - Game.Base.CommandMgr - ScriptMgr: Searching for commands in Game.Base, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+15:00:29,543 - [MAIN] - DEBUG - Game.Base.CommandMgr - Load: &cs,Compile the C# scripts.
+15:00:29,544 - [MAIN] - DEBUG - Game.Base.CommandMgr - Load: &cmd,Config the command system.
+15:00:29,545 - [MAIN] - DEBUG - Game.Base.CommandMgr - Load: &sm,Script Manager console commands.
+15:00:29,545 - [MAIN] - INFO  - Game.Base.CommandMgr - Loaded 4 commands!
+15:00:29,551 - [MAIN] - DEBUG - Game.Base.BaseServer - Server is now listening to incoming connections!
+15:00:29,551 - [MAIN] - INFO  - Center.Server.CenterServer - base.Start(): True
+15:00:29,557 - [MAIN] - INFO  - Center.Server.CenterServer - GameServer is now open for connections!
+15:00:29,558 - [MAIN] - INFO  - Bussiness.GameProperties - Saving game properties into db!
+15:00:30,566 - [3] - INFO  - Game.Base.BaseServer - Incoming connection from 127.0.0.1:61188
+15:00:30,666 - [3] - DEBUG - Game.Base.Packets.StreamProcessor - Send Pkg to 127.0.0.1:61188 :
+0000: 71 AB 00 97 40 78 00 00 00 00 00 00 00 00 00 00   q...@x..........
+0010: 00 00 00 00 C6 AB 15 A5 1E DE 6B 87 C6 2F 59 5D   ..........k../Y]
+0020: 1A A3 CE 0A EF 68 4D EA 23 7F 84 A7 64 52 78 51   .....hM.#..dRxQ
+0030: 53 34 37 04 B8 BC 66 C7 68 98 66 18 EA D5 F8 39   S47...f.h.f....9
+0040: B0 F2 CD 90 EC FA FD C5 8D C9 75 2A AA FB BC 93   ..........u*....
+0050: 05 F8 C7 30 BF 8B 0E B1 7F C9 11 89 99 7C 34 AC   ...0........|4.
+0060: 2B 24 81 80 92 CC BF 3D 04 12 F0 58 54 9A 24 8E   +$.....=...XT.$.
+0070: 62 6E AD 71 F5 6A EE 19 4E 2E 82 58 FA 89 1B EF   bn.q.j..N..X....
+0080: FC 0A 42 F8 D2 61 79 E2 0C 8E 7B 2A 45 6C 96 5F   ..B..ay...{*El._
+0090: 2C AB 99 15 01 00 01                              ,......         
+
+15:00:30,675 - [3] - DEBUG - Game.Base.BaseClient - Send To (127.0.0.1:61188) 151 bytes
+15:00:30,710 - [3] - DEBUG - Game.Base.Packets.StreamProcessor - Recieve Packet:
+0000: 71 AB 00 94 3B 6C 00 01 00 00 00 00 00 00 00 00   q...;l..........
+0010: 00 00 00 00 19 01 CB 77 EE 26 62 04 8B 95 06 86   .......w.&b.....
+0020: 31 7D 9F F6 6A 16 78 60 9C 66 E4 43 91 21 9F B3   1}..j.x`.f.C.!..
+0030: 31 22 E5 2E BD B3 19 92 50 BD 37 42 F3 79 9E 89   1"......P.7B.y..
+0040: A5 AE 9C 6F 38 EB 4B DB 1B 20 40 E5 06 2A 71 E7   ...o8.K.. @..*q.
+0050: 60 27 6C B2 DF A3 8C 97 12 C1 71 67 13 39 22 19   `'l.......qg.9".
+0060: F4 33 39 87 1D AE 97 6D 02 A4 C8 D7 65 E3 F4 86   .39....m....e...
+0070: A7 2E D9 1B EC 74 98 46 3A E8 9C F9 07 E4 10 CC   .....t.F:.......
+0080: 49 F9 82 3C B9 67 43 98 4C 82 0B 1A B5 12 2B B0   I..<.gC.L.....+.
+0090: 58 83 2F 29                                       X./)            
+
+15:00:30,727 - [3] - DEBUG - Game.Base.Packets.StreamProcessor - Send Pkg to 127.0.0.1:61188 :
+0000: 71 AB 00 16 00 00 00 08 00 00 00 00 00 00 00 00   q...............
+0010: 00 00 00 00 00 01                                 ......          
+
+15:00:30,727 - [3] - DEBUG - Game.Base.BaseClient - Send To (127.0.0.1:61188) 22 bytes
+15:00:30,728 - [7] - DEBUG - Game.Base.Packets.StreamProcessor - Recieve Packet:
+0000: 71 AB 00 1C 02 7A 00 F0 00 00 00 00 00 00 00 00   q....z..........
+0010: 00 00 00 00 7F 00 00 01 00 00 23 F0               .........#.    
+
+15:01:09,182 - [6] - DEBUG - Game.Base.Packets.StreamProcessor - Recieve Packet:
+0000: 71 AB 00 18 00 50 00 03 00 00 00 00 00 00 00 00   q....P..........
+0010: 00 00 00 00 00 00 00 56                           .......V        
+
+15:01:09,187 - [6] - DEBUG - Game.Base.Packets.StreamProcessor - Send Pkg to 127.0.0.1:61188 :
+0000: 71 AB 00 19 00 51 00 03 00 00 00 00 00 00 00 00   q....Q..........
+0010: 00 00 00 00 00 00 00 56 01                        .......V.       
+
+15:01:09,188 - [6] - DEBUG - Game.Base.BaseClient - Send To (127.0.0.1:61188) 25 bytes
+15:01:09,479 - [6] - DEBUG - Game.Base.Packets.StreamProcessor - Recieve Packet:
+0000: 71 AB 00 20 00 5D 00 05 00 00 00 00 00 00 00 00   q.. .]..........
+0010: 00 00 00 00 00 00 00 01 00 00 00 56 00 00 00 0A   ...........V....
+
+15:01:29,521 - [10] - INFO  - Center.Server.CenterServer - Saving Record...
+15:01:29,522 - [10] - DEBUG - Center.Server.CenterServer - Save ThreadId=10
+15:01:29,523 - [8] - INFO  - Center.Server.CenterServer - Saving database...
+15:01:29,524 - [8] - DEBUG - Center.Server.CenterServer - Save ThreadId=8
+15:01:29,522 - [11] - INFO  - Center.Server.CenterServer - Saving Record...
+15:01:29,525 - [11] - DEBUG - Center.Server.CenterServer - Save ThreadId=11
+15:01:29,534 - [10] - INFO  - Center.Server.CenterServer - Saving Record complete!
+15:01:29,561 - [11] - INFO  - Center.Server.CenterServer - Scan Consortia complete!
+15:01:29,614 - [8] - INFO  - Center.Server.CenterServer - Saving database complete!
+15:01:29,614 - [8] - INFO  - Center.Server.CenterServer - Saved all databases 78ms
+15:02:29,517 - [9] - INFO  - Center.Server.CenterServer - Saving database...
+15:02:29,517 - [9] - DEBUG - Center.Server.CenterServer - Save ThreadId=9
+15:02:29,517 - [8] - INFO  - Center.Server.CenterServer - Saving Record...
+15:02:29,519 - [8] - DEBUG - Center.Server.CenterServer - Save ThreadId=8
+15:02:29,517 - [10] - INFO  - Center.Server.CenterServer - Saving Record...
+15:02:29,519 - [10] - DEBUG - Center.Server.CenterServer - Save ThreadId=10
+15:02:29,520 - [10] - INFO  - Center.Server.CenterServer - Saving Record complete!
+15:02:29,523 - [9] - INFO  - Center.Server.CenterServer - Saving database complete!
+15:02:29,523 - [9] - INFO  - Center.Server.CenterServer - Saved all databases 16ms
+15:02:29,531 - [8] - INFO  - Center.Server.CenterServer - Scan Consortia complete!
+15:03:29,518 - [8] - INFO  - Center.Server.CenterServer - Saving database...
+15:03:29,518 - [8] - DEBUG - Center.Server.CenterServer - Save ThreadId=8
+15:03:29,518 - [10] - INFO  - Center.Server.CenterServer - Saving Record...
+15:03:29,521 - [10] - DEBUG - Center.Server.CenterServer - Save ThreadId=10
+15:03:29,518 - [9] - INFO  - Center.Server.CenterServer - Saving Record...
+15:03:29,523 - [9] - DEBUG - Center.Server.CenterServer - Save ThreadId=9
+15:03:29,523 - [9] - INFO  - Center.Server.CenterServer - Saving Record complete!
+15:03:29,526 - [8] - INFO  - Center.Server.CenterServer - Saving database complete!
+15:03:29,527 - [8] - INFO  - Center.Server.CenterServer - Saved all databases 16ms
+15:03:29,591 - [10] - INFO  - Center.Server.CenterServer - Scan Consortia complete!
+15:03:30,513 - [14] - DEBUG - Game.Base.Packets.StreamProcessor - Recieve Packet:
+0000: 71 AB 00 18 00 04 00 0C 00 00 00 00 00 00 00 00   q...............
+0010: 00 00 00 00 00 00 00 01                           ........        
+
+15:03:53,327 - [14] - INFO  - Game.Base.BaseClient - Disconnecting client (127.0.0.1:61188), received bytes=0
+15:04:29,520 - [8] - INFO  - Center.Server.CenterServer - Saving database...
+15:04:29,520 - [8] - DEBUG - Center.Server.CenterServer - Save ThreadId=8
+15:04:29,520 - [9] - INFO  - Center.Server.CenterServer - Saving Record...
+15:04:29,521 - [9] - DEBUG - Center.Server.CenterServer - Save ThreadId=9
+15:04:29,520 - [10] - INFO  - Center.Server.CenterServer - Saving Record...
+15:04:29,523 - [10] - DEBUG - Center.Server.CenterServer - Save ThreadId=10
+15:04:29,522 - [9] - INFO  - Center.Server.CenterServer - Saving Record complete!
+15:04:29,540 - [8] - INFO  - Center.Server.CenterServer - Saving database complete!
+15:04:29,540 - [8] - INFO  - Center.Server.CenterServer - Saved all databases 31ms
+15:04:29,540 - [10] - INFO  - Center.Server.CenterServer - Scan Consortia complete!
+15:05:24,700 - [15] - INFO  - Game.Base.BaseServer - Incoming connection from 127.0.0.1:61259
+15:05:24,814 - [15] - DEBUG - Game.Base.Packets.StreamProcessor - Send Pkg to 127.0.0.1:61259 :
+0000: 71 AB 00 97 43 57 00 00 00 00 00 00 00 00 00 00   q...CW..........
+0010: 00 00 00 00 BD 0E CE 3D 62 59 EB AA 96 CC F7 E6   .......=bY......
+0020: 85 4D 64 15 AA 8F 9B FC 7F 96 B6 97 E3 E5 35 7C   .Md..........5|
+0030: 9B 51 DF 1B 33 07 42 61 BF 03 DE 6D 9F 58 27 95   .Q..3.Ba...m.X'.
+0040: 4F 4D D5 02 DA 17 65 F4 46 A0 59 F8 F3 62 82 E6   OM....e.F.Y..b..
+0050: 2A E3 8A D8 BF B7 64 1B 88 8B 12 B6 0D 79 A0 B2   *.....d......y..
+0060: 85 DF 7F 7F FB 44 80 33 5A EA 76 9F 36 7A 8C 30   ...D.3Z.v.6z.0
+0070: A6 FF 23 F3 59 AF 5B 15 30 BC 83 77 43 26 F8 1A   ..#.Y.[.0..wC&..
+0080: 1B C8 5A 99 F7 2B D0 EB 42 85 56 BC C3 E6 EE 42   ..Z..+..B.V....B
+0090: DC D4 85 71 01 00 01                              ...q...         
+
+15:05:24,815 - [15] - DEBUG - Game.Base.BaseClient - Send To (127.0.0.1:61259) 151 bytes
+15:05:24,818 - [17] - DEBUG - Game.Base.Packets.StreamProcessor - Recieve Packet:
+0000: 71 AB 00 94 38 63 00 01 00 00 00 00 00 00 00 00   q...8c..........
+0010: 00 00 00 00 0B 0A 22 0D 94 CB 3D FC DA BE 1C 49   ......"...=....I
+0020: 23 74 13 3C 30 8E 6F 4F 09 19 D7 CD 7D B1 43 15   #t.<0.oO....}.C.
+0030: 0A 2B 1F 20 5F EE 5E 6A D5 16 74 E5 7B 29 C2 EA   .+. _.^j..t.{)..
+0040: 05 9F 12 53 01 E4 39 84 C1 A2 5D 4C 2E 00 91 AE   ...S..9...]L....
+0050: 42 56 C0 52 D5 32 4E A8 3B 95 3C A2 C8 DF 4F 72   BV.R.2N.;.<...Or
+0060: 78 60 AA DC 25 2E B2 03 CC 1A 9F FB 83 19 85 3F   x`..%..........?
+0070: 70 F4 0E CA A0 EB 55 91 18 F0 F9 AA AF D6 4C 67   p.....U.......Lg
+0080: 4B E1 FB 79 1D 95 C8 9A 6B 5E 32 A5 08 A8 46 1F   K..y....k^2...F.
+0090: 65 01 05 3C                                       e..<            
+
+15:05:24,820 - [17] - DEBUG - Game.Base.Packets.StreamProcessor - Send Pkg to 127.0.0.1:61259 :
+0000: 71 AB 00 16 00 00 00 08 00 00 00 00 00 00 00 00   q...............
+0010: 00 00 00 00 00 01                                 ......          
+
+15:05:24,820 - [17] - DEBUG - Game.Base.BaseClient - Send To (127.0.0.1:61259) 22 bytes
+15:05:24,820 - [15] - DEBUG - Game.Base.Packets.StreamProcessor - Recieve Packet:
+0000: 71 AB 00 1C 02 7A 00 F0 00 00 00 00 00 00 00 00   q....z..........
+0010: 00 00 00 00 7F 00 00 01 00 00 23 F0               .........#.    
+
+15:05:29,522 - [10] - INFO  - Center.Server.CenterServer - Saving database...
+15:05:29,522 - [10] - DEBUG - Center.Server.CenterServer - Save ThreadId=10
+15:05:29,522 - [9] - INFO  - Center.Server.CenterServer - Saving Record...
+15:05:29,523 - [9] - DEBUG - Center.Server.CenterServer - Save ThreadId=9
+15:05:29,524 - [9] - INFO  - Center.Server.CenterServer - Saving Record complete!
+15:05:29,522 - [8] - INFO  - Center.Server.CenterServer - Saving Record...
+15:05:29,525 - [8] - DEBUG - Center.Server.CenterServer - Save ThreadId=8
+15:05:29,526 - [10] - INFO  - Center.Server.CenterServer - Saving database complete!
+15:05:29,526 - [10] - INFO  - Center.Server.CenterServer - Saved all databases 16ms
+15:05:29,536 - [8] - INFO  - Center.Server.CenterServer - Scan Consortia complete!
+15:05:49,793 - [20] - DEBUG - Game.Base.Packets.StreamProcessor - Recieve Packet:
+0000: 71 AB 00 18 00 50 00 03 00 00 00 00 00 00 00 00   q....P..........
+0010: 00 00 00 00 00 00 00 56                           .......V        
+
+15:05:49,794 - [20] - DEBUG - Game.Base.Packets.StreamProcessor - Send Pkg to 127.0.0.1:61259 :
+0000: 71 AB 00 19 00 51 00 03 00 00 00 00 00 00 00 00   q....Q..........
+0010: 00 00 00 00 00 00 00 56 01                        .......V.       
+
+15:05:49,795 - [20] - DEBUG - Game.Base.BaseClient - Send To (127.0.0.1:61259) 25 bytes
+15:05:50,044 - [20] - DEBUG - Game.Base.Packets.StreamProcessor - Recieve Packet:
+0000: 71 AB 00 20 00 5D 00 05 00 00 00 00 00 00 00 00   q.. .]..........
+0010: 00 00 00 00 00 00 00 01 00 00 00 56 00 00 00 0A   ...........V....
+
+15:06:03,006 - [20] - INFO  - Game.Base.BaseClient - Disconnecting client (127.0.0.1:61259), received bytes=0
+15:06:29,509 - [8] - INFO  - Center.Server.CenterServer - Saving Record...
+15:06:29,509 - [8] - DEBUG - Center.Server.CenterServer - Save ThreadId=8
+15:06:29,510 - [8] - INFO  - Center.Server.CenterServer - Saving Record complete!
+15:06:29,509 - [11] - INFO  - Center.Server.CenterServer - Saving Record...
+15:06:29,511 - [11] - DEBUG - Center.Server.CenterServer - Save ThreadId=11
+15:06:29,509 - [9] - INFO  - Center.Server.CenterServer - Saving database...
+15:06:29,512 - [9] - DEBUG - Center.Server.CenterServer - Save ThreadId=9
+15:06:29,516 - [9] - INFO  - Center.Server.CenterServer - Saving database complete!
+15:06:29,517 - [9] - INFO  - Center.Server.CenterServer - Saved all databases 0ms
+15:06:29,527 - [11] - INFO  - Center.Server.CenterServer - Scan Consortia complete!
+15:07:29,511 - [10] - INFO  - Center.Server.CenterServer - Saving database...
+15:07:29,511 - [10] - DEBUG - Center.Server.CenterServer - Save ThreadId=10
+15:07:29,511 - [11] - INFO  - Center.Server.CenterServer - Saving Record...
+15:07:29,513 - [11] - DEBUG - Center.Server.CenterServer - Save ThreadId=11
+15:07:29,514 - [11] - INFO  - Center.Server.CenterServer - Saving Record complete!
+15:07:29,511 - [9] - INFO  - Center.Server.CenterServer - Saving Record...
+15:07:29,515 - [9] - DEBUG - Center.Server.CenterServer - Save ThreadId=9
+15:07:29,519 - [10] - INFO  - Center.Server.CenterServer - Saving database complete!
+15:07:29,519 - [10] - INFO  - Center.Server.CenterServer - Saved all databases 0ms
+15:07:29,537 - [9] - INFO  - Center.Server.CenterServer - Scan Consortia complete!
+15:08:17,139 - [24] - INFO  - Game.Base.BaseServer - Incoming connection from 15:09:38,704 - [MAIN] - INFO  - Bussiness.GameProperties - Refreshing game properties!
+15:09:38,869 - [MAIN] - DEBUG - Bussiness.GameProperties - Loading Edition Value is 21000
+15:09:38,872 - [MAIN] - DEBUG - Bussiness.GameProperties - Loading MustComposeGold Value is 1000
+15:09:38,872 - [MAIN] - DEBUG - Bussiness.GameProperties - Loading MustFusionGold Value is 400
+15:09:38,873 - [MAIN] - DEBUG - Bussiness.GameProperties - Loading MustStrengthenGold Value is 1000
+15:09:38,874 - [MAIN] - DEBUG - Bussiness.GameProperties - Loading CheckRewardItem Value is 11001
+15:09:38,874 - [MAIN] - DEBUG - Bussiness.GameProperties - Loading CheckCount Value is 20
+15:09:38,875 - [MAIN] - DEBUG - Bussiness.GameProperties - Loading HymenealMoney Value is 500
+15:09:38,875 - [MAIN] - DEBUG - Bussiness.GameProperties - Loading DivorcedMoney Value is 5214
+15:09:38,876 - [MAIN] - DEBUG - Bussiness.GameProperties - Loading MarryRoomCreateMoney Value is 2000,2700,3400
+15:09:38,877 - [MAIN] - DEBUG - Bussiness.GameProperties - Loading BoxAppearCondition Value is 4
+15:09:38,878 - [MAIN] - DEBUG - Bussiness.GameProperties - Loading DisableCommands Value is    
+15:09:38,879 - [MAIN] - DEBUG - Bussiness.GameProperties - Loading AssState Value is False
+15:09:38,879 - [MAIN] - DEBUG - Bussiness.GameProperties - Loading DailyAwardState Value is True
+15:09:38,880 - [MAIN] - DEBUG - Bussiness.GameProperties - Loading Cess Value is 0
+15:09:38,883 - [MAIN] - DEBUG - Bussiness.GameProperties - Loading BeginAuction Value is 45
+15:09:38,883 - [MAIN] - DEBUG - Bussiness.GameProperties - Loading EndAuction Value is 75
+15:09:38,898 - [MAIN] - INFO  - Center.Server.CenterServer - Recompile Scripts: True
+15:09:38,921 - [MAIN] - INFO  - Center.Server.CenterServer - Registering global event handlers: true
+15:09:38,923 - [MAIN] - INFO  - Center.Server.CenterServer - Script components: True
+15:09:38,924 - [MAIN] - INFO  - Center.Server.CenterServer - Check Server Edition:21000: True
+15:09:38,938 - [MAIN] - INFO  - Center.Server.CenterServer - InitSocket Port:9202: True
+15:09:41,629 - [MAIN] - INFO  - Center.Server.CenterService - Center Service started!
+15:09:41,629 - [MAIN] - INFO  - Center.Server.CenterServer - Center Service: True
+15:09:41,642 - [MAIN] - INFO  - Center.Server.ServerMgr - Load server list from db.
+15:09:41,643 - [MAIN] - INFO  - Center.Server.CenterServer - Load serverlist: True
+15:09:41,679 - [MAIN] - INFO  - Center.Server.CenterServer - Init ConsortiaLevelMgr: True
+15:09:41,691 - [MAIN] - INFO  - Center.Server.CenterServer - Init MacroDropMgr: True
+15:09:41,700 - [MAIN] - INFO  - Center.Server.CenterServer - LanguageMgr Init: True
+15:09:41,703 - [MAIN] - INFO  - Center.Server.CenterServer - Init Global Timers: True
+15:09:41,718 - [MAIN] - DEBUG - Game.Base.CommandMgr - ScriptMgr: Searching for commands in Center.Server, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+15:09:41,720 - [MAIN] - DEBUG - Game.Base.CommandMgr - Load: &gp,Manage game properties at runtime.
+15:09:41,722 - [MAIN] - DEBUG - Game.Base.CommandMgr - ScriptMgr: Searching for commands in Game.Base, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+15:09:41,723 - [MAIN] - DEBUG - Game.Base.CommandMgr - Load: &cs,Compile the C# scripts.
+15:09:41,723 - [MAIN] - DEBUG - Game.Base.CommandMgr - Load: &cmd,Config the command system.
+15:09:41,724 - [MAIN] - DEBUG - Game.Base.CommandMgr - Load: &sm,Script Manager console commands.
+15:09:41,724 - [MAIN] - INFO  - Game.Base.CommandMgr - Loaded 4 commands!
+15:09:41,728 - [MAIN] - DEBUG - Game.Base.BaseServer - Server is now listening to incoming connections!
+15:09:41,728 - [MAIN] - INFO  - Center.Server.CenterServer - base.Start(): True
+15:09:41,733 - [MAIN] - INFO  - Center.Server.CenterServer - GameServer is now open for connections!
+15:09:41,734 - [MAIN] - INFO  - Bussiness.GameProperties - Saving game properties into db!
+15:09:43,556 - [5] - INFO  - Game.Base.BaseServer - Incoming connection from 127.0.0.1:61310
+15:09:43,666 - [5] - DEBUG - Game.Base.Packets.StreamProcessor - Send Pkg to 127.0.0.1:61310 :
+0000: 71 AB 00 97 3E 37 00 00 00 00 00 00 00 00 00 00   q...>7..........
+0010: 00 00 00 00 DA 65 C6 80 4A A5 1F 04 70 FC 3B F5   .....e..J...p.;.
+0020: 20 03 2D F1 9C A5 E3 19 5E 45 0B 70 EF F8 11 75    .-.....^E.p...u
+0030: 60 BE 8F 99 A1 94 F5 08 C8 15 79 B3 A3 9A 08 41   `.........y....A
+0040: 55 FB 3D 2C 45 3D 7C 26 A8 B3 0B F1 18 83 B2 E2   U.=,E=|&........
+0050: 0A FE 6E A6 73 54 50 B5 89 D4 8D 6F CD 94 0F 71   ..n.sTP....o...q
+0060: 41 49 3B 0A 6C 93 33 AD B8 70 CF CF 2B 5B 15 C7   AI;.l.3..p..+[..
+0070: D0 D0 E7 2F 7C 89 73 17 AC 18 35 0C 77 A8 5B 44   .../|.s...5.w.[D
+0080: 93 69 D9 E2 44 F9 2A D7 17 BC 69 CA 8E 9A D6 97   .i..D.*...i.....
+0090: 5B D1 1B 41 01 00 01                              [..A...         
+
+15:09:43,675 - [5] - DEBUG - Game.Base.BaseClient - Send To (127.0.0.1:61310) 151 bytes
+15:09:43,688 - [5] - DEBUG - Game.Base.Packets.StreamProcessor - Recieve Packet:
+0000: 71 AB 00 94 3B 1F 00 01 00 00 00 00 00 00 00 00   q...;...........
+0010: 00 00 00 00 84 8F 50 5E CB F4 4C 5B 46 01 44 CE   ......P^..L[F.D.
+0020: 72 B2 BA B6 0E D3 88 53 33 C3 14 44 64 4F 43 36   r......S3..DdOC6
+0030: B7 56 28 16 08 67 94 7E 46 14 CF 12 6D 41 7A E4   .V(..g.~F...mAz.
+0040: 31 54 0B 4E 74 BD EB AD D0 50 4B 49 A6 BB EE A0   1T.Nt....PKI....
+0050: BC 06 B1 96 F2 0F 2C 07 3A DB 1F 33 4B F9 6E 17   ......,.:..3K.n.
+0060: 56 0A 53 E4 EA 48 BF F5 BA 4A A4 29 BC DE 2E 92   V.S..H...J.)....
+0070: 11 02 37 8B 2F 4A 65 84 85 7F 1C 76 AD D6 6B C4   ..7./Je...v..k.
+0080: E3 10 19 60 3B 2A E4 61 6F 47 61 02 AC FA 51 A0   ...`;*.aoGa...Q.
+0090: E5 F2 F9 D6                                       ....            
+
+15:09:43,700 - [5] - DEBUG - Game.Base.Packets.StreamProcessor - Send Pkg to 127.0.0.1:61310 :
+0000: 71 AB 00 16 00 00 00 08 00 00 00 00 00 00 00 00   q...............
+0010: 00 00 00 00 00 01                                 ......          
+
+15:09:43,701 - [5] - DEBUG - Game.Base.BaseClient - Send To (127.0.0.1:61310) 22 bytes
+15:09:43,702 - [7] - DEBUG - Game.Base.Packets.StreamProcessor - Recieve Packet:
+0000: 71 AB 00 1C 02 7A 00 F0 00 00 00 00 00 00 00 00   q....z..........
+0010: 00 00 00 00 7F 00 00 01 00 00 23 F0               .........#.    
+
+15:10:21,577 - [6] - DEBUG - Game.Base.Packets.StreamProcessor - Recieve Packet:
+0000: 71 AB 00 18 00 50 00 03 00 00 00 00 00 00 00 00   q....P..........
+0010: 00 00 00 00 00 00 00 56                           .......V        
+
+15:10:21,581 - [6] - DEBUG - Game.Base.Packets.StreamProcessor - Send Pkg to 127.0.0.1:61310 :
+0000: 71 AB 00 19 00 51 00 03 00 00 00 00 00 00 00 00   q....Q..........
+0010: 00 00 00 00 00 00 00 56 01                        .......V.       
+
+15:10:21,582 - [6] - DEBUG - Game.Base.BaseClient - Send To (127.0.0.1:61310) 25 bytes
+15:10:21,823 - [6] - DEBUG - Game.Base.Packets.StreamProcessor - Recieve Packet:
+0000: 71 AB 00 20 00 5D 00 05 00 00 00 00 00 00 00 00   q.. .]..........
+0010: 00 00 00 00 00 00 00 01 00 00 00 56 00 00 00 0A   ...........V....
+
+15:10:41,698 - [8] - INFO  - Center.Server.CenterServer - Saving database...
+15:10:41,699 - [8] - DEBUG - Center.Server.CenterServer - Save ThreadId=8
+15:10:41,698 - [10] - INFO  - Center.Server.CenterServer - Saving Record...
+15:10:41,700 - [10] - DEBUG - Center.Server.CenterServer - Save ThreadId=10
+15:10:41,700 - [11] - INFO  - Center.Server.CenterServer - Saving Record...
+15:10:41,702 - [11] - DEBUG - Center.Server.CenterServer - Save ThreadId=11
+15:10:41,709 - [10] - INFO  - Center.Server.CenterServer - Saving Record complete!
+15:10:41,709 - [8] - INFO  - Center.Server.CenterServer - Saving database complete!
+15:10:41,711 - [8] - INFO  - Center.Server.CenterServer - Saved all databases 0ms
+15:10:41,852 - [11] - INFO  - Center.Server.CenterServer - Scan Consortia complete!
+15:11:41,697 - [8] - INFO  - Center.Server.CenterServer - Saving Record...
+15:11:41,698 - [8] - DEBUG - Center.Server.CenterServer - Save ThreadId=8
+15:11:41,697 - [10] - INFO  - Center.Server.CenterServer - Saving database...
+15:11:41,700 - [10] - DEBUG - Center.Server.CenterServer - Save ThreadId=10
+15:11:41,697 - [11] - INFO  - Center.Server.CenterServer - Saving Record...
+15:11:41,702 - [11] - DEBUG - Center.Server.CenterServer - Save ThreadId=11
+15:11:41,703 - [11] - INFO  - Center.Server.CenterServer - Saving Record complete!
+15:11:41,705 - [10] - INFO  - Center.Server.CenterServer - Saving database complete!
+15:11:41,706 - [10] - INFO  - Center.Server.CenterServer - Saved all databases 0ms
+15:11:41,716 - [8] - INFO  - Center.Server.CenterServer - Scan Consortia complete!
+15:12:41,698 - [8] - INFO  - Center.Server.CenterServer - Saving database...
+15:12:41,699 - [8] - DEBUG - Center.Server.CenterServer - Save ThreadId=8
+15:12:41,698 - [11] - INFO  - Center.Server.CenterServer - Saving Record...
+15:12:41,701 - [11] - DEBUG - Center.Server.CenterServer - Save ThreadId=11
+15:12:41,702 - [11] - INFO  - Center.Server.CenterServer - Saving Record complete!
+15:12:41,698 - [9] - INFO  - Center.Server.CenterServer - Saving Record...
+15:12:41,705 - [9] - DEBUG - Center.Server.CenterServer - Save ThreadId=9
+15:12:41,706 - [8] - INFO  - Center.Server.CenterServer - Saving database complete!
+15:12:41,709 - [8] - INFO  - Center.Server.CenterServer - Saved all databases 0ms
+15:12:41,728 - [9] - INFO  - Center.Server.CenterServer - Scan Consortia complete!
+15:12:43,504 - [7] - DEBUG - Game.Base.Packets.StreamProcessor - Recieve Packet:
+0000: 71 AB 00 18 00 04 00 0C 00 00 00 00 00 00 00 00   q...............
+0010: 00 00 00 00 00 00 00 01                           ........        
+
+15:13:41,700 - [8] - INFO  - Center.Server.CenterServer - Saving database...
+15:13:41,700 - [8] - DEBUG - Center.Server.CenterServer - Save ThreadId=8
+15:13:41,700 - [11] - INFO  - Center.Server.CenterServer - Saving Record...
+15:13:41,702 - [11] - DEBUG - Center.Server.CenterServer - Save ThreadId=11
+15:13:41,700 - [9] - INFO  - Center.Server.CenterServer - Saving Record...
+15:13:41,704 - [9] - DEBUG - Center.Server.CenterServer - Save ThreadId=9
+15:13:41,705 - [9] - INFO  - Center.Server.CenterServer - Saving Record complete!
+15:13:41,706 - [8] - INFO  - Center.Server.CenterServer - Saving database complete!
+15:13:41,707 - [8] - INFO  - Center.Server.CenterServer - Saved all databases 0ms
+15:13:41,721 - [11] - INFO  - Center.Server.CenterServer - Scan Consortia complete!
+15:14:41,701 - [9] - INFO  - Center.Server.CenterServer - Saving database...
+15:14:41,701 - [9] - DEBUG - Center.Server.CenterServer - Save ThreadId=9
+15:14:41,701 - [8] - INFO  - Center.Server.CenterServer - Saving Record...
+15:14:41,703 - [8] - DEBUG - Center.Server.CenterServer - Save ThreadId=8
+15:14:41,701 - [11] - INFO  - Center.Server.CenterServer - Saving Record...
+15:14:41,704 - [11] - DEBUG - Center.Server.CenterServer - Save ThreadId=11
+15:14:41,705 - [11] - INFO  - Center.Server.CenterServer - Saving Record complete!
+15:14:41,707 - [9] - INFO  - Center.Server.CenterServer - Saving database complete!
+15:14:41,707 - [9] - INFO  - Center.Server.CenterServer - Saved all databases 0ms
+15:14:41,724 - [8] - INFO  - Center.Server.CenterServer - Scan Consortia complete!
+15:15:41,704 - [10] - INFO  - Center.Server.CenterServer - Saving Record...
+15:15:41,704 - [10] - DEBUG - Center.Server.CenterServer - Save ThreadId=10
+15:15:41,705 - [10] - INFO  - Center.Server.CenterServer - Saving Record complete!
+15:15:41,704 - [8] - INFO  - Center.Server.CenterServer - Saving database...
+15:15:41,707 - [8] - DEBUG - Center.Server.CenterServer - Save ThreadId=8
+15:15:41,704 - [9] - INFO  - Center.Server.CenterServer - Saving Record...
+15:15:41,708 - [9] - DEBUG - Center.Server.CenterServer - Save ThreadId=9
+15:15:41,712 - [8] - INFO  - Center.Server.CenterServer - Saving database complete!
+15:15:41,712 - [8] - INFO  - Center.Server.CenterServer - Saved all databases 15ms
+15:15:41,726 - [9] - INFO  - Center.Server.CenterServer - Scan Consortia complete!
+15:15:43,512 - [7] - DEBUG - Game.Base.Packets.StreamProcessor - Recieve Packet:
+0000: 71 AB 00 18 00 04 00 0C 00 00 00 00 00 00 00 00   q...............
+0010: 00 00 00 00 00 00 00 01                           ........        
+
+15:16:41,706 - [9] - INFO  - Center.Server.CenterServer - Saving database...
+15:16:41,706 - [9] - DEBUG - Center.Server.CenterServer - Save ThreadId=9
+15:16:41,706 - [10] - INFO  - Center.Server.CenterServer - Saving Record...
+15:16:41,708 - [10] - DEBUG - Center.Server.CenterServer - Save ThreadId=10
+15:16:41,706 - [8] - INFO  - Center.Server.CenterServer - Saving Record...
+15:16:41,709 - [8] - DEBUG - Center.Server.CenterServer - Save ThreadId=8
+15:16:41,710 - [8] - INFO  - Center.Server.CenterServer - Saving Record complete!
+15:16:41,712 - [9] - INFO  - Center.Server.CenterServer - Saving database complete!
+15:16:41,712 - [9] - INFO  - Center.Server.CenterServer - Saved all databases 15ms
+15:16:41,725 - [10] - INFO  - Center.Server.CenterServer - Scan Consortia complete!
+15:17:41,707 - [8] - INFO  - Center.Server.CenterServer - Saving database...
+15:17:41,707 - [8] - DEBUG - Center.Server.CenterServer - Save ThreadId=8
+15:17:41,707 - [11] - INFO  - Center.Server.CenterServer - Saving Record...
+15:17:41,707 - [10] - INFO  - Center.Server.CenterServer - Saving Record...
+15:17:41,710 - [10] - DEBUG - Center.Server.CenterServer - Save ThreadId=10
+15:17:41,711 - [10] - INFO  - Center.Server.CenterServer - Saving Record complete!
+15:17:41,709 - [11] - DEBUG - Center.Server.CenterServer - Save ThreadId=11
+15:17:41,714 - [8] - INFO  - Center.Server.CenterServer - Saving database complete!
+15:17:41,714 - [8] - INFO  - Center.Server.CenterServer - Saved all databases 15ms
+15:17:41,733 - [11] - INFO  - Center.Server.CenterServer - Scan Consortia complete!
+15:18:41,708 - [10] - INFO  - Center.Server.CenterServer - Saving database...
+15:18:41,708 - [10] - DEBUG - Center.Server.CenterServer - Save ThreadId=10
+15:18:41,708 - [8] - INFO  - Center.Server.CenterServer - Saving Record...
+15:18:41,710 - [8] - DEBUG - Center.Server.CenterServer - Save ThreadId=8
+15:18:41,708 - [11] - INFO  - Center.Server.CenterServer - Saving Record...
+15:18:41,712 - [11] - DEBUG - Center.Server.CenterServer - Save ThreadId=11
+15:18:41,712 - [11] - INFO  - Center.Server.CenterServer - Saving Record complete!
+15:18:41,714 - [10] - INFO  - Center.Server.CenterServer - Saving database complete!
+15:18:41,714 - [10] - INFO  - Center.Server.CenterServer - Saved all databases 15ms
+15:18:41,727 - [8] - INFO  - Center.Server.CenterServer - Scan Consortia complete!
+15:18:43,511 - [7] - DEBUG - Game.Base.Packets.StreamProcessor - Recieve Packet:
+0000: 71 AB 00 18 00 04 00 0C 00 00 00 00 00 00 00 00   q...............
+0010: 00 00 00 00 00 00 00 01                           ........        
+
+15:19:01,111 - [7] - INFO  - Game.Base.BaseClient - Disconnecting client (127.0.0.1:61310), received bytes=0
+15:19:12,300 - [13] - INFO  - Game.Base.BaseServer - Incoming connection from 127.0.0.1:61405
+15:19:12,412 - [13] - DEBUG - Game.Base.Packets.StreamProcessor - Send Pkg to 127.0.0.1:61405 :
+0000: 71 AB 00 97 41 1C 00 00 00 00 00 00 00 00 00 00   q...A...........
+0010: 00 00 00 00 B8 F4 D6 07 42 3A AC 3C EE 14 83 5A   ........B:.<...Z
+0020: CD CA 7B FA A4 90 74 A7 E7 D7 DF 1E DF 68 F8 92   ..{...t......h..
+0030: DB 38 7B 2A 84 51 8B 4C 1B 84 73 9C EA 4E 28 2F   .8{*.Q.L..s..N(/
+0040: 9C 27 EA 55 7A CA 79 76 7F CA E4 44 B9 21 B6 39   .'.Uz.yv..D.!.9
+0050: E5 2E 85 89 93 CF 30 54 7C 01 21 68 9C 2D FB 54   ......0T|.!h.-.T
+0060: 9F 37 BC 56 92 EE 0E A6 10 3E BC 1D CF 7D AA 49   .7.V.....>...}.I
+0070: D9 55 75 1F C7 FF DE 9E F6 44 DD 0D 3F 05 2D 6F   .Uu......D..?.-o
+0080: AF 73 02 3F C2 B6 4B D8 F8 B0 6F 9F C3 20 5A 7E   .s.?..K...o.. Z~
+0090: D1 1C AC 29 01 00 01                              ...)...         
+
+15:19:12,414 - [13] - DEBUG - Game.Base.BaseClient - Send To (127.0.0.1:61405) 151 bytes
+15:19:12,428 - [13] - DEBUG - Game.Base.Packets.StreamProcessor - Recieve Packet:
+0000: 71 AB 00 94 44 6D 00 01 00 00 00 00 00 00 00 00   q...Dm..........
+0010: 00 00 00 00 AA 37 CD 64 3E D9 37 A3 91 15 2A CB   .....7.d>.7...*.
+0020: 95 06 B9 A0 09 37 C4 B3 0D D3 AB A4 A1 EF 9F F8   .....7..........
+0030: 9
