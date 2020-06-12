@@ -113,7 +113,7 @@
     <Compile Include="Enumerate\eConsumerType.cs" />
     <Compile Include="Enumerate\eSubConsumerType.cs" />
     <Compile Include="Battle\FightServerConnector.cs" />
-    <Compile Include="GameObjects\GamePlayer.cs" />
+    <Compile Include="GameObjects\GamePlayerOld.cs" />
     <Compile Include="GameServerConfig.cs" />
     <Compile Include="Games\GameMgr.cs" />
     <Compile Include="GameUtilsBAK\AbstractInventory.cs" />
@@ -147,7 +147,7 @@
     <Compile Include="LoginServerConnector.cs" />
     <Compile Include="ChatServer\eChatServerPacket.cs" />
     <Compile Include="GameClient.cs" />
-    <Compile Include="GameObjects\GamePlayerBAK.cs" />
+    <Compile Include="GameObjects\GamePlayer.cs" />
     <Compile Include="Managers\AntiAddictionMgr.cs" />
     <Compile Include="Managers\AwardMgr.cs" />
     <Compile Include="Managers\ConsortiaMgr.cs">

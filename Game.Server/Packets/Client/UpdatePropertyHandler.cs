@@ -9,8 +9,7 @@ namespace Game.Server.Packets.Client
     {
         public int HandlePacket(GameClient client, GSPacketIn packet)
         {
-            //client.Player.UpdateProperty();
-            client.Player.updateproperty();
+            client.Player.UpdateProperty();
             return 0;
         }
     }
