@@ -21,7 +21,7 @@ namespace Game.Server.GameUtils
         public PlayerInventory(GamePlayer player, bool saveTodb, int capibility, int type, int beginSlot, bool autoStack)
             : base(capibility, type, beginSlot, autoStack)
         {
-            m_removedList = new List<SqlDataProvider.Data.ItemInfo>();
+            m_removedList = new List<ItemInfo>();
             m_player = player;
             m_saveToDb = saveTodb;
         }
