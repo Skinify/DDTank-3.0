@@ -1285,7 +1285,4 @@ ItemReclaimHandler.Success:OK
 ItemReclaimHandler.NotSuccess:NotOK
 PVPGame.SendGameOVer.Msg1:You receive {0}gold and {1} Xu
 
-#2020/06/11
-HotSpringRoom.Exited: Volte sempre.
-
 

@@ -221,6 +221,8 @@
         /// </summary>
         REPAIR_GOODS = 0x35,
 
+        PROP_UPDATE = 0xd5,
+
         /// <summary>
         /// 购买道具
         /// </summary>

@@ -1,193 +1,235 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
+﻿using Bussiness;
 using Game.Server.GameObjects;
-using SqlDataProvider.Data;
-using Bussiness;
 using Game.Server.Packets;
+using SqlDataProvider.Data;
+using System;
+using System.Collections.Generic;
+using System.Text;
+
 
 namespace Game.Server.GameUtils
 {
     public class PlayerInventory : AbstractInventory
     {
         protected GamePlayer m_player;
-
+        private List<SqlDataProvider.Data.ItemInfo> m_removedList;
         private bool m_saveToDb;
 
-        private List<ItemInfo> m_removedList = new List<ItemInfo>();
-
-        public PlayerInventory(GamePlayer player, bool saveTodb, int capibility, int type, int beginSlot, bool autoStack)
-            : base(capibility, type, beginSlot, autoStack)
+        public PlayerInventory(GamePlayer player, bool saveTodb, int capibility, int type, int beginSlot, bool autoStack) : base(capibility, type, beginSlot, autoStack)
         {
-            m_player = player;
-            m_saveToDb = saveTodb;
+            this.m_removedList = new List<SqlDataProvider.Data.ItemInfo>();
+            this.m_player = player;
+            this.m_saveToDb = saveTodb;
+        }
+
+        public override bool AddItemTo(SqlDataProvider.Data.ItemInfo item, int place)
+        {
+            if (base.AddItemTo(item, place))
+            {
+                item.UserID = this.m_player.PlayerCharacter.ID;
+                item.IsExist = true;
+                return true;
+            }
+            return false;
         }
 
         public virtual void LoadFromDatabase()
         {
-            if (m_saveToDb)
+            if (this.m_saveToDb)
             {
-                using (PlayerBussiness pb = new PlayerBussiness())
+                using (PlayerBussiness bussiness = new PlayerBussiness())
                 {
-                    ItemInfo[] list = pb.GetUserBagByType(m_player.PlayerCharacter.ID, BagType);
-
-                    BeginChanges();
-
+                    SqlDataProvider.Data.ItemInfo[] userBagByType = bussiness.GetUserBagByType(this.m_player.PlayerCharacter.ID, base.BagType);
+                    base.BeginChanges();
                     try
                     {
-                        foreach (ItemInfo item in list)
+                        foreach (SqlDataProvider.Data.ItemInfo info in userBagByType)
                         {
-                            AddItemTo(item, item.Place);
+                            this.AddItemTo(info, info.Place);
                         }
                     }
                     finally
                     {
-                        CommitChanges();
+                        base.CommitChanges();
                     }
                 }
             }
         }
 
-        public virtual void SaveToDatabase()
+        public void MoveToStore(PlayerInventory bag, int fromSolt, int toSolt, PlayerInventory tobag, int maxCount)
         {
-            if (m_saveToDb)
+            SqlDataProvider.Data.ItemInfo itemAt = bag.GetItemAt(fromSolt);
+            SqlDataProvider.Data.ItemInfo item = tobag.GetItemAt(toSolt);
+            if ((itemAt != null) || (item != null))
             {
-                using (PlayerBussiness pb = new PlayerBussiness())
+                if (((item == null) && ((toSolt < 0) || (toSolt > 80))) || ((tobag.BagType == 11) && (toSolt >= maxCount)))
                 {
-                    lock (m_lock)
+                    if ((tobag.BagType == 11) || (tobag.BagType == 1))
                     {
-                        for (int i = 0; i < m_items.Length; i++)
+                        toSolt = tobag.FindFirstEmptySlot(0);
+                    }
+                    else
+                    {
+                        toSolt = tobag.FindFirstEmptySlot(0x1f);
+                    }
+                }
+                if (((((itemAt.Template.CategoryID == 10) || (itemAt.Template.CategoryID == 11)) || (itemAt.Template.CategoryID == 12)) && (tobag.BagType != 0)) || ((((itemAt.Template.CategoryID != 10) && (itemAt.Template.CategoryID != 11)) && (itemAt.Template.CategoryID != 12)) && (tobag.BagType != 1)))
+                {
+                    if ((item != null) && (itemAt != null))
+                    {
+                        if (((((item.Template.CategoryID != 10) && (item.Template.CategoryID != 11)) && (item.Template.CategoryID != 12)) || (bag.BagType != 0)) && ((((item.Template.CategoryID == 10) || (item.Template.CategoryID == 11)) || (item.Template.CategoryID == 12)) || (bag.BagType != 1)))
                         {
-                            ItemInfo item = m_items[i];
-                            if (item != null && item.IsDirty)
+                            int place = itemAt.Place;
+                            int bagType = itemAt.BagType;
+                            int num3 = item.Place;
+                            int num4 = item.BagType;
+                            bag.RemoveItem(itemAt);
+                            tobag.RemoveItem(item);
+                            itemAt.IsExist = true;
+                            itemAt.BagType = num4;
+                            tobag.AddItemTo(itemAt, num3);
+                            item.IsExist = true;
+                            item.BagType = bagType;
+                            if ((place == -1) && (bag.BagType == 0))
                             {
-                                if (item.ItemID > 0)
-                                {
-                                    pb.UpdateGoods(item);
-                                }
-                                else
-                                {
-                                    pb.AddGoods(item);
-                                }
+                                place = bag.FindFirstEmptySlot(0x1f);
+                            }
+                            if (place < 0x1f)
+                            {
+                                place = bag.FindFirstEmptySlot(0x1f);
+                            }
+                            if ((tobag.BagType != 1) || (((item.Template.CategoryID != 10) && (item.Template.CategoryID != 11)) && (item.Template.CategoryID != 12)))
+                            {
+                                bag.AddItemTo(item, place);
                             }
                         }
                     }
-
-                    lock (m_removedList)
+                    else
                     {
-                        foreach (ItemInfo item in m_removedList)
+                        if (item != null)
                         {
-                            if (item.ItemID > 0)
+                            tobag.RemoveItem(itemAt);
+                            bag.AddItemTo(itemAt, toSolt);
+                        }
+                        if (itemAt != null)
+                        {
+                            if ((tobag.BagType == 11) && (toSolt >= maxCount))
                             {
-                                pb.UpdateGoods(item);
+                                this.UpdateItem(itemAt);
+                            }
+                            else
+                            {
+                                bag.RemoveItem(itemAt);
+                                tobag.AddItemTo(itemAt, toSolt);
                             }
                         }
-                        m_removedList.Clear();
                     }
                 }
-            }
-        }
-
-        public override bool AddItemTo(ItemInfo item, int place)
-        {
-            if (base.AddItemTo(item, place))
-            {
-                item.UserID = m_player.PlayerCharacter.ID;
-                item.IsExist = true;
-                return true;
-            }
-            else
-            {
-                return false;
-            }
-        }
-
-        public override bool TakeOutItem(ItemInfo item)
-        {
-            if (base.TakeOutItem(item))
-            {
-                if (m_saveToDb)
+                else
                 {
-                    lock (m_removedList)
+                    if (item != null)
                     {
-                        m_removedList.Add(item);
+                        this.UpdateItem(item);
+                    }
+                    if (itemAt != null)
+                    {
+                        this.UpdateItem(itemAt);
                     }
                 }
-                return true;
-            }
-            else
-            {
-                return false;
             }
         }
 
-        public override bool RemoveItem(ItemInfo item)
+        public override bool RemoveItem(SqlDataProvider.Data.ItemInfo item)
         {
             if (base.RemoveItem(item))
             {
                 item.IsExist = false;
-
-                if (m_saveToDb)
+                if (this.m_saveToDb)
                 {
-                    lock (m_removedList)
+                    lock (this.m_removedList)
                     {
-                        m_removedList.Add(item);
+                        this.m_removedList.Add(item);
                     }
                 }
                 return true;
             }
-            else
+            return false;
+        }
+
+        public virtual void SaveToDatabase()
+        {
+            if (this.m_saveToDb)
             {
-                return false;
+                using (PlayerBussiness bussiness = new PlayerBussiness())
+                {
+                    lock (base.m_lock)
+                    {
+                        for (int i = 0; i < base.m_items.Length; i++)
+                        {
+                            SqlDataProvider.Data.ItemInfo item = base.m_items[i];
+                            if ((item != null) && item.IsDirty)
+                            {
+                                if (item.ItemID > 0)
+                                {
+                                    bussiness.UpdateGoods(item);
+                                }
+                                else
+                                {
+                                    bussiness.AddGoods(item);
+                                }
+                            }
+                        }
+                    }
+                    lock (this.m_removedList)
+                    {
+                        foreach (SqlDataProvider.Data.ItemInfo info in this.m_removedList)
+                        {
+                            if (info.ItemID > 0)
+                            {
+                                bussiness.UpdateGoods(info);
+                            }
+                        }
+                        this.m_removedList.Clear();
+                    }
+                }
             }
         }
 
-        public override void UpdateChangedPlaces()
+        public bool SendAllItemsToMail(string sender, string title, eMailType type)
         {
-            int[] changedPlaces = m_changedPlaces.ToArray();
-            m_player.Out.SendUpdateInventorySlot(this, changedPlaces);
-            base.UpdateChangedPlaces();
-        }
-
-        /// <summary>
-        /// 群发邮件
-        /// </summary>
-        public bool SendAllItemsToMail(string sender,string title,eMailType type)
-        {
-            if (m_saveToDb)
+            if (this.m_saveToDb)
             {
-                BeginChanges();
+                base.BeginChanges();
                 try
                 {
-                    using (PlayerBussiness pb = new PlayerBussiness())
+                    using (PlayerBussiness bussiness = new PlayerBussiness())
                     {
-                        lock (m_lock)
+                        lock (base.m_lock)
                         {
-                            List<ItemInfo> items = GetItems();
-
+                            List<SqlDataProvider.Data.ItemInfo> items = this.GetItems();
                             int count = items.Count;
                             for (int i = 0; i < count; i += 5)
                             {
-                                MailInfo mail = new MailInfo();
-                                mail.SenderID = 0;
-                                mail.Sender = sender;
-                                mail.ReceiverID = m_player.PlayerCharacter.ID;
-                                mail.Receiver = m_player.PlayerCharacter.NickName;
-                                mail.Title = title;
-                                mail.Type = (int)type;
-                                mail.Content = "";
-
-                                List<ItemInfo> list = new List<ItemInfo>();
-                                for(int j = 0; j < 5; j ++)
+                                MailInfo mail = new MailInfo
                                 {
-                                    int index = i * 5 + j;
-                                    if(index < items.Count)
+                                    SenderID = 0,
+                                    Sender = sender,
+                                    ReceiverID = this.m_player.PlayerCharacter.ID,
+                                    Receiver = this.m_player.PlayerCharacter.NickName,
+                                    Title = title,
+                                    Type = (int)type,
+                                    Content = ""
+                                };
+                                List<SqlDataProvider.Data.ItemInfo> list2 = new List<SqlDataProvider.Data.ItemInfo>();
+                                for (int j = 0; j < 5; j++)
+                                {
+                                    int num4 = (i * 5) + j;
+                                    if (num4 < items.Count)
                                     {
-                                        list.Add(items[index]);
+                                        list2.Add(items[num4]);
                                     }
                                 }
-                                if (SendItemsToMail(list, mail, pb) == false)
+                                if (!this.SendItemsToMail(list2, mail, bussiness))
                                 {
                                     return false;
                                 }
@@ -195,144 +237,122 @@ namespace Game.Server.GameUtils
                         }
                     }
                 }
-                catch (Exception ex)
+                catch (Exception exception)
                 {
-                    Console.WriteLine("Send Items Mail Error:" + ex);
+                    Console.WriteLine("Send Items Mail Error:" + exception);
                 }
                 finally
                 {
-                    SaveToDatabase();
-                    CommitChanges();
+                    this.SaveToDatabase();
+                    base.CommitChanges();
                 }
-                m_player.Out.SendMailResponse(m_player.PlayerCharacter.ID, eMailRespose.Receiver);
+                this.m_player.Out.SendMailResponse(this.m_player.PlayerCharacter.ID, eMailRespose.Receiver);
             }
             return true;
         }
 
-        public bool SendItemsToMail(List<ItemInfo> items, MailInfo mail,PlayerBussiness pb)
+        public bool SendItemsToMail(List<SqlDataProvider.Data.ItemInfo> items, MailInfo mail, PlayerBussiness pb)
         {
-            if (mail == null)   return false;
-            if (items.Count > 5) return false;
-
-            if (m_saveToDb)
+            if (mail != null)
             {
-                List<ItemInfo> sent = new List<ItemInfo>();
-                StringBuilder annexRemark = new StringBuilder();
-                annexRemark.Append(LanguageMgr.GetTranslation("Game.Server.GameUtils.CommonBag.AnnexRemark"));
-                
-                if (items.Count > 0 && TakeOutItem(items[0]))
+                if (items.Count > 5)
                 {
-                    ItemInfo it = items[0];
-
-                    mail.Annex1 = it.ItemID.ToString();
-                    mail.Annex1Name = it.Template.Name;
-                    annexRemark.Append("1、" + mail.Annex1Name + "x" + it.Count + ";");
-                    sent.Add(it);
+                    return false;
                 }
-
-                if (items.Count > 1 && TakeOutItem(items[1]))
+                if (this.m_saveToDb)
                 {
-                    ItemInfo it = items[1];
-
-                    mail.Annex2 = it.ItemID.ToString();
-                    mail.Annex2Name = it.Template.Name;
-                    annexRemark.Append("2、" + mail.Annex2Name + "x" + it.Count + ";");
-                    sent.Add(it);
-                }
-
-
-                 if (items.Count > 2 && TakeOutItem(items[2]))
-                {
-                    ItemInfo it = items[2];
-
-                    mail.Annex3 = it.ItemID.ToString();
-                    mail.Annex3Name = it.Template.Name;
-                    annexRemark.Append("3、" + mail.Annex3Name + "x" + it.Count + ";");
-                     sent.Add(it);
-                }
-
-                if (items.Count > 3 && TakeOutItem(items[3]))
-                {
-                    ItemInfo it = items[3];
-
-                    mail.Annex4 = it.ItemID.ToString();
-                    mail.Annex4Name = it.Template.Name;
-                    annexRemark.Append("4、" + mail.Annex4Name + "x" + it.Count + ";");
-                    sent.Add(it);
-                }
-
-                if (items.Count > 4 && TakeOutItem(items[4]))
-                {
-                    ItemInfo it = items[4];
-
-                    mail.Annex5 = it.ItemID.ToString();
-                    mail.Annex5Name = it.Template.Name;
-                    annexRemark.Append("5、" + mail.Annex5Name + "x" + it.Count + ";");
-                    sent.Add(it);
-                }
-
-                mail.AnnexRemark = annexRemark.ToString();
-
-                if (pb.SendMail(mail))
-                {
-                    return true;
-                }
-                else
-                {
-                    foreach (ItemInfo it in sent)
+                    SqlDataProvider.Data.ItemInfo info;
+                    List<SqlDataProvider.Data.ItemInfo> list = new List<SqlDataProvider.Data.ItemInfo>();
+                    StringBuilder builder = new StringBuilder();
+                    builder.Append(LanguageMgr.GetTranslation("Game.Server.GameUtils.CommonBag.AnnexRemark", new object[0]));
+                    if ((items.Count > 0) && this.TakeOutItem(items[0]))
                     {
-                        AddItem(it);
+                        info = items[0];
+                        mail.Annex1 = info.ItemID.ToString();
+                        mail.Annex1Name = info.Template.Name;
+                        builder.Append(string.Concat(new object[] { "1、", mail.Annex1Name, "x", info.Count, ";" }));
+                        list.Add(info);
+                    }
+                    if ((items.Count > 1) && this.TakeOutItem(items[1]))
+                    {
+                        info = items[1];
+                        mail.Annex2 = info.ItemID.ToString();
+                        mail.Annex2Name = info.Template.Name;
+                        builder.Append(string.Concat(new object[] { "2、", mail.Annex2Name, "x", info.Count, ";" }));
+                        list.Add(info);
+                    }
+                    if ((items.Count > 2) && this.TakeOutItem(items[2]))
+                    {
+                        info = items[2];
+                        mail.Annex3 = info.ItemID.ToString();
+                        mail.Annex3Name = info.Template.Name;
+                        builder.Append(string.Concat(new object[] { "3、", mail.Annex3Name, "x", info.Count, ";" }));
+                        list.Add(info);
+                    }
+                    if ((items.Count > 3) && this.TakeOutItem(items[3]))
+                    {
+                        info = items[3];
+                        mail.Annex4 = info.ItemID.ToString();
+                        mail.Annex4Name = info.Template.Name;
+                        builder.Append(string.Concat(new object[] { "4、", mail.Annex4Name, "x", info.Count, ";" }));
+                        list.Add(info);
+                    }
+                    if ((items.Count > 4) && this.TakeOutItem(items[4]))
+                    {
+                        info = items[4];
+                        mail.Annex5 = info.ItemID.ToString();
+                        mail.Annex5Name = info.Template.Name;
+                        builder.Append(string.Concat(new object[] { "5、", mail.Annex5Name, "x", info.Count, ";" }));
+                        list.Add(info);
+                    }
+                    mail.AnnexRemark = builder.ToString();
+                    if (pb.SendMail(mail))
+                    {
+                        return true;
+                    }
+                    foreach (SqlDataProvider.Data.ItemInfo info2 in list)
+                    {
+                        base.AddItem(info2);
                     }
                 }
             }
             return false;
- 
         }
-        /// <summary>
-        /// 寄邮单个物品<存入数据库中>
-        /// </summary>
-        /// <param name="item"></param>
-        /// <returns></returns>
-        public bool SendItemToMail(ItemInfo item)
+
+        public bool SendItemToMail(SqlDataProvider.Data.ItemInfo item)
         {
-            if (m_saveToDb)
+            if (this.m_saveToDb)
             {
-                using (PlayerBussiness pb = new PlayerBussiness())
+                using (PlayerBussiness bussiness = new PlayerBussiness())
                 {
-                    return SendItemToMail(item, pb, null);
+                    return this.SendItemToMail(item, bussiness, null);
                 }
             }
             return false;
         }
 
-        /// <summary>
-        /// 发送物品到邮箱中
-        /// </summary>
-        /// <param name="item"></param>
-        /// <param name="pb"></param>
-        /// <returns></returns>
-        public bool SendItemToMail(ItemInfo item, PlayerBussiness pb, MailInfo mail)
+        public bool SendItemToMail(SqlDataProvider.Data.ItemInfo item, PlayerBussiness pb, MailInfo mail)
         {
-            if (m_saveToDb && item.BagType == BagType)
+            if (this.m_saveToDb && (item.BagType == base.BagType))
             {
                 if (mail == null)
                 {
                     mail = new MailInfo();
                     mail.Annex1 = item.ItemID.ToString();
-                    mail.Content = LanguageMgr.GetTranslation("Game.Server.GameUtils.Title");
+                    mail.Content = LanguageMgr.GetTranslation("Game.Server.GameUtils.Title", new object[0]);
                     mail.Gold = 0;
                     mail.IsExist = true;
                     mail.Money = 0;
-                    mail.Receiver = m_player.PlayerCharacter.NickName;
+                    mail.Receiver = this.m_player.PlayerCharacter.NickName;
                     mail.ReceiverID = item.UserID;
-                    mail.Sender = m_player.PlayerCharacter.NickName;
+                    mail.Sender = this.m_player.PlayerCharacter.NickName;
                     mail.SenderID = item.UserID;
-                    mail.Title = LanguageMgr.GetTranslation("Game.Server.GameUtils.Title");
-                    mail.Type = (int)eMailType.ItemOverdue;
+                    mail.Title = LanguageMgr.GetTranslation("Game.Server.GameUtils.Title", new object[0]);
+                    mail.Type = 9;
                 }
                 if (pb.SendMail(mail))
                 {
-                    RemoveItem(item);
+                    this.RemoveItem(item);
                     item.IsExist = true;
                     return true;
                 }
@@ -341,96 +361,28 @@ namespace Game.Server.GameUtils
             return false;
         }
 
-        
-
-
-        public void MoveToStore(PlayerInventory bag, int fromSolt, int toSolt, PlayerInventory tobag, int maxCount)
+        public override bool TakeOutItem(SqlDataProvider.Data.ItemInfo item)
         {
-
-            ItemInfo item = bag.GetItemAt(fromSolt);
-            ItemInfo toItem = tobag.GetItemAt(toSolt);
-
-
-            if (item == null && toItem == null)
-                return;
-
-            if (toItem == null && (toSolt < 0 || toSolt > 80) || (tobag.BagType == 11 && toSolt >= maxCount))
+            if (base.TakeOutItem(item))
             {
-                if (tobag.BagType == 11 || tobag.BagType == 1)
-
-                    toSolt = tobag.FindFirstEmptySlot(0);
-                //else if(bag.BagType==12&&tobag.BagType==0){
-                //    toSolt=tobag.FindFirstEmptySlot(7);
-                //}
-                else
-                    toSolt = tobag.FindFirstEmptySlot(31);
-
-            }
-
-            if ((item.Template.CategoryID == 10 || item.Template.CategoryID == 11 || item.Template.CategoryID == 12) && tobag.BagType != 0 ||
-                ((item.Template.CategoryID != 10 && item.Template.CategoryID != 11 && item.Template.CategoryID != 12) && tobag.BagType != 1))
-            {
-                if (toItem != null && item != null)
+                if (this.m_saveToDb)
                 {
-
-                    int place = item.Place;
-                    int bagtype = item.BagType;
-                    int place1 = toItem.Place;
-                    int bagtype1 = toItem.BagType;
-
-                    bag.RemoveItem(item);
-                    tobag.RemoveItem(toItem);
-
-                    item.IsExist = true;
-                    item.BagType = bagtype1;
-                   
-                    tobag.AddItemTo(item, place1);
-
-
-                    toItem.IsExist = true;
-                    toItem.BagType = bagtype;
-                    if (place == -1 && (eBageType)bag.BagType == eBageType.MainBag)
+                    lock (this.m_removedList)
                     {
-                        place = bag.FindFirstEmptySlot(31);
+                        this.m_removedList.Add(item);
                     }
-                    if (place < 31) place = bag.FindFirstEmptySlot(31);
-                    bag.AddItemTo(toItem, place);
-
                 }
-                else
-                {
-                    if (toItem != null)
-                    {
-                        tobag.RemoveItem(item);
-                        bag.AddItemTo(item, toSolt);
-                    }
-
-                    if (item != null)
-                    {
-                        if (tobag.BagType == 11 && toSolt >= maxCount)
-                        {
-                            UpdateItem(item);
-                            return;
-                        }
-                        else
-                        {
-                            bag.RemoveItem(item);
-                            tobag.AddItemTo(item, toSolt);
-
-
-                        }
-                    }
-
-                }
+                return true;
             }
-            else
-            {
-                if (toItem != null)
-                    UpdateItem(toItem);
-                if (item != null)
-                    UpdateItem(item);
-            }
+            return false;
         }
 
+        public override void UpdateChangedPlaces()
+        {
+            int[] updatedSlots = base.m_changedPlaces.ToArray();
+            this.m_player.Out.SendUpdateInventorySlot(this, updatedSlots);
+            base.UpdateChangedPlaces();
+        }
     }
 }
+

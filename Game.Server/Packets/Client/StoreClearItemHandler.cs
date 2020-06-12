@@ -34,11 +34,11 @@ namespace Game.Server.Packets.Client
                     }
                     else
                     {
-                        if (item.Template.CategoryID == 7&&m_mainBag.GetItemAt(6)==null)
+                        if (item.Template.CategoryID == 7&& m_mainBag.GetItemAt(6)==null)
                         {
                             m_storeBag.MoveToStore(m_storeBag, i, 6, m_mainBag, 999);
                         }else
-                        m_storeBag.MoveToStore(m_storeBag, i, m_mainBag.FindFirstEmptySlot(32), m_mainBag, 999);
+                            m_storeBag.MoveToStore(m_storeBag, i, m_mainBag.FindFirstEmptySlot(32), m_mainBag, 999);
                     }
                 }
                 

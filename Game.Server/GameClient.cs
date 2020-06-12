@@ -1,9 +1,6 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
 using System.Text;
 using Game.Base;
-using System.Net;
 using Game.Server.GameObjects;
 using log4net;
 using Game.Base.Packets;
@@ -11,9 +8,6 @@ using Game.Server.Managers;
 using System.Reflection;
 using System.Threading;
 using SqlDataProvider.Data;
-using System.Security.Cryptography;
-using System.Configuration;
-using System.IO;
 using Game.Server.GameUtils;
 
 namespace Game.Server
@@ -34,6 +28,7 @@ namespace Game.Server
         protected GamePlayer m_player;
 
         public int Version;
+        public int soquay;
 
         public GamePlayer Player
         {
@@ -170,6 +165,31 @@ namespace Game.Server
            // LogMsg("disconneted!");
            // m_writer.Dispose();
         }
+
+        private void resetStoreBag2(GamePlayer player)
+        {
+            Console.WriteLine("Game.Server.GameClient.teste1");
+            PlayerInventory bag = player.StoreBag2;
+            PlayerEquipInventory mainBag = player.MainBag;
+            PlayerInventory propBag = player.PropBag;
+            for (int i = 0; i < bag.Capalility; i++)
+            {
+                if (bag.GetItemAt(i) != null)
+                {
+                    SqlDataProvider.Data.ItemInfo itemAt = bag.GetItemAt(i);
+                    if (((itemAt.Template.CategoryID == 10) || (itemAt.Template.CategoryID == 11)) || (itemAt.Template.CategoryID == 12))
+                    {
+                        bag.MoveToStore(bag, i, propBag.FindFirstEmptySlot(1), propBag, 0x3e7);
+                    }
+                    else
+                    {
+                        bag.MoveToStore(bag, i, mainBag.FindFirstEmptySlot(0x20), mainBag, 0x3e7);
+                    }
+                }
+            }
+        }
+
+        /*
         private void resetStoreBag2(GamePlayer player)
         {
 
@@ -181,7 +201,7 @@ namespace Game.Server
             {
                 if (m_storeBag.GetItemAt(i) != null)
                 {
-                    var item = m_storeBag.GetItemAt(i);
+                    ItemInfo item = m_storeBag.GetItemAt(i);
                     if (item.Template.CategoryID == 10 || item.Template.CategoryID == 11 || item.Template.CategoryID == 12)
                     {
                         m_storeBag.MoveToStore(m_storeBag, i, m_propBag.FindFirstEmptySlot(1), m_propBag, 999);
@@ -190,7 +210,7 @@ namespace Game.Server
                 }
 
             }
-        }
+        }*/
         /// <summary>
         /// 客户端断开连接
         /// </summary>
@@ -254,6 +274,7 @@ namespace Game.Server
             m_player = null;
             Encryted = true;
             AsyncPostSend = true;
+            soquay = -1;
         }
 
        

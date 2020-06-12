@@ -12,9 +12,9 @@ namespace SqlDataProvider.Data
         FightBag = 3,
         TempBag = 4,
         CaddyBag = 5,
-        Bank    = 11,
-        Store   =12,
-        Card=15
+        Bank = 11,
+        Store = 12,
+        Card= 15
     }
 
     public class ItemTemplateInfo : DataObject

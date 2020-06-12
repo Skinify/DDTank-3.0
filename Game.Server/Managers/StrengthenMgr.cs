@@ -157,6 +157,7 @@ namespace Game.Server.Managers
         }
         public static StrengthenGoodsInfo FindStrengthenGoodsInfo(int level, int TemplateId)
         {
+            Console.WriteLine("Game.Server.StrengthenMgr.FindStrengthenGoodsInfo.teste1: " + level);
             m_lock.AcquireReaderLock(Timeout.Infinite);
             try
             {

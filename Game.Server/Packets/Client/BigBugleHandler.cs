@@ -1,8 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using Game.Server.GameObjects;
+﻿using Game.Server.GameObjects;
 using Game.Base.Packets;
 using SqlDataProvider.Data;
 
@@ -16,19 +12,7 @@ namespace Game.Server.Packets.Client
             ItemInfo item = client.Player.PropBag.GetItemByCategoryID(0,11, 5);
             if (item != null)
             {
-                //item.Count--;
-                //if (item.Count <= 0)
-                //{
-                //    //client.Player.RemoveAllItem(item, false, Game.Server.Statics.ItemRemoveType.Use, item.GetBagType());
-                //    client.Player.RemoveItem(item);
-                //}
-                //else
-                //{                    
-                   // client.Player.PropBag.RefreshItem(item);
-                    client.Player.PropBag.RemoveCountFromStack(item,1);
-                  
-              
-              //  }
+                client.Player.PropBag.RemoveCountFromStack(item, 1);
                 int senderID = packet.ReadInt();
                 string senderName = packet.ReadString();
                 string msg = packet.ReadString();

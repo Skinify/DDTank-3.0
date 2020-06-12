@@ -113,8 +113,15 @@
     <Compile Include="Enumerate\eConsumerType.cs" />
     <Compile Include="Enumerate\eSubConsumerType.cs" />
     <Compile Include="Battle\FightServerConnector.cs" />
+    <Compile Include="GameObjects\GamePlayer.cs" />
     <Compile Include="GameServerConfig.cs" />
     <Compile Include="Games\GameMgr.cs" />
+    <Compile Include="GameUtilsBAK\AbstractInventory.cs" />
+    <Compile Include="GameUtilsBAK\PlayerEquipInventory.cs" />
+    <Compile Include="GameUtilsBAK\PlayerInventory.cs" />
+    <Compile Include="GameUtilsBAK\Scene.cs" />
+    <Compile Include="GameUtils\AbstractInventory.cs" />
+    <Compile Include="GameUtils\PlayerEquipInventory.cs" />
     <Compile Include="GameUtils\PlayerInventory.cs" />
     <Compile Include="GameUtils\Scene.cs" />
     <Compile Include="HotSpringRooms\AbstractMarryProcessor.cs" />
@@ -140,9 +147,7 @@
     <Compile Include="LoginServerConnector.cs" />
     <Compile Include="ChatServer\eChatServerPacket.cs" />
     <Compile Include="GameClient.cs" />
-    <Compile Include="GameObjects\GamePlayer.cs" />
-    <Compile Include="GameUtils\AbstractInventory.cs" />
-    <Compile Include="GameUtils\PlayerEquipInventory.cs" />
+    <Compile Include="GameObjects\GamePlayerBAK.cs" />
     <Compile Include="Managers\AntiAddictionMgr.cs" />
     <Compile Include="Managers\AwardMgr.cs" />
     <Compile Include="Managers\ConsortiaMgr.cs">
@@ -249,9 +254,11 @@
     <Compile Include="Packets\Client\ItemReclaimHandler.cs" />
     <Compile Include="Packets\Client\ItemRefineryHandler.cs" />
     <Compile Include="Packets\Client\ItemStrengthenHandler.cs" />
+    <Compile Include="Packets\Client\ItemStrengthenHandlerBAK.cs" />
     <Compile Include="Packets\Client\ItemTransferHandler.cs" />
     <Compile Include="Packets\Client\ItemTrendHandle.cs" />
     <Compile Include="Packets\Client\LotteryFinishHandler.cs" />
+    <Compile Include="Packets\Client\LotteryGetItem.cs" />
     <Compile Include="Packets\Client\LotteryOpenBoxHandler.cs" />
     <Compile Include="Packets\Client\MailGetAttachHandler.cs" />
     <Compile Include="Packets\Client\MailPaymentCancelHandler.cs" />
@@ -289,6 +296,7 @@
     <Compile Include="Packets\Client\SyncSystemDateHandler.cs" />
     <Compile Include="Packets\Client\TankAllHandler.cs" />
     <Compile Include="Packets\Client\Test30Hand.cs" />
+    <Compile Include="Packets\Client\UpdatePropertyHandler.cs" />
     <Compile Include="Packets\Client\UserAnswerHandler.cs" />
     <Compile Include="Packets\Client\UserBreakItemHandler.cs" />
     <Compile Include="Packets\Client\UserBuyItemHandler.cs" />

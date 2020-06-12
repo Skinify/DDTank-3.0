@@ -1,519 +1,268 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
+﻿using log4net;
 using SqlDataProvider.Data;
-using Game.Server.Statics;
-using System.Threading;
-using log4net;
+using System;
+using System.Collections.Generic;
 using System.Reflection;
-
-
-
+using System.Threading;
 
 namespace Game.Server.GameUtils
 {
-    /// <summary>
-    /// 抽象的背包容器
-    /// </summary>
+
     public abstract class AbstractInventory
     {
         private static readonly ILog log = LogManager.GetLogger(MethodBase.GetCurrentMethod().DeclaringType);
-
-        protected object m_lock = new object();
-
-        private int m_type;
-
-        private int m_capalility;
-
-        private int m_beginSlot;
-
         private bool m_autoStack;
-
-        protected ItemInfo[] m_items;
-
-        public int BeginSlot
-        {
-            get { return m_beginSlot; }
-        }
-
-        public int Capalility
-        {
-            get { return m_capalility; }
-        }
-
-        public int BagType
-        {
-            get { return m_type; }
-        }
+        private int m_beginSlot;
+        private int m_capalility;
+        private int m_changeCount;
+        protected List<int> m_changedPlaces = new List<int>();
+        protected SqlDataProvider.Data.ItemInfo[] m_items;
+        protected object m_lock = new object();
+        private int m_type;
 
         public AbstractInventory(int capability, int type, int beginSlot, bool autoStack)
         {
-            m_capalility = capability;
-            m_type = type;
-            m_beginSlot = beginSlot;
-            m_autoStack = autoStack;
-
-
-            m_items = new ItemInfo[capability];
+            this.m_capalility = capability;
+            this.m_type = type;
+            this.m_beginSlot = beginSlot;
+            this.m_autoStack = autoStack;
+            this.m_items = new SqlDataProvider.Data.ItemInfo[capability];
         }
 
-        #region Add/Remove/AddTemp/RemoveTemp/AddCountToStack/RemoveCountFromStack/Start
-
-        public bool AddItem(ItemInfo item)
+        public virtual bool AddCountToStack(SqlDataProvider.Data.ItemInfo item, int count)
         {
-            return AddItem(item, m_beginSlot);
-        }
-
-        public bool AddItem(ItemInfo item, int minSlot)
-        {
-            if (item == null) return false;
-
-            int place = FindFirstEmptySlot(minSlot);
-
-            return AddItemTo(item, place);
-        }
-
-        public virtual bool AddItemTo(ItemInfo item, int place)
-        {
-            if (item == null || place >= m_capalility || place < 0) return false;
-
-            lock (m_lock)
+            if (item == null)
             {
-                if (m_items[place] != null)
+                return false;
+            }
+            if ((count <= 0) || (item.BagType != this.m_type))
+            {
+                return false;
+            }
+            if ((item.Count + count) > item.Template.MaxCount)
+            {
+                return false;
+            }
+            item.Count += count;
+            this.OnPlaceChanged(item.Place);
+            return true;
+        }
+
+        public bool AddItem(SqlDataProvider.Data.ItemInfo item) =>
+            this.AddItem(item, this.m_beginSlot);
+
+        public bool AddItem(SqlDataProvider.Data.ItemInfo item, int minSlot)
+        {
+            if (item == null)
+            {
+                return false;
+            }
+            int place = this.FindFirstEmptySlot(minSlot);
+            return this.AddItemTo(item, place);
+        }
+
+        public virtual bool AddItemTo(SqlDataProvider.Data.ItemInfo item, int place)
+        {
+            if (((item == null) || (place >= this.m_capalility)) || (place < 0))
+            {
+                return false;
+            }
+            lock (this.m_lock)
+            {
+                if (this.m_items[place] != null)
+                {
                     place = -1;
+                }
                 else
                 {
-                    m_items[place] = item;
+                    this.m_items[place] = item;
                     item.Place = place;
-                    item.BagType = m_type;
+                    item.BagType = this.m_type;
                 }
             }
             if (place != -1)
-                OnPlaceChanged(place);
-
-            return place != -1;
-        }
-
-        public virtual bool TakeOutItem(ItemInfo item)
-        {
-            if (item == null) return false;
-            int place = -1;
-            lock (m_lock)
             {
-                for (int i = 0; i < m_capalility; i++)
-                {
-                    if (m_items[i] == item)
-                    {
-                        place = i;
-                        m_items[i] = null;
-
-                        break;
-                    }
-                }
+                this.OnPlaceChanged(place);
             }
+            return (place != -1);
+        }
 
-            if (place != -1)
+        public virtual bool AddTemplate(SqlDataProvider.Data.ItemInfo cloneItem, int count) =>
+            this.AddTemplate(cloneItem, count, this.m_beginSlot, this.m_capalility - 1);
+
+        public virtual bool AddTemplate(SqlDataProvider.Data.ItemInfo cloneItem, int count, int minSlot, int maxSlot)
+        {
+            if (cloneItem == null)
             {
-                OnPlaceChanged(place);
-                if (item.BagType == this.BagType)
-                {
-                    item.Place = -1;
-                    item.BagType = -1;
-                }
-            }
-
-            return place != -1;
-        }
-
-        public bool TakeOutItemAt(int place)
-        {
-            return TakeOutItem(GetItemAt(place));
-        }
-
-        public virtual bool RemoveItem(ItemInfo item)
-        {
-            if (item == null) return false;
-            int place = -1;
-            lock (m_lock)
-            {
-                for (int i = 0; i < m_capalility; i++)
-                {
-                    if (m_items[i] == item)
-                    {
-                        place = i;
-                        m_items[i] = null;
-
-                        break;
-                    }
-                }
-            }
-
-            if (place != -1)
-            {
-                OnPlaceChanged(place);
-                if (item.BagType == this.BagType)
-                {
-                    item.Place = -1;
-                    item.BagType = -1;
-                }
-            }
-
-            return place != -1;
-        }
-
-        public bool RemoveItemAt(int place)
-        {
-            return RemoveItem(GetItemAt(place));
-        }
-
-        public virtual bool AddCountToStack(ItemInfo item, int count)
-        {
-            if (item == null) return false;
-            if (count <= 0 || item.BagType != m_type) return false;
-
-            if (item.Count + count > item.Template.MaxCount)
                 return false;
-
-            item.Count += count;
-
-            OnPlaceChanged(item.Place);
-
-            return true;
-        }
-
-        public virtual bool RemoveCountFromStack(ItemInfo item, int count)
-        {
-            if (item == null) return false;
-            if (count <= 0 || item.BagType != m_type) return false;
-            if (item.Count < count) return false;
-            if (item.Count == count)
-                return RemoveItem(item);
-            else
-                item.Count -= count;
-
-            OnPlaceChanged(item.Place);
-
-            return true;
-        }
-
-        public virtual bool AddTemplate(ItemInfo cloneItem, int count)
-        {
-            return AddTemplate(cloneItem, count, m_beginSlot, m_capalility - 1);
-        }
-
-        public virtual bool AddTemplate(ItemInfo cloneItem, int count, int minSlot, int maxSlot)
-        {
-            if (cloneItem == null) return false;
+            }
             ItemTemplateInfo template = cloneItem.Template;
-            if (template == null) return false;
-            if (count <= 0) return false;
-            if (minSlot < m_beginSlot || minSlot > m_capalility - 1) return false;
-            if (maxSlot < m_beginSlot || maxSlot > m_capalility - 1) return false;
-            if (minSlot > maxSlot) return false;
-
-
-            lock (m_lock)
+            if (template == null)
             {
-                List<int> changedSlot = new List<int>();
-                int itemcount = count;
-
+                return false;
+            }
+            if (count <= 0)
+            {
+                return false;
+            }
+            if ((minSlot < this.m_beginSlot) || (minSlot > (this.m_capalility - 1)))
+            {
+                return false;
+            }
+            if ((maxSlot < this.m_beginSlot) || (maxSlot > (this.m_capalility - 1)))
+            {
+                return false;
+            }
+            if (minSlot > maxSlot)
+            {
+                return false;
+            }
+            lock (this.m_lock)
+            {
+                SqlDataProvider.Data.ItemInfo info2;
+                List<int> list = new List<int>();
+                int num = count;
                 for (int i = minSlot; i <= maxSlot; i++)
                 {
-                    ItemInfo item = m_items[i];
-                    if (item == null)
+                    info2 = this.m_items[i];
+                    if (info2 == null)
                     {
-                        itemcount -= template.MaxCount;
-                        changedSlot.Add(i);
+                        num -= template.MaxCount;
+                        list.Add(i);
                     }
-                    else if (m_autoStack && cloneItem.CanStackedTo(item))
+                    else if (this.m_autoStack && cloneItem.CanStackedTo(info2))
                     {
-                        itemcount -= (template.MaxCount - item.Count);
-                        changedSlot.Add(i);
+                        num -= template.MaxCount - info2.Count;
+                        list.Add(i);
                     }
-                    if (itemcount <= 0)
+                    if (num <= 0)
+                    {
                         break;
+                    }
                 }
-
-                if (itemcount <= 0)
+                if (num <= 0)
                 {
-                    BeginChanges();
+                    this.BeginChanges();
                     try
                     {
-                        itemcount = count;
-                        foreach (int i in changedSlot)
+                        num = count;
+                        foreach (int num2 in list)
                         {
-                            ItemInfo item = m_items[i];
-                            if (item == null)
+                            info2 = this.m_items[num2];
+                            if (info2 == null)
                             {
-                                item = cloneItem.Clone();
-
-                                item.Count = itemcount < template.MaxCount ? itemcount : template.MaxCount;
-
-                                itemcount -= item.Count;
-
-                                AddItemTo(item, i);
+                                info2 = cloneItem.Clone();
+                                info2.Count = (num < template.MaxCount) ? num : template.MaxCount;
+                                num -= info2.Count;
+                                this.AddItemTo(info2, num2);
+                            }
+                            else if (info2.TemplateID == template.TemplateID)
+                            {
+                                int num3 = ((info2.Count + num) < template.MaxCount) ? num : (template.MaxCount - info2.Count);
+                                info2.Count += num3;
+                                num -= num3;
+                                this.OnPlaceChanged(num2);
                             }
                             else
                             {
-                                if (item.TemplateID == template.TemplateID)
-                                {
-                                    int add = (item.Count + itemcount < template.MaxCount ? itemcount : template.MaxCount - item.Count);
-                                    item.Count += add;
-                                    itemcount -= add;
-
-                                    OnPlaceChanged(i);
-                                }
-                                else
-                                {
-                                    log.Error("Add template erro: select slot's TemplateId not equest templateId");
-                                }
+                                log.Error("Add template erro: select slot's TemplateId not equest templateId");
                             }
                         }
-
-                        if (itemcount != 0)
-                            log.Error("Add template error: last count not equal Zero.");
-                    }
-                    finally
-                    {
-                        CommitChanges();
-                    }
-
-                    return true;
-                }
-                else
-                {
-                    return false;
-                }
-            }
-        }
-
-        public virtual bool RemoveTemplate(int templateId, int count)
-        {
-            return RemoveTemplate(templateId, count, 0, m_capalility - 1);
-        }
-
-        public virtual bool RemoveTemplate(int templateId, int count, int minSlot, int maxSlot)
-        {
-            if (count <= 0) return false;
-            if (minSlot < 0 || minSlot > m_capalility - 1) return false;
-            if (maxSlot <= 0 || maxSlot > m_capalility - 1) return false;
-            if (minSlot > maxSlot) return false;
-
-            lock (m_lock)
-            {
-
-                List<int> changedSlot = new List<int>();
-                int itemcount = count;
-
-                for (int i = minSlot; i < maxSlot; i++)
-                {
-                    ItemInfo item = m_items[i];
-                    if (item != null && item.TemplateID == templateId)
-                    {
-                        changedSlot.Add(i);
-                        itemcount -= item.Count;
-                        if (itemcount <= 0)
-                            break;
-                    }
-                }
-
-                if (itemcount <= 0)
-                {
-                    BeginChanges();
-                    itemcount = count;
-
-                    try
-                    {
-                        foreach (int i in changedSlot)
+                        if (num != 0)
                         {
-                            ItemInfo item = m_items[i];
-
-                            if (item != null && item.TemplateID == templateId)
-                            {
-                                if (item.Count <= itemcount)
-                                {
-                                    RemoveItem(item);
-                                    itemcount -= item.Count;
-                                }
-                                else
-                                {
-                                    int dec = item.Count - itemcount < item.Count ? itemcount : 0;
-                                    item.Count -= dec;
-                                    itemcount -= dec;
-                                    OnPlaceChanged(i);
-                                }
-                            }
+                            log.Error("Add template error: last count not equal Zero.");
                         }
-
-                        if (itemcount != 0)
-                            log.Error("Remove templat error:last itemcoutj not equal Zero.");
                     }
                     finally
                     {
-                        CommitChanges();
+                        this.CommitChanges();
                     }
-
                     return true;
                 }
-                else
-                {
-                    return false;
-                }
+                return false;
             }
         }
 
-        public virtual bool MoveItem(int fromSlot, int toSlot, int count)
+        public void BeginChanges()
         {
-            if (fromSlot < 0 || toSlot < 0 || fromSlot >= m_capalility || toSlot >= m_capalility) return false;
-
-            bool result = false;
-            lock (m_lock)
-            {
-                if (!CombineItems(fromSlot, toSlot) && !StackItems(fromSlot, toSlot, count))
-                {
-                    result = ExchangeItems(fromSlot, toSlot);
-                }
-                else
-                {
-                    result = true;
-                }
-            }
-
-            if (result)
-            {
-                BeginChanges();
-                try
-                {
-                    OnPlaceChanged(fromSlot);
-                    OnPlaceChanged(toSlot);
-                }
-                finally
-                {
-                    CommitChanges();
-                }
-            }
-
-            return result;
+            Interlocked.Increment(ref this.m_changeCount);
         }
-        public bool IsSolt(int slot)
+
+        public virtual void Clear()
         {
-            return slot >= 0 && slot < m_capalility;
+            lock (this.m_lock)
+            {
+                for (int i = 0; i < this.m_capalility; i++)
+                {
+                    this.m_items[i] = null;
+                }
+            }
         }
 
         public void ClearBag()
         {
-            BeginChanges();
-            lock (m_lock)
+            this.BeginChanges();
+            lock (this.m_lock)
             {
-                for (int i = m_beginSlot; i < m_capalility; i++)
+                for (int i = this.m_beginSlot; i < this.m_capalility; i++)
                 {
-                    if (m_items[i] != null)
+                    if (this.m_items[i] != null)
                     {
-                        RemoveItem(m_items[i]);
+                        this.RemoveItem(this.m_items[i]);
                     }
                 }
             }
-          
-                CommitChanges();
+            this.CommitChanges();
         }
 
+        protected virtual bool CombineItems(int fromSlot, int toSlot) =>
+            false;
 
-        #endregion
-
-        #region Combine/Exchange/Stack Items
-
-        protected virtual bool CombineItems(int fromSlot, int toSlot)
+        public void CommitChanges()
         {
-            return false;
-        }
-
-        protected virtual bool StackItems(int fromSlot, int toSlot, int itemCount)
-        {
-            ItemInfo fromItem = m_items[fromSlot] as ItemInfo;
-            ItemInfo toItem = m_items[toSlot] as ItemInfo;
-
-            if (itemCount == 0)
+            int num = Interlocked.Decrement(ref this.m_changeCount);
+            if (num < 0)
             {
-                if (fromItem.Count > 0)
-                    itemCount = fromItem.Count;
-                else
-                    itemCount = 1;
+                if (log.IsErrorEnabled)
+                {
+                    log.Error("Inventory changes counter is bellow zero (forgot to use BeginChanges?)!\n\n" + Environment.StackTrace);
+                }
+                Thread.VolatileWrite(ref this.m_changeCount, 0);
             }
-
-            if (toItem != null && toItem.TemplateID == fromItem.TemplateID && toItem.CanStackedTo(fromItem))
+            if ((num <= 0) && (this.m_changedPlaces.Count > 0))
             {
-                if (fromItem.Count + toItem.Count > fromItem.Template.MaxCount)
-                {
-                    fromItem.Count -= (toItem.Template.MaxCount - toItem.Count);
-                    toItem.Count = toItem.Template.MaxCount;
-                }
-                else
-                {
-                    toItem.Count += itemCount;
-                    RemoveItem(fromItem);
-                }
-                return true;
+                this.UpdateChangedPlaces();
             }
-            else if (toItem == null && fromItem.Count > itemCount)
-            {
-                ItemInfo newItem = (ItemInfo)fromItem.Clone();
-                newItem.Count = itemCount;
-                if (AddItemTo(newItem, toSlot))
-                {
-                    fromItem.Count -= itemCount;
-                    return true;
-                }
-                else
-                {
-                    return false;
-                }
-            }
-            return false;
         }
 
         protected virtual bool ExchangeItems(int fromSlot, int toSlot)
         {
-            ItemInfo fromItem = m_items[toSlot];
-            ItemInfo toItem = m_items[fromSlot];
-
-            m_items[fromSlot] = fromItem;
-            m_items[toSlot] = toItem;
-
-            if (fromItem != null)
-                fromItem.Place = fromSlot;
-
-            if (toItem != null)
-                toItem.Place = toSlot;
-
+            SqlDataProvider.Data.ItemInfo info = this.m_items[toSlot];
+            SqlDataProvider.Data.ItemInfo info2 = this.m_items[fromSlot];
+            this.m_items[fromSlot] = info;
+            this.m_items[toSlot] = info2;
+            if (info != null)
+            {
+                info.Place = fromSlot;
+            }
+            if (info2 != null)
+            {
+                info2.Place = toSlot;
+            }
             return true;
         }
 
-        #endregion Combine/Exchange/Stack Items
-
-        #region Find Items
-
-        public virtual ItemInfo GetItemAt(int slot)
-        {
-            if (slot < 0 || slot >= m_capalility) return null;
-
-            return m_items[slot];
-        }
-
-        /// <summary>
-        /// 查找从Start开始的第一个空位
-        /// </summary>
-        /// <param name="start"></param>
-        /// <returns></returns>
         public int FindFirstEmptySlot(int minSlot)
         {
-            if (minSlot >= m_capalility) return -1;
-
-            lock (m_lock)
+            if (minSlot >= this.m_capalility)
             {
-                for (int i = minSlot; i < m_capalility; i++)
+                return -1;
+            }
+            lock (this.m_lock)
+            {
+                for (int i = minSlot; i < this.m_capalility; i++)
                 {
-                    if (m_items[i] == null)
+                    if (this.m_items[i] == null)
                     {
                         return i;
                     }
@@ -522,17 +271,13 @@ namespace Game.Server.GameUtils
             }
         }
 
-        /// <summary>
-        /// 查找最后一个空位
-        /// </summary>
-        /// <returns></returns>
         public int FindLastEmptySlot()
         {
-            lock (m_lock)
+            lock (this.m_lock)
             {
-                for (int i = m_capalility - 1; i >= 0; i--)
+                for (int i = this.m_capalility - 1; i >= 0; i--)
                 {
-                    if (m_items[i] == null)
+                    if (this.m_items[i] == null)
                     {
                         return i;
                     }
@@ -541,200 +286,425 @@ namespace Game.Server.GameUtils
             }
         }
 
-        /// <summary>
-        /// 清除所有物品
-        /// </summary>
-        public virtual void Clear()
+        public int GetEmptyCount() =>
+            this.GetEmptyCount(this.m_beginSlot);
+
+        public virtual int GetEmptyCount(int minSlot)
         {
-            lock (m_lock)
+            if ((minSlot < 0) || (minSlot > (this.m_capalility - 1)))
             {
-                for (int i = 0; i < m_capalility; i++)
+                return 0;
+            }
+            int num = 0;
+            lock (this.m_lock)
+            {
+                for (int i = minSlot; i < this.m_capalility; i++)
                 {
-                    m_items[i] = null;
+                    if (this.m_items[i] == null)
+                    {
+                        num++;
+                    }
                 }
             }
+            return num;
         }
 
-        public virtual ItemInfo GetItemByCategoryID(int minSlot, int categoryID, int property)
+        public virtual SqlDataProvider.Data.ItemInfo GetItemAt(int slot)
         {
-            lock (m_lock)
+            if ((slot < 0) || (slot >= this.m_capalility))
             {
-                for (int i = minSlot; i < m_capalility; i++)
+                return null;
+            }
+            return this.m_items[slot];
+        }
+
+        public virtual SqlDataProvider.Data.ItemInfo GetItemByCategoryID(int minSlot, int categoryID, int property)
+        {
+            lock (this.m_lock)
+            {
+                for (int i = minSlot; i < this.m_capalility; i++)
                 {
-                    if (m_items[i] != null && m_items[i].Template.CategoryID == categoryID)
+                    if (((this.m_items[i] != null) && (this.m_items[i].Template.CategoryID == categoryID)) && ((property == -1) || (this.m_items[i].Template.Property1 == property)))
                     {
-                        if (property != -1 && m_items[i].Template.Property1 != property)
-                            continue;
-                        return m_items[i];
+                        return this.m_items[i];
                     }
                 }
                 return null;
             }
         }
 
-        public virtual ItemInfo GetItemByTemplateID(int minSlot, int templateId)
+        public virtual SqlDataProvider.Data.ItemInfo GetItemByTemplateID(int minSlot, int templateId)
         {
-            lock (m_lock)
+            lock (this.m_lock)
             {
-                for (int i = minSlot; i < m_capalility; i++)
+                for (int i = minSlot; i < this.m_capalility; i++)
                 {
-                    if (m_items[i] != null && m_items[i].TemplateID == templateId)
+                    if ((this.m_items[i] != null) && (this.m_items[i].TemplateID == templateId))
                     {
-                        return m_items[i];
+                        return this.m_items[i];
                     }
                 }
                 return null;
             }
         }
 
-        public virtual int GetItemCount(int templateId)
-        {
-            return GetItemCount(m_beginSlot, templateId);
-        }
+        public virtual int GetItemCount(int templateId) =>
+            this.GetItemCount(this.m_beginSlot, templateId);
 
         public int GetItemCount(int minSlot, int templateId)
         {
-            int count = 0;
-            lock (m_lock)
+            int num = 0;
+            lock (this.m_lock)
             {
-                for (int i = minSlot; i < m_capalility; i++)
+                for (int i = minSlot; i < this.m_capalility; i++)
                 {
-                    if (m_items[i] != null && m_items[i].TemplateID == templateId)
+                    if ((this.m_items[i] != null) && (this.m_items[i].TemplateID == templateId))
                     {
-                        count += m_items[i].Count;
+                        num += this.m_items[i].Count;
                     }
                 }
             }
-            return count;
+            return num;
         }
 
-        public virtual List<ItemInfo> GetItems()
-        {
-            return GetItems(0, m_capalility);
-        }
+        public virtual List<SqlDataProvider.Data.ItemInfo> GetItems() =>
+            this.GetItems(0, this.m_capalility);
 
-        public virtual List<ItemInfo> GetItems(int minSlot, int maxSlot)
+        public virtual List<SqlDataProvider.Data.ItemInfo> GetItems(int minSlot, int maxSlot)
         {
-            List<ItemInfo> list = new List<ItemInfo>();
-            lock (m_lock)
+            List<SqlDataProvider.Data.ItemInfo> list = new List<SqlDataProvider.Data.ItemInfo>();
+            lock (this.m_lock)
             {
                 for (int i = minSlot; i < maxSlot; i++)
                 {
-                    if (m_items[i] != null)
+                    if (this.m_items[i] != null)
                     {
-                        list.Add(m_items[i]);
+                        list.Add(this.m_items[i]);
                     }
                 }
             }
             return list;
         }
 
-        public int GetEmptyCount()
-        {
-            return GetEmptyCount(m_beginSlot);
-        }
+        public bool IsSolt(int slot) =>
+            ((slot >= 0) && (slot < this.m_capalility));
 
-        public virtual int GetEmptyCount(int minSlot)
+        public virtual bool MoveItem(int fromSlot, int toSlot, int count)
         {
-            if (minSlot < 0 || minSlot > m_capalility - 1) return 0;
-
-            int count = 0;
-            lock (m_lock)
+            if ((((fromSlot < 0) || (toSlot < 0)) || (fromSlot >= this.m_capalility)) || (toSlot >= this.m_capalility))
             {
-                for (int i = minSlot; i < m_capalility; i++)
+                return false;
+            }
+            bool flag = false;
+            lock (this.m_lock)
+            {
+                if (!(this.CombineItems(fromSlot, toSlot) || this.StackItems(fromSlot, toSlot, count)))
                 {
-                    if (m_items[i] == null)
-                    {
-                        count++;
-                    }
+                    flag = this.ExchangeItems(fromSlot, toSlot);
+                }
+                else
+                {
+                    flag = true;
                 }
             }
-            return count;
+            if (flag)
+            {
+                this.BeginChanges();
+                try
+                {
+                    this.OnPlaceChanged(fromSlot);
+                    this.OnPlaceChanged(toSlot);
+                }
+                finally
+                {
+                    this.CommitChanges();
+                }
+            }
+            return flag;
         }
-
-        /// <summary>
-        /// 使用物品
-        /// </summary>
-        /// <param name="item"></param>
-        public virtual void UseItem(ItemInfo item)
-        {
-            bool changed = false;
-            if (item.IsBinds == false && (item.Template.BindType == 2 || item.Template.BindType == 3))
-            {
-                item.IsBinds = true;
-                changed = true;
-            }
-
-            if (item.IsUsed == false)
-            {
-                item.IsUsed = true;
-                item.BeginDate = DateTime.Now;
-                changed = true;
-            }
-
-            if (changed)
-            {
-                OnPlaceChanged(item.Place);
-            }
-        }
-
-        public virtual void UpdateItem(ItemInfo item)
-        {
-            if (item.BagType == m_type)
-            {
-                if (item.Count <= 0)
-                    RemoveItem(item);
-                else
-                    OnPlaceChanged(item.Place);
-            }
-        }
-
-        #endregion
-
-        #region BeginChanges/CommiteChanges/UpdateChanges
-
-        protected List<int> m_changedPlaces = new List<int>();
-        private int m_changeCount;
 
         protected void OnPlaceChanged(int place)
         {
-            if (m_changedPlaces.Contains(place) == false)
-                m_changedPlaces.Add(place);
-
-            if (m_changeCount <= 0 && m_changedPlaces.Count > 0)
+            if (!this.m_changedPlaces.Contains(place))
             {
-                UpdateChangedPlaces();
+                this.m_changedPlaces.Add(place);
+            }
+            if ((this.m_changeCount <= 0) && (this.m_changedPlaces.Count > 0))
+            {
+                this.UpdateChangedPlaces();
             }
         }
 
-        public void BeginChanges()
+        public virtual bool RemoveCountFromStack(SqlDataProvider.Data.ItemInfo item, int count)
         {
-            Interlocked.Increment(ref m_changeCount);
+            if (item == null)
+            {
+                return false;
+            }
+            if ((count <= 0) || (item.BagType != this.m_type))
+            {
+                return false;
+            }
+            if (item.Count < count)
+            {
+                return false;
+            }
+            if (item.Count == count)
+            {
+                return this.RemoveItem(item);
+            }
+            item.Count -= count;
+            this.OnPlaceChanged(item.Place);
+            return true;
         }
 
-        public void CommitChanges()
+        public virtual bool RemoveItem(SqlDataProvider.Data.ItemInfo item)
         {
-            int changes = Interlocked.Decrement(ref m_changeCount);
-            if (changes < 0)
+            if (item == null)
             {
-                if (log.IsErrorEnabled)
-                    log.Error("Inventory changes counter is bellow zero (forgot to use BeginChanges?)!\n\n" + Environment.StackTrace);
-                Thread.VolatileWrite(ref m_changeCount, 0);
+                return false;
             }
-            if (changes <= 0 && m_changedPlaces.Count > 0)
+            int place = -1;
+            lock (this.m_lock)
             {
-                UpdateChangedPlaces();
+                for (int i = 0; i < this.m_capalility; i++)
+                {
+                    if (this.m_items[i] == item)
+                    {
+                        place = i;
+                        this.m_items[i] = null;
+                        goto Label_006A;
+                    }
+                }
+            }
+            Label_006A:
+            if (place != -1)
+            {
+                this.OnPlaceChanged(place);
+                if (item.BagType == this.BagType)
+                {
+                    item.Place = -1;
+                    item.BagType = -1;
+                }
+            }
+            return (place != -1);
+        }
+
+        public bool RemoveItemAt(int place) =>
+            this.RemoveItem(this.GetItemAt(place));
+
+        public virtual bool RemoveTemplate(int templateId, int count) =>
+            this.RemoveTemplate(templateId, count, 0, this.m_capalility - 1);
+
+        public virtual bool RemoveTemplate(int templateId, int count, int minSlot, int maxSlot)
+        {
+            if (count <= 0)
+            {
+                return false;
+            }
+            if ((minSlot < 0) || (minSlot > (this.m_capalility - 1)))
+            {
+                return false;
+            }
+            if ((maxSlot <= 0) || (maxSlot > (this.m_capalility - 1)))
+            {
+                return false;
+            }
+            if (minSlot > maxSlot)
+            {
+                return false;
+            }
+            lock (this.m_lock)
+            {
+                SqlDataProvider.Data.ItemInfo info;
+                List<int> list = new List<int>();
+                int num = count;
+                for (int i = minSlot; i < maxSlot; i++)
+                {
+                    info = this.m_items[i];
+                    if ((info != null) && (info.TemplateID == templateId))
+                    {
+                        list.Add(i);
+                        num -= info.Count;
+                        if (num <= 0)
+                        {
+                            break;
+                        }
+                    }
+                }
+                if (num <= 0)
+                {
+                    this.BeginChanges();
+                    num = count;
+                    try
+                    {
+                        foreach (int num2 in list)
+                        {
+                            info = this.m_items[num2];
+                            if ((info != null) && (info.TemplateID == templateId))
+                            {
+                                if (info.Count <= num)
+                                {
+                                    this.RemoveItem(info);
+                                    num -= info.Count;
+                                }
+                                else
+                                {
+                                    int num3 = ((info.Count - num) < info.Count) ? num : 0;
+                                    info.Count -= num3;
+                                    num -= num3;
+                                    this.OnPlaceChanged(num2);
+                                }
+                            }
+                        }
+                        if (num != 0)
+                        {
+                            log.Error("Remove templat error:last itemcoutj not equal Zero.");
+                        }
+                    }
+                    finally
+                    {
+                        this.CommitChanges();
+                    }
+                    return true;
+                }
+                return false;
             }
         }
+
+        protected virtual bool StackItems(int fromSlot, int toSlot, int itemCount)
+        {
+            SqlDataProvider.Data.ItemInfo to = this.m_items[fromSlot];
+            SqlDataProvider.Data.ItemInfo info2 = this.m_items[toSlot];
+            if (itemCount == 0)
+            {
+                if (to.Count > 0)
+                {
+                    itemCount = to.Count;
+                }
+                else
+                {
+                    itemCount = 1;
+                }
+            }
+            if (((info2 != null) && (info2.TemplateID == to.TemplateID)) && info2.CanStackedTo(to))
+            {
+                if ((to.Count + info2.Count) > to.Template.MaxCount)
+                {
+                    to.Count -= info2.Template.MaxCount - info2.Count;
+                    info2.Count = info2.Template.MaxCount;
+                }
+                else
+                {
+                    info2.Count += itemCount;
+                    if (to.Count > itemCount)
+                    {
+                        to.Count -= itemCount;
+                    }
+                    else
+                    {
+                        this.RemoveItem(to);
+                    }
+                }
+                return true;
+            }
+            if ((info2 == null) && (to.Count > itemCount))
+            {
+                SqlDataProvider.Data.ItemInfo item = to.Clone();
+                item.Count = itemCount;
+                if (this.AddItemTo(item, toSlot))
+                {
+                    to.Count -= itemCount;
+                    return true;
+                }
+                return false;
+            }
+            return false;
+        }
+
+        public virtual bool TakeOutItem(SqlDataProvider.Data.ItemInfo item)
+        {
+            if (item == null)
+            {
+                return false;
+            }
+            int place = -1;
+            lock (this.m_lock)
+            {
+                for (int i = 0; i < this.m_capalility; i++)
+                {
+                    if (this.m_items[i] == item)
+                    {
+                        place = i;
+                        this.m_items[i] = null;
+                        goto Label_006A;
+                    }
+                }
+            }
+            Label_006A:
+            if (place != -1)
+            {
+                this.OnPlaceChanged(place);
+                if (item.BagType == this.BagType)
+                {
+                    item.Place = -1;
+                    item.BagType = -1;
+                }
+            }
+            return (place != -1);
+        }
+
+        public bool TakeOutItemAt(int place) =>
+            this.TakeOutItem(this.GetItemAt(place));
 
         public virtual void UpdateChangedPlaces()
         {
-            m_changedPlaces.Clear();
+            this.m_changedPlaces.Clear();
         }
 
+        public virtual void UpdateItem(SqlDataProvider.Data.ItemInfo item)
+        {
+            if (item.BagType == this.m_type)
+            {
+                if (item.Count <= 0)
+                {
+                    this.RemoveItem(item);
+                }
+                else
+                {
+                    this.OnPlaceChanged(item.Place);
+                }
+            }
+        }
 
+        public virtual void UseItem(SqlDataProvider.Data.ItemInfo item)
+        {
+            bool flag = false;
+            if (!(item.IsBinds || ((item.Template.BindType != 2) && (item.Template.BindType != 3))))
+            {
+                item.IsBinds = true;
+                flag = true;
+            }
+            if (!item.IsUsed)
+            {
+                item.IsUsed = true;
+                item.BeginDate = DateTime.Now;
+                flag = true;
+            }
+            if (flag)
+            {
+                this.OnPlaceChanged(item.Place);
+            }
+        }
 
+        public int BagType =>
+            this.m_type;
 
-        #endregion
+        public int BeginSlot =>
+            this.m_beginSlot;
+
+        public int Capalility =>
+            this.m_capalility;
     }
 }
+

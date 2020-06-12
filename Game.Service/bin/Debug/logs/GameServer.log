@@ -1,499 +1,194 @@
-00:02:51,581 - [MAIN] - INFO  - Bussiness.GameProperties - Refreshing game properties!
-00:02:52,451 - [MAIN] - INFO  - Game.Server.GameServer - Recompile Scripts: True
-00:02:52,453 - [MAIN] - INFO  - Game.Server.GameServer - Server rules: true
-00:02:52,490 - [MAIN] - INFO  - Game.Server.GameServer - Registering global event handlers: true
-00:02:52,490 - [MAIN] - INFO  - Game.Server.GameServer - Script components: True
-00:02:52,491 - [MAIN] - INFO  - Game.Server.GameServer - Edition:21000: True
-00:02:52,494 - [MAIN] - INFO  - Game.Server.GameServer - InitSocket Port:9200: True
-00:02:52,529 - [MAIN] - INFO  - Game.Server.GameServer - AllocatePacketBuffers(): True
-00:02:52,536 - [MAIN] - INFO  - Game.Server.GameServer - LogMgr Init: True
-00:02:52,540 - [MAIN] - INFO  - Game.Server.GameServer - WorldMgr Init: True
-00:02:52,662 - [MAIN] - INFO  - Game.Server.GameServer - MapMgr Init: True
-00:02:52,881 - [MAIN] - INFO  - Game.Server.GameServer - ItemMgr Init: True
-00:02:52,902 - [MAIN] - INFO  - Game.Server.GameServer - ItemBox Init: True
-00:03:17,229 - [MAIN] - INFO  - Game.Server.GameServer - BallMgr Init: True
-00:03:17,238 - [MAIN] - INFO  - Game.Server.GameServer - BallConfigMgr Init: True
-00:03:17,245 - [MAIN] - INFO  - Game.Server.GameServer - FusionMgr Init: True
-00:03:17,251 - [MAIN] - INFO  - Game.Server.GameServer - AwardMgr Init: True
-00:03:17,262 - [MAIN] - INFO  - Game.Server.GameServer - NPCInfoMgr Init: True
-00:03:17,269 - [MAIN] - INFO  - Game.Server.GameServer - MissionInfoMgr Init: True
-00:03:17,277 - [MAIN] - INFO  - Game.Server.GameServer - PveInfoMgr Init: True
-00:03:17,291 - [MAIN] - INFO  - Game.Server.GameServer - Drop Init: True
-00:03:17,297 - [MAIN] - INFO  - Game.Server.GameServer - FightRateMgr Init: True
-00:03:17,304 - [MAIN] - INFO  - Game.Server.GameServer - ConsortiaLevelMgr Init: True
-00:03:17,310 - [MAIN] - INFO  - Game.Server.GameServer - RefineryMgr Init: True
-00:03:17,324 - [MAIN] - INFO  - Game.Server.GameServer - StrengthenMgr Init: True
-00:03:17,333 - [MAIN] - INFO  - Game.Server.GameServer - PropItemMgr Init: True
-00:03:17,440 - [MAIN] - INFO  - Game.Server.GameServer - ShopMgr Init: True
-00:03:17,467 - [MAIN] - INFO  - Game.Server.GameServer - QuestMgr Init: True
-00:03:17,469 - [MAIN] - INFO  - Game.Server.GameServer - RoomMgr.Setup: True
-00:03:17,470 - [MAIN] - INFO  - Game.Server.GameServer - GameMgr.Start(): True
-00:03:17,481 - [MAIN] - INFO  - Game.Server.GameServer - ConsortiaMgr Init: True
-00:03:17,486 - [MAIN] - INFO  - Game.Server.GameServer - LanguageMgr Init: True
-00:03:17,490 - [MAIN] - INFO  - Game.Server.GameServer - ExperienceRateMgr Init: True
-00:03:17,493 - [MAIN] - INFO  - Game.Server.GameServer - MacroDropMgr Init: True
-00:03:17,505 - [MAIN] - INFO  - Game.Server.Battle.BattleMgr - Battle server 127.0.0.1:9208 loaded...
-00:03:17,511 - [MAIN] - INFO  - Game.Server.Battle.BattleMgr - Total 1 battle server loaded.
-00:03:17,512 - [MAIN] - INFO  - Game.Server.GameServer - BattleMgr Setup: True
-00:03:17,513 - [MAIN] - INFO  - Game.Server.GameServer - Init Global Timers: True
-00:03:17,524 - [MAIN] - INFO  - Game.Server.GameServer - MarryRoomMgr Init: True
-00:03:17,525 - [MAIN] - INFO  - Game.Server.GameServer - LogMgr Setup: True
-00:03:17,545 - [MAIN] - INFO  - Game.Base.Packets.PacketProcessor - PacketProcessor: Loaded 149 handlers from GameServer Assembly!
-00:03:17,551 - [MAIN] - INFO  - Game.Base.CommandMgr - &version from GameServerScripts, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null has been suppressed, a command of that type already exists!
-00:03:17,553 - [MAIN] - INFO  - Game.Base.CommandMgr - Loaded 7 commands!
-00:03:17,561 - [MAIN] - INFO  - Game.Logic.Spells.SpellMgr - SpellMgr: Loaded 15 spell handlers from GameServer Assembly!
-00:03:17,563 - [MAIN] - INFO  - Game.Base.BaseConnector - Connected to 127.0.0.1:9202
-00:03:17,566 - [MAIN] - INFO  - Game.Server.GameServer - Login To CenterServer: True
-00:03:17,569 - [MAIN] - INFO  - Game.Base.BaseConnector - Connected to 127.0.0.1:9208
-00:03:17,572 - [MAIN] - INFO10:31:58,527 - [MAIN] - INFO  - Bussiness.GameProperties - Refreshing game properties!
-10:32:01,860 - [MAIN] - INFO  - Game.Server.GameServer - Recompile Scripts: True
-10:32:01,863 - [MAIN] - INFO  - Game.Server.GameServer - Server rules: true
-10:32:01,900 - [MAIN] - INFO  - Game.Server.GameServer - Registering global event handlers: true
-10:32:01,900 - [MAIN] - INFO  - Game.Server.GameServer - Script components: True
-10:32:01,900 - [MAIN] - INFO  - Game.Server.GameServer - Edition:21000: True
-10:32:01,904 - [MAIN] - INFO  - Game.Server.GameServer - InitSocket Port:9200: True
-10:32:01,939 - [MAIN] - INFO  - Game.Server.GameServer - AllocatePacketBuffers(): True
-10:32:01,944 - [MAIN] - INFO  - Game.Server.GameServer - LogMgr Init: True
-10:32:01,949 - [MAIN] - INFO  - Game.Server.GameServer - WorldMgr Init: True
-10:32:04,683 - [MAIN] - INFO  - Game.Server.GameServer - MapMgr Init: True
-10:32:04,935 - [MAIN] - INFO  - Game.Server.GameServer - ItemMgr Init: True
-10:32:05,067 - [MAIN] - INFO  - Game.Server.GameServer - ItemBox Init: True
-10:32:14,560 - [MAIN] - INFO  - Game.Server.GameServer - BallMgr Init: True
-10:32:14,665 - [MAIN] - INFO  - Game.Server.GameServer - BallConfigMgr Init: True
-10:32:14,760 - [MAIN] - INFO  - Game.Server.GameServer - FusionMgr Init: True
-10:32:14,786 - [MAIN] - INFO  - Game.Server.GameServer - AwardMgr Init: True
-10:32:14,876 - [MAIN] - INFO  - Game.Server.GameServer - NPCInfoMgr Init: True
-10:32:14,894 - [MAIN] - INFO  - Game.Server.GameServer - MissionInfoMgr Init: True
-10:32:14,927 - [MAIN] - INFO  - Game.Server.GameServer - PveInfoMgr Init: True
-10:32:14,953 - [MAIN] - INFO  - Game.Server.GameServer - Drop Init: True
-10:32:14,978 - [MAIN] - INFO  - Game.Server.GameServer - FightRateMgr Init: True
-10:32:14,998 - [MAIN] - INFO  - Game.Server.GameServer - ConsortiaLevelMgr Init: True
-10:32:15,020 - [MAIN] - INFO  - Game.Server.GameServer - RefineryMgr Init: True
-10:32:15,094 - [MAIN] - INFO  - Game.Server.GameServer - StrengthenMgr Init: True
-10:32:15,162 - [MAIN] - INFO  - Game.Server.GameServer - PropItemMgr Init: True
-10:32:15,439 - [MAIN] - INFO  - Game.Server.GameServer - ShopMgr Init: True
-10:32:15,506 - [MAIN] - INFO  - Game.Server.GameServer - QuestMgr Init: True
-10:32:15,509 - [MAIN] - INFO  - Game.Server.GameServer - RoomMgr.Setup: True
-10:32:15,510 - [MAIN] - INFO  - Game.Server.GameServer - GameMgr.Start(): True
-10:32:15,533 - [MAIN] - INFO  - Game.Server.GameServer - ConsortiaMgr Init: True
-10:32:15,552 - [MAIN] - INFO  - Game.Server.GameServer - LanguageMgr Init: True
-10:32:15,570 - [MAIN] - INFO  - Game.Server.GameServer - ExperienceRateMgr Init: True
-10:32:15,572 - [MAIN] - INFO  - Game.Server.GameServer - MacroDropMgr Init: True
-10:32:15,591 - [MAIN] - INFO  - Game.Server.Battle.BattleMgr - Battle server 127.0.0.1:9208 loaded...
-10:32:15,597 - [MAIN] - INFO  - Game.Server.Battle.BattleMgr - Total 1 battle server loaded.
-10:32:15,597 - [MAIN] - INFO  - Game.Server.GameServer - BattleMgr Setup: True
-10:32:15,599 - [MAIN] - INFO  - Game.Server.GameServer - Init Global Timers: True
-10:32:15,622 - [MAIN] - INFO  - Game.Server.GameServer - MarryRoomMgr Init: True
-10:32:15,622 - [MAIN] - INFO  - Game.Server.GameServer - LogMgr Setup: True
-10:32:15,643 - [MAIN] - INFO  - Game.Base.Packets.PacketProcessor - PacketProcessor: Loaded 149 handlers from GameServer Assembly!
-10:32:15,648 - [MAIN] - INFO  - Game.Base.CommandMgr - &version from GameServerScripts, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null has been suppressed, a command of that type already exists!
-10:32:15,650 - [MAIN] - INFO  - Game.Base.CommandMgr - Loaded 7 commands!
-10:32:15,658 - [MAIN] - INFO  - Game.Logic.Spells.SpellMgr - SpellMgr: Loaded 15 spell handlers from GameServer Assembly!
-10:32:15,660 - [MAIN] - INFO  - Game.Base.BaseConnector - Connected to 127.0.0.1:9202
-10:32:15,662 - [MAIN] - INFO  - Game.Server.GameServer - Login To CenterServer: True
-10:32:15,665 - [MAIN] - INFO  - Game.Base.BaseConnector - Connected to 127.0.0.1:9208
-10:32:15,702 - [MAIN] - INFO  - Game.Server.GameServer - base.Start(): True
-10:32:15,733 - [MAIN] - INFO  - Game.Server.GameServer - GameServer is now open for connections!
-10:32:25,198 - [5] - INFO  - Game.Base.BaseServer - Incoming connection from 127.0.0.1:51284
-10:32:25,206 - [5] - INFO  - Game.Base.BaseClient - Disconnecting client (127.0.0.1:51284), received bytes=0
-10:32:25,227 - [5] - INFO  - Game.Base.BaseServer - Incoming connection from 127.0.0.1:51285
-10:33:15,612 - [20] - INFO  - Game.Server.GameServer - Buff Scaning ...
-10:33:15,613 - [20] - INFO  - Game.Server.GameServer - Buff Scan complete!
-10:33:15,613 - [20] - INFO  - Game.Server.GameServer - Buff all 1 players in 0ms
-10:34:09,744 - [14] - INFO  - Game.Logic.BaseGame - Game.Logic.Actions.CheckPVEGameStateAction
-10:34:09,802 - [15] - INFO  - Game.Logic.BaseGame - Game.Logic.Actions.CheckPVEGameStateAction
-10:34:09,844 - [15] - INFO  - Game.Logic.BaseGame - Game.Logic.Actions.WaitPlayerLoadingAction
-10:34:12,149 - [22] - INFO  - Game.Logic.BaseGame - Game.Logic.Actions.ProcessPacketAction
-10:34:12,161 - [15] - INFO  - Game.Logic.BaseGame - Game.Logic.Actions.CheckPVEGameStateAction
-10:34:15,611 - [20] - INFO  - Game.Server.GameServer - Buff Scaning ...
-10:34:15,612 - [20] - INFO  - Game.Server.GameServer - Buff Scan complete!
-10:34:15,613 - [20] - INFO  - Game.Server.GameServer - Buff all 1 players in 0ms
-10:34:15,766 - [15] - INFO  - Game.Logic.BaseGame - Game.Logic.Actions.CheckPVEGameStateAction
-10:34:15,814 - [15] - INFO  - Game.Logic.BaseGame - Game.Logic.Actions.LivingFallingAction
-10:34:15,814 - [15] - INFO  - Game.Logic.BaseGame - Game.Logic.Actions.LivingFallingAction
-10:34:15,815 - [15] - INFO  - Game.Logic.BaseGame - Game.Logic.Actions.LivingFallingAction
-10:34:15,815 - [15] - INFO  - Game.Logic.BaseGame - Game.Logic.Actions.LivingFallingAction
-10:34:15,815 - [15] - INFO  - Game.Logic.BaseGame - Game.Logic.Actions.LivingFallingAction
-10:34:15,816 - [15] - INFO  - Game.Logic.BaseGame - Game.Logic.Actions.LivingFallingAction
-10:34:15,816 - [15] - INFO  - Game.Logic.BaseGame - Game.Logic.Actions.LivingFallingAction
-10:34:15,817 - [15] - INFO  - Game.Logic.BaseGame - Game.Logic.Actions.LivingFallingAction
-10:34:15,817 - [15] - INFO  - Game.Logic.BaseGame - Game.Logic.Actions.LivingFallingAction
-10:34:15,817 - [15] - INFO  - Game.Logic.BaseGame - Game.Logic.Actions.LivingFallingAction
-10:34:18,317 - [15] - INFO  - Game.Logic.BaseGame - Game.Logic.Actions.CheckPVEGameStateAction
-10:34:18,406 - [15] - INFO  - Game.Logic.BaseGame - Game.Logic.Actions.LivingMoveToAction
-10:34:18,407 - [15] - INFO  - Game.Logic.BaseGame - Game.Logic.Actions.LivingMoveToAction
-10:34:18,408 - [15] - INFO  - Game.Logic.BaseGame - Game.Logic.Actions.LivingMoveToAction
-10:34:18,409 - [15] - INFO  - Game.Logic.BaseGame - Game.Logic.Actions.LivingMoveToAction
-10:34:18,409 - [15] - INFO  - Game.Logic.BaseGame - Game.Logic.Actions.LivingMoveToAction
-10:34:18,410 - [15] - INFO  - Game.Logic.BaseGame - Game.Logic.Actions.LivingMoveToAction
-10:34:18,410 - [15] - INFO  - Game.Logic.BaseGame - Game.Logic.Actions.LivingMoveToAction
-10:34:18,411 - [15] - INFO  - Game.Logic.BaseGame - Game.Logic.Actions.LivingMoveToAction
-10:34:18,411 - [15] - INFO  - Game.Logic.BaseGame - Game.Logic.Actions.LivingMoveToAction
-10:34:18,412 - [15] - INFO  - Game.Logic.BaseGame - Game.Logic.Actions.LivingMoveToAction
-10:34:18,413 - [15] - INFO  - Game.Logic.BaseGame - Game.Logic.Actions.CheckPVEGameStateAction
-10:34:21,878 - [15] - INFO  - Game.Logic.BaseGame - Game.Logic.Actions.LivingCallFunctionAction
-10:34:22,120 - [15] - INFO  - Game.Logic.BaseGame - Game.Logic.Actions.LivingCallFunctionAction
-10:34:22,321 - [15] - INFO  - Game.Logic.BaseGame - Game.Logic.Actions.LivingCallFunctionAction
-10:34:22,525 - [15] - INFO  - Game.Logic.BaseGame - Game.Logic.Actions.LivingCallFunctionAction
-10:34:23,013 - [15] - INFO  - Game.Logic.BaseGame - Game.Logic.Actions.LivingCallFunctionAction
-10:34:23,093 - [15] - INFO  - Game.Logic.BaseGame - Game.Logic.Actions.LivingCallFunctionAction
-10:34:24,876 - [15] - INFO  - Game.Logic.BaseGame - Game.Logic.Actions.LivingCallFunctionAction
-10:34:25,038 - [15] - INFO  - Game.Logic.BaseGame - Game.Logic.Actions.LivingCallFunctionAction
-10:34:25,239 - [15] - INFO  - Game.Logic.BaseGame - Game.Logic.Actions.LivingCallFunctionAction
-10:34:26,574 - [15] - INFO  - Game.Logic.BaseGame - Game.Logic.Actions.LivingCallFunctionAction
-10:34:26,655 - [15] - INFO  - Game.Logic.BaseGame - Game.Logic.Actions.CheckPVEGameStateAction
-10:34:26,696 - [15] - INFO  - Game.Logic.BaseGame - Game.Logic.Actions.LivingSayAction
-10:34:26,697 - [15] - INFO  - Game.Logic.BaseGame - Game.Logic.Actions.LivingSayAction
-10:34:26,701 - [15] - INFO  - Game.Logic.BaseGame - Game.Logic.Actions.WaitLivingAttackingAction
-10:34:27,561 - [22] - INFO  - Game.Logic.BaseGame - Game.Logic.Actions.ProcessPacketAction
-10:34:28,156 - [22] - INFO  - Game.Logic.BaseGame - Game.Logic.Actions.ProcessPacketAction
-10:34:28,265 - [22] - INFO  - Game.Logic.BaseGame - Game.Logic.Actions.ProcessPacketAction
-10:34:29,747 - [22] - INFO  - Game.Logic.BaseGame - Game.Logic.Actions.ProcessPacketAction
-10:34:29,748 - [26] - INFO  - Game.Logic.BaseGame - Game.Logic.Actions.ProcessPacketAction
-10:34:29,749 - [26] - INFO  - Game.Logic.BaseGame - Game.Logic.Actions.ProcessPacketAction
-10:34:29,860 - [15] - WARN  - Game.Server.Games.GameMgr - Game Mgr spent too much times: 81 ms, count:1
-10:34:30,776 - [26] - INFO  - Game.Logic.BaseGame - Game.Logic.Actions.ProcessPacketAction
-10:34:31,792 - [26] - INFO  - Game.Logic.BaseGame - Game.Logic.Actions.ProcessPacketAction
-10:34:31,823 - [15] - INFO  - Game.Logic.BaseGame - Game.Logic.Actions.CheckPVEGameStateAction
-10:34:31,827 - [15] - INFO  - Game.Logic.BaseGame - Game.Logic.Actions.CheckPVEGameStateAction
-10:34:34,790 - [14] - INFO  - Game.Logic.BaseGame - Game.Logic.Actions.RemovePlayerAction
-10:34:34,793 - [15] - INFO  - Game.Logic.BaseGame - Game.Logic.Actions.CheckPVEGameStateAction
-10:34:36,090 - [15] - INFO  - Game.Logic.BaseGame - Game.Logic.Actions.CheckPVEGameStateAction
-10:34:36,171 - [15] - INFO  - Game.Logic.BaseGame - Game.Logic.Actions.CheckPVEGameStateAction
-10:34:51,435 - [14] - ERROR - Game.Server.Games.GameMgr - Create game error:
-System.NullReferenceException: Referência de objeto não definida para uma instância de um objeto.
-   em Game.Logic.Phy.Object.Player..ctor(IGamePlayer player, Int32 id, BaseGame game, Int32 team) na D:\DDT\DDTank-3.0\Game.Logic\Phy\Object\Player.cs:linha 86
-   em Game.Logic.PVEGame..ctor(Int32 id, Int32 roomId, PveInfo info, List`1 players, Map map, eRoomType roomType, eGameType gameType, Int32 timeType, eHardLevel hardLevel) na D:\DDT\DDTank-3.0\Game.Logic\PVEGame.cs:linha 84
-   em Game.Server.Games.GameMgr.StartPVEGame(Int32 roomId, List`1 players, Int32 copyId, eRoomType roomType, eGameType gameType, Int32 timeType, eHardLevel hardLevel, Int32 levelLimits) na D:\DDT\DDTank-3.0\Game.Server\Games\GameMgr.cs:linha 232
-10:34:51,534 - [14] - WARN  - Game.Server.Rooms.RoomMgr - RoomMgr action spent too much times:Game.Server.Rooms.StartGameAction,102ms!
-10:34:51,535 - [14] - WARN  - Game.Server.Rooms.RoomMgr - Room Mgr is spent too much times: 102 ms,count:1
-10:34:57,219 - [15] - INFO  - Game.Logic.BaseGame - Game.Logic.Actions.CheckPVEGameStateAction
-10:35:15,600 - [17] - INFO  - Game.Server.GameServer - Begin ping check....
-10:35:15,611 - [20] - INFO  - Game.Server.GameServer - Buff Scaning ...
-10:35:17,417 - [20] - INFO  - Game.Server.GameServer - Buff Scan complete!
-10:35:17,417 - [20] - INFO  - Game.Server.GameServer - Buff all 1 players in 1797ms
-10:35:17,418 - [17] - INFO  - Game.Server.GameServer - End ping check....
-10:35:17,418 - [17] - INFO  - Game.Server.GameServer - Begin ping center check....
-10:35:17,417 - [15] - WARN  - Game.Server.Games.GameMgr - Game Mgr spent too much times: 20202 ms, count:1
-10:35:17,419 - [17] - INFO  - Game.Server.GameServer - End ping center check....
-10:35:21,165 - [14] - ERROR - Game.Server.Games.GameMgr - Create game error:
-System.NullReferenceException: Referência de objeto não definida para uma instância de um objeto.
-   em Game.Logic.Phy.Object.Player..ctor(IGamePlayer player, Int32 id, BaseGame game, Int32 team) na D:\DDT\DDTank-3.0\Game.Logic\Phy\Object\Player.cs:linha 86
-   em Game.Logic.PVEGame..ctor(Int32 id, Int32 roomId, PveInfo info, List`1 players, Map map, eRoomType roomType, eGameType gameType, Int32 timeType, eHardLevel hardLevel) na D:\DDT\DDTank-3.0\Game.Logic\PVEGame.cs:linha 84
-   em Game.Server.Games.GameMgr.StartPVEGame(Int32 roomId, List`1 players, Int32 copyId, eRoomType roomType, eGameType gameType, Int32 timeType, eHardLevel hardLevel, Int32 levelLimits) na D:\DDT\DDTank-3.0\Game.Server\Games\GameMgr.cs:linha 232
-10:35:27,973 - [14] - ERROR - Game.Server.Games.GameMgr - Create game error:
-System.NullReferenceException: Referência de objeto não definida para uma instância de um objeto.
-   em Game.Logic.Phy.Object.Player..ctor(IGamePlayer player, Int32 id, BaseGame game, Int32 team) na D:\DDT\DDTank-3.0\Game.Logic\Phy\Object\Player.cs:linha 86
-   em Game.Logic.PVEGame..ctor(Int32 id, Int32 roomId, PveInfo info, List`1 players, Map map, eRoomType roomType, eGameType gameType, Int32 timeType, eHardLevel hardLevel) na D:\DDT\DDTank-3.0\Game.Logic\PVEGame.cs:linha 84
-   em Game.Server.Games.GameMgr.StartPVEGame(Int32 roomId, List`1 players, Int32 copyId, eRoomType roomType, eGameType gameType, Int32 timeType, eHardLevel hardLevel, Int32 levelLimits) na D:\DDT\DDTank-3.0\Game.Server\Games\GameMgr.cs:linha 232
-10:35:47,118 - [14] - INFO  - Game.Logic.BaseGame - Game.Logic.Actions.CheckPVEGameStateAction
-10:35:47,161 - [15] - INFO  - Game.Logic.BaseGame - Game.Logic.Actions.CheckPVEGameStateAction
-10:35:47,201 - [15] - INFO  - Game.Logic.BaseGame - Game.Logic.Actions.WaitPlayerLoadingAction
-10:35:51,739 - [14] - INFO  - Game.Logic.BaseGame - Game.Logic.Actions.RemovePlayerAction
-10:35:51,746 - [15] - INFO  - Game.Logic.BaseGame - Game.Logic.Actions.CheckPVEGameStateAction
-10:35:52,801 - [15] - INFO  - Game.Logic.BaseGame - Game.Logic.Actions.CheckPVEGameStateAction
-10:35:52,842 - [15] - INFO  - Game.Logic.BaseGame - Game.Logic.Actions.LivingFallingAction
-10:35:52,843 - [15] - INFO  - Game.Logic.BaseGame - Game.Logic.Actions.LivingFallingAction
-10:35:52,843 - [15] - INFO  - Game.Logic.BaseGame - Game.Logic.Actions.LivingFallingAction
-10:35:52,844 - [15] - INFO  - Game.Logic.BaseGame - Game.Logic.Actions.LivingFallingAction
-10:35:52,844 - [15] - INFO  - Game.Logic.BaseGame - Game.Logic.Actions.LivingFallingAction
-10:35:52,845 - [15] - INFO  - Game.Logic.BaseGame - Game.Logic.Actions.LivingFallingAction
-10:35:52,845 - [15] - INFO  - Game.Logic.BaseGame - Game.Logic.Actions.LivingFallingAction
-10:35:52,846 - [15] - INFO  - Game.Logic.BaseGame - Game.Logic.Actions.LivingFallingAction
-10:35:52,846 - [15] - INFO  - Game.Logic.BaseGame - Game.Logic.Actions.LivingFallingAction
-10:35:52,846 - [15] - INFO  - Game.Logic.BaseGame - Game.Logic.Actions.LivingFallingAction
-10:35:55,353 - [15] - INFO  - Game.Logic.BaseGame - Game.Logic.Actions.CheckPVEGameStateAction
-10:35:55,434 - [15] - INFO  - Game.Logic.BaseGame - Game.Logic.Actions.CheckPVEGameStateAction
-10:36:15,612 - [32] - INFO  - Game.Server.GameServer - Buff Scaning ...
-10:36:15,612 - [32] - INFO  - Game.Server.GameServer - Buff Scan complete!
-10:36:15,613 - [32] - INFO  - Game.Server.GameServer - Buff all 1 players in 0ms
-10:36:16,502 - [15] - INFO  - Game.Logic.BaseGame - Game.Logic.Actions.CheckPVEGameStateAction
-10:36:49,201 - [35] - INFO  - Game.Base.BaseClient - Disconnecting client (127.0.0.1:51285), received bytes=0
-10:37:12,861 - [36] - INFO  - Game.Base.BaseServer - Incoming connection from 127.0.0.1:51307
-10:37:12,872 - [36] - INFO  - Game.Base.BaseClient - Disconnecting client (127.0.0.1:51307), received bytes=0
-10:37:12,894 - [36] - INFO  - Game.Base.BaseServer - Incoming connection from 127.0.0.1:51308
-10:37:15,601 - [30] - INFO  - Game.Server.GameServer - Saving Record...
-10:37:15,612 - [21] - INFO  - Game.Server.GameServer - Buff Scaning ...
-10:37:15,612 - [21] - INFO  - Game.Se10:55:36,085 - [MAIN] - INFO  - Bussiness.GameProperties - Refreshing game properties!
-10:55:36,916 - [MAIN] - INFO  - Game.Server.GameServer - Recompile Scripts: True
-10:55:36,918 - [MAIN] - INFO  - Game.Server.GameServer - Server rules: true
-10:55:36,935 - [MAIN] - INFO  - Game.Server.GameServer - Registering global event handlers: true
-10:55:36,935 - [MAIN] - INFO  - Game.Server.GameServer - Script components: True
-10:55:36,936 - [MAIN] - INFO  - Game.Server.GameServer - Edition:21000: True
-10:55:36,937 - [MAIN] - INFO  - Game.Server.GameServer - InitSocket Port:9200: True
-10:55:36,955 - [MAIN] - INFO  - Game.Server.GameServer - AllocatePacketBuffers(): True
-10:55:36,959 - [MAIN] - INFO  - Game.Server.GameServer - LogMgr Init: True
-10:55:36,961 - [MAIN] - INFO  - Game.Server.GameServer - WorldMgr Init: True
-10:55:37,053 - [MAIN] - INFO  - Game.Server.GameServer - MapMgr Init: True
-10:55:37,425 - [MAIN] - INFO  - Game.Server.GameServer - ItemMgr Init: True
-10:55:37,435 - [MAIN] - INFO  - Game.Server.GameServer - ItemBox Init: True
-10:55:37,596 - [MAIN] - INFO  - Game.Server.GameServer - BallMgr Init: True
-10:55:37,599 - [MAIN] - INFO  - Game.Server.GameServer - BallConfigMgr Init: True
-10:55:37,603 - [MAIN] - INFO  - Game.Server.GameServer - FusionMgr Init: True
-10:55:37,606 - [MAIN] - INFO  - Game.Server.GameServer - AwardMgr Init: True
-10:55:37,611 - [MAIN] - INFO  - Game.Server.GameServer - NPCInfoMgr Init: True
-10:55:37,615 - [MAIN] - INFO  - Game.Server.GameServer - MissionInfoMgr Init: True
-10:55:37,619 - [MAIN] - INFO  - Game.Server.GameServer - PveInfoMgr Init: True
-10:55:37,625 - [MAIN] - INFO  - Game.Server.GameServer - Drop Init: True
-10:55:37,628 - [MAIN] - INFO  - Game.Server.GameServer - FightRateMgr Init: True
-10:55:37,631 - [MAIN] - INFO  - Game.Server.GameServer - ConsortiaLevelMgr Init: True
-10:55:37,634 - [MAIN] - INFO  - Game.Server.GameServer - RefineryMgr Init: True
-10:55:37,641 - [MAIN] - INFO  - Game.Server.GameServer - StrengthenMgr Init: True
-10:55:37,645 - [MAIN] - INFO  - Game.Server.GameServer - PropItemMgr Init: True
-10:55:37,717 - [MAIN] - INFO  - Game.Server.GameServer - ShopMgr Init: True
-10:55:37,731 - [MAIN] - INFO  - Game.Server.GameServer - QuestMgr Init: True
-10:55:37,732 - [MAIN] - INFO  - Game.Server.GameServer - RoomMgr.Setup: True
-10:55:37,733 - [MAIN] - INFO  - Game.Server.GameServer - GameMgr.Start(): True
-10:55:37,739 - [MAIN] - INFO  - Game.Server.GameServer - ConsortiaMgr Init: True
-10:55:37,749 - [MAIN] - INFO  - Game.Server.GameServer - LanguageMgr Init: True
-10:55:37,751 - [MAIN] - INFO  - Game.Server.GameServer - ExperienceRateMgr Init: True
-10:55:37,752 - [MAIN] - INFO  - Game.Server.GameServer - MacroDropMgr Init: True
-10:55:37,762 - [MAIN] - INFO  - Game.Server.Battle.BattleMgr - Battle server 127.0.0.1:9208 loaded...
-10:55:37,765 - [MAIN] - INFO  - Game.Server.Battle.BattleMgr - Total 1 battle server loaded.
-10:55:37,765 - [MAIN] - INFO  - Game.Server.GameServer - BattleMgr Setup: True
-10:55:37,766 - [MAIN] - INFO  - Game.Server.GameServer - Init Global Timers: True
-10:55:37,771 - [MAIN] - INFO  - Game.Server.GameServer - MarryRoomMgr Init: True
-10:55:37,771 - [MAIN] - INFO  - Game.Server.GameServer - LogMgr Setup: True
-10:55:37,782 - [MAIN] - INFO  - Game.Base.Packets.PacketProcessor - PacketProcessor: Loaded 149 handlers from GameServer Assembly!
-10:55:37,784 - [MAIN] - INFO  - Game.Base.CommandMgr - &version from GameServerScripts, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null has been suppressed, a command of that type already exists!
-10:55:37,786 - [MAIN] - INFO  - Game.Base.CommandMgr - Loaded 7 commands!
-10:55:37,790 - [MAIN] - INFO  - Game.Logic.Spells.SpellMgr - SpellMgr: Loaded 15 spell handlers from GameServer Assembly!
-10:55:37,791 - [MAIN] - INFO  - Game.Base.BaseConnector - Connected to 127.0.0.1:9202
-10:55:37,792 - [MAIN] - INFO  - Game.Server.GameServer - Login To CenterServer: True
-10:55:37,794 - [MAIN] - INFO  - Game.Base.BaseConnector - Connected to 127.0.0.1:9208
-10:55:37,796 - [MAIN] - INFO11:02:08,633 - [MAIN] - INFO  - Bussiness.GameProperties - Refreshing game properties!
-11:02:09,324 - [MAIN] - INFO  - Game.Server.GameServer - Recompile Scripts: True
-11:02:09,325 - [MAIN] - INFO  - Game.Server.GameServer - Server rules: true
-11:02:09,341 - [MAIN] - INFO  - Game.Server.GameServer - Registering global event handlers: true
-11:02:09,342 - [MAIN] - INFO  - Game.Server.GameServer - Script components: True
-11:02:09,342 - [MAIN] - INFO  - Game.Server.GameServer - Edition:21000: True
-11:02:09,344 - [MAIN] - INFO  - Game.Server.GameServer - InitSocket Port:9200: True
-11:02:09,363 - [MAIN] - INFO  - Game.Server.GameServer - AllocatePacketBuffers(): True
-11:02:09,367 - [MAIN] - INFO  - Game.Server.GameServer - LogMgr Init: True
-11:02:09,370 - [MAIN] - INFO  - Game.Server.GameServer - WorldMgr Init: True
-11:02:09,437 - [MAIN] - INFO  - Game.Server.GameServer - MapMgr Init: True
-11:02:09,538 - [MAIN] - INFO  - Game.Server.GameServer - ItemMgr Init: True
-11:02:09,548 - [MAIN] - INFO  - Game.Server.GameServer - ItemBox Init: True
-11:02:09,718 - [MAIN] - INFO  - Game.Server.GameServer - BallMgr Init: True
-11:02:09,721 - [MAIN] - INFO  - Game.Server.GameServer - BallConfigMgr Init: True
-11:02:09,725 - [MAIN] - INFO  - Game.Server.GameServer - FusionMgr Init: True
-11:02:09,727 - [MAIN] - INFO  - Game.Server.GameServer - AwardMgr Init: True
-11:02:09,732 - [MAIN] - INFO  - Game.Server.GameServer - NPCInfoMgr Init: True
-11:02:09,746 - [MAIN] - INFO  - Game.Server.GameServer - MissionInfoMgr Init: True
-11:02:09,753 - [MAIN] - INFO  - Game.Server.GameServer - PveInfoMgr Init: True
-11:02:09,758 - [MAIN] - INFO  - Game.Server.GameServer - Drop Init: True
-11:02:09,762 - [MAIN] - INFO  - Game.Server.GameServer - FightRateMgr Init: True
-11:02:09,764 - [MAIN] - INFO  - Game.Server.GameServer - ConsortiaLevelMgr Init: True
-11:02:09,767 - [MAIN] - INFO  - Game.Server.GameServer - RefineryMgr Init: True
-11:02:09,775 - [MAIN] - INFO  - Game.Server.GameServer - StrengthenMgr Init: True
-11:02:09,777 - [MAIN] - INFO  - Game.Server.GameServer - PropItemMgr Init: True
-11:02:09,830 - [MAIN] - INFO  - Game.Server.GameServer - ShopMgr Init: True
-11:02:09,844 - [MAIN] - INFO  - Game.Server.GameServer - QuestMgr Init: True
-11:02:09,845 - [MAIN] - INFO  - Game.Server.GameServer - RoomMgr.Setup: True
-11:02:09,846 - [MAIN] - INFO  - Game.Server.GameServer - GameMgr.Start(): True
-11:02:09,853 - [MAIN] - INFO  - Game.Server.GameServer - ConsortiaMgr Init: True
-11:02:09,863 - [MAIN] - INFO  - Game.Server.GameServer - LanguageMgr Init: True
-11:02:09,866 - [MAIN] - INFO  - Game.Server.GameServer - ExperienceRateMgr Init: True
-11:02:09,867 - [MAIN] - INFO  - Game.Server.GameServer - MacroDropMgr Init: True
-11:02:09,873 - [MAIN] - INFO  - Game.Server.Battle.BattleMgr - Battle server 127.0.0.1:9208 loaded...
-11:02:09,876 - [MAIN] - INFO  - Game.Server.Battle.BattleMgr - Total 1 battle server loaded.
-11:02:09,876 - [MAIN] - INFO  - Game.Server.GameServer - BattleMgr Setup: True
-11:02:09,877 - [MAIN] - INFO  - Game.Server.GameServer - Init Global Timers: True
-11:02:09,882 - [MAIN] - INFO  - Game.Server.GameServer - MarryRoomMgr Init: True
-11:02:09,883 - [MAIN] - INFO  - Game.Server.GameServer - LogMgr Setup: True
-11:02:09,894 - [MAIN] - INFO  - Game.Base.Packets.PacketProcessor - PacketProcessor: Loaded 149 handlers from GameServer Assembly!
-11:02:09,897 - [MAIN] - INFO  - Game.Base.CommandMgr - &version from GameServerScripts, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null has been suppressed, a command of that type already exists!
-11:02:09,899 - [MAIN] - INFO  - Game.Base.CommandMgr - Loaded 7 commands!
-11:02:09,903 - [MAIN] - INFO  - Game.Logic.Spells.SpellMgr - SpellMgr: Loaded 15 spell handlers from GameServer Assembly!
-11:02:09,907 - [MAIN] - INFO  - Game.Base.BaseConnector - Connected to 127.0.0.1:9202
-11:02:09,908 - [MAIN] - INFO  - Game.Server.GameServer - Login To CenterServer: True
-11:02:09,910 - [MAIN] - INFO  - Game.Base.BaseConnector - Connected to 127.0.0.1:9208
-11:02:09,912 - [MAIN] - INFO11:04:10,241 - [MAIN] - INFO  - Bussiness.GameProperties - Refreshing game properties!
-11:04:10,924 - [MAIN] - INFO  - Game.Server.GameServer - Recompile Scripts: True
-11:04:10,925 - [MAIN] - INFO  - Game.Server.GameServer - Server rules: true
-11:04:10,943 - [MAIN] - INFO  - Game.Server.GameServer - Registering global event handlers: true
-11:04:10,943 - [MAIN] - INFO  - Game.Server.GameServer - Script components: True
-11:04:10,944 - [MAIN] - INFO  - Game.Server.GameServer - Edition:21000: True
-11:04:10,946 - [MAIN] - INFO  - Game.Server.GameServer - InitSocket Port:9200: True
-11:04:10,970 - [MAIN] - INFO  - Game.Server.GameServer - AllocatePacketBuffers(): True
-11:04:10,977 - [MAIN] - INFO  - Game.Server.GameServer - LogMgr Init: True
-11:04:10,979 - [MAIN] - INFO  - Game.Server.GameServer - WorldMgr Init: True
-11:04:11,253 - [MAIN] - INFO  - Game.Server.GameServer - MapMgr Init: True
-11:04:11,354 - [MAIN] - INFO  - Game.Server.GameServer - ItemMgr Init: True
-11:04:11,364 - [MAIN] - INFO  - Game.Server.GameServer - ItemBox Init: True
-11:04:12,859 - [MAIN] - INFO  - Game.Server.GameServer - BallMgr Init: True
-11:04:12,862 - [MAIN] - INFO  - Game.Server.GameServer - BallConfigMgr Init: True
-11:04:12,865 - [MAIN] - INFO  - Game.Server.GameServer - FusionMgr Init: True
-11:04:12,868 - [MAIN] - INFO  - Game.Server.GameServer - AwardMgr Init: True
-11:04:12,873 - [MAIN] - INFO  - Game.Server.GameServer - NPCInfoMgr Init: True
-11:04:12,877 - [MAIN] - INFO  - Game.Server.GameServer - MissionInfoMgr Init: True
-11:04:12,881 - [MAIN] - INFO  - Game.Server.GameServer - PveInfoMgr Init: True
-11:04:12,887 - [MAIN] - INFO  - Game.Server.GameServer - Drop Init: True
-11:04:12,890 - [MAIN] - INFO  - Game.Server.GameServer - FightRateMgr Init: True
-11:04:12,893 - [MAIN] - INFO  - Game.Server.GameServer - ConsortiaLevelMgr Init: True
-11:04:12,895 - [MAIN] - INFO  - Game.Server.GameServer - RefineryMgr Init: True
-11:04:12,902 - [MAIN] - INFO  - Game.Server.GameServer - StrengthenMgr Init: True
-11:04:12,907 - [MAIN] - INFO  - Game.Server.GameServer - PropItemMgr Init: True
-11:04:12,957 - [MAIN] - INFO  - Game.Server.GameServer - ShopMgr Init: True
-11:04:12,972 - [MAIN] - INFO  - Game.Server.GameServer - QuestMgr Init: True
-11:04:12,973 - [MAIN] - INFO  - Game.Server.GameServer - RoomMgr.Setup: True
-11:04:12,974 - [MAIN] - INFO  - Game.Server.GameServer - GameMgr.Start(): True
-11:04:12,980 - [MAIN] - INFO  - Game.Server.GameServer - ConsortiaMgr Init: True
-11:04:12,989 - [MAIN] - INFO  - Game.Server.GameServer - LanguageMgr Init: True
-11:04:12,992 - [MAIN] - INFO  - Game.Server.GameServer - ExperienceRateMgr Init: True
-11:04:12,993 - [MAIN] - INFO  - Game.Server.GameServer - MacroDropMgr Init: True
-11:04:12,999 - [MAIN] - INFO  - Game.Server.Battle.BattleMgr - Battle server 127.0.0.1:9208 loaded...
-11:04:13,001 - [MAIN] - INFO  - Game.Server.Battle.BattleMgr - Total 1 battle server loaded.
-11:04:13,001 - [MAIN] - INFO  - Game.Server.GameServer - BattleMgr Setup: True
-11:04:13,002 - [MAIN] - INFO  - Game.Server.GameServer - Init Global Timers: True
-11:04:13,008 - [MAIN] - INFO  - Game.Server.GameServer - MarryRoomMgr Init: True
-11:04:13,008 - [MAIN] - INFO  - Game.Server.GameServer - LogMgr Setup: True
-11:04:13,019 - [MAIN] - INFO  - Game.Base.Packets.PacketProcessor - PacketProcessor: Loaded 149 handlers from GameServer Assembly!
-11:04:13,022 - [MAIN] - INFO  - Game.Base.CommandMgr - &version from GameServerScripts, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null has been suppressed, a command of that type already exists!
-11:04:13,024 - [MAIN] - INFO  - Game.Base.CommandMgr - Loaded 7 commands!
-11:04:13,030 - [MAIN] - INFO  - Game.Logic.Spells.SpellMgr - SpellMgr: Loaded 15 spell handlers from GameServer Assembly!
-11:04:13,032 - [MAIN] - INFO  - Game.Base.BaseConnector - Connected to 127.0.0.1:9202
-11:04:13,033 - [MAIN] - INFO  - Game.Server.GameServer - Login To CenterServer: True
-11:04:13,034 - [MAIN] - INFO  - Game.Base.BaseConnector - Connected to 127.0.0.1:9208
-11:04:13,036 - [MAIN] - INFO11:05:52,524 - [MAIN] - INFO  - Bussiness.GameProperties - Refreshing game properties!
-11:05:53,032 - [MAIN] - INFO  - Game.Server.GameServer - Recompile Scripts: True
-11:05:53,034 - [MAIN] - INFO  - Game.Server.GameServer - Server rules: true
-11:05:53,050 - [MAIN] - INFO  - Game.Server.GameServer - Registering global event handlers: true
-11:05:53,050 - [MAIN] - INFO  - Game.Server.GameServer - Script components: True
-11:05:53,050 - [MAIN] - INFO  - Game.Server.GameServer - Edition:21000: True
-11:05:53,052 - [MAIN] - INFO  - Game.Server.GameServer - InitSocket Port:9200: True
-11:05:53,069 - [MAIN] - INFO  - Game.Server.GameServer - AllocatePacketBuffers(): True
-11:05:53,072 - [MAIN] - INFO  - Game.Server.GameServer - LogMgr Init: True
-11:05:53,075 - [MAIN] - INFO  - Game.Server.GameServer - WorldMgr Init: True
-11:05:53,316 - [MAIN] - INFO  - Game.Server.GameServer - MapMgr Init: True
-11:05:53,417 - [MAIN] - INFO  - Game.Server.GameServer - ItemMgr Init: True
-11:05:53,428 - [MAIN] - INFO  - Game.Server.GameServer - ItemBox Init: True
-11:05:53,584 - [MAIN] - INFO  - Game.Server.GameServer - BallMgr Init: True
-11:05:53,587 - [MAIN] - INFO  - Game.Server.GameServer - BallConfigMgr Init: True
-11:05:53,591 - [MAIN] - INFO  - Game.Server.GameServer - FusionMgr Init: True
-11:05:53,594 - [MAIN] - INFO  - Game.Server.GameServer - AwardMgr Init: True
-11:05:53,599 - [MAIN] - INFO  - Game.Server.GameServer - NPCInfoMgr Init: True
-11:05:53,603 - [MAIN] - INFO  - Game.Server.GameServer - MissionInfoMgr Init: True
-11:05:53,607 - [MAIN] - INFO  - Game.Server.GameServer - PveInfoMgr Init: True
-11:05:53,613 - [MAIN] - INFO  - Game.Server.GameServer - Drop Init: True
-11:05:53,616 - [MAIN] - INFO  - Game.Server.GameServer - FightRateMgr Init: True
-11:05:53,619 - [MAIN] - INFO  - Game.Server.GameServer - ConsortiaLevelMgr Init: True
-11:05:53,622 - [MAIN] - INFO  - Game.Server.GameServer - RefineryMgr Init: True
-11:05:53,630 - [MAIN] - INFO  - Game.Server.GameServer - StrengthenMgr Init: True
-11:05:53,633 - [MAIN] - INFO  - Game.Server.GameServer - PropItemMgr Init: True
-11:05:53,685 - [MAIN] - INFO  - Game.Server.GameServer - ShopMgr Init: True
-11:05:53,699 - [MAIN] - INFO  - Game.Server.GameServer - QuestMgr Init: True
-11:05:53,701 - [MAIN] - INFO  - Game.Server.GameServer - RoomMgr.Setup: True
-11:05:53,702 - [MAIN] - INFO  - Game.Server.GameServer - GameMgr.Start(): True
-11:05:53,709 - [MAIN] - INFO  - Game.Server.GameServer - ConsortiaMgr Init: True
-11:05:53,720 - [MAIN] - INFO  - Game.Server.GameServer - LanguageMgr Init: True
-11:05:53,723 - [MAIN] - INFO  - Game.Server.GameServer - ExperienceRateMgr Init: True
-11:05:53,725 - [MAIN] - INFO  - Game.Server.GameServer - MacroDropMgr Init: True
-11:05:53,730 - [MAIN] - INFO  - Game.Server.Battle.BattleMgr - Battle server 127.0.0.1:9208 loaded...
-11:05:53,733 - [MAIN] - INFO  - Game.Server.Battle.BattleMgr - Total 1 battle server loaded.
-11:05:53,734 - [MAIN] - INFO  - Game.Server.GameServer - BattleMgr Setup: True
-11:05:53,735 - [MAIN] - INFO  - Game.Server.GameServer - Init Global Timers: True
-11:05:53,741 - [MAIN] - INFO  - Game.Server.GameServer - MarryRoomMgr Init: True
-11:05:53,742 - [MAIN] - INFO  - Game.Server.GameServer - LogMgr Setup: True
-11:05:53,753 - [MAIN] - INFO  - Game.Base.Packets.PacketProcessor - PacketProcessor: Loaded 149 handlers from GameServer Assembly!
-11:05:53,756 - [MAIN] - INFO  - Game.Base.CommandMgr - &version from GameServerScripts, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null has been suppressed, a command of that type already exists!
-11:05:53,758 - [MAIN] - INFO  - Game.Base.CommandMgr - Loaded 7 commands!
-11:05:53,762 - [MAIN] - INFO  - Game.Logic.Spells.SpellMgr - SpellMgr: Loaded 15 spell handlers from GameServer Assembly!
-11:05:53,764 - [MAIN] - INFO  - Game.Base.BaseConnector - Connected to 127.0.0.1:9202
-11:05:53,765 - [MAIN] - INFO  - Game.Server.GameServer - Login To CenterServer: True
-11:05:53,766 - [MAIN] - INFO  - Game.Base.BaseConnector - Connected to 127.0.0.1:9208
-11:05:53,768 - [MAIN] - INFO11:07:30,811 - [MAIN] - INFO  - Bussiness.GameProperties - Refreshing game properties!
-11:07:31,311 - [MAIN] - INFO  - Game.Server.GameServer - Recompile Scripts: True
-11:07:31,313 - [MAIN] - INFO  - Game.Server.GameServer - Server rules: true
-11:07:31,330 - [MAIN] - INFO  - Game.Server.GameServer - Registering global event handlers: true
-11:07:31,330 - [MAIN] - INFO  - Game.Server.GameServer - Script components: True
-11:07:31,331 - [MAIN] - INFO  - Game.Server.GameServer - Edition:21000: True
-11:07:31,333 - [MAIN] - INFO  - Game.Server.GameServer - InitSocket Port:9200: True
-11:07:31,350 - [MAIN] - INFO  - Game.Server.GameServer - AllocatePacketBuffers(): True
-11:07:31,354 - [MAIN] - INFO  - Game.Server.GameServer - LogMgr Init: True
-11:07:31,356 - [MAIN] - INFO  - Game.Server.GameServer - WorldMgr Init: True
-11:07:31,440 - [MAIN] - INFO  - Game.Server.GameServer - MapMgr Init: True
-11:07:31,545 - [MAIN] - INFO  - Game.Server.GameServer - ItemMgr Init: True
-11:07:31,555 - [MAIN] - INFO  - Game.Server.GameServer - ItemBox Init: True
-11:07:31,717 - [MAIN] - INFO  - Game.Server.GameServer - BallMgr Init: True
-11:07:31,722 - [MAIN] - INFO  - Game.Server.GameServer - BallConfigMgr Init: True
-11:07:31,726 - [MAIN] - INFO  - Game.Server.GameServer - FusionMgr Init: True
-11:07:31,729 - [MAIN] - INFO  - Game.Server.GameServer - AwardMgr Init: True
-11:07:31,735 - [MAIN] - INFO  - Game.Server.GameServer - NPCInfoMgr Init: True
-11:07:31,739 - [MAIN] - INFO  - Game.Server.GameServer - MissionInfoMgr Init: True
-11:07:31,743 - [MAIN] - INFO  - Game.Server.GameServer - PveInfoMgr Init: True
-11:07:31,752 - [MAIN] - INFO  - Game.Server.GameServer - Drop Init: True
-11:07:31,755 - [MAIN] - INFO  - Game.Server.GameServer - FightRateMgr Init: True
-11:07:31,757 - [MAIN] - INFO  - Game.Server.GameServer - ConsortiaLevelMgr Init: True
-11:07:31,760 - [MAIN] - INFO  - Game.Server.GameServer - RefineryMgr Init: True
-11:07:31,767 - [MAIN] - INFO  - Game.Server.GameServer - StrengthenMgr Init: True
-11:07:31,772 - [MAIN] - INFO  - Game.Server.GameServer - PropItemMgr Init: True
-11:07:31,822 - [MAIN] - INFO  - Game.Server.GameServer - ShopMgr Init: True
-11:07:31,836 - [MAIN] - INFO  - Game.Server.GameServer - QuestMgr Init: True
-11:07:31,838 - [MAIN] - INFO  - Game.Server.GameServer - RoomMgr.Setup: True
-11:07:31,839 - [MAIN] - INFO  - Game.Server.GameServer - GameMgr.Start(): True
-11:07:31,845 - [MAIN] - INFO  - Game.Server.GameServer - ConsortiaMgr Init: True
-11:07:31,855 - [MAIN] - INFO  - Game.Server.GameServer - LanguageMgr Init: True
-11:07:31,858 - [MAIN] - INFO  - Game.Server.GameServer - ExperienceRateMgr Init: True
-11:07:31,860 - [MAIN] - INFO  - Game.Server.GameServer - MacroDropMgr Init: True
-11:07:31,864 - [MAIN] - INFO  - Game.Server.Battle.BattleMgr - Battle server 127.0.0.1:9208 loaded...
-11:07:31,868 - [MAIN] - INFO  - Game.Server.Battle.BattleMgr - Total 1 battle server loaded.
-11:07:31,868 - [MAIN] - INFO  - Game.Server.GameServer - BattleMgr Setup: True
-11:07:31,869 - [MAIN] - INFO  - Game.Server.GameServer - Init Global Timers: True
-11:07:31,874 - [MAIN] - INFO  - Game.Server.GameServer - MarryRoomMgr Init: True
-11:07:31,875 - [MAIN] - INFO  - Game.Server.GameServer - LogMgr Setup: True
-11:07:31,886 - [MAIN] - INFO  - Game.Base.Packets.PacketProcessor - PacketProcessor: Loaded 149 handlers from GameServer Assembly!
-11:07:31,888 - [MAIN] - INFO  - Game.Base.CommandMgr - &version from GameServerScripts, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null has been suppressed, a command of that type already exists!
-11:07:31,890 - [MAIN] - INFO  - Game.Base.CommandMgr - Loaded 7 commands!
-11:07:31,893 - [MAIN] - INFO  - Game.Logic.Spells.SpellMgr - SpellMgr: Loaded 15 spell handlers from GameServer Assembly!
-11:07:31,895 - [MAIN] - INFO  - Game.Base.BaseConnector - Connected to 127.0.0.1:9202
-11:07:31,896 - [MAIN] - INFO  - Game.Server.GameServer - Login To CenterServer: True
-11:07:32,900 - [MAIN] - ERROR - Game.Base.BaseConnector - Connect 127.0.0.1:9208 failed!
-11:07:32,901 - [MAIN] - I11:11:15,783 - [MAIN] - INFO  - Bussiness.GameProperties - Refreshing game properties!
-11:11:16,309 - [MAIN] - INFO  - Game.Server.GameServer - Recompile Scripts: True
-11:11:16,310 - [MAIN] - INFO  - Game.Server.GameServer - Server rules: true
-11:11:16,327 - [MAIN] - INFO  - Game.Server.GameServer - Registering global event handlers: true
-11:11:16,328 - [MAIN] - INFO  - Game.Server.GameServer - Script components: True
-11:11:16,328 - [MAIN] - INFO  - Game.Server.GameServer - Edition:21000: True
-11:11:16,329 - [MAIN] - INFO  - Game.Server.GameServer - InitSocket Port:9200: True
-11:11:16,347 - [MAIN] - INFO  - Game.Server.GameServer - AllocatePacketBuffers(): True
-11:11:16,350 - [MAIN] - INFO  - Game.Server.GameServer - LogMgr Init: True
-11:11:16,353 - [MAIN] - INFO  - Game.Server.GameServer - WorldMgr Init: True
-11:11:16,415 - [MAIN] - INFO  - Game.Server.GameServer - MapMgr Init: True
-11:11:16,519 - [MAIN] - INFO  - Game.Server.GameServer - ItemMgr Init: True
-11:11:16,529 - [MAIN] - INFO  - Game.Server.GameServer - ItemBox Init: True
-11:11:16,699 - [MAIN] - INFO  - Game.Server.GameServer - BallMgr Init: True
-11:11:16,702 - [MAIN] - INFO  - Game.Server.GameServer - BallConfigMgr Init: True
-11:11:16,707 - [MAIN] - INFO  - Game.Server.GameServer - FusionMgr Init: True
-11:11:16,710 - [MAIN] - INFO  - Game.Server.GameServer - AwardMgr Init: True
-11:11:16,716 - [MAIN] - INFO  - Game.Server.GameServer - NPCInfoMgr Init: True
-11:11:16,720 - [MAIN] - INFO  - Game.Server.GameServer - MissionInfoMgr Init: True
-11:11:16,737 - [MAIN] - INFO  - Game.Server.GameServer - PveInfoMgr Init: True
-11:11:16,744 - [MAIN] - INFO  - Game.Server.GameServer - Drop Init: True
-11:11:16,747 - [MAIN] - INFO  - Game.Server.GameServer - FightRateMgr Init: True
-11:11:16,749 - [MAIN] - INFO  - Game.Server.GameServer - ConsortiaLevelMgr Init: True
-11:11:16,752 - [MAIN] - INFO  - Game.Server.GameServer - RefineryMgr Init: True
-11:11:16,759 - [MAIN] - INFO  - Game.Server.GameServer - StrengthenMgr Init: True
-11:11:16,763 - [MAIN] - INFO  - Game.Server.GameServer - PropItemMgr Init: True
-11:11:16,815 - [MAIN] - INFO  - Game.Server.GameServer - ShopMgr Init: True
-11:11:16,830 - [MAIN] - INFO  - Game.Server.GameServer - QuestMgr Init: True
-11:11:16,831 - [MAIN] - INFO  - Game.Server.GameServer - RoomMgr.Setup: True
-11:11:16,831 - [MAIN] - INFO  - Game.Server.GameServer - GameMgr.Start(): True
-11:11:16,837 - [MAIN] - INFO  - Game.Server.GameServer - ConsortiaMgr Init: True
-11:11:16,847 - [MAIN] - INFO  - Game.Server.GameServer - LanguageMgr Init: True
-11:11:16,850 - [MAIN] - INFO  - Game.Server.GameServer - ExperienceRateMgr Init: True
-11:11:16,850 - [MAIN] - INFO  - Game.Server.GameServer - MacroDropMgr Init: True
-11:11:16,856 - [MAIN] - INFO  - Game.Server.Battle.BattleMgr - Battle server 127.0.0.1:9208 loaded...
-11:11:16,858 - [MAIN] - INFO  - Game.Server.Battle.BattleMgr - Total 1 battle server loaded.
-11:11:16,859 - [MAIN] - INFO  - Game.Server.GameServer - BattleMgr Setup: True
-11:11:16,860 - [MAIN] - INFO  - Game.Server.GameServer - Init Global Timers: True
-11:11:16,866 - [MAIN] - INFO  - Game.Server.GameServer - MarryRoomMgr Init: True
-11:11:16,866 - [MAIN] - INFO  - Game.Server.GameServer - LogMgr Setup: True
-11:11:16,877 - [MAIN] - INFO  - Game.Base.Packets.PacketProcessor - PacketProcessor: Loaded 149 handlers from GameServer Assembly!
-11:11:16,880 - [MAIN] - INFO  - Game.Base.CommandMgr - &version from GameServerScripts, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null has been suppressed, a command of that type already exists!
-11:11:16,881 - [MAIN] - INFO  - Game.Base.CommandMgr - Loaded 7 commands!
-11:11:16,885 - [MAIN] - INFO  - Game.Logic.Spells.SpellMgr - SpellMgr: Loaded 15 spell handlers from GameServer Assembly!
-11:11:16,887 - [MAIN] - INFO  - Game.Base.BaseConnector - Connected to 127.0.0.1:9202
-11:11:16,888 - [MAIN] - INFO  - Game.Server.GameServer - Login To CenterServer: True
-11:11:16,890 - [MAIN] - INFO  - Game.Base.BaseConnector - Connected to 127.0.0.1:9208
-11:11:16,893 - [MAIN] - INFO
+09:50:45,889 - [MAIN] - INFO  - Bussiness.GameProperties - Refreshing game properties!
+09:50:50,976 - [MAIN] - INFO  - Game.Server.GameServer - Recompile Scripts: True
+09:50:50,977 - [MAIN] - INFO  - Game.Server.GameServer - Server rules: true
+09:50:51,103 - [MAIN] - INFO  - Game.Server.GameServer - Registering global event handlers: true
+09:50:51,103 - [MAIN] - INFO  - Game.Server.GameServer - Script components: True
+09:50:51,103 - [MAIN] - INFO  - Game.Server.GameServer - Edition:21000: True
+09:50:51,106 - [MAIN] - INFO  - Game.Server.GameServer - InitSocket Port:9200: True
+09:50:51,126 - [MAIN] - INFO  - Game.Server.GameServer - AllocatePacketBuffers(): True
+09:50:51,153 - [MAIN] - INFO  - Game.Server.GameServer - LogMgr Init: True
+09:50:51,180 - [MAIN] - INFO  - Game.Server.GameServer - WorldMgr Init: True
+09:50:55,208 - [MAIN] - INFO  - Game.Server.GameServer - MapMgr Init: True
+09:50:55,370 - [MAIN] - INFO  - Game.Server.GameServer - ItemMgr Init: True
+09:50:55,552 - [MAIN] - INFO  - Game.Server.GameServer - ItemBox Init: True
+09:51:12,814 - [MAIN] - INFO  - Game.Server.GameServer - BallMgr Init: True
+09:51:12,829 - [MAIN] - INFO  - Game.Server.GameServer - BallConfigMgr Init: True
+09:51:12,982 - [MAIN] - INFO  - Game.Server.GameServer - FusionMgr Init: True
+09:51:13,024 - [MAIN] - INFO  - Game.Server.GameServer - AwardMgr Init: True
+09:51:13,030 - [MAIN] - INFO  - Game.Server.GameServer - NPCInfoMgr Init: True
+09:51:13,081 - [MAIN] - INFO  - Game.Server.GameServer - MissionInfoMgr Init: True
+09:51:13,233 - [MAIN] - INFO  - Game.Server.GameServer - PveInfoMgr Init: True
+09:51:13,239 - [MAIN] - INFO  - Game.Server.GameServer - Drop Init: True
+09:51:13,309 - [MAIN] - INFO  - Game.Server.GameServer - FightRateMgr Init: True
+09:51:13,362 - [MAIN] - INFO  - Game.Server.GameServer - ConsortiaLevelMgr Init: True
+09:51:13,366 - [MAIN] - INFO  - Game.Server.GameServer - RefineryMgr Init: True
+09:51:13,448 - [MAIN] - INFO  - Game.Server.GameServer - StrengthenMgr Init: True
+09:51:13,452 - [MAIN] - INFO  - Game.Server.GameServer - PropItemMgr Init: True
+09:51:13,559 - [MAIN] - INFO  - Game.Server.GameServer - ShopMgr Init: True
+09:51:13,739 - [MAIN] - INFO  - Game.Server.GameServer - QuestMgr Init: True
+09:51:13,847 - [MAIN] - INFO  - Game.Server.GameServer - RoomMgr.Setup: True
+09:51:13,848 - [MAIN] - INFO  - Game.Server.GameServer - GameMgr.Start(): True
+09:51:13,856 - [MAIN] - INFO  - Game.Server.GameServer - ConsortiaMgr Init: True
+09:51:13,896 - [MAIN] - INFO  - Game.Server.GameServer - LanguageMgr Init: True
+09:51:13,902 - [MAIN] - INFO  - Game.Server.GameServer - ExperienceRateMgr Init: True
+09:51:13,903 - [MAIN] - INFO  - Game.Server.GameServer - MacroDropMgr Init: True
+09:51:13,914 - [MAIN] - INFO  - Game.Server.Battle.BattleMgr - Battle server 127.0.0.1:9208 loaded...
+09:51:13,917 - [MAIN] - INFO  - Game.Server.Battle.BattleMgr - Total 1 battle server loaded.
+09:51:13,917 - [MAIN] - INFO  - Game.Server.GameServer - BattleMgr Setup: True
+09:51:13,918 - [MAIN] - INFO  - Game.Server.GameServer - Init Global Timers: True
+09:51:13,947 - [MAIN] - INFO  - Game.Server.GameServer - MarryRoomMgr Init: True
+09:51:13,947 - [MAIN] - INFO  - Game.Server.GameServer - LogMgr Setup: True
+09:51:13,999 - [MAIN] - INFO  - Game.Base.Packets.PacketProcessor - PacketProcessor: Loaded 151 handlers from GameServer Assembly!
+09:51:14,001 - [MAIN] - INFO  - Game.Base.CommandMgr - &version from GameServerScripts, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null has been suppressed, a command of that type already exists!
+09:51:14,002 - [MAIN] - INFO  - Game.Base.CommandMgr - Loaded 7 commands!
+09:51:14,006 - [MAIN] - INFO  - Game.Logic.Spells.SpellMgr - SpellMgr: Loaded 15 spell handlers from GameServer Assembly!
+09:51:14,008 - [MAIN] - INFO  - Game.Base.BaseConnector - Connected to 127.0.0.1:9202
+09:51:14,058 - [MAIN] - INFO  - Game.Server.GameServer - Login To CenterServer: True
+09:51:14,060 - [MAIN] - INFO  - Game.Base.BaseConnector - Connected to 127.0.0.1:9208
+09:51:14,062 - [MAIN] - INFO11:06:12,801 - [MAIN] - INFO  - Bussiness.GameProperties - Refreshing game properties!
+11:06:13,591 - [MAIN] - INFO  - Game.Server.GameServer - Recompile Scripts: True
+11:06:13,593 - [MAIN] - INFO  - Game.Server.GameServer - Server rules: true
+11:06:13,630 - [MAIN] - INFO  - Game.Server.GameServer - Registering global event handlers: true
+11:06:13,631 - [MAIN] - INFO  - Game.Server.GameServer - Script components: True
+11:06:13,631 - [MAIN] - INFO  - Game.Server.GameServer - Edition:21000: True
+11:06:13,635 - [MAIN] - INFO  - Game.Server.GameServer - InitSocket Port:9200: True
+11:06:13,675 - [MAIN] - INFO  - Game.Server.GameServer - AllocatePacketBuffers(): True
+11:06:13,681 - [MAIN] - INFO  - Game.Server.GameServer - LogMgr Init: True
+11:06:13,686 - [MAIN] - INFO  - Game.Server.GameServer - WorldMgr Init: True
+11:06:13,803 - [MAIN] - INFO  - Game.Server.GameServer - MapMgr Init: True
+11:06:14,245 - [MAIN] - INFO  - Game.Server.GameServer - ItemMgr Init: True
+11:06:14,288 - [MAIN] - INFO  - Game.Server.GameServer - ItemBox Init: True
+11:06:14,659 - [MAIN] - INFO  - Game.Server.GameServer - BallMgr Init: True
+11:06:14,665 - [MAIN] - INFO  - Game.Server.GameServer - BallConfigMgr Init: True
+11:06:14,682 - [MAIN] - INFO  - Game.Server.GameServer - FusionMgr Init: True
+11:06:14,699 - [MAIN] - INFO  - Game.Server.GameServer - AwardMgr Init: True
+11:06:14,709 - [MAIN] - INFO  - Game.Server.GameServer - NPCInfoMgr Init: True
+11:06:14,765 - [MAIN] - INFO  - Game.Server.GameServer - MissionInfoMgr Init: True
+11:06:14,775 - [MAIN] - INFO  - Game.Server.GameServer - PveInfoMgr Init: True
+11:06:14,788 - [MAIN] - INFO  - Game.Server.GameServer - Drop Init: True
+11:06:14,804 - [MAIN] - INFO  - Game.Server.GameServer - FightRateMgr Init: True
+11:06:14,809 - [MAIN] - INFO  - Game.Server.GameServer - ConsortiaLevelMgr Init: True
+11:06:14,815 - [MAIN] - INFO  - Game.Server.GameServer - RefineryMgr Init: True
+11:06:14,840 - [MAIN] - INFO  - Game.Server.GameServer - StrengthenMgr Init: True
+11:06:14,846 - [MAIN] - INFO  - Game.Server.GameServer - PropItemMgr Init: True
+11:06:14,993 - [MAIN] - INFO  - Game.Server.GameServer - ShopMgr Init: True
+11:06:15,058 - [MAIN] - INFO  - Game.Server.GameServer - QuestMgr Init: True
+11:06:15,060 - [MAIN] - INFO  - Game.Server.GameServer - RoomMgr.Setup: True
+11:06:15,061 - [MAIN] - INFO  - Game.Server.GameServer - GameMgr.Start(): True
+11:06:15,077 - [MAIN] - INFO  - Game.Server.GameServer - ConsortiaMgr Init: True
+11:06:15,095 - [MAIN] - INFO  - Game.Server.GameServer - LanguageMgr Init: True
+11:06:15,109 - [MAIN] - INFO  - Game.Server.GameServer - ExperienceRateMgr Init: True
+11:06:15,111 - [MAIN] - INFO  - Game.Server.GameServer - MacroDropMgr Init: True
+11:06:15,121 - [MAIN] - INFO  - Game.Server.Battle.BattleMgr - Battle server 127.0.0.1:9208 loaded...
+11:06:15,128 - [MAIN] - INFO  - Game.Server.Battle.BattleMgr - Total 1 battle server loaded.
+11:06:15,128 - [MAIN] - INFO  - Game.Server.GameServer - BattleMgr Setup: True
+11:06:15,129 - [MAIN] - INFO  - Game.Server.GameServer - Init Global Timers: True
+11:06:15,140 - [MAIN] - INFO  - Game.Server.GameServer - MarryRoomMgr Init: True
+11:06:15,141 - [MAIN] - INFO  - Game.Server.GameServer - LogMgr Setup: True
+11:06:15,167 - [MAIN] - INFO  - Game.Base.Packets.PacketProcessor - PacketProcessor: Loaded 151 handlers from GameServer Assembly!
+11:06:15,173 - [MAIN] - INFO  - Game.Base.CommandMgr - &version from GameServerScripts, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null has been suppressed, a command of that type already exists!
+11:06:15,175 - [MAIN] - INFO  - Game.Base.CommandMgr - Loaded 7 commands!
+11:06:15,184 - [MAIN] - INFO  - Game.Logic.Spells.SpellMgr - SpellMgr: Loaded 15 spell handlers from GameServer Assembly!
+11:06:15,186 - [MAIN] - INFO  - Game.Base.BaseConnector - Connected to 127.0.0.1:9202
+11:06:15,188 - [MAIN] - INFO  - Game.Server.GameServer - Login To CenterServer: True
+11:06:15,191 - [MAIN] - INFO  - Game.Base.BaseConnector - Connected to 127.0.0.1:9208
+11:06:15,195 - [MAIN] - INFO11:17:50,870 - [MAIN] - INFO  - Bussiness.GameProperties - Refreshing game properties!
+11:17:52,327 - [MAIN] - INFO  - Game.Server.GameServer - Recompile Scripts: True
+11:17:52,329 - [MAIN] - INFO  - Game.Server.GameServer - Server rules: true
+11:17:52,365 - [MAIN] - INFO  - Game.Server.GameServer - Registering global event handlers: true
+11:17:52,366 - [MAIN] - INFO  - Game.Server.GameServer - Script components: True
+11:17:52,366 - [MAIN] - INFO  - Game.Server.GameServer - Edition:21000: True
+11:17:52,369 - [MAIN] - INFO  - Game.Server.GameServer - InitSocket Port:9200: True
+11:17:52,409 - [MAIN] - INFO  - Game.Server.GameServer - AllocatePacketBuffers(): True
+11:17:52,416 - [MAIN] - INFO  - Game.Server.GameServer - LogMgr Init: True
+11:17:52,420 - [MAIN] - INFO  - Game.Server.GameServer - WorldMgr Init: True
+11:17:52,551 - [MAIN] - INFO  - Game.Server.GameServer - MapMgr Init: True
+11:17:52,771 - [MAIN] - INFO  - Game.Server.GameServer - ItemMgr Init: True
+11:17:52,817 - [MAIN] - INFO  - Game.Server.GameServer - ItemBox Init: True
+11:17:53,226 - [MAIN] - INFO  - Game.Server.GameServer - BallMgr Init: True
+11:17:53,238 - [MAIN] - INFO  - Game.Server.GameServer - BallConfigMgr Init: True
+11:17:53,273 - [MAIN] - INFO  - Game.Server.GameServer - FusionMgr Init: True
+11:17:53,308 - [MAIN] - INFO  - Game.Server.GameServer - AwardMgr Init: True
+11:17:53,325 - [MAIN] - INFO  - Game.Server.GameServer - NPCInfoMgr Init: True
+11:17:53,370 - [MAIN] - INFO  - Game.Server.GameServer - MissionInfoMgr Init: True
+11:17:53,384 - [MAIN] - INFO  - Game.Server.GameServer - PveInfoMgr Init: True
+11:17:53,397 - [MAIN] - INFO  - Game.Server.GameServer - Drop Init: True
+11:17:53,415 - [MAIN] - INFO  - Game.Server.GameServer - FightRateMgr Init: True
+11:17:53,421 - [MAIN] - INFO  - Game.Server.GameServer - ConsortiaLevelMgr Init: True
+11:17:53,428 - [MAIN] - INFO  - Game.Server.GameServer - RefineryMgr Init: True
+11:17:53,455 - [MAIN] - INFO  - Game.Server.GameServer - StrengthenMgr Init: True
+11:17:53,461 - [MAIN] - INFO  - Game.Server.GameServer - PropItemMgr Init: True
+11:17:53,613 - [MAIN] - INFO  - Game.Server.GameServer - ShopMgr Init: True
+11:17:53,672 - [MAIN] - INFO  - Game.Server.GameServer - QuestMgr Init: True
+11:17:53,675 - [MAIN] - INFO  - Game.Server.GameServer - RoomMgr.Setup: True
+11:17:53,676 - [MAIN] - INFO  - Game.Server.GameServer - GameMgr.Start(): True
+11:17:53,691 - [MAIN] - INFO  - Game.Server.GameServer - ConsortiaMgr Init: True
+11:17:53,709 - [MAIN] - INFO  - Game.Server.GameServer - LanguageMgr Init: True
+11:17:53,717 - [MAIN] - INFO  - Game.Server.GameServer - ExperienceRateMgr Init: True
+11:17:53,719 - [MAIN] - INFO  - Game.Server.GameServer - MacroDropMgr Init: True
+11:17:53,730 - [MAIN] - INFO  - Game.Server.Battle.BattleMgr - Battle server 127.0.0.1:9208 loaded...
+11:17:53,736 - [MAIN] - INFO  - Game.Server.Battle.BattleMgr - Total 1 battle server loaded.
+11:17:53,737 - [MAIN] - INFO  - Game.Server.GameServer - BattleMgr Setup: True
+11:17:53,739 - [MAIN] - INFO  - Game.Server.GameServer - Init Global Timers: True
+11:17:53,752 - [MAIN] - INFO  - Game.Server.GameServer - MarryRoomMgr Init: True
+11:17:53,752 - [MAIN] - INFO  - Game.Server.GameServer - LogMgr Setup: True
+11:17:53,777 - [MAIN] - INFO  - Game.Base.Packets.PacketProcessor - PacketProcessor: Loaded 151 handlers from GameServer Assembly!
+11:17:53,783 - [MAIN] - INFO  - Game.Base.CommandMgr - &version from GameServerScripts, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null has been suppressed, a command of that type already exists!
+11:17:53,786 - [MAIN] - INFO  - Game.Base.CommandMgr - Loaded 7 commands!
+11:17:53,794 - [MAIN] - INFO  - Game.Logic.Spells.SpellMgr - SpellMgr: Loaded 15 spell handlers from GameServer Assembly!
+11:17:53,797 - [MAIN] - INFO  - Game.Base.BaseConnector - Connected to 127.0.0.1:9202
+11:17:53,798 - [MAIN] - INFO  - Game.Server.GameServer - Login To CenterServer: True
+11:17:53,803 - [MAIN] - INFO  - Game.Base.BaseConnector - Connected to 127.0.0.1:9208
+11:17:53,808 - [MAIN] - INFO  - Game.Server.GameServer - base.Start(): True
+11:17:53,834 - [MAIN] - INFO  - Game.Server.GameServer - GameServer is now open for connections!
+11:18:16,027 - [5] - INFO  - Game.Base.BaseServer - Incoming connection from 127.0.0.1:58828
+11:18:16,047 - [5] - INFO  - Game.Base.BaseClient - Disconnecting client (127.0.0.1:58828), received bytes=0
+11:18:16,056 - [5] - INFO  - Game.Base.BaseServer - Incoming connection from 127.0.0.1:58829
+11:18:53,747 - [17] - INFO  - Game.Server.GameServer - Buff Scaning ...
+11:18:53,753 - [17] - INFO  - Game.Server.GameServer - Buff Scan complete!
+11:18:53,755 - [17] - INFO  - Game.Server.GameServer - Buff all 1 players in 0ms
+11:19:53,744 - [17] - INFO  - Game.Server.GameServer - Buff Scaning ...
+11:19:53,751 - [17] - INFO  - Game.Server.GameServer - Buff Scan complete!
+11:19:53,752 - [17] - INFO  - Game.Server.GameServer - Buff all 1 players in 0ms
+11:20:53,744 - [21] - INFO  - Game.Server.GameServer - Begin ping check....
+11:20:53,746 - [21] - INFO  - Game.Server.GameServer - End ping check....
+11:20:53,747 - [21] - INFO  - Game.Server.GameServer - Begin ping center check....
+11:20:53,748 - [21] - INFO  - Game.Server.GameServer - End ping center check....
+11:20:53,758 - [17] - INFO  - Game.Server.GameServer - Buff Scaning ...
+11:20:53,758 - [17] - INFO  - Game.Server.GameServer - Buff Scan complete!
+11:20:53,759 - [17] - INFO  - Game.Server.GameServer - Buff all 1 players in 0ms
+11:21:53,775 - [16] - INFO  - Game.Server.GameServer - Buff Scaning ...
+11:21:53,775 - [16] - INFO  - Game.Server.GameServer - Buff Scan complete!
+11:21:53,775 - [16] - INFO  - Game.Server.GameServer - Buff all 1 players in 0ms
+11:22:53,754 - [18] - INFO  - Game.Server.GameServer - Saving Record...
+11:22:53,769 - [18] - INFO  - Game.Server.GameServer - Saving Record complete!
+11:22:53,776 - [17] - INFO  - Game.Server.GameServer - Buff Scaning ...
+11:22:53,776 - [17] - INFO  - Game.Server.GameServer - Buff Scan complete!
+11:22:53,777 - [17] - INFO  - Game.Server.GameServer - Buff all 1 players in 0ms
+11:23:53,745 - [18] - INFO  - Game.Server.GameServer - Begin ping check....
+11:23:53,746 - [18] - INFO  - Game.Server.GameServer - End ping check....
+11:23:53,747 - [18] - INFO  - Game.Server.GameServer - Begin ping center check....
+11:23:53,748 - [18] - INFO  - Game.Server.GameServer - End ping center check....
+11:23:53,776 - [21] - INFO  - Game.Server.GameServer - Buff Scaning ...
+11:23:53,776 - [21] - INFO  - Game.Server.GameServer - Buff Scan complete!
+11:23:53,778 - [21] - INFO  - Game.Server.GameServer - Buff all 1 players in 0ms
+11:24:53,789 - [16] - INFO  - Game.Server.GameServer - Buff Scaning ...
+11:24:53,790 - [16] - INFO  - Game.Server.GameServer - Buff Scan complete!
+11:24:53,791 - [16] - INFO  - Game.Server.GameServer - Buff all 1 players in 0ms
+11:25:53,788 - [17] - INFO  - Game.Server.GameServer - Buff Scaning ...
+11:25:53,789 - [17] - INFO  - Game.Server.GameServer - Buff Scan complete!
+11:25:53,790 - [17] - INFO  - Game.Server.GameServer - Buff all 1 players in 0ms
+11:26:53,746 - [16] - INFO  - Game.Server.GameServer - Begin ping check....
+11:26:53,746 - [16] - INFO  - Game.Server.GameServer - End ping check....
+11:26:53,747 - [16] - INFO  - Game.Server.GameServer - Begin ping center check....
+11:26:53,750 - [16] - INFO  - Game.Server.GameServer - End ping center check....
+11:26:53,790 - [17] - INFO  - Game.Server.GameServer - Buff Scaning ...
+11:26:53,790 - [17] - INFO  - Game.Server.GameServer - Buff Scan complete!
+11:26:53,791 - [17] - INFO  - Game.Server.GameServer - Buff all 1 players in 0ms
+11:27:53,754 - [21] - INFO  - Game.Server.GameServer - Saving Record...
+11:27:53,755 - [21] - INFO  - Game.Server.GameServer - Saving Record complete!
+11:27:53,755 - [16] - INFO  - Game.Server.GameServer - Saving database...
+11:27:53,791 - [17] - INFO  - Game.Server.GameServer - Buff Scaning ...
+11:27:53,791 - [17] - INFO  - Game.Server.GameServer - Buff Scan complete!
+11:27:53,792 - [17] - INFO  - Game.Server.GameServer - Buff all 1 players in 0ms
+11:27:

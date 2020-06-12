@@ -19,18 +19,32 @@ namespace Game.Server.Packets.Client
 
         public int HandlePacket(GameClient client, GSPacketIn packet)
         {
-            int bagType = packet.ReadByte();
-            int place = packet.ReadInt();
-            PlayerInventory arkBag = client.Player.CaddyBag;
+            int num = packet.ReadByte();
+            int num2 = packet.ReadInt();
+            PlayerInventory caddyBag = client.Player.CaddyBag;
             PlayerInventory propBag = client.Player.PropBag;
-            for (int i = 0; i < arkBag.Capalility; i++)
+            PlayerInventory storeBag = client.Player.StoreBag;
+            PlayerInventory mainBag = client.Player.MainBag;
+            for (int i = 0; i < caddyBag.Capalility; i++)
             {
-                var item = arkBag.GetItemAt(i);
-                if (item != null)
+                SqlDataProvider.Data.ItemInfo itemAt = caddyBag.GetItemAt(i);
+                if (itemAt != null)
                 {
-                    arkBag.MoveToStore(arkBag, i, propBag.FindFirstEmptySlot(0), propBag, 999);
+                    if (((itemAt.Template.CategoryID == 10) || (itemAt.Template.CategoryID == 11)) || (itemAt.Template.CategoryID == 12))
+                    {
+                        caddyBag.MoveToStore(caddyBag, i, propBag.FindFirstEmptySlot(1), propBag, 0x3e7);
+                    }
+                    else if ((itemAt.Template.CategoryID == 7) && (mainBag.GetItemAt(6) == null))
+                    {
+                        caddyBag.MoveToStore(caddyBag, i, 6, mainBag, 0x3e7);
+                    }
+                    else
+                    {
+                        caddyBag.MoveToStore(caddyBag, i, mainBag.FindFirstEmptySlot(0x20), mainBag, 0x3e7);
+                    }
                 }
             }
+            client.soquay = -1;
             return 1;
         }
     }

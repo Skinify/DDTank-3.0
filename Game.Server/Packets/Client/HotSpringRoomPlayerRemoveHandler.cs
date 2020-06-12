@@ -27,7 +27,6 @@ namespace Game.Server.Packets.Client
                 }
                 GSPacketIn pkg = new GSPacketIn((short)ePackageType.HOTSPRING_ROOM_PLAYER_REMOVE);
                 pkg.WriteString(LanguageMgr.GetTranslation("HotSpringRoom.Exited"));
-                //LanguageMgr.GetTranslation("Game.Server.GameObjects.NoEquip")
                 client.SendTCP(pkg);
             }
             return 0;
