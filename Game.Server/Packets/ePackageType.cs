@@ -484,6 +484,7 @@
         MAIL_CANCEL = 0x76,
 
         CLEAR_STORE_BAG= 0x7a,
+        MOVE_GOODS_BAG = 0x7c,
 
 
         /*

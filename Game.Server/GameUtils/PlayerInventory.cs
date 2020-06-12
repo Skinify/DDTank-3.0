@@ -5,8 +5,6 @@ using Game.Server.GameObjects;
 using SqlDataProvider.Data;
 using Bussiness;
 using Game.Server.Packets;
-using Game.Server.GameUtils;
-
 
 namespace Game.Server.GameUtils
 {
@@ -339,9 +337,8 @@ namespace Game.Server.GameUtils
 
         public void MoveToStore(PlayerInventory bag, int fromSolt, int toSolt, PlayerInventory tobag, int maxCount)
         {
-            Console.WriteLine("Game.Server.GameUtils.PlayerInventory.MoveToStore.teste1");
-            SqlDataProvider.Data.ItemInfo itemAt = bag.GetItemAt(fromSolt);
-            SqlDataProvider.Data.ItemInfo item = tobag.GetItemAt(toSolt);
+            ItemInfo itemAt = bag.GetItemAt(fromSolt);
+            ItemInfo item = tobag.GetItemAt(toSolt);
             if ((itemAt != null) || (item != null))
             {
                 if (((item == null) && ((toSolt < 0) || (toSolt > 80))) || ((tobag.BagType == 11) && (toSolt >= maxCount)))

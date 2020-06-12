@@ -1,16 +1,9 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
 using SqlDataProvider.Data;
 using Game.Server.GameObjects;
-using Game.Server.Managers;
 using Bussiness;
 using Game.Server.Packets;
-using Game.Server.Statics;
 using Bussiness.Managers;
-using Game.Logic.Phy.Object;
-using Game.Server.GameUtils;
 
 namespace Game.Server.GameUtils
 {
@@ -144,6 +137,7 @@ namespace Game.Server.GameUtils
                 UpdatePlayerProperties();
             }
         }
+
 
         #region Build Player Style/Properties
 

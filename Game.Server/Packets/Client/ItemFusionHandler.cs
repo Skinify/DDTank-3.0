@@ -99,7 +99,7 @@ namespace Game.Server.Packets.Client
                 }
             }
 
-            if (items.Count != 4 || formul == null)
+            if (items.Count != 4)
             {
                 client.Out.SendMessage(eMessageType.Normal, LanguageMgr.GetTranslation("ItemFusionHandler.ItemNotEnough"));
                 return 0;

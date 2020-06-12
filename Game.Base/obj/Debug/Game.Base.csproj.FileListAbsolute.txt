@@ -43,6 +43,7 @@ D:\DDT\DDTank-3.0\Game.Base\bin\Debug\Game.Base.pdb
 D:\DDT\DDTank-3.0\Game.Base\bin\Debug\log4net.dll
 D:\DDT\DDTank-3.0\Game.Base\bin\Debug\zlib.net.dll
 D:\DDT\DDTank-3.0\Game.Base\bin\Debug\log4net.xml
+D:\DDT\DDTank-3.0\Game.Base\obj\Debug\Game.Base.csprojAssemblyReference.cache
 D:\DDT\DDTank-3.0\Game.Base\obj\Debug\Game.Base.csproj.CoreCompileInputs.cache
 D:\DDT\DDTank-3.0\Game.Base\obj\Debug\Game.Base.csproj.CopyComplete
 D:\DDT\DDTank-3.0\Game.Base\obj\Debug\Game.Base.dll

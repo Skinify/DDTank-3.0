@@ -11,7 +11,7 @@ using System.Threading;
 using Game.Base.Packets;
 using Game.Server.GameUtils;
 
-namespace Game.Server.GameUtilsBAK
+namespace Game.Server.GameUtils
 {
     /// <summary>
     /// A class for a scene

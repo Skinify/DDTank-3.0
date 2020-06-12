@@ -1,14 +1,9 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Text;
 using SqlDataProvider.Data;
-using Game.Server.Statics;
 using System.Threading;
 using log4net;
 using System.Reflection;
-
-
 
 
 namespace Game.Server.GameUtils
@@ -521,6 +516,26 @@ namespace Game.Server.GameUtils
                 return -1;
             }
         }
+
+        public int FindFirstEmptySlot(int minSlot, int maxSlot)
+        {
+            if (minSlot >= maxSlot)
+            {
+                return -1;
+            }
+            lock (this.m_lock)
+            {
+                for (int i = minSlot; i < maxSlot; i++)
+                {
+                    if (this.m_items[i] == null)
+                    {
+                        return i;
+                    }
+                }
+                return -1;
+            }
+        }
+
 
         /// <summary>
         /// 查找最后一个空位
