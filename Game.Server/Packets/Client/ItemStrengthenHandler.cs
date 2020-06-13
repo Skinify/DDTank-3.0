@@ -56,7 +56,14 @@ namespace Game.Server.Packets.Client
                 }
                 else
                 {
-                    info5 = StrengthenMgr.FindStrengthenGoodsInfo(itemAt.StrengthenLevel + 1, itemAt.TemplateID);
+                    if(itemAt.Template.CategoryID == 7)
+                    {
+                        info5 = StrengthenMgr.FindStrengthenGoodsInfo(itemAt.StrengthenLevel + 1, itemAt.TemplateID);
+                    }
+                    else
+                    {
+                        info5 = StrengthenMgr.FindStrengthenGoodsInfo(itemAt.StrengthenLevel, itemAt.TemplateID);
+                    }
                     if (info5 == null)
                         Console.WriteLine("Game.Server.Packets.Client.ItemStrengthenHandler.Arma sem proxima evolução: " + itemAt.TemplateID + " " + itemAt.StrengthenLevel + 1);
                     info4 = StrengthenMgr.FindStrengthenInfo(itemAt.StrengthenLevel + 1);

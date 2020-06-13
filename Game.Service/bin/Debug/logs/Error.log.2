@@ -1,8 +1,20 @@
-00:24:17,182 - [5] - ERROR - Game.Base.Packets.PacketProcessor - Error while processing packet (handler=Game.Server.Packets.Client.ItemStrengthenHandler  client: 127.0.0.1:53896)
+11:45:34,271 - [14] - ERROR - Game.Server.Games.GameMgr - Create game error:
 System.NullReferenceException: Referência de objeto não definida para uma instância de um objeto.
-   em Game.Server.Packets.Client.ItemStrengthenHandler.HandlePacket(GameClient client, GSPacketIn packet) na D:\DDT\DDTank-3.0\Game.Server\Packets\Client\ItemStrengthenHandler.cs:linha 60
-   em Game.Base.Packets.PacketProcessor.HandlePacket(GSPacketIn packet) na D:\DDT\DDTank-3.0\Game.Server\Packets\Server\PacketProcessor.cs:linha 88
-00:24:17,217 - [5] - ERROR - Game.Base.Packets.PacketProcessor - Package Buffer:
-0000: 71 AB 00 15 01 08 00 3B 00 00 00 56 00 00 00 00   q......;...V....
-0010: 00 00 00 00 00                                    .....           
-
+   em Game.Logic.Phy.Object.Player..ctor(IGamePlayer player, Int32 id, BaseGame game, Int32 team) na D:\DDT\DDTank-3.0\Game.Logic\Phy\Object\Player.cs:linha 86
+   em Game.Logic.PVEGame..ctor(Int32 id, Int32 roomId, PveInfo info, List`1 players, Map map, eRoomType roomType, eGameType gameType, Int32 timeType, eHardLevel hardLevel) na D:\DDT\DDTank-3.0\Game.Logic\PVEGame.cs:linha 84
+   em Game.Server.Games.GameMgr.StartPVEGame(Int32 roomId, List`1 players, Int32 copyId, eRoomType roomType, eGameType gameType, Int32 timeType, eHardLevel hardLevel, Int32 levelLimits) na D:\DDT\DDTank-3.0\Game.Server\Games\GameMgr.cs:linha 232
+11:45:36,011 - [14] - ERROR - Game.Server.Games.GameMgr - Create game error:
+System.NullReferenceException: Referência de objeto não definida para uma instância de um objeto.
+   em Game.Logic.Phy.Object.Player..ctor(IGamePlayer player, Int32 id, BaseGame game, Int32 team) na D:\DDT\DDTank-3.0\Game.Logic\Phy\Object\Player.cs:linha 86
+   em Game.Logic.PVEGame..ctor(Int32 id, Int32 roomId, PveInfo info, List`1 players, Map map, eRoomType roomType, eGameType gameType, Int32 timeType, eHardLevel hardLevel) na D:\DDT\DDTank-3.0\Game.Logic\PVEGame.cs:linha 84
+   em Game.Server.Games.GameMgr.StartPVEGame(Int32 roomId, List`1 players, Int32 copyId, eRoomType roomType, eGameType gameType, Int32 timeType, eHardLevel hardLevel, Int32 levelLimits) na D:\DDT\DDTank-3.0\Game.Server\Games\GameMgr.cs:linha 232
+11:46:56,122 - [30] - ERROR - Game.Server.GameObjects.GamePlayer - Player exit Game Error!
+System.NullReferenceException: Referência de objeto não definida para uma instância de um objeto.
+   em Game.Base.Packets.AbstractPacketLib.SendUpdatePrivateInfo(PlayerInfo info) na D:\DDT\DDTank-3.0\Game.Server\Packets\Server\AbstractPacketLib.cs:linha 357
+   em Game.Server.GameObjects.GamePlayer.UpdateProperties() na D:\DDT\DDTank-3.0\Game.Server\GameObjects\GamePlayer.cs:linha 572
+   em Game.Server.GameObjects.GamePlayer.OnPropertiesChanged() na D:\DDT\DDTank-3.0\Game.Server\GameObjects\GamePlayer.cs:linha 567
+   em Game.Server.GameObjects.GamePlayer.RemoveGP(Int32 gp) na D:\DDT\DDTank-3.0\Game.Server\GameObjects\GamePlayer.cs:linha 751
+   em Game.Logic.PVEGame.RemovePlayer(IGamePlayer gp, Boolean isKick) na D:\DDT\DDTank-3.0\Game.Logic\PVEGame.cs:linha 400
+   em Game.Server.Rooms.BaseRoom.RemovePlayerUnsafe(GamePlayer player, Boolean isKick) na D:\DDT\DDTank-3.0\Game.Server\Rooms\BaseRoom.cs:linha 640
+   em Game.Server.Rooms.BaseRoom.RemovePlayerUnsafe(GamePlayer player) na D:\DDT\DDTank-3.0\Game.Server\Rooms\BaseRoom.cs:linha 562
+   em Game.Server.GameObjects.GamePlayer.Quit() na D:\DDT\DDTank-3.0\Game.Server\GameObjects\GamePlayer.cs:linha 1314

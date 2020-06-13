@@ -21,6 +21,9 @@ namespace Game.Server.Packets.Client
                 case 13:
                     categroyID = 3;
                     break;
+                case 15:
+                    categroyID = 4;
+                    break;
             }
             client.Player.HideEquip(categroyID, hide);
             return 0;
