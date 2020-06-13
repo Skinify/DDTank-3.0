@@ -237,6 +237,9 @@ namespace Game.Server
                 if (!InitComponent(BallMgr.Init(), "BallMgr Init"))
                     return false;
 
+                if (!InitComponent(VaneMgr.ByteAray(), "VaneMgr ByteAray"))
+                    return false;
+
                 if (!InitComponent(BallConfigMgr.Init(), "BallConfigMgr Init"))
                     return false;
 

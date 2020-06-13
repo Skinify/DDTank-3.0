@@ -234,6 +234,7 @@
     <Compile Include="eTankCmdType.cs" />
     <Compile Include="Actions\WaitLivingAttackingAction.cs" />
     <Compile Include="TickHelper.cs" />
+    <Compile Include="VaneMgr.cs" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\Bussiness\Bussiness.csproj">

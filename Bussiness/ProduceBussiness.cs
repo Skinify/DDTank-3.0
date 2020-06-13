@@ -220,6 +220,81 @@ namespace Bussiness
             return infos.ToArray();
         }
 
+        public VaneInfo InitVaneInfo(SqlDataReader reader)
+        {
+            VaneInfo info = new VaneInfo();
+            info.bmpid = (int)reader["bmpid"];
+            info.bmp = (byte[])reader["bmp"];
+            return info;
+        }
+
+        public VaneInfo[] GetAllVane()
+        {
+            Console.WriteLine("Bussiness.ProduceBussiness.Bussiness.teste1");
+            List<VaneInfo> list = new List<VaneInfo>();
+            SqlDataReader resultDataReader = null;
+            try
+            {
+                Console.WriteLine("Bussiness.ProduceBussiness.Bussiness.teste2");
+                db.GetReader(ref resultDataReader, "SP_Vane_All");
+                Console.WriteLine("Bussiness.ProduceBussiness.Bussiness.teste3");
+                while (resultDataReader.Read())
+                {
+                    Console.WriteLine("Bussiness.ProduceBussiness.Bussiness.teste4");
+                    VaneInfo item = new VaneInfo();
+                    item.bmpid = (int)resultDataReader["bmpid"];
+                    item.bmp = (byte[])resultDataReader["bmp"];
+                    list.Add(item);
+                }
+            }
+            catch (Exception exception)
+            {
+                if (BaseBussiness.log.IsErrorEnabled)
+                {
+                    Console.WriteLine(exception);
+                    BaseBussiness.log.Error("ByteArray", exception);
+                }
+            }
+            finally
+            {
+                if ((resultDataReader != null) && !resultDataReader.IsClosed)
+                {
+                    resultDataReader.Close();
+                }
+            }
+            return list.ToArray();
+        }
+
+        public VaneInfo GetSingleVane(int VaneID)
+        {
+            SqlDataReader resultDataReader = null;
+            try
+            {
+                SqlParameter[] sqlParameters = new SqlParameter[] { new SqlParameter("@ID", SqlDbType.Int, 4) };
+                sqlParameters[0].Value = VaneID;
+                base.db.GetReader(ref resultDataReader, "SP_Vane_Single", sqlParameters);
+                if (resultDataReader.Read())
+                {
+                    return this.InitVaneInfo(resultDataReader);
+                }
+            }
+            catch (Exception exception)
+            {
+                if (BaseBussiness.log.IsErrorEnabled)
+                {
+                    BaseBussiness.log.Error("Init", exception);
+                }
+            }
+            finally
+            {
+                if ((resultDataReader != null) && !resultDataReader.IsClosed)
+                {
+                    resultDataReader.Close();
+                }
+            }
+            return null;
+        }
+
         public PropInfo[] GetAllProp()
         {
             List<PropInfo> infos = new List<PropInfo>();

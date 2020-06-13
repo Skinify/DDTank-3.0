@@ -40,6 +40,7 @@ namespace Game.Logic
         RELIEVESPELLS = 0x27,
         FLY = 0x28,
         SEAL = 0x29,
+        WIND_PIC = 0xf1,
 
         //战斗道具
         USEFIGHTPROP = 0x2a,

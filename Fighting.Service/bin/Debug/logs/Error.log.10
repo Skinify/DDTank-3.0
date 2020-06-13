@@ -1,0 +1,4 @@
+09:57:34,831 - [MAIN] - ERROR - Bussiness.BaseBussiness - GetAllMap
+System.NullReferenceException: Referência de objeto não definida para uma instância de um objeto.
+   em Bussiness.MapBussiness.GetAllMap() na D:\DDT\DDTank-3.0\Bussiness\MapBussiness.cs:linha 26
+09:57:35,027 - [MAIN] - ERROR - Game.Logic.MapMgr - maps:0,mapInfos:0

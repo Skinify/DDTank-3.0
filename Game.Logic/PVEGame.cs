@@ -562,7 +562,68 @@ namespace Game.Logic
                 }
             }
         }
+
         public void StartGame()
+        {
+            if (base.GameState == eGameState.Loading)
+            {
+                base.m_gameState = eGameState.GameStart;
+                base.SendSyncLifeTime();
+                this.TotalKillCount = 0;
+                this.TotalNpcGrade = 0.0;
+                this.TotalNpcExperience = 0.0;
+                base.TotalHurt = 0;
+                this.m_bossCardCount = 0;
+                this.BossCards = null;
+                List<Player> allFightPlayers = base.GetAllFightPlayers();
+                this.mapPos = MapMgr.GetPVEMapRandomPos(base.m_map.Info.ID);
+                GSPacketIn pkg = new GSPacketIn(0x5b);
+                pkg.WriteByte(0x63);
+                pkg.WriteInt(allFightPlayers.Count);
+                foreach (Player player in allFightPlayers)
+                {
+                    if (!player.IsLiving)
+                    {
+                        this.AddLiving(player);
+                    }
+                    player.Reset();
+                    Point playerPoint = base.GetPlayerPoint(this.mapPos, player.Team);
+                    player.SetXY(playerPoint);
+                    base.m_map.AddPhysical(player);
+                    player.StartMoving();
+                    player.StartGame();
+                    pkg.WriteInt(player.Id);
+                    pkg.WriteInt(player.X);
+                    pkg.WriteInt(player.Y);
+                    player.Direction = (playerPoint.X >= 600) ? -1 : 1;
+                    pkg.WriteInt(player.Direction);
+                    pkg.WriteInt(player.Blood);
+                    pkg.WriteInt(2);
+                    pkg.WriteInt(0x22);
+                    pkg.WriteInt(player.Dander);
+                    pkg.WriteInt(player.PlayerDetail.EquipEffect.Count);
+                    foreach (int num in player.PlayerDetail.EquipEffect)
+                    {
+                        ItemTemplateInfo info = ItemMgr.FindItemTemplate(num);
+                        if (info.Property3 < 0x1b)
+                        {
+                            pkg.WriteInt(info.Property3);
+                            pkg.WriteInt(info.Property4);
+                            continue;
+                        }
+                        pkg.WriteInt(0);
+                        pkg.WriteInt(0);
+                    }
+                }
+                this.SendToAll(pkg);
+                this.SendUpdateUiData();
+                base.VaneSetup();
+                base.WaitTime((base.PlayerCount * 0x9c4) + 0x3e8);
+                base.OnGameStarted();
+            }
+        }
+
+        /*public void StartGame()
         {
             if (GameState == eGameState.Loading)
             {
@@ -648,6 +709,7 @@ namespace Game.Logic
                 OnGameStarted();
             }
         }
+        */
 
         public void PrepareNewGame()
         {

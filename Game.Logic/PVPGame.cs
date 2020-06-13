@@ -111,6 +111,7 @@ namespace Game.Logic
             }
         }
 
+        /*
         public void StartGame()
         {
             if (GameState == eGameState.Loading)
@@ -172,6 +173,56 @@ namespace Game.Logic
                 WaitTime(list.Count * 1000);
 
                 OnGameStarted();
+            }
+        }*/
+
+
+        public void StartGame()
+        {
+            if (base.GameState == eGameState.Loading)
+            {
+                base.m_gameState = eGameState.Playing;
+                base.ClearWaitTimer();
+                base.SendSyncLifeTime();
+                List<Player> allFightPlayers = base.GetAllFightPlayers();
+                MapPoint mapRandomPos = MapMgr.GetMapRandomPos(base.m_map.Info.ID);
+                GSPacketIn pkg = new GSPacketIn(0x5b);
+                pkg.WriteByte(0x63);
+                pkg.WriteInt(allFightPlayers.Count);
+                foreach (Player player in allFightPlayers)
+                {
+                    player.Reset();
+                    Point playerPoint = base.GetPlayerPoint(mapRandomPos, player.Team);
+                    player.SetXY(playerPoint);
+                    base.m_map.AddPhysical(player);
+                    player.StartMoving();
+                    player.StartGame();
+                    pkg.WriteInt(player.Id);
+                    pkg.WriteInt(player.X);
+                    pkg.WriteInt(player.Y);
+                    pkg.WriteInt(player.Direction);
+                    pkg.WriteInt(player.Blood);
+                    pkg.WriteInt(2);
+                    pkg.WriteInt(0x22);
+                    pkg.WriteInt(player.Dander);
+                    pkg.WriteInt(player.PlayerDetail.EquipEffect.Count);
+                    foreach (int num in player.PlayerDetail.EquipEffect)
+                    {
+                        ItemTemplateInfo info = ItemMgr.FindItemTemplate(num);
+                        if (info.Property3 < 0x1b)
+                        {
+                            pkg.WriteInt(info.Property3);
+                            pkg.WriteInt(info.Property4);
+                            continue;
+                        }
+                        pkg.WriteInt(0);
+                        pkg.WriteInt(0);
+                    }
+                }
+                this.SendToAll(pkg);
+                base.VaneSetup();
+                base.WaitTime(allFightPlayers.Count * 0x3e8);
+                base.OnGameStarted();
             }
         }
 

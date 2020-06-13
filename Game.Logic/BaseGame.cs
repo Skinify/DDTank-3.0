@@ -411,6 +411,128 @@ namespace Game.Logic
             return null;
         }
 
+        internal void SendGameWindPic(byte windId, byte[] pic)
+        {
+            GSPacketIn pkg = new GSPacketIn(0x5b);
+            pkg.WriteByte(0xf1);
+            pkg.WriteByte(windId);
+            pkg.Write(pic);
+            this.SendToAll(pkg);
+        }
+
+        public byte WindPicCome(int wind, int param)
+        {
+            byte windId = 0;
+            int num2 = Math.Abs(wind);
+            if (param == 1)
+            {
+                windId = (byte)(((num2 < 0) || (num2 > 9)) ? (((num2 < 10) || (num2 > 0x13)) ? (((num2 < 20) || (num2 > 0x1d)) ? (((num2 < 30) || (num2 > 0x27)) ? 4 : 3) : 2) : 1) : 10);
+            }
+            else if (param == 2)
+            {
+                windId = 0;
+            }
+            else if (param == 3)
+            {
+                switch (num2)
+                {
+                    case 1:
+                    case 11:
+                    case 0x15:
+                    case 0x1f:
+                    case 0x29:
+                        windId = 1;
+                        break;
+
+                    case 2:
+                    case 12:
+                    case 0x16:
+                    case 0x20:
+                    case 0x2a:
+                        windId = 2;
+                        break;
+
+                    case 3:
+                    case 13:
+                    case 0x17:
+                    case 0x21:
+                    case 0x2b:
+                        windId = 3;
+                        break;
+
+                    case 4:
+                    case 14:
+                    case 0x18:
+                    case 0x22:
+                    case 0x2c:
+                        windId = 4;
+                        break;
+
+                    case 5:
+                    case 15:
+                    case 0x19:
+                    case 0x23:
+                    case 0x2d:
+                        windId = 5;
+                        break;
+
+                    case 6:
+                    case 0x10:
+                    case 0x1a:
+                    case 0x24:
+                    case 0x2e:
+                        windId = 6;
+                        break;
+
+                    case 7:
+                    case 0x11:
+                    case 0x1b:
+                    case 0x25:
+                    case 0x2f:
+                        windId = 7;
+                        break;
+
+                    case 8:
+                    case 0x12:
+                    case 0x1c:
+                    case 0x26:
+                    case 0x30:
+                        windId = 8;
+                        break;
+
+                    case 9:
+                    case 0x13:
+                    case 0x1d:
+                    case 0x27:
+                    case 0x31:
+                        windId = 9;
+                        break;
+
+                    default:
+                        windId = 10;
+                        break;
+                }
+            }
+            this.SendGameWindPic(windId, this.GetVane(windId));
+            return windId;
+        }
+
+        public byte[] GetVane(int VaneID)
+        {
+            using (ProduceBussiness bussiness = new ProduceBussiness())
+            {
+                return bussiness.GetSingleVane(VaneID).bmp;
+            }
+        }
+
+        public void VaneSetup()
+        {
+            for (int i = 0; i < 11; i++)
+            {
+                this.SendGameWindPic((byte)i, this.GetVane(i));
+            }
+        }
+
         public float GetNextWind()
         {
             int currentWind = (int)(Wind * 10);
@@ -1482,6 +1604,51 @@ namespace Game.Logic
             }
 
         }
+
+        internal void SendGameNextTurn(Living living, BaseGame game, List<Box> newBoxes)
+        {
+            GSPacketIn pkg = new GSPacketIn(0x5b, living.Id)
+            {
+                Parameter1 = living.Id
+            };
+            pkg.WriteByte(6);
+            int val = (int)(game.Wind * 10f);
+            pkg.WriteInt(val);
+            pkg.WriteBoolean(val > 0);
+            pkg.WriteByte(this.WindPicCome(val, 1));
+            pkg.WriteByte(this.WindPicCome(0, 2));
+            pkg.WriteByte(this.WindPicCome(val, 3));
+            Console.WriteLine(string.Concat(new object[] { "Wind: ", game.Wind, ", Living:", living.Id }));
+            pkg.WriteBoolean(living.IsHide);
+            pkg.WriteInt(getTurnTime(base.TimeType));
+            pkg.WriteInt(newBoxes.Count);
+            foreach (Box box in newBoxes)
+            {
+                pkg.WriteInt(box.Id);
+                pkg.WriteInt(box.X);
+                pkg.WriteInt(box.Y);
+                pkg.WriteInt(9);
+            }
+            List<Player> allFightPlayers = game.GetAllFightPlayers();
+            pkg.WriteInt(allFightPlayers.Count);
+            foreach (Player player in allFightPlayers)
+            {
+                pkg.WriteInt(player.Id);
+                pkg.WriteBoolean(player.IsLiving);
+                pkg.WriteInt(player.X);
+                pkg.WriteInt(player.Y);
+                pkg.WriteInt(player.Blood);
+                pkg.WriteBoolean(player.IsNoHole);
+                pkg.WriteInt(player.Energy);
+                pkg.WriteInt(player.Dander);
+                pkg.WriteInt(player.ShootCount);
+            }
+            pkg.WriteInt(game.TurnIndex);
+            this.SendToAll(pkg);
+        }
+
+
+        /*
         internal void SendGameNextTurn(Living living, BaseGame game, List<Box> newBoxes)
         {
             GSPacketIn pkg = new GSPacketIn((byte)ePackageType.GAME_CMD, living.Id);
@@ -1525,7 +1692,7 @@ namespace Game.Logic
             pkg.WriteInt(game.TurnIndex);
 
             SendToAll(pkg);
-        }
+        }*/
 
         internal void SendLivingUpdateDirection(Living living)
         {
