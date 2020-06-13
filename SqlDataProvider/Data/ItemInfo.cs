@@ -477,6 +477,46 @@ namespace SqlDataProvider.Data
             return userGoods;
         }
 
+        public static ItemInfo CloneFromTemplate(ItemTemplateInfo goods, ItemInfo item)
+        {
+            if (goods == null)
+            {
+                return null;
+            }
+            ItemInfo info = new ItemInfo(goods)
+            {
+                AgilityCompose = item.AgilityCompose,
+                AttackCompose = item.AttackCompose,
+                BeginDate = item.BeginDate,
+                Color = item.Color,
+                Skin = item.Skin,
+                DefendCompose = item.DefendCompose,
+                IsBinds = item.IsBinds,
+                Place = item.Place,
+                BagType = item.BagType,
+                IsUsed = item.IsUsed,
+                IsDirty = item.IsDirty,
+                IsExist = item.IsExist,
+                IsJudge = item.IsJudge,
+                LuckCompose = item.LuckCompose,
+                StrengthenLevel = item.StrengthenLevel,
+                TemplateID = goods.TemplateID,
+                ValidDate = item.ValidDate,
+                _template = goods,
+                Count = item.Count,
+                _removeDate = item._removeDate,
+                _removeType = item._removeType,
+                Hole1 = item.Hole1,
+                Hole2 = item.Hole2,
+                Hole3 = item.Hole3,
+                Hole4 = item.Hole4,
+                Hole5 = item.Hole5,
+                Hole6 = item.Hole6,
+            };
+            OpenHole(ref info);
+            return info;
+        }
+
 
         public static void FindSpecialItemInfo(ItemInfo info, ref int gold, ref int money, ref int giftToken)
         {            

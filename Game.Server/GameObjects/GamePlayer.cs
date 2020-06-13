@@ -20,7 +20,7 @@ using System.Collections;
 using Game.Logic.Phy.Object;
 using Game.Server.ChatServer;
 using Game.Server.HotSpringRooms;
-
+using System.Text;
 
 namespace Game.Server.GameObjects
 {
@@ -991,6 +991,181 @@ namespace Game.Server.GameObjects
             }
             return false;
         }
+
+        public bool SendItemsToMail(List<SqlDataProvider.Data.ItemInfo> items, string content, string title, eMailType type)
+        {
+            using (PlayerBussiness bussiness = new PlayerBussiness())
+            {
+                List<SqlDataProvider.Data.ItemInfo> list = new List<SqlDataProvider.Data.ItemInfo>();
+                foreach (SqlDataProvider.Data.ItemInfo info in items)
+                {
+                    if (info.Template.MaxCount == 1)
+                    {
+                        for (int i = 0; i < info.Count; i++)
+                        {
+                            ItemInfo item = ItemInfo.CloneFromTemplate(info.Template, info);
+                            item.Count = 1;
+                            list.Add(item);
+                        }
+                    }
+                    else
+                    {
+                        list.Add(info);
+                    }
+                }
+                return this.SendItemsToMail(list, content, title, type, bussiness);
+            }
+        }
+
+        public bool SendItemsToMail(List<ItemInfo> items, string content, string title, eMailType type, PlayerBussiness pb)
+        {
+            bool flag = true;
+            int num = 0;
+            while (num < items.Count)
+            {
+                SqlDataProvider.Data.ItemInfo info2;
+                MailInfo mail = new MailInfo
+                {
+                    Title = (title != null) ? title : LanguageMgr.GetTranslation("Game.Server.GameUtils.Title", new object[0]),
+                    Gold = 0,
+                    IsExist = true,
+                    Money = 0,
+                    Receiver = this.PlayerCharacter.NickName,
+                    ReceiverID = this.PlayerId,
+                    Sender = this.PlayerCharacter.NickName,
+                    SenderID = this.PlayerId,
+                    Type = (int)type,
+                    GiftToken = 0
+                };
+                List<SqlDataProvider.Data.ItemInfo> list = new List<SqlDataProvider.Data.ItemInfo>();
+                StringBuilder builder = new StringBuilder();
+                StringBuilder builder2 = new StringBuilder();
+                builder.Append(LanguageMgr.GetTranslation("Game.Server.GameUtils.CommonBag.AnnexRemark", new object[0]));
+                content = (content != null) ? LanguageMgr.GetTranslation(content, new object[0]) : "";
+                int num2 = num;
+                if (items.Count > num2)
+                {
+                    info2 = items[num2];
+                    if (info2.ItemID == 0)
+                    {
+                        pb.AddGoods(info2);
+                    }
+                    else
+                    {
+                        list.Add(info2);
+                    }
+                    if (title == null)
+                    {
+                        mail.Title = info2.Template.Name;
+                    }
+                    mail.Annex1 = info2.ItemID.ToString();
+                    mail.Annex1Name = info2.Template.Name;
+                    builder.Append(string.Concat(new object[] { "1、", mail.Annex1Name, "x", info2.Count, ";" }));
+                    builder2.Append(string.Concat(new object[] { "1、", mail.Annex1Name, "x", info2.Count, ";" }));
+                }
+                num2 = num + 1;
+                if (items.Count > num2)
+                {
+                    info2 = items[num2];
+                    if (info2.ItemID == 0)
+                    {
+                        pb.AddGoods(info2);
+                    }
+                    else
+                    {
+                        list.Add(info2);
+                    }
+                    mail.Annex2 = info2.ItemID.ToString();
+                    mail.Annex2Name = info2.Template.Name;
+                    builder.Append(string.Concat(new object[] { "2、", mail.Annex2Name, "x", info2.Count, ";" }));
+                    builder2.Append(string.Concat(new object[] { "2、", mail.Annex2Name, "x", info2.Count, ";" }));
+                }
+                num2 = num + 2;
+                if (items.Count > num2)
+                {
+                    info2 = items[num2];
+                    if (info2.ItemID == 0)
+                    {
+                        pb.AddGoods(info2);
+                    }
+                    else
+                    {
+                        list.Add(info2);
+                    }
+                    mail.Annex3 = info2.ItemID.ToString();
+                    mail.Annex3Name = info2.Template.Name;
+                    builder.Append(string.Concat(new object[] { "3、", mail.Annex3Name, "x", info2.Count, ";" }));
+                    builder2.Append(string.Concat(new object[] { "3、", mail.Annex3Name, "x", info2.Count, ";" }));
+                }
+                num2 = num + 3;
+                if (items.Count > num2)
+                {
+                    info2 = items[num2];
+                    if (info2.ItemID == 0)
+                    {
+                        pb.AddGoods(info2);
+                    }
+                    else
+                    {
+                        list.Add(info2);
+                    }
+                    mail.Annex4 = info2.ItemID.ToString();
+                    mail.Annex4Name = info2.Template.Name;
+                    builder.Append(string.Concat(new object[] { "4、", mail.Annex4Name, "x", info2.Count, ";" }));
+                    builder2.Append(string.Concat(new object[] { "4、", mail.Annex4Name, "x", info2.Count, ";" }));
+                }
+                num2 = num + 4;
+                if (items.Count > num2)
+                {
+                    info2 = items[num2];
+                    if (info2.ItemID == 0)
+                    {
+                        pb.AddGoods(info2);
+                    }
+                    else
+                    {
+                        list.Add(info2);
+                    }
+                    mail.Annex5 = info2.ItemID.ToString();
+                    mail.Annex5Name = info2.Template.Name;
+                    builder.Append(string.Concat(new object[] { "5、", mail.Annex5Name, "x", info2.Count, ";" }));
+                    builder2.Append(string.Concat(new object[] { "5、", mail.Annex5Name, "x", info2.Count, ";" }));
+                }
+                mail.AnnexRemark = builder.ToString();
+                if ((content == null) && (builder2.ToString() == null))
+                {
+                    mail.Content = LanguageMgr.GetTranslation("Game.Server.GameUtils.Content", new object[0]);
+                }
+                else if (content != "")
+                {
+                    mail.Content = content;
+                }
+                else
+                {
+                    mail.Content = builder2.ToString();
+                }
+                if (pb.SendMail(mail))
+                {
+                    foreach (ItemInfo info3 in list)
+                    {
+                        // this.TakeOutItem(info3);
+                        this.RemoveItem(info3);
+                    }
+                }
+                else
+                {
+                    goto Label_073F;
+                }
+                Label_0738:
+                num += 5;
+                continue;
+                Label_073F:
+                flag = false;
+                goto Label_0738;
+            }
+            return flag;
+        }
+
         public void LoadMarryMessage()
         {
             using (PlayerBussiness db = new PlayerBussiness())
@@ -1078,6 +1253,21 @@ namespace Game.Server.GameObjects
         /// <summary>
         /// Save the player into the database
         /// </summary>
+        /// 
+
+        public bool SaveNewItems()
+        {
+            try
+            {
+                this.m_mainBag.SaveToDatabase();
+                return true;
+            }
+            catch (Exception)
+            {
+                return false;
+            }
+        }
+
         public bool SaveIntoDatabase()
         {
             try

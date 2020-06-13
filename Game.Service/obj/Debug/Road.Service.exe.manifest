@@ -49,7 +49,7 @@
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
-        <dsig:DigestValue>thRPf6M9Nd19KnzGysTN6NeF2+c=</dsig:DigestValue>
+        <dsig:DigestValue>6ju9SPBrQxSkye1TzJDgJjfbMCw=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
@@ -61,7 +61,7 @@
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
-        <dsig:DigestValue>XFW0mI0tLQY2GViKJObi8bzHUWM=</dsig:DigestValue>
+        <dsig:DigestValue>aE0Ir7ydMEeWUzjCEPbzfFjLR3o=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
@@ -73,19 +73,19 @@
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
-        <dsig:DigestValue>jSR0wjq9lC9RZ/HjSNcXLX3XFfw=</dsig:DigestValue>
+        <dsig:DigestValue>dRjSiFGollTsWy2ahBoR2bEMu7w=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
   <dependency>
-    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="Game.Server.dll" size="367616">
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="Game.Server.dll" size="370688">
       <assemblyIdentity name="Game.Server" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
-        <dsig:DigestValue>G5ZPnNpG0UfQ1XgthakW9VT4MCI=</dsig:DigestValue>
+        <dsig:DigestValue>ihEWJRWZ2LhJ0m1LLsAvbLJ7VGQ=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
@@ -109,19 +109,19 @@
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
-        <dsig:DigestValue>CeCLJv+8cG52RDiqx+3JMXwFNaE=</dsig:DigestValue>
+        <dsig:DigestValue>w6U0fsfQSaBcTsLXgUnh5ZEvho0=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
   <dependency>
-    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="SqlDataProvider.dll" size="145408">
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="SqlDataProvider.dll" size="145920">
       <assemblyIdentity name="SqlDataProvider" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
-        <dsig:DigestValue>08/kNVz84XxL4le+XpUv8wDkjcM=</dsig:DigestValue>
+        <dsig:DigestValue>nvgG/py/st+j6JbaUZpvNK7iypU=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>

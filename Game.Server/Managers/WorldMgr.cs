@@ -15,6 +15,7 @@ using SqlDataProvider.Data;
 using Game.Base.Packets;
 using System.Security.Cryptography;
 using System.Configuration;
+using Game.Server.Packets;
 
 namespace Game.Server.Managers
 {
@@ -243,5 +244,45 @@ namespace Game.Server.Managers
                 }
             }
         }
+
+        public static GSPacketIn SendSysNotice(string msg)
+        {
+            GSPacketIn pkg = new GSPacketIn(10);
+            pkg.WriteInt(2);
+            pkg.WriteString(msg);
+            SendToAll(pkg);
+            return pkg;
+        }
+
+        public static GSPacketIn SendSysNotice(eMessageType type, string msg, int ItemID, int TemplateID, string key, int zoneID)
+        {
+            int index = msg.IndexOf("@");
+            GSPacketIn pkg = new GSPacketIn(10);
+            pkg.WriteInt((int)type);
+            pkg.WriteString(msg.Replace("@", ""));
+            if (type == eMessageType.CROSS_NOTICE)
+            {
+                pkg.WriteInt(zoneID);
+            }
+            if (ItemID > 0)
+            {
+                pkg.WriteByte(1);
+                pkg.WriteInt(index);
+                pkg.WriteInt(TemplateID);
+                pkg.WriteInt(ItemID);
+                pkg.WriteString(key);
+            }
+            SendToAll(pkg);
+            return pkg;
+        }
+
+        public static void SendToAll(GSPacketIn pkg)
+        {
+            foreach (GamePlayer player in GetAllPlayers())
+            {
+                player.SendTCP(pkg);
+            }
+        }
+
     }
 }

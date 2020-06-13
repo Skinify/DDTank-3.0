@@ -45,5 +45,7 @@ namespace Game.Server.Packets
         /// </summary>
         Defence = 6,
 
+        CROSS_NOTICE = 12
+
     }
 }

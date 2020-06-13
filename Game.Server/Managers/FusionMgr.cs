@@ -13,7 +13,7 @@ using SqlDataProvider.Data;
 namespace Game.Server.Managers
 {
     public class FusionMgr
-    {   
+    {
         /// <summary>
         /// Defines a logger for this class.
         /// </summary>
@@ -122,13 +122,13 @@ namespace Game.Server.Managers
             //int BindType = 0;
             ItemTemplateInfo returnItem = null;
 
-            foreach(ItemInfo p in Items)
+            foreach (ItemInfo p in Items)
             {
                 list.Add(p.Template.FusionType);
 
                 if (p.Template.Level > MaxLevel)
                 {
-                    MaxLevel = p.Template.Level;                    
+                    MaxLevel = p.Template.Level;
                 }
 
                 TotalRate += p.Template.FusionRate;
@@ -151,7 +151,7 @@ namespace Game.Server.Managers
                     isBind = true;
                 }
             }
-            
+
             list.Sort();
             StringBuilder itemString = new StringBuilder();
             foreach (int i in list)
@@ -189,7 +189,7 @@ namespace Game.Server.Managers
                     ItemTemplateInfo tempMin = temps.Where(s => (TotalRate / (double)s.FusionNeedRate) > 1.1).OrderBy(s => (TotalRate / (double)s.FusionNeedRate)).FirstOrDefault();
                     if ((tempMax != null) && (tempMin == null))
                     {
-                        returnItem=tempMax;
+                        returnItem = tempMax;
                         result = true;
                     }
                     if ((tempMax != null) && (tempMin != null))
@@ -210,18 +210,18 @@ namespace Game.Server.Managers
                             returnItem = tempMax;
                             result = true;
                         }
-                        else 
+                        else
                         {
                             returnItem = tempMin;
                             result = true;
-                        }                        
+                        }
                     }
                     if ((tempMax == null) && (tempMin != null))
                     {
-                        returnItem=tempMin;
+                        returnItem = tempMin;
                         result = true;
                     }
-                    if(result)
+                    if (result)
                     {
                         foreach (ItemInfo p in Items)
                         {
@@ -248,7 +248,7 @@ namespace Game.Server.Managers
 
         public static Dictionary<int, double> FusionPreview(List<ItemInfo> Items, List<ItemInfo> AppendItems, ItemInfo Formul, ref bool isBind)
         {
-            List<int> list = new List<int>();            
+            List<int> list = new List<int>();
             int MaxLevel = 0;
             int TotalRate = 0;
             Dictionary<int, double> Item_Rate = new Dictionary<int, double>();
@@ -260,7 +260,7 @@ namespace Game.Server.Managers
 
                 if (p.Template.Level > MaxLevel)
                 {
-                    MaxLevel = p.Template.Level;                    
+                    MaxLevel = p.Template.Level;
                 }
 
                 TotalRate += p.Template.FusionRate;
@@ -302,14 +302,14 @@ namespace Game.Server.Managers
                     FusionInfo info = _fusions[key];
 
                     double rateMax = 0;
-                    double rateMin = 0;                    
+                    double rateMin = 0;
                     ItemTemplateInfo temp_0 = Bussiness.Managers.ItemMgr.GetGoodsbyFusionTypeandLevel(info.Reward, MaxLevel);
                     ItemTemplateInfo temp_1 = Bussiness.Managers.ItemMgr.GetGoodsbyFusionTypeandLevel(info.Reward, MaxLevel + 1);
                     ItemTemplateInfo temp_2 = Bussiness.Managers.ItemMgr.GetGoodsbyFusionTypeandLevel(info.Reward, MaxLevel + 2);
                     List<ItemTemplateInfo> temps = new List<ItemTemplateInfo>();
                     if (temp_2 != null)
-                    {                        
-                        temps.Add(temp_2);                        
+                    {
+                        temps.Add(temp_2);
                     }
                     if (temp_1 != null)
                     {
@@ -319,17 +319,17 @@ namespace Game.Server.Managers
                     {
                         temps.Add(temp_0);
                     }
-                    ItemTemplateInfo tempMax =temps.Where(s => (TotalRate / (double)s.FusionNeedRate) <= 1.1).OrderByDescending(s => (TotalRate / (double)s.FusionNeedRate)).FirstOrDefault();
+                    ItemTemplateInfo tempMax = temps.Where(s => (TotalRate / (double)s.FusionNeedRate) <= 1.1).OrderByDescending(s => (TotalRate / (double)s.FusionNeedRate)).FirstOrDefault();
                     ItemTemplateInfo tempMin = temps.Where(s => (TotalRate / (double)s.FusionNeedRate) > 1.1).OrderBy(s => (TotalRate / (double)s.FusionNeedRate)).FirstOrDefault();
-                    if ((tempMax != null)&&(tempMin==null))
+                    if ((tempMax != null) && (tempMin == null))
                     {
                         Item_Rate.Add(tempMax.TemplateID, 100);
                     }
-                    if((tempMax!=null)&&(tempMin!=null))
+                    if ((tempMax != null) && (tempMin != null))
                     {
                         if (tempMax.Level - tempMin.Level == 2)
                         {
-                            rateMax = 100 * TotalRate*0.6 / (double)tempMax.FusionNeedRate;
+                            rateMax = 100 * TotalRate * 0.6 / (double)tempMax.FusionNeedRate;
                             rateMin = 100 - rateMax;
                         }
                         else
@@ -340,9 +340,9 @@ namespace Game.Server.Managers
                         Item_Rate.Add(tempMax.TemplateID, rateMax);
                         Item_Rate.Add(tempMin.TemplateID, rateMin);
                     }
-                    if ((tempMax == null)&&(tempMin != null))
-                    {                                                    
-                        Item_Rate.Add(tempMin.TemplateID, 100);                        
+                    if ((tempMax == null) && (tempMin != null))
+                    {
+                        Item_Rate.Add(tempMin.TemplateID, 100);
                     }
                     int[] templist = Item_Rate.Keys.ToArray();
                     foreach (int ID in templist)
