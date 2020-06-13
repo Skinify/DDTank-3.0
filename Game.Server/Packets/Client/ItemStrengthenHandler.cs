@@ -30,10 +30,10 @@ namespace Game.Server.Packets.Client
                 return 0;
             }
             bool flag2 = packet.ReadBoolean();
-            List<SqlDataProvider.Data.ItemInfo> list = new List<SqlDataProvider.Data.ItemInfo>();
-            SqlDataProvider.Data.ItemInfo itemAt = client.Player.StoreBag2.GetItemAt(5);
-            SqlDataProvider.Data.ItemInfo item = null;
-            SqlDataProvider.Data.ItemInfo info3 = null;
+            List<ItemInfo> list = new List<ItemInfo>();
+            ItemInfo itemAt = client.Player.StoreBag2.GetItemAt(5);
+            ItemInfo item = null;
+            ItemInfo info3 = null;
             string property = null;
             string addItem = "";
             using (ItemRecordBussiness bussiness = new ItemRecordBussiness())
@@ -56,7 +56,9 @@ namespace Game.Server.Packets.Client
                 }
                 else
                 {
-                    info5 = StrengthenMgr.FindStrengthenGoodsInfo(itemAt.StrengthenLevel, itemAt.TemplateID);
+                    info5 = StrengthenMgr.FindStrengthenGoodsInfo(itemAt.StrengthenLevel + 1, itemAt.TemplateID);
+                    if (info5 == null)
+                        Console.WriteLine("Game.Server.Packets.Client.ItemStrengthenHandler.Arma sem proxima evolução: " + itemAt.TemplateID + " " + itemAt.StrengthenLevel + 1);
                     info4 = StrengthenMgr.FindStrengthenInfo(itemAt.StrengthenLevel + 1);
                 }
                 if (info4 == null)
@@ -79,7 +81,7 @@ namespace Game.Server.Packets.Client
                         info3 = null;
                     }
                 }
-                SqlDataProvider.Data.ItemInfo info6 = client.Player.StoreBag2.GetItemAt(0);
+                ItemInfo info6 = client.Player.StoreBag2.GetItemAt(0);
                 if (!((((info6 == null) || (info6.Template.CategoryID != 11)) || ((info6.Template.Property1 != 2) && (info6.Template.Property1 != 0x23))) || list.Contains(info6)))
                 {
                     flag = flag || info6.IsBinds;
@@ -87,7 +89,7 @@ namespace Game.Server.Packets.Client
                     list.Add(info6);
                     num3 += info6.Template.Property2;
                 }
-                SqlDataProvider.Data.ItemInfo info7 = client.Player.StoreBag2.GetItemAt(1);
+                ItemInfo info7 = client.Player.StoreBag2.GetItemAt(1);
                 if (!((((info7 == null) || (info7.Template.CategoryID != 11)) || ((info7.Template.Property1 != 2) && (info7.Template.Property1 != 0x23))) || list.Contains(info7)))
                 {
                     flag = flag || info7.IsBinds;
@@ -95,7 +97,7 @@ namespace Game.Server.Packets.Client
                     list.Add(info7);
                     num3 += info7.Template.Property2;
                 }
-                SqlDataProvider.Data.ItemInfo info8 = client.Player.StoreBag2.GetItemAt(2);
+                ItemInfo info8 = client.Player.StoreBag2.GetItemAt(2);
                 if (!((((info8 == null) || (info8.Template.CategoryID != 11)) || ((info8.Template.Property1 != 2) && (info8.Template.Property1 != 0x23))) || list.Contains(info8)))
                 {
                     flag = flag || info8.IsBinds;
@@ -149,7 +151,7 @@ namespace Game.Server.Packets.Client
                     {
                         builder.Append(string.Concat(new object[] { list[i].ItemID, ":", list[i].TemplateID, "," }));
                         AbstractInventory itemInventory = client.Player.GetItemInventory(list[i].Template);
-                        SqlDataProvider.Data.ItemInfo info11 = list[i];
+                        ItemInfo info11 = list[i];
                         info11.Count--;
                         itemInventory.UpdateItem(list[i]);
                     }
@@ -176,13 +178,13 @@ namespace Game.Server.Packets.Client
                             ItemTemplateInfo goods = ItemMgr.FindItemTemplate(info5.GainEquip);
                             if (goods != null)
                             {
-                                SqlDataProvider.Data.ItemInfo info13 = SqlDataProvider.Data.ItemInfo.CreateFromTemplate(goods, 1, 0x74);
+                                ItemInfo info13 = ItemInfo.CreateFromTemplate(goods, 1, 0x74);
                                 info13.StrengthenLevel = itemAt.StrengthenLevel + 1;
-                                SqlDataProvider.Data.ItemInfo.OpenHole(ref info13);
+                                ItemInfo.OpenHole(ref info13);
                                 StrengthenMgr.InheritProperty(itemAt, ref info13);
                                 client.Player.StoreBag2.AddItemTo(info13, 5);
                                 itemAt = info13;
-                                if ((((itemAt.StrengthenLevel == 3) || (itemAt.StrengthenLevel == 6)) || (itemAt.StrengthenLevel == 9)) || (itemAt.StrengthenLevel == 12))
+                                if (((itemAt.StrengthenLevel == 3) || (itemAt.StrengthenLevel == 6)) || (itemAt.StrengthenLevel == 9))
                                 {
                                     @in.WriteBoolean(true);
                                 }
@@ -195,9 +197,9 @@ namespace Game.Server.Packets.Client
                         else
                         {
                             itemAt.StrengthenLevel++;
-                            SqlDataProvider.Data.ItemInfo.OpenHole(ref itemAt);
+                            ItemInfo.OpenHole(ref itemAt);
                             client.Player.StoreBag2.AddItemTo(itemAt, 5);
-                            if ((((itemAt.StrengthenLevel == 3) || (itemAt.StrengthenLevel == 6)) || (itemAt.StrengthenLevel == 9)) || (itemAt.StrengthenLevel == 12))
+                            if (((itemAt.StrengthenLevel == 3) || (itemAt.StrengthenLevel == 6)) || (itemAt.StrengthenLevel == 9))
                             {
                                 @in.WriteBoolean(true);
                             }

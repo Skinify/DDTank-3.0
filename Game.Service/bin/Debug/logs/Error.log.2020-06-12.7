@@ -1,0 +1,18 @@
+22:13:06,394 - [22] - ERROR - Game.Base.Packets.PacketProcessor - Error while processing packet (handler=Game.Server.Packets.Client.ItemFusionHandler  client: 127.0.0.1:53017)
+System.NullReferenceException: Referência de objeto não definida para uma instância de um objeto.
+   em Game.Server.Managers.FusionMgr.FusionPreview(List`1 Items, List`1 AppendItems, ItemInfo Formul, Boolean& isBind) na D:\DDT\DDTank-3.0\Game.Server\Managers\FusionMgr.cs:linha 273
+   em Game.Server.Packets.Client.ItemFusionHandler.HandlePacket(GameClient client, GSPacketIn packet) na D:\DDT\DDTank-3.0\Game.Server\Packets\Client\ItemFusionHandler.cs:linha 137
+   em Game.Base.Packets.PacketProcessor.HandlePacket(GSPacketIn packet) na D:\DDT\DDTank-3.0\Game.Server\Packets\Server\PacketProcessor.cs:linha 88
+22:13:06,484 - [22] - ERROR - Game.Base.Packets.PacketProcessor - Package Buffer:
+0000: 71 AB 00 15 01 1B 00 4E 00 00 00 56 00 00 00 00   q......N...V....
+0010: 00 00 00 00 00                                    .....           
+
+22:13:14,595 - [4] - ERROR - Game.Base.Packets.PacketProcessor - Error while processing packet (handler=Game.Server.Packets.Client.ItemFusionHandler  client: 127.0.0.1:53017)
+System.NullReferenceException: Referência de objeto não definida para uma instância de um objeto.
+   em Game.Server.Managers.FusionMgr.Fusion(List`1 Items, List`1 AppendItems, ItemInfo Formul, Boolean& isBind, Boolean& result) na D:\DDT\DDTank-3.0\Game.Server\Managers\FusionMgr.cs:linha 141
+   em Game.Server.Packets.Client.ItemFusionHandler.HandlePacket(GameClient client, GSPacketIn packet) na D:\DDT\DDTank-3.0\Game.Server\Packets\Client\ItemFusionHandler.cs:linha 159
+   em Game.Base.Packets.PacketProcessor.HandlePacket(GSPacketIn packet) na D:\DDT\DDTank-3.0\Game.Server\Packets\Server\PacketProcessor.cs:linha 88
+22:13:14,600 - [4] - ERROR - Game.Base.Packets.PacketProcessor - Package Buffer:
+0000: 71 AB 00 15 01 1C 00 4E 00 00 00 56 00 00 00 00   q......N...V....
+0010: 00 00 00 00 01                                    .....           
+

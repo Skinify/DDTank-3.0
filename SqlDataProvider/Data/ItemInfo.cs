@@ -431,14 +431,12 @@ namespace SqlDataProvider.Data
 
         public static ItemInfo CreateFromTemplate(ItemTemplateInfo goods, int count, int type)
         {
-            Console.WriteLine("SqlDataProvider.Data.ItemInfo.teste1");
 
             if (goods == null)
                 return null;
 
             ItemInfo userGoods = new ItemInfo(goods);
 
-            Console.WriteLine("SqlDataProvider.Data.ItemInfo.teste2");
 
             userGoods.AgilityCompose = 0;
             userGoods.AttackCompose = 0;
@@ -467,12 +465,9 @@ namespace SqlDataProvider.Data
             userGoods.Hole5 = -1;
             userGoods.Hole6 = -1;
 
-            Console.WriteLine("SqlDataProvider.Data.ItemInfo.teste3");
-
 
             OpenHole(ref userGoods);
 
-            Console.WriteLine("SqlDataProvider.Data.ItemInfo.teste4");
 
             return userGoods;
         }

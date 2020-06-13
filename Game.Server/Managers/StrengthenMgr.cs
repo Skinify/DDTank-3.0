@@ -157,18 +157,16 @@ namespace Game.Server.Managers
         }
         public static StrengthenGoodsInfo FindStrengthenGoodsInfo(int level, int TemplateId)
         {
-            Console.WriteLine("Game.Server.StrengthenMgr.FindStrengthenGoodsInfo.teste1: " + level);
             m_lock.AcquireReaderLock(Timeout.Infinite);
             try
             {
                 foreach (int i in Strengthens_Goods.Keys)
                 {
+                    Console.WriteLine(Strengthens_Goods[i].CurrentEquip + " " + Strengthens_Goods[i].Level);
                     if (Strengthens_Goods[i].Level == level && TemplateId == Strengthens_Goods[i].CurrentEquip)
                         return Strengthens_Goods[i];
 
                 }
-                //if (Strengthens_Goods.ContainsKey(level))
-                //    return Strengthens_Goods[level];
             }
             catch
             { }

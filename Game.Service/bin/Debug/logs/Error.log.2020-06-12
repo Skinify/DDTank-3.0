@@ -1,0 +1,8 @@
+23:42:15,784 - [23] - ERROR - Game.Base.Packets.PacketProcessor - Error while processing packet (handler=Game.Server.Packets.Client.ItemStrengthenHandler  client: 127.0.0.1:53586)
+System.NullReferenceException: Referência de objeto não definida para uma instância de um objeto.
+   em Game.Server.Packets.Client.ItemStrengthenHandler.HandlePacket(GameClient client, GSPacketIn packet) na D:\DDT\DDTank-3.0\Game.Server\Packets\Client\ItemStrengthenHandler.cs:linha 60
+   em Game.Base.Packets.PacketProcessor.HandlePacket(GSPacketIn packet) na D:\DDT\DDTank-3.0\Game.Server\Packets\Server\PacketProcessor.cs:linha 88
+23:42:15,804 - [23] - ERROR - Game.Base.Packets.PacketProcessor - Package Buffer:
+0000: 71 AB 00 15 01 08 00 3B 00 00 00 56 00 00 00 00   q......;...V....
+0010: 00 00 00 00 00                                    .....           
+

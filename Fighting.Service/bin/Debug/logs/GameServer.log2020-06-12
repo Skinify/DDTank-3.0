@@ -1,0 +1,23 @@
+23:07:32,835 - [MAIN] - INFO  - Fighting.Server.FightServer - InitSocket Port:9208: True
+23:07:32,954 - [MAIN] - INFO  - Fighting.Server.FightServer - Registering global event handlers: true
+23:07:32,955 - [MAIN] - INFO  - Fighting.Server.FightServer - Script components: True
+23:07:32,958 - [MAIN] - INFO  - Fighting.Server.FightServer - RoomMgr.Setup: True
+23:07:32,959 - [MAIN] - INFO  - Fighting.Server.FightServer - GameMgr.Setup: True
+23:07:33,152 - [MAIN] - INFO  - Fighting.Server.FightServer - MapMgr Init: True
+23:07:33,414 - [MAIN] - INFO  - Fighting.Server.FightServer - ItemMgr Init: True
+23:07:33,427 - [MAIN] - INFO  - Fighting.Server.FightServer - ItemMgr Init: True
+23:07:33,845 - [MAIN] - INFO  - Fighting.Server.FightServer - BallMgr Init: True
+23:07:33,857 - [MAIN] - INFO  - Fighting.Server.FightServer - BallConfigMgr Init: True
+23:07:33,886 - [MAIN] - INFO  - Fighting.Server.FightServer - DropMgr Init: True
+23:07:33,907 - [MAIN] - INFO  - Fighting.Server.FightServer - NPCInfoMgr Init: True
+23:07:33,915 - [MAIN] - INFO  - Fighting.Server.FightServer - LanguageMgr Init: True
+23:07:33,932 - [MAIN] - INFO  - Game.Logic.Spells.SpellMgr - SpellMgr: Loaded 15 spell handlers from GameServer Assembly!
+23:07:33,943 - [MAIN] - INFO  - Fighting.Server.FightServer - base.Start(): True
+23:07:33,952 - [MAIN] - INFO  - Fighting.Server.FightServer - GameServer is now open for connections!
+23:07:39,708 - [3] - INFO  - Game.Base.BaseServer - Incoming connection from 127.0.0.1:53403
+23:22:30,505 - [3] - INFO  - Game.Base.BaseClient - Disconnecting client (not connected), received bytes=0
+23:23:09,524 - [3] - INFO  - Game.Base.BaseServer - Incoming connection from 127.0.0.1:53496
+23:33:23,842 - [3] - INFO  - Game.Base.BaseClient - Disconnecting client (not connected), received bytes=0
+23:34:32,070 - [3] - INFO  - Game.Base.BaseServer - Incoming connection from 127.0.0.1:53552
+23:40:54,192 - [3] - INFO  - Game.Base.BaseClient - Disconnecting client (not connected), received bytes=0
+23:41:10,156 - [3] - INFO  - Game.Base.BaseServer - Incoming connection from 127.0.0.1:53580
