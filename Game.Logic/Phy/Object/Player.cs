@@ -1,14 +1,11 @@
 ﻿using System;
 using System.Drawing;
 using SqlDataProvider.Data;
-using Game.Base.Packets;
 using System.Collections;
 using Bussiness.Managers;
 using Game.Logic.Effects;
 using Game.Logic.Actions;
 using Game.Logic.Phy.Maths;
-using Game.Logic.Phy.Maps;
-using Game.Logic.Phy.Actions;
 using Game.Logic.Spells;
 using System.Collections.Generic;
 using Bussiness;

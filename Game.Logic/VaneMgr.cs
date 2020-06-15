@@ -19,13 +19,11 @@ namespace Game.Logic
 
         private static Dictionary<byte[], VaneInfo> LoadFromDatabase()
         {
-            Console.WriteLine("Game.Logic.VaneMgr.LoadFromDatabase.teste1");
             Dictionary<byte[], VaneInfo> dictionary = new Dictionary<byte[], VaneInfo>();
             using (ProduceBussiness bussiness = new ProduceBussiness())
             {
                 foreach (VaneInfo info in bussiness.GetAllVane())
                 {
-                    Console.WriteLine("Game.Logic.VaneMgr.LoadFromDatabase.teste2");
                     if (!dictionary.ContainsKey(info.bmp))
                     {
                         dictionary.Add(info.bmp, info);
@@ -40,7 +38,6 @@ namespace Game.Logic
             try
             {
                 Dictionary<byte[], VaneInfo> dictionary = LoadFromDatabase();
-                Console.WriteLine("Game.Logic.VaneMgr.ReLoad.teste1");
                 if (dictionary.Values.Count > 0)
                 {
                     Interlocked.Exchange<Dictionary<byte[], VaneInfo>>(ref m_infos, dictionary);
