@@ -1101,7 +1101,14 @@ namespace Game.Base.Packets
         {
             GSPacketIn packet = new GSPacketIn(0x26, info.ID);
             packet.WriteInt(info.Money);
-            packet.WriteInt(this.m_gameClient.Player.PropBag.GetItemCount(0x2c90));
+            if(m_gameClient != null)
+            {
+                packet.WriteInt(m_gameClient.Player.PropBag.GetItemCount(0x2c90));
+            }
+            else
+            {
+                packet.WriteInt(0);
+            }
             packet.WriteInt(info.Gold);
             packet.WriteInt(info.GiftToken);
             this.SendTCP(packet);

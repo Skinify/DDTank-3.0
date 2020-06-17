@@ -168,7 +168,6 @@ namespace Game.Server
 
         private void resetStoreBag2(GamePlayer player)
         {
-            Console.WriteLine("Game.Server.GameClient.teste1");
             PlayerInventory bag = player.StoreBag2;
             PlayerEquipInventory mainBag = player.MainBag;
             PlayerInventory propBag = player.PropBag;

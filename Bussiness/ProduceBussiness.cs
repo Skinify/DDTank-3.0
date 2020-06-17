@@ -230,17 +230,13 @@ namespace Bussiness
 
         public VaneInfo[] GetAllVane()
         {
-            Console.WriteLine("Bussiness.ProduceBussiness.Bussiness.teste1");
             List<VaneInfo> list = new List<VaneInfo>();
             SqlDataReader resultDataReader = null;
             try
             {
-                Console.WriteLine("Bussiness.ProduceBussiness.Bussiness.teste2");
                 db.GetReader(ref resultDataReader, "SP_Vane_All");
-                Console.WriteLine("Bussiness.ProduceBussiness.Bussiness.teste3");
                 while (resultDataReader.Read())
                 {
-                    Console.WriteLine("Bussiness.ProduceBussiness.Bussiness.teste4");
                     VaneInfo item = new VaneInfo();
                     item.bmpid = (int)resultDataReader["bmpid"];
                     item.bmp = (byte[])resultDataReader["bmp"];

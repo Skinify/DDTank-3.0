@@ -31,15 +31,11 @@ namespace Game.Logic
         {
             try
             {
-                Console.WriteLine("Game.Logic.BallMgr.ReLoad.teste1");
                 Dictionary<int, BallInfo> tempBalls = LoadFromDatabase();
-                Console.WriteLine("Game.Logic.BallMgr.ReLoad.teste2");
                 Dictionary<int, Tile> tempBallTile = LoadFromFiles(tempBalls);
-                Console.WriteLine("Game.Logic.BallMgr.ReLoad.teste3");
 
                 if (tempBalls.Values.Count > 0 && tempBallTile.Values.Count > 0)
                 {
-                    Console.WriteLine("Game.Logic.BallMgr.ReLoad.teste4");
                     Interlocked.Exchange(ref m_infos, tempBalls);
                     Interlocked.Exchange(ref m_tiles, tempBallTile);
                     return true;
@@ -47,7 +43,6 @@ namespace Game.Logic
             }
             catch (Exception ex)
             {
-                Console.WriteLine("Game.Logic.BallMgr.testeEx1");
                 log.Error("Ball Mgr init error:", ex);
             }
             return false;
@@ -56,7 +51,6 @@ namespace Game.Logic
         private static Dictionary<int, BallInfo> LoadFromDatabase()
         {
             Dictionary<int, BallInfo> list = new Dictionary<int, BallInfo>();
-            Console.WriteLine("Game.Logic.BallMgr.LoadFromDatabase.teste1");
             using (ProduceBussiness db = new ProduceBussiness())
             {
                 BallInfo[] ballInfos = db.GetAllBall();
