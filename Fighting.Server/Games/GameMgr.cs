@@ -251,7 +251,7 @@ namespace Fighting.Server.Games
 
         public static void SendStartMessage(BattleGame game)
         {
-            Game.Base.Packets.GSPacketIn pkg = new Game.Base.Packets.GSPacketIn((byte)ePackageType.GAME_CHAT);
+            GSPacketIn pkg = new GSPacketIn((byte)ePackageType.GAME_CHAT);
             pkg.WriteInt(2);
             if (game.GameType == eGameType.Free)
             {
@@ -261,11 +261,11 @@ namespace Fighting.Server.Games
                     GSPacketIn pkg1 = SendBufferList(p, (p.PlayerDetail as ProxyPlayer).Buffers);
                     game.SendToAll(pkg1);
                 }
-                pkg.WriteString("撮合成功！您所在的小队开始了自由战");
+                pkg.WriteString(Bussiness.LanguageMgr.GetTranslation("StartMessage.free"));
             }
             else
             {
-                pkg.WriteString("撮合成功！您所在的小队开始了公会战");
+                pkg.WriteString(Bussiness.LanguageMgr.GetTranslation("StartMessage.Consortia"));
             }
             game.SendToAll(pkg, null);
         }

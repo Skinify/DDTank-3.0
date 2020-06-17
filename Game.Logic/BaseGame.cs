@@ -17,7 +17,7 @@ using System.Configuration;
 
 namespace Game.Logic
 {
-    public class  BaseGame : AbstractGame
+    public class BaseGame : AbstractGame
     {
         public static readonly ILog log = LogManager.GetLogger(MethodBase.GetCurrentMethod().DeclaringType);
 
@@ -1146,7 +1146,14 @@ namespace Game.Logic
                 pkg.WriteInt(12);
                 pkg.WriteString(" ");
                 pkg.WriteDateTime(DateTime.Now);
-                pkg.WriteInt(0);
+                if (ReferenceEquals(gp.SecondWeapon, null))
+                {
+                    pkg.WriteInt(0);
+                }
+                else
+                {
+                    pkg.WriteInt(gp.SecondWeapon.TemplateID);
+                }
                 pkg.WriteInt(gp.PlayerCharacter.Nimbus);
 
                 pkg.WriteInt(gp.PlayerCharacter.ConsortiaID);// pkg.WriteInt(0);
@@ -1170,12 +1177,12 @@ namespace Game.Logic
                     pkg.WriteInt(gp.PlayerCharacter.SpouseID);
                     pkg.WriteString(gp.PlayerCharacter.SpouseName);
                 }
-                pkg.WriteInt(5); pkg.WriteInt(5); pkg.WriteInt(5); pkg.WriteInt(5); pkg.WriteInt(5); 
+                pkg.WriteInt(5); pkg.WriteInt(5); pkg.WriteInt(5); pkg.WriteInt(5); pkg.WriteInt(5);
                 pkg.WriteInt(5);
 
                 pkg.WriteInt(p.Team);
                 pkg.WriteInt(p.Id);
-                pkg.WriteInt(p.MaxBlood);                            
+                pkg.WriteInt(p.MaxBlood);
 
             }
 
@@ -1227,7 +1234,7 @@ namespace Game.Logic
             pkg.WriteInt(obj.Rotation);
             pkg.WriteInt(0);
             pkg.WriteInt(0);
-            
+
             //var id:int = evt.pkg.readInt();
             //var type:int =  evt.pkg.readInt();
             //var px:int = evt.pkg.readInt();
@@ -1431,11 +1438,11 @@ namespace Game.Logic
             //pkg.WriteInt(0);
             //pkg
             //pkg.WriteString(!string.IsNullOrEmpty(action) ? action : "");
-            
-                //var livingID:int = e.pkg.readInt();
-                //var demage:int = e.pkg.readInt();
-                //var blood : int = e.pkg.readInt();
-                //var dander:int = e.pkg.readInt();
+
+            //var livingID:int = e.pkg.readInt();
+            //var demage:int = e.pkg.readInt();
+            //var blood : int = e.pkg.readInt();
+            //var dander:int = e.pkg.readInt();
             SendToAll(pkg);
         }
 
@@ -1584,23 +1591,23 @@ namespace Game.Logic
         }
         public static int getTurnTime(int timeType)
         {
-           
+
             switch (timeType)
             {
                 case 1:
-                       return 6;
+                    return 6;
                 case 2:
-                        return 8;
+                    return 8;
                 case 3:
-                        return 11;
+                    return 11;
                 case 4:
-                        return 16;
+                    return 16;
                 case 5:
-                        return 21;
+                    return 21;
                 case 6:
-                        return 31;
+                    return 31;
                 default:
-                        return -1;
+                    return -1;
             }
 
         }
@@ -1764,7 +1771,7 @@ namespace Game.Logic
         //    pkg.WriteBoolean(false);
         //    player.PlayerDetail.SendTCP(pkg);
         //}
-        public static int serverId=int.Parse(ConfigurationSettings.AppSettings["ServerID"]);
+        public static int serverId = int.Parse(ConfigurationSettings.AppSettings["ServerID"]);
         internal void SendPlayerRemove(Player player)
         {
             GSPacketIn pkg = new GSPacketIn((byte)ePackageType.GAME_PLAYER_EXIT, player.PlayerDetail.PlayerCharacter.ID);

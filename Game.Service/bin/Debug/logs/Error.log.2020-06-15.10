@@ -1,0 +1,10 @@
+14:13:49,394 - [22] - ERROR - Game.Server.GameObjects.GamePlayer - Player exit Game Error!
+System.NullReferenceException: Referência de objeto não definida para uma instância de um objeto.
+   em Game.Base.Packets.AbstractPacketLib.SendUpdatePrivateInfo(PlayerInfo info) na D:\DDT\DDTank-3.0\Game.Server\Packets\Server\AbstractPacketLib.cs:linha 1104
+   em Game.Server.GameObjects.GamePlayer.UpdateProperties() na D:\DDT\DDTank-3.0\Game.Server\GameObjects\GamePlayer.cs:linha 572
+   em Game.Server.GameObjects.GamePlayer.OnPropertiesChanged() na D:\DDT\DDTank-3.0\Game.Server\GameObjects\GamePlayer.cs:linha 567
+   em Game.Server.GameObjects.GamePlayer.RemoveGP(Int32 gp) na D:\DDT\DDTank-3.0\Game.Server\GameObjects\GamePlayer.cs:linha 751
+   em Game.Logic.PVEGame.RemovePlayer(IGamePlayer gp, Boolean isKick) na D:\DDT\DDTank-3.0\Game.Logic\PVEGame.cs:linha 400
+   em Game.Server.Rooms.BaseRoom.RemovePlayerUnsafe(GamePlayer player, Boolean isKick) na D:\DDT\DDTank-3.0\Game.Server\Rooms\BaseRoom.cs:linha 640
+   em Game.Server.Rooms.BaseRoom.RemovePlayerUnsafe(GamePlayer player) na D:\DDT\DDTank-3.0\Game.Server\Rooms\BaseRoom.cs:linha 562
+   em Game.Server.GameObjects.GamePlayer.Quit() na D:\DDT\DDTank-3.0\Game.Server\GameObjects\GamePlayer.cs:linha 1314
