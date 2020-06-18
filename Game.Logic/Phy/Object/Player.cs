@@ -54,10 +54,11 @@ namespace Game.Logic.Phy.Object
 
         public bool Ready;
 
+        public int qtdSecondWeapon;
+
         public Player(IGamePlayer player, int id, BaseGame game, int team)
             : base(id, game, team, "", "", 1000, 0, 1)                   //TODO   lastPatemer    direction
         {
-            Console.WriteLine("Game.Logic.Player.teste1");
             m_rect = new Rectangle(-15, -20, 30, 30);
             m_player = player;
             m_player.GamePlayerId = id;
@@ -73,6 +74,14 @@ namespace Game.Logic.Phy.Object
             TotalAllScore = 0;
             TotalAllCure = 0;
             m_weapon = m_player.MainWeapon;
+            if(player.SecondWeapon != null)
+            {
+                qtdSecondWeapon = PlayerDetail.SecondWeapon.StrengthenLevel + 1;
+            }
+            else
+            {
+                qtdSecondWeapon = 0;
+            }
 
             Console.WriteLine("Game.Logic.Player.teste2");
             if (m_weapon != null)
@@ -755,20 +764,29 @@ namespace Game.Logic.Phy.Object
 
         private int m_secondWeapon = 0;
 
+
         public void UseSecondWeapon()
         {
             if (m_secondWeapon <= 0)
             {
-                if (PlayerDetail.SecondWeapon.Template.TemplateID == 17003 || PlayerDetail.SecondWeapon.Template.TemplateID == 17004)
+                if(qtdSecondWeapon > 0)
                 {
-                    new AddDefenceEffect(PlayerDetail.SecondWeapon.Template.Property4 + PlayerDetail.SecondWeapon.StrengthenLevel * 2, 100).Start(this) ;
+                    if (PlayerDetail.SecondWeapon.Template.TemplateID == 17003 || PlayerDetail.SecondWeapon.Template.TemplateID == 17004)//TODOS ESCUDOS
+                    {
+                        new AddDefenceEffect(PlayerDetail.SecondWeapon.Template.Property4 + PlayerDetail.SecondWeapon.StrengthenLevel * 2, 100).Start(this);
+                    }
+                    else
+                    {
+                        m_secondWeapon = SECOND_WEAPON;
+                        SetCurrentWeapon(PlayerDetail.SecondWeapon.Template);
+                    }
+                    qtdSecondWeapon--;
                 }
                 else
                 {
-                    m_secondWeapon = SECOND_WEAPON;
-                    SetCurrentWeapon(PlayerDetail.SecondWeapon.Template);
+                    m_player.SendMessage(LanguageMgr.GetTranslation("UnusableSecondWeapon", PlayerDetail.SecondWeapon.Template.Name));
                 }
-               // UseItem(PlayerDetail.SecondWeapon.Template);
+                //UseItem(PlayerDetail.SecondWeapon.Template);
                 m_game.SendPlayerUseProp(this, -2, -2, m_weapon.TemplateID);
             }
         }
