@@ -88,7 +88,7 @@
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
-        <dsig:DigestValue>wMchpE/22v8F162clCxd9Ox5H4M=</dsig:DigestValue>
+        <dsig:DigestValue>53jMxxapQHUqOXNYdoSVQca//jw=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
@@ -105,14 +105,14 @@
     </dependentAssembly>
   </dependency>
   <dependency>
-    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="Game.Logic.dll" size="178176">
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="Game.Logic.dll" size="179200">
       <assemblyIdentity name="Game.Logic" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
-        <dsig:DigestValue>xKep8E09LmI9D/LSgv3XxLoxX9I=</dsig:DigestValue>
+        <dsig:DigestValue>Rwtu5qLAWhiGIC8Iq36tKj0Zt14=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>

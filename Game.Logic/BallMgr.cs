@@ -91,7 +91,7 @@ namespace Game.Logic
 
         public static BallInfo FindBall(int id)
         {
-
+            Console.WriteLine("Game.Logic.BallMgr.FindBall.teste1");
             if (m_infos.ContainsKey(id))
                 return m_infos[id];
             //else
@@ -106,8 +106,13 @@ namespace Game.Logic
 
         public static Tile FindTile(int id)
         {
+            Console.WriteLine("Game.Logic.BallMgr.teste1");
             if (m_tiles.ContainsKey(id))
+            {
+                Console.WriteLine("Game.Logic.BallMgr.tilesEncontradas");
                 return m_tiles[id];
+            }
+            Console.WriteLine("Game.Logic.BallMgr.tilesNãoEncontradas");
             return null;
         }
 
@@ -120,6 +125,7 @@ namespace Game.Logic
                 case 3:
                     return BombType.TRANFORM;
                 case 5:
+                case 59:
                 case 64:
                     return BombType.CURE;
                 default:

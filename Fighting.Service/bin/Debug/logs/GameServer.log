@@ -42,4 +42,183 @@
 18:44:48,204 - [3] - INFO  - Game.Logic.BaseGame - Game.Logic.Actions.ProcessPacketAction
 18:44:48,252 - [3] - INFO  - Game.Logic.BaseGame - Game.Logic.Actions.ProcessPacketAction
 18:44:56,368 - [3] - INFO  - Game.Logic.BaseGame - Game.Logic.Actions.ProcessPacketAction
-18:44:56,375 - [6] - INFO  - Game.Logic.BaseGame - Game.Logic.Actio
+18:44:56,375 - [6] - INFO  - Game.Logic.BaseGame - Game.Logic.Actio11:18:46,973 - [MAIN] - INFO  - Fighting.Server.FightServer - InitSocket Port:9208: True
+11:18:47,058 - [MAIN] - INFO  - Fighting.Server.FightServer - Registering global event handlers: true
+11:18:47,058 - [MAIN] - INFO  - Fighting.Server.FightServer - Script components: True
+11:18:47,060 - [MAIN] - INFO  - Fighting.Server.FightServer - RoomMgr.Setup: True
+11:18:47,070 - [MAIN] - INFO  - Fighting.Server.FightServer - GameMgr.Setup: True
+11:18:47,372 - [MAIN] - INFO  - Fighting.Server.FightServer - MapMgr Init: True
+11:18:47,845 - [MAIN] - INFO  - Fighting.Server.FightServer - ItemMgr Init: True
+11:18:47,861 - [MAIN] - INFO  - Fighting.Server.FightServer - ItemMgr Init: True
+11:18:48,375 - [MAIN] - INFO  - Fighting.Server.FightServer - BallMgr Init: True
+11:18:48,387 - [MAIN] - INFO  - Fighting.Server.FightServer - BallConfigMgr Init: True
+11:18:48,412 - [MAIN] - INFO  - Fighting.Server.FightServer - DropMgr Init: True
+11:18:48,437 - [MAIN] - INFO  - Fighting.Server.FightServer - NPCInfoMgr Init: True
+11:18:48,448 - [MAIN] - INFO  - Fighting.Server.FightServer - LanguageMgr Init: True
+11:18:48,467 - [MAIN] - INFO  - Game.Logic.Spells.SpellMgr - SpellMgr: Loaded 15 spell handlers from GameServer Assembly!
+11:18:48,479 - [MAIN] - INFO  - Fighting.Server.FightServer - base.Start(): True
+11:18:48,488 - [MAIN] - INFO  - Fighting.Server.FightServer - GameServer is now open for connections!
+11:18:52,746 - [3] - INFO  - Game.Base.BaseServer - Incoming connection from 127.0.0.1:50512
+11:25:28,483 - [5] - INFO  - Game.Logic.BaseGame - Game.Logic.Actions.CheckPVPGameStateAction
+11:25:28,483 - [6] - INFO  - Game.Logic.BaseGame - Game.Logic.Actions.CheckPVPGameStateAction
+11:25:28,525 - [6] - INFO  - Game.Logic.BaseGame - Game.Logic.Actions.WaitPlayerLoadingAction
+11:25:30,067 - [3] - INFO  - Game.Logic.BaseGame - Game.Logic.Actions.ProcessPacketAction
+11:25:30,386 - [3] - INFO  - Game.Logic.BaseGame - Game.Logic.Actions.ProcessPacketAction
+11:25:31,087 - [3] - INFO  - Game.Logic.BaseGame - Game.Logic.Actions.ProcessPacketAction
+11:25:31,109 - [6] - INFO  - Game.Logic.BaseGame - Game.Logic.Actions.CheckPVPGameStateAction
+11:25:31,420 - [3] - INFO  - Game.Logic.BaseGame - Game.Logic.Actions.ProcessPacketAction
+11:25:31,431 - [6] - INFO  - Game.Logic.BaseGame - Game.Logic.Actions.CheckPVPGameStateAction
+11:25:33,575 - [6] - INFO  - Game.Logic.BaseGame - Game.Logic.Actions.CheckPVPGameStateAction
+11:25:33,677 - [6] - INFO  - Game.Logic.BaseGame - Game.Logic.Actions.WaitLivingAttackingAction
+11:25:35,946 - [3] - INFO  - Game.Logic.BaseGame - Game.Logic.Actions.ProcessPacketAction
+11:25:39,971 - [3] - INFO  - Game.Logic.BaseGame - Game.Logic.Actions.ProcessPacketAction
+11:25:39,975 - [3] - INFO  - Game.Logic.BaseGame - Game.Logic.Actions.ProcessPacketAction
+11:25:39,983 - [3] - INFO  - Game.Logic.BaseGame - Game.Logic.Actions.ProcessPacketAction
+11:25:42,724 - [6] - INFO  - Game.Logic.BaseGame - Game.Logic.Actions.CheckPVPGameStateAction
+11:25:42,767 - [6] - INFO  - Game.Logic.BaseGame - Game.Logic.Actions.WaitLivingAttackingAction
+11:25:43,024 - [3] - INFO  - Game.Logic.BaseGame - Game.Logic.Actions.ProcessPacketAction
+11:25:51,141 - [3] - INFO  - Game.Logic.BaseGame - Game.Logic.Actions.ProcessPacketAction
+11:26:04,770 - [6] - INFO  - Game.Logic.BaseGame - Game.Logic.Actions.CheckPVPGameStateAction
+11:26:27,748 - [3] - INFO  - Game.Logic.BaseGame - Game.Logic.Actions.ProcessPacketAction
+11:26:27,751 - [6] - WARN  - Fighting.Server.Games.GameMgr - Room Mgr is delay -22945 ms!
+11:26:27,759 - [6] - INFO  - Game.Logic.BaseGame - Game.Logic.Actions.WaitLivingAttackingAction
+11:26:27,763 - [6] - INFO  - Game.Logic.BaseGame - Game.Logic.Actions.CheckPVPGameStateAction
+11:26:27,765 - [6] - WARN  - Fighting.Server.Games.GameMgr - Room Mgr is delay -21917 ms!
+11:26:27,769 - [6] - INFO  - Game.Logic.BaseGame - Game.Logic.Actions.WaitLivingAttackingAction
+11:26:27,770 - [6] - WARN  - Fighting.Server.Games.GameMgr - Room Mgr is delay -20881 ms!
+11:26:27,773 - [6] - WARN  - Fighting.Server.Games.GameMgr - Room Mgr is delay -19841 ms!
+11:26:27,775 - [6] - WARN  - Fighting.Server.Games.GameMgr - Room Mgr is delay -18801 ms!
+11:26:27,777 - [6] - WARN  - Fighting.Server.Games.GameMgr - Room Mgr is delay -17761 ms!
+11:26:27,778 - [6] - WARN  - Fighting.Server.Games.GameMgr - Room Mgr is delay -16721 ms!
+11:26:27,780 - [6] - WARN  - Fighting.Server.Games.GameMgr - Room Mgr is delay -15681 ms!
+11:26:27,784 - [6] - WARN  - Fighting.Server.Games.GameMgr - Room Mgr is delay -14641 ms!
+11:26:27,785 - [6] - WARN  - Fighting.Server.Games.GameMgr - Room Mgr is delay -13601 ms!
+11:26:27,787 - [6] - WARN  - Fighting.Server.Games.GameMgr - Room Mgr is delay -12561 ms!
+11:26:27,787 - [6] - WARN  - Fighting.Server.Games.GameMgr - Room Mgr is delay -11521 ms!
+11:26:27,789 - [6] - WARN  - Fighting.Server.Games.GameMgr - Room Mgr is delay -10481 ms!
+11:26:27,792 - [6] - WARN  - Fighting.Server.Games.GameMgr - Room Mgr is delay -9441 ms!
+11:26:27,795 - [6] - WARN  - Fighting.Server.Games.GameMgr - Room Mgr is delay -8401 ms!
+11:26:27,796 - [6] - WARN  - Fighting.Server.Games.GameMgr - Room Mgr is delay -7361 ms!
+11:26:27,797 - [6] - WARN  - Fighting.Server.Games.GameMgr - Room Mgr is delay -6321 ms!
+11:26:27,798 - [6] - WARN  - Fighting.Server.Games.GameMgr - Room Mgr is delay -5281 ms!
+11:26:27,799 - [6] - WARN  - Fighting.Server.Games.GameMgr - Room Mgr is delay -4241 ms!
+11:26:27,802 - [6] - WARN  - Fighting.Server.Games.GameMgr - Room Mgr is delay -3201 ms!
+11:26:27,802 - [6] - WARN  - Fighting.Server.Games.GameMgr - Room Mgr is delay -2161 ms!
+11:26:27,803 - [6] - WARN  - Fighting.Server.Games.GameMgr - Room Mgr is delay -1121 ms!
+11:26:28,022 - [3] - INFO  - Game.Logic.BaseGame - Game.Logic.Actions.ProcessPacketAction
+11:26:28,086 - [3] - INFO  - Game.Logic.BaseGame - Game.Logic.Actions.ProcessPacketAction
+11:26:33,372 - [3] - INFO  - Game.Logic.BaseGame - Game.Logic.Actions.ProcessPacketAction
+11:26:33,374 - [3] - INFO  - Game.Logic.BaseGame - Game.Logic.Actions.ProcessPacketAction
+11:26:33,379 - [3] - INFO  - Game.Logic.BaseGame - Game.Logic.Actions.ProcessPacketAction
+11:26:35,725 - [6] - INFO  - Game.Logic.BaseGame - Game.Logic.Actions.CheckPVPGameStateAction
+11:26:35,767 - [6] - INFO  - Game.Logic.BaseGame - Game.Logic.Actions.WaitLivingAttackingAction
+11:26:36,019 - [3] - INFO  - Game.Logic.BaseGame - Game.Logic.Actions.ProcessPacketAction
+11:26:44,023 - [3] - INFO  - Game.Logic.BaseGame - Game.Logic.Actions.ProcessPacketAction
+11:26:57,790 - [6] - INFO  - Game.Logic.BaseGame - Game.Logic.Actions.CheckPVPGameStateAction
+11:27:35,340 - [6] - WARN  - Fighting.Server.Games.GameMgr - Room Mgr is delay -37518 ms!
+11:27:35,340 - [3] - INFO  - Game.Logic.BaseGame - Game.Logic.Actions.ProcessPacketAction
+11:27:35,345 - [6] - INFO  - Game.Logic.BaseGame - Game.Logic.Actions.WaitLivingAttackingAction
+11:27:35,346 - [6] - WARN  - Fighting.Server.Games.GameMgr - Room Mgr is delay -36483 ms!
+11:27:35,346 - [6] - WARN  - Fighting.Server.Games.GameMgr - Room Mgr is delay -35443 ms!
+11:27:35,348 - [6] - WARN  - Fighting.Server.Games.GameMgr - Room Mgr is delay -34403 ms!
+11:27:35,352 - [6] - WARN  - Fighting.Server.Games.GameMgr - Room Mgr is delay -33363 ms!
+11:27:35,355 - [6] - WARN  - Fighting.Server.Games.GameMgr - Room Mgr is delay -32323 ms!
+11:27:35,356 - [6] - WARN  - Fighting.Server.Games.GameMgr - Room Mgr is delay -31283 ms!
+11:27:35,357 - [6] - WARN  - Fighting.Server.Games.GameMgr - Room Mgr is delay -30243 ms!
+11:27:35,357 - [6] - WARN  - Fighting.Server.Games.GameMgr - Room Mgr is delay -29203 ms!
+11:27:35,358 - [6] - WARN  - Fighting.Server.Games.GameMgr - Room Mgr is delay -28163 ms!
+11:27:35,361 - [6] - WARN  - Fighting.Server.Games.GameMgr - Room Mgr is delay -27123 ms!
+11:27:35,362 - [6] - WARN  - Fighting.Server.Games.GameMgr - Room Mgr is delay -26083 ms!
+11:27:35,363 - [6] - WARN  - Fighting.Server.Games.GameMgr - Room Mgr is delay -25043 ms!
+11:27:35,364 - [6] - WARN  - Fighting.Server.Games.GameMgr - Room Mgr is delay -24003 ms!
+11:27:35,364 - [6] - WARN  - Fighting.Server.Games.GameMgr - Room Mgr is delay -22963 ms!
+11:27:35,365 - [6] - WARN  - Fighting.Server.Games.GameMgr - Room Mgr is delay -21923 ms!
+11:27:35,367 - [6] - WARN  - Fighting.Server.Games.GameMgr - Room Mgr is delay -20883 ms!
+11:27:35,369 - [6] - WARN  - Fighting.Server.Games.GameMgr - Room Mgr is delay -19843 ms!
+11:27:35,371 - [6] - WARN  - Fighting.Server.Games.GameMgr - Room Mgr is delay -18803 ms!
+11:27:35,372 - [6] - WARN  - Fighting.Server.Games.GameMgr - Room Mgr is delay -17763 ms!
+11:27:35,374 - [6] - WARN  - Fighting.Server.Games.GameMgr - Room Mgr is delay -16723 ms!
+11:27:35,376 - [6] - WARN  - Fighting.Server.Games.GameMgr - Room Mgr is delay -15683 ms!
+11:27:35,378 - [6] - WARN  - Fighting.Server.Games.GameMgr - Room Mgr is delay -14643 ms!
+11:27:35,383 - [6] - WARN  - Fighting.Server.Games.GameMgr - Room Mgr is delay -13603 ms!
+11:27:35,386 - [6] - WARN  - Fighting.Server.Games.GameMgr - Room Mgr is delay -12564 ms!
+11:27:35,387 - [6] - WARN  - Fighting.Server.Games.GameMgr - Room Mgr is delay -11524 ms!
+11:27:35,388 - [6] - WARN  - Fighting.Server.Games.GameMgr - Room Mgr is delay -10484 ms!
+11:27:35,389 - [6] - WARN  - Fighting.Server.Games.GameMgr - Room Mgr is delay -9444 ms!
+11:27:35,389 - [6] - WARN  - Fighting.Server.Games.GameMgr - Room Mgr is delay -8404 ms!
+11:27:35,390 - [6] - WARN  - Fighting.Server.Games.GameMgr - Room Mgr is delay -7364 ms!
+11:27:35,390 - [6] - WARN  - Fighting.Server.Games.GameMgr - Room Mgr is delay -6324 ms!
+11:27:35,391 - [6] - WARN  - Fighting.Server.Games.GameMgr - Room Mgr is delay -5284 ms!
+11:27:35,391 - [6] - WARN  - Fighting.Server.Games.GameMgr - Room Mgr is delay -4244 ms!
+11:27:35,393 - [6] - WARN  - Fighting.Server.Games.GameMgr - Room Mgr is delay -3204 ms!
+11:27:35,394 - [6] - WARN  - Fighting.Server.Games.GameMgr - Room Mgr is delay -2164 ms!
+11:27:35,395 - [6] - WARN  - Fighting.Server.Games.GameMgr - Room Mgr is delay -1124 ms!
+11:27:35,608 - [3] - INFO  - Game.Logic.BaseGame - Game.Logic.Actions.ProcessPacketAction
+11:27:43,526 - [3] - INFO  - Game.Logic.BaseGame - Game.Logic.Actions.ProcessPacketAction
+11:27:43,775 - [3] - INFO  - Game.Logic.BaseGame - Game.Logic.Actions.ProcessPacketAction
+11:27:43,777 - [3] - INFO  - Game.Logic.BaseGame - Game.Logic.Actions.ProcessPacketAction
+11:27:43,779 - [3] - INFO  - Game.Logic.BaseGame - Game.Logic.Actions.ProcessPacketAction
+11:27:45,980 - [6] - INFO  - Game.Logic.BaseGame - Game.Logic.Actions.CheckPVPGameStateAction
+11:27:46,024 - [6] - INFO  - Game.Logic.BaseGame - Game.Logic.Actions.WaitLivingAttackingAction
+11:27:46,372 - [3] - INFO  - Game.Logic.BaseGame - Game.Logic.Actions.ProcessPacketAction
+11:27:54,422 - [3] - INFO  - Game.Logic.BaseGame - Game.Logic.Actions.ProcessPacketAction
+11:28:08,057 - [6] - INFO  - Game.Logic.BaseGame - Game.Logic.Actions.CheckPVPGameStateAction
+11:29:50,413 - [6] - WARN  - Fighting.Server.Games.GameMgr - Room Mgr is delay -102338 ms!
+11:29:50,411 - [3] - INFO  - Game.Logic.BaseGame - Game.Logic.Actions.ProcessPacketAction
+11:29:50,418 - [6] - INFO  - Game.Logic.BaseGame - Game.Logic.Actions.WaitLivingAttackingAction
+11:29:50,418 - [6] - WARN  - Fighting.Server.Games.GameMgr - Room Mgr is delay -101303 ms!
+11:29:50,418 - [6] - WARN  - Fighting.Server.Games.GameMgr - Room Mgr is delay -100263 ms!
+11:29:50,419 - [6] - WARN  - Fighting.Server.Games.GameMgr - Room Mgr is delay -99223 ms!
+11:29:50,419 - [6] - WARN  - Fighting.Server.Games.GameMgr - Room Mgr is delay -98183 ms!
+11:29:50,419 - [6] - WARN  - Fighting.Server.Games.GameMgr - Room Mgr is delay -97143 ms!
+11:29:50,419 - [6] - WARN  - Fighting.Server.Games.GameMgr - Room Mgr is delay -96103 ms!
+11:29:50,430 - [6] - WARN  - Fighting.Server.Games.GameMgr - Room Mgr is delay -95063 ms!
+11:29:50,431 - [6] - WARN  - Fighting.Server.Games.GameMgr - Room Mgr is delay -94023 ms!
+11:29:50,431 - [6] - WARN  - Fighting.Server.Games.GameMgr - Room Mgr is delay -92983 ms!
+11:29:50,431 - [6] - WARN  - Fighting.Server.Games.GameMgr - Room Mgr is delay -91943 ms!
+11:29:50,431 - [6] - WARN  - Fighting.Server.Games.GameMgr - Room Mgr is delay -90903 ms!
+11:29:50,431 - [6] - WARN  - Fighting.Server.Games.GameMgr - Room Mgr is delay -89863 ms!
+11:29:50,432 - [6] - WARN  - Fighting.Server.Games.GameMgr - Room Mgr is delay -88823 ms!
+11:29:50,432 - [6] - WARN  - Fighting.Server.Games.GameMgr - Room Mgr is delay -87783 ms!
+11:29:50,432 - [6] - WARN  - Fighting.Server.Games.GameMgr - Room Mgr is delay -86743 ms!
+11:29:50,432 - [6] - WARN  - Fighting.Server.Games.GameMgr - Room Mgr is delay -85703 ms!
+11:29:50,432 - [6] - WARN  - Fighting.Server.Games.GameMgr - Room Mgr is delay -84663 ms!
+11:29:50,433 - [6] - WARN  - Fighting.Server.Games.GameMgr - Room Mgr is delay -83623 ms!
+11:29:50,434 - [6] - WARN  - Fighting.Server.Games.GameMgr - Room Mgr is delay -82583 ms!
+11:29:50,442 - [6] - WARN  - Fighting.Server.Games.GameMgr - Room Mgr is delay -81543 ms!
+11:29:50,446 - [6] - WARN  - Fighting.Server.Games.GameMgr - Room Mgr is delay -80503 ms!
+11:29:50,447 - [6] - WARN  - Fighting.Server.Games.GameMgr - Room Mgr is delay -79463 ms!
+11:29:50,448 - [6] - WARN  - Fighting.Server.Games.GameMgr - Room Mgr is delay -78423 ms!
+11:29:50,449 - [6] - WARN  - Fighting.Server.Games.GameMgr - Room Mgr is delay -77383 ms!
+11:29:50,451 - [6] - WARN  - Fighting.Server.Games.GameMgr - Room Mgr is delay -76343 ms!
+11:29:50,460 - [6] - WARN  - Fighting.Server.Games.GameMgr - Room Mgr is delay -75303 ms!
+11:29:50,463 - [6] - WARN  - Fighting.Server.Games.GameMgr - Room Mgr is delay -74263 ms!
+11:29:50,464 - [6] - WARN  - Fighting.Server.Games.GameMgr - Room Mgr is delay -73223 ms!
+11:29:50,465 - [6] - WARN  - Fighting.Server.Games.GameMgr - Room Mgr is delay -72183 ms!
+11:29:50,466 - [6] - WARN  - Fighting.Server.Games.GameMgr - Room Mgr is delay -71143 ms!
+11:29:50,467 - [6] - WARN  - Fighting.Server.Games.GameMgr - Room Mgr is delay -70103 ms!
+11:29:50,478 - [6] - WARN  - Fighting.Server.Games.GameMgr - Room Mgr is delay -69063 ms!
+11:29:50,478 - [6] - WARN  - Fighting.Server.Games.GameMgr - Room Mgr is delay -68023 ms!
+11:29:50,480 - [6] - WARN  - Fighting.Server.Games.GameMgr - Room Mgr is delay -66983 ms!
+11:29:50,480 - [6] - WARN  - Fighting.Server.Games.GameMgr - Room Mgr is delay -65943 ms!
+11:29:50,481 - [6] - WARN  - Fighting.Server.Games.GameMgr - Room Mgr is delay -64903 ms!
+11:29:50,482 - [6] - WARN  - Fighting.Server.Games.GameMgr - Room Mgr is delay -63863 ms!
+11:29:50,482 - [6] - WARN  - Fighting.Server.Games.GameMgr - Room Mgr is delay -62823 ms!
+11:29:50,483 - [6] - WARN  - Fighting.Server.Games.GameMgr - Room Mgr is delay -61783 ms!
+11:29:50,484 - [6] - WARN  - Fighting.Server.Games.GameMgr - Room Mgr is delay -60743 ms!
+11:29:50,493 - [6] - WARN  - Fighting.Server.Games.GameMgr - Room Mgr is delay -59703 ms!
+11:29:50,497 - [6] - WARN  - Fighting.Server.Games.GameMgr - Room Mgr is delay -58663 ms!
+11:29:50,499 - [6] - WARN  - Fighting.Server.Games.GameMgr - Room Mgr is delay -57623 ms!
+11:29:50,500 - [6] - WARN  - Fighting.Server.Games.GameMgr - Room Mgr is delay -56583 ms!
+11:29:50,501 - [6] - WARN  - Fighting.Server.Games.GameMgr - Room Mgr is delay -55543 ms!
+11:29:50,509 - [6] - WARN  - Fighting.Server.Games.GameMgr - Room Mgr is delay -54503 ms!
+11:29:50,509 - [6] - WARN  - Fighting.Server.Games.GameMgr - Room Mgr is delay -53463 ms!
+11:29:50,513 - [6] - WARN  - Fighting.Server.Games.GameMgr - Room Mgr is delay -52423 ms!
+11:29:50,514 - [6] - WARN  - Fighting.Server.Games.GameMgr - Room Mgr is delay -51383 ms!
+11:29:50,515 - [6] - WARN  - Fighting.Server.Games.GameMgr - Room Mgr is delay -50343 ms!
+11:29:50,516 - [6] - WARN  - Fighting.Server.Games.GameMgr - Room Mgr is delay -49303 ms!
+11:29:50,516 - [6] - WARN  - Fighting.Server.Games.GameMgr - Room Mgr is delay -48263 ms!
+11:29:50,526 - [6] - WARN  - Fighting.Server.Games.GameMgr - Room Mgr is delay -47223 ms!
+11:29:50,528 - [6] - WARN  - Fighting.Server.Games.GameMgr - Room Mgr is delay -46183 ms!
+11:29:50,530 - [6] - WARN  - Fighting.Server.Games.GameMgr - Room Mgr is delay -45143 ms!
+11:29:50,531 - [6] - WARN  - Fighting.Ser

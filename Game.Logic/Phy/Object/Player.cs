@@ -83,12 +83,10 @@ namespace Game.Logic.Phy.Object
                 qtdSecondWeapon = 0;
             }
 
-            Console.WriteLine("Game.Logic.Player.teste2");
             if (m_weapon != null)
             {
 
                 var ballConfig = BallConfigMgr.FindBall(m_weapon.TemplateID);
-                Console.WriteLine("Game.Logic.Player.teste3");
                 m_mainBallId = ballConfig.Common;
                 m_spBallId = ballConfig.Special;
                 //m_mainBallId = m_weapon.Property1;
@@ -658,13 +656,13 @@ namespace Game.Logic.Phy.Object
 
         public bool Shoot(int x, int y, int force, int angle)
         {
+            Console.WriteLine("Game.Logic.Phy.Object.Player.Shoot.teste1");
             if (m_shootCount > 0)
             {
                 EffectTrigger = false;
                 OnPlayerShoot();
                 if (EffectTrigger)
                 {
-                    
                     Game.SendMessage(PlayerDetail, LanguageMgr.GetTranslation("PlayerEquipEffect.Success"), LanguageMgr.GetTranslation("PlayerEquipEffect.Success1", PlayerDetail.PlayerCharacter.NickName), 3);
                 }
 

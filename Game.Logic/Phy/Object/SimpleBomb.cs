@@ -55,6 +55,7 @@ namespace Game.Logic.Phy.Object
         public SimpleBomb(int id, BombType type, Living owner, BaseGame game, BallInfo info, Tile shape, bool controled)
             : base(id, info.Mass, info.Weight, info.Wind, info.DragIndex)
         {
+            Console.WriteLine("Game.Logic.Phy.Object.SimpleBomb.teste1.type: " + Enum.GetName(typeof(BombType), type));
             m_owner = owner;
             m_game = game;
             m_info = info;
@@ -161,11 +162,14 @@ namespace Game.Logic.Phy.Object
 
         private void BombImp()
         {
+            Console.WriteLine("Game.Logic.Phy.Objects.SimpleBomb.fazerBuracos");
             List<Living> playersAround = m_map.FindHitByHitPiont(GetCollidePoint(), m_radius);
             foreach (Living p in playersAround)
             {
+                Console.WriteLine("Game.Logic.Phy.Objects.SimpleBomb.fazerBuracos1");
                 if (p.IsNoHole || p.NoHoleTurn)
                 {
+                    Console.WriteLine("Game.Logic.Phy.Objects.SimpleBomb.fazerBuracos2");
                     p.NoHoleTurn = true;
                     digMap = false;
                 }
@@ -178,6 +182,7 @@ namespace Game.Logic.Phy.Object
                 //TrieuLSL DIG DIG DIG
                 if (digMap)
                 {
+                    Console.WriteLine("Game.Logic.Phy.Objects.SimpleBomb.Cavandooo");
                     m_map.Dig(m_x, m_y, m_shape, null);
                 }
                 m_actions.Add(new BombAction(m_lifeTime, ActionType.BOMB, m_x, m_y, digMap ? 1 : 0, 0));
@@ -232,6 +237,7 @@ namespace Game.Logic.Phy.Object
                             else
                                 plus = 1;
                             int blood = (int)(((Player)m_owner).PlayerDetail.SecondWeapon.Template.Property7 * Math.Pow(1.1, ((Player)m_owner).PlayerDetail.SecondWeapon.StrengthenLevel) * plus);
+                            Console.WriteLine("Curando");
                             p.AddBlood(blood);
                             if (p is Player)
                             {

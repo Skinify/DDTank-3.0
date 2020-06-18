@@ -610,8 +610,10 @@ namespace Game.Logic.Phy.Object
 
         public bool ShootImp(int bombId, int x, int y, int force, int angle, int bombCount)
         {
+            Console.WriteLine("Game.Logic.Phy.Object.Living.ShootImp.teste1");
             BallInfo ballInfo = BallMgr.FindBall(bombId);
             Tile shape = BallMgr.FindTile(bombId);
+            Console.WriteLine("Game.Logic.Phy.Object.Living.ShootImp.bombId: " + bombId);
             BombType ballType = BallMgr.GetBallType(bombId);
 
             //if (ballInfo != null && shape != null)
