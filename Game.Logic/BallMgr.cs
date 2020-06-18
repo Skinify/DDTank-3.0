@@ -33,11 +33,14 @@ namespace Game.Logic
             {
                 Dictionary<int, BallInfo> tempBalls = LoadFromDatabase();
                 Dictionary<int, Tile> tempBallTile = LoadFromFiles(tempBalls);
-
                 if (tempBalls.Values.Count > 0 && tempBallTile.Values.Count > 0)
                 {
                     Interlocked.Exchange(ref m_infos, tempBalls);
                     Interlocked.Exchange(ref m_tiles, tempBallTile);
+
+                    Console.WriteLine("m_infos.Count: " + m_infos.Count);
+                    Console.WriteLine("m_tiles.Count: " + m_tiles.Count);
+
                     return true;
                 }
             }
@@ -76,7 +79,9 @@ namespace Game.Logic
                     Tile shape = null;
                     if (File.Exists(file))
                     {
-                        shape = new Tile(file, false);
+                        Console.WriteLine("shape exists: " + file);
+                        //shape = new Tile(file, false);
+                        shape = new Tile(file, true);
                     }
                     tiles.Add(info.ID, shape);
 
@@ -106,7 +111,8 @@ namespace Game.Logic
 
         public static Tile FindTile(int id)
         {
-            Console.WriteLine("Game.Logic.BallMgr.teste1");
+            Console.WriteLine("Game.Logic.BallMgr.tile: " + id);
+            Console.WriteLine("Game.Logic.BallMgr.m_tiles.Count " + m_tiles.Count);
             if (m_tiles.ContainsKey(id))
             {
                 Console.WriteLine("Game.Logic.BallMgr.tilesEncontradas");

@@ -41,3 +41,4 @@ D:\DDT\DDTank-3.0\SqlDataProvider\obj\Debug\SqlDataProvider.csproj.CoreCompileIn
 D:\DDT\DDTank-3.0\SqlDataProvider\obj\Debug\SqlDataProvider.csproj.CopyComplete
 D:\DDT\DDTank-3.0\SqlDataProvider\obj\Debug\SqlDataProvider.dll
 D:\DDT\DDTank-3.0\SqlDataProvider\obj\Debug\SqlDataProvider.pdb
+D:\DDT\DDTank-3.0\SqlDataProvider\obj\Debug\SqlDataProvider.csprojAssemblyReference.cache

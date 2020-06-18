@@ -1793,6 +1793,17 @@ namespace Game.Logic
 
         }
 
+        internal void SendUseDeputyWeapon(Player player, int ResCount)
+        {
+            GSPacketIn pkg = new GSPacketIn(0x5b, player.Id)
+            {
+                Parameter1 = player.Id
+            };
+            pkg.WriteByte(0x54);
+            pkg.WriteInt(ResCount);
+            player.PlayerDetail.SendTCP(pkg);
+        }
+
         internal void SendSyncLifeTime()
         {
             GSPacketIn pkg = new GSPacketIn((byte)ePackageType.GAME_CMD);

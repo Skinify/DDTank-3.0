@@ -1,0 +1,8 @@
+14:07:15,127 - [6] - ERROR - Game.Logic.Actions.ProcessPacketAction - Player Id: 0  cmd:0x02
+System.NullReferenceException: Referência de objeto não definida para uma instância de um objeto.
+   em Game.Logic.Phy.Object.SimpleBomb.BombImp() na D:\DDT\DDTank-3.0\Game.Logic\Phy\Object\SimpleBomb.cs:linha 188
+   em Game.Logic.Phy.Object.SimpleBomb.StartMoving() na D:\DDT\DDTank-3.0\Game.Logic\Phy\Object\SimpleBomb.cs:linha 137
+   em Game.Logic.Phy.Object.Living.ShootImp(Int32 bombId, Int32 x, Int32 y, Int32 force, Int32 angle, Int32 bombCount) na D:\DDT\DDTank-3.0\Game.Logic\Phy\Object\Living.cs:linha 652
+   em Game.Logic.Phy.Object.Player.Shoot(Int32 x, Int32 y, Int32 force, Int32 angle) na D:\DDT\DDTank-3.0\Game.Logic\Phy\Object\Player.cs:linha 669
+   em Game.Logic.Cmd.FireCommand.HandleCommand(BaseGame game, Player player, GSPacketIn packet) na D:\DDT\DDTank-3.0\Game.Logic\Cmd\FireCommand.cs:linha 22
+   em Game.Logic.Actions.ProcessPacketAction.Execute(BaseGame game, Int64 tick) na D:\DDT\DDTank-3.0\Game.Logic\Actions\ProcessPacketAction.cs:linha 34

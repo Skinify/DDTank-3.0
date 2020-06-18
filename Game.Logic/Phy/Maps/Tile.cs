@@ -110,11 +110,12 @@ namespace Game.Logic.Phy.Maps
 
         public void Dig(int cx, int cy, Tile surface, Tile border)
         {
+            Console.WriteLine("Game.Logic.Phy.Maps.Tile.Dig.teste1");
             if (_digable && surface != null)
             {
                 int x1 = (int)(cx - surface.Width / 2);
                 int y1 = (int)(cy - surface.Height / 2);
-
+                Console.WriteLine("Game.Logic.Phy.Maps.Tile.Dig.teste2");
                 Remove(x1, y1, surface);
 
                 if (border != null)
@@ -183,6 +184,7 @@ namespace Game.Logic.Phy.Maps
 
         protected void Remove(int x, int y, Tile tile)
         {
+            Console.WriteLine("Game.Logic.Phy.Maps.Tile.Remove.teste1");
             byte[] addData = tile._data;
 
             Rectangle rect = tile.Bound;
@@ -191,6 +193,7 @@ namespace Game.Logic.Phy.Maps
             rect.Intersect(_rect);
             if (rect.Width != 0 && rect.Height != 0)
             {
+                Console.WriteLine("Game.Logic.Phy.Maps.Tile.Remove.teste2");
                 rect.Offset(-x, -y);
 
                 int cx = rect.X / 8;
@@ -204,8 +207,10 @@ namespace Game.Logic.Phy.Maps
 
                 if (rect.X == 0)
                 {
+                    Console.WriteLine("Game.Logic.Phy.Maps.Tile.Remove.teste3");
                     if (cw + cx2 < _bw)
                     {
+                        Console.WriteLine("Game.Logic.Phy.Maps.Tile.Remove.teste4");
                         cw++;
                         cw = cw > tile._bw ? tile._bw : cw;
                     }
@@ -221,10 +226,12 @@ namespace Game.Logic.Phy.Maps
                     int target = 0;
                     for (int j = 0; j < ch; j++)
                     {
+                        Console.WriteLine("Game.Logic.Phy.Maps.Tile.Remove.teste5");
                         r_bits = 0;
                         l_bits = 0;
                         for (int i = 0; i < cw; i++)
                         {
+                            Console.WriteLine("Game.Logic.Phy.Maps.Tile.Remove.teste6");
                             self_offset = (j + y + cy) * _bw + i + cx2;
                             tile_offset = (j + cy) * tile._bw + i + cx;
 
@@ -246,6 +253,7 @@ namespace Game.Logic.Phy.Maps
                 }
                 else
                 {
+                    Console.WriteLine("Game.Logic.Phy.Maps.Tile.Remove.teste7");
                     int b_offset = rect.X % 8;
 
                     int self_offset = 0;

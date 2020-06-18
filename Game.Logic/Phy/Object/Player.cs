@@ -779,6 +779,7 @@ namespace Game.Logic.Phy.Object
                         SetCurrentWeapon(PlayerDetail.SecondWeapon.Template);
                     }
                     qtdSecondWeapon--;
+                    m_game.SendUseDeputyWeapon(this, qtdSecondWeapon);
                 }
                 else
                 {
