@@ -1,6 +1,18 @@
-00:04:49,770 - [MAIN] - ERROR - Bussiness.Managers.AchievementMgr - AchievementMgr
-System.ArgumentNullException: Valor não pode ser nulo.
-Nome do parâmetro: predicate
-   em System.Linq.Enumerable.Where[TSource](IEnumerable`1 source, Func`2 predicate)
-   em Bussiness.Managers.AchievementMgr.LoadAchievementConditionInfoDB(Dictionary`2 achievementInfos) na D:\DDT\DDTank-3.0\Bussiness\Managers\AchievementMgr.cs:linha 103
-   em Bussiness.Managers.AchievementMgr.Reload() na D:\DDT\DDTank-3.0\Bussiness\Managers\AchievementMgr.cs:linha 296
+00:33:49,013 - [17] - ERROR - Game.Server.GameObjects.GamePlayer - Error Login!
+System.NullReferenceException: Referência de objeto não definida para uma instância de um objeto.
+   em Game.Server.Achievement.BaseAchievement.CreateBaseAchievement(AchievementInfo info, AchievementData data, Dictionary`2 processInfo) na D:\DDT\DDTank-3.0\Game.Server\Achievement\BaseAchievement.cs:linha 75
+   em Game.Server.Achievement.BaseAchievement..ctor(AchievementInfo info, AchievementData data, Dictionary`2 processInfo) na D:\DDT\DDTank-3.0\Game.Server\Achievement\BaseAchievement.cs:linha 24
+   em Game.Server.Achievement.AchievementInventory.AddAchievement(AchievementInfo info) na D:\DDT\DDTank-3.0\Game.Server\Achievement\AchievementInventory.cs:linha 80
+   em Game.Server.Achievement.AchievementInventory.AddAchievementPre() na D:\DDT\DDTank-3.0\Game.Server\Achievement\AchievementInventory.cs:linha 107
+   em Game.Server.Achievement.AchievementInventory.LoadFromDatabase(Int32 playerId) na D:\DDT\DDTank-3.0\Game.Server\Achievement\AchievementInventory.cs:linha 260
+   em Game.Server.GameObjects.GamePlayer.UpdateItemForUser(Object state) na D:\DDT\DDTank-3.0\Game.Server\GameObjects\GamePlayer.cs:linha 1400
+   em Game.Server.GameObjects.GamePlayer.Login() na D:\DDT\DDTank-3.0\Game.Server\GameObjects\GamePlayer.cs:linha 1119
+00:33:49,040 - [21] - ERROR - Game.Base.Packets.PacketProcessor - Error while processing packet (handler=Game.Server.Packets.Client.QuestAddHandler  client: not connected)
+System.NullReferenceException: Referência de objeto não definida para uma instância de um objeto.
+   em Game.Server.Packets.Client.QuestAddHandler.HandlePacket(GameClient client, GSPacketIn packet) na D:\DDT\DDTank-3.0\Game.Server\Packets\Client\QuestAddHandler.cs:linha 22
+   em Game.Base.Packets.PacketProcessor.HandlePacket(GSPacketIn packet) na D:\DDT\DDTank-3.0\Game.Server\Packets\Server\PacketProcessor.cs:linha 88
+00:33:49,046 - [21] - ERROR - Game.Base.Packets.PacketProcessor - Package Buffer:
+0000: 71 AB 00 2C 05 7F 00 B0 00 00 00 56 00 00 00 00   q..,......V....
+0010: 00 00 00 00 00 00 00 05 00 00 01 31 00 00 01 32   ...........1...2
+0020: 00 53 C1 47 00 53 C1 48 00 5C 3B CA               .S.G.S.H.\;.    
+

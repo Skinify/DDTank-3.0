@@ -183,7 +183,6 @@ namespace Game.Logic
         {
             m_map.AddPhysical(living);
 
-            //玩家没有武器，则不加入到m_turnQueue中去
             if (living is Player)
             {
                 Player p = living as Player;
@@ -201,8 +200,8 @@ namespace Game.Logic
             {
                 m_livings.Add(living);
             }
-
-                AddLiving(living);
+            //AddLiving(living);
+            SendAddLiving(living);
         }
 
         public virtual void AddPhysicalObj(PhysicalObj phy, bool sendToClient)

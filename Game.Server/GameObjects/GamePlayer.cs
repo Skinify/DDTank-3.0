@@ -1140,12 +1140,12 @@ namespace Game.Server.GameObjects
             return false;
         }
 
-        public bool SendItemsToMail(List<SqlDataProvider.Data.ItemInfo> items, string content, string title, eMailType type)
+        public bool SendItemsToMail(List<ItemInfo> items, string content, string title, eMailType type)
         {
             using (PlayerBussiness bussiness = new PlayerBussiness())
             {
-                List<SqlDataProvider.Data.ItemInfo> list = new List<SqlDataProvider.Data.ItemInfo>();
-                foreach (SqlDataProvider.Data.ItemInfo info in items)
+                List<ItemInfo> list = new List<ItemInfo>();
+                foreach (ItemInfo info in items)
                 {
                     if (info.Template.MaxCount == 1)
                     {
@@ -1171,7 +1171,7 @@ namespace Game.Server.GameObjects
             int num = 0;
             while (num < items.Count)
             {
-                SqlDataProvider.Data.ItemInfo info2;
+                ItemInfo info2;
                 MailInfo mail = new MailInfo
                 {
                     Title = (title != null) ? title : LanguageMgr.GetTranslation("Game.Server.GameUtils.Title", new object[0]),
@@ -1185,7 +1185,7 @@ namespace Game.Server.GameObjects
                     Type = (int)type,
                     GiftToken = 0
                 };
-                List<SqlDataProvider.Data.ItemInfo> list = new List<SqlDataProvider.Data.ItemInfo>();
+                List<ItemInfo> list = new List<ItemInfo>();
                 StringBuilder builder = new StringBuilder();
                 StringBuilder builder2 = new StringBuilder();
                 builder.Append(LanguageMgr.GetTranslation("Game.Server.GameUtils.CommonBag.AnnexRemark", new object[0]));
