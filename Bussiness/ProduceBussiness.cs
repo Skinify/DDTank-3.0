@@ -245,10 +245,10 @@ namespace Bussiness
             }
             catch (Exception exception)
             {
-                if (BaseBussiness.log.IsErrorEnabled)
+                if (log.IsErrorEnabled)
                 {
                     Console.WriteLine(exception);
-                    BaseBussiness.log.Error("ByteArray", exception);
+                    log.Error("ByteArray", exception);
                 }
             }
             finally
@@ -268,7 +268,7 @@ namespace Bussiness
             {
                 SqlParameter[] sqlParameters = new SqlParameter[] { new SqlParameter("@ID", SqlDbType.Int, 4) };
                 sqlParameters[0].Value = VaneID;
-                base.db.GetReader(ref resultDataReader, "SP_Vane_Single", sqlParameters);
+                db.GetReader(ref resultDataReader, "SP_Vane_Single", sqlParameters);
                 if (resultDataReader.Read())
                 {
                     return this.InitVaneInfo(resultDataReader);
@@ -276,9 +276,9 @@ namespace Bussiness
             }
             catch (Exception exception)
             {
-                if (BaseBussiness.log.IsErrorEnabled)
+                if (log.IsErrorEnabled)
                 {
-                    BaseBussiness.log.Error("Init", exception);
+                    log.Error("Init", exception);
                 }
             }
             finally
@@ -1008,7 +1008,7 @@ namespace Bussiness
                 para[1] = new SqlParameter("@Name", info.Name);
                 para[2] = new SqlParameter("@IDNumber", info.IDNumber);
                 para[3] = new SqlParameter("@State", info.State);
-                para[4] = new SqlParameter("@Result", System.Data.SqlDbType.Int);
+                para[4] = new SqlParameter("@Result", SqlDbType.Int);
                 para[4].Direction = ParameterDirection.ReturnValue;
 
                 db.RunProcedure("SP_ASSInfo_Add", para);
@@ -1166,13 +1166,14 @@ namespace Bussiness
             SqlDataReader resultDataReader = null;
             try
             {
-                base.db.GetReader(ref resultDataReader, "SP_Get_Achievement");
+                db.GetReader(ref resultDataReader, "SP_Get_Achievement");
                 while (true)
                 {
                     if (!resultDataReader.Read())
                     {
                         break;
                     }
+
                     AchievementInfo item = new AchievementInfo
                     {
                         ID = (int)resultDataReader["ID"],
@@ -1197,9 +1198,9 @@ namespace Bussiness
             }
             catch (Exception exception)
             {
-                if (BaseBussiness.log.IsErrorEnabled)
+                if (log.IsErrorEnabled)
                 {
-                    BaseBussiness.log.Error("Init", exception);
+                    log.Error("Init", exception);
                 }
             }
             finally
@@ -1218,7 +1219,7 @@ namespace Bussiness
             SqlDataReader resultDataReader = null;
             try
             {
-                base.db.GetReader(ref resultDataReader, "SP_Achievement_All");
+                db.GetReader(ref resultDataReader, "SP_Achievement_All");
                 while (true)
                 {
                     if (!resultDataReader.Read())
@@ -1230,9 +1231,9 @@ namespace Bussiness
             }
             catch (Exception exception)
             {
-                if (BaseBussiness.log.IsErrorEnabled)
+                if (log.IsErrorEnabled)
                 {
-                    BaseBussiness.log.Error("GetALlAchievement:", exception);
+                    log.Error("GetALlAchievement:", exception);
                 }
             }
             finally
@@ -1252,7 +1253,7 @@ namespace Bussiness
             SqlDataReader resultDataReader = null;
             try
             {
-                base.db.GetReader(ref resultDataReader, "SP_Get_AchievementCondiction");
+                db.GetReader(ref resultDataReader, "SP_Get_AchievementCondiction");
                 while (true)
                 {
                     if (!resultDataReader.Read())
@@ -1272,9 +1273,9 @@ namespace Bussiness
             }
             catch (Exception exception)
             {
-                if (BaseBussiness.log.IsErrorEnabled)
+                if (log.IsErrorEnabled)
                 {
-                    BaseBussiness.log.Error("Init", exception);
+                    log.Error("Init", exception);
                 }
             }
             finally
@@ -1293,7 +1294,7 @@ namespace Bussiness
             SqlDataReader resultDataReader = null;
             try
             {
-                base.db.GetReader(ref resultDataReader, "SP_Achievement_Condition_All");
+                db.GetReader(ref resultDataReader, "SP_Achievement_Condition_All");
                 while (true)
                 {
                     if (!resultDataReader.Read())
@@ -1305,9 +1306,9 @@ namespace Bussiness
             }
             catch (Exception exception)
             {
-                if (BaseBussiness.log.IsErrorEnabled)
+                if (log.IsErrorEnabled)
                 {
-                    BaseBussiness.log.Error("GetALlAchievementCondition:", exception);
+                    log.Error("GetALlAchievementCondition:", exception);
                 }
             }
             finally
@@ -1327,7 +1328,7 @@ namespace Bussiness
             try
             {
                 SqlParameter[] sqlParameters = new SqlParameter[] { new SqlParameter("@UserID", userID) };
-                base.db.GetReader(ref resultDataReader, "SP_Achievement_Data_All", sqlParameters);
+                db.GetReader(ref resultDataReader, "SP_Achievement_Data_All", sqlParameters);
                 while (true)
                 {
                     if (!resultDataReader.Read())
@@ -1339,9 +1340,9 @@ namespace Bussiness
             }
             catch (Exception exception)
             {
-                if (BaseBussiness.log.IsErrorEnabled)
+                if (log.IsErrorEnabled)
                 {
-                    BaseBussiness.log.Error("GetAllAchievementData", exception);
+                    log.Error("GetAllAchievementData", exception);
                 }
             }
             finally
@@ -1360,7 +1361,7 @@ namespace Bussiness
             SqlDataReader resultDataReader = null;
             try
             {
-                base.db.GetReader(ref resultDataReader, "SP_Get_AchievementGoods");
+                db.GetReader(ref resultDataReader, "SP_Get_AchievementGoods");
                 while (true)
                 {
                     if (!resultDataReader.Read())
@@ -1380,9 +1381,9 @@ namespace Bussiness
             }
             catch (Exception exception)
             {
-                if (BaseBussiness.log.IsErrorEnabled)
+                if (log.IsErrorEnabled)
                 {
-                    BaseBussiness.log.Error("Init", exception);
+                    log.Error("Init", exception);
                 }
             }
             finally
@@ -1401,7 +1402,7 @@ namespace Bussiness
             SqlDataReader resultDataReader = null;
             try
             {
-                base.db.GetReader(ref resultDataReader, "SP_Achievement_Reward_All");
+                db.GetReader(ref resultDataReader, "SP_Achievement_Reward_All");
                 while (true)
                 {
                     if (!resultDataReader.Read())
@@ -1413,9 +1414,9 @@ namespace Bussiness
             }
             catch (Exception exception)
             {
-                if (BaseBussiness.log.IsErrorEnabled)
+                if (log.IsErrorEnabled)
                 {
-                    BaseBussiness.log.Error("GetALlAchievementReward", exception);
+                    log.Error("GetALlAchievementReward", exception);
                 }
             }
             finally
@@ -1434,7 +1435,7 @@ namespace Bussiness
             SqlDataReader resultDataReader = null;
             try
             {
-                base.db.GetReader(ref resultDataReader, "SP_Item_Record_Type_All");
+                db.GetReader(ref resultDataReader, "SP_Item_Record_Type_All");
                 while (true)
                 {
                     if (!resultDataReader.Read())   
@@ -1446,9 +1447,9 @@ namespace Bussiness
             }
             catch (Exception exception)
             {
-                if (BaseBussiness.log.IsErrorEnabled)
+                if (log.IsErrorEnabled)
                 {
-                    BaseBussiness.log.Error("GetAllItemRecordType:", exception);
+                    log.Error("GetAllItemRecordType:", exception);
                 }
             }
             finally

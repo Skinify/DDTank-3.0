@@ -77,8 +77,8 @@ namespace Bussiness.Managers
                 if (achs.Count > 0)
                 {
                     Interlocked.Exchange(ref dictionary_4, dictionary5);
-                    Interlocked.Exchange<Dictionary<int, AchievementInfo>>(ref dictionary_3, achs);
-                    Interlocked.Exchange<Dictionary<int, List<AchievementGoodsInfo>>>(ref dictionary_5, dictionary6);
+                    Interlocked.Exchange(ref dictionary_3, achs);
+                    Interlocked.Exchange(ref dictionary_5, dictionary6);
                 }
 
             return true;
@@ -86,7 +86,6 @@ namespace Bussiness.Managers
             catch (Exception e)
             {
                 log.Error("QuestMgr", e);
-
             }
 
             return false;
@@ -242,17 +241,17 @@ namespace Bussiness.Managers
 
 
         public static List<AchievementCondictionInfo> GetAchievementCondiction(AchievementInfo info){
-            Console.WriteLine("Bussiness.Managers.QuestMgr.GetAchievementCondiction.Aqui retorna nulo");
             return !dictionary_4.ContainsKey(info.ID) ? null : dictionary_4[info.ID];
         }
 
         public static List<AchievementGoodsInfo> GetAchievementGoods(AchievementInfo info) {
             Console.WriteLine("Bussiness.Managers.QuestMgr.GetAchievementGoods.Aqui retorna nulo");
+            Console.WriteLine(info.ID);
             return !dictionary_5.ContainsKey(info.ID) ? null : dictionary_5[info.ID];
         }
 
         public static List<AchievementInfo> GetAllAchievements() {
-            return dictionary_3.Values.ToList<AchievementInfo>();
+            return dictionary_3.Values.ToList();
         }
 
         public static AchievementInfo GetSingleAchievement(int id) {
@@ -262,74 +261,43 @@ namespace Bussiness.Managers
 
         public static Dictionary<int, List<AchievementCondictionInfo>> LoadAchievementCondictionDb(Dictionary<int, AchievementInfo> achs)
         {
-            Dictionary<int, List<AchievementCondictionInfo>> dictionary2;
             Dictionary<int, List<AchievementCondictionInfo>> dictionary = new Dictionary<int, List<AchievementCondictionInfo>>();
-            ProduceBussiness objA = new ProduceBussiness();
-            try
+            using (ProduceBussiness produceBussiness = new ProduceBussiness())
             {
-                AchievementCondictionInfo[] allAchievementCondiction = objA.GetAllAchievementCondiction();
+                AchievementCondictionInfo[] achievementCondiction = produceBussiness.GetAllAchievementCondiction();
                 using (Dictionary<int, AchievementInfo>.ValueCollection.Enumerator enumerator = achs.Values.GetEnumerator())
                 {
-                    while (true)
+                    while (enumerator.MoveNext())
                     {
-                        if (!enumerator.MoveNext())
-                        {
-                            dictionary2 = dictionary;
-                            break;
-                        }
                         AchievementInfo ach = enumerator.Current;
-                        //IEnumerable<AchievementCondictionInfo> source = Enumerable.Where(allAchievementCondiction, new Func<AchievementCondictionInfo, bool>(class2, this.< LoadAchievementCondictionDb > b__0));
-                        //dictionary.Add(ach.ID, source.ToList());
+                        IEnumerable<AchievementCondictionInfo> source = ((IEnumerable<AchievementCondictionInfo>)achievementCondiction).Where(s => s.AchievementID == ach.ID);
+                        dictionary.Add(ach.ID, source.ToList());
                     }
+                    return dictionary;
                 }
             }
-            finally
-            {
-                if (!ReferenceEquals(objA, null))
-                {
-                    objA.Dispose();
-                }
-            }
-            return dictionary2;
         }
 
         public static Dictionary<int, List<AchievementGoodsInfo>> LoadAchievementGoodDb(Dictionary<int, AchievementInfo> achs)
         {
-            Dictionary<int, List<AchievementGoodsInfo>> dictionary2;
             Dictionary<int, List<AchievementGoodsInfo>> dictionary = new Dictionary<int, List<AchievementGoodsInfo>>();
-            ProduceBussiness objA = new ProduceBussiness();
-            try
+            using (ProduceBussiness produceBussiness = new ProduceBussiness())
             {
-                AchievementGoodsInfo[] allAchievementGoods = objA.GetAllAchievementGoods();
+                AchievementGoodsInfo[] achievementGoods = produceBussiness.GetAllAchievementGoods();
                 using (Dictionary<int, AchievementInfo>.ValueCollection.Enumerator enumerator = achs.Values.GetEnumerator())
                 {
-                    while (true)
+                    while (enumerator.MoveNext())
                     {
-                        DisplayClass4 class2 = null;
-                        if (!enumerator.MoveNext())
-                        {
-                            dictionary2 = dictionary;
-                            break;
-                        }
                         AchievementInfo ach = enumerator.Current;
-                        //IEnumerable<AchievementGoodsInfo> source = Enumerable.Where(allAchievementGoods, new Func<AchievementGoodsInfo, bool>(class2, class2.b__3()));
-
-                        //IEnumerable<AchievementGoodsInfo> source = Enumerable.Where(allAchievementGoods, new Func<AchievementGoodsInfo, bool>(class2, class2.b__3()));
-
-                        //dictionary.Add(ach.ID, source.ToList());
+                        IEnumerable<AchievementGoodsInfo> source = ((IEnumerable<AchievementGoodsInfo>)achievementGoods).Where(s => s.AchievementID == ach.ID);
+                        dictionary.Add(ach.ID, source.ToList());
                     }
+                    return dictionary;
                 }
             }
-            finally
-            {
-                if (!ReferenceEquals(objA, null))
-                {
-                    objA.Dispose();
-                }
-            }
-            return dictionary2;
         }
-        
+
+
 
         #endregion
 

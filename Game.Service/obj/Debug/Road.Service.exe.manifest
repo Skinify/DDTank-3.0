@@ -42,14 +42,14 @@
     </dependentAssembly>
   </dependency>
   <dependency>
-    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="Bussiness.dll" size="218624">
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="Bussiness.dll" size="219136">
       <assemblyIdentity name="Bussiness" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
-        <dsig:DigestValue>I6rBogAVqL06yo4UbQ3X9O9gx+0=</dsig:DigestValue>
+        <dsig:DigestValue>hx5FZfEdPdunBU3m4oHQ3+yIeqU=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
@@ -66,26 +66,26 @@
     </dependentAssembly>
   </dependency>
   <dependency>
-    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="Game.Logic.dll" size="182784">
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="Game.Logic.dll" size="182272">
       <assemblyIdentity name="Game.Logic" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
-        <dsig:DigestValue>Ty3vfE2xe4ghitbab48IMX8eu7E=</dsig:DigestValue>
+        <dsig:DigestValue>+XjE/PMcxcq1S+/s1o8Oojt7YAk=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
   <dependency>
-    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="Game.Server.dll" size="402432">
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="Game.Server.dll" size="399872">
       <assemblyIdentity name="Game.Server" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
-        <dsig:DigestValue>ASpRobrP9w9PGGOsNA5Cw4FA3rU=</dsig:DigestValue>
+        <dsig:DigestValue>q/5ZExzWz1Rf+hBum7ecN0Sw+Uc=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
@@ -109,7 +109,7 @@
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
-        <dsig:DigestValue>DcPCrpBJWsqgag4iPY0FRI4MJ/Y=</dsig:DigestValue>
+        <dsig:DigestValue>oKwt6vYXafgIA09EjzGVAF6ow5g=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>

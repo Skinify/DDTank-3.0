@@ -74,26 +74,28 @@ namespace Game.Server.Achievement
             Console.WriteLine("Game.Server.Achievement.CreateBaseAchievement.teste2");
             try
             {
-                using (List<AchievementCondictionInfo>.Enumerator enumerator = QuestMgr.GetAchievementCondiction(info).GetEnumerator())
+                List<AchievementCondictionInfo> achievementCondictionInfo = QuestMgr.GetAchievementCondiction(info);
+                if(achievementCondictionInfo != null)
                 {
-                    Console.WriteLine("Game.Server.Achievement.CreateBaseAchievement.teste3");
-                    while (true)
+                    using (List<AchievementCondictionInfo>.Enumerator enumerator = achievementCondictionInfo.GetEnumerator())
                     {
-                        Console.WriteLine("Game.Server.Achievement.CreateBaseAchievement.teste4");
-                        if (!enumerator.MoveNext())
+                        while (true)
                         {
-                            break;
-                        }
-                        AchievementCondictionInfo current = enumerator.Current;
-                        int num = 0;
-                        if ((processInfo != null) && processInfo.ContainsKey(current.CondictionType))
-                        {
-                            num = processInfo[current.CondictionType].Value;
-                        }
-                        BaseCondition objA = BaseCondition.CreateCondition(this, current, num);
-                        if (!ReferenceEquals(objA, null))
-                        {
-                            this.list_0.Add(objA);
+                            if (!enumerator.MoveNext())
+                            {
+                                break;
+                            }
+                            AchievementCondictionInfo current = enumerator.Current;
+                            int num = 0;
+                            if ((processInfo != null) && processInfo.ContainsKey(current.CondictionType))
+                            {
+                                num = processInfo[current.CondictionType].Value;
+                            }
+                            BaseCondition objA = BaseCondition.CreateCondition(this, current, num);
+                            if (!ReferenceEquals(objA, null))
+                            {
+                                this.list_0.Add(objA);
+                            }
                         }
                     }
                 }

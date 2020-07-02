@@ -38,9 +38,6 @@ namespace Game.Logic
                     Interlocked.Exchange(ref m_infos, tempBalls);
                     Interlocked.Exchange(ref m_tiles, tempBallTile);
 
-                    Console.WriteLine("m_infos.Count: " + m_infos.Count);
-                    Console.WriteLine("m_tiles.Count: " + m_tiles.Count);
-
                     return true;
                 }
             }
@@ -79,9 +76,8 @@ namespace Game.Logic
                     Tile shape = null;
                     if (File.Exists(file))
                     {
-                        Console.WriteLine("shape exists: " + file);
                         //shape = new Tile(file, false);
-                        shape = new Tile(file, true);
+                        shape = new Tile(file, false);
                     }
                     tiles.Add(info.ID, shape);
 
@@ -96,7 +92,6 @@ namespace Game.Logic
 
         public static BallInfo FindBall(int id)
         {
-            Console.WriteLine("Game.Logic.BallMgr.FindBall.teste1");
             if (m_infos.ContainsKey(id))
                 return m_infos[id];
             //else
@@ -111,14 +106,10 @@ namespace Game.Logic
 
         public static Tile FindTile(int id)
         {
-            Console.WriteLine("Game.Logic.BallMgr.tile: " + id);
-            Console.WriteLine("Game.Logic.BallMgr.m_tiles.Count " + m_tiles.Count);
             if (m_tiles.ContainsKey(id))
             {
-                Console.WriteLine("Game.Logic.BallMgr.tilesEncontradas");
                 return m_tiles[id];
             }
-            Console.WriteLine("Game.Logic.BallMgr.tilesNãoEncontradas");
             return null;
         }
 

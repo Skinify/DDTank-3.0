@@ -1644,4 +1644,1264 @@
    em Game.Server.Achievement.AchievementInventory.Finish(BaseAchievement baseAch) na D:\DDT\DDTank-3.0\Game.Server\Achievement\AchievementInventory.cs:linha 169
 09:51:05,244 - [16] - ERROR - Game.Server.Achievement.AchievementInventory - Achivement Finish:System.NullReferenceException: Referência de objeto não definida para uma instância de um objeto.
    em Game.Server.Achievement.AchievementInventory.Finish(BaseAchievement baseAch) na D:\DDT\DDTank-3.0\Game.Server\Achievement\AchievementInventory.cs:linha 169
-09:51:05,273 - [16] - ERROR - Game.Server.Achie
+09:51:05,273 - [16] - ERROR - Game.Server.Achie09:57:47,933 - [MAIN] - INFO  - Bussiness.GameProperties - Refreshing game properties!
+09:57:49,216 - [MAIN] - INFO  - Game.Server.GameServer - Recompile Scripts: True
+09:57:49,218 - [MAIN] - INFO  - Game.Server.GameServer - Server rules: true
+09:57:49,254 - [MAIN] - INFO  - Game.Server.GameServer - Registering global event handlers: true
+09:57:49,255 - [MAIN] - INFO  - Game.Server.GameServer - Script components: True
+09:57:49,255 - [MAIN] - INFO  - Game.Server.GameServer - Edition:21000: True
+09:57:49,258 - [MAIN] - INFO  - Game.Server.GameServer - InitSocket Port:9200: True
+09:57:49,318 - [MAIN] - INFO  - Game.Server.GameServer - AllocatePacketBuffers(): True
+09:57:49,324 - [MAIN] - INFO  - Game.Server.GameServer - LogMgr Init: True
+09:57:49,329 - [MAIN] - INFO  - Game.Server.GameServer - WorldMgr Init: True
+09:57:49,617 - [MAIN] - INFO  - Game.Server.GameServer - MapMgr Init: True
+09:57:49,859 - [MAIN] - INFO  - Game.Server.GameServer - ItemMgr Init: True
+09:57:49,881 - [MAIN] - INFO  - Game.Server.GameServer - ItemBox Init: True
+09:57:51,134 - [MAIN] - INFO  - Game.Server.GameServer - BallMgr Init: True
+09:57:51,140 - [MAIN] - INFO  - Game.Server.GameServer - VaneMgr ByteAray: True
+09:57:51,146 - [MAIN] - INFO  - Game.Server.GameServer - BallConfigMgr Init: True
+09:57:51,153 - [MAIN] - INFO  - Game.Server.GameServer - FusionMgr Init: True
+09:57:51,159 - [MAIN] - INFO  - Game.Server.GameServer - AwardMgr Init: True
+09:57:51,170 - [MAIN] - INFO  - Game.Server.GameServer - NPCInfoMgr Init: True
+09:57:51,178 - [MAIN] - INFO  - Game.Server.GameServer - MissionInfoMgr Init: True
+09:57:51,186 - [MAIN] - INFO  - Game.Server.GameServer - PveInfoMgr Init: True
+09:57:51,199 - [MAIN] - INFO  - Game.Server.GameServer - Drop Init: True
+09:57:51,205 - [MAIN] - INFO  - Game.Server.GameServer - FightRateMgr Init: True
+09:57:51,210 - [MAIN] - INFO  - Game.Server.GameServer - ConsortiaLevelMgr Init: True
+09:57:51,216 - [MAIN] - INFO  - Game.Server.GameServer - RefineryMgr Init: True
+09:57:51,231 - [MAIN] - INFO  - Game.Server.GameServer - StrengthenMgr Init: True
+09:57:51,237 - [MAIN] - INFO  - Game.Server.GameServer - PropItemMgr Init: True
+09:57:51,343 - [MAIN] - INFO  - Game.Server.GameServer - ShopMgr Init: True
+09:57:51,386 - [MAIN] - INFO  - Game.Server.GameServer - QuestMgr Init: True
+09:57:51,410 - [MAIN] - INFO  - Game.Server.GameServer - AchievementMgr Init: True
+09:57:51,413 - [MAIN] - INFO  - Game.Server.GameServer - RoomMgr.Setup: True
+09:57:51,414 - [MAIN] - INFO  - Game.Server.GameServer - GameMgr.Start(): True
+09:57:51,426 - [MAIN] - INFO  - Game.Server.GameServer - ConsortiaMgr Init: True
+09:57:51,434 - [MAIN] - INFO  - Game.Server.GameServer - LanguageMgr Init: True
+09:57:51,439 - [MAIN] - INFO  - Game.Server.GameServer - ExperienceRateMgr Init: True
+09:57:51,441 - [MAIN] - INFO  - Game.Server.GameServer - MacroDropMgr Init: True
+09:57:51,462 - [MAIN] - INFO  - Game.Server.Battle.BattleMgr - Battle server 127.0.0.1:9208 loaded...
+09:57:51,468 - [MAIN] - INFO  - Game.Server.Battle.BattleMgr - Total 1 battle server loaded.
+09:57:51,469 - [MAIN] - INFO  - Game.Server.GameServer - BattleMgr Setup: True
+09:57:51,470 - [MAIN] - INFO  - Game.Server.GameServer - Init Global Timers: True
+09:57:51,482 - [MAIN] - INFO  - Game.Server.GameServer - MarryRoomMgr Init: True
+09:57:51,483 - [MAIN] - INFO  - Game.Server.GameServer - LogMgr Setup: True
+09:57:51,507 - [MAIN] - INFO  - Game.Base.Packets.PacketProcessor - PacketProcessor: Loaded 152 handlers from GameServer Assembly!
+09:57:51,512 - [MAIN] - INFO  - Game.Base.CommandMgr - &version from GameServerScripts, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null has been suppressed, a command of that type already exists!
+09:57:51,514 - [MAIN] - INFO  - Game.Base.CommandMgr - Loaded 7 commands!
+09:57:51,522 - [MAIN] - INFO  - Game.Logic.Spells.SpellMgr - SpellMgr: Loaded 15 spell handlers from GameServer Assembly!
+09:57:51,525 - [MAIN] - INFO  - Game.Base.BaseConnector - Connected to 127.0.0.1:9202
+09:57:51,526 - [MAIN] - INFO  - Game.Server.GameServer - Login To CenterServer: True
+09:57:51,530 - [MAIN] - INFO  - Game.Base.BaseConnector - Connected to 127.0.0.1:9208
+09:57:51,533 - [MAIN] - INFO  - Game.Server.GameServer - base.Start(): True
+09:57:51,558 - [MAIN] - INFO  - Game.Server.GameServer - GameServer is now open for connections!
+09:58:20,986 - [4] - INFO  - Game.Base.BaseServer - Incoming connection from 127.0.0.1:51137
+09:58:20,995 - [4] - INFO  - Game.Base.BaseClient - Disconnecting client (127.0.0.1:51137), received bytes=0
+09:58:21,015 - [4] - INFO  - Game.Base.BaseServer - Incoming connection from 127.0.0.1:51138
+09:58:21,314 - [16] - ERROR - Game.Server.Achievement.AchievementInventory - Achivement Finish:System.NullReferenceException: Referência de objeto não definida para uma instância de um objeto.
+   em Game.Server.Achievement.AchievementInventory.Finish(BaseAchievement baseAch) na D:\DDT\DDTank-3.0\Game.Server\Achievement\AchievementInventory.cs:linha 169
+09:58:21,346 - [16] - ERROR - Game.Server.Achievement.AchievementInventory - Achivement Finish:System.NullReferenceException: Referência de objeto não definida para uma instância de um objeto.
+   em Game.Server.Achievement.AchievementInventory.Finish(BaseAchievement baseAch) na D:\DDT\DDTank-3.0\Game.Server\Achievement\AchievementInventory.cs:linha 169
+09:58:21,373 - [16] - ERROR - Game.Server.Achievement.AchievementInventory - Achivement Finish:System.NullReferenceException: Referência de objeto não definida para uma instância de um objeto.
+   em Game.Server.Achievement.AchievementInventory.Finish(BaseAchievement baseAch) na D:\DDT\DDTank-3.0\Game.Server\Achievement\AchievementInventory.cs:linha 169
+09:58:21,417 - [16] - ERROR - Game.Server.Achievement.AchievementInventory - Achivement Finish:System.NullReferenceException: Referência de objeto não definida para uma instância de um objeto.
+   em Game.Server.Achievement.AchievementInventory.Finish(BaseAchievement baseAch) na D:\DDT\DDTank-3.0\Game.Server\Achievement\AchievementInventory.cs:linha 169
+09:58:21,445 - [16] - ERROR - Game.Server.Achievement.AchievementInventory - Achivement Finish:System.NullReferenceException: Referência de objeto não definida para uma instância de um objeto.
+   em Game.Server.Achievement.AchievementInventory.Finish(BaseAchievement baseAch) na D:\DDT\DDTank-3.0\Game.Server\Achievement\AchievementInventory.cs:linha 169
+09:58:21,475 - [16] - ERROR - Game.Server.Achievement.AchievementInventory - Achivement Finish:System.NullReferenceException: Referência de objeto não definida para uma instância de um objeto.
+   em Game.Server.Achievement.AchievementInventory.Finish(BaseAchievement baseAch) na D:\DDT\DDTank-3.0\Game.Server\Achievement\AchievementInventory.cs:linha 169
+09:58:21,501 - [16] - ERROR - Game.Server.Achievement.AchievementInventory - Achivement Finish:System.NullReferenceException: Referência de objeto não definida para uma instância de um objeto.
+   em Game.Server.Achievement.AchievementInventory.Finish(BaseAchievement baseAch) na D:\DDT\DDTank-3.0\Game.Server\Achievement\AchievementInventory.cs:linha 169
+09:58:21,511 - [16] - ERROR - Game.Server.Achievement.AchievementInventory - Achivement Finish:System.NullReferenceException: Referência de objeto não definida para uma instância de um objeto.
+   em Game.Server.Achievement.AchievementInventory.Finish(BaseAchievement baseAch) na D:\DDT\DDTank-3.0\Game.Server\Achievement\AchievementInventory.cs:linha 169
+09:58:21,535 - [16] - ERROR - Game.Server.Achievement.AchievementInventory - Achivement Finish:System.NullReferenceException: Referência de objeto não definida para uma instância de um objeto.
+   em Game.Server.Achievement.AchievementInventory.Finish(BaseAchievement baseAch) na D:\DDT\DDTank-3.0\Game.Server\Achievement\AchievementInventory.cs:linha 169
+09:58:21,545 - [16] - ERROR - Game.Server.Achievement.AchievementInventory - Achivement Finish:System.NullReferenceException: Referência de objeto não definida para uma instância de um objeto.
+   em Game.Server.Achievement.AchievementInventory.Finish(BaseAchievement baseAch) na D:\DDT\DDTank-3.0\Game.Server\Achievement\AchievementInventory.cs:linha 169
+09:58:21,553 - [16] - ERROR - Game.Server.Achievement.AchievementInventory - Achivement Finish:System.NullReferenceException: Referência de objeto não definida para uma instância de um objeto.
+   em Game.Server.Achievement.AchievementInventory.Finish(BaseAchievement baseAch) na D:\DDT\DDTank-3.0\Game.Server\Achievement\AchievementInventory.cs:linha 169
+09:58:21,570 - [16] - ERROR - Game.Server.Achievement.AchievementInventory - Achivement Finish:System.NullReferenceException: Referência de objeto não definida para uma instância de um objeto.
+   em Game.Server.Achievement.AchievementInventory.Finish(BaseAchievement baseAch) na D:\DDT\DDTank-3.0\Game.Server\Achievement\AchievementInventory.cs:linha 169
+09:58:21,584 - [16] - ERROR - Game.Server.Achievement.AchievementInventory - Achivement Finish:System.NullReferenceException: Referência de objeto não definida para uma instância de um objeto.
+   em Game.Server.Achievement.AchievementInventory.Finish(BaseAchievement baseAch) na D:\DDT\DDTank-3.0\Game.Server\Achievement\AchievementInventory.cs:linha 169
+09:58:21,610 - [16] - ERROR - Game.Server.Achievement.AchievementInventory - Achivement Finish:System.NullReferenceException: Referência de objeto não definida para uma instância de um objeto.
+   em Game.Server.Achievement.AchievementInventory.Finish(BaseAchievement baseAch) na D:\DDT\DDTank-3.0\Game.Server\Achievement\AchievementInventory.cs:linha 169
+09:58:21,635 - [16] - ERROR - Game.Server.Achievement.AchievementInventory - Achivement Finish:System.NullReferenceException: Referência de objeto não definida para uma instância de um objeto.
+   em Game.Server.Achievement.AchievementInventory.Finish(BaseAchievement baseAch) na D:\DDT\DDTank-3.0\Game.Server\Achievement\AchievementInventory.cs:linha 169
+09:58:21,663 - [16] - ERROR - Game.Server.Achievement.AchievementInventory - Achivement Finish:System.NullReferenceException: Referência de objeto não definida para uma instância de um objeto.
+   em Game.Server.Achievement.AchievementInventory.Finish(BaseAchievement baseAch) na D:\DDT\DDTank-3.0\Game.Server\Achievement\AchievementInventory.cs:linha 169
+09:58:21,688 - [16] - ERROR - Game.Server.Achievement.AchievementInventory - Achivement Finish:System.NullReferenceException: Referência de objeto não definida para uma instância de um objeto.
+   em Game.Server.Achievement.AchievementInventory.Finish(BaseAchievement baseAch) na D:\DDT\DDTank-3.0\Game.Server\Achievement\AchievementInventory.cs:linha 169
+09:58:21,716 - [16] - ERROR - Game.Server.Achievement.AchievementInventory - Achivement Finish:System.NullReferenceException: Referência de objeto não definida para uma instância de um objeto.
+   em Game.Server.Achievement.AchievementInventory.Finish(BaseAchievement baseAch) na D:\DDT\DDTank-3.0\Game.Server\Achievement\AchievementInventory.cs:linha 169
+09:58:21,749 - [16] - ERROR - Game.Server.Achievement.AchievementInventory - Achivement Finish:System.NullReferenceException: Referência de objeto não definida para uma instância de um objeto.
+   em Game.Server.Achievement.AchievementInventory.Finish(BaseAchievement baseAch) na D:\DDT\DDTank-3.0\Game.Server\Achievement\AchievementInventory.cs:linha 169
+09:58:21,780 - [16] - ERROR - Game.Server.Achievement.AchievementInventory - Achivement Finish:System.NullReferenceException: Referência de objeto não definida para uma instância de um objeto.
+   em Game.Server.Achievement.AchievementInventory.Finish(BaseAchievement baseAch) na D:\DDT\DDTank-3.0\Game.Server\Achievement\AchievementInventory.cs:linha 169
+09:58:21,793 - [16] - ERROR - Game.Server.Achievement.AchievementInventory - Achivement Finish:System.NullReferenceException: Referência de objeto não definida para uma instância de um objeto.
+   em Game.Server.Achievement.AchievementInventory.Finish(BaseAchievement baseAch) na D:\DDT\DDTank-3.0\Game.Server\Achievement\AchievementInventory.cs:linha 169
+09:58:21,822 - [16] - ERROR - Game.Server.Achievement.AchievementInventory - Achivement Finish:System.NullReferenceException: Referência de objeto não definida para uma instância de um objeto.
+   em Game.Server.Achievement.AchievementInventory.Finish(BaseAchievement baseAch) na D:\DDT\DDTank-3.0\Game.Server\Achievement\AchievementInventory.cs:linha 169
+09:58:21,856 - [16] - ERROR - Game.Server.Achievement.AchievementInventory - Achivement Finish:System.NullReferenceException: Referência de objeto não definida para uma instância de um objeto.
+   em Game.Server.Achievement.AchievementInventory.Finish(BaseAchievement baseAch) na D:\DDT\DDTank-3.0\Game.Server\Achievement\AchievementInventory.cs:linha 169
+09:58:21,889 - [16] - ERROR - Game.Server.Achievement.AchievementInventory - Achivement Finish:System.NullReferenceException: Referência de objeto não definida para uma instância de um objeto.
+   em Game.Server.Achievement.AchievementInventory.Finish(BaseAchievement baseAch) na D:\DDT\DDTank-3.0\Game.Server\Achievement\AchievementInventory.cs:linha 169
+09:58:21,919 - [16] - ERROR - Game.Server.Achievement.AchievementInventory - Achivement Finish:System.NullReferenceException: Referência de objeto não definida para uma instância de um objeto.
+   em Game.Server.Achievement.AchievementInventory.Finish(BaseAchievement baseAch) na D:\DDT\DDTank-3.0\Game.Server\Achievement\AchievementInventory.cs:linha 169
+09:58:21,945 - [16] - ERROR - Game.Server.Achievement.AchievementInventory - Achivement Finish:System.NullReferenceException: Referência de objeto não definida para uma instância de um objeto.
+   em Game.Server.Achievement.AchievementInventory.Finish(BaseAchievement baseAch) na D:\DDT\DDTank-3.0\Game.Server\Achievement\AchievementInventory.cs:linha 169
+09:58:21,968 - [16] - ERROR - Game.Server.Achievement.AchievementInventory - Achivement Finish:System.NullReferenceException: Referência de objeto não definida para uma instância de um objeto.
+   em Game.Server.Achievement.AchievementInventory.Finish(BaseAchievement baseAch) na D:\DDT\DDTank-3.0\Game.Server\Achievement\AchievementInventory.cs:linha 169
+09:58:21,978 - [16] - ERROR - Game.Server.Achievement.AchievementInventory - Achivement Finish:System.NullReferenceException: Referência de objeto não definida para uma instância de um objeto.
+   em Game.Server.Achievement.AchievementInventory.Finish(BaseAchievement baseAch) na D:\DDT\DDTank-3.0\Game.Server\Achievement\AchievementInventory.cs:linha 169
+09:58:22,002 - [16] - ERROR - Game.Server.Achievement.AchievementInventory - Achivement Finish:System.NullReferenceException: Referência de objeto não definida para uma instância de um objeto.
+   em Game.Server.Achievement.AchievementInventory.Finish(BaseAchievement baseAch) na D:\DDT\DDTank-3.0\Game.Server\Achievement\AchievementInventory.cs:linha 169
+09:58:22,026 - [16] - ERROR - Game.Server.Achievement.AchievementInventory - Achivement Finish:System.NullReferenceException: Referência de objeto não definida para uma instância de um objeto.
+   em Game.Server.Achievement.AchievementInventory.Finish(BaseAchievement baseAch) na D:\DDT\DDTank-3.0\Game.Server\Achievement\AchievementInventory.cs:linha 169
+09:58:22,049 - [16] - ERROR - Game.Server.Achievement.AchievementInventory - Achivement Finish:System.NullReferenceException: Referência de objeto não definida para uma instância de um objeto.
+   em Game.Server.Achievement.AchievementInventory.Finish(BaseAchievement baseAch) na D:\DDT\DDTank-3.0\Game.Server\Achievement\AchievementInventory.cs:linha 169
+09:58:22,072 - [16] - ERROR - Game.Server.Achievement.AchievementInventory - Achivement Finish:System.NullReferenceException: Referência de objeto não definida para uma instância de um objeto.
+   em Game.Server.Achievement.AchievementInventory.Finish(BaseAchievement baseAch) na D:\DDT\DDTank-3.0\Game.Server\Achievement\AchievementInventory.cs:linha 169
+09:58:22,083 - [16] - ERROR - Game.Server.Achievement.AchievementInventory - Achivement Finish:System.NullReferenceException: Referência de objeto não definida para uma instância de um objeto.
+   em Game.Server.Achievement.AchievementInventory.Finish(BaseAchievement baseAch) na D:\DDT\DDTank-3.0\Game.Server\Achievement\AchievementInventory.cs:linha 169
+09:58:22,090 - [16] - ERROR - Game.Server.Achievement.AchievementInventory - Achivement Finish:System.NullReferenceException: Referência de objeto não definida para uma instância de um objeto.
+   em Game.Server.Achievement.AchievementInventory.Finish(BaseAchievement baseAch) na D:\DDT\DDTank-3.0\Game.Server\Achievement\AchievementInventory.cs:linha 169
+09:58:22,100 - [16] - ERROR - Game.Server.Achievement.AchievementInventory - Achivement Finish:System.NullReferenceException: Referência de objeto não definida para uma instância de um objeto.
+   em Game.Server.Achievement.AchievementInventory.Finish(BaseAchievement baseAch) na D:\DDT\DDTank-3.0\Game.Server\Achievement\AchievementInventory.cs:linha 169
+09:58:22,111 - [16] - ERROR - Game.Server.Achievement.AchievementInventory - Achivement Finish:System.NullReferenceException: Referência de objeto não definida para uma instância de um objeto.
+   em Game.Server.Achievement.AchievementInventory.Finish(BaseAchievement baseAch) na D:\DDT\DDTank-3.0\Game.Server\Achievement\AchievementInventory.cs:linha 169
+09:58:22,122 - [16] - ERROR - Game.Server.Achievement.AchievementInventory - Achivement Finish:System.NullReferenceException: Referência de objeto não definida para uma instância de um objeto.
+   em Game.Server.Achievement.AchievementInventory.Finish(BaseAchievement baseAch) na D:\DDT\DDTank-3.0\Game.Server\Achievement\AchievementInventory.cs:linha 169
+09:58:22,132 - [16] - ERROR - Game.Server.Achievement.AchievementInventory - Achivement Finish:System.NullReferenceException: Referência de objeto não definida para uma instância de um objeto.
+   em Game.Server.Achievement.AchievementInventory.Finish(BaseAchievement baseAch) na D:\DDT\DDTank-3.0\Game.Server\Achievement\AchievementInventory.cs:linha 169
+09:58:22,143 - [16] - ERROR - Game.Server.Achievement.AchievementInventory - Achivement Finish:System.NullReferenceException: Referência de objeto não definida para uma instância de um objeto.
+   em Game.Server.Achievement.AchievementInventory.Finish(BaseAchievement baseAch) na D:\DDT\DDTank-3.0\Game.Server\Achievement\AchievementInventory.cs:linha 169
+09:58:22,169 - [16] - ERROR - Game.Server.Achievement.AchievementInventory - Achivement Finish:System.NullReferenceException: Referência de objeto não definida para uma instância de um objeto.
+   em Game.Server.Achievement.AchievementInventory.Finish(BaseAchievement baseAch) na D:\DDT\DDTank-3.0\Game.Server\Achievement\AchievementInventory.cs:linha 169
+09:58:22,195 - [16] - ERROR - Game.Server.Achievement.AchievementInventory - Achivement Finish:System.NullReferenceException: Referência de objeto não definida para uma instância de um objeto.
+   em Game.Server.Achievement.AchievementInventory.Finish(BaseAchievement baseAch) na D:\DDT\DDTank-3.0\Game.Server\Achievement\AchievementInventory.cs:linha 169
+09:58:22,205 - [16] - ERROR - Game.Server.Achievement.AchievementInventory - Achivement Finish:System.NullReferenceException: Referência de objeto não definida para uma instância de um objeto.
+   em Game.Server.Achievement.AchievementInventory.Finish(BaseAchievement baseAch) na D:\DDT\DDTank-3.0\Game.Server\Achievement\AchievementInventory.cs:linha 169
+09:58:22,236 - [16] - ERROR - Game.Server.Achievement.AchievementInventory - Achivement Finish:System.NullReferenceException: Referência de objeto não definida para uma instância de um objeto.
+   em Game.Server.Achievement.AchievementInventory.Finish(BaseAchievement baseAch) na D:\DDT\DDTank-3.0\Game.Server\Achievement\AchievementInventory.cs:linha 169
+09:58:22,262 - [16] - ERROR - Game.Server.Achievement.AchievementInventory - Achivement Finish:System.NullReferenceException: Referência de objeto não definida para uma instância de um objeto.
+   em Game.Server.Achievement.AchievementInventory.Finish(BaseAchievement baseAch) na D:\DDT\DDTank-3.0\Game.Server\Achievement\AchievementInventory.cs:linha 169
+09:58:22,294 - [16] - ERROR - Game.Server.Achievement.AchievementInventory - Achivement Finish:System.NullReferenceException: Referência de objeto não definida para uma instância de um objeto.
+   em Game.Server.Achievement.AchievementInventory.Finish(BaseAchievement baseAch) na D:\DDT\DDTank-3.0\Game.Server\Achievement\AchievementInventory.cs:linha 169
+09:58:22,324 - [16] - ERROR - Game.Server.Achievement.AchievementInventory - Achivement Finish:System.NullReferenceException: Referência de objeto não definida para uma instância de um objeto.
+   em Game.Server.Achievement.AchievementInventory.Finish(BaseAchievement baseAch) na D:\DDT\DDTank-3.0\Game.Server\Achievement\AchievementInventory.cs:linha 169
+09:58:22,351 - [16] - ERROR - Game.Server.Achievement.AchievementInventory - Achivement Finish:System.NullReferenceException: Referência de objeto não definida para uma instância de um objeto.
+   em Game.Server.Achievement.AchievementInventory.Finish(BaseAchievement baseAch) na D:\DDT\DDTank-3.0\Game.Server\Achievement\AchievementInventory.cs:linha 169
+09:58:22,381 - [16] - ERROR - Game.Server.Achievement.AchievementInventory - Achivement Finish:System.NullReferenceException: Referência de objeto não definida para uma instância de um objeto.
+   em Game.Server.Achievement.AchievementInventory.Finish(BaseAchievement baseAch) na D:\DDT\DDTank-3.0\Game.Server\Achievement\AchievementInventory.cs:linha 169
+09:58:22,408 - [16] - ERROR - Game.Server.Achievement.AchievementInventory - Achivement Finish:System.NullReferenceException: Referência de objeto não definida para uma instância de um objeto.
+   em Game.Server.Achievement.AchievementInventory.Finish(BaseAchievement baseAch) na D:\DDT\DDTank-3.0\Game.Server\Achievement\AchievementInventory.cs:linha 169
+09:58:22,440 - [16] - ERROR - Game.Server.Achievement.AchievementInventory - Achivement Finish:System.NullReferenceException: Referência de objeto não definida para uma instância de um objeto.
+   em Game.Server.Achievement.AchievementInventory.Finish(BaseAchievement baseAch) na D:\DDT\DDTank-3.0\Game.Server\Achievement\AchievementInventory.cs:linha 169
+09:58:22,451 - [16] - ERROR - Game.Server.Achievement.AchievementInventory - Achivement Finish:System.NullReferenceException: Referência de objeto não definida para uma instância de um objeto.
+   em Game.Server.Achievement.AchievementInventory.Finish(BaseAchievement baseAch) na D:\DDT\DDTank-3.0\Game.Server\Achievement\AchievementInventory.cs:linha 169
+09:58:22,463 - [16] - ERROR - Game.Server.Achievement.AchievementInventory - Achivement Finish:System.NullReferenceException: Referência de objeto não definida para uma instância de um objeto.
+   em Game.Server.Achievement.AchievementInventory.Finish(BaseAchievement baseAch) na D:\DDT\DDTank-3.0\Game.Server\Achievement\AchievementInventory.cs:linha 169
+09:58:22,475 - [16] - ERROR - Game.Server.Achievement.AchievementInventory - Achivement Finish:System.NullReferenceException: Referência de objeto não definida para uma instância de um objeto.
+   em Game.Server.Achievement.AchievementInventory.Finish(BaseAchievement baseAch) na D:\DDT\DDTank-3.0\Game.Server\Achievement\AchievementInventory.cs:linha 169
+09:58:22,486 - [16] - ERROR - Game.Server.Achievement.AchievementInventory - Achivement Finish:System.NullReferenceException: Referência de objeto não definida para uma instância de um objeto.
+   em Game.Server.Achievement.AchievementInventory.Finish(BaseAchievement baseAch) na D:\DDT\DDTank-3.0\Game.Server\Achievement\AchievementInventory.cs:linha 169
+09:58:22,497 - [16] - ERROR - Game.Server.Achievement.AchievementInventory - Achivement Finish:System.NullReferenceException: Referência de objeto não definida para uma instância de um objeto.
+   em Game.Server.Achievement.AchievementInventory.Finish(BaseAchievement baseAch) na D:\DDT\DDTank-3.0\Game.Server\Achievement\AchievementInventory.cs:linha 169
+09:58:22,523 - [16] - ERROR - Game.Server.Achievement.AchievementInventory - Achivement Finish:System.NullReferenceException: Referência de objeto não definida para uma instância de um objeto.
+   em Game.Server.Achievement.AchievementInventory.Finish(BaseAchievement baseAch) na D:\DDT\DDTank-3.0\Game.Server\Achievement\AchievementInventory.cs:linha 169
+09:58:22,552 - [16] - ERROR - Game.Server.Achievement.AchievementInventory - Achivement Finish:System.NullReferenceException: Referência de objeto não definida para uma instância de um objeto.
+   em Game.Server.Achievement.AchievementInventory.Finish(BaseAchievement baseAch) na D:\DDT\DDTank-3.0\Game.Server\Achievement\AchievementInventory.cs:linha 169
+09:58:22,581 - [16] - ERROR - Game.Server.Achievement.AchievementInventory - Achivement Finish:System.NullReferenceException: Referência de objeto não definida para uma instância de um objeto.
+   em Game.Server.Achievement.AchievementInventory.Finish(BaseAchievement baseAch) na D:\DDT\DDTank-3.0\Game.Server\Achievement\AchievementInventory.cs:linha 169
+09:58:22,609 - [16] - ERROR - Game.Server.Achievement.AchievementInventory - Achivement Finish:System.NullReferenceException: Referência de objeto não definida para uma instância de um objeto.
+   em Game.Server.Achievement.AchievementInventory.Finish(BaseAchievement baseAch) na D:\DDT\DDTank-3.0\Game.Server\Achievement\AchievementInventory.cs:linha 169
+09:58:22,638 - [16] - ERROR - Game.Server.Achievement.AchievementInventory - Achivement Finish:System.NullReferenceException: Referência de objeto não definida para uma instância de um objeto.
+   em Game.Server.Achievement.AchievementInventory.Finish(BaseAchievement baseAch) na D:\DDT\DDTank-3.0\Game.Server\Achievement\AchievementInventory.cs:linha 169
+09:58:22,679 - [16] - ERROR - Game.Server.Achievement.AchievementInventory - Achivement Finish:System.NullReferenceException: Referência de objeto não definida para uma instância de um objeto.
+   em Game.Server.Achievement.AchievementInventory.Finish(BaseAchievement baseAch) na D:\DDT\DDTank-3.0\Game.Server\Achievement\AchievementInventory.cs:linha 169
+09:58:22,713 - [16] - ERROR - Game.Server.Achievement.AchievementInventory - Achivement Finish:System.NullReferenceException: Referência de objeto não definida para uma instância de um objeto.
+   em Game.Server.Achievement.AchievementInventory.Finish(BaseAchievement baseAch) na D:\DDT\DDTank-3.0\Game.Server\Achievement\AchievementInventory.cs:linha 169
+09:58:22,741 - [16] - ERROR - Game.Server.Achievement.AchievementInventory - Achivement Finish:System.NullReferenceException: Referência de objeto não definida para uma instância de um objeto.
+   em Game.Server.Achievement.AchievementInventory.Finish(BaseAchievement baseAch) na D:\DDT\DDTank-3.0\Game.Server\Achievement\AchievementInventory.cs:linha 169
+09:58:22,772 - [16] - ERROR - Game.Server.Achievement.AchievementInventory - Achivement Finish:System.NullReferenceException: Referência de objeto não definida para uma instância de um objeto.
+   em Game.Server.Achievement.AchievementInventory.Finish(BaseAchievement baseAch) na D:\DDT\DDTank-3.0\Game.Server\Achievement\AchievementInventory.cs:linha 169
+09:58:22,801 - [16] - ERROR - Game.Server.Achievement.AchievementInventory - Achivement Finish:System.NullReferenceException: Referência de objeto não definida para uma instância de um objeto.
+   em Game.Server.Achievement.AchievementInventory.Finish(BaseAchievement baseAch) na D:\DDT\DDTank-3.0\Game.Server\Achievement\AchievementInventory.cs:linha 169
+09:58:22,828 - [16] - ERROR - Game.Server.Achievement.AchievementInventory - Achivement Finish:System.NullReferenceException: Referência de objeto não definida para uma instância de um objeto.
+   em Game.Server.Achievement.AchievementInventory.Finish(BaseAchievement baseAch) na D:\DDT\DDTank-3.0\Game.Server\Achievement\AchievementInventory.cs:linha 169
+09:58:22,860 - [16] - ERROR - Game.Server.Achievement.AchievementInventory - Achivement Finish:System.NullReferenceException: Referência de objeto não definida para uma instância de um objeto.
+   em Game.Server.Achievement.AchievementInventory.Finish(BaseAchievement baseAch) na D:\DDT\DDTank-3.0\Game.Server\Achievement\AchievementInventory.cs:linha 169
+09:58:22,895 - [16] - ERROR - Game.Server.Achievement.AchievementInventory - Achivement Finish:System.NullReferenceException: Referência de objeto não definida para uma instância de um objeto.
+   em Game.Server.Achievement.AchievementInventory.Finish(BaseAchievement baseAch) na D:\DDT\DDTank-3.0\Game.Server\Achievement\AchievementInventory.cs:linha 169
+09:58:22,923 - [16] - ERROR - Game.Server.Achievement.AchievementInventory - Achivement Finish:System.NullReferenceException: Referência de objeto não definida para uma instância de um objeto.
+   em Game.Server.Achievement.AchievementInventory.Finish(BaseAchievement baseAch) na D:\DDT\DDTank-3.0\Game.Server\Achievement\AchievementInventory.cs:linha 169
+09:58:22,954 - [16] - ERROR - Game.Server.Achievement.AchievementInventory - Achivement Finish:System.NullReferenceException: Referência de objeto não definida para uma instância de um objeto.
+   em Game.Server.Achievement.AchievementInventory.Finish(BaseAchievement baseAch) na D:\DDT\DDTank-3.0\Game.Server\Achievement\AchievementInventory.cs:linha 169
+09:58:22,983 - [16] - ERROR - Game.Server.Achievement.AchievementInventory - Achivement Finish:System.NullReferenceException: Referência de objeto não definida para uma instância de um objeto.
+   em Game.Server.Achievement.AchievementInventory.Finish(BaseAchievement baseAch) na D:\DDT\DDTank-3.0\Game.Server\Achievement\AchievementInventory.cs:linha 169
+09:58:23,019 - [16] - ERROR - Game.Server.Achievement.AchievementInventory - Achivement Finish:System.NullReferenceException: Referência de objeto não definida para uma instância de um objeto.
+   em Game.Server.Achievement.AchievementInventory.Finish(BaseAchievement baseAch) na D:\DDT\DDTank-3.0\Game.Server\Achievement\AchievementInventory.cs:linha 169
+09:58:23,034 - [16] - ERROR - Game.Server.Achievement.AchievementInventory - Achivement Finish:System.NullReferenceException: Referência de objeto não definida para uma instância de um objeto.
+   em Game.Server.Achievement.AchievementInventory.Finish(BaseAchievement baseAch) na D:\DDT\DDTank-3.0\Game.Server\Achievement\AchievementInventory.cs:linha 169
+09:58:23,089 - [16] - ERROR - Game.Server.Achievement.AchievementInventory - Achivement Finish:System.NullReferenceException: Referência de objeto não definida para uma instância de um objeto.
+   em Game.Server.Achievement.AchievementInventory.Finish(BaseAchievement baseAch) na D:\DDT\DDTank-3.0\Game.Server\Achievement\AchievementInventory.cs:linha 169
+09:58:23,192 - [16] - ERROR - Game.Server.Achievement.AchievementInventory - Achivement Finish:System.NullReferenceException: Referência de objeto não definida para uma instância de um objeto.
+   em Game.Server.Achievement.AchievementInventory.Finish(BaseAchievement baseAch) na D:\DDT\DDTank-3.0\Game.Server\Achievement\AchievementInventory.cs:linha 169
+09:58:23,216 - [16] - ERROR - Game.Server.Achievement.AchievementInventory - Achivement Finish:System.NullReferenceException: Referência de objeto não definida para uma instância de um objeto.
+   em Game.Server.Achievement.AchievementInventory.Finish(BaseAchievement baseAch) na D:\DDT\DDTank-3.0\Game.Server\Achievement\AchievementInventory.cs:linha 169
+09:58:23,246 - [16] - ERROR - Game.Server.Achievement.AchievementInventory - Achivement Finish:System.NullReferenceException: Referência de objeto não definida para uma instância de um objeto.
+   em Game.Server.Achievement.AchievementInventory.Finish(BaseAchievement baseAch) na D:\DDT\DDTank-3.0\Game.Server\Achievement\AchievementInventory.cs:linha 169
+09:58:50,458 - [14] - INFO  - Game.Logic.BaseGame - Game.Logic.Actions.CheckPVEGameStateAction
+09:58:50,508 - [15] - INFO  - Game.Logic.BaseGame - Game.Logic.Actions.CheckPVEGameStateAction
+09:58:50,551 - [15] - INFO  - Game.Logic.BaseGame - Game.Logic.Actions.WaitPlayerLoadingAction
+09:58:51,471 - [19] - INFO  - Game.Server.GameServer - Buff Scaning ...
+09:58:51,471 - [19] - INFO  - Game.Server.GameServer - Buff Scan complete!
+09:58:51,472 - [19] - INFO  - Game.Server.GameServer - Buff all 1 players in 0ms
+09:58:52,476 - [22] - INFO  - Game.Logic.BaseGame - Game.Logic.Actions.ProcessPacketAction
+09:58:52,503 - [15] - INFO  - Game.Logic.BaseGame - Game.Logic.Actions.CheckPVEGameStateAction
+09:58:56,112 - [15] - INFO  - Game.Logic.BaseGame - Game.Logic.Actions.CheckPVEGameStateAction
+09:58:56,161 - [15] - INFO  - Game.Logic.BaseGame - Game.Logic.Actions.LivingFallingAction
+09:58:56,162 - [15] - INFO  - Game.Logic.BaseGame - Game.Logic.Actions.LivingFallingAction
+09:58:56,163 - [15] - INFO  - Game.Logic.BaseGame - Game.Logic.Actions.LivingFallingAction
+09:58:56,164 - [15] - INFO  - Game.Logic.BaseGame - Game.Logic.Actions.LivingFallingAction
+09:58:56,166 - [15] - INFO  - Game.Logic.BaseGame - Game.Logic.Actions.LivingFallingAction
+09:58:56,166 - [15] - INFO  - Game.Logic.BaseGame - Game.Logic.Actions.LivingFallingAction
+09:58:56,168 - [15] - INFO  - Game.Logic.BaseGame - Game.Logic.Actions.LivingFallingAction
+09:58:56,168 - [15] - INFO  - Game.Logic.BaseGame - Game.Logic.Actions.LivingFallingAction
+09:58:56,169 - [15] - INFO  - Game.Logic.BaseGame - Game.Logic.Actions.LivingFallingAction
+09:58:56,170 - [15] - INFO  - Game.Logic.BaseGame - Game.Logic.Actions.LivingFallingAction
+09:58:58,659 - [15] - INFO  - Game.Logic.BaseGame - Game.Logic.Actions.CheckPVEGameStateAction
+09:58:58,734 - [15] - INFO  - Game.Logic.BaseGame - Game.Logic.Actions.LivingMoveToAction
+09:58:58,736 - [15] - INFO  - Game.Logic.BaseGame - Game.Logic.Actions.LivingMoveToAction
+09:58:58,738 - [15] - INFO  - Game.Logic.BaseGame - Game.Logic.Actions.LivingMoveToAction
+09:58:58,740 - [15] - INFO  - Game.Logic.BaseGame - Game.Logic.Actions.LivingMoveToAction
+09:58:58,741 - [15] - INFO  - Game.Logic.BaseGame - Game.Logic.Actions.LivingMoveToAction
+09:58:58,743 - [15] - INFO  - Game.Logic.BaseGame - Game.Logic.Actions.LivingMoveToAction
+09:58:58,745 - [15] - INFO  - Game.Logic.BaseGame - Game.Logic.Actions.LivingMoveToAction
+09:58:58,746 - [15] - INFO  - Game.Logic.BaseGame - Game.Logic.Actions.LivingMoveToAction
+09:58:58,748 - [15] - INFO  - Game.Logic.BaseGame - Game.Logic.Actions.LivingMoveToAction
+09:58:58,750 - [15] - INFO  - Game.Logic.BaseGame - Game.Logic.Actions.LivingMoveToAction
+09:58:58,751 - [15] - INFO  - Game.Logic.BaseGame - Game.Logic.Actions.CheckPVEGameStateAction
+09:59:01,983 - [15] - INFO  - Game.Logic.BaseGame - Game.Logic.Actions.LivingCallFunctionAction
+09:59:02,387 - [15] - INFO  - Game.Logic.BaseGame - Game.Logic.Actions.LivingCallFunctionAction
+09:59:02,712 - [15] - INFO  - Game.Logic.BaseGame - Game.Logic.Actions.LivingCallFunctionAction
+09:59:03,481 - [15] - INFO  - Game.Logic.BaseGame - Game.Logic.Actions.LivingCallFunctionAction
+09:59:07,563 - [15] - WARN  - Game.Server.Games.GameMgr - Game Mgr spent too much times: 4083 ms, count:1
+09:59:08,411 - [15] - INFO  - Game.Logic.BaseGame - Game.Logic.Actions.LivingCallFunctionAction
+09:59:08,493 - [15] - INFO  - Game.Logic.BaseGame - Game.Logic.Actions.LivingCallFunctionAction
+09:59:08,696 - [15] - INFO  - Game.Logic.BaseGame - Game.Logic.Actions.LivingCallFunctionAction
+09:59:09,347 - [15] - INFO  - Game.Logic.BaseGame - Game.Logic.Actions.LivingCallFunctionAction
+09:59:09,468 - [15] - INFO  - Game.Logic.BaseGame - Game.Logic.Actions.LivingCallFunctionAction
+09:59:09,751 - [15] - INFO  - Game.Logic.BaseGame - Game.Logic.Actions.LivingCallFunctionAction
+09:59:09,833 - [15] - INFO  - Game.Logic.BaseGame - Game.Logic.Actions.CheckPVEGameStateAction
+09:59:09,874 - [15] - INFO  - Game.Logic.BaseGame - Game.Logic.Actions.LivingSayAction
+09:59:09,880 - [15] - INFO  - Game.Logic.BaseGame - Game.Logic.Actions.WaitLivingAttackingAction
+09:59:10,139 - [22] - INFO  - Game.Logic.BaseGame - Game.Logic.Actions.ProcessPacketAction
+09:59:11,533 - [22] - INFO  - Game.Logic.BaseGame - Game.Logic.Actions.ProcessPacketAction
+09:59:11,592 - [22] - INFO  - Game.Logic.BaseGame - Game.Logic.Actions.ProcessPacketAction
+09:59:13,276 - [22] - INFO  - Game.Logic.BaseGame - Game.Logic.Actions.ProcessPacketAction
+09:59:13,291 - [22] - INFO  - Game.Logic.BaseGame - Game.Logic.Actions.ProcessPacketAction
+09:59:13,294 - [18] - INFO  - Game.Logic.BaseGame - Game.Logic.Actions.ProcessPacketAction
+09:59:13,389 - [15] - INFO  - Game.Logic.BaseGame - Game.Logic.Actions.CheckPVEGameStateAction
+09:59:14,299 - [18] - INFO  - Game.Logic.BaseGame - Game.Logic.Actions.ProcessPacketAction
+09:59:14,359 - [15] - INFO  - Game.Logic.BaseGame - Game.Logic.Actions.CheckPVEGameStateAction
+09:59:15,300 - [18] - INFO  - Game.Logic.BaseGame - Game.Logic.Actions.ProcessPacketAction
+09:59:19,199 - [15] - INFO  - Game.Logic.BaseGame - Game.Logic.Actions.CheckPVEGameStateAction
+09:59:19,244 - [15] - INFO  - Game.Logic.BaseGame - Game.Logic.Actions.LivingFallingAction
+09:59:19,248 - [15] - INFO  - Game.Logic.BaseGame - Game.Logic.Actions.LivingMoveToAction
+09:59:19,250 - [15] - INFO  - Game.Logic.BaseGame - Game.Logic.Actions.LivingMoveToAction
+09:59:19,252 - [15] - INFO  - Game.Logic.BaseGame - Game.Logic.Actions.LivingMoveToAction
+09:59:19,257 - [15] - INFO  - Game.Logic.BaseGame - Game.Logic.Actions.LivingMoveToAction
+09:59:19,260 - [15] - INFO  - Game.Logic.BaseGame - Game.Logic.Actions.LivingMoveToAction
+09:59:19,262 - [15] - INFO  - Game.Logic.BaseGame - Game.Logic.Actions.LivingMoveToAction
+09:59:19,267 - [15] - INFO  - Game.Logic.BaseGame - Game.Logic.Actions.LivingMoveToAction
+09:59:19,270 - [15] - INFO  - Game.Logic.BaseGame - Game.Logic.Actions.LivingMoveToAction
+09:59:19,274 - [15] - INFO  - Game.Logic.BaseGame - Game.Logic.Actions.LivingMoveToAction
+09:59:19,275 - [15] - INFO  - Game.Logic.BaseGame - Game.Logic.Actions.CheckPVEGameStateAction
+09:59:23,138 - [15] - INFO  - Game.Logic.BaseGame - Game.Logic.Actions.LivingCallFunctionAction
+09:59:23,178 - [15] - INFO  - Game.Logic.BaseGame - Game.Logic.Actions.LivingBeatAction
+09:59:23,463 - [15] - INFO  - Game.Logic.BaseGame - Game.Logic.Actions.LivingCallFunctionAction
+09:59:23,625 - [15] - INFO  - Game.Logic.BaseGame - Game.Logic.Actions.LivingCallFunctionAction
+09:59:24,111 - [15] - INFO  - Game.Logic.BaseGame - Game.Logic.Actions.LivingCallFunctionAction
+09:59:24,111 - [15] - INFO  - Game.Logic.BaseGame - Game.Logic.Actions.LivingCallFunctionAction
+09:59:24,152 - [15] - INFO  - Game.Logic.BaseGame - Game.Logic.Actions.LivingBeatAction
+09:59:24,193 - [15] - INFO  - Game.Logic.BaseGame - Game.Logic.Actions.LivingCallFunctionAction
+09:59:24,962 - [15] - INFO  - Game.Logic.BaseGame - Game.Logic.Actions.LivingCallFunctionAction
+09:59:25,003 - [15] - INFO  - Game.Logic.BaseGame - Game.Logic.Actions.LivingBeatAction
+09:59:27,150 - [15] - INFO  - Game.Logic.BaseGame - Game.Logic.Actions.LivingCallFunctionAction
+09:59:27,514 - [15] - INFO  - Game.Logic.BaseGame - Game.Logic.Actions.LivingCallFunctionAction
+09:59:27,554 - [15] - INFO  - Game.Logic.BaseGame - Game.Logic.Actions.LivingBeatAction
+09:59:27,635 - [15] - INFO  - Game.Logic.BaseGame - Game.Logic.Actions.CheckPVEGameStateAction
+09:59:27,676 - [15] - INFO  - Game.Logic.BaseGame - Game.Logic.Actions.LivingSayAction
+09:59:27,681 - [15] - INFO  - Game.Logic.BaseGame - Game.Logic.Actions.WaitLivingAttackingAction
+09:59:27,933 - [22] - INFO  - Game.Logic.BaseGame - Game.Logic.Actions.ProcessPacketAction
+09:59:30,467 - [23] - INFO  - Game.Logic.BaseGame - Game.Logic.Actions.ProcessPacketAction
+09:59:30,474 - [23] - INFO  - Game.Logic.BaseGame - Game.Logic.Actions.ProcessPacketAction
+09:59:30,479 - [22] - INFO  - Game.Logic.BaseGame - Game.Logic.Actions.ProcessPacketAction
+09:59:30,529 - [15] - INFO  - Game.Logic.BaseGame - Game.Logic.Actions.CheckPVEGameStateAction
+09:59:30,533 - [15] - INFO  - Game.Logic.BaseGame - Game.Logic.Actions.CheckPVEGameStateAction
+09:59:30,534 - [15] - INFO  - Game.Logic.BaseGame - Game.Logic.Actions.CheckPVEGameStateAction
+09:59:32,870 - [15] - INFO  - Game.Logic.BaseGame - Game.Logic.Actions.CheckPVEGameStateAction
+09:59:32,912 - [15] - INFO  - Game.Logic.BaseGame - Game.Logic.Actions.LivingBeatAction
+09:59:32,920 - [15] - INFO  - Game.Logic.BaseGame - Game.Logic.Actions.LivingMoveToAction
+09:59:32,924 - [15] - INFO  - Game.Logic.BaseGame - Game.Logic.Actions.LivingMoveToAction
+09:59:32,927 - [15] - INFO  - Game.Logic.BaseGame - Game.Logic.Actions.LivingMoveToAction
+09:59:32,930 - [15] - INFO  - Game.Logic.BaseGame - Game.Logic.Actions.LivingMoveToAction
+09:59:32,935 - [15] - INFO  - Game.Logic.BaseGame - Game.Logic.Actions.LivingMoveToAction
+09:59:32,938 - [15] - INFO  - Game.Logic.BaseGame - Game.Logic.Actions.LivingMoveToAction
+09:59:32,941 - [15] - INFO  - Game.Logic.BaseGame - Game.Logic.Actions.LivingMoveToAction
+09:59:32,941 - [15] - INFO  - Game.Logic.BaseGame - Game.Logic.Actions.CheckPVEGameStateAction
+09:59:36,355 - [15] - INFO  - Game.Logic.BaseGame - Game.Logic.Actions.LivingCallFunctionAction
+09:59:36,721 - [15] - INFO  - Game.Logic.BaseGame - Game.Logic.Actions.LivingCallFunctionAction
+09:59:36,964 - [15] - INFO  - Game.Logic.BaseGame - Game.Logic.Actions.LivingCallFunctionAction
+09:59:37,773 - [15] - INFO  - Game.Logic.BaseGame - Game.Logic.Actions.LivingCallFunctionAction
+09:59:37,813 - [15] - INFO  - Game.Logic.BaseGame - Game.Logic.Actions.LivingBeatAction
+09:59:38,176 - [15] - INFO  - Game.Logic.BaseGame - Game.Logic.Actions.LivingCallFunctionAction
+09:59:39,107 - [15] - INFO  - Game.Logic.BaseGame - Game.Logic.Actions.LivingCallFunctionAction
+09:59:39,147 - [15] - INFO  - Game.Logic.BaseGame - Game.Logic.Actions.LivingBeatAction
+09:59:40,933 - [15] - INFO  - Game.Logic.BaseGame - Game.Logic.Actions.LivingCallFunctionAction
+09:59:41,015 - [15] - INFO  - Game.Logic.BaseGame - Game.Logic.Actions.CheckPVEGameStateAction
+09:59:41,055 - [15] - INFO  - Game.Logic.BaseGame - Game.Logic.Actions.LivingSayAction
+09:59:41,058 - [15] - INFO  - Game.Logic.BaseGame - Game.Logic.Actions.WaitLivingAttackingAction
+09:59:41,299 - [18] - INFO  - Game.Logic.BaseGame - Game.Logic.Actions.ProcessPacketAction
+09:59:42,099 - [18] - INFO  - Game.Logic.BaseGame - Game.Logic.Actions.ProcessPacketAction
+09:59:43,218 - [18] - INFO  - Game.Logic.BaseGame - Game.Logic.Actions.ProcessPacketAction
+09:59:43,229 - [18] - INFO  - Game.Logic.BaseGame - Game.Logic.Actions.ProcessPacketAction
+09:59:43,231 - [22] - INFO  - Game.Logic.BaseGame - Game.Logic.Actions.ProcessPacketAction
+09:59:43,254 - [15] - INFO  - Game.Logic.BaseGame - Game.Logic.Actions.CheckPVEGameStateAction
+09:59:43,255 - [15] - INFO  - Game.Logic.BaseGame - Game.Logic.Actions.CheckPVEGameStateAction
+09:59:45,714 - [15] - INFO  - Game.Logic.BaseGame - Game.Logic.Actions.CheckPVEGameStateAction
+09:59:45,754 - [15] - INFO  - Game.Logic.BaseGame - Game.Logic.Actions.LivingFallingAction
+09:59:45,756 - [15] - INFO  - Game.Logic.BaseGame - Game.Logic.Actions.LivingMoveToAction
+09:59:45,758 - [15] - INFO  - Game.Logic.BaseGame - Game.Logic.Actions.LivingMoveToAction
+09:59:45,761 - [15] - INFO  - Game.Logic.BaseGame - Game.Logic.Actions.LivingMoveToAction
+09:59:45,764 - [15] - INFO  - Game.Logic.BaseGame - Game.Logic.Actions.LivingMoveToAction
+09:59:45,767 - [15] - INFO  - Game.Logic.BaseGame - Game.Logic.Actions.LivingMoveToAction
+09:59:45,769 - [15] - INFO  - Game.Logic.BaseGame - Game.Logic.Actions.LivingMoveToAction
+09:59:45,771 - [15] - INFO  - Game.Logic.BaseGame - Game.Logic.Actions.LivingMoveToAction
+09:59:45,774 - [15] - INFO  - Game.Logic.BaseGame - Game.Logic.Actions.LivingMoveToAction
+09:59:45,775 - [15] - INFO  - Game.Logic.BaseGame - Game.Logic.Actions.CheckPVEGameStateAction
+09:59:47,580 - [15] - INFO  - Game.Logic.BaseGame - Game.Logic.Actions.LivingCallFunctionAction
+09:59:47,620 - [15] - INFO  - Game.Logic.BaseGame - Game.Logic.Actions.LivingBeatAction
+09:59:47,904 - [15] - INFO  - Game.Logic.BaseGame - Game.Logic.Actions.LivingCallFunctionAction
+09:59:47,945 - [15] - INFO  - Game.Logic.BaseGame - Game.Logic.Actions.LivingBeatAction
+09:59:49,241 - [15] - INFO  - Game.Logic.BaseGame - Game.Logic.Actions.LivingCallFunctionAction
+09:59:49,444 - [15] - INFO  - Game.Logic.BaseGame - Game.Logic.Actions.LivingCallFunctionAction
+09:59:49,970 - [15] - INFO  - Game.Logic.BaseGame - Game.Logic.Actions.LivingCallFunctionAction
+09:59:50,010 - [15] - INFO  - Game.Logic.BaseGame - Game.Logic.Actions.LivingBeatAction
+09:59:50,253 - [15] - INFO  - Game.Logic.BaseGame - Game.Logic.Actions.LivingCallFunctionAction
+09:59:50,292 - [15] - INFO  - Game.Logic.BaseGame - Game.Logic.Actions.LivingBeatAction
+09:59:50,941 - [15] - INFO  - Game.Logic.BaseGame - Game.Logic.Actions.LivingCallFunctionAction
+09:59:51,471 - [16] - INFO  - Game.Server.GameServer - Buff Scaning ...
+09:59:51,471 - [16] - INFO  - Game.Server.GameServer - Buff Scan complete!
+09:59:51,473 - [16] - INFO  - Game.Server.GameServer - Buff all 1 players in 0ms
+09:59:52,398 - [15] - INFO  - Game.Logic.BaseGame - Game.Logic.Actions.LivingCallFunctionAction
+09:59:52,479 - [15] - INFO  - Game.Logic.BaseGame - Game.Logic.Actions.CheckPVEGameStateAction
+09:59:52,519 - [15] - INFO  - Game.Logic.BaseGame - Game.Logic.Actions.LivingSayAction
+09:59:52,522 - [15] - INFO  - Game.Logic.BaseGame - Game.Logic.Actions.WaitLivingAttackingAction
+09:59:52,784 - [18] - INFO  - Game.Logic.BaseGame - Game.Logic.Actions.ProcessPacketAction
+09:59:53,584 - [18] - INFO  - Game.Logic.BaseGame - Game.Logic.Actions.ProcessPacketAction
+09:59:53,592 - [18] - INFO  - Game.Logic.BaseGame - Game.Logic.Actions.ProcessPacketAction
+09:59:53,597 - [24] - INFO  - Game.Logic.BaseGame - Game.Logic.Actions.ProcessPacketAction
+09:59:53,622 - [15] - INFO  - Game.Logic.BaseGame - Game.Logic.Actions.CheckPVEGameStateAction
+09:59:53,623 - [15] - INFO  - Game.Logic.BaseGame - Game.Logic.Actions.CheckPVEGameStateAction
+09:59:53,626 - [15] - INFO  - Game.Logic.BaseGame - Game.Logic.Actions.CheckPVEGameStateAction
+09:59:53,628 - [15] - INFO  - Game.Logic.BaseGame - Game.Logic.Actions.CheckPVEGameStateAction
+09:59:56,040 - [15] - INFO  - Game.Logic.BaseGame - Game.Logic.Actions.CheckPVEGameStateAction
+09:59:56,082 - [15] - INFO  - Game.Logic.BaseGame - Game.Logic.Actions.LivingBeatAction
+09:59:56,086 - [15] - INFO  - Game.Logic.BaseGame - Game.Logic.Actions.LivingBeatAction
+09:59:56,089 - [15] - INFO  - Game.Logic.BaseGame - Game.Logic.Actions.LivingMoveToAction
+09:59:56,094 - [15] - INFO  - Game.Logic.BaseGame - Game.Logic.Actions.LivingMoveToAction
+09:59:56,097 - [15] - INFO  - Game.Logic.BaseGame - Game.Logic.Actions.LivingMoveToAction
+09:59:56,099 - [15] - INFO  - Game.Logic.BaseGame - Game.Logic.Actions.LivingMoveToAction
+09:59:56,104 - [15] - INFO  - Game.Logic.BaseGame - Game.Logic.Actions.LivingMoveToAction
+09:59:56,105 - [15] - INFO  - Game.Logic.BaseGame - Game.Logic.Actions.CheckPVEGameStateAction
+09:59:59,444 - [15] - INFO  - Game.Logic.BaseGame - Game.Logic.Actions.LivingCallFunctionAction
+10:00:00,253 - [15] - INFO  - Game.Logic.BaseGame - Game.Logic.Actions.LivingCallFunctionAction
+10:00:00,415 - [15] - INFO  - Game.Logic.BaseGame - Game.Logic.Actions.LivingCallFunctionAction
+10:00:00,456 - [15] - INFO  - Game.Logic.BaseGame - Game.Logic.Actions.LivingBeatAction
+10:00:00,740 - [15] - INFO  - Game.Logic.BaseGame - Game.Logic.Actions.LivingCallFunctionAction
+10:00:02,802 - [15] - INFO  - Game.Logic.BaseGame - Game.Logic.Actions.LivingCallFunctionAction
+10:00:02,882 - [15] - INFO  - Game.Logic.BaseGame - Game.Logic.Actions.CheckPVEGameStateAction
+10:00:02,923 - [15] - INFO  - Game.Logic.BaseGame - Game.Logic.Actions.LivingSayAction
+10:00:02,926 - [15] - INFO  - Game.Logic.BaseGame - Game.Logic.Actions.WaitLivingAttackingAction
+10:00:03,183 - [24] - INFO  - Game.Logic.BaseGame - Game.Logic.Actions.ProcessPacketAction
+10:00:04,183 - [24] - INFO  - Game.Logic.BaseGame - Game.Logic.Actions.ProcessPacketAction
+10:00:04,191 - [24] - INFO  - Game.Logic.BaseGame - Game.Logic.Actions.ProcessPacketAction
+10:00:04,195 - [18] - INFO  - Game.Logic.BaseGame - Game.Logic.Actions.ProcessPacketAction
+10:00:04,232 - [15] - INFO  - Game.Logic.BaseGame - Game.Logic.Actions.CheckPVEGameStateAction
+10:00:04,234 - [15] - INFO  - Game.Logic.BaseGame - Game.Logic.Actions.CheckPVEGameStateAction
+10:00:04,235 - [15] - INFO  - Game.Logic.BaseGame - Game.Logic.Actions.CheckPVEGameStateAction
+10:00:04,237 - [15] - INFO  - Game.Logic.BaseGame - Game.Logic.Actions.CheckPVEGameStateAction
+10:00:07,215 - [15] - INFO  - Game.Logic.BaseGame - Game.Logic.Actions.CheckPVEGameStateAction
+10:00:07,257 - [15] - INFO  - Game.Logic.BaseGame - Game.Logic.Actions.WaitLivingAttackingAction
+10:00:07,498 - [24] - INFO  - Game.Logic.BaseGame - Game.Logic.Actions.ProcessPacketAction
+10:00:08,760 - [24] - INFO  - Game.Logic.BaseGame - Game.Logic.Actions.ProcessPacketAction
+10:00:08,833 - [25] - INFO  - Game.Logic.BaseGame - Game.Logic.Actions.ProcessPacketAction
+10:00:10,068 - [25] - INFO  - Game.Logic.BaseGame - Game.Logic.Actions.ProcessPacketAction
+10:00:10,077 - [25] - INFO  - Game.Logic.BaseGame - Game.Logic.Actions.ProcessPacketAction
+10:00:10,082 - [24] - INFO  - Game.Logic.BaseGame - Game.Logic.Actions.ProcessPacketAction
+10:00:10,106 - [15] - INFO  - Game.Logic.BaseGame - Game.Logic.Actions.CheckPVEGameStateAction
+10:00:11,100 - [24] - INFO  - Game.Logic.BaseGame - Game.Logic.Actions.ProcessPacketAction
+10:00:12,101 - [24] - INFO  - Game.Logic.BaseGame - Game.Logic.Actions.ProcessPacketAction
+10:00:12,139 - [15] - INFO  - Game.Logic.BaseGame - Game.Logic.Actions.CheckPVEGameStateAction
+10:00:16,089 - [15] - INFO  - Game.Logic.BaseGame - Game.Logic.Actions.CheckPVEGameStateAction
+10:00:16,130 - [15] - INFO  - Game.Logic.BaseGame - Game.Logic.Actions.LivingFallingAction
+10:00:16,132 - [15] - INFO  - Game.Logic.BaseGame - Game.Logic.Actions.LivingMoveToAction
+10:00:16,135 - [15] - INFO  - Game.Logic.BaseGame - Game.Logic.Actions.LivingMoveToAction
+10:00:16,137 - [15] - INFO  - Game.Logic.BaseGame - Game.Logic.Actions.LivingMoveToAction
+10:00:16,140 - [15] - INFO  - Game.Logic.BaseGame - Game.Logic.Actions.LivingMoveToAction
+10:00:16,143 - [15] - INFO  - Game.Logic.BaseGame - Game.Logic.Actions.LivingMoveToAction
+10:00:16,145 - [15] - INFO  - Game.Logic.BaseGame - Game.Logic.Actions.LivingMoveToAction
+10:00:16,146 - [15] - INFO  - Game.Logic.BaseGame - Game.Logic.Actions.CheckPVEGameStateAction
+10:00:19,616 - [15] - INFO  - Game.Logic.BaseGame - Game.Logic.Actions.LivingCallFunctionAction
+10:00:20,021 - [15] - INFO  - Game.Logic.BaseGame - Game.Logic.Actions.LivingCallFunctionAction
+10:00:20,465 - [15] - INFO  - Game.Logic.BaseGame - Game.Logic.Actions.LivingCallFunctionAction
+10:00:20,788 - [15] - INFO  - Game.Logic.BaseGame - Game.Logic.Actions.LivingCallFunctionAction
+10:00:20,870 - [15] - INFO  - Game.Logic.BaseGame - Game.Logic.Actions.LivingCallFunctionAction
+10:00:20,950 - [15] - INFO  - Game.Logic.BaseGame - Game.Logic.Actions.LivingCallFunctionAction
+10:00:21,031 - [15] - INFO  - Game.Logic.BaseGame - Game.Logic.Actions.CheckPVEGameStateAction
+10:00:21,073 - [15] - INFO  - Game.Logic.BaseGame - Game.Logic.Actions.LivingMoveToAction
+10:00:21,077 - [15] - INFO  - Game.Logic.BaseGame - Game.Logic.Actions.LivingMoveToAction
+10:00:21,079 - [15] - INFO  - Game.Logic.BaseGame - Game.Logic.Actions.LivingMoveToAction
+10:00:21,082 - [15] - INFO  - Game.Logic.BaseGame - Game.Logic.Actions.LivingMoveToAction
+10:00:21,086 - [15] - INFO  - Game.Logic.BaseGame - Game.Logic.Actions.LivingMoveToAction
+10:00:21,088 - [15] - INFO  - Game.Logic.BaseGame - Game.Logic.Actions.LivingMoveToAction
+10:00:21,089 - [15] - INFO  - Game.Logic.BaseGame - Game.Logic.Actions.LivingMoveToAction
+10:00:21,091 - [15] - INFO  - Game.Logic.BaseGame - Game.Logic.Actions.LivingMoveToAction
+10:00:21,092 - [15] - INFO  - Game.Logic.BaseGame - Game.Logic.Actions.CheckPVEGameStateAction
+10:00:24,310 - [15] - INFO  - Game.Logic.BaseGame - Game.Logic.Actions.LivingCallFunctionAction
+10:00:24,514 - [15] - INFO  - Game.Logic.BaseGame - Game.Logic.Actions.LivingCallFunctionAction
+10:00:24,636 - [15] - INFO  - Game.Logic.BaseGame - Game.Logic.Actions.LivingCallFunctionAction
+10:00:24,636 - [15] - INFO  - Game.Logic.BaseGame - Game.Logic.Actions.LivingCallFunctionAction
+10:00:24,676 - [15] - INFO  - Game.Logic.BaseGame - Game.Logic.Actions.LivingCallFunctionAction
+10:00:25,244 - [15] - INFO  - Game.Logic.BaseGame - Game.Logic.Actions.LivingCallFunctionAction
+10:00:26,095 - [15] - INFO  - Game.Logic.BaseGame - Game.Logic.Actions.LivingCallFunctionAction
+10:00:26,299 - [15] - INFO  - Game.Logic.BaseGame - Game.Logic.Actions.LivingCallFunctionAction
+10:00:26,379 - [15] - INFO  - Game.Logic.BaseGame - Game.Logic.Actions.CheckPVEGameStateAction
+10:00:26,420 - [15] - INFO  - Game.Logic.BaseGame - Game.Logic.Actions.LivingSayAction
+10:00:26,426 - [15] - INFO  - Game.Logic.BaseGame - Game.Logic.Actions.WaitLivingAttackingAction
+10:00:26,698 - [26] - INFO  - Game.Logic.BaseGame - Game.Logic.Actions.ProcessPacketAction
+10:00:35,293 - [26] - INFO  - Game.Logic.BaseGame - Game.Logic.Actions.ProcessPacketAction
+10:00:35,317 - [24] - INFO  - Game.Logic.BaseGame - Game.Logic.Actions.ProcessPacketAction
+10:00:36,218 - [24] - INFO  - Game.Logic.BaseGame - Game.Logic.Actions.ProcessPacketAction
+10:00:36,228 - [24] - INFO  - Game.Logic.BaseGame - Game.Logic.Actions.ProcessPacketAction
+10:00:36,230 - [26] - INFO  - Game.Logic.BaseGame - Game.Logic.Actions.ProcessPacketAction
+10:00:37,220 - [26] - INFO  - Game.Logic.BaseGame - Game.Logic.Actions.ProcessPacketAction
+10:00:37,264 - [15] - INFO  - Game.Logic.BaseGame - Game.Logic.Actions.CheckPVEGameStateAction
+10:00:38,267 - [26] - INFO  - Game.Logic.BaseGame - Game.Logic.Actions.ProcessPacketAction
+10:00:38,325 - [15] - INFO  - Game.Logic.BaseGame - Game.Logic.Actions.CheckPVEGameStateAction
+10:00:42,075 - [15] - INFO  - Game.Logic.BaseGame - Game.Logic.Actions.CheckPVEGameStateAction
+10:00:42,121 - [15] - INFO  - Game.Logic.BaseGame - Game.Logic.Actions.LivingMoveToAction
+10:00:42,125 - [15] - INFO  - Game.Logic.BaseGame - Game.Logic.Actions.LivingMoveToAction
+10:00:42,128 - [15] - INFO  - Game.Logic.BaseGame - Game.Logic.Actions.LivingMoveToAction
+10:00:42,131 - [15] - INFO  - Game.Logic.BaseGame - Game.Logic.Actions.LivingMoveToAction
+10:00:42,136 - [15] - INFO  - Game.Logic.BaseGame - Game.Logic.Actions.LivingMoveToAction
+10:00:42,139 - [15] - INFO  - Game.Logic.BaseGame - Game.Logic.Actions.LivingMoveToAction
+10:00:42,144 - [15] - INFO  - Game.Logic.BaseGame - Game.Logic.Actions.LivingMoveToAction
+10:00:42,147 - [15] - INFO  - Game.Logic.BaseGame - Game.Logic.Actions.LivingMoveToAction
+10:00:42,148 - [15] - INFO  - Game.Logic.BaseGame - Game.Logic.Actions.CheckPVEGameStateAction
+10:00:45,566 - [15] - INFO  - Game.Logic.BaseGame - Game.Logic.Actions.LivingCallFunctionAction
+10:00:45,808 - [15] - INFO  - Game.Logic.BaseGame - Game.Logic.Actions.LivingCallFunctionAction
+10:00:45,809 - [15] - INFO  - Game.Logic.BaseGame - Game.Logic.Actions.LivingCallFunctionAction
+10:00:45,929 - [15] - INFO  - Game.Logic.BaseGame - Game.Logic.Actions.LivingCallFunctionAction
+10:00:46,052 - [15] - INFO  - Game.Logic.BaseGame - Game.Logic.Actions.LivingCallFunctionAction
+10:00:46,495 - [15] - INFO  - Game.Logic.BaseGame - Game.Logic.Actions.LivingCallFunctionAction
+10:00:47,267 - [15] - INFO  - Game.Logic.BaseGame - Game.Logic.Actions.LivingCallFunctionAction
+10:00:47,348 - [15] - INFO  - Game.Logic.BaseGame - Game.Logic.Actions.LivingCallFunctionAction
+10:00:47,389 - [15] - INFO  - Game.Logic.BaseGame - Game.Logic.Actions.LivingBeatAction
+10:00:47,470 - [15] - INFO  - Game.Logic.BaseGame - Game.Logic.Actions.CheckPVEGameStateAction
+10:00:47,510 - [15] - INFO  - Game.Logic.BaseGame - Game.Logic.Actions.LivingSayAction
+10:00:47,516 - [15] - INFO  - Game.Logic.BaseGame - Game.Logic.Actions.WaitLivingAttackingAction
+10:00:47,783 - [26] - INFO  - Game.Logic.BaseGame - Game.Logic.Actions.ProcessPacketAction
+10:00:51,471 - [16] - INFO  - Game.Server.GameServer - Buff Scaning ...
+10:00:51,471 - [16] - INFO  - Game.Server.GameServer - Buff Scan complete!
+10:00:51,472 - [16] - INFO  - Game.Server.GameServer - Buff all 1 players in 0ms
+10:00:51,472 - [19] - INFO  - Game.Server.GameServer - Begin ping check....
+10:00:51,475 - [19] - INFO  - Game.Server.GameServer - End ping check....
+10:00:51,475 - [19] - INFO  - Game.Server.GameServer - Begin ping center check....
+10:00:51,476 - [19] - INFO  - Game.Server.GameServer - End ping center check....
+10:00:58,902 - [26] - INFO  - Game.Logic.BaseGame - Game.Logic.Actions.ProcessPacketAction
+10:00:58,910 - [26] - INFO  - Game.Logic.BaseGame - Game.Logic.Actions.ProcessPacketAction
+10:00:58,911 - [27] - INFO  - Game.Logic.BaseGame - Game.Logic.Actions.ProcessPacketAction
+10:00:58,946 - [15] - INFO  - Game.Logic.BaseGame - Game.Logic.Actions.CheckPVEGameStateAction
+10:00:58,946 - [15] - INFO  - Game.Logic.BaseGame - Game.Logic.Actions.CheckPVEGameStateAction
+10:01:00,111 - [26] - INFO  - Game.Logic.BaseGame - Game.Logic.Actions.ProcessPacketAction
+10:01:01,651 - [15] - INFO  - Game.Logic.BaseGame - Game.Logic.Actions.CheckPVEGameStateAction
+10:01:01,695 - [15] - INFO  - Game.Logic.BaseGame - Game.Logic.Actions.LivingMoveToAction
+10:01:01,699 - [15] - INFO  - Game.Logic.BaseGame - Game.Logic.Actions.LivingBeatAction
+10:01:01,703 - [15] - INFO  - Game.Logic.BaseGame - Game.Logic.Actions.LivingMoveToAction
+10:01:01,708 - [15] - INFO  - Game.Logic.BaseGame - Game.Logic.Actions.LivingMoveToAction
+10:01:01,712 - [15] - INFO  - Game.Logic.BaseGame - Game.Logic.Actions.LivingMoveToAction
+10:01:01,714 - [15] - INFO  - Game.Logic.BaseGame - Game.Logic.Actions.LivingMoveToAction
+10:01:01,719 - [15] - INFO  - Game.Logic.BaseGame - Game.Logic.Actions.LivingMoveToAction
+10:01:01,722 - [15] - INFO  - Game.Logic.BaseGame - Game.Logic.Actions.LivingMoveToAction
+10:01:01,723 - [15] - INFO  - Game.Logic.BaseGame - Game.Logic.Actions.CheckPVEGameStateAction
+10:01:03,714 - [15] - INFO  - Game.Logic.BaseGame - Game.Logic.Actions.LivingCallFunctionAction
+10:01:03,754 - [15] - INFO  - Game.Logic.BaseGame - Game.Logic.Actions.LivingBeatAction
+10:01:05,128 - [15] - INFO  - Game.Logic.BaseGame - Game.Logic.Actions.LivingCallFunctionAction
+10:01:05,695 - [15] - INFO  - Game.Logic.BaseGame - Game.Logic.Actions.LivingCallFunctionAction
+10:01:05,817 - [15] - INFO  - Game.Logic.BaseGame - Game.Logic.Actions.LivingCallFunctionAction
+10:01:05,857 - [15] - INFO  - Game.Logic.BaseGame - Game.Logic.Actions.LivingCallFunctionAction
+10:01:06,059 - [15] - INFO  - Game.Logic.BaseGame - Game.Logic.Actions.LivingCallFunctionAction
+10:01:06,301 - [15] - INFO  - Game.Logic.BaseGame - Game.Logic.Actions.LivingCallFunctionAction
+10:01:06,383 - [15] - INFO  - Game.Logic.BaseGame - Game.Logic.Actions.CheckPVEGameStateAction
+10:01:06,423 - [15] - INFO  - Game.Logic.BaseGame - Game.Logic.Actions.LivingSayAction
+10:01:06,427 - [15] - INFO  - Game.Logic.BaseGame - Game.Logic.Actions.WaitLivingAttackingAction
+10:01:06,698 - [28] - INFO  - Game.Logic.BaseGame - Game.Logic.Actions.ProcessPacketAction
+10:01:14,784 - [28] - INFO  - Game.Logic.BaseGame - Game.Logic.Actions.ProcessPacketAction
+10:01:14,790 - [28] - INFO  - Game.Logic.BaseGame - Game.Logic.Actions.ProcessPacketAction
+10:01:14,793 - [26] - INFO  - Game.Logic.BaseGame - Game.Logic.Actions.ProcessPacketAction
+10:01:14,837 - [15] - INFO  - Game.Logic.BaseGame - Game.Logic.Actions.CheckPVEGameStateAction
+10:01:14,837 - [15] - INFO  - Game.Logic.BaseGame - Game.Logic.Actions.CheckPVEGameStateAction
+10:01:15,785 - [26] - INFO  - Game.Logic.BaseGame - Game.Logic.Actions.ProcessPacketAction
+10:01:15,796 - [26] - INFO  - Game.Logic.BaseGame - Game.Logic.Actions.ProcessPacketAction
+10:01:17,572 - [15] - INFO  - Game.Logic.BaseGame - Game.Logic.Actions.CheckPVEGameStateAction
+10:01:17,613 - [15] - INFO  - Game.Logic.BaseGame - Game.Logic.Actions.WaitLivingAttackingAction
+10:01:17,899 - [26] - INFO  - Game.Logic.BaseGame - Game.Logic.Actions.ProcessPacketAction
+10:01:19,867 - [26] - INFO  - Game.Logic.BaseGame - Game.Logic.Actions.ProcessPacketAction
+10:01:19,873 - [26] - INFO  - Game.Logic.BaseGame - Game.Logic.Actions.ProcessPacketAction
+10:01:19,877 - [28] - INFO  - Game.Logic.BaseGame - Game.Logic.Actions.ProcessPacketAction
+10:01:19,897 - [15] - INFO  - Game.Logic.BaseGame - Game.Logic.Actions.CheckPVEGameStateAction
+10:01:19,898 - [15] - INFO  - Game.Logic.BaseGame - Game.Logic.Actions.CheckPVEGameStateAction
+10:01:22,363 - [15] - INFO  - Game.Logic.BaseGame - Game.Logic.Actions.CheckPVEGameStateAction
+10:01:22,405 - [15] - INFO  - Game.Logic.BaseGame - Game.Logic.Actions.LivingMoveToAction
+10:01:22,409 - [15] - INFO  - Game.Logic.BaseGame - Game.Logic.Actions.LivingMoveToAction
+10:01:22,412 - [15] - INFO  - Game.Logic.BaseGame - Game.Logic.Actions.LivingMoveToAction
+10:01:22,416 - [15] - INFO  - Game.Logic.BaseGame - Game.Logic.Actions.LivingMoveToAction
+10:01:22,420 - [15] - INFO  - Game.Logic.BaseGame - Game.Logic.Actions.LivingMoveToAction
+10:01:22,420 - [15] - INFO  - Game.Logic.BaseGame - Game.Logic.Actions.CheckPVEGameStateAction
+10:01:26,044 - [15] - INFO  - Game.Logic.BaseGame - Game.Logic.Actions.LivingCallFunctionAction
+10:01:26,409 - [15] - INFO  - Game.Logic.BaseGame - Game.Logic.Actions.LivingCallFunctionAction
+10:01:26,692 - [15] - INFO  - Game.Logic.BaseGame - Game.Logic.Actions.LivingCallFunctionAction
+10:01:27,056 - [15] - INFO  - Game.Logic.BaseGame - Game.Logic.Actions.LivingCallFunctionAction
+10:01:27,097 - [15] - INFO  - Game.Logic.BaseGame - Game.Logic.Actions.LivingCallFunctionAction
+10:01:27,177 - [15] - INFO  - Game.Logic.BaseGame - Game.Logic.Actions.CheckPVEGameStateAction
+10:01:27,219 - [15] - INFO  - Game.Logic.BaseGame - Game.Logic.Actions.WaitLivingAttackingAction
+10:01:27,499 - [29] - INFO  - Game.Logic.BaseGame - Game.Logic.Actions.ProcessPacketAction
+10:01:28,667 - [29] - INFO  - Game.Logic.BaseGame - Game.Logic.Actions.ProcessPacketAction
+10:01:28,669 - [29] - INFO  - Game.Logic.BaseGame - Game.Logic.Actions.ProcessPacketAction
+10:01:28,679 - [15] - INFO  - Game.Logic.BaseGame - Game.Logic.Actions.CheckPVEGameStateAction
+10:01:28,760 - [15] - INFO  - Game.Logic.BaseGame - Game.Logic.Actions.CheckPVEGameStateAction
+10:01:28,800 - [15] - INFO  - Game.Logic.BaseGame - Game.Logic.Actions.LivingSayAction
+10:01:28,803 - [15] - INFO  - Game.Logic.BaseGame - Game.Logic.Actions.LivingMoveToAction
+10:01:28,805 - [15] - INFO  - Game.Logic.BaseGame - Game.Logic.Actions.LivingMoveToAction
+10:01:28,808 - [15] - INFO  - Game.Logic.BaseGame - Game.Logic.Actions.LivingMoveToAction
+10:01:28,813 - [15] - INFO  - Game.Logic.BaseGame - Game.Logic.Actions.LivingMoveToAction
+10:01:28,816 - [15] - INFO  - Game.Logic.BaseGame - Game.Logic.Actions.LivingMoveToAction
+10:01:28,817 - [15] - INFO  - Game.Logic.BaseGame - Game.Logic.Actions.CheckPVEGameStateAction
+10:01:30,379 - [15] - INFO  - Game.Logic.BaseGame - Game.Logic.Actions.LivingCallFunctionAction
+10:01:30,420 - [15] - INFO  - Game.Logic.BaseGame - Game.Logic.Actions.LivingBeatAction
+10:01:31,805 - [15] - INFO  - Game.Logic.BaseGame - Game.Logic.Actions.LivingCallFunctionAction
+10:01:31,845 - [15] - INFO  - Game.Logic.BaseGame - Game.Logic.Actions.LivingBeatAction
+10:01:32,049 - [15] - INFO  - Game.Logic.BaseGame - Game.Logic.Actions.LivingCallFunctionAction
+10:01:32,090 - [15] - INFO  - Game.Logic.BaseGame - Game.Logic.Actions.LivingBeatAction
+10:01:33,633 - [15] - INFO  - Game.Logic.BaseGame - Game.Logic.Actions.LivingCallFunctionAction
+10:01:33,674 - [15] - INFO  - Game.Logic.BaseGame - Game.Logic.Actions.LivingBeatAction
+10:01:33,796 - [15] - INFO  - Game.Logic.BaseGame - Game.Logic.Actions.LivingCallFunctionAction
+10:01:34,648 - [15] - INFO  - Game.Logic.BaseGame - Game.Logic.Actions.CheckPVEGameStateAction
+10:01:34,693 - [15] - INFO  - Game.Logic.BaseGame - Game.Logic.Actions.WaitLivingAttackingAction
+10:01:34,932 - [26] - INFO  - Game.Logic.BaseGame - Game.Logic.Actions.ProcessPacketAction
+10:01:35,700 - [26] - INFO  - Game.Logic.BaseGame - Game.Logic.Actions.ProcessPacketAction
+10:01:35,708 - [26] - INFO  - Game.Logic.BaseGame - Game.Logic.Actions.ProcessPacketAction
+10:01:35,711 - [29] - INFO  - Game.Logic.BaseGame - Game.Logic.Actions.ProcessPacketAction
+10:01:35,751 - [15] - INFO  - Game.Logic.BaseGame - Game.Logic.Actions.CheckPVEGameStateAction
+10:01:38,169 - [15] - INFO  - Game.Logic.BaseGame - Game.Logic.Actions.LivingSayAction
+10:01:38,174 - [15] - INFO  - Game.Logic.BaseGame - Game.Logic.Actions.LivingBeatAction
+10:01:38,176 - [15] - INFO  - Game.Logic.BaseGame - Game.Logic.Actions.LivingBeatAction
+10:01:38,181 - [15] - INFO  - Game.Logic.BaseGame - Game.Logic.Actions.LivingMoveToAction
+10:01:38,184 - [15] - INFO  - Game.Logic.BaseGame - Game.Logic.Actions.LivingBeatAction
+10:01:38,185 - [15] - INFO  - Game.Logic.BaseGame - Game.Logic.Actions.CheckPVEGameStateAction
+10:01:40,601 - [15] - INFO  - Game.Logic.BaseGame - Game.Logic.Actions.LivingCallFunctionAction
+10:01:40,641 - [15] - INFO  - Game.Logic.BaseGame - Game.Logic.Actions.LivingBeatAction
+10:01:42,748 - [15] - INFO  - Game.Logic.BaseGame - Game.Logic.Actions.CheckPVEGameStateAction
+10:01:42,791 - [15] - INFO  - Game.Logic.BaseGame - Game.Logic.Actions.WaitLivingAttackingAction
+10:01:43,067 - [26] - INFO  - Game.Logic.BaseGame - Game.Logic.Actions.ProcessPacketAction
+10:01:44,784 - [26] - INFO  - Game.Logic.BaseGame - Game.Logic.Actions.ProcessPacketAction
+10:01:44,794 - [26] - INFO  - Game.Logic.BaseGame - Game.Logic.Actions.ProcessPacketAction
+10:01:44,797 - [30] - INFO  - Game.Logic.BaseGame - Game.Logic.Actions.ProcessPacketAction
+10:01:44,832 - [15] - INFO  - Game.Logic.BaseGame - Game.Logic.Actions.CheckPVEGameStateAction
+10:01:44,833 - [15] - INFO  - Game.Logic.BaseGame - Game.Logic.Actions.CheckPVEGameStateAction
+10:01:44,834 - [15] - INFO  - Game.Logic.BaseGame - Game.Logic.Actions.CheckPVEGameStateAction
+10:01:44,835 - [15] - INFO  - Game.Logic.BaseGame - Game.Logic.Actions.CheckPVEGameStateAction
+10:01:47,254 - [15] - INFO  - Game.Logic.BaseGame - Game.Logic.Actions.CheckPVEGameStateAction
+10:01:47,334 - [15] - INFO  - Game.Logic.BaseGame - Game.Logic.Actions.CheckPVEGameStateAction
+10:01:47,414 - [15] - INFO  - Game.Logic.BaseGame - Game.Logic.Actions.CheckPVEGameStateAction
+10:01:48,468 - [15] - INFO  - Game.Logic.BaseGame - Game.Logic.Actions.CheckPVEGameStateAction
+10:01:49,526 - [15] - INFO  - Game.Logic.BaseGame - Game.Logic.Actions.CheckPVEGameStateAction
+10:01:50,582 - [15] - INFO  - Game.Logic.BaseGame - Game.Logic.Actions.CheckPVEGameStateAction
+10:01:51,471 - [16] - INFO  - Game.Server.GameServer - Buff Scaning ...
+10:01:51,471 - [16] - INFO  - Game.Server.GameServer - Buff Scan complete!
+10:01:51,472 - [16] - INFO  - Game.Server.GameServer - Buff all 1 players in 0ms
+10:01:51,636 - [15] - INFO  - Game.Logic.BaseGame - Game.Logic.Actions.CheckPVEGameStateAction
+10:01:52,689 - [15] - INFO  - Game.Logic.BaseGame - Game.Logic.Actions.CheckPVEGameStateAction
+10:01:53,656 - [26] - INFO  - Game.Logic.BaseGame - Game.Logic.Actions.ProcessPacketAction
+10:01:53,746 - [15] - INFO  - Game.Logic.BaseGame - Game.Logic.Actions.CheckPVEGameStateAction
+10:01:54,799 - [15] - INFO  - Game.Logic.BaseGame - Game.Logic.Actions.CheckPVEGameStateAction
+10:01:55,854 - [15] - INFO  - Game.Logic.BaseGame - Game.Logic.Actions.CheckPVEGameStateAction
+10:01:56,905 - [15] - INFO  - Game.Logic.BaseGame - Game.Logic.Actions.CheckPVEGameStateAction
+10:01:57,953 - [15] - INFO  - Game.Logic.BaseGame - Game.Logic.Actions.CheckPVEGameStateAction
+10:01:59,007 - [15] - INFO  - Game.Logic.BaseGame - Game.Logic.Actions.CheckPVEGameStateAction
+10:02:00,070 - [15] - INFO  - Game.Logic.BaseGame - Game.Logic.Actions.CheckPVEGameStateAction
+10:02:01,120 - [15] - INFO  - Game.Logic.BaseGame - Game.Logic.Actions.CheckPVEGameStateAction
+10:02:02,176 - [15] - INFO  - Game.Logic.BaseGame - Game.Logic.Actions.CheckPVEGameStateAction
+10:02:03,229 - [15] - INFO  - Game.Logic.BaseGame - Game.Logic.Actions.CheckPVEGameStateAction
+10:02:04,281 - [15] - INFO  - Game.Logic.BaseGame - Game.Logic.Actions.CheckPVEGameStateAction
+10:02:04,397 - [26] - INFO  - Game.Logic.BaseGame - Game.Logic.Actions.ProcessPacketAction
+10:02:04,403 - [15] - INFO  - Game.Logic.BaseGame - Game.Logic.Actions.CheckPVEGameStateAction
+10:02:05,343 - [15] - INFO  - Game.Logic.BaseGame - Game.Logic.Actions.WaitPlayerLoadingAction
+10:02:07,499 - [31] - INFO  - Game.Logic.BaseGame - Game.Logic.Actions.ProcessPacketAction
+10:02:07,511 - [15] - INFO  - Game.Logic.BaseGame - Game.Logic.Actions.CheckPVEGameStateAction
+10:02:11,088 - [15] - INFO  - Game.Logic.BaseGame - Game.Logic.Actions.CheckPVEGameStateAction
+10:02:11,135 - [15] - INFO  - Game.Logic.BaseGame - Game.Logic.Actions.LivingFallingAction
+10:02:11,136 - [15] - INFO  - Game.Logic.BaseGame - Game.Logic.Actions.LivingSayAction
+10:02:11,137 - [15] - INFO  - Game.Logic.BaseGame - Game.Logic.Actions.PhysicalObjDoAction
+10:02:11,138 - [15] - INFO  - Game.Logic.BaseGame - Game.Logic.Actions.PhysicalObjDoAction
+10:02:11,139 - [15] - INFO  - Game.Logic.BaseGame - Game.Logic.Actions.PhysicalObjDoAction
+10:02:11,139 - [15] - INFO  - Game.Logic.BaseGame - Game.Logic.Actions.PhysicalObjDoAction
+10:02:22,224 - [15] - INFO  - Game.Logic.BaseGame - Game.Logic.Actions.CheckPVEGameStateAction
+10:02:22,270 - [15] - INFO  - Game.Logic.BaseGame - Game.Logic.Actions.LivingSayAction
+10:02:22,272 - [15] - INFO  - Game.Logic.BaseGame - Game.Logic.Actions.LivingPlayeMovieAction
+10:02:22,272 - [15] - INFO  - Game.Logic.BaseGame - Game.Logic.Actions.LivingCallFunctionAction
+10:02:26,038 - [15] - INFO  - Game.Logic.BaseGame - Game.Logic.Actions.CheckPVEGameStateAction
+10:02:26,080 - [15] - INFO  - Game.Logic.BaseGame - Game.Logic.Actions.WaitLivingAttackingAction
+10:02:26,582 - [31] - INFO  - Game.Logic.BaseGame - Game.Logic.Actions.ProcessPacketAction
+10:02:37,676 - [31] - INFO  - Game.Logic.BaseGame - Game.Logic.Actions.ProcessPacketAction
+10:02:37,698 - [31] - INFO  - Game.Logic.BaseGame - Game.Logic.Actions.ProcessPacketAction
+10:02:37,704 - [15] - INFO  - Game.Logic.BaseGame - Game.Logic.Actions.CheckPVEGameStateAction
+10:02:37,784 - [15] - INFO  - Game.Logic.BaseGame - Game.Logic.Actions.CheckPVEGameStateAction
+10:02:37,826 - [15] - INFO  - Game.Logic.BaseGame - Game.Logic.Actions.LivingSayAction
+10:02:37,827 - [15] - INFO  - Game.Logic.BaseGame - Game.Logic.Actions.LivingShootAction
+10:02:37,828 - [15] - INFO  - Game.Logic.BaseGame - Game.Logic.Actions.LivingPlayeMovieAction
+10:02:45,052 - [15] - INFO  - Game.Logic.BaseGame - Game.Logic.Actions.CheckPVEGameStateAction
+10:02:45,097 - [15] - INFO  - Game.Logic.BaseGame - Game.Logic.Actions.WaitLivingAttackingAction
+10:02:45,383 - [33] - INFO  - Game.Logic.BaseGame - Game.Logic.Actions.ProcessPacketAction
+10:02:51,471 - [16] - INFO  - Game.Server.GameServer - Saving Record...
+10:02:51,484 - [17] - INFO  - Game.Server.GameServer - Buff Scaning ...
+10:02:51,484 - [17] - INFO  - Game.Server.GameServer - Buff Scan complete!
+10:02:51,485 - [17] - INFO  - Game.Server.GameServer - Buff all 1 players in 0ms
+10:02:51,562 - [16] - INFO  - Game.Server.GameServer - Saving Record complete!
+10:02:56,385 - [33] - INFO  - Game.Logic.BaseGame - Game.Logic.Actions.ProcessPacketAction
+10:02:56,407 - [15] - INFO  - Game.Logic.BaseGame - Game.Logic.Actions.CheckPVEGameStateAction
+10:02:56,430 - [33] - INFO  - Game.Logic.BaseGame - Game.Logic.Actions.ProcessPacketAction
+10:02:56,487 - [15] - INFO  - Game.Logic.BaseGame - Game.Logic.Actions.CheckPVEGameStateAction
+10:02:56,527 - [15] - INFO  - Game.Logic.BaseGame - Game.Logic.Actions.LivingSayAction
+10:02:56,527 - [15] - INFO  - Game.Logic.BaseGame - Game.Logic.Actions.LivingPlayeMovieAction
+10:02:56,528 - [15] - INFO  - Game.Logic.BaseGame - Game.Logic.Actions.LivingCallFunctionAction
+10:02:58,559 - [15] - INFO  - Game.Logic.BaseGame - Game.Logic.Actions.LivingFallingAction
+10:02:58,560 - [15] - INFO  - Game.Logic.BaseGame - Game.Logic.Actions.LivingFallingAction
+10:03:00,662 - [15] - INFO  - Game.Logic.BaseGame - Game.Logic.Actions.CheckPVEGameStateAction
+10:03:00,703 - [15] - INFO  - Game.Logic.BaseGame - Game.Logic.Actions.LivingSayAction
+10:03:00,706 - [15] - INFO  - Game.Logic.BaseGame - Game.Logic.Actions.LivingMoveToAction
+10:03:00,710 - [15] - INFO  - Game.Logic.BaseGame - Game.Logic.Actions.LivingMoveToAction
+10:03:00,711 - [15] - INFO  - Game.Logic.BaseGame - Game.Logic.Actions.CheckPVEGameStateAction
+10:03:10,490 - [15] - INFO  - Game.Logic.BaseGame - Game.Logic.Actions.LivingCallFunctionAction
+10:03:10,571 - [15] - INFO  - Game.Logic.BaseGame - Game.Logic.Actions.LivingCallFunctionAction
+10:03:10,651 - [15] - INFO  - Game.Logic.BaseGame - Game.Logic.Actions.CheckPVEGameStateAction
+10:03:10,694 - [15] - INFO  - Game.Logic.BaseGame - Game.Logic.Actions.LivingMoveToAction
+10:03:10,698 - [15] - INFO  - Game.Logic.BaseGame - Game.Logic.Actions.LivingMoveToAction
+10:03:10,698 - [15] - INFO  - Game.Logic.BaseGame - Game.Logic.Actions.CheckPVEGameStateAction
+10:03:19,120 - [15] - INFO  - Game.Logic.BaseGame - Game.Logic.Actions.LivingCallFunctionAction
+10:03:19,161 - [15] - INFO  - Game.Logic.BaseGame - Game.Logic.Actions.LivingBeatAction
+10:03:20,256 - [15] - INFO  - Game.Logic.BaseGame - Game.Logic.Actions.LivingCallFunctionAction
+10:03:20,297 - [15] - INFO  - Game.Logic.BaseGame - Game.Logic.Actions.LivingBeatAction
+10:03:20,379 - [15] - INFO  - Game.Logic.BaseGame - Game.Logic.Actions.CheckPVEGameStateAction
+10:03:20,418 - [15] - INFO  - Game.Logic.BaseGame - Game.Logic.Actions.LivingSayAction
+10:03:20,421 - [15] - INFO  - Game.Logic.BaseGame - Game.Logic.Actions.WaitLivingAttackingAction
+10:03:20,699 - [35] - INFO  - Game.Logic.BaseGame - Game.Logic.Actions.ProcessPacketAction
+10:03:22,403 - [35] - INFO  - Game.Logic.BaseGame - Game.Logic.Actions.ProcessPacketAction
+10:03:23,193 - [35] - INFO  - Game.Logic.BaseGame - Game.Logic.Actions.ProcessPacketAction
+10:03:25,900 - [35] - INFO  - Game.Logic.BaseGame - Game.Logic.Actions.ProcessPacketAction
+10:03:25,907 - [35] - INFO  - Game.Logic.BaseGame - Game.Logic.Actions.ProcessPacketAction
+10:03:25,913 - [34] - INFO  - Game.Logic.BaseGame - Game.Logic.Actions.ProcessPacketAction
+10:03:26,901 - [34] - INFO  - Game.Logic.BaseGame - Game.Logic.Actions.ProcessPacketAction
+10:03:27,902 - [34] - INFO  - Game.Logic.BaseGame - Game.Logic.Actions.ProcessPacketAction
+10:03:30,658 - [15] - INFO  - Game.Logic.BaseGame - Game.Logic.Actions.CheckPVEGameStateAction
+10:03:30,699 - [15] - INFO  - Game.Logic.BaseGame - Game.Logic.Actions.LivingBeatAction
+10:03:30,703 - [15] - INFO  - Game.Logic.BaseGame - Game.Logic.Actions.LivingBeatAction
+10:03:30,704 - [15] - INFO  - Game.Logic.BaseGame - Game.Logic.Actions.CheckPVEGameStateAction
+10:03:30,780 - [15] - INFO  - Game.Logic.BaseGame - Game.Logic.Actions.CheckPVEGameStateAction
+10:03:30,820 - [15] - INFO  - Game.Logic.BaseGame - Game.Logic.Actions.LivingSayAction
+10:03:30,821 - [15] - INFO  - Game.Logic.BaseGame - Game.Logic.Actions.LivingSayAction
+10:03:30,823 - [15] - INFO  - Game.Logic.BaseGame - Game.Logic.Actions.LivingShootAction
+10:03:30,823 - [15] - INFO  - Game.Logic.BaseGame - Game.Logic.Actions.LivingPlayeMovieAction
+10:03:38,059 - [15] - INFO  - Game.Logic.BaseGame - Game.Logic.Actions.CheckPVEGameStateAction
+10:03:38,101 - [15] - INFO  - Game.Logic.BaseGame - Game.Logic.Actions.WaitLivingAttackingAction
+10:03:38,382 - [34] - INFO  - Game.Logic.BaseGame - Game.Logic.Actions.ProcessPacketAction
+10:03:40,016 - [34] - INFO  - Game.Logic.BaseGame - Game.Logic.Actions.ProcessPacketAction
+10:03:41,331 - [36] - INFO  - Game.Logic.BaseGame - Game.Logic.Actions.ProcessPacketAction
+10:03:44,699 - [36] - INFO  - Game.Logic.BaseGame - Game.Logic.Actions.ProcessPacketAction
+10:03:44,703 - [36] - INFO  - Game.Logic.BaseGame - Game.Logic.Actions.ProcessPacketAction
+10:03:44,704 - [34] - INFO  - Game.Logic.BaseGame - Game.Logic.Actions.ProcessPacketAction
+10:03:45,732 - [36] - INFO  - Game.Logic.BaseGame - Game.Logic.Actions.ProcessPacketAction
+10:03:46,733 - [36] - INFO  - Game.Logic.BaseGame - Game.Logic.Actions.ProcessPacketAction
+10:03:49,493 - [15] - INFO  - Game.Logic.BaseGame - Game.Logic.Actions.CheckPVEGameStateAction
+10:03:49,534 - [15] - INFO  - Game.Logic.BaseGame - Game.Logic.Actions.LivingSayAction
+10:03:49,540 - [15] - INFO  - Game.Logic.BaseGame - Game.Logic.Actions.LivingBeatAction
+10:03:49,544 - [15] - INFO  - Game.Logic.BaseGame - Game.Logic.Actions.LivingBeatAction
+10:03:49,545 - [15] - INFO  - Game.Logic.BaseGame - Game.Logic.Actions.CheckPVEGameStateAction
+10:03:51,471 - [17] - INFO  - Game.Server.GameServer - Begin ping check....
+10:03:51,472 - [17] - INFO  - Game.Server.GameServer - End ping check....
+10:03:51,473 - [17] - INFO  - Game.Server.Gam10:11:38,641 - [MAIN] - INFO  - Bussiness.GameProperties - Refreshing game properties!
+10:11:41,076 - [MAIN] - INFO  - Game.Server.GameServer - Recompile Scripts: True
+10:11:41,080 - [MAIN] - INFO  - Game.Server.GameServer - Server rules: true
+10:11:41,130 - [MAIN] - INFO  - Game.Server.GameServer - Registering global event handlers: true
+10:11:41,131 - [MAIN] - INFO  - Game.Server.GameServer - Script components: True
+10:11:41,131 - [MAIN] - INFO  - Game.Server.GameServer - Edition:21000: True
+10:11:41,137 - [MAIN] - INFO  - Game.Server.GameServer - InitSocket Port:9200: True
+10:11:41,199 - [MAIN] - INFO  - Game.Server.GameServer - AllocatePacketBuffers(): True
+10:11:41,205 - [MAIN] - INFO  - Game.Server.GameServer - LogMgr Init: True
+10:11:41,216 - [MAIN] - INFO  - Game.Server.GameServer - WorldMgr Init: True
+10:11:41,635 - [MAIN] - INFO  - Game.Server.GameServer - MapMgr Init: True
+10:11:42,097 - [MAIN] - INFO  - Game.Server.GameServer - ItemMgr Init: True
+10:11:42,138 - [MAIN] - INFO  - Game.Server.GameServer - ItemBox Init: True
+10:11:43,388 - [MAIN] - INFO  - Game.Server.GameServer - BallMgr Init: True
+10:11:43,395 - [MAIN] - INFO  - Game.Server.GameServer - VaneMgr ByteAray: True
+10:11:43,405 - [MAIN] - INFO  - Game.Server.GameServer - BallConfigMgr Init: True
+10:11:43,415 - [MAIN] - INFO  - Game.Server.GameServer - FusionMgr Init: True
+10:11:43,422 - [MAIN] - INFO  - Game.Server.GameServer - AwardMgr Init: True
+10:11:43,442 - [MAIN] - INFO  - Game.Server.GameServer - NPCInfoMgr Init: True
+10:11:43,456 - [MAIN] - INFO  - Game.Server.GameServer - MissionInfoMgr Init: True
+10:11:43,469 - [MAIN] - INFO  - Game.Server.GameServer - PveInfoMgr Init: True
+10:11:43,489 - [MAIN] - INFO  - Game.Server.GameServer - Drop Init: True
+10:11:43,498 - [MAIN] - INFO  - Game.Server.GameServer - FightRateMgr Init: True
+10:11:43,504 - [MAIN] - INFO  - Game.Server.GameServer - ConsortiaLevelMgr Init: True
+10:11:43,514 - [MAIN] - INFO  - Game.Server.GameServer - RefineryMgr Init: True
+10:11:43,542 - [MAIN] - INFO  - Game.Server.GameServer - StrengthenMgr Init: True
+10:11:43,552 - [MAIN] - INFO  - Game.Server.GameServer - PropItemMgr Init: True
+10:11:43,742 - [MAIN] - INFO  - Game.Server.GameServer - ShopMgr Init: True
+10:11:44,250 - [MAIN] - INFO  - Game.Server.GameServer - QuestMgr Init: True
+10:11:44,282 - [MAIN] - INFO  - Game.Server.GameServer - AchievementMgr Init: True
+10:11:44,285 - [MAIN] - INFO  - Game.Server.GameServer - RoomMgr.Setup: True
+10:11:44,286 - [MAIN] - INFO  - Game.Server.GameServer - GameMgr.Start(): True
+10:11:44,299 - [MAIN] - INFO  - Game.Server.GameServer - ConsortiaMgr Init: True
+10:11:44,326 - [MAIN] - INFO  - Game.Server.GameServer - LanguageMgr Init: True
+10:11:44,334 - [MAIN] - INFO  - Game.Server.GameServer - ExperienceRateMgr Init: True
+10:11:44,335 - [MAIN] - INFO  - Game.Server.GameServer - MacroDropMgr Init: True
+10:11:44,357 - [MAIN] - INFO  - Game.Server.Battle.BattleMgr - Battle server 127.0.0.1:9208 loaded...
+10:11:44,362 - [MAIN] - INFO  - Game.Server.Battle.BattleMgr - Total 1 battle server loaded.
+10:11:44,363 - [MAIN] - INFO  - Game.Server.GameServer - BattleMgr Setup: True
+10:11:44,364 - [MAIN] - INFO  - Game.Server.GameServer - Init Global Timers: True
+10:11:44,375 - [MAIN] - INFO  - Game.Server.GameServer - MarryRoomMgr Init: True
+10:11:44,376 - [MAIN] - INFO  - Game.Server.GameServer - LogMgr Setup: True
+10:11:44,403 - [MAIN] - INFO  - Game.Base.Packets.PacketProcessor - PacketProcessor: Loaded 152 handlers from GameServer Assembly!
+10:11:44,409 - [MAIN] - INFO  - Game.Base.CommandMgr - &version from GameServerScripts, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null has been suppressed, a command of that type already exists!
+10:11:44,414 - [MAIN] - INFO  - Game.Base.CommandMgr - Loaded 7 commands!
+10:11:44,426 - [MAIN] - INFO  - Game.Logic.Spells.SpellMgr - SpellMgr: Loaded 15 spell handlers from GameServer Assembly!
+10:11:44,429 - [MAIN] - INFO  - Game.Base.BaseConnector - Connected to 127.0.0.1:9202
+10:11:44,432 - [MAIN] - INFO  - Game.Server.GameServer - Login To CenterServer: True
+10:11:44,438 - [MAIN] - INFO  - Game.Base.BaseConnector - Connected to 127.0.0.1:9208
+10:11:44,444 - [MAIN] - INFO  - Game.Server.GameServer - base.Start(): True
+10:11:44,474 - [MAIN] - INFO  - Game.Server.GameServer - GameServer is now open for connections!
+10:12:09,720 - [5] - INFO  - Game.Base.BaseServer - Incoming connection from 127.0.0.1:51354
+10:12:09,728 - [5] - INFO  - Game.Base.BaseClient - Disconnecting client (127.0.0.1:51354), received bytes=0
+10:12:09,764 - [5] - INFO  - Game.Base.BaseServer - Incoming connection from 127.0.0.1:51355
+10:12:10,077 - [16] - ERROR - Game.Server.Achievement.AchievementInventory - Achivement Finish:System.NullReferenceException: Referência de objeto não definida para uma instância de um objeto.
+   em Game.Server.Achievement.AchievementInventory.Finish(BaseAchievement baseAch) na D:\DDT\DDTank-3.0\Game.Server\Achievement\AchievementInventory.cs:linha 169
+10:12:10,103 - [16] - ERROR - Game.Server.Achievement.AchievementInventory - Achivement Finish:System.NullReferenceException: Referência de objeto não definida para uma instância de um objeto.
+   em Game.Server.Achievement.AchievementInventory.Finish(BaseAchievement baseAch) na D:\DDT\DDTank-3.0\Game.Server\Achievement\AchievementInventory.cs:linha 169
+10:12:10,136 - [16] - ERROR - Game.Server.Achievement.AchievementInventory - Achivement Finish:System.NullReferenceException: Referência de objeto não definida para uma instância de um objeto.
+   em Game.Server.Achievement.AchievementInventory.Finish(BaseAchievement baseAch) na D:\DDT\DDTank-3.0\Game.Server\Achievement\AchievementInventory.cs:linha 169
+10:12:10,171 - [16] - ERROR - Game.Server.Achievement.AchievementInventory - Achivement Finish:System.NullReferenceException: Referência de objeto não definida para uma instância de um objeto.
+   em Game.Server.Achievement.AchievementInventory.Finish(BaseAchievement baseAch) na D:\DDT\DDTank-3.0\Game.Server\Achievement\AchievementInventory.cs:linha 169
+10:12:10,208 - [16] - ERROR - Game.Server.Achievement.AchievementInventory - Achivement Finish:System.NullReferenceException: Referência de objeto não definida para uma instância de um objeto.
+   em Game.Server.Achievement.AchievementInventory.Finish(BaseAchievement baseAch) na D:\DDT\DDTank-3.0\Game.Server\Achievement\AchievementInventory.cs:linha 169
+10:12:10,235 - [16] - ERROR - Game.Server.Achievement.AchievementInventory - Achivement Finish:System.NullReferenceException: Referência de objeto não definida para uma instância de um objeto.
+   em Game.Server.Achievement.AchievementInventory.Finish(BaseAchievement baseAch) na D:\DDT\DDTank-3.0\Game.Server\Achievement\AchievementInventory.cs:linha 169
+10:12:10,268 - [16] - ERROR - Game.Server.Achievement.AchievementInventory - Achivement Finish:System.NullReferenceException: Referência de objeto não definida para uma instância de um objeto.
+   em Game.Server.Achievement.AchievementInventory.Finish(BaseAchievement baseAch) na D:\DDT\DDTank-3.0\Game.Server\Achievement\AchievementInventory.cs:linha 169
+10:12:10,279 - [16] - ERROR - Game.Server.Achievement.AchievementInventory - Achivement Finish:System.NullReferenceException: Referência de objeto não definida para uma instância de um objeto.
+   em Game.Server.Achievement.AchievementInventory.Finish(BaseAchievement baseAch) na D:\DDT\DDTank-3.0\Game.Server\Achievement\AchievementInventory.cs:linha 169
+10:12:10,303 - [16] - ERROR - Game.Server.Achievement.AchievementInventory - Achivement Finish:System.NullReferenceException: Referência de objeto não definida para uma instância de um objeto.
+   em Game.Server.Achievement.AchievementInventory.Finish(BaseAchievement baseAch) na D:\DDT\DDTank-3.0\Game.Server\Achievement\AchievementInventory.cs:linha 169
+10:12:10,314 - [16] - ERROR - Game.Server.Achievement.AchievementInventory - Achivement Finish:System.NullReferenceException: Referência de objeto não definida para uma instância de um objeto.
+   em Game.Server.Achievement.AchievementInventory.Finish(BaseAchievement baseAch) na D:\DDT\DDTank-3.0\Game.Server\Achievement\AchievementInventory.cs:linha 169
+10:12:10,325 - [16] - ERROR - Game.Server.Achievement.AchievementInventory - Achivement Finish:System.NullReferenceException: Referência de objeto não definida para uma instância de um objeto.
+   em Game.Server.Achievement.AchievementInventory.Finish(BaseAchievement baseAch) na D:\DDT\DDTank-3.0\Game.Server\Achievement\AchievementInventory.cs:linha 169
+10:12:10,340 - [16] - ERROR - Game.Server.Achievement.AchievementInventory - Achivement Finish:System.NullReferenceException: Referência de objeto não definida para uma instância de um objeto.
+   em Game.Server.Achievement.AchievementInventory.Finish(BaseAchievement baseAch) na D:\DDT\DDTank-3.0\Game.Server\Achievement\AchievementInventory.cs:linha 169
+10:12:10,354 - [16] - ERROR - Game.Server.Achievement.AchievementInventory - Achivement Finish:System.NullReferenceException: Referência de objeto não definida para uma instância de um objeto.
+   em Game.Server.Achievement.AchievementInventory.Finish(BaseAchievement baseAch) na D:\DDT\DDTank-3.0\Game.Server\Achievement\AchievementInventory.cs:linha 169
+10:12:10,385 - [16] - ERROR - Game.Server.Achievement.AchievementInventory - Achivement Finish:System.NullReferenceException: Referência de objeto não definida para uma instância de um objeto.
+   em Game.Server.Achievement.AchievementInventory.Finish(BaseAchievement baseAch) na D:\DDT\DDTank-3.0\Game.Server\Achievement\AchievementInventory.cs:linha 169
+10:12:10,411 - [16] - ERROR - Game.Server.Achievement.AchievementInventory - Achivement Finish:System.NullReferenceException: Referência de objeto não definida para uma instância de um objeto.
+   em Game.Server.Achievement.AchievementInventory.Finish(BaseAchievement baseAch) na D:\DDT\DDTank-3.0\Game.Server\Achievement\AchievementInventory.cs:linha 169
+10:12:10,441 - [16] - ERROR - Game.Server.Achievement.AchievementInventory - Achivement Finish:System.NullReferenceException: Referência de objeto não definida para uma instância de um objeto.
+   em Game.Server.Achievement.AchievementInventory.Finish(BaseAchievement baseAch) na D:\DDT\DDTank-3.0\Game.Server\Achievement\AchievementInventory.cs:linha 169
+10:12:10,468 - [16] - ERROR - Game.Server.Achievement.AchievementInventory - Achivement Finish:System.NullReferenceException: Referência de objeto não definida para uma instância de um objeto.
+   em Game.Server.Achievement.AchievementInventory.Finish(BaseAchievement baseAch) na D:\DDT\DDTank-3.0\Game.Server\Achievement\AchievementInventory.cs:linha 169
+10:12:10,498 - [16] - ERROR - Game.Server.Achievement.AchievementInventory - Achivement Finish:System.NullReferenceException: Referência de objeto não definida para uma instância de um objeto.
+   em Game.Server.Achievement.AchievementInventory.Finish(BaseAchievement baseAch) na D:\DDT\DDTank-3.0\Game.Server\Achievement\AchievementInventory.cs:linha 169
+10:12:10,525 - [16] - ERROR - Game.Server.Achievement.AchievementInventory - Achivement Finish:System.NullReferenceException: Referência de objeto não definida para uma instância de um objeto.
+   em Game.Server.Achievement.AchievementInventory.Finish(BaseAchievement baseAch) na D:\DDT\DDTank-3.0\Game.Server\Achievement\AchievementInventory.cs:linha 169
+10:12:10,552 - [16] - ERROR - Game.Server.Achievement.AchievementInventory - Achivement Finish:System.NullReferenceException: Referência de objeto não definida para uma instância de um objeto.
+   em Game.Server.Achievement.AchievementInventory.Finish(BaseAchievement baseAch) na D:\DDT\DDTank-3.0\Game.Server\Achievement\AchievementInventory.cs:linha 169
+10:12:10,562 - [16] - ERROR - Game.Server.Achievement.AchievementInventory - Achivement Finish:System.NullReferenceException: Referência de objeto não definida para uma instância de um objeto.
+   em Game.Server.Achievement.AchievementInventory.Finish(BaseAchievement baseAch) na D:\DDT\DDTank-3.0\Game.Server\Achievement\AchievementInventory.cs:linha 169
+10:12:10,597 - [16] - ERROR - Game.Server.Achievement.AchievementInventory - Achivement Finish:System.NullReferenceException: Referência de objeto não definida para uma instância de um objeto.
+   em Game.Server.Achievement.AchievementInventory.Finish(BaseAchievement baseAch) na D:\DDT\DDTank-3.0\Game.Server\Achievement\AchievementInventory.cs:linha 169
+10:12:10,628 - [16] - ERROR - Game.Server.Achievement.AchievementInventory - Achivement Finish:System.NullReferenceException: Referência de objeto não definida para uma instância de um objeto.
+   em Game.Server.Achievement.AchievementInventory.Finish(BaseAchievement baseAch) na D:\DDT\DDTank-3.0\Game.Server\Achievement\AchievementInventory.cs:linha 169
+10:12:10,655 - [16] - ERROR - Game.Server.Achievement.AchievementInventory - Achivement Finish:System.NullReferenceException: Referência de objeto não definida para uma instância de um objeto.
+   em Game.Server.Achievement.AchievementInventory.Finish(BaseAchievement baseAch) na D:\DDT\DDTank-3.0\Game.Server\Achievement\AchievementInventory.cs:linha 169
+10:12:10,696 - [16] - ERROR - Game.Server.Achievement.AchievementInventory - Achivement Finish:System.NullReferenceException: Referência de objeto não definida para uma instância de um objeto.
+   em Game.Server.Achievement.AchievementInventory.Finish(BaseAchievement baseAch) na D:\DDT\DDTank-3.0\Game.Server\Achievement\AchievementInventory.cs:linha 169
+10:12:10,722 - [16] - ERROR - Game.Server.Achievement.AchievementInventory - Achivement Finish:System.NullReferenceException: Referência de objeto não definida para uma instância de um objeto.
+   em Game.Server.Achievement.AchievementInventory.Finish(BaseAchievement baseAch) na D:\DDT\DDTank-3.0\Game.Server\Achievement\AchievementInventory.cs:linha 169
+10:12:10,745 - [16] - ERROR - Game.Server.Achievement.AchievementInventory - Achivement Finish:System.NullReferenceException: Referência de objeto não definida para uma instância de um objeto.
+   em Game.Server.Achievement.AchievementInventory.Finish(BaseAchievement baseAch) na D:\DDT\DDTank-3.0\Game.Server\Achievement\AchievementInventory.cs:linha 169
+10:12:10,756 - [16] - ERROR - Game.Server.Achievement.AchievementInventory - Achivement Finish:System.NullReferenceException: Referência de objeto não definida para uma instância de um objeto.
+   em Game.Server.Achievement.AchievementInventory.Finish(BaseAchievement baseAch) na D:\DDT\DDTank-3.0\Game.Server\Achievement\AchievementInventory.cs:linha 169
+10:12:10,782 - [16] - ERROR - Game.Server.Achievement.AchievementInventory - Achivement Finish:System.NullReferenceException: Referência de objeto não definida para uma instância de um objeto.
+   em Game.Server.Achievement.AchievementInventory.Finish(BaseAchievement baseAch) na D:\DDT\DDTank-3.0\Game.Server\Achievement\AchievementInventory.cs:linha 169
+10:12:10,807 - [16] - ERROR - Game.Server.Achievement.AchievementInventory - Achivement Finish:System.NullReferenceException: Referência de objeto não definida para uma instância de um objeto.
+   em Game.Server.Achievement.AchievementInventory.Finish(BaseAchievement baseAch) na D:\DDT\DDTank-3.0\Game.Server\Achievement\AchievementInventory.cs:linha 169
+10:12:10,834 - [16] - ERROR - Game.Server.Achievement.AchievementInventory - Achivement Finish:System.NullReferenceException: Referência de objeto não definida para uma instância de um objeto.
+   em Game.Server.Achievement.AchievementInventory.Finish(BaseAchievement baseAch) na D:\DDT\DDTank-3.0\Game.Server\Achievement\AchievementInventory.cs:linha 169
+10:12:10,860 - [16] - ERROR - Game.Server.Achievement.AchievementInventory - Achivement Finish:System.NullReferenceException: Referência de objeto não definida para uma instância de um objeto.
+   em Game.Server.Achievement.AchievementInventory.Finish(BaseAchievement baseAch) na D:\DDT\DDTank-3.0\Game.Server\Achievement\AchievementInventory.cs:linha 169
+10:12:10,875 - [16] - ERROR - Game.Server.Achievement.AchievementInventory - Achivement Finish:System.NullReferenceException: Referência de objeto não definida para uma instância de um objeto.
+   em Game.Server.Achievement.AchievementInventory.Finish(BaseAchievement baseAch) na D:\DDT\DDTank-3.0\Game.Server\Achievement\AchievementInventory.cs:linha 169
+10:12:10,887 - [16] - ERROR - Game.Server.Achievement.AchievementInventory - Achivement Finish:System.NullReferenceException: Referência de objeto não definida para uma instância de um objeto.
+   em Game.Server.Achievement.AchievementInventory.Finish(BaseAchievement baseAch) na D:\DDT\DDTank-3.0\Game.Server\Achievement\AchievementInventory.cs:linha 169
+10:12:10,899 - [16] - ERROR - Game.Server.Achievement.AchievementInventory - Achivement Finish:System.NullReferenceException: Referência de objeto não definida para uma instância de um objeto.
+   em Game.Server.Achievement.AchievementInventory.Finish(BaseAchievement baseAch) na D:\DDT\DDTank-3.0\Game.Server\Achievement\AchievementInventory.cs:linha 169
+10:12:10,910 - [16] - ERROR - Game.Server.Achievement.AchievementInventory - Achivement Finish:System.NullReferenceException: Referência de objeto não definida para uma instância de um objeto.
+   em Game.Server.Achievement.AchievementInventory.Finish(BaseAchievement baseAch) na D:\DDT\DDTank-3.0\Game.Server\Achievement\AchievementInventory.cs:linha 169
+10:12:10,921 - [16] - ERROR - Game.Server.Achievement.AchievementInventory - Achivement Finish:System.NullReferenceException: Referência de objeto não definida para uma instância de um objeto.
+   em Game.Server.Achievement.AchievementInventory.Finish(BaseAchievement baseAch) na D:\DDT\DDTank-3.0\Game.Server\Achievement\AchievementInventory.cs:linha 169
+10:12:10,932 - [16] - ERROR - Game.Server.Achievement.AchievementInventory - Achivement Finish:System.NullReferenceException: Referência de objeto não definida para uma instância de um objeto.
+   em Game.Server.Achievement.AchievementInventory.Finish(BaseAchievement baseAch) na D:\DDT\DDTank-3.0\Game.Server\Achievement\AchievementInventory.cs:linha 169
+10:12:10,943 - [16] - ERROR - Game.Server.Achievement.AchievementInventory - Achivement Finish:System.NullReferenceException: Referência de objeto não definida para uma instância de um objeto.
+   em Game.Server.Achievement.AchievementInventory.Finish(BaseAchievement baseAch) na D:\DDT\DDTank-3.0\Game.Server\Achievement\AchievementInventory.cs:linha 169
+10:12:10,971 - [16] - ERROR - Game.Server.Achievement.AchievementInventory - Achivement Finish:System.NullReferenceException: Referência de objeto não definida para uma instância de um objeto.
+   em Game.Server.Achievement.AchievementInventory.Finish(BaseAchievement baseAch) na D:\DDT\DDTank-3.0\Game.Server\Achievement\AchievementInventory.cs:linha 169
+10:12:11,002 - [16] - ERROR - Game.Server.Achievement.AchievementInventory - Achivement Finish:System.NullReferenceException: Referência de objeto não definida para uma instância de um objeto.
+   em Game.Server.Achievement.AchievementInventory.Finish(BaseAchievement baseAch) na D:\DDT\DDTank-3.0\Game.Server\Achievement\AchievementInventory.cs:linha 169
+10:12:11,014 - [16] - ERROR - Game.Server.Achievement.AchievementInventory - Achivement Finish:System.NullReferenceException: Referência de objeto não definida para uma instância de um objeto.
+   em Game.Server.Achievement.AchievementInventory.Finish(BaseAchievement baseAch) na D:\DDT\DDTank-3.0\Game.Server\Achievement\AchievementInventory.cs:linha 169
+10:12:11,043 - [16] - ERROR - Game.Server.Achievement.AchievementInventory - Achivement Finish:System.NullReferenceException: Referência de objeto não definida para uma instância de um objeto.
+   em Game.Server.Achievement.AchievementInventory.Finish(BaseAchievement baseAch) na D:\DDT\DDTank-3.0\Game.Server\Achievement\AchievementInventory.cs:linha 169
+10:12:11,075 - [16] - ERROR - Game.Server.Achievement.AchievementInventory - Achivement Finish:System.NullReferenceException: Referência de objeto não definida para uma instância de um objeto.
+   em Game.Server.Achievement.AchievementInventory.Finish(BaseAchievement baseAch) na D:\DDT\DDTank-3.0\Game.Server\Achievement\AchievementInventory.cs:linha 169
+10:12:11,103 - [16] - ERROR - Game.Server.Achievement.AchievementInventory - Achivement Finish:System.NullReferenceException: Referência de objeto não definida para uma instância de um objeto.
+   em Game.Server.Achievement.AchievementInventory.Finish(BaseAchievement baseAch) na D:\DDT\DDTank-3.0\Game.Server\Achievement\AchievementInventory.cs:linha 169
+10:12:11,137 - [16] - ERROR - Game.Server.Achievement.AchievementInventory - Achivement Finish:System.NullReferenceException: Referência de objeto não definida para uma instância de um objeto.
+   em Game.Server.Achievement.AchievementInventory.Finish(BaseAchievement baseAch) na D:\DDT\DDTank-3.0\Game.Server\Achievement\AchievementInventory.cs:linha 169
+10:12:11,169 - [16] - ERROR - Game.Server.Achievement.AchievementInventory - Achivement Finish:System.NullReferenceException: Referência de objeto não definida para uma instância de um objeto.
+   em Game.Server.Achievement.AchievementInventory.Finish(BaseAchievement baseAch) na D:\DDT\DDTank-3.0\Game.Server\Achievement\AchievementInventory.cs:linha 169
+10:12:11,197 - [16] - ERROR - Game.Server.Achievement.AchievementInventory - Achivement Finish:System.NullReferenceException: Referência de objeto não definida para uma instância de um objeto.
+   em Game.Server.Achievement.AchievementInventory.Finish(BaseAchievement baseAch) na D:\DDT\DDTank-3.0\Game.Server\Achievement\AchievementInventory.cs:linha 169
+10:12:11,229 - [16] - ERROR - Game.Server.Achievement.AchievementInventory - Achivement Finish:System.NullReferenceException: Referência de objeto não definida para uma instância de um objeto.
+   em Game.Server.Achievement.AchievementInventory.Finish(BaseAchievement baseAch) na D:\DDT\DDTank-3.0\Game.Server\Achievement\AchievementInventory.cs:linha 169
+10:12:11,260 - [16] - ERROR - Game.Server.Achievement.AchievementInventory - Achivement Finish:System.NullReferenceException: Referência de objeto não definida para uma instância de um objeto.
+   em Game.Server.Achievement.AchievementInventory.Finish(BaseAchievement baseAch) na D:\DDT\DDTank-3.0\Game.Server\Achievement\AchievementInventory.cs:linha 169
+10:12:11,271 - [16] - ERROR - Game.Server.Achievement.AchievementInventory - Achivement Finish:System.NullReferenceException: Referência de objeto não definida para uma instância de um objeto.
+   em Game.Server.Achievement.AchievementInventory.Finish(BaseAchievement baseAch) na D:\DDT\DDTank-3.0\Game.Server\Achievement\AchievementInventory.cs:linha 169
+10:12:11,282 - [16] - ERROR - Game.Server.Achievement.AchievementInventory - Achivement Finish:System.NullReferenceException: Referência de objeto não definida para uma instância de um objeto.
+   em Game.Server.Achievement.AchievementInventory.Finish(BaseAchievement baseAch) na D:\DDT\DDTank-3.0\Game.Server\Achievement\AchievementInventory.cs:linha 169
+10:12:11,293 - [16] - ERROR - Game.Server.Achievement.AchievementInventory - Achivement Finish:System.NullReferenceException: Referência de objeto não definida para uma instância de um objeto.
+   em Game.Server.Achievement.AchievementInventory.Finish(BaseAchievement baseAch) na D:\DDT\DDTank-3.0\Game.Server\Achievement\AchievementInventory.cs:linha 169
+10:12:11,304 - [16] - ERROR - Game.Server.Achievement.AchievementInventory - Achivement Finish:System.NullReferenceException: Referência de objeto não definida para uma instância de um objeto.
+   em Game.Server.Achievement.AchievementInventory.Finish(BaseAchievement baseAch) na D:\DDT\DDTank-3.0\Game.Server\Achievement\AchievementInventory.cs:linha 169
+10:12:11,314 - [16] - ERROR - Game.Server.Achievement.AchievementInventory - Achivement Finish:System.NullReferenceException: Referência de objeto não definida para uma instância de um objeto.
+   em Game.Server.Achievement.AchievementInventory.Finish(BaseAchievement baseAch) na D:\DDT\DDTank-3.0\Game.Server\Achievement\AchievementInventory.cs:linha 169
+10:12:11,342 - [16] - ERROR - Game.Server.Achievement.AchievementInventory - Achivement Finish:System.NullReferenceException: Referência de objeto não definida para uma instância de um objeto.
+   em Game.Server.Achievement.AchievementInventory.Finish(BaseAchievement baseAch) na D:\DDT\DDTank-3.0\Game.Server\Achievement\AchievementInventory.cs:linha 169
+10:12:11,374 - [16] - ERROR - Game.Server.Achievement.AchievementInventory - Achivement Finish:System.NullReferenceException: Referência de objeto não definida para uma instância de um objeto.
+   em Game.Server.Achievement.AchievementInventory.Finish(BaseAchievement baseAch) na D:\DDT\DDTank-3.0\Game.Server\Achievement\AchievementInventory.cs:linha 169
+10:12:11,401 - [16] - ERROR - Game.Server.Achievement.AchievementInventory - Achivement Finish:System.NullReferenceException: Referência de objeto não definida para uma instância de um objeto.
+   em Game.Server.Achievement.AchievementInventory.Finish(BaseAchievement baseAch) na D:\DDT\DDTank-3.0\Game.Server\Achievement\AchievementInventory.cs:linha 169
+10:12:11,431 - [16] - ERROR - Game.Server.Achievement.AchievementInventory - Achivement Finish:System.NullReferenceException: Referência de objeto não definida para uma instância de um objeto.
+   em Game.Server.Achievement.AchievementInventory.Finish(BaseAchievement baseAch) na D:\DDT\DDTank-3.0\Game.Server\Achievement\AchievementInventory.cs:linha 169
+10:12:11,469 - [16] - ERROR - Game.Server.Achievement.AchievementInventory - Achivement Finish:System.NullReferenceException: Referência de objeto não definida para uma instância de um objeto.
+   em Game.Server.Achievement.AchievementInventory.Finish(BaseAchievement baseAch) na D:\DDT\DDTank-3.0\Game.Server\Achievement\AchievementInventory.cs:linha 169
+10:12:11,502 - [16] - ERROR - Game.Server.Achievement.AchievementInventory - Achivement Finish:System.NullReferenceException: Referência de objeto não definida para uma instância de um objeto.
+   em Game.Server.Achievement.AchievementInventory.Finish(BaseAchievement baseAch) na D:\DDT\DDTank-3.0\Game.Server\Achievement\AchievementInventory.cs:linha 169
+10:12:11,530 - [16] - ERROR - Game.Server.Achievement.AchievementInventory - Achivement Finish:System.NullReferenceException: Referência de objeto não definida para uma instância de um objeto.
+   em Game.Server.Achievement.AchievementInventory.Finish(BaseAchievement baseAch) na D:\DDT\DDTank-3.0\Game.Server\Achievement\AchievementInventory.cs:linha 169
+10:12:11,561 - [16] - ERROR - Game.Server.Achievement.AchievementInventory - Achivement Finish:System.NullReferenceException: Referência de objeto não definida para uma instância de um objeto.
+   em Game.Server.Achievement.AchievementInventory.Finish(BaseAchievement baseAch) na D:\DDT\DDTank-3.0\Game.Server\Achievement\AchievementInventory.cs:linha 169
+10:12:11,588 - [16] - ERROR - Game.Server.Achievement.AchievementInventory - Achivement Finish:System.NullReferenceException: Referência de objeto não definida para uma instância de um objeto.
+   em Game.Server.Achievement.AchievementInventory.Finish(BaseAchievement baseAch) na D:\DDT\DDTank-3.0\Game.Server\Achievement\AchievementInventory.cs:linha 169
+10:12:11,619 - [16] - ERROR - Game.Server.Achievement.AchievementInventory - Achivement Finish:System.NullReferenceException: Referência de objeto não definida para uma instância de um objeto.
+   em Game.Server.Achievement.AchievementInventory.Finish(BaseAchievement baseAch) na D:\DDT\DDTank-3.0\Game.Server\Achievement\AchievementInventory.cs:linha 169
+10:12:11,652 - [16] - ERROR - Game.Server.Achievement.AchievementInventory - Achivement Finish:System.NullReferenceException: Referência de objeto não definida para uma instância de um objeto.
+   em Game.Server.Achievement.AchievementInventory.Finish(BaseAchievement baseAch) na D:\DDT\DDTank-3.0\Game.Server\Achievement\AchievementInventory.cs:linha 169
+10:12:11,681 - [16] - ERROR - Game.Server.Achievement.AchievementInventory - Achivement Finish:System.NullReferenceException: Referência de objeto não definida para uma instância de um objeto.
+   em Game.Server.Achievement.AchievementInventory.Finish(BaseAchievement baseAch) na D:\DDT\DDTank-3.0\Game.Server\Achievement\AchievementInventory.cs:linha 169
+10:12:11,712 - [16] - ERROR - Game.Server.Achie10:22:24,091 - [MAIN] - INFO  - Bussiness.GameProperties - Refreshing game properties!
+10:22:26,242 - [MAIN] - INFO  - Game.Server.GameServer - Recompile Scripts: True
+10:22:26,244 - [MAIN] - INFO  - Game.Server.GameServer - Server rules: true
+10:22:26,283 - [MAIN] - INFO  - Game.Server.GameServer - Registering global event handlers: true
+10:22:26,283 - [MAIN] - INFO  - Game.Server.GameServer - Script components: True
+10:22:26,284 - [MAIN] - INFO  - Game.Server.GameServer - Edition:21000: True
+10:22:26,289 - [MAIN] - INFO  - Game.Server.GameServer - InitSocket Port:9200: True
+10:22:26,380 - [MAIN] - INFO  - Game.Server.GameServer - AllocatePacketBuffers(): True
+10:22:26,394 - [MAIN] - INFO  - Game.Server.GameServer - LogMgr Init: True
+10:22:26,402 - [MAIN] - INFO  - Game.Server.GameServer - WorldMgr Init: True
+10:22:26,717 - [MAIN] - INFO  - Game.Server.GameServer - MapMgr Init: True
+10:22:26,970 - [MAIN] - INFO  - Game.Server.GameServer - ItemMgr Init: True
+10:22:27,025 - [MAIN] - INFO  - Game.Server.GameServer - ItemBox Init: True
+10:22:28,130 - [MAIN] - INFO  - Game.Server.GameServer - BallMgr Init: True
+10:22:28,139 - [MAIN] - INFO  - Game.Server.GameServer - VaneMgr ByteAray: True
+10:22:28,147 - [MAIN] - INFO  - Game.Server.GameServer - BallConfigMgr Init: True
+10:22:28,154 - [MAIN] - INFO  - Game.Server.GameServer - FusionMgr Init: True
+10:22:28,160 - [MAIN] - INFO  - Game.Server.GameServer - AwardMgr Init: True
+10:22:28,173 - [MAIN] - INFO  - Game.Server.GameServer - NPCInfoMgr Init: True
+10:22:28,181 - [MAIN] - INFO  - Game.Server.GameServer - MissionInfoMgr Init: True
+10:22:28,190 - [MAIN] - INFO  - Game.Server.GameServer - PveInfoMgr Init: True
+10:22:28,207 - [MAIN] - INFO  - Game.Server.GameServer - Drop Init: True
+10:22:28,214 - [MAIN] - INFO  - Game.Server.GameServer - FightRateMgr Init: True
+10:22:28,220 - [MAIN] - INFO  - Game.Server.GameServer - ConsortiaLevelMgr Init: True
+10:22:28,227 - [MAIN] - INFO  - Game.Server.GameServer - RefineryMgr Init: True
+10:22:28,245 - [MAIN] - INFO  - Game.Server.GameServer - StrengthenMgr Init: True
+10:22:28,253 - [MAIN] - INFO  - Game.Server.GameServer - PropItemMgr Init: True
+10:22:28,393 - [MAIN] - INFO  - Game.Server.GameServer - ShopMgr Init: True
+10:22:28,844 - [MAIN] - INFO  - Game.Server.GameServer - QuestMgr Init: True
+10:22:28,878 - [MAIN] - INFO  - Game.Server.GameServer - AchievementMgr Init: True
+10:22:28,881 - [MAIN] - INFO  - Game.Server.GameServer - RoomMgr.Setup: True
+10:22:28,883 - [MAIN] - INFO  - Game.Server.GameServer - GameMgr.Start(): True
+10:22:28,897 - [MAIN] - INFO  - Game.Server.GameServer - ConsortiaMgr Init: True
+10:22:28,908 - [MAIN] - INFO  - Game.Server.GameServer - LanguageMgr Init: True
+10:22:28,914 - [MAIN] - INFO  - Game.Server.GameServer - ExperienceRateMgr Init: True
+10:22:28,916 - [MAIN] - INFO  - Game.Server.GameServer - MacroDropMgr Init: True
+10:22:28,948 - [MAIN] - INFO  - Game.Server.Battle.BattleMgr - Battle server 127.0.0.1:9208 loaded...
+10:22:28,959 - [MAIN] - INFO  - Game.Server.Battle.BattleMgr - Total 1 battle server loaded.
+10:22:28,959 - [MAIN] - INFO  - Game.Server.GameServer - BattleMgr Setup: True
+10:22:28,962 - [MAIN] - INFO  - Game.Server.GameServer - Init Global Timers: True
+10:22:28,976 - [MAIN] - INFO  - Game.Server.GameServer - MarryRoomMgr Init: True
+10:22:28,977 - [MAIN] - INFO  - Game.Server.GameServer - LogMgr Setup: True
+10:22:29,007 - [MAIN] - INFO  - Game.Base.Packets.PacketProcessor - PacketProcessor: Loaded 152 handlers from GameServer Assembly!
+10:22:29,012 - [MAIN] - INFO  - Game.Base.CommandMgr - &version from GameServerScripts, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null has been suppressed, a command of that type already exists!
+10:22:29,014 - [MAIN] - INFO  - Game.Base.CommandMgr - Loaded 7 commands!
+10:22:29,023 - [MAIN] - INFO  - Game.Logic.Spells.SpellMgr - SpellMgr: Loaded 15 spell handlers from GameServer Assembly!
+10:22:29,026 - [MAIN] - INFO  - Game.Base.BaseConnector - Connected to 127.0.0.1:9202
+10:22:29,028 - [MAIN] - INFO  - Game10:29:17,445 - [MAIN] - INFO  - Bussiness.GameProperties - Refreshing game properties!
+10:29:18,973 - [MAIN] - INFO  - Game.Server.GameServer - Recompile Scripts: True
+10:29:18,975 - [MAIN] - INFO  - Game.Server.GameServer - Server rules: true
+10:29:19,011 - [MAIN] - INFO  - Game.Server.GameServer - Registering global event handlers: true
+10:29:19,011 - [MAIN] - INFO  - Game.Server.GameServer - Script components: True
+10:29:19,012 - [MAIN] - INFO  - Game.Server.GameServer - Edition:21000: True
+10:29:19,015 - [MAIN] - INFO  - Game.Server.GameServer - InitSocket Port:9200: True
+10:29:19,054 - [MAIN] - INFO  - Game.Server.GameServer - AllocatePacketBuffers(): True
+10:29:19,061 - [MAIN] - INFO  - Game.Server.GameServer - LogMgr Init: True
+10:29:19,066 - [MAIN] - INFO  - Game.Server.GameServer - WorldMgr Init: True
+10:29:19,247 - [MAIN] - INFO  - Game.Server.GameServer - MapMgr Init: True
+10:29:19,460 - [MAIN] - INFO  - Game.Server.GameServer - ItemMgr Init: True
+10:29:19,482 - [MAIN] - INFO  - Game.Server.GameServer - ItemBox Init: True
+10:29:19,799 - [MAIN] - INFO  - Game.Server.GameServer - BallMgr Init: True
+10:29:19,805 - [MAIN] - INFO  - Game.Server.GameServer - VaneMgr ByteAray: True
+10:29:19,811 - [MAIN] - INFO  - Game.Server.GameServer - BallConfigMgr Init: True
+10:29:19,818 - [MAIN] - INFO  - Game.Server.GameServer - FusionMgr Init: True
+10:29:19,826 - [MAIN] - INFO  - Game.Server.GameServer - AwardMgr Init: True
+10:29:19,837 - [MAIN] - INFO  - Game.Server.GameServer - NPCInfoMgr Init: True
+10:29:19,844 - [MAIN] - INFO  - Game.Server.GameServer - MissionInfoMgr Init: True
+10:29:19,852 - [MAIN] - INFO  - Game.Server.GameServer - PveInfoMgr Init: True
+10:29:19,865 - [MAIN] - INFO  - Game.Server.GameServer - Drop Init: True
+10:29:19,870 - [MAIN] - INFO  - Game.Server.GameServer - FightRateMgr Init: True
+10:29:19,875 - [MAIN] - INFO  - Game.Server.GameServer - ConsortiaLevelMgr Init: True
+10:29:19,881 - [MAIN] - INFO  - Game.Server.GameServer - RefineryMgr Init: True
+10:29:19,903 - [MAIN] - INFO  - Game.Server.GameServer - StrengthenMgr Init: True
+10:29:19,916 - [MAIN] - INFO  - Game.Server.GameServer - PropItemMgr Init: True
+10:29:20,083 - [MAIN] - INFO  - Game.Server.GameServer - ShopMgr Init: True
+10:29:20,525 - [MAIN] - INFO  - Game.Server.GameServer - QuestMgr Init: True
+10:29:20,552 - [MAIN] - INFO  - Game.Server.GameServer - AchievementMgr Init: True
+10:29:20,554 - [MAIN] - INFO  - Game.Server.GameServer - RoomMgr.Setup: True
+10:29:20,555 - [MAIN] - INFO  - Game.Server.GameServer - GameMgr.Start(): True
+10:29:20,567 - [MAIN] - INFO  - Game.Server.GameServer - ConsortiaMgr Init: True
+10:29:20,575 - [MAIN] - INFO  - Game.Server.GameServer - LanguageMgr Init: True
+10:29:20,580 - [MAIN] - INFO  - Game.Server.GameServer - ExperienceRateMgr Init: True
+10:29:20,582 - [MAIN] - INFO  - Game.Server.GameServer - MacroDropMgr Init: True
+10:29:20,605 - [MAIN] - INFO  - Game.Server.Battle.BattleMgr - Battle server 127.0.0.1:9208 loaded...
+10:29:20,611 - [MAIN] - INFO  - Game.Server.Battle.BattleMgr - Total 1 battle server loaded.
+10:29:20,611 - [MAIN] - INFO  - Game.Server.GameServer - BattleMgr Setup: True
+10:29:20,613 - [MAIN] - INFO  - Game.Server.GameServer - Init Global Timers: True
+10:29:20,625 - [MAIN] - INFO  - Game.Server.GameServer - MarryRoomMgr Init: True
+10:29:20,626 - [MAIN] - INFO  - Game.Server.GameServer - LogMgr Setup: True
+10:29:20,656 - [MAIN] - INFO  - Game.Base.Packets.PacketProcessor - PacketProcessor: Loaded 152 handlers from GameServer Assembly!
+10:29:20,663 - [MAIN] - INFO  - Game.Base.CommandMgr - &version from GameServerScripts, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null has been suppressed, a command of that type already exists!
+10:29:20,667 - [MAIN] - INFO  - Game.Base.CommandMgr - Loaded 7 commands!
+10:29:20,676 - [MAIN] - INFO  - Game.Logic.Spells.SpellMgr - SpellMgr: Loaded 15 spell handlers from GameServer Assembly!
+10:29:20,680 - [MAIN] - INFO  - Game.Base.BaseConnector - Connected to 127.0.0.1:9202
+10:29:20,682 - [MAIN] - INFO  - Game10:40:29,747 - [MAIN] - INFO  - Bussiness.GameProperties - Refreshing game properties!
+10:40:31,269 - [MAIN] - INFO  - Game.Server.GameServer - Recompile Scripts: True
+10:40:31,272 - [MAIN] - INFO  - Game.Server.GameServer - Server rules: true
+10:40:31,309 - [MAIN] - INFO  - Game.Server.GameServer - Registering global event handlers: true
+10:40:31,310 - [MAIN] - INFO  - Game.Server.GameServer - Script components: True
+10:40:31,310 - [MAIN] - INFO  - Game.Server.GameServer - Edition:21000: True
+10:40:31,313 - [MAIN] - INFO  - Game.Server.GameServer - InitSocket Port:9200: True
+10:40:31,362 - [MAIN] - INFO  - Game.Server.GameServer - AllocatePacketBuffers(): True
+10:40:31,369 - [MAIN] - INFO  - Game.Server.GameServer - LogMgr Init: True
+10:40:31,373 - [MAIN] - INFO  - Game.Server.GameServer - WorldMgr Init: True
+10:40:31,579 - [MAIN] - INFO  - Game.Server.GameServer - MapMgr Init: True
+10:40:31,836 - [MAIN] - INFO  - Game.Server.GameServer - ItemMgr Init: True
+10:40:31,861 - [MAIN] - INFO  - Game.Server.GameServer - ItemBox Init: True
+10:40:32,196 - [MAIN] - INFO  - Game.Server.GameServer - BallMgr Init: True
+10:40:32,202 - [MAIN] - INFO  - Game.Server.GameServer - VaneMgr ByteAray: True
+10:40:32,208 - [MAIN] - INFO  - Game.Server.GameServer - BallConfigMgr Init: True
+10:40:32,214 - [MAIN] - INFO  - Game.Server.GameServer - FusionMgr Init: True
+10:40:32,220 - [MAIN] - INFO  - Game.Server.GameServer - AwardMgr Init: True
+10:40:32,230 - [MAIN] - INFO  - Game.Server.GameServer - NPCInfoMgr Init: True
+10:40:32,238 - [MAIN] - INFO  - Game.Server.GameServer - MissionInfoMgr Init: True
+10:40:32,246 - [MAIN] - INFO  - Game.Server.GameServer - PveInfoMgr Init: True
+10:40:32,258 - [MAIN] - INFO  - Game.Server.GameServer - Drop Init: True
+10:40:32,265 - [MAIN] - INFO  - Game.Server.GameServer - FightRateMgr Init: True
+10:40:32,270 - [MAIN] - INFO  - Game.Server.GameServer - ConsortiaLevelMgr Init: True
+10:40:32,277 - [MAIN] - INFO  - Game.Server.GameServer - RefineryMgr Init: True
+10:40:32,296 - [MAIN] - INFO  - Game.Server.GameServer - StrengthenMgr Init: True
+10:40:32,302 - [MAIN] - INFO  - Game.Server.GameServer - PropItemMgr Init: True
+10:40:32,426 - [MAIN] - INFO  - Game.Server.GameServer - ShopMgr Init: True
+10:40:32,649 - [MAIN] - INFO  - Game.Server.GameServer - QuestMgr Init: True
+10:40:32,691 - [MAIN] - INFO  - Game.Server.GameServer - AchievementMgr Init: True
+10:40:32,694 - [MAIN] - INFO  - Game.Server.GameServer - RoomMgr.Setup: True
+10:40:32,695 - [MAIN] - INFO  - Game.Server.GameServer - GameMgr.Start(): True
+10:40:32,706 - [MAIN] - INFO  - Game.Server.GameServer - ConsortiaMgr Init: True
+10:40:32,715 - [MAIN] - INFO  - Game.Server.GameServer - LanguageMgr Init: True
+10:40:32,719 - [MAIN] - INFO  - Game.Server.GameServer - ExperienceRateMgr Init: True
+10:40:32,721 - [MAIN] - INFO  - Game.Server.GameServer - MacroDropMgr Init: True
+10:40:32,744 - [MAIN] - INFO  - Game.Server.Battle.BattleMgr - Battle server 127.0.0.1:9208 loaded...
+10:40:32,751 - [MAIN] - INFO  - Game.Server.Battle.BattleMgr - Total 1 battle server loaded.
+10:40:32,751 - [MAIN] - INFO  - Game.Server.GameServer - BattleMgr Setup: True
+10:40:32,754 - [MAIN] - INFO  - Game.Server.GameServer - Init Global Timers: True
+10:40:32,766 - [MAIN] - INFO  - Game.Server.GameServer - MarryRoomMgr Init: True
+10:40:32,767 - [MAIN] - INFO  - Game.Server.GameServer - LogMgr Setup: True
+10:40:32,792 - [MAIN] - INFO  - Game.Base.Packets.PacketProcessor - PacketProcessor: Loaded 152 handlers from GameServer Assembly!
+10:40:32,797 - [MAIN] - INFO  - Game.Base.CommandMgr - &version from GameServerScripts, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null has been suppressed, a command of that type already exists!
+10:40:32,800 - [MAIN] - INFO  - Game.Base.CommandMgr - Loaded 7 commands!
+10:40:32,810 - [MAIN] - INFO  - Game.Logic.Spells.SpellMgr - SpellMgr: Loaded 15 spell handlers from GameServer Assembly!
+10:40:32,812 - [MAIN] - INFO  - Game.Base.BaseConnector - Connected to 127.0.0.1:9202
+10:40:32,814 - [MAIN] - INFO  - Game.Server.GameServer - Login To CenterServer: True
+10:40:32,817 - [MAIN] - INFO  - Game.Base.BaseConnector - Connected to 127.0.0.1:9208
+10:40:32,822 - [MAIN] - INFO  - Game.Server.GameServer - base.Start(): True
+10:40:32,847 - [MAIN] - INFO  - Game.Server.GameServer - GameServer is now open for connections!
+10:41:32,755 - [16] - INFO  - Game.Server.GameServer - Buff Scaning ...
+10:41:32,760 - [16] - INFO  - Game.Server.GameServer - Buff Scan complete!
+10:41:32,761 - [16] - INFO  - Game.Server.GameServer - Buff all 0 players in 0ms
+10:42:20,171 - [5] - INFO  - Game.Base.BaseServer - Incoming connection from 127.0.0.1:52001
+10:42:20,181 - [5] - INFO  - Game.Base.BaseClient - Disconnecting client (127.0.0.1:52001), received bytes=0
+10:42:20,213 - [5] - INFO  - Game.Base.BaseServer - Incoming connection from 127.0.0.1:52002
+10:42:32,755 - [16] - INFO  - Game.Server.GameServer - Buff Scaning ...
+10:42:32,755 - [16] - INFO  - Game.Server.GameServer - Buff Scan complete!
+10:42:32,756 - [16] - INFO  - Game.Server.GameServer - Buff all 1 players in 0ms
+10:43:32,756 - [17] - INFO  - Game.Server.GameServer - Begin ping check....
+10:43:32,757 - [17] - INFO  - Game.Server.GameServer - End ping check....
+10:43:32,758 - [17] - INFO  - Game.Server.GameServer - Begin ping center check....
+10:43:32,759 - [17] - INFO  - Game.Server.GameServer - End ping center check....
+10:43:32,767 - [17] - INFO  - Game.Server.GameServer - Buff Scaning ...
+10:43:32,767 - [17] - INFO  - Game.Server.GameServer - Buff Scan complete!
+10:43:32,767 - [17] - INFO  - Game.Server.GameServer - Buff all 1 players in 0ms
+10:44:32,767 - [17] - INFO  - Game.Server.GameServer - Buff Scaning ...
+10:44:32,770 - [17] - INFO  - Game.Server.GameServer - Buff Scan complete!
+10:44:32,771 - [17] - INFO  - Game.Server.GameServer - Buff all 1 players in 0ms
+10:45:32,756 - [18] - INFO  - Game.Server.GameServer - Saving Record...
+10:45:32,765 - [18] - INFO  - Game.Server.GameServer - Saving Record complete!
+10:45:32,768 - [17] - INFO  - Game.Server.GameServer - Buff Scaning ...
+10:45:32,768 - [17] - INFO  - Game.Server.GameServer - Buff Scan complete!
+10:45:32,769 - [17] - INFO  - Game.Server.GameServer - Buff all 1 players in 0ms
+10:46:32,767 - [16] - INFO  - Game.Server.GameServer - Begin ping check....
+10:46:32,780 - [17] - INFO  - Game.Server.GameServer - Buff Scaning ...
+10:46:43,663 - [17] - INFO  - Game.Server.GameServer - Buff Scan complete!
+10:46:43,665 - [17] - INFO  - Game.Server.GameServer - Buff all 1 players in 10875ms
+10:46:43,662 - [16] - INFO  - Game.Server.GameServer - End ping check....
+10:46:43,666 - [16] - INFO  - Game.Server.GameServer - Begin ping center check....
+10:46:43,668 - [16] - INFO  - Game.Server.GameServer - End ping center check....
+10:47:32,794 - [23] - INFO  - Game.Server.GameServer - Buff Scaning ...
+10:47:32,794 - [23] - INFO  - Game.Server.GameServer - Buff Scan complete!
+10:47:32,795 - [23] - INFO  - Game.Server.GameServer - Buff all 1 players in 0ms
+10:48:32,803 - [17] - INFO  - Game.Server.GameServer - Buff Scaning ...
+10:48:32,809 - [17] - INFO  - Game.Server.GameServer - Buff Scan complete!
+10:48:32,810 - [17] - INFO  - Game.Server.GameServer - Buff all 1 players in 0ms
+10:49:32,767 - [23] - INFO  - Game.Server.GameServer - Begin ping check....
+10:49:32,768 - [23] - INFO  - Game.Server.GameServer - End ping check....
+10:49:32,769 - [23] - INFO  - Game.Server.GameServer - Begin ping center check....
+10:49:32,772 - [23] - INFO  - Game.Server.GameServer - End ping center check....
+10:49:32,815 - [18] - INFO  - Game.Server.GameServer - Buff Scaning ...
+10:49:32,816 - [18] - INFO  - Game.Server.GameServer - Buff Scan complete!
+10:49:32,818 - [18] - INFO  - Game.Server.GameServer - Buff all 1 players in 0ms
+10:50:32,765 - [23] - INFO  - Game.Server.GameServer - Saving Record...
+10:50:32,767 - [23] - INFO  - Game.Server.GameServer - Saving Record complete!
+10:50:32,767 - [16] - INFO  - Game.Server.GameServer - Saving database...
+10:50:32,828 - [17] - INFO  - Game.Server.GameServer - Buff Scaning ...
+10:50:32,828 - [17] - INFO  - Game.Server.GameServer - Buff Scan complete!
+10:50:32,829 - [17] - INFO  - Game.Server.GameServer - Buff all 1 players in 0ms
+10:50:32,894 - [16] - INFO  - Game.Server.GameServer - Saving database complete!
+10:50:32,894 - [16] - INFO  - Game.Server.GameServer - Saved all databases and 1 players in 125ms
+10:51:32,828 - [16] - INFO  - Game.Server.GameServer - Buff Scaning ...
+10:51:32,829 - [16] - INFO  - Game.Server.GameServer - Buff Scan complete!
+10:51:32,830 - [16] - INFO  - Game.Server.GameServer - Buff all 1 players in 0ms
+10:52:32,768 - [23] - INFO  - Game.Server.GameServer - Begin ping check....
+10:52:32,769 - [23] - INFO  - Game.Server.GameServer - End ping check....
+10:52:32,770 - [23] - INFO  - Game.Server.GameServer - Begin ping center check....
+10:52:32,770 - [23] - INFO  - Game.Server.GameServer - End ping center check....
+10:52:32,829 - [17] - INFO  - Game.Server.GameServer - Buff Scaning ...
+10:52:32,829 - [17] - INFO  - Game.Server.GameServer - Buff Scan complete!
+10:52:32,831 - [17] - INFO  - Game.Server.GameServer - Buff all 1 players in 0ms
+10:53:32,830 - [17] - INFO  - Game.Server.GameServer - Buff Scaning ...
+10:53:32,830 - [17] - INFO  - Game.Server.GameServer - Buff Scan complete!
+10:53:32,831 - [17] - INFO  - Game.Server.GameServer - Buff all 1 players in 0ms
+10:53:42,828 - [28] - INFO  - Game.Base.BaseClient - Disconnecting client (127.0.0.1:52002), received bytes=0
+10:54:22,664 - [29] - INFO  - Game.Base.BaseServer - Incoming connection from 127.0.0.1:52813
+10:54:22,679 - [29] - INFO  - Game.Base.BaseClient - Disconnecting client (127.0.0.1:52813), received bytes=0
+10:54:22,714 - [29] - INFO  - Game.Base.BaseServer - Incoming connection from 127.0.0.1:52814
+10:54:32,831 - [17] - INFO  - Game.Server.GameServer - Buff Scaning ...
+10:54:32,831 - [17] - INFO  - Game.Server.GameServer - Buff Scan complete!
+10:54:32,832 - [17] - INFO  - Game.Server.GameServer - Buff all 1 players in 0ms
+10:55:32,765 - [17] - INFO  - Game.Server.GameServer - Saving Record...
+10:55:32,767 - [17] - INFO  - Game.Server.GameServer - Saving Record complete!
+10:55:32,781 - [23] - INFO  - Game.Server.GameServer - Begin ping check....
+10:55:32,781 - [23] - INFO  - Game.Server.GameServer - End ping check....
+10:55:32,782 - [23] - INFO  - Game.Server.GameServer - Begin ping center check....
+10:55:32,784 - [23] - INFO  - Game.Server.GameServer - End ping center check....
+10:55:32,844 - [18] - INFO  - Game.Server.GameServer - Buff Scaning ...
+10:55:32,844 - [18] - INFO  - Game.Server.GameServer - Buff Scan complete!
+10:55:32,845 - [18] - INFO  - Game.Server.GameServer - Buff all 1 players in 0ms
+10:55:59,015 - [14] - INFO  - Game.Logic.BaseGame - Game.Logic.Actions.CheckPVEGameStateAction
+10:55:59,018 - [14] - WARN  - Game.Server.Rooms.RoomMgr - RoomMgr action spent too much times:Game.Server.Rooms.StartGameAction,67ms!
+10:55:59,069 - [15] - INFO  - Game.Logic.BaseGame - Game.Logic.Actions.CheckPVEGameStateAction
+10:55:59,112 - [15] - INFO  - Game.Logic.BaseGame - Game.Logic.Actions.WaitPlayerLoadingAction
+10:56:00,926 - [33] - INFO  - Game.Logic.BaseGame - Game.Logic.Actions.ProcessPacketAction
+10:56:00,950 - [15] - INFO  - Game.Logic.BaseGame - Game.Logic.Actions.CheckPVEGameStateAction
+10:56:04,540 - [15] - INFO  - Game.Logic.BaseGame - Game.Logic.Actions.CheckPVEGameStateAction
+10:56:04,595 - [15] - INFO  - Game.Logic.BaseGame - Game.Logic.Actions.LivingFallingAction
+10:56:06,695 - [15] - INFO  - Game.Logic.BaseGame - Game.Logic.Actions.CheckPVEGameStateAction
+10:56:06,776 - [15] - INFO  - Game.Logic.BaseGame - Game.Logic.Actions.LivingMoveToAction
+10:56:06,778 - [15] - INFO  - Game.Logic.BaseGame - Game.Logic.Actions.LivingMoveToAction
+10:56:06,780 - [15] - INFO  - Game.Logic.BaseGame - Game.Logic.Actions.LivingMoveToAction
+10:56:06,782 - [15] - INFO  - Game.Logic.BaseGame - Game.Logic.Actions.LivingMoveToAction
+10:56:06,784 - [15] - INFO  - Game.Logic.BaseGame - Game.Logic.Actions.LivingMoveToAction
+10:56:06,785 - [15] - INFO  - Game.Logic.BaseGame - Game.Logic.Actions.LivingMoveToAction
+10:56:06,789 - [15] - INFO  - Game.Logic.BaseGame - Game.Logic.Actions.LivingMoveToAction
+10:56:06,791 - [15] - INFO  - Game.Logic.BaseGame - Game.Logic.Actions.LivingMoveToAction
+10:56:06,793 - [15] - INFO  - Game.Logic.BaseGame - Game.Logic.Actions.LivingMoveToAction
+10:56:06,795 - [15] - INFO  - Game.Logic.BaseGame - Game.Logic.Actions.LivingMoveToAction
+10:56:06,796 - [15] - INFO  - Game.Logic.BaseGame - Game.Logic.Actions.CheckPVEGameStateAction
+10:56:10,304 - [15] - INFO  - Game.Logic.BaseGame - Game.Logic.Actions.LivingCallFunctionAction
+10:56:10,427 - [15] - INFO  - Game.Logic.BaseGame - Game.Logic.Actions.LivingCallFunctionAction
+10:56:10,549 - [15] - INFO  - Game.Logic.BaseGame - Game.Logic.Actions.LivingCallFunctionAction
+10:56:10,550 - [15] - INFO  - Game.Logic.BaseGame - Game.Logic.Actions.LivingCallFunctionAction
+10:56:11,770 - [15] - INFO  - Game.Logic.BaseGame - Game.Logic.Actions.LivingCallFunctionAction
+10:56:13,441 - [15] - INFO  - Game.Logic.BaseGame - Game.Logic.Actions.LivingCallFunctionAction
+10:56:13,683 - [15] - INFO  - Game.Logic.BaseGame - Game.Logic.Actions.LivingCallFunctionAction
+10:56:14,782 - [15] - INFO  - Game.Logic.BaseGame - Game.Logic.Actions.LivingCallFunctionAction
+10:56:15,025 - [15] - INFO  - Game.Logic.BaseGame - Game.Logic.Actions.LivingCallFunctionAction
+10:56:15,025 - [15] - INFO  - Game.Logic.BaseGame - Game.Logic.Actions.LivingCallFunctionAction
+10:56:15,106 - [15] - INFO  - Game.Logic.BaseGame - Game.Logic.Actions.CheckPVEGameStateAction
+10:56:15,146 - [15] - INFO  - Game.Logic.BaseGame - Game.Logic.Actions.LivingSayAction
+10:56:15,154 - [15] - INFO  - Game.Logic.BaseGame - Game.Logic.Actions.WaitLivingAttackingAction
+10:56:16,039 - [36] - INFO  - Game.Logic.BaseGame - Game.Logic.Actions.ProcessPacketAction
+10:56:24,080 - [36] - INFO  - Game.Logic.BaseGame - Game.Logic.Actions.ProcessPacketAction
+10:56:24,106 - [15] - INFO  - Game.Logic.BaseGame - Game.Logic.Actions.CheckPVEGameStateAction
+10:56:24,116 - [36] - INFO  - Game.Logic.BaseGame - Game.Logic.Actions.ProcessPacketAction
+10:56:24,186 - [15] - INFO  - Game.Logic.BaseGame - Game.Logic.Actions.CheckPVEGameStateAction
+10:56:24,231 - [15] - INFO  - Game.Logic.BaseGame - Game.Logic.Actions.LivingMoveToAction
+10:56:24,236 - [15] - INFO  - Game.Logic.BaseGame - Game.Logic.Actions.LivingMoveToAction
+10:56:24,239 - [15] - INFO  - Game.Logic.BaseGame - Game.Logic.Actions.LivingMoveToAction
+10:56:24,244 - [15] - INFO  - Game.Logic.BaseGame - Game.Logic.Actions.LivingMoveToAction
+10:56:24,249 - [15] - INFO  - Game.Logic.BaseGame - Game.Logic.Actions.LivingMoveToAction
+10:56:24,252 - [15] - INFO  - Game.Logic.BaseGame - Game.Logic.Actions.LivingMoveToAction
+10:56:24,256 - [15] - INFO  - Game.Logic.BaseGame - Game.Logic.Actions.LivingMoveToAction
+10:56:24,258 - [15] - INFO  - Game.Logic.BaseGame - Game.Logic.Actions.LivingMoveToAction
+10:56:24,260 - [15] - INFO  - Game.Logic.BaseGame - Game.Logic.Actions.LivingMoveToAction
+10:56:24,262 - [15] - INFO  - Game.Logic.BaseGame - Game.Logic.Actions.LivingMoveToAction
+10:56:24,263 - [15] - INFO  - Game.Logic.BaseGame - Game.Logic.Actions.CheckPVEGameStateAction
+10:56:27,312 - [15] - INFO  - Game.Logic.BaseGame - Game.Logic.Actions.LivingCallFunctionAction
+10:56:27,353 - [15] - INFO  - Game.Logic.BaseGame - Game.Logic.Actions.LivingBeatAction
+10:56:27,717 - [15] - INFO  - Game.Logic.BaseGame - Game.Logic.Actions.LivingCallFunctionAction
+10:56:28,288 - [15] - INFO  - Game.Logic.BaseGame - Game.Logic.Actions.LivingCallFunctionAction
+10:56:28,739 - [15] - INFO  - Game.Logic.BaseGame - Game.Logic.Actions.LivingCallFunctionAction
+10:56:28,739 - [15] - INFO  - Game.Logic.BaseGame - Game.Logic.Actions.LivingCallFunctionAction
+10:56:29,306 - [15] - INFO  - Game.Logic.BaseGame - Game.Logic.Actions.LivingCallFunctionAction
+10:56:29,346 - [15] - INFO  - Game.Logic.BaseGame - Game.Logic.Actions.LivingBeatAction
+10:56:29,346 - [15] - INFO  - Game.Logic.BaseGame - Game.Logic.Actions.LivingCallFunctionAction
+10:56:29,386 - [15] - INFO  - Game.Logic.BaseGame - Game.Logic.Actions.LivingBeatAction
+10:56:29,467 - [15] - INFO  - Game.Logic.BaseGame - Game.Logic.Actions.LivingCallFunctionAction
+10:56:31,781 - [15] - INFO  - Game.Logic.BaseGame - Game.Logic.Actions.LivingCallFunctionAction
+10:56:31,942 - [15] - INFO  - Game.Logic.BaseGame - Game.Logic.Actions.LivingCallFunctionAction
+10:56:31,984 - [15] - INFO  - Game.Logic.BaseGame - Game.Logic.Actions.LivingBeatAction
+10:56:32,065 - [15] - INFO  - Game.Logic.BaseGame - Game.Logic.Actions.CheckPVEGameStateAction
+10:56:32,105 - [15] - INFO  - Game.Logic.BaseGame - Game.Logic.Actions.LivingSayAction
+10:56:32,105 - [15] - INFO  - Game.Logic.BaseGame - Game.Logic.Actions.LivingSayAction
+10:56:32,129 - [15] - INFO  - Game.Logic.BaseGame - Game.Logic.Actions.WaitLivingAttackingAction
+10:56:32,720 - [37] - INFO  - Game.Logic.BaseGame - Game.Logic.Actions.ProcessPacketAction
+10:56:32,845 - [16] - INFO  - Game.Server.GameServer - Buff Scaning ...
+10:56:32,845 - [16] - INFO  - Game.Server.GameServer - Buff Scan complete!
+10:56:32,846 - [16] - INFO  - Game.Server.GameServer - Buff all 1 players in 0ms
+10:56:40,835 - [37] - INFO  - Game.Logic.BaseGame - Game.Logic.Actions.ProcessPacketAction
+10:56:40,847 - [15] - INFO  - Game.Logic.BaseGame - Game.Logic.Actions.CheckPVEGameStateAction
+10:56:40,866 - [37] - INFO  - Game.Logic.BaseGame - Game.Logic.Actions.ProcessPacketAction
+10:56:40,927 - [15] - INFO  - Game.Logic.BaseGame - Game.Logic.Actions.CheckPVEGameStateAction
+10:56:40,971 - [15] - INFO  - Game.Logic.BaseGame - Game.Logic.Actions.LivingBeatAction
+10:56:40,975 - [15] - INFO  - Game.Logic.BaseGame - Game.Logic.Actions.LivingBeatAction
+10:56:40,980 - [15] - INFO  - Game.Logic.BaseGame - Game.Logic.Actions.LivingMoveToAction
+10:56:40,984 - [15] - INFO  - Game.Logic.BaseGame - Game.Logic.Actions.LivingBeatAction
+10:56:40,988 - [15] - INFO  - Game.Logic.BaseGame - Game.Logic.Actions.LivingMoveToAction
+10:56:40,993 - [15] - INFO  - Game.Logic.BaseGame - Game.Logic.Actions.LivingMoveToAction
+10:56:40,996 - [15] - INFO  - Game.Logic.BaseGame - Game.Logic.Actions.LivingMoveToAction
+10:56:40,998 - [15] - INFO  - Game.Logic.BaseGame - Game.Logic.Actions.LivingBeatAction
+10:56:41,003 - [15] - INFO  - Game.Logic.BaseGame - Game.Logic.Actions.LivingMoveToAction
+10:56:41,008 - [15] - INFO  - Game.Logic.BaseGame - Game.Logic.Actions.LivingMoveToAction
+10:56:41,009 - [15] - INFO  - Game.Logic.BaseGame - Game.Logic.Actions.CheckPVEGameStateAction
+10:56:43,492 - [15] - INFO  - Game.Logic.BaseGame - Game.Logic.Actions.LivingCallFunctionAction
+10:56:43,532 - [15] - INFO  - Game.Logic.BaseGame - Game.Logic.Actions.LivingBeatAction
+10:56:44,141 - [15] - INFO  - Game.Logic.BaseGame - Game.Logic.Actions.LivingCallFunctionAction
+10:56:44,181 - [15] - INFO  - Game.Logic.BaseGame - Game.Logic.Actions.LivingBeatAction
+10:56:44,222 - [15] - INFO  - Game.Logic.BaseGame - Game.Logic.Actions.LivingCallFunctionAction
+10:56:44,303 - [15] - INFO  - Game.Logic.BaseGame - Game.Logic.Actions.LivingCallFunctionAction
+10:56:44,344 - [15] - INFO  - Game.Logic.BaseGame - Game.Logic.Actions.LivingBeatAction
+10:56:44,344 - [15] - INFO  - Game.Logic.BaseGame - Game.Logic.Actions.LivingCallFunctionAction
+10:56:46,048 - [15] - INFO  - Game.Logic.BaseGame - Game.Logic.Actions.LivingCallFunctionAction
+10:56:46,088 - [15] - INFO  - Game.Logic.BaseGame - Game.Logic.Actions.LivingBeatAction
+10:56:46,169 - [15] - INFO  - Game.Logic.BaseGame - Game.Logic.Actions.CheckPVEGameStateAction
+10:56:46,210 - [15] - INFO  - Game.Logic.BaseGame - Game.Logic.Actions.LivingSayAction
+10:56:46,210 - [15] - INFO  - Game.Logic.BaseGame - Game.Logic.Actions.LivingSayAction
+10:56:46,214 - [15] - INFO  - Game.Logic.BaseGame - Game.Logic.Actions.WaitLivingAttackingAction
+10:56:46,599 - [38] - INFO  - Game.Logic.BaseGame - Game.Logic.Actions.ProcessPacketAction
+10:56:54,718 - [38] - INFO  - Game.Logic.BaseGame - Game.Logic.Actions.ProcessPacketAction
+10:56:54,727 - [15] - INFO  - Game.Logic.BaseGame - Game.Logic.Actions.CheckPVEGameStateAction
+10:56:54,750 - [38] - INFO  - Game.Logic.BaseGame - Game.Logic.Actions.ProcessPacketAction
+10:56:54,809 - [15] - INFO  - Game.Logic.BaseGame - Game.Logic.Actions.CheckPVEGameStateAction
+10:56:54,851 - [15] - INFO  - Game.Logic.BaseGame - Game.Logic.Actions.WaitLivingAttackingAction
+10:56:55,117 - [35] - INFO  - Game.Logic.BaseGame - Game.Logic.Actions.ProcessPacketAction
+10:57:03,233 - [35] - INFO  - Game.Logic.BaseGame - Game.Logic.Actions.ProcessPacketAction
+10:57:03,253 - [15] - INFO  - Game.Logic.BaseGame - Game.Logic.Actions.CheckPVEGameStateAction
+10:57:03,265 - [35] - INFO  - Game.Logic.BaseGame - Game.Logic.Actions.ProcessPacketAction
+10:57:03,334 - [15] - INFO  - Game.Logic.BaseGame - Game.Logic.Actions.CheckPVEGameStateAction
+10:57:03,374 - [15] - INFO  - Game.Logic.BaseGame - Game.Logic.Actions.LivingSayAction
+10:57:03,375 - [15] - INFO  - Game.Logic.BaseGame - Game.Logic.Actions.LivingSayAction
+10:57:03,378 - [15] - INFO  - Game.Logic.BaseGame - Game.Logic.Actions.LivingBeatAction
+10:57:03,380 - [15] - INFO  - Game.Logic.BaseGame - Game.Logic.Actions.LivingBeatAction
+10:57:03,385 - [15] - INFO  - Game.Logic.BaseGame - Game.Logic.Actions.LivingMoveToAction
+10:57:03,387 - [15] - INFO  - Game.Logic.BaseGame - Game.Logic.Actions.LivingBeatAction
+10:57:03,390 - [15] - INFO  - Game.Logic.BaseGame - Game.Logic.Actions.LivingBeatAction
+10:57:03,392 - [15] - INFO  - Game.Logic.BaseGame - Game.Logic.Actions.LivingBeatAction
+10:57:03,395 - [15] - INFO  - Game.Logic.BaseGame - Game.Logic.Actions.LivingBeatAction
+10:57:03,398 - [15] - INFO  - Game.Logic.BaseGame - Game.Logic.Actions.LivingBeatAction
+10:57:03,400 - [15] - INFO  - Game.Logic.BaseGame - Game.Logic.Actions.LivingMoveToAction
+10:57:03,402 - [15] - INFO  - Game.Logic.BaseGame - Game.Logic.Actions.LivingBeatAction
+10:57:03,402 - [15] - INFO  - Game.Logic.BaseGame - Game.Logic.Actions.CheckPVEGameStateAction
+10:57:07,238 - [15] - INFO  - Game.Logic.BaseGame - Game.Logic.Actions.LivingCallFunctionAction
+10:57:07,320 - [15] - INFO  - Game.Logic.BaseGame - Game.Logic.Actions.LivingCallFunctionAction
+10:57:07,360 - [15] - INFO  - Game.Logic.BaseGame - Game.Logic.Actions.LivingBeatAction
+10:57:09,154 - [15] - INFO  - Game.Logic.BaseGame - Game.Logic.Actions.CheckPVEGameStateAction
+10:57:09,195 - [15] - INFO  - Game.Logic.BaseGame - Game.Logic.Actions.WaitLivingAttackingAction
+10:57:09,464 - [39] - INFO  - Game.Logic.BaseGame - Game.Logic.Actions.ProcessPacketAction
+10:57:17,600 - [39] - INFO  - Game.Logic.BaseGame - Game.Logic.Actions.ProcessPacketAction
+10:57:17,611 - [15] - INFO  - Game.Logic.BaseGame - Game.Logic.Actions.CheckPVEGameStateAction
+10:57:17,632 - [39] - INFO  - Game.Logic.BaseGame - Game.Logic.Actions.ProcessPacketAction
+10:57:17,693 - [15] - INFO  - Game.Logic.BaseGame - Game.Logic.Actions.CheckPVEGameStateAction
+10:57:17,733 - [15] - INFO  - Game.Logic.BaseGame - Game.Logic.Actions.LivingSayAction
+10:57:17,735 - [15] - INFO  - Game.Logic.BaseGame - Game.Logic.Actions.LivingBeatAction
+10:57:17,737 - [15] - INFO  - Game.Logic.BaseGame - Game.Logic.Actions.LivingBeatAction
+10:57:17,739 - [15] - INFO  - Game.Logic.BaseGame - Game.Logic.Actions.LivingBeatAction
+10:57:17,741 - [15] - INFO  - Game.Logic.BaseGame - Game.Logic.Actions.LivingBeatAction
+10:57:17,744 - [15] - INFO  - Game.Logic.BaseGame - Game.Logic.Actions.LivingBeatAction
+10:57:17,747 - [15] - INFO  - Game.Logic.BaseGame - Game.Logic.Actions.LivingBeatAction
+10:57:17,749 - [15] - INFO  - Game.Logic.BaseGame - Game.Logic.Actions.LivingBeatAction
+10:57:17,751 - [15] - INFO  - Game.Logic.BaseGame - Game.Logic.Actions.LivingBeatAction
+10:57:17,755 - [15] - INFO  - Game.Logic.BaseGame - Game.Logic.Actions.LivingMoveToAction
+10:57:17,757 - [15] - INFO  - Game.Logic.BaseGame - Game.Logic.Actions.LivingBeatAction
+10:57:17,757 - [15] - INFO  - Game.Logic.BaseGame - Game.Logic.Actions.CheckPVEGameStateAction
+10:57:21,277 - [15] - INFO  - Game.Logic.BaseGame - Game.Logic.Actions.LivingCallFunctionAction
+10:57:22,542 - [15] - INFO  - Game.Log
