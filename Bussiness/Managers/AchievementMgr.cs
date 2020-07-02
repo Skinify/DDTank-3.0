@@ -23,12 +23,16 @@ namespace Bussiness.Managers
 
 
 
-        public static List<AchievementConditionInfo> GetAchievementCondition(AchievementInfo info) =>
-            (!m_achievementCondition.ContainsKey(info.ID) ? null : m_achievementCondition[info.ID]);
+        public static List<AchievementConditionInfo> GetAchievementCondition(AchievementInfo info)
+        {
+            return !m_achievementCondition.ContainsKey(info.ID) ? null : m_achievementCondition[info.ID];
+        }
 
-        public static List<AchievementRewardInfo> GetAchievementReward(AchievementInfo info) =>
-            (!m_achievementReward.ContainsKey(info.ID) ? null : m_achievementReward[info.ID]);
 
+        public static List<AchievementRewardInfo> GetAchievementReward(AchievementInfo info)
+        {
+            return !m_achievementReward.ContainsKey(info.ID) ? null : m_achievementReward[info.ID];
+        }
         public static int GetNextLimit(int recordType, int recordValue)
         {
             int num2;
@@ -60,12 +64,19 @@ namespace Bussiness.Managers
             return num2;
         }
 
-        public static AchievementInfo GetSingleAchievement(int id) =>
-            (!m_achievement.ContainsKey(id) ? null : m_achievement[id]);
+        public static AchievementInfo GetSingleAchievement(int id)
+        {
+            return !m_achievement.ContainsKey(id) ? null : m_achievement[id];
+        }
+            
 
-        public static bool Init() =>
-            Reload();
+        public static bool Init()
+        {
+            return Reload();
+        }
 
+
+        /*
         public static Dictionary<int, List<AchievementConditionInfo>> LoadAchievementConditionInfoDB(Dictionary<int, AchievementInfo> achievementInfos)
         {
             Dictionary<int, List<AchievementConditionInfo>> dictionary = new Dictionary<int, List<AchievementConditionInfo>>();
@@ -93,8 +104,8 @@ namespace Bussiness.Managers
                             {
                                 if (func3 == null)
                                 {
-                                    //<> c__DisplayClass2 class2;
-                                    //func3 = new Func<AchievementConditionInfo, bool> (class, this.< LoadAchievementConditionInfoDB > b__0);
+                                    <> c__DisplayClass2 class2;
+                                    func3 = new Func<AchievementConditionInfo, bool> (class, this.< LoadAchievementConditionInfoDB > b__0);
                                 }
                                 func = func3;
                             }
@@ -176,6 +187,45 @@ namespace Bussiness.Managers
                 }
             }
             return dictionary;
+        }*/
+
+        public static Dictionary<int, List<AchievementConditionInfo>> LoadAchievementConditionInfoDB(
+    Dictionary<int, AchievementInfo> achievementInfos)
+        {
+            Dictionary<int, List<AchievementConditionInfo>> dictionary = new Dictionary<int, List<AchievementConditionInfo>>();
+            using (ProduceBussiness produceBussiness = new ProduceBussiness())
+            {
+                AchievementConditionInfo[] achievementCondition = produceBussiness.GetALlAchievementCondition();
+                using (Dictionary<int, AchievementInfo>.ValueCollection.Enumerator enumerator = achievementInfos.Values.GetEnumerator())
+                {
+                    while (enumerator.MoveNext())
+                    {
+                        AchievementInfo achievementInfo = enumerator.Current;
+                        IEnumerable<AchievementConditionInfo> source = ((IEnumerable<AchievementConditionInfo>)achievementCondition).Where<AchievementConditionInfo>((Func<AchievementConditionInfo, bool>)(s => s.AchievementID == achievementInfo.ID));
+                        dictionary.Add(achievementInfo.ID, source.ToList<AchievementConditionInfo>());
+                        if (source != null)
+                        {
+                            foreach (AchievementConditionInfo achievementConditionInfo in source)
+                            {
+                                if (!AchievementMgr.m_distinctCondition.Contains((object)achievementConditionInfo.CondictionType))
+                                    AchievementMgr.m_distinctCondition.Add((object)achievementConditionInfo.CondictionType, (object)achievementConditionInfo.CondictionType);
+                            }
+                        }
+                    }
+                }
+                foreach (AchievementConditionInfo achievementConditionInfo in achievementCondition)
+                {
+                    int condictionType = achievementConditionInfo.CondictionType;
+                    int condictionPara2 = achievementConditionInfo.Condiction_Para2;
+                    if (!AchievementMgr.m_recordLimit.ContainsKey(condictionType))
+                        AchievementMgr.m_recordLimit.Add(condictionType, new List<int>());
+                    if (!AchievementMgr.m_recordLimit[condictionType].Contains(condictionPara2))
+                        AchievementMgr.m_recordLimit[condictionType].Add(condictionPara2);
+                }
+                foreach (int key in AchievementMgr.m_recordLimit.Keys)
+                    AchievementMgr.m_recordLimit[key].Sort();
+            }
+            return dictionary;
         }
 
         public static Dictionary<int, AchievementInfo> LoadAchievementInfoDB()
@@ -210,6 +260,7 @@ namespace Bussiness.Managers
             return dictionary;
         }
 
+        /*
         public static Dictionary<int, List<AchievementRewardInfo>> LoadAchievementRewardInfoDB(Dictionary<int, AchievementInfo> achievementInfos)
         {
             Dictionary<int, List<AchievementRewardInfo>> dictionary = new Dictionary<int, List<AchievementRewardInfo>>();
@@ -252,6 +303,26 @@ namespace Bussiness.Managers
                 if (!ReferenceEquals(objA, null))
                 {
                     objA.Dispose();
+                }
+            }
+            return dictionary;
+        }*/
+
+        public static Dictionary<int, List<AchievementRewardInfo>> LoadAchievementRewardInfoDB(
+      Dictionary<int, AchievementInfo> achievementInfos)
+        {
+            Dictionary<int, List<AchievementRewardInfo>> dictionary = new Dictionary<int, List<AchievementRewardInfo>>();
+            using (ProduceBussiness produceBussiness = new ProduceBussiness())
+            {
+                AchievementRewardInfo[] achievementReward = produceBussiness.GetALlAchievementReward();
+                using (Dictionary<int, AchievementInfo>.ValueCollection.Enumerator enumerator = achievementInfos.Values.GetEnumerator())
+                {
+                    while (enumerator.MoveNext())
+                    {
+                        AchievementInfo achievementInfo = enumerator.Current;
+                        IEnumerable<AchievementRewardInfo> source = ((IEnumerable<AchievementRewardInfo>)achievementReward).Where<AchievementRewardInfo>((Func<AchievementRewardInfo, bool>)(s => s.AchievementID == achievementInfo.ID));
+                        dictionary.Add(achievementInfo.ID, source.ToList<AchievementRewardInfo>());
+                    }
                 }
             }
             return dictionary;

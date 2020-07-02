@@ -1,0 +1,44 @@
+00:04:41,898 - [MAIN] - INFO  - Bussiness.GameProperties - Refreshing game properties!
+00:04:42,037 - [MAIN] - DEBUG - Bussiness.GameProperties - Loading Edition Value is 21000
+00:04:42,038 - [MAIN] - DEBUG - Bussiness.GameProperties - Loading MustComposeGold Value is 1000
+00:04:42,039 - [MAIN] - DEBUG - Bussiness.GameProperties - Loading MustFusionGold Value is 400
+00:04:42,039 - [MAIN] - DEBUG - Bussiness.GameProperties - Loading MustStrengthenGold Value is 1000
+00:04:42,040 - [MAIN] - DEBUG - Bussiness.GameProperties - Loading CheckRewardItem Value is 11001
+00:04:42,041 - [MAIN] - DEBUG - Bussiness.GameProperties - Loading CheckCount Value is 20
+00:04:42,041 - [MAIN] - DEBUG - Bussiness.GameProperties - Loading HymenealMoney Value is 500
+00:04:42,042 - [MAIN] - DEBUG - Bussiness.GameProperties - Loading DivorcedMoney Value is 5214
+00:04:42,042 - [MAIN] - DEBUG - Bussiness.GameProperties - Loading MarryRoomCreateMoney Value is 2000,2700,3400
+00:04:42,043 - [MAIN] - DEBUG - Bussiness.GameProperties - Loading BoxAppearCondition Value is 4
+00:04:42,044 - [MAIN] - DEBUG - Bussiness.GameProperties - Loading DisableCommands Value is    
+00:04:42,044 - [MAIN] - DEBUG - Bussiness.GameProperties - Loading AssState Value is False
+00:04:42,045 - [MAIN] - DEBUG - Bussiness.GameProperties - Loading DailyAwardState Value is True
+00:04:42,045 - [MAIN] - DEBUG - Bussiness.GameProperties - Loading Cess Value is 0
+00:04:42,046 - [MAIN] - DEBUG - Bussiness.GameProperties - Loading BeginAuction Value is 45
+00:04:42,046 - [MAIN] - DEBUG - Bussiness.GameProperties - Loading EndAuction Value is 75
+00:04:42,057 - [MAIN] - INFO  - Center.Server.CenterServer - Recompile Scripts: True
+00:04:42,071 - [MAIN] - INFO  - Center.Server.CenterServer - Registering global event handlers: true
+00:04:42,071 - [MAIN] - INFO  - Center.Server.CenterServer - Script components: True
+00:04:42,072 - [MAIN] - INFO  - Center.Server.CenterServer - Check Server Edition:21000: True
+00:04:42,078 - [MAIN] - INFO  - Center.Server.CenterServer - InitSocket Port:9202: True
+00:04:44,630 - [MAIN] - INFO  - Center.Server.CenterService - Center Service started!
+00:04:44,630 - [MAIN] - INFO  - Center.Server.CenterServer - Center Service: True
+00:04:44,641 - [MAIN] - INFO  - Center.Server.ServerMgr - Load server list from db.
+00:04:44,642 - [MAIN] - INFO  - Center.Server.CenterServer - Load serverlist: True
+00:04:44,658 - [MAIN] - INFO  - Center.Server.CenterServer - Init ConsortiaLevelMgr: True
+00:04:44,670 - [MAIN] - INFO  - Center.Server.CenterServer - Init MacroDropMgr: True
+00:04:44,681 - [MAIN] - INFO  - Center.Server.CenterServer - LanguageMgr Init: True
+00:04:44,683 - [MAIN] - INFO  - Center.Server.CenterServer - Init Global Timers: True
+00:04:44,697 - [MAIN] - DEBUG - Game.Base.CommandMgr - ScriptMgr: Searching for commands in Center.Server, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+00:04:44,701 - [MAIN] - DEBUG - Game.Base.CommandMgr - Load: &gp,Manage game properties at runtime.
+00:04:44,703 - [MAIN] - DEBUG - Game.Base.CommandMgr - ScriptMgr: Searching for commands in Game.Base, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+00:04:44,703 - [MAIN] - DEBUG - Game.Base.CommandMgr - Load: &cs,Compile the C# scripts.
+00:04:44,704 - [MAIN] - DEBUG - Game.Base.CommandMgr - Load: &cmd,Config the command system.
+00:04:44,705 - [MAIN] - DEBUG - Game.Base.CommandMgr - Load: &sm,Script Manager console commands.
+00:04:44,706 - [MAIN] - INFO  - Game.Base.CommandMgr - Loaded 4 commands!
+00:04:44,710 - [MAIN] - DEBUG - Game.Base.BaseServer - Server is now listening to incoming connections!
+00:04:44,710 - [MAIN] - INFO  - Center.Server.CenterServer - base.Start(): True
+00:04:44,718 - [MAIN] - INFO  - Center.Server.CenterServer - GameServer is now open for connections!
+00:04:44,719 - [MAIN] - INFO  - Bussiness.GameProperties - Saving game properties into db!
+00:05:44,681 - [12] - INFO  - Center.Server.CenterServer - Saving database...
+2020-07-02 00:05:44,681 - [14] - INFO  - Center.Server.CenterServer - Saving Record...
+202
