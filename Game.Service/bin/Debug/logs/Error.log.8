@@ -1,0 +1,9 @@
+00:20:00,580 - [16] - ERROR - Game.Server.GameObjects.GamePlayer - Error Login!
+System.NullReferenceException: Referência de objeto não definida para uma instância de um objeto.
+   em Game.Server.Achievement.BaseAchievement.CreateBaseAchievement(AchievementInfo info, AchievementData data, Dictionary`2 processInfo) na D:\DDT\DDTank-3.0\Game.Server\Achievement\BaseAchievement.cs:linha 72
+   em Game.Server.Achievement.BaseAchievement..ctor(AchievementInfo info, AchievementData data, Dictionary`2 processInfo) na D:\DDT\DDTank-3.0\Game.Server\Achievement\BaseAchievement.cs:linha 23
+   em Game.Server.Achievement.AchievementInventory.AddAchievement(AchievementInfo info) na D:\DDT\DDTank-3.0\Game.Server\Achievement\AchievementInventory.cs:linha 80
+   em Game.Server.Achievement.AchievementInventory.AddAchievementPre() na D:\DDT\DDTank-3.0\Game.Server\Achievement\AchievementInventory.cs:linha 101
+   em Game.Server.Achievement.AchievementInventory.LoadFromDatabase(Int32 playerId) na D:\DDT\DDTank-3.0\Game.Server\Achievement\AchievementInventory.cs:linha 251
+   em Game.Server.GameObjects.GamePlayer.UpdateItemForUser(Object state) na D:\DDT\DDTank-3.0\Game.Server\GameObjects\GamePlayer.cs:linha 1397
+   em Game.Server.GameObjects.GamePlayer.Login() na D:\DDT\DDTank-3.0\Game.Server\GameObjects\GamePlayer.cs:linha 1118

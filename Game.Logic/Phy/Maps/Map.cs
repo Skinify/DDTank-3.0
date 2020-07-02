@@ -148,7 +148,14 @@ namespace Game.Logic.Phy.Maps
             phy.SetMap(this);
             lock (_objects)
             {
-                _objects.Add(phy);
+                try
+                {
+                    _objects.Add(phy);
+                }catch(Exception erro)
+                {
+                    Console.WriteLine("Game.Logics.Phy.Maps.Map.AddPhysical.Exception: " + erro);
+                }
+                
             }
         }
 

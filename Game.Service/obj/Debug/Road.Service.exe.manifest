@@ -49,7 +49,7 @@
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
-        <dsig:DigestValue>7B6vDUKlDhgo2R+9ieQ/WQhJ3Ok=</dsig:DigestValue>
+        <dsig:DigestValue>5b2qQ5/ruuPoGeD96LFG2uuJNFM=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
@@ -73,19 +73,19 @@
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
-        <dsig:DigestValue>s44+FpldJC60iXwAkqxJIRRiyE4=</dsig:DigestValue>
+        <dsig:DigestValue>lehAsbZDeZDvFrLokNsGILjMxWY=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
   <dependency>
-    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="Game.Server.dll" size="401920">
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="Game.Server.dll" size="402432">
       <assemblyIdentity name="Game.Server" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
-        <dsig:DigestValue>JCPhBPgxSD1pZtagJqCCb/E955M=</dsig:DigestValue>
+        <dsig:DigestValue>q4b3fyWBCwUPjWSLOIy9H1k1zSQ=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
@@ -109,7 +109,7 @@
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
-        <dsig:DigestValue>co973n6TwDDS+6kUkjvKhQKFOZM=</dsig:DigestValue>
+        <dsig:DigestValue>fFF0YgJdER55L19a8MzGlNTgMI0=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>

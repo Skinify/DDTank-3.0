@@ -242,10 +242,12 @@ namespace Bussiness.Managers
 
 
         public static List<AchievementCondictionInfo> GetAchievementCondiction(AchievementInfo info){
+            Console.WriteLine("Bussiness.Managers.QuestMgr.GetAchievementCondiction.Aqui retorna nulo");
             return !dictionary_4.ContainsKey(info.ID) ? null : dictionary_4[info.ID];
         }
 
         public static List<AchievementGoodsInfo> GetAchievementGoods(AchievementInfo info) {
+            Console.WriteLine("Bussiness.Managers.QuestMgr.GetAchievementGoods.Aqui retorna nulo");
             return !dictionary_5.ContainsKey(info.ID) ? null : dictionary_5[info.ID];
         }
 

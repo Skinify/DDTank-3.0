@@ -164,6 +164,7 @@ namespace Game.Server.Achievement
                 bool flag3 = baseAch.Finish(gamePlayer_0);
                 if (flag3)
                 {
+                    Console.WriteLine("Game.Server.Achievement.AchievementInventory.Finish.GetAchievementGoods retornando nulo");
                     List<AchievementGoodsInfo> achievementGoods = QuestMgr.GetAchievementGoods(info);
                     using (List<AchievementGoodsInfo>.Enumerator enumerator = achievementGoods.GetEnumerator())
                     {

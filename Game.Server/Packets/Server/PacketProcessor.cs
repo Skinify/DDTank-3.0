@@ -64,7 +64,13 @@ namespace Game.Base.Packets
                 Console.WriteLine(string.Concat(new object[] { packet.ClientID, " --- ", code, "(", $"0x{code:x}", ")" }));
                 try
                 {
-                    Console.WriteLine(packetHandler.ToString());
+                    if (packetHandler != null) {
+                        Console.WriteLine(packetHandler.ToString());
+                    }
+                    else
+                    {
+                        Console.WriteLine("Game.Server.Packets.Client.Null");
+                    }
                 }
                 catch
                 {
