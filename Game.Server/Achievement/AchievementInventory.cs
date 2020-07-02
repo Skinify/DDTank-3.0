@@ -34,19 +34,24 @@ namespace Game.Server.Achievement
 
         public bool AddAchievement(AchievementInfo info)
         {
+            Console.WriteLine("Game.Server.Achievement.AddAchievement.teste1");
             bool flag;
             try
             {
+                Console.WriteLine("Game.Server.Achievement.AddAchievement.teste2");
                 if (((info != null) && (gamePlayer_0.PlayerCharacter.Grade >= info.NeedMinLevel)) && (gamePlayer_0.PlayerCharacter.Grade <= info.NeedMaxLevel))
                 {
+                    Console.WriteLine("Game.Server.Achievement.AddAchievement.teste3");
                     bool flag2 = info.PreAchievementID == "0,";
                     if (!flag2)
                     {
+                        Console.WriteLine("Game.Server.Achievement.AddAchievement.teste4");
                         char[] separator = new char[] { ',' };
                         string[] strArray = info.PreAchievementID.Split(separator);
                         int index = 0;
                         while (true)
                         {
+                            Console.WriteLine("Game.Server.Achievement.AddAchievement.teste5");
                             flag2 = index < (strArray.Length - 1);
                             if (!flag2)
                             {
@@ -54,6 +59,7 @@ namespace Game.Server.Achievement
                             }
                             if (method_2(Convert.ToInt32(strArray[index])))
                             {
+                                Console.WriteLine("Game.Server.Achievement.AddAchievement.teste6");
                                 index++;
                                 continue;
                             }
@@ -76,9 +82,11 @@ namespace Game.Server.Achievement
             }
             else
             {
+                Console.WriteLine("Game.Server.Achievement.AddAchievement.teste7");
                 method_4();
                 BaseAchievement achievement = new BaseAchievement(info, new AchievementData(), GetRealProcessAchievement());
                 method_0(achievement);
+                Console.WriteLine("Game.Server.Achievement.AddAchievement.teste8");
                 method_5();
                 flag = true;
             }
@@ -87,17 +95,23 @@ namespace Game.Server.Achievement
 
         public void AddAchievementPre()
         {
+            Console.WriteLine("Game.Server.Achievement.AddAchievementPre.teste1");
             using (List<AchievementInfo>.Enumerator enumerator = QuestMgr.GetAllAchievements().GetEnumerator())
             {
+                Console.WriteLine("Game.Server.Achievement.AddAchievementPre.teste2");
                 while (true)
                 {
+                    Console.WriteLine("Game.Server.Achievement.AddAchievementPre.teste3");
                     if (!enumerator.MoveNext())
                     {
+                        Console.WriteLine("Game.Server.Achievement.AddAchievementPre.teste4");
                         break;
                     }
+                    Console.WriteLine("Game.Server.Achievement.AddAchievementPre.teste5");
                     AchievementInfo current = enumerator.Current;
                     if (!((FindAchievement(current.ID) != null) || method_2(current.ID)))
                     {
+                        Console.WriteLine("Game.Server.Achievement.AddAchievementPre.teste6");
                         AddAchievement(current);
                     }
                 }
@@ -236,31 +250,41 @@ namespace Game.Server.Achievement
 
         public void LoadFromDatabase(int playerId)
         {
+            Console.WriteLine("Game.Server.Achievement.LoadFromDatabase.teste1");
             lock (object_0)
             {
                 PlayerBussiness objA = new PlayerBussiness();
                 try
                 {
+                    Console.WriteLine("Game.Server.Achievement.LoadFromDatabase.teste2");
                     method_6(gamePlayer_0.PlayerCharacter.AchievementProcess);
                     AchievementData[] userAchievement = objA.GetUserAchievement(playerId);
                     int index = 0;
                     while (true)
                     {
+                        Console.WriteLine("Game.Server.Achievement.LoadFromDatabase.teste3");
                         if (index >= userAchievement.Length)
                         {
                             AddAchievementPre();
                             break;
                         }
+
+                        Console.WriteLine("Game.Server.Achievement.LoadFromDatabase.teste4");
+
                         AchievementData data = userAchievement[index];
                         if (data.IsComplete)
-                        {
+                        {   
                             dictionary_0.Add(data.AchievementID, data);
+                            Console.WriteLine("Game.Server.Achievement.LoadFromDatabase.teste5");
                         }
                         else
                         {
                             AchievementInfo singleAchievement = QuestMgr.GetSingleAchievement(data.AchievementID);
+
+                            Console.WriteLine("Game.Server.Achievement.LoadFromDatabase.teste6");
                             if (singleAchievement != null)
                             {
+                                Console.WriteLine("Game.Server.Achievement.LoadFromDatabase.teste7");
                                 method_0(new BaseAchievement(singleAchievement, data, GetRealProcessAchievement()));
                             }
                         }

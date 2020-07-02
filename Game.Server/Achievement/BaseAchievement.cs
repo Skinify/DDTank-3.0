@@ -1,10 +1,11 @@
-﻿namespace Game.Server.Achievement
+﻿using Bussiness.Managers;
+using Game.Server.GameObjects;
+using SqlDataProvider.Data;
+using System;
+using System.Collections.Generic;
+
+namespace Game.Server.Achievement
 {
-    using Bussiness.Managers;
-    using Game.Server.GameObjects;
-    using SqlDataProvider.Data;
-    using System;
-    using System.Collections.Generic;
 
     public class BaseAchievement
     {
@@ -65,30 +66,40 @@
 
         public void CreateBaseAchievement(AchievementInfo info, AchievementData data, Dictionary<int, AchievementProcessInfo> processInfo)
         {
+            Console.WriteLine("Game.Server.Achievement.BaseAchievement.CreateBaseAchievement.teste1");
             this.achievementInfo_0 = info;
             this.achievementData_0 = data;
             this.achievementData_0.AchievementID = achievementInfo_0.ID;
             this.list_0 = new List<BaseCondition>();
-            using (List<AchievementCondictionInfo>.Enumerator enumerator = QuestMgr.GetAchievementCondiction(info).GetEnumerator())
+            Console.WriteLine("Game.Server.Achievement.CreateBaseAchievement.teste2");
+            try
             {
-                while (true)
+                using (List<AchievementCondictionInfo>.Enumerator enumerator = QuestMgr.GetAchievementCondiction(info).GetEnumerator())
                 {
-                    if (!enumerator.MoveNext())
+                    Console.WriteLine("Game.Server.Achievement.CreateBaseAchievement.teste3");
+                    while (true)
                     {
-                        break;
-                    }
-                    AchievementCondictionInfo current = enumerator.Current;
-                    int num = 0;
-                    if ((processInfo != null) && processInfo.ContainsKey(current.CondictionType))
-                    {
-                        num = processInfo[current.CondictionType].Value;
-                    }
-                    BaseCondition objA = BaseCondition.CreateCondition(this, current, num);
-                    if (!ReferenceEquals(objA, null))
-                    {
-                        this.list_0.Add(objA);
+                        Console.WriteLine("Game.Server.Achievement.CreateBaseAchievement.teste4");
+                        if (!enumerator.MoveNext())
+                        {
+                            break;
+                        }
+                        AchievementCondictionInfo current = enumerator.Current;
+                        int num = 0;
+                        if ((processInfo != null) && processInfo.ContainsKey(current.CondictionType))
+                        {
+                            num = processInfo[current.CondictionType].Value;
+                        }
+                        BaseCondition objA = BaseCondition.CreateCondition(this, current, num);
+                        if (!ReferenceEquals(objA, null))
+                        {
+                            this.list_0.Add(objA);
+                        }
                     }
                 }
+            }catch(Exception erro)
+            {
+                Console.WriteLine(erro);
             }
         }
 

@@ -129,4 +129,3 @@ D:\DDT\DDTank-3.0\Fighting.Service\obj\Debug\Fighting.Service.application
 D:\DDT\DDTank-3.0\Fighting.Service\obj\Debug\Fighting.Service.csproj.CopyComplete
 D:\DDT\DDTank-3.0\Fighting.Service\obj\Debug\Fighting.Service.exe
 D:\DDT\DDTank-3.0\Fighting.Service\obj\Debug\Fighting.Service.pdb
-D:\DDT\DDTank-3.0\Fighting.Service\bin\Debug\Languages\Language-zh_cn.txt

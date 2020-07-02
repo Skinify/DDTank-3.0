@@ -1115,10 +1115,13 @@ namespace Game.Server.GameObjects
                     {
                         Out.SendLoginSuccess();
                         Out.SendDateTime();
+                        Console.WriteLine("Game.Server.GameObjects.Login.teste1");
                         UpdateItemForUser(1);
+                        Console.WriteLine("Game.Server.GameObjects.Login.teste2");
                         //TODO: 报错
                         //Out.SendAllQuest();
                         Out.SendCheckCode();
+                        Out.SendAchievementDataInfo(this.AchievementInventory.GetSuccessAchievement());
                         Managers.AntiAddictionMgr.AASStateGet(this);
                         Out.SendDailyAward(this);
                         LoadMarryMessage();
@@ -1394,6 +1397,7 @@ namespace Game.Server.GameObjects
             //m_cardBag.LoadFromDatabase();
             m_questInventory.LoadFromDatabase(m_character.ID);
             m_bufferList.LoadFromDatabase(m_character.ID);
+            Console.WriteLine("Game.Server.GameObjects.GamePlayer.UpdateItemForUser.teste1");
             m_achievementInventory.LoadFromDatabase(m_character.ID);
         }
         /// <summary>
