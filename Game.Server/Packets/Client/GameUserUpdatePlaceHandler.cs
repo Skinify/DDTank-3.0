@@ -1,11 +1,6 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using Game.Base.Packets;
-using Game.Server.GameObjects;
-using Game.Server.Managers;
+﻿using Game.Base.Packets;
 using Game.Server.Rooms;
+using System;
 
 namespace Game.Server.Packets.Client
 {

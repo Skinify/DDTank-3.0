@@ -42,14 +42,14 @@
     </dependentAssembly>
   </dependency>
   <dependency>
-    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="Bussiness.dll" size="205824">
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="Bussiness.dll" size="218624">
       <assemblyIdentity name="Bussiness" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
-        <dsig:DigestValue>VgUjACPdS/X1C62XyWrPvB61ZrU=</dsig:DigestValue>
+        <dsig:DigestValue>VI6LHdjJEc68L0POt+LJFxyVl+U=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
@@ -61,31 +61,31 @@
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
-        <dsig:DigestValue>q3cNxPRdb2+H/uw/QMW8Uo3NwVI=</dsig:DigestValue>
+        <dsig:DigestValue>khnMdyb1c3nPtncvTgdfuEIejfM=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
   <dependency>
-    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="Game.Logic.dll" size="182272">
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="Game.Logic.dll" size="182784">
       <assemblyIdentity name="Game.Logic" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
-        <dsig:DigestValue>V9B8vDaOOYYnrU3P5HzsmGMVTGE=</dsig:DigestValue>
+        <dsig:DigestValue>Y/W50SmDYJQPt7N8vzK/U66RvN0=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
   <dependency>
-    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="Game.Server.dll" size="371712">
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="Game.Server.dll" size="398848">
       <assemblyIdentity name="Game.Server" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
-        <dsig:DigestValue>9c+w5oQF6/ferb0ej4GehQgvKh4=</dsig:DigestValue>
+        <dsig:DigestValue>jcjqUcex4+euvKEtdMBnAqZmZm0=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
@@ -109,19 +109,19 @@
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
-        <dsig:DigestValue>1l3xX/MtXH8kII9fRWhudC1b334=</dsig:DigestValue>
+        <dsig:DigestValue>PRpskkqjvubJOiKZanb8Elaus6I=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
   <dependency>
-    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="SqlDataProvider.dll" size="145920">
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="SqlDataProvider.dll" size="159232">
       <assemblyIdentity name="SqlDataProvider" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
-        <dsig:DigestValue>6Fmurb/MiciZvl4NHQrxTy7l2Hg=</dsig:DigestValue>
+        <dsig:DigestValue>p3RBhDWPQzHER3x8OQsvSIr6EZU=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>

@@ -1,0 +1,64 @@
+10:02:13,432 - [MAIN] - ERROR - Bussiness.BaseBussiness - GetServerConfig
+System.NullReferenceException: Referência de objeto não definida para uma instância de um objeto.
+   em Bussiness.ServiceBussiness.GetServerPropertyByKey(String key) na D:\DDT\DDTank-3.0\Bussiness\ServiceBussiness.cs:linha 254
+10:02:13,451 - [MAIN] - ERROR - Bussiness.GameProperties - Cannot find server property Edition,keep it default value!
+10:02:13,452 - [MAIN] - ERROR - Bussiness.BaseBussiness - GetServerConfig
+System.NullReferenceException: Referência de objeto não definida para uma instância de um objeto.
+   em Bussiness.ServiceBussiness.GetServerPropertyByKey(String key) na D:\DDT\DDTank-3.0\Bussiness\ServiceBussiness.cs:linha 254
+10:02:13,453 - [MAIN] - ERROR - Bussiness.GameProperties - Cannot find server property MustComposeGold,keep it default value!
+10:02:13,454 - [MAIN] - ERROR - Bussiness.BaseBussiness - GetServerConfig
+System.NullReferenceException: Referência de objeto não definida para uma instância de um objeto.
+   em Bussiness.ServiceBussiness.GetServerPropertyByKey(String key) na D:\DDT\DDTank-3.0\Bussiness\ServiceBussiness.cs:linha 254
+10:02:13,455 - [MAIN] - ERROR - Bussiness.GameProperties - Cannot find server property MustFusionGold,keep it default value!
+10:02:13,456 - [MAIN] - ERROR - Bussiness.BaseBussiness - GetServerConfig
+System.NullReferenceException: Referência de objeto não definida para uma instância de um objeto.
+   em Bussiness.ServiceBussiness.GetServerPropertyByKey(String key) na D:\DDT\DDTank-3.0\Bussiness\ServiceBussiness.cs:linha 254
+10:02:13,456 - [MAIN] - ERROR - Bussiness.GameProperties - Cannot find server property MustStrengthenGold,keep it default value!
+10:02:13,458 - [MAIN] - ERROR - Bussiness.BaseBussiness - GetServerConfig
+System.NullReferenceException: Referência de objeto não definida para uma instância de um objeto.
+   em Bussiness.ServiceBussiness.GetServerPropertyByKey(String key) na D:\DDT\DDTank-3.0\Bussiness\ServiceBussiness.cs:linha 254
+10:02:13,460 - [MAIN] - ERROR - Bussiness.GameProperties - Cannot find server property CheckRewardItem,keep it default value!
+10:02:13,462 - [MAIN] - ERROR - Bussiness.BaseBussiness - GetServerConfig
+System.NullReferenceException: Referência de objeto não definida para uma instância de um objeto.
+   em Bussiness.ServiceBussiness.GetServerPropertyByKey(String key) na D:\DDT\DDTank-3.0\Bussiness\ServiceBussiness.cs:linha 254
+10:02:13,463 - [MAIN] - ERROR - Bussiness.GameProperties - Cannot find server property CheckCount,keep it default value!
+10:02:13,465 - [MAIN] - ERROR - Bussiness.BaseBussiness - GetServerConfig
+System.NullReferenceException: Referência de objeto não definida para uma instância de um objeto.
+   em Bussiness.ServiceBussiness.GetServerPropertyByKey(String key) na D:\DDT\DDTank-3.0\Bussiness\ServiceBussiness.cs:linha 254
+10:02:13,465 - [MAIN] - ERROR - Bussiness.GameProperties - Cannot find server property HymenealMoney,keep it default value!
+10:02:13,467 - [MAIN] - ERROR - Bussiness.BaseBussiness - GetServerConfig
+System.NullReferenceException: Referência de objeto não definida para uma instância de um objeto.
+   em Bussiness.ServiceBussiness.GetServerPropertyByKey(String key) na D:\DDT\DDTank-3.0\Bussiness\ServiceBussiness.cs:linha 254
+10:02:13,471 - [MAIN] - ERROR - Bussiness.GameProperties - Cannot find server property DivorcedMoney,keep it default value!
+10:02:13,472 - [MAIN] - ERROR - Bussiness.BaseBussiness - GetServerConfig
+System.NullReferenceException: Referência de objeto não definida para uma instância de um objeto.
+   em Bussiness.ServiceBussiness.GetServerPropertyByKey(String key) na D:\DDT\DDTank-3.0\Bussiness\ServiceBussiness.cs:linha 254
+10:02:13,473 - [MAIN] - ERROR - Bussiness.GameProperties - Cannot find server property MarryRoomCreateMoney,keep it default value!
+10:02:13,475 - [MAIN] - ERROR - Bussiness.BaseBussiness - GetServerConfig
+System.NullReferenceException: Referência de objeto não definida para uma instância de um objeto.
+   em Bussiness.ServiceBussiness.GetServerPropertyByKey(String key) na D:\DDT\DDTank-3.0\Bussiness\ServiceBussiness.cs:linha 254
+10:02:13,476 - [MAIN] - ERROR - Bussiness.GameProperties - Cannot find server property BoxAppearCondition,keep it default value!
+10:02:13,477 - [MAIN] - ERROR - Bussiness.BaseBussiness - GetServerConfig
+System.NullReferenceException: Referência de objeto não definida para uma instância de um objeto.
+   em Bussiness.ServiceBussiness.GetServerPropertyByKey(String key) na D:\DDT\DDTank-3.0\Bussiness\ServiceBussiness.cs:linha 254
+10:02:13,478 - [MAIN] - ERROR - Bussiness.GameProperties - Cannot find server property DisableCommands,keep it default value!
+10:02:13,479 - [MAIN] - ERROR - Bussiness.BaseBussiness - GetServerConfig
+System.NullReferenceException: Referência de objeto não definida para uma instância de um objeto.
+   em Bussiness.ServiceBussiness.GetServerPropertyByKey(String key) na D:\DDT\DDTank-3.0\Bussiness\ServiceBussiness.cs:linha 254
+10:02:13,484 - [MAIN] - ERROR - Bussiness.GameProperties - Cannot find server property AssState,keep it default value!
+10:02:13,485 - [MAIN] - ERROR - Bussiness.BaseBussiness - GetServerConfig
+System.NullReferenceException: Referência de objeto não definida para uma instância de um objeto.
+   em Bussiness.ServiceBussiness.GetServerPropertyByKey(String key) na D:\DDT\DDTank-3.0\Bussiness\ServiceBussiness.cs:linha 254
+10:02:13,487 - [MAIN] - ERROR - Bussiness.GameProperties - Cannot find server property DailyAwardState,keep it default value!
+10:02:13,489 - [MAIN] - ERROR - Bussiness.BaseBussiness - GetServerConfig
+System.NullReferenceException: Referência de objeto não definida para uma instância de um objeto.
+   em Bussiness.ServiceBussiness.GetServerPropertyByKey(String key) na D:\DDT\DDTank-3.0\Bussiness\ServiceBussiness.cs:linha 254
+10:02:13,489 - [MAIN] - ERROR - Bussiness.GameProperties - Cannot find server property Cess,keep it default value!
+10:02:13,491 - [MAIN] - ERROR - Bussiness.BaseBussiness - GetServerConfig
+System.NullReferenceException: Referência de objeto não definida para uma instância de um objeto.
+   em Bussiness.ServiceBussiness.GetServerPropertyByKey(String key) na D:\DDT\DDTank-3.0\Bussiness\ServiceBussiness.cs:linha 254
+10:02:13,505 - [MAIN] - ERROR - Bussiness.GameProperties - Cannot find server property BeginAuction,keep it default value!
+10:02:13,528 - [MAIN] - ERROR - Bussiness.BaseBussiness - GetServerConfig
+System.NullReferenceException: Referência de objeto não definida para uma instância de um objeto.
+   em Bussiness.ServiceBussiness.GetServerPropertyByKey(String key) na D:\DDT\DDTank-3.0\Bussiness\ServiceBussiness.cs:linha 254
+10:02:13,532 - [MAIN] - ERROR - Bussiness.GameProperties - Cannot find server property EndAuction,keep it default value!

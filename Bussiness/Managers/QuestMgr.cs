@@ -9,7 +9,19 @@ using System.Collections;
 using System.Threading;
 
 namespace Bussiness.Managers
-{    
+{
+
+    public class DisplayClass4
+    {
+        public AchievementInfo ach;
+
+        public bool b__3(AchievementGoodsInfo s)
+        {
+            return s.AchievementID == ach.ID;
+        }
+    }
+
+
     public class QuestMgr
     {
         #region 定义变量
@@ -21,7 +33,12 @@ namespace Bussiness.Managers
         private static Dictionary<int, List<QuestConditionInfo>> m_questcondiction = new Dictionary<int, List<QuestConditionInfo>>();
 
         private static Dictionary<int, List<QuestAwardInfo>> m_questgoods = new Dictionary<int, List<QuestAwardInfo>>();
-        
+
+        private static Dictionary<int, AchievementInfo> dictionary_3 = new Dictionary<int, AchievementInfo>();
+        private static Dictionary<int, List<AchievementCondictionInfo>> dictionary_4 = new Dictionary<int, List<AchievementCondictionInfo>>();
+        private static Dictionary<int, List<AchievementGoodsInfo>> dictionary_5 = new Dictionary<int, List<AchievementGoodsInfo>>();
+
+
         #endregion
 
         #region 任务加载
@@ -45,13 +62,26 @@ namespace Bussiness.Managers
                 Dictionary<int, QuestInfo> tempQuestInfo = LoadQuestInfoDb();
                 Dictionary<int, List<QuestConditionInfo>> tempQuestCondiction = LoadQuestCondictionDb(tempQuestInfo);
                 Dictionary<int, List<QuestAwardInfo>> tempQuestGoods = LoadQuestGoodDb(tempQuestInfo);
+
+                
+                Dictionary<int, AchievementInfo> achs = LoadAchievementInfoDb();
+                Dictionary<int, List<AchievementCondictionInfo>> dictionary5 = LoadAchievementCondictionDb(achs);
+                Dictionary<int, List<AchievementGoodsInfo>> dictionary6 = LoadAchievementGoodDb(achs);
+
                 if (tempQuestInfo.Count > 0)
                 {
                     Interlocked.Exchange(ref m_questinfo, tempQuestInfo);
                     Interlocked.Exchange(ref m_questcondiction, tempQuestCondiction);
                     Interlocked.Exchange(ref m_questgoods, tempQuestGoods);
                 }
-                return true;
+                if (achs.Count > 0)
+                {
+                    Interlocked.Exchange(ref dictionary_4, dictionary5);
+                    Interlocked.Exchange<Dictionary<int, AchievementInfo>>(ref dictionary_3, achs);
+                    Interlocked.Exchange<Dictionary<int, List<AchievementGoodsInfo>>>(ref dictionary_5, dictionary6);
+                }
+
+            return true;
             }
             catch (Exception e)
             {
@@ -84,6 +114,9 @@ namespace Bussiness.Managers
             }
             return list;
         }
+
+        /* -------------------- */
+
 
         /// <summary>
         /// 得到所有任务的条件
@@ -172,11 +205,131 @@ namespace Bussiness.Managers
             }
             return null;
         }
- 
-       
+
+        
+         
+        public static Dictionary<int, AchievementInfo> LoadAchievementInfoDb()
+        {
+            Dictionary<int, AchievementInfo> dictionary = new Dictionary<int, AchievementInfo>();
+            ProduceBussiness objA = new ProduceBussiness();
+            try
+            {
+                AchievementInfo[] allAchievement = objA.GetAllAchievement();
+                int index = 0;
+                while (true)
+                {
+                    if (index >= allAchievement.Length)
+                    {
+                        break;
+                    }
+                    AchievementInfo info = allAchievement[index];
+                    if (!dictionary.ContainsKey(info.ID))
+                    {
+                        dictionary.Add(info.ID, info);
+                    }
+                    index++;
+                }
+            }
+            finally
+            {
+                if (!ReferenceEquals(objA, null))
+                {
+                    objA.Dispose();
+                }
+            }
+            return dictionary;
+        }
+
+
+        public static List<AchievementCondictionInfo> GetAchievementCondiction(AchievementInfo info){
+            return !dictionary_4.ContainsKey(info.ID) ? null : dictionary_4[info.ID];
+        }
+
+        public static List<AchievementGoodsInfo> GetAchievementGoods(AchievementInfo info) {
+            return !dictionary_5.ContainsKey(info.ID) ? null : dictionary_5[info.ID];
+        }
+
+        public static List<AchievementInfo> GetAllAchievements() {
+            return dictionary_3.Values.ToList<AchievementInfo>();
+        }
+
+        public static AchievementInfo GetSingleAchievement(int id) {
+            return !dictionary_3.ContainsKey(id) ? null : dictionary_3[id];
+        }
+
+
+        public static Dictionary<int, List<AchievementCondictionInfo>> LoadAchievementCondictionDb(Dictionary<int, AchievementInfo> achs)
+        {
+            Dictionary<int, List<AchievementCondictionInfo>> dictionary2;
+            Dictionary<int, List<AchievementCondictionInfo>> dictionary = new Dictionary<int, List<AchievementCondictionInfo>>();
+            ProduceBussiness objA = new ProduceBussiness();
+            try
+            {
+                AchievementCondictionInfo[] allAchievementCondiction = objA.GetAllAchievementCondiction();
+                using (Dictionary<int, AchievementInfo>.ValueCollection.Enumerator enumerator = achs.Values.GetEnumerator())
+                {
+                    while (true)
+                    {
+                        if (!enumerator.MoveNext())
+                        {
+                            dictionary2 = dictionary;
+                            break;
+                        }
+                        AchievementInfo ach = enumerator.Current;
+                        //IEnumerable<AchievementCondictionInfo> source = Enumerable.Where(allAchievementCondiction, new Func<AchievementCondictionInfo, bool>(class2, this.< LoadAchievementCondictionDb > b__0));
+                        //dictionary.Add(ach.ID, source.ToList());
+                    }
+                }
+            }
+            finally
+            {
+                if (!ReferenceEquals(objA, null))
+                {
+                    objA.Dispose();
+                }
+            }
+            return dictionary2;
+        }
+
+        public static Dictionary<int, List<AchievementGoodsInfo>> LoadAchievementGoodDb(Dictionary<int, AchievementInfo> achs)
+        {
+            Dictionary<int, List<AchievementGoodsInfo>> dictionary2;
+            Dictionary<int, List<AchievementGoodsInfo>> dictionary = new Dictionary<int, List<AchievementGoodsInfo>>();
+            ProduceBussiness objA = new ProduceBussiness();
+            try
+            {
+                AchievementGoodsInfo[] allAchievementGoods = objA.GetAllAchievementGoods();
+                using (Dictionary<int, AchievementInfo>.ValueCollection.Enumerator enumerator = achs.Values.GetEnumerator())
+                {
+                    while (true)
+                    {
+                        DisplayClass4 class2 = null;
+                        if (!enumerator.MoveNext())
+                        {
+                            dictionary2 = dictionary;
+                            break;
+                        }
+                        AchievementInfo ach = enumerator.Current;
+                        //IEnumerable<AchievementGoodsInfo> source = Enumerable.Where(allAchievementGoods, new Func<AchievementGoodsInfo, bool>(class2, class2.b__3()));
+
+                        //IEnumerable<AchievementGoodsInfo> source = Enumerable.Where(allAchievementGoods, new Func<AchievementGoodsInfo, bool>(class2, class2.b__3()));
+
+                        //dictionary.Add(ach.ID, source.ToList());
+                    }
+                }
+            }
+            finally
+            {
+                if (!ReferenceEquals(objA, null))
+                {
+                    objA.Dispose();
+                }
+            }
+            return dictionary2;
+        }
+        
+
         #endregion
-
-
 
     }
 }

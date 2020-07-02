@@ -223,6 +223,67 @@ namespace Bussiness
             return result;
         }
 
+        public bool UpdateDbAchievementDataInfo(AchievementData info)
+        {
+            bool flag = false;
+            try
+            {
+                SqlParameter[] sqlParameters = new SqlParameter[] { new SqlParameter("@UserID", info.UserID), new SqlParameter("@AchievementID", info.AchievementID), new SqlParameter("@IsComplete", info.IsComplete), new SqlParameter("@DateComplete", info.DateComplete) };
+                flag = base.db.RunProcedure("SP_Update_AchievementData", sqlParameters);
+                info.IsDirty = false;
+            }
+            catch (Exception exception)
+            {
+                if (BaseBussiness.log.IsErrorEnabled)
+                {
+                    BaseBussiness.log.Error("Init", exception);
+                }
+            }
+            return flag;
+        }
+
+        public AchievementData[] GetUserAchievement(int userID)
+        {
+            List<AchievementData> list = new List<AchievementData>();
+            SqlDataReader resultDataReader = null;
+            try
+            {
+                SqlParameter[] sqlParameters = new SqlParameter[] { new SqlParameter("@UserID", SqlDbType.Int, 4) };
+                sqlParameters[0].Value = userID;
+                base.db.GetReader(ref resultDataReader, "SP_Get_User_AchievementData", sqlParameters);
+                while (true)
+                {
+                    if (!resultDataReader.Read())
+                    {
+                        break;
+                    }
+                    AchievementData item = new AchievementData
+                    {
+                        UserID = (int)resultDataReader["UserID"],
+                        AchievementID = (int)resultDataReader["AchievementID"],
+                        IsComplete = (bool)resultDataReader["IsComplete"],
+                        DateComplete = (DateTime)resultDataReader["DateComplete"]
+                    };
+                    list.Add(item);
+                }
+            }
+            catch (Exception exception)
+            {
+                if (BaseBussiness.log.IsErrorEnabled)
+                {
+                    BaseBussiness.log.Error("Init", exception);
+                }
+            }
+            finally
+            {
+                if (!((resultDataReader == null) || resultDataReader.IsClosed))
+                {
+                    resultDataReader.Close();
+                }
+            }
+            return list.ToArray();
+        }
+
         public bool UpdatePassWord(int userID, string password)
         {
             bool result = false;

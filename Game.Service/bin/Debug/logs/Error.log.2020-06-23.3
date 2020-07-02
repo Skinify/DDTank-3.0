@@ -1,0 +1,7 @@
+11:17:04,758 - [5] - ERROR - Game.Server.GameServer - RsaCryptor
+System.Security.Cryptography.CryptographicException: Dados inválidos.
+
+   em System.Security.Cryptography.CryptographicException.ThrowCryptographicException(Int32 hr)
+   em System.Security.Cryptography.RSACryptoServiceProvider.DecryptKey(SafeKeyHandle pKeyContext, Byte[] pbEncryptedKey, Int32 cbEncryptedKey, Boolean fOAEP, ObjectHandleOnStack ohRetDecryptedKey)
+   em System.Security.Cryptography.RSACryptoServiceProvider.Decrypt(Byte[] rgb, Boolean fOAEP)
+   em Game.Server.Packets.Client.UserLoginHandler.HandlePacket(GameClient client, GSPacketIn packet) na D:\DDT\DDTank-3.0\Game.Server\Packets\Client\UserLoginHandler.cs:linha 39

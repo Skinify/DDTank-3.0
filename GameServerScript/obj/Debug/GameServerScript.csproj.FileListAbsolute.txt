@@ -98,6 +98,8 @@ C:\Users\Welington\Documents\Server3.0\GameServerScript\bin\Debug\log4net.xml
 C:\Users\Welington\Documents\Server3.0\GameServerScript\obj\Debug\ResolveAssemblyReference.cache
 C:\Users\Welington\Documents\Server3.0\GameServerScript\obj\Debug\GameServerScript.dll
 C:\Users\Welington\Documents\Server3.0\GameServerScript\obj\Debug\GameServerScript.pdb
+D:\DDT\DDTank-3.0\GameServerScript\obj\Debug\GameServerScript.csprojAssemblyReference.cache
+D:\DDT\DDTank-3.0\GameServerScript\obj\Debug\GameServerScript.csproj.CoreCompileInputs.cache
 D:\DDT\DDTank-3.0\GameServerScript\bin\Debug\Languages\Language-vn.txt
 D:\DDT\DDTank-3.0\GameServerScript\bin\Debug\Languages\Language-zh_cn.txt
 D:\DDT\DDTank-3.0\GameServerScript\bin\Debug\GameServerScript.dll
@@ -117,8 +119,6 @@ D:\DDT\DDTank-3.0\GameServerScript\bin\Debug\Game.Server.pdb
 D:\DDT\DDTank-3.0\GameServerScript\bin\Debug\Game.Server.dll.config
 D:\DDT\DDTank-3.0\GameServerScript\bin\Debug\SqlDataProvider.pdb
 D:\DDT\DDTank-3.0\GameServerScript\bin\Debug\log4net.xml
-D:\DDT\DDTank-3.0\GameServerScript\obj\Debug\GameServerScript.csprojAssemblyReference.cache
-D:\DDT\DDTank-3.0\GameServerScript\obj\Debug\GameServerScript.csproj.CoreCompileInputs.cache
 D:\DDT\DDTank-3.0\GameServerScript\obj\Debug\GameServerScript.csproj.CopyComplete
 D:\DDT\DDTank-3.0\GameServerScript\obj\Debug\GameServerScript.dll
 D:\DDT\DDTank-3.0\GameServerScript\obj\Debug\GameServerScript.pdb

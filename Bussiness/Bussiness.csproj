@@ -103,6 +103,7 @@
     <Compile Include="ItemRecordBussiness.cs" />
     <Compile Include="Languages\LanguageMgr.cs" />
     <Compile Include="ManageBussiness.cs" />
+    <Compile Include="Managers\AchievementMgr.cs" />
     <Compile Include="Managers\ConsortiaLevelMgr.cs" />
     <Compile Include="Managers\DropMgr.cs" />
     <Compile Include="Managers\ItemBoxMgr.cs" />

@@ -99,6 +99,32 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Achievement\AchievementInventory.cs" />
+    <Compile Include="Achievement\BaseAchievement.cs" />
+    <Compile Include="Achievement\BaseCondition.cs" />
+    <Compile Include="Achievement\CompleteQuestGoodManCondtion.cs" />
+    <Compile Include="Achievement\DefaultCondition.cs" />
+    <Compile Include="Achievement\FightAddOfferCondition.cs" />
+    <Compile Include="Achievement\FightCompleteCondition.cs" />
+    <Compile Include="Achievement\FightKillPlayerCondition.cs" />
+    <Compile Include="Achievement\FightMatchWinCondition.cs" />
+    <Compile Include="Achievement\FightOneBloodIsWinCondition.cs" />
+    <Compile Include="Achievement\GameKillingBossCondition.cs" />
+    <Compile Include="Achievement\GameOverPassCondition.cs" />
+    <Compile Include="Achievement\GClass11.cs" />
+    <Compile Include="Achievement\GiftTokenCollectionCondition.cs" />
+    <Compile Include="Achievement\GoldCollectionCondition.cs" />
+    <Compile Include="Achievement\GuildFightWinCondition.cs" />
+    <Compile Include="Achievement\HotSpingEnterCondition.cs" />
+    <Compile Include="Achievement\ItemEquipCondition.cs" />
+    <Compile Include="Achievement\LevelUpgradeCondition.cs" />
+    <Compile Include="Achievement\OnlineTimeCondition.cs" />
+    <Compile Include="Achievement\PropertisCharacterCondition.cs" />
+    <Compile Include="Achievement\QuestDailyFinishCondition.cs" />
+    <Compile Include="Achievement\QuestGreenFinishCondition.cs" />
+    <Compile Include="Achievement\UseBigBugleCondition.cs" />
+    <Compile Include="Achievement\UseSmaillBugleCondition.cs" />
+    <Compile Include="Achievement\UsingItemCondition.cs" />
     <Compile Include="Battle\BattleMgr.cs" />
     <Compile Include="Battle\BattleServer.cs" />
     <Compile Include="Battle\ProxyGame.cs" />
@@ -325,6 +351,7 @@
       <SubType>Code</SubType>
     </Compile>
     <Compile Include="Packets\Server\ConsolePacketLib.cs" />
+    <Compile Include="Quests\AchievementCondition.cs" />
     <Compile Include="Quests\BaseCondition.cs" />
     <Compile Include="Quests\BaseQuest.cs" />
     <Compile Include="Quests\ClientModifyCondition.cs" />

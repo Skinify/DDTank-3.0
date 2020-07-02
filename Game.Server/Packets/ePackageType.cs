@@ -914,9 +914,12 @@
         USER_UPDATE_GIFT = 220,
         USER_RELOAD_GIFT = 214,
         CARDS_DATA = 216,
-        CARD_RESET = 196
+        CARD_RESET = 196,
         //OPTION_UPDATE = 64,
-        //GET_PLAYER_CARD = 18
-
+        //GET_PLAYER_CARD = 18,
+        ACHIEVEMENT_FINISH = 0xe6,
+        ACHIEVEMENT_INIT = 0xe4,
+        ACHIEVEMENT_UPDATE = 0xe5,
+        ACHIEVEMENTDATA_INIT = 0xe7
     }
 }

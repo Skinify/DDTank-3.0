@@ -15,6 +15,7 @@ using Game.Server.Quests;
 using Game.Server.Buffer;
 using System.Configuration;
 using Game.Server.HotSpringRooms;
+using Game.Server.Achievement;
 
 namespace Game.Base.Packets
 {
@@ -106,6 +107,129 @@ namespace Game.Base.Packets
             this.SendTCP(packet);
             return packet;
         }
+
+        public GSPacketIn SendAchievementDataInfo(List<AchievementData> data)
+        {
+            GSPacketIn packet = new GSPacketIn(0xe7);
+            packet.WriteInt(data.Count);
+            using (List<AchievementData>.Enumerator enumerator = data.GetEnumerator())
+            {
+                while (true)
+                {
+                    if (!enumerator.MoveNext())
+                    {
+                        break;
+                    }
+                    AchievementData current = enumerator.Current;
+                    packet.WriteInt(current.AchievementID);
+                    packet.WriteInt(current.DateComplete.Year);
+                    packet.WriteInt(current.DateComplete.Month);
+                    DateTime dateComplete = current.DateComplete;
+                    packet.WriteInt(dateComplete.Day);
+                }
+            }
+            this.SendTCP(packet);
+            return packet;
+        }
+
+        public GSPacketIn SendAchievementDatas(GamePlayer player, BaseAchievement[] infos)
+        {
+            GSPacketIn in2;
+            if ((player == null) || (infos == null))
+            {
+                in2 = null;
+            }
+            else
+            {
+                int val = 0x7d7;
+                int num2 = 7;
+                int num3 = 7;
+                List<string> list = new List<string>();
+                GSPacketIn packet = new GSPacketIn(0xe7, player.PlayerCharacter.ID);
+                packet.WriteInt(infos.Length);
+                int index = 0;
+                while (true)
+                {
+                    if (index >= infos.Length)
+                    {
+                        this.SendTCP(packet);
+                        in2 = packet;
+                        break;
+                    }
+                    BaseAchievement achievement = infos[index];
+                    packet.WriteInt(achievement.Data.AchievementID);
+                    packet.WriteInt(val);
+                    packet.WriteInt(num2);
+                    packet.WriteInt(num3);
+                    index++;
+                }
+            }
+            return in2;
+        }
+
+        public GSPacketIn SendAchievementSuccess(AchievementData d)
+        {
+            GSPacketIn packet = new GSPacketIn(230);
+            packet.WriteInt(d.AchievementID);
+            packet.WriteInt(d.DateComplete.Year);
+            packet.WriteInt(d.DateComplete.Month);
+            packet.WriteInt(d.DateComplete.Day);
+            this.SendTCP(packet);
+            return packet;
+        }
+
+        public GSPacketIn SendUpdateAchievementInfo(List<AchievementProcessInfo> process)
+        {
+            GSPacketIn packet = new GSPacketIn(0xe5);
+            packet.WriteInt(process.Count);
+            using (List<AchievementProcessInfo>.Enumerator enumerator = process.GetEnumerator())
+            {
+                while (true)
+                {
+                    if (!enumerator.MoveNext())
+                    {
+                        break;
+                    }
+                    AchievementProcessInfo current = enumerator.Current;
+                    packet.WriteInt(current.CondictionType);
+                    packet.WriteInt(current.Value);
+                    current.IsDirty = false;
+                }
+            }
+            this.SendTCP(packet);
+            return packet;
+        }
+
+
+        public GSPacketIn SendUpdateAchievements(GamePlayer player, BaseAchievement[] infos)
+        {
+            GSPacketIn in2;
+            if ((player == null) || (infos == null))
+            {
+                in2 = null;
+            }
+            else
+            {
+                GSPacketIn packet = new GSPacketIn(0xe4, player.PlayerCharacter.ID);
+                packet.WriteInt(infos.Length);
+                int index = 0;
+                while (true)
+                {
+                    if (index >= infos.Length)
+                    {
+                        this.SendTCP(packet);
+                        in2 = packet;
+                        break;
+                    }
+                    BaseAchievement achievement = infos[index];
+                    packet.WriteInt(achievement.Data.AchievementID);
+                    packet.WriteInt(1);
+                    index++;
+                }
+            }
+            return in2;
+        }
+
 
         public GSPacketIn SendAuctionRefresh(AuctionInfo info, int auctionID, bool isExist, SqlDataProvider.Data.ItemInfo item)
         {

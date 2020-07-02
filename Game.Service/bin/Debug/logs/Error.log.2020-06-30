@@ -1,0 +1,7 @@
+23:06:31,010 - [76] - ERROR - Game.Server.GameServer - Center Server Disconnect! Stopping Server
+23:06:31,010 - [76] - ERROR - Game.Server.GameServer - Start the game server again after 1 second,and left try times:3
+23:06:40,009 - [76] - ERROR - Game.Base.BaseConnector - Connect 127.0.0.1:9202 failed!
+23:08:42,543 - [74] - FATAL - Game.Server.GameServer - Unhandled exception!
+System.NullReferenceException: Referência de objeto não definida para uma instância de um objeto.
+23:08:42,545 - [74] - FATAL - Game.Server.GameServer - Unhandled exception!
+System.NullReferenceException: Referência de objeto não definida para uma instância de um objeto.

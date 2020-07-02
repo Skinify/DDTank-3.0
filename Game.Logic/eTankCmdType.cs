@@ -135,5 +135,8 @@ namespace Game.Logic
         BOSS_TAKE_CARD = 0x82,
 
         GAME_TIME=0x83,
+
+        FIGHT_ACHIEVEMENT = 0xee
+
     }
 }

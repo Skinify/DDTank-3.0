@@ -1,0 +1,134 @@
+15:52:49,899 - [MAIN] - INFO  - Fighting.Server.FightServer - InitSocket Port:9208: True
+15:52:49,968 - [MAIN] - INFO  - Fighting.Server.FightServer - Registering global event handlers: true
+15:52:49,969 - [MAIN] - INFO  - Fighting.Server.FightServer - Script components: True
+15:52:49,971 - [MAIN] - INFO  - Fighting.Server.FightServer - RoomMgr.Setup: True
+15:52:49,972 - [MAIN] - INFO  - Fighting.Server.FightServer - GameMgr.Setup: True
+15:52:50,146 - [MAIN] - INFO  - Fighting.Server.FightServer - MapMgr Init: True
+15:52:50,385 - [MAIN] - INFO  - Fighting.Server.FightServer - ItemMgr Init: True
+15:52:50,395 - [MAIN] - INFO  - Fighting.Server.FightServer - ItemMgr Init: True
+15:52:51,849 - [MAIN] - INFO  - Fighting.Server.FightServer - BallMgr Init: True
+15:52:51,859 - [MAIN] - INFO  - Fighting.Server.FightServer - BallConfigMgr Init: True
+15:52:51,881 - [MAIN] - INFO  - Fighting.Server.FightServer - DropMgr Init: True
+15:52:51,899 - [MAIN] - INFO  - Fighting.Server.FightServer - NPCInfoMgr Init: True
+15:52:51,911 - [MAIN] - INFO  - Fighting.Server.FightServer - LanguageMgr Init: True
+15:52:51,927 - [MAIN] - INFO  - Game.Logic.Spells.SpellMgr - SpellMgr: Loaded 15 spell handlers from GameServer Assembly!
+15:52:51,939 - [MAIN] - INFO  - Fighting.Server.FightServer - base.Start(): True
+15:52:51,952 - [MAIN] - INFO  - Fighting.Server.FightServer - GameServer is now open for connections!
+15:52:55,825 - [3] - INFO  - Game.Base.BaseServer - Incoming connection from 127.0.0.1:50900
+15:56:22,016 - [5] - INFO  - Game.Logic.BaseGame - Game.Logic.Actions.CheckPVPGameStateAction
+15:56:22,017 - [6] - INFO  - Game.Logic.BaseGame - Game.Logic.Actions.CheckPVPGameStateAction
+15:56:22,058 - [6] - INFO  - Game.Logic.BaseGame - Game.Logic.Actions.WaitPlayerLoadingAction
+15:56:23,839 - [3] - INFO  - Game.Logic.BaseGame - Game.Logic.Actions.ProcessPacketAction
+15:56:23,852 - [6] - INFO  - Game.Logic.BaseGame - Game.Logic.Actions.CheckPVPGameStateAction
+15:56:23,911 - [3] - INFO  - Game.Logic.BaseGame - Game.Logic.Actions.ProcessPacketAction
+15:56:23,930 - [6] - INFO  - Game.Logic.BaseGame - Game.Logic.Actions.CheckPVPGameStateAction
+15:56:26,046 - [6] - INFO  - Game.Logic.BaseGame - Game.Logic.Actions.CheckPVPGameStateAction
+15:56:26,145 - [6] - INFO  - Game.Logic.BaseGame - Game.Logic.Actions.WaitLivingAttackingAction
+15:56:28,262 - [3] - INFO  - Game.Logic.BaseGame - Game.Logic.Actions.ProcessPacketAction
+15:56:30,260 - [3] - INFO  - Game.Logic.BaseGame - Game.Logic.Actions.ProcessPacketAction
+15:56:30,262 - [3] - INFO  - Game.Logic.BaseGame - Game.Logic.Actions.ProcessPacketAction
+15:56:30,268 - [3] - INFO  - Game.Logic.BaseGame - Game.Logic.Actions.ProcessPacketAction
+15:56:33,300 - [6] - INFO  - Game.Logic.BaseGame - Game.Logic.Actions.CheckPVPGameStateAction
+15:56:33,342 - [6] - INFO  - Game.Logic.BaseGame - Game.Logic.Actions.WaitLivingAttackingAction
+15:56:33,616 - [3] - INFO  - Game.Logic.BaseGame - Game.Logic.Actions.ProcessPacketAction
+15:56:35,685 - [3] - INFO  - Game.Logic.BaseGame - Game.Logic.Actions.ProcessPacketAction
+15:56:37,786 - [3] - INFO  - Game.Logic.BaseGame - Game.Logic.Actions.ProcessPacketAction
+15:56:37,787 - [3] - INFO  - Game.Logic.BaseGame - Game.Logic.Actions.ProcessPacketAction
+15:56:37,793 - [3] - INFO  - Game.Logic.BaseGame - Game.Logic.Actions.ProcessPacketAction
+15:56:41,763 - [6] - INFO  - Game.Logic.BaseGame - Game.Logic.Actions.CheckPVPGameStateAction
+15:56:41,805 - [6] - INFO  - Game.Logic.BaseGame - Game.Logic.Actions.WaitLivingAttackingAction
+15:56:42,141 - [3] - INFO  - Game.Logic.BaseGame - Game.Logic.Actions.ProcessPacketAction
+15:56:44,693 - [3] - INFO  - Game.Logic.BaseGame - Game.Logic.Actions.ProcessPacketAction
+15:56:44,890 - [3] - INFO  - Game.Logic.BaseGame - Game.Logic.Actions.ProcessPacketAction
+15:56:45,138 - [3] - INFO  - Game.Logic.BaseGame - Game.Logic.Actions.ProcessPacketAction
+15:56:45,220 - [3] - INFO  - Game.Logic.BaseGame - Game.Logic.Actions.ProcessPacketAction
+15:56:45,288 - [3] - INFO  - Game.Logic.BaseGame - Game.Logic.Actions.Pro16:09:05,420 - [MAIN] - INFO  - Fighting.Server.FightServer - InitSocket Port:9208: True
+16:09:05,493 - [MAIN] - INFO  - Fighting.Server.FightServer - Registering global event handlers: true
+16:09:05,494 - [MAIN] - INFO  - Fighting.Server.FightServer - Script components: True
+16:09:05,495 - [MAIN] - INFO  - Fighting.Server.FightServer - RoomMgr.Setup: True
+16:09:05,497 - [MAIN] - INFO  - Fighting.Server.FightServer - GameMgr.Setup: True
+16:09:09,741 - [MAIN] - INFO  - Fighting.Server.FightServer - MapMgr Init: True
+16:09:10,139 - [MAIN] - INFO  - Fighting.Server.FightServer - ItemMgr Init: True
+16:09:10,156 - [MAIN] - INFO  - Fighting.Server.FightServer - ItemMgr Init: True
+16:09:10,695 - [MAIN] - INFO  - Fighting.Server.FightServer - BallMgr Init: True
+16:09:10,709 - [MAIN] - INFO  - Fighting.Server.FightServer - BallConfigMgr Init: True
+16:09:10,744 - [MAIN] - INFO  - Fighting.Server.FightServer - DropMgr Init: True
+16:09:10,773 - [MAIN] - INFO  - Fighting.Server.FightServer - NPCInfoMgr Init: True
+16:09:10,786 - [MAIN] - INFO  - Fighting.Server.FightServer - LanguageMgr Init: True
+16:09:10,804 - [MAIN] - INFO  - Game.Logic.Spells.SpellMgr - SpellMgr: Loaded 15 spell handlers from GameServer Assembly!
+16:09:10,818 - [MAIN] - INFO  - Fighting.Server.FightServer - base.Start(): True
+16:09:10,837 - [MAIN] - INFO  - Fighting.Server.FightServer - GameServer is now open for connections!
+16:09:14,921 - [3] - INFO  - Game.Base.BaseServer - Incoming connection from 127.0.0.1:50999
+16:10:40,934 - [6] - INFO  - Game.Logic.BaseGame - Game.Logic.Actions.CheckPVPGameStateAction
+16:10:40,939 - [5] - INFO  - Game.Logic.BaseGame - Game.Logic.Actions.CheckPVPGameStateAction
+16:10:40,975 - [6] - INFO  - Game.Logic.BaseGame - Game.Logic.Actions.WaitPlayerLoadingAction
+16:10:42,904 - [3] - INFO  - Game.Logic.BaseGame - Game.Logic.Actions.ProcessPacketAction
+16:10:42,933 - [6] - INFO  - Game.Logic.BaseGame - Game.Logic.Actions.CheckPVPGameStateAction
+16:10:42,988 - [3] - INFO  - Game.Logic.BaseGame - Game.Logic.Actions.ProcessPacketAction
+16:10:43,011 - [6] - INFO  - Game.Logic.BaseGame - Game.Logic.Actions.CheckPVPGameStateAction
+16:10:45,123 - [6] - INFO  - Game.Logic.BaseGame - Game.Logic.Actions.CheckPVPGameStateAction
+16:10:45,204 - [6] - INFO  - Game.Logic.BaseGame - Game.Logic.Actions.WaitLivingAttackingAction
+16:10:47,349 - [3] - INFO  - Game.Logic.BaseGame - Game.Logic.Actions.ProcessPacketAction
+16:10:55,467 - [3] - INFO  - Game.Logic.BaseGame - Game.Logic.Actions.ProcessPacketAction
+16:10:55,497 - [3] - INFO  - Game.Logic.BaseGame - Game.Logic.Actions.ProcessPacketAction
+16:10:55,505 - [6] - INFO  - Game.Logic.BaseGame - Game.Logic.Actions.CheckPVPGameStateAction
+16:10:55,545 - [6] - INFO  - Game.Logic.BaseGame - Game.Logic.Actions.WaitLivingAttackingAction
+16:10:55,818 - [3] - INFO  - Game.Logic.BaseGame - Game.Logic.Actions.ProcessPacketAction
+16:11:03,891 - [3] - INFO  - Game.Logic.BaseGame - Game.Logic.Actions.ProcessPacketAction
+16:11:03,898 - [6] - INFO  - Game.Logic.BaseGame - Game.Logic.Actions.CheckPVPGameStateAction
+16:11:03,941 - [6] - INFO  - Game.Logic.BaseGame - Game.Logic.Actions.WaitLivingAttackingAction
+16:11:03,948 - [3] - INFO  - Game.Logic.BaseGame - Game.Logic.Actions.ProcessPacketAction
+16:11:04,181 - [3] - INFO  - Game.Logic.BaseGame - Game.Logic.Actions.ProcessPacketAction
+16:11:12,297 - [3] - INFO  - Game.Logic.BaseGame - Game.Logic.Actions.ProcessPacketAction
+16:11:12,299 - [6] - INFO  - Game.Logic.BaseGame - Game.Logic.Actions.CheckPVPGameStateAction
+16:11:12,342 - [6] - INFO  - Game.Logic.BaseGame - Game.Logic.Actions.WaitLivingAttackingAction
+16:11:12,355 - [3] - INFO  - Game.Logic.BaseGame - Game.Logic.Actions.ProcessPacketAction
+16:11:12,619 - [3] - INFO  - Game.Logic.BaseGame - Game.Logic.Actions.ProcessPacketAction
+16:11:17,739 - [3] - INFO  - Game.Logic.BaseGame - Game.Logic.Actions.ProcessPacketAction
+16:11:17,741 - [3] - INFO  - Game.Logic.BaseGame - Game.Logic.Actions.ProcessPacketAction
+16:11:17,746 - [3] - INFO  - Game.Logic.BaseGame - Game.Logic.Actions.ProcessPacketAction
+16:11:21,330 - [6] - INFO  - Game.Logic.BaseGame - Game.Logic.Actions.CheckPVPGameStateAction
+16:11:21,373 - [6] - INFO  - Game.Logic.BaseGame - Game.Logic.Actions.WaitLivingAttackingAction
+16:11:21,630 - [3] - INFO  - Game.Logic.BaseGame - Game.Logic.Actions.ProcessPacketAction
+16:11:29,664 - [3] - INFO  - Game.Logic.BaseGame - Game.Logic.Actions.ProcessPacketAction
+16:11:29,676 - [6] - INFO  - Game.Logic.BaseGame - Game.Logic.Actions.CheckPVPGameStateAction
+16:11:29,701 - [3] - INFO  - Game.Logic.BaseGame - Game.Logic.Actions.ProcessPacketAction
+16:11:29,717 - [6] - INFO  - Game.Logic.BaseGame - Game.Logic.Actions.WaitLivingAttackingAction
+16:11:29,967 - [3] - INFO  - Game.Logic.BaseGame - Game.Logic.Actions.ProcessPacketAction
+16:11:33,739 - [3] - INFO  - Game.Logic.BaseGame - Game.Logic.Actions.ProcessPacketAction
+16:11:33,815 - [3] - INFO  - Game.Logic.BaseGame - Game.Logic.Actions.ProcessPacketAction
+16:11:34,421 - [3] - INFO  - Game.Logic.BaseGame - Game.Logic.Actions.ProcessPacketAction
+16:11:34,426 - [3] - INFO  - Game.Logic.BaseGame - Game.Logic.Actions.ProcessPacketAction
+16:11:34,430 - [3] - INFO  - Game.Logic.BaseGame - Game.Logic.Actions.ProcessPacketAction
+16:11:35,452 - [3] - INFO  - Game.Logic.BaseGame - Game.Logic.Actions.ProcessPacketAction
+16:11:36,486 - [3] - INFO  - Game.Logic.BaseGame - Game.Logic.Actions.ProcessPacketAction
+16:11:36,995 - [6] - WARN  - Fighting.Server.Games.GameMgr - Room Mgr is delay -2493 ms!
+16:11:39,317 - [6] - WARN  - Fighting.Server.Games.GameMgr - Room Mgr is delay -3774 ms!
+16:11:39,317 - [6] - WARN  - Fighting.Server.Games.GameMgr - Room Mgr is delay -2734 ms!
+16:11:39,318 - [6] - WARN  - Fighting.Server.Games.GameMgr - Room Mgr is delay -1694 ms!
+16:11:42,598 - [6] - INFO  - Game.Logic.BaseGame - Game.Logic.Actions.CheckPVPGameStateAction
+16:11:42,641 - [6] - INFO  - Game.Logic.BaseGame - Game.Logic.Actions.WaitLivingAttackingAction
+16:11:42,894 - [3] - INFO  - Game.Logic.BaseGame - Game.Logic.Actions.ProcessPacketAction
+16:11:44,887 - [3] - INFO  - Game.Logic.BaseGame - Game.Logic.Actions.ProcessPacketAction
+16:11:44,896 - [3] - INFO  - Game.Logic.BaseGame - Game.Logic.Actions.ProcessPacketAction
+16:11:44,912 - [6] - INFO  - Game.Logic.BaseGame - Game.Logic.Actions.CheckPVPGameStateAction
+16:11:44,954 - [6] - INFO  - Game.Logic.BaseGame - Game.Logic.Actions.WaitLivingAttackingAction
+16:11:45,217 - [3] - INFO  - Game.Logic.BaseGame - Game.Logic.Actions.ProcessPacketAction
+16:11:46,568 - [3] - INFO  - Game.Logic.BaseGame - Game.Logic.Actions.ProcessPacketAction
+16:11:47,258 - [3] - INFO  - Game.Logic.BaseGame - Game.Logic.Actions.ProcessPacketAction
+16:11:47,417 - [3] - INFO  - Game.Logic.BaseGame - Game.Logic.Actions.ProcessPacketAction
+16:11:47,486 - [3] - INFO  - Game.Logic.BaseGame - Game.Logic.Actions.ProcessPacketAction
+16:11:47,568 - [3] - INFO  - Game.Logic.BaseGame - Game.Logic.Actions.ProcessPacketAction
+16:11:47,652 - [3] - INFO  - Game.Logic.BaseGame - Game.Logic.Actions.ProcessPacketAction
+16:11:47,735 - [3] - INFO  - Game.Logic.BaseGame - Game.Logic.Actions.ProcessPacketAction
+16:11:47,819 - [3] - INFO  - Game.Logic.BaseGame - Game.Logic.Actions.ProcessPacketAction
+16:11:50,594 - [3] - INFO  - Game.Logic.BaseGame - Game.Logic.Actions.ProcessPacketAction
+16:11:50,885 - [3] - INFO  - Game.Logic.BaseGame - Game.Logic.Actions.ProcessPacketAction
+16:11:50,886 - [3] - INFO  - Game.Logic.BaseGame - Game.Logic.Actions.ProcessPacketAction
+16:11:50,888 - [3] - INFO  - Game.Logic.BaseGame - Game.Logic.Actions.ProcessPacketAction
+16:11:53,289 - [6] - INFO  - Game.Logic.BaseGame - Game.Logic.Actions.CheckPVPGameStateAction
+16:11:53,333 - [6] - INFO  - Game.Logic.BaseGame - Game.Logic.Actions.WaitLivingAttackingAction
+16:11:55,379 - [3] - INFO  - Game.Logic.BaseGame - Game.Logic.Actions.ProcessPacketAction
+16:12:00,026 - [3] - INFO  - Game.Logic.BaseGame - Game.Logic.Actions.ProcessPacketAction
+16:12:01,466 - [3] - INFO  - Game.Logic.BaseGame - Game.Logic.Actions.ProcessPacketAction
+16:12:01,473 - [3]

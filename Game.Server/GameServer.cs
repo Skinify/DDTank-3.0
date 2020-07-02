@@ -282,7 +282,10 @@ namespace Game.Server
                 if (!InitComponent(QuestMgr.Init(), "QuestMgr Init"))
                     return false;
 
-                if(!InitComponent(RoomMgr.Setup(Configuration.MaxRoomCount),"RoomMgr.Setup"))
+                if (!InitComponent(AchievementMgr.Init(), "AchievementMgr Init"))
+                    return false;
+
+               if (!InitComponent(RoomMgr.Setup(Configuration.MaxRoomCount),"RoomMgr.Setup"))
                     return false;
 
                 if (!InitComponent(GameMgr.Setup(Configuration.ServerID, GameProperties.BOX_APPEAR_CONDITION), "GameMgr.Start()"))

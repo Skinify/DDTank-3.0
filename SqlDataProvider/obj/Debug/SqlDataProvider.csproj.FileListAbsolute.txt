@@ -37,8 +37,8 @@ D:\DDT\DDTank-3.0\SqlDataProvider\bin\Debug\SqlDataProvider.dll
 D:\DDT\DDTank-3.0\SqlDataProvider\bin\Debug\SqlDataProvider.pdb
 D:\DDT\DDTank-3.0\SqlDataProvider\bin\Debug\log4net.dll
 D:\DDT\DDTank-3.0\SqlDataProvider\bin\Debug\log4net.xml
+D:\DDT\DDTank-3.0\SqlDataProvider\obj\Debug\SqlDataProvider.csprojAssemblyReference.cache
 D:\DDT\DDTank-3.0\SqlDataProvider\obj\Debug\SqlDataProvider.csproj.CoreCompileInputs.cache
 D:\DDT\DDTank-3.0\SqlDataProvider\obj\Debug\SqlDataProvider.csproj.CopyComplete
 D:\DDT\DDTank-3.0\SqlDataProvider\obj\Debug\SqlDataProvider.dll
 D:\DDT\DDTank-3.0\SqlDataProvider\obj\Debug\SqlDataProvider.pdb
-D:\DDT\DDTank-3.0\SqlDataProvider\obj\Debug\SqlDataProvider.csprojAssemblyReference.cache

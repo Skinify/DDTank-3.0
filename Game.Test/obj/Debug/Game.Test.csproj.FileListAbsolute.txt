@@ -17,6 +17,8 @@ D:\workspace\Server\Game.Test\bin\Debug\Game.Logic.dll
 D:\workspace\Server\Game.Test\bin\Debug\Game.Logic.pdb
 D:\workspace\Server\Game.Test\bin\Debug\Game.Base.dll
 D:\workspace\Server\Game.Test\bin\Debug\Game.Base.pdb
+D:\DDT\DDTank-3.0\Game.Test\obj\Debug\Game.Test.csprojAssemblyReference.cache
+D:\DDT\DDTank-3.0\Game.Test\obj\Debug\Game.Test.csproj.CoreCompileInputs.cache
 D:\DDT\DDTank-3.0\Game.Test\bin\Debug\Languages\Language-vn.txt
 D:\DDT\DDTank-3.0\Game.Test\bin\Debug\Languages\Language-zh_cn.txt
 D:\DDT\DDTank-3.0\Game.Test\bin\Debug\Road.Test.dll.config
@@ -35,8 +37,6 @@ D:\DDT\DDTank-3.0\Game.Test\bin\Debug\Game.Logic.pdb
 D:\DDT\DDTank-3.0\Game.Test\bin\Debug\SqlDataProvider.pdb
 D:\DDT\DDTank-3.0\Game.Test\bin\Debug\log4net.xml
 D:\DDT\DDTank-3.0\Game.Test\bin\Debug\Game.Base.pdb
-D:\DDT\DDTank-3.0\Game.Test\obj\Debug\Game.Test.csprojAssemblyReference.cache
-D:\DDT\DDTank-3.0\Game.Test\obj\Debug\Game.Test.csproj.CoreCompileInputs.cache
 D:\DDT\DDTank-3.0\Game.Test\obj\Debug\Game.Test.csproj.CopyComplete
 D:\DDT\DDTank-3.0\Game.Test\obj\Debug\Road.Test.dll
 D:\DDT\DDTank-3.0\Game.Test\obj\Debug\Road.Test.pdb

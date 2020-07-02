@@ -78,6 +78,7 @@
     <Compile Include="AbstractGame.cs" />
     <Compile Include="Actions\BaseAction.cs" />
     <Compile Include="Actions\CheckPVEGameStateAction.cs" />
+    <Compile Include="Actions\FightAchievementAction.cs" />
     <Compile Include="Actions\FocusAction.cs" />
     <Compile Include="Actions\LivingCallFunctionAction.cs" />
     <Compile Include="Actions\LivingChangeDirectionAction.cs" />

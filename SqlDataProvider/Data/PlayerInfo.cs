@@ -6,7 +6,7 @@ namespace SqlDataProvider.Data
 {
     public class PlayerInfo : DataObject
     {
-        public PlayerInfo()
+        public PlayerInfo() 
         {
             _isLocked = true;
         }
@@ -883,7 +883,44 @@ namespace SqlDataProvider.Data
             get { return m_AnswerSite; }
             set { m_AnswerSite = value; }
         }
-      
+
+        private string m_AchievementProcess;
+
+        public string AchievementProcess
+        {
+            get =>
+                this.m_AchievementProcess;
+            set
+            {
+                this.m_AchievementProcess = value;
+                base._isDirty = true;
+            }
+        }
+
+        private int m_AchievementPoint;
+
+        public int AchievementPoint
+        {
+            get { return m_AchievementPoint; }
+            set { m_AchievementPoint = value; }
+        }
+
+        private int m_AddDayAchievementPoint;
+
+        public int AddDayAchievementPoint
+        {
+            get { return m_AddDayAchievementPoint; }
+            set { m_AddDayAchievementPoint = value; }
+        }
+
+        private int m_AddWeekAchievementPoint;
+
+        public int AddWeekAchievementPoint
+        {
+            get { return AddWeekAchievementPoint; }
+            set { AddWeekAchievementPoint = value; }
+        }
+
     }
 
 

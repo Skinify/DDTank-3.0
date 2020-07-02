@@ -73,6 +73,8 @@ C:\Users\Welington\Documents\Server3.0\Bussiness\bin\Debug\log4net.xml
 C:\Users\Welington\Documents\Server3.0\Bussiness\obj\Debug\ResolveAssemblyReference.cache
 C:\Users\Welington\Documents\Server3.0\Bussiness\obj\Debug\Bussiness.dll
 C:\Users\Welington\Documents\Server3.0\Bussiness\obj\Debug\Bussiness.pdb
+D:\DDT\DDTank-3.0\Bussiness\obj\Debug\Bussiness.csprojAssemblyReference.cache
+D:\DDT\DDTank-3.0\Bussiness\obj\Debug\Bussiness.csproj.CoreCompileInputs.cache
 D:\DDT\DDTank-3.0\Bussiness\bin\Debug\Languages\Language-vn.txt
 D:\DDT\DDTank-3.0\Bussiness\bin\Debug\Languages\Language-zh_cn.txt
 D:\DDT\DDTank-3.0\Bussiness\bin\Debug\Bussiness.dll.config
@@ -85,8 +87,6 @@ D:\DDT\DDTank-3.0\Bussiness\bin\Debug\zlib.net.dll
 D:\DDT\DDTank-3.0\Bussiness\bin\Debug\Game.Base.pdb
 D:\DDT\DDTank-3.0\Bussiness\bin\Debug\SqlDataProvider.pdb
 D:\DDT\DDTank-3.0\Bussiness\bin\Debug\log4net.xml
-D:\DDT\DDTank-3.0\Bussiness\obj\Debug\Bussiness.csprojAssemblyReference.cache
-D:\DDT\DDTank-3.0\Bussiness\obj\Debug\Bussiness.csproj.CoreCompileInputs.cache
 D:\DDT\DDTank-3.0\Bussiness\obj\Debug\Bussiness.csproj.CopyComplete
 D:\DDT\DDTank-3.0\Bussiness\obj\Debug\Bussiness.dll
 D:\DDT\DDTank-3.0\Bussiness\obj\Debug\Bussiness.pdb

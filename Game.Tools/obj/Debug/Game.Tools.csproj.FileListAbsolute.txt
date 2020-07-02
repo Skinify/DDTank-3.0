@@ -145,6 +145,8 @@ C:\Users\Welington\Documents\Server3.0\Game.Tools\bin\Debug\log4net.xml
 C:\Users\Welington\Documents\Server3.0\Game.Tools\obj\Debug\ResolveAssemblyReference.cache
 C:\Users\Welington\Documents\Server3.0\Game.Tools\obj\Debug\Game.Tools.exe
 C:\Users\Welington\Documents\Server3.0\Game.Tools\obj\Debug\Game.Tools.pdb
+D:\DDT\DDTank-3.0\Game.Tools\obj\Debug\Game.Tools.csprojAssemblyReference.cache
+D:\DDT\DDTank-3.0\Game.Tools\obj\Debug\Game.Tools.csproj.CoreCompileInputs.cache
 D:\DDT\DDTank-3.0\Game.Tools\bin\Debug\Languages\Language-vn.txt
 D:\DDT\DDTank-3.0\Game.Tools\bin\Debug\Languages\Language-zh_cn.txt
 D:\DDT\DDTank-3.0\Game.Tools\bin\Debug\battle.xml
@@ -174,8 +176,6 @@ D:\DDT\DDTank-3.0\Game.Tools\bin\Debug\GameServerScript.pdb
 D:\DDT\DDTank-3.0\Game.Tools\bin\Debug\Road.Flash.pdb
 D:\DDT\DDTank-3.0\Game.Tools\bin\Debug\SqlDataProvider.pdb
 D:\DDT\DDTank-3.0\Game.Tools\bin\Debug\log4net.xml
-D:\DDT\DDTank-3.0\Game.Tools\obj\Debug\Game.Tools.csprojAssemblyReference.cache
-D:\DDT\DDTank-3.0\Game.Tools\obj\Debug\Game.Tools.csproj.CoreCompileInputs.cache
 D:\DDT\DDTank-3.0\Game.Tools\obj\Debug\Game.Tools.csproj.CopyComplete
 D:\DDT\DDTank-3.0\Game.Tools\obj\Debug\Game.Tools.exe
 D:\DDT\DDTank-3.0\Game.Tools\obj\Debug\Game.Tools.pdb

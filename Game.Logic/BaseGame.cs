@@ -202,7 +202,7 @@ namespace Game.Logic
                 m_livings.Add(living);
             }
 
-            SendAddLiving(living);
+                AddLiving(living);
         }
 
         public virtual void AddPhysicalObj(PhysicalObj phy, bool sendToClient)
@@ -1321,6 +1321,16 @@ namespace Game.Logic
             pkg.WriteInt(living.Team);
             pkg.WriteByte((byte)living.Direction);
             SendToAll(pkg);
+        }
+
+        internal void SendFightAchievement(Living living, int achievID, int dis, int delay)
+        {
+            GSPacketIn pkg = new GSPacketIn(0x5b);
+            pkg.WriteByte((byte)eTankCmdType.FIGHT_ACHIEVEMENT);
+            pkg.WriteInt(achievID);
+            pkg.WriteInt(dis);
+            pkg.WriteInt(delay);
+            this.SendToAll(pkg);
         }
 
         internal void SendPlayerMove(Player player, int type, int x, int y, byte dir, bool isLiving, string action)

@@ -59,13 +59,13 @@ C:\Users\Welington\releasePatch\Center\Center.Server.pdb
 C:\Users\Welington\Documents\Server3.0\Center.Server\obj\Debug\ResolveAssemblyReference.cache
 C:\Users\Welington\Documents\Server3.0\Center.Server\obj\Debug\Center.Server.dll
 C:\Users\Welington\Documents\Server3.0\Center.Server\obj\Debug\Center.Server.pdb
+D:\DDT\DDTank-3.0\Center.Server\obj\Debug\Center.Server.csprojAssemblyReference.cache
+D:\DDT\DDTank-3.0\Center.Server\obj\Debug\Center.Server.csproj.CoreCompileInputs.cache
 D:\releasePatch\Center\Languages\Language-vn.txt
 D:\releasePatch\Center\Languages\Language-zh_cn.txt
 D:\releasePatch\Center\Center.Server.dll.config
 D:\releasePatch\Center\Center.Server.dll
 D:\releasePatch\Center\Center.Server.pdb
-D:\DDT\DDTank-3.0\Center.Server\obj\Debug\Center.Server.csprojAssemblyReference.cache
-D:\DDT\DDTank-3.0\Center.Server\obj\Debug\Center.Server.csproj.CoreCompileInputs.cache
 D:\DDT\DDTank-3.0\Center.Server\obj\Debug\Center.Server.csproj.CopyComplete
 D:\DDT\DDTank-3.0\Center.Server\obj\Debug\Center.Server.dll
 D:\DDT\DDTank-3.0\Center.Server\obj\Debug\Center.Server.pdb

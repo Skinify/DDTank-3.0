@@ -71,6 +71,8 @@ C:\Users\Welington\Documents\Server3.0\Fighting.Server\bin\Debug\log4net.xml
 C:\Users\Welington\Documents\Server3.0\Fighting.Server\obj\Debug\ResolveAssemblyReference.cache
 C:\Users\Welington\Documents\Server3.0\Fighting.Server\obj\Debug\Fighting.Server.dll
 C:\Users\Welington\Documents\Server3.0\Fighting.Server\obj\Debug\Fighting.Server.pdb
+D:\DDT\DDTank-3.0\Fighting.Server\obj\Debug\Fighting.Server.csprojAssemblyReference.cache
+D:\DDT\DDTank-3.0\Fighting.Server\obj\Debug\Fighting.Server.csproj.CoreCompileInputs.cache
 D:\DDT\DDTank-3.0\Fighting.Server\bin\Debug\Languages\Language-vn.txt
 D:\DDT\DDTank-3.0\Fighting.Server\bin\Debug\Languages\Language-zh_cn.txt
 D:\DDT\DDTank-3.0\Fighting.Server\bin\Debug\Fighting.Server.dll
@@ -87,8 +89,6 @@ D:\DDT\DDTank-3.0\Fighting.Server\bin\Debug\Game.Base.pdb
 D:\DDT\DDTank-3.0\Fighting.Server\bin\Debug\Game.Logic.pdb
 D:\DDT\DDTank-3.0\Fighting.Server\bin\Debug\SqlDataProvider.pdb
 D:\DDT\DDTank-3.0\Fighting.Server\bin\Debug\log4net.xml
-D:\DDT\DDTank-3.0\Fighting.Server\obj\Debug\Fighting.Server.csprojAssemblyReference.cache
-D:\DDT\DDTank-3.0\Fighting.Server\obj\Debug\Fighting.Server.csproj.CoreCompileInputs.cache
 D:\DDT\DDTank-3.0\Fighting.Server\obj\Debug\Fighting.Server.csproj.CopyComplete
 D:\DDT\DDTank-3.0\Fighting.Server\obj\Debug\Fighting.Server.dll
 D:\DDT\DDTank-3.0\Fighting.Server\obj\Debug\Fighting.Server.pdb

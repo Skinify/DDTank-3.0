@@ -10,6 +10,7 @@ using SqlDataProvider.Data;
 using Bussiness;
 using Game.Server.Quests;
 using Game.Server.Statics;
+using Game.Server.Achievement;
 using Game.Server.Buffer;
 using Game.Server.SceneMarryRooms;
 using Game.Server.Packets;
@@ -52,6 +53,9 @@ namespace Game.Server.GameObjects
             m_bufferList = new BufferList(this);
             m_equipEffect = new List<int>();
 
+            m_achievementInventory = new AchievementInventory(this);
+
+
             //双倍经验卡初始化
             GPAddPlus = 1;
 
@@ -66,6 +70,122 @@ namespace Game.Server.GameObjects
         private PlayerInfo m_character;
         private string m_account;
         private int m_immunity = 255;
+
+        private AchievementInventory m_achievementInventory;
+        private PlayerAchievementFinish AchievementFinishEvent;
+
+        public delegate void PlayerAchievementFinish(AchievementData info);
+
+        public event PlayerAchievementFinish OnAchievementFinishEvent
+        {
+            add
+            {
+                PlayerAchievementFinish achievementFinishEvent = this.AchievementFinishEvent;
+                while (true)
+                {
+                    PlayerAchievementFinish comparand = achievementFinishEvent;
+                    PlayerAchievementFinish finish3 = comparand + value;
+                    achievementFinishEvent = Interlocked.CompareExchange<PlayerAchievementFinish>(ref this.AchievementFinishEvent, finish3, comparand);
+                    if (ReferenceEquals(achievementFinishEvent, comparand))
+                    {
+                        return;
+                    }
+                }
+            }
+            remove
+            {
+                PlayerAchievementFinish achievementFinishEvent = this.AchievementFinishEvent;
+                while (true)
+                {
+                    PlayerAchievementFinish comparand = achievementFinishEvent;
+                    PlayerAchievementFinish finish3 = comparand - value;
+                    achievementFinishEvent = Interlocked.CompareExchange<PlayerAchievementFinish>(ref this.AchievementFinishEvent, finish3, comparand);
+                    if (ReferenceEquals(achievementFinishEvent, comparand))
+                    {
+                        return;
+                    }
+                }
+            }
+        }
+
+        public delegate void PlayerVIPUpgrade(int level, int exp);
+
+        private PlayerVIPUpgrade PlayerVIPUpgradeEvent;
+
+        public event PlayerVIPUpgrade OnPlayerVIPUpgradeEvent
+        {
+            add
+            {
+                PlayerVIPUpgrade objA = this.PlayerVIPUpgradeEvent;
+                while (true)
+                {
+                    PlayerVIPUpgrade a = objA;
+                    PlayerVIPUpgrade upgrade3 = (PlayerVIPUpgrade)Delegate.Combine(a, value);
+                    objA = Interlocked.CompareExchange<PlayerVIPUpgrade>(ref this.PlayerVIPUpgradeEvent, upgrade3, a);
+                    if (ReferenceEquals(objA, a))
+                    {
+                        return;
+                    }
+                }
+            }
+            remove
+            {
+                PlayerVIPUpgrade objA = this.PlayerVIPUpgradeEvent;
+                while (true)
+                {
+                    PlayerVIPUpgrade source = objA;
+                    PlayerVIPUpgrade upgrade3 = (PlayerVIPUpgrade)Delegate.Remove(source, value);
+                    objA = Interlocked.CompareExchange<PlayerVIPUpgrade>(ref this.PlayerVIPUpgradeEvent, upgrade3, source);
+                    if (ReferenceEquals(objA, source))
+                    {
+                        return;
+                    }
+                }
+            }
+        }
+
+        private PlayerQuestFinish QuestFinishEvent;
+
+        public delegate void PlayerQuestFinish(QuestDataInfo data, QuestInfo info);
+
+        public event PlayerQuestFinish OnQuestFinishEvent
+        {
+            add
+            {
+                PlayerQuestFinish questFinishEvent = this.QuestFinishEvent;
+                while (true)
+                {
+                    PlayerQuestFinish comparand = questFinishEvent;
+                    PlayerQuestFinish finish3 = comparand + value;
+                    questFinishEvent = Interlocked.CompareExchange(ref this.QuestFinishEvent, finish3, comparand);
+                    if (ReferenceEquals(questFinishEvent, comparand))
+                    {
+                        return;
+                    }
+                }
+            }
+            remove
+            {
+                PlayerQuestFinish questFinishEvent = this.QuestFinishEvent;
+                while (true)
+                {
+                    PlayerQuestFinish comparand = questFinishEvent;
+                    PlayerQuestFinish finish3 = comparand - value;
+                    questFinishEvent = Interlocked.CompareExchange<PlayerQuestFinish>(ref this.QuestFinishEvent, finish3, comparand);
+                    if (ReferenceEquals(questFinishEvent, comparand))
+                    {
+                        return;
+                    }
+                }
+            }
+        }
+
+
+        public AchievementInventory AchievementInventory
+        {
+            get { return m_achievementInventory; }
+        }
+
         public int Immunity
         {
             get { return m_immunity; }
@@ -256,6 +376,31 @@ namespace Game.Server.GameObjects
             }
             return false;
         }
+
+        public int AddAchievementPoint(int value)
+        {
+            int num;
+            if (value <= 0)
+            {
+                num = 0;
+            }
+            else
+            {
+                this.m_character.AchievementPoint += value;
+                this.OnPropertiesChanged();
+                num = value;
+            }
+            return num;
+        }
+
+        public void OnAchievementFinish(AchievementData info)
+        {
+            if (!ReferenceEquals(AchievementFinishEvent, null))
+            {
+                AchievementFinishEvent(info);
+            }
+        }
+
         public bool RemoveTemplate(int templateId, int count)
         {
             int mainItem = m_mainBag.GetItemCount(templateId);
@@ -1249,6 +1394,7 @@ namespace Game.Server.GameObjects
             //m_cardBag.LoadFromDatabase();
             m_questInventory.LoadFromDatabase(m_character.ID);
             m_bufferList.LoadFromDatabase(m_character.ID);
+            m_achievementInventory.LoadFromDatabase(m_character.ID);
         }
         /// <summary>
         /// Save the player into the database
@@ -1832,7 +1978,457 @@ namespace Game.Server.GameObjects
         #endregion
 
 
+
+        public delegate void PlayerFightAddOffer(int offer);
+
+        private PlayerFightAddOffer FightAddOfferEvent;
+
+        public event PlayerFightAddOffer OnFightAddOfferEvent
+        {
+            add
+            {
+                PlayerFightAddOffer fightAddOfferEvent = this.FightAddOfferEvent;
+                while (true)
+                {
+                    PlayerFightAddOffer comparand = fightAddOfferEvent;
+                    PlayerFightAddOffer offer3 = comparand + value;
+                    fightAddOfferEvent = Interlocked.CompareExchange<PlayerFightAddOffer>(ref this.FightAddOfferEvent, offer3, comparand);
+                    if (ReferenceEquals(fightAddOfferEvent, comparand))
+                    {
+                        return;
+                    }
+                }
+            }
+            remove
+            {
+                PlayerFightAddOffer fightAddOfferEvent = this.FightAddOfferEvent;
+                while (true)
+                {
+                    PlayerFightAddOffer comparand = fightAddOfferEvent;
+                    PlayerFightAddOffer offer3 = comparand - value;
+                    fightAddOfferEvent = Interlocked.CompareExchange<PlayerFightAddOffer>(ref this.FightAddOfferEvent, offer3, comparand);
+                    if (ReferenceEquals(fightAddOfferEvent, comparand))
+                    {
+                        return;
+                    }
+                }
+            }
+        }
+
+        private PlayerGiftTokenCollection GiftTokenCollect;
+        public delegate void PlayerGiftTokenCollection(int value);
+        public event PlayerGiftTokenCollection OnGiftTokenCollect
+        {
+            add
+            {
+                PlayerGiftTokenCollection giftTokenCollect = this.GiftTokenCollect;
+                while (true)
+                {
+                    PlayerGiftTokenCollection comparand = giftTokenCollect;
+                    PlayerGiftTokenCollection tokens3 = comparand + value;
+                    giftTokenCollect = Interlocked.CompareExchange<PlayerGiftTokenCollection>(ref this.GiftTokenCollect, tokens3, comparand);
+                    if (ReferenceEquals(giftTokenCollect, comparand))
+                    {
+                        return;
+                    }
+                }
+            }
+            remove
+            {
+                PlayerGiftTokenCollection giftTokenCollect = this.GiftTokenCollect;
+                while (true)
+                {
+                    PlayerGiftTokenCollection comparand = giftTokenCollect;
+                    PlayerGiftTokenCollection tokens3 = comparand - value;
+                    giftTokenCollect = Interlocked.CompareExchange<PlayerGiftTokenCollection>(ref this.GiftTokenCollect, tokens3, comparand);
+                    if (ReferenceEquals(giftTokenCollect, comparand))
+                    {
+                        return;
+                    }
+                }
+            }
+        }
+
+        private PlayerMissionFullOverEventHandle MissionFullOver;
+        public delegate void PlayerMissionFullOverEventHandle(AbstractGame game, int missionId, bool isWin, int turnNum);
+        public event PlayerMissionFullOverEventHandle OnMissionFullOver
+        {
+            add
+            {
+                PlayerMissionFullOverEventHandle missionFullOver = this.MissionFullOver;
+                while (true)
+                {
+                    PlayerMissionFullOverEventHandle comparand = missionFullOver;
+                    PlayerMissionFullOverEventHandle handle3 = comparand + value;
+                    missionFullOver = Interlocked.CompareExchange<PlayerMissionFullOverEventHandle>(ref this.MissionFullOver, handle3, comparand);
+                    if (ReferenceEquals(missionFullOver, comparand))
+                    {
+                        return;
+                    }
+                }
+            }
+            remove
+            {
+                PlayerMissionFullOverEventHandle missionFullOver = this.MissionFullOver;
+                while (true)
+                {
+                    PlayerMissionFullOverEventHandle comparand = missionFullOver;
+                    PlayerMissionFullOverEventHandle handle3 = comparand - value;
+                    missionFullOver = Interlocked.CompareExchange<PlayerMissionFullOverEventHandle>(ref this.MissionFullOver, handle3, comparand);
+                    if (ReferenceEquals(missionFullOver, comparand))
+                    {
+                        return;
+                    }
+                }
+            }
+        }
+
+
+
+
+        public delegate void PlayerGoldCollection(int value);
+        private PlayerGoldCollection GoldCollect;
+        public event PlayerGoldCollection OnGoldCollect
+        {
+            add
+            {
+                PlayerGoldCollection goldCollect = this.GoldCollect;
+                while (true)
+                {
+                    PlayerGoldCollection comparand = goldCollect;
+                    PlayerGoldCollection golds3 = comparand + value;
+                    goldCollect = Interlocked.CompareExchange<PlayerGoldCollection>(ref this.GoldCollect, golds3, comparand);
+                    if (ReferenceEquals(goldCollect, comparand))
+                    {
+                        return;
+                    }
+                }
+            }
+            remove
+            {
+                PlayerGoldCollection goldCollect = this.GoldCollect;
+                while (true)
+                {
+                    PlayerGoldCollection comparand = goldCollect;
+                    PlayerGoldCollection golds3 = comparand - value;
+                    goldCollect = Interlocked.CompareExchange<PlayerGoldCollection>(ref this.GoldCollect, golds3, comparand);
+                    if (ReferenceEquals(goldCollect, comparand))
+                    {
+                        return;
+                    }
+                }
+            }
+        }
+
+
+        public delegate void PlayerFightOneBloodIsWin(eRoomType roomType);
+        private PlayerFightOneBloodIsWin FightOneBloodIsWin;
+        public event PlayerFightOneBloodIsWin OnFightOneBloodIsWin
+        {
+            add
+            {
+                PlayerFightOneBloodIsWin fightOneBloodIsWin = this.FightOneBloodIsWin;
+                while (true)
+                {
+                    PlayerFightOneBloodIsWin comparand = fightOneBloodIsWin;
+                    PlayerFightOneBloodIsWin win3 = comparand + value;
+                    fightOneBloodIsWin = Interlocked.CompareExchange<PlayerFightOneBloodIsWin>(ref this.FightOneBloodIsWin, win3, comparand);
+                    if (ReferenceEquals(fightOneBloodIsWin, comparand))
+                    {
+                        return;
+                    }
+                }
+            }
+            remove
+            {
+                PlayerFightOneBloodIsWin fightOneBloodIsWin = this.FightOneBloodIsWin;
+                while (true)
+                {
+                    PlayerFightOneBloodIsWin comparand = fightOneBloodIsWin;
+                    PlayerFightOneBloodIsWin win3 = comparand - value;
+                    fightOneBloodIsWin = Interlocked.CompareExchange<PlayerFightOneBloodIsWin>(ref this.FightOneBloodIsWin, win3, comparand);
+                    if (ReferenceEquals(fightOneBloodIsWin, comparand))
+                    {
+                        return;
+                    }
+                }
+            }
+        }
+
+
+
+        private PlayerGameKillBossEventHandel AfterKillingBoss;
+        public delegate void PlayerGameKillBossEventHandel(AbstractGame game, NpcInfo npc, int damage);
+        public event PlayerGameKillBossEventHandel OnAfterKillingBoss
+        {
+            add
+            {
+                PlayerGameKillBossEventHandel afterKillingBoss = this.AfterKillingBoss;
+                while (true)
+                {
+                    PlayerGameKillBossEventHandel comparand = afterKillingBoss;
+                    PlayerGameKillBossEventHandel handel3 = comparand + value;
+                    afterKillingBoss = Interlocked.CompareExchange<PlayerGameKillBossEventHandel>(ref this.AfterKillingBoss, handel3, comparand);
+                    if (ReferenceEquals(afterKillingBoss, comparand))
+                    {
+                        return;
+                    }
+                }
+            }
+            remove
+            {
+                PlayerGameKillBossEventHandel afterKillingBoss = this.AfterKillingBoss;
+                while (true)
+                {
+                    PlayerGameKillBossEventHandel comparand = afterKillingBoss;
+                    PlayerGameKillBossEventHandel handel3 = comparand - value;
+                    afterKillingBoss = Interlocked.CompareExchange<PlayerGameKillBossEventHandel>(ref this.AfterKillingBoss, handel3, comparand);
+                    if (ReferenceEquals(afterKillingBoss, comparand))
+                    {
+                        return;
+                    }
+                }
+            }
+        }
+
+        public void OnHotSpingExpAdd(int minutes, int exp)
+        {
+            if (!ReferenceEquals(this.HotSpingExpAdd, null))
+            {
+                this.HotSpingExpAdd(minutes, exp);
+            }
+        }
+
+        public delegate void PlayerHotSpingExpAdd(int minutes, int exp); 
+        private PlayerHotSpingExpAdd HotSpingExpAdd;
+        public event PlayerHotSpingExpAdd OnHotSpingExpAddEvent
+        {
+            add
+            {
+                PlayerHotSpingExpAdd hotSpingExpAdd = this.HotSpingExpAdd;
+                while (true)
+                {
+                    PlayerHotSpingExpAdd comparand = hotSpingExpAdd;
+                    PlayerHotSpingExpAdd add3 = comparand + value;
+                    hotSpingExpAdd = Interlocked.CompareExchange<PlayerHotSpingExpAdd>(ref this.HotSpingExpAdd, add3, comparand);
+                    if (ReferenceEquals(hotSpingExpAdd, comparand))
+                    {
+                        return;
+                    }
+                }
+            }
+            remove
+            {
+                PlayerHotSpingExpAdd hotSpingExpAdd = this.HotSpingExpAdd;
+                while (true)
+                {
+                    PlayerHotSpingExpAdd comparand = hotSpingExpAdd;
+                    PlayerHotSpingExpAdd add3 = comparand - value;
+                    hotSpingExpAdd = Interlocked.CompareExchange<PlayerHotSpingExpAdd>(ref this.HotSpingExpAdd, add3, comparand);
+                    if (ReferenceEquals(hotSpingExpAdd, comparand))
+                    {
+                        return;
+                    }
+                }
+            }
+        }
+
+        public void OnNewGearEvent(int CategoryID)
+        {
+            if (!ReferenceEquals(this.NewGearEvent, null))
+            {
+                this.NewGearEvent(CategoryID);
+            }
+        }
+
+
+        public delegate void PlayerNewGearEventHandle(int CategoryID);
+        private PlayerNewGearEventHandle NewGearEvent;
+        public event PlayerNewGearEventHandle OnNewGearEventHandle
+        {
+            add
+            {
+                PlayerNewGearEventHandle newGearEvent = this.NewGearEvent;
+                while (true)
+                {
+                    PlayerNewGearEventHandle comparand = newGearEvent;
+                    PlayerNewGearEventHandle handle3 = comparand + value;
+                    newGearEvent = Interlocked.CompareExchange<PlayerNewGearEventHandle>(ref this.NewGearEvent, handle3, comparand);
+                    if (ReferenceEquals(newGearEvent, comparand))
+                    {
+                        return;
+                    }
+                }
+            }
+            remove
+            {
+                PlayerNewGearEventHandle newGearEvent = this.NewGearEvent;
+                while (true)
+                {
+                    PlayerNewGearEventHandle comparand = newGearEvent;
+                    PlayerNewGearEventHandle handle3 = comparand - value;
+                    newGearEvent = Interlocked.CompareExchange<PlayerNewGearEventHandle>(ref this.NewGearEvent, handle3, comparand);
+                    if (ReferenceEquals(newGearEvent, comparand))
+                    {
+                        return;
+                    }
+                }
+            }
+        }
+
+        public delegate void PlayerNewGearEventHandle2(ItemInfo item);
+        private PlayerNewGearEventHandle2 NewGearEvent2;
+        public event PlayerNewGearEventHandle2 OnNewGearEvent2
+        {
+            add
+            {
+                PlayerNewGearEventHandle2 objA = this.NewGearEvent2;
+                while (true)
+                {
+                    PlayerNewGearEventHandle2 comparand = objA;
+                    PlayerNewGearEventHandle2 handle3 = comparand + value;
+                    objA = Interlocked.CompareExchange<PlayerNewGearEventHandle2>(ref this.NewGearEvent2, handle3, comparand);
+                    if (ReferenceEquals(objA, comparand))
+                    {
+                        return;
+                    }
+                }
+            }
+            remove
+            {
+                PlayerNewGearEventHandle2 objA = this.NewGearEvent2;
+                while (true)
+                {
+                    PlayerNewGearEventHandle2 comparand = objA;
+                    PlayerNewGearEventHandle2 handle3 = comparand - value;
+                    objA = Interlocked.CompareExchange<PlayerNewGearEventHandle2>(ref this.NewGearEvent2, handle3, comparand);
+                    if (ReferenceEquals(objA, comparand))
+                    {
+                        return;
+                    }
+                }
+            }
+        }
+
+
+
+        private PlayerEventHandle PingTimeOnline;
+        public event PlayerEventHandle OnPingTimeOnline
+        {
+            add
+            {
+                PlayerEventHandle pingTimeOnline = this.PingTimeOnline;
+                while (true)
+                {
+                    PlayerEventHandle comparand = pingTimeOnline;
+                    PlayerEventHandle handle3 = comparand + value;
+                    pingTimeOnline = Interlocked.CompareExchange<PlayerEventHandle>(ref this.PingTimeOnline, handle3, comparand);
+                    if (ReferenceEquals(pingTimeOnline, comparand))
+                    {
+                        return;
+                    }
+                }
+            }
+            remove
+            {
+                PlayerEventHandle pingTimeOnline = this.PingTimeOnline;
+                while (true)
+                {
+                    PlayerEventHandle comparand = pingTimeOnline;
+                    PlayerEventHandle handle3 = comparand - value;
+                    pingTimeOnline = Interlocked.CompareExchange<PlayerEventHandle>(ref this.PingTimeOnline, handle3, comparand);
+                    if (ReferenceEquals(pingTimeOnline, comparand))
+                    {
+                        return;
+                    }
+                }
+            }
+        }
+
+
+        
+        private PlayerPropertisChange PropertisChange;
+        public delegate void PlayerPropertisChange(PlayerInfo player);
+        public event PlayerPropertisChange OnPropertisChangeEvent
+        {
+            add
+            {
+                PlayerPropertisChange propertisChange = this.PropertisChange;
+                while (true)
+                {
+                    PlayerPropertisChange comparand = propertisChange;
+                    PlayerPropertisChange change3 = comparand + value;
+                    propertisChange = Interlocked.CompareExchange<PlayerPropertisChange>(ref this.PropertisChange, change3, comparand);
+                    if (ReferenceEquals(propertisChange, comparand))
+                    {
+                        return;
+                    }
+                }
+            }
+            remove
+            {
+                PlayerPropertisChange propertisChange = this.PropertisChange;
+                while (true)
+                {
+                    PlayerPropertisChange comparand = propertisChange;
+                    PlayerPropertisChange change3 = comparand - value;
+                    propertisChange = Interlocked.CompareExchange<PlayerPropertisChange>(ref this.PropertisChange, change3, comparand);
+                    if (ReferenceEquals(propertisChange, comparand))
+                    {
+                        return;
+                    }
+                }
+            }
+        }
+
+
+
+        public delegate void PlayerUseBugle(int value);
+        private PlayerUseBugle UseBugle;
+        public event PlayerUseBugle OnUseBugleEvent
+        {
+            add
+            {
+                PlayerUseBugle useBugle = this.UseBugle;
+                while (true)
+                {
+                    PlayerUseBugle comparand = useBugle;
+                    PlayerUseBugle bugle3 = comparand + value;
+                    useBugle = Interlocked.CompareExchange<PlayerUseBugle>(ref this.UseBugle, bugle3, comparand);
+                    if (ReferenceEquals(useBugle, comparand))
+                    {
+                        return;
+                    }
+                }
+            }
+            remove
+            {
+                PlayerUseBugle useBugle = this.UseBugle;
+                while (true)
+                {
+                    PlayerUseBugle comparand = useBugle;
+                    PlayerUseBugle bugle3 = comparand - value;
+                    useBugle = Interlocked.CompareExchange<PlayerUseBugle>(ref this.UseBugle, bugle3, comparand);
+                    if (ReferenceEquals(useBugle, comparand))
+                    {
+                        return;
+                    }
+                }
+            }
+        }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
     }
-
-
 }

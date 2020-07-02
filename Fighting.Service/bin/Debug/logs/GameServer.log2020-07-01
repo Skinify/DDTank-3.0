@@ -1,0 +1,1282 @@
+18:43:10,183 - [MAIN] - INFO  - Fighting.Server.FightServer - InitSocket Port:9208: True
+18:43:10,304 - [MAIN] - INFO  - Fighting.Server.FightServer - Registering global event handlers: true
+18:43:10,306 - [MAIN] - INFO  - Fighting.Server.FightServer - Script components: True
+18:43:10,308 - [MAIN] - INFO  - Fighting.Server.FightServer - RoomMgr.Setup: True
+18:43:10,310 - [MAIN] - INFO  - Fighting.Server.FightServer - GameMgr.Setup: True
+18:43:14,386 - [MAIN] - INFO  - Fighting.Server.FightServer - MapMgr Init: True
+18:43:14,728 - [MAIN] - INFO  - Fighting.Server.FightServer - ItemMgr Init: True
+18:43:14,748 - [MAIN] - INFO  - Fighting.Server.FightServer - ItemMgr Init: True
+18:43:26,814 - [MAIN] - INFO  - Fighting.Server.FightServer - BallMgr Init: True
+18:43:26,826 - [MAIN] - INFO  - Fighting.Server.FightServer - BallConfigMgr Init: True
+18:43:26,874 - [MAIN] - INFO  - Fighting.Server.FightServer - DropMgr Init: True
+18:43:26,941 - [MAIN] - INFO  - Fighting.Server.FightServer - NPCInfoMgr Init: True
+18:43:27,054 - [MAIN] - INFO  - Fighting.Server.FightServer - LanguageMgr Init: True
+18:43:27,067 - [MAIN] - INFO  - Game.Logic.Spells.SpellMgr - SpellMgr: Loaded 15 spell handlers from GameServer Assembly!
+18:43:27,088 - [MAIN] - INFO  - Fighting.Server.FightServer - base.Start(): True
+18:43:27,097 - [MAIN] - INFO  - Fighting.Server.FightServer - GameServer is now open for connections!
+18:43:36,525 - [3] - INFO  - Game.Base.BaseServer - Incoming connection from 127.0.0.1:56790
+18:44:27,168 - [5] - INFO  - Game.Logic.BaseGame - Game.Logic.Actions.CheckPVPGameStateAction
+18:44:27,187 - [6] - INFO  - Game.Logic.BaseGame - Game.Logic.Actions.WaitPlayerLoadingAction
+18:44:28,939 - [3] - INFO  - Game.Logic.BaseGame - Game.Logic.Actions.ProcessPacketAction
+18:44:29,288 - [3] - INFO  - Game.Logic.BaseGame - Game.Logic.Actions.ProcessPacketAction
+18:44:29,850 - [3] - INFO  - Game.Logic.BaseGame - Game.Logic.Actions.ProcessPacketAction
+18:44:29,882 - [6] - INFO  - Game.Logic.BaseGame - Game.Logic.Actions.CheckPVPGameStateAction
+18:44:30,280 - [3] - INFO  - Game.Logic.BaseGame - Game.Logic.Actions.ProcessPacketAction
+18:44:30,288 - [6] - INFO  - Game.Logic.BaseGame - Game.Logic.Actions.CheckPVPGameStateAction
+18:44:32,438 - [6] - INFO  - Game.Logic.BaseGame - Game.Logic.Actions.CheckPVPGameStateAction
+18:44:32,525 - [6] - INFO  - Game.Logic.BaseGame - Game.Logic.Actions.WaitLivingAttackingAction
+18:44:35,373 - [3] - INFO  - Game.Logic.BaseGame - Game.Logic.Actions.ProcessPacketAction
+18:44:36,556 - [3] - INFO  - Game.Logic.BaseGame - Game.Logic.Actions.ProcessPacketAction
+18:44:36,944 - [3] - INFO  - Game.Logic.BaseGame - Game.Logic.Actions.ProcessPacketAction
+18:44:36,946 - [3] - INFO  - Game.Logic.BaseGame - Game.Logic.Actions.ProcessPacketAction
+18:44:36,951 - [3] - INFO  - Game.Logic.BaseGame - Game.Logic.Actions.ProcessPacketAction
+18:44:39,286 - [6] - INFO  - Game.Logic.BaseGame - Game.Logic.Actions.CheckPVPGameStateAction
+18:44:39,333 - [6] - INFO  - Game.Logic.BaseGame - Game.Logic.Actions.WaitLivingAttackingAction
+18:44:39,687 - [3] - INFO  - Game.Logic.BaseGame - Game.Logic.Actions.ProcessPacketAction
+18:44:47,858 - [3] - INFO  - Game.Logic.BaseGame - Game.Logic.Actions.ProcessPacketAction
+18:44:47,880 - [6] - INFO  - Game.Logic.BaseGame - Game.Logic.Actions.CheckPVPGameStateAction
+18:44:47,888 - [3] - INFO  - Game.Logic.BaseGame - Game.Logic.Actions.ProcessPacketAction
+18:44:47,921 - [6] - INFO  - Game.Logic.BaseGame - Game.Logic.Actions.WaitLivingAttackingAction
+18:44:47,924 - [6] - INFO  - Game.Logic.BaseGame - Game.Logic.Actions.CheckPVPGameStateAction
+18:44:47,961 - [6] - INFO  - Game.Logic.BaseGame - Game.Logic.Actions.WaitLivingAttackingAction
+18:44:48,204 - [3] - INFO  - Game.Logic.BaseGame - Game.Logic.Actions.ProcessPacketAction
+18:44:48,252 - [3] - INFO  - Game.Logic.BaseGame - Game.Logic.Actions.ProcessPacketAction
+18:44:56,368 - [3] - INFO  - Game.Logic.BaseGame - Game.Logic.Actions.ProcessPacketAction
+18:44:56,375 - [6] - INFO  - Game.Logic.BaseGame - Game.Logic.Actio11:18:46,973 - [MAIN] - INFO  - Fighting.Server.FightServer - InitSocket Port:9208: True
+11:18:47,058 - [MAIN] - INFO  - Fighting.Server.FightServer - Registering global event handlers: true
+11:18:47,058 - [MAIN] - INFO  - Fighting.Server.FightServer - Script components: True
+11:18:47,060 - [MAIN] - INFO  - Fighting.Server.FightServer - RoomMgr.Setup: True
+11:18:47,070 - [MAIN] - INFO  - Fighting.Server.FightServer - GameMgr.Setup: True
+11:18:47,372 - [MAIN] - INFO  - Fighting.Server.FightServer - MapMgr Init: True
+11:18:47,845 - [MAIN] - INFO  - Fighting.Server.FightServer - ItemMgr Init: True
+11:18:47,861 - [MAIN] - INFO  - Fighting.Server.FightServer - ItemMgr Init: True
+11:18:48,375 - [MAIN] - INFO  - Fighting.Server.FightServer - BallMgr Init: True
+11:18:48,387 - [MAIN] - INFO  - Fighting.Server.FightServer - BallConfigMgr Init: True
+11:18:48,412 - [MAIN] - INFO  - Fighting.Server.FightServer - DropMgr Init: True
+11:18:48,437 - [MAIN] - INFO  - Fighting.Server.FightServer - NPCInfoMgr Init: True
+11:18:48,448 - [MAIN] - INFO  - Fighting.Server.FightServer - LanguageMgr Init: True
+11:18:48,467 - [MAIN] - INFO  - Game.Logic.Spells.SpellMgr - SpellMgr: Loaded 15 spell handlers from GameServer Assembly!
+11:18:48,479 - [MAIN] - INFO  - Fighting.Server.FightServer - base.Start(): True
+11:18:48,488 - [MAIN] - INFO  - Fighting.Server.FightServer - GameServer is now open for connections!
+11:18:52,746 - [3] - INFO  - Game.Base.BaseServer - Incoming connection from 127.0.0.1:50512
+11:25:28,483 - [5] - INFO  - Game.Logic.BaseGame - Game.Logic.Actions.CheckPVPGameStateAction
+11:25:28,483 - [6] - INFO  - Game.Logic.BaseGame - Game.Logic.Actions.CheckPVPGameStateAction
+11:25:28,525 - [6] - INFO  - Game.Logic.BaseGame - Game.Logic.Actions.WaitPlayerLoadingAction
+11:25:30,067 - [3] - INFO  - Game.Logic.BaseGame - Game.Logic.Actions.ProcessPacketAction
+11:25:30,386 - [3] - INFO  - Game.Logic.BaseGame - Game.Logic.Actions.ProcessPacketAction
+11:25:31,087 - [3] - INFO  - Game.Logic.BaseGame - Game.Logic.Actions.ProcessPacketAction
+11:25:31,109 - [6] - INFO  - Game.Logic.BaseGame - Game.Logic.Actions.CheckPVPGameStateAction
+11:25:31,420 - [3] - INFO  - Game.Logic.BaseGame - Game.Logic.Actions.ProcessPacketAction
+11:25:31,431 - [6] - INFO  - Game.Logic.BaseGame - Game.Logic.Actions.CheckPVPGameStateAction
+11:25:33,575 - [6] - INFO  - Game.Logic.BaseGame - Game.Logic.Actions.CheckPVPGameStateAction
+11:25:33,677 - [6] - INFO  - Game.Logic.BaseGame - Game.Logic.Actions.WaitLivingAttackingAction
+11:25:35,946 - [3] - INFO  - Game.Logic.BaseGame - Game.Logic.Actions.ProcessPacketAction
+11:25:39,971 - [3] - INFO  - Game.Logic.BaseGame - Game.Logic.Actions.ProcessPacketAction
+11:25:39,975 - [3] - INFO  - Game.Logic.BaseGame - Game.Logic.Actions.ProcessPacketAction
+11:25:39,983 - [3] - INFO  - Game.Logic.BaseGame - Game.Logic.Actions.ProcessPacketAction
+11:25:42,724 - [6] - INFO  - Game.Logic.BaseGame - Game.Logic.Actions.CheckPVPGameStateAction
+11:25:42,767 - [6] - INFO  - Game.Logic.BaseGame - Game.Logic.Actions.WaitLivingAttackingAction
+11:25:43,024 - [3] - INFO  - Game.Logic.BaseGame - Game.Logic.Actions.ProcessPacketAction
+11:25:51,141 - [3] - INFO  - Game.Logic.BaseGame - Game.Logic.Actions.ProcessPacketAction
+11:26:04,770 - [6] - INFO  - Game.Logic.BaseGame - Game.Logic.Actions.CheckPVPGameStateAction
+11:26:27,748 - [3] - INFO  - Game.Logic.BaseGame - Game.Logic.Actions.ProcessPacketAction
+11:26:27,751 - [6] - WARN  - Fighting.Server.Games.GameMgr - Room Mgr is delay -22945 ms!
+11:26:27,759 - [6] - INFO  - Game.Logic.BaseGame - Game.Logic.Actions.WaitLivingAttackingAction
+11:26:27,763 - [6] - INFO  - Game.Logic.BaseGame - Game.Logic.Actions.CheckPVPGameStateAction
+11:26:27,765 - [6] - WARN  - Fighting.Server.Games.GameMgr - Room Mgr is delay -21917 ms!
+11:26:27,769 - [6] - INFO  - Game.Logic.BaseGame - Game.Logic.Actions.WaitLivingAttackingAction
+11:26:27,770 - [6] - WARN  - Fighting.Server.Games.GameMgr - Room Mgr is delay -20881 ms!
+11:26:27,773 - [6] - WARN  - Fighting.Server.Games.GameMgr - Room Mgr is delay -19841 ms!
+11:26:27,775 - [6] - WARN  - Fighting.Server.Games.GameMgr - Room Mgr is delay -18801 ms!
+11:26:27,777 - [6] - WARN  - Fighting.Server.Games.GameMgr - Room Mgr is delay -17761 ms!
+11:26:27,778 - [6] - WARN  - Fighting.Server.Games.GameMgr - Room Mgr is delay -16721 ms!
+11:26:27,780 - [6] - WARN  - Fighting.Server.Games.GameMgr - Room Mgr is delay -15681 ms!
+11:26:27,784 - [6] - WARN  - Fighting.Server.Games.GameMgr - Room Mgr is delay -14641 ms!
+11:26:27,785 - [6] - WARN  - Fighting.Server.Games.GameMgr - Room Mgr is delay -13601 ms!
+11:26:27,787 - [6] - WARN  - Fighting.Server.Games.GameMgr - Room Mgr is delay -12561 ms!
+11:26:27,787 - [6] - WARN  - Fighting.Server.Games.GameMgr - Room Mgr is delay -11521 ms!
+11:26:27,789 - [6] - WARN  - Fighting.Server.Games.GameMgr - Room Mgr is delay -10481 ms!
+11:26:27,792 - [6] - WARN  - Fighting.Server.Games.GameMgr - Room Mgr is delay -9441 ms!
+11:26:27,795 - [6] - WARN  - Fighting.Server.Games.GameMgr - Room Mgr is delay -8401 ms!
+11:26:27,796 - [6] - WARN  - Fighting.Server.Games.GameMgr - Room Mgr is delay -7361 ms!
+11:26:27,797 - [6] - WARN  - Fighting.Server.Games.GameMgr - Room Mgr is delay -6321 ms!
+11:26:27,798 - [6] - WARN  - Fighting.Server.Games.GameMgr - Room Mgr is delay -5281 ms!
+11:26:27,799 - [6] - WARN  - Fighting.Server.Games.GameMgr - Room Mgr is delay -4241 ms!
+11:26:27,802 - [6] - WARN  - Fighting.Server.Games.GameMgr - Room Mgr is delay -3201 ms!
+11:26:27,802 - [6] - WARN  - Fighting.Server.Games.GameMgr - Room Mgr is delay -2161 ms!
+11:26:27,803 - [6] - WARN  - Fighting.Server.Games.GameMgr - Room Mgr is delay -1121 ms!
+11:26:28,022 - [3] - INFO  - Game.Logic.BaseGame - Game.Logic.Actions.ProcessPacketAction
+11:26:28,086 - [3] - INFO  - Game.Logic.BaseGame - Game.Logic.Actions.ProcessPacketAction
+11:26:33,372 - [3] - INFO  - Game.Logic.BaseGame - Game.Logic.Actions.ProcessPacketAction
+11:26:33,374 - [3] - INFO  - Game.Logic.BaseGame - Game.Logic.Actions.ProcessPacketAction
+11:26:33,379 - [3] - INFO  - Game.Logic.BaseGame - Game.Logic.Actions.ProcessPacketAction
+11:26:35,725 - [6] - INFO  - Game.Logic.BaseGame - Game.Logic.Actions.CheckPVPGameStateAction
+11:26:35,767 - [6] - INFO  - Game.Logic.BaseGame - Game.Logic.Actions.WaitLivingAttackingAction
+11:26:36,019 - [3] - INFO  - Game.Logic.BaseGame - Game.Logic.Actions.ProcessPacketAction
+11:26:44,023 - [3] - INFO  - Game.Logic.BaseGame - Game.Logic.Actions.ProcessPacketAction
+11:26:57,790 - [6] - INFO  - Game.Logic.BaseGame - Game.Logic.Actions.CheckPVPGameStateAction
+11:27:35,340 - [6] - WARN  - Fighting.Server.Games.GameMgr - Room Mgr is delay -37518 ms!
+11:27:35,340 - [3] - INFO  - Game.Logic.BaseGame - Game.Logic.Actions.ProcessPacketAction
+11:27:35,345 - [6] - INFO  - Game.Logic.BaseGame - Game.Logic.Actions.WaitLivingAttackingAction
+11:27:35,346 - [6] - WARN  - Fighting.Server.Games.GameMgr - Room Mgr is delay -36483 ms!
+11:27:35,346 - [6] - WARN  - Fighting.Server.Games.GameMgr - Room Mgr is delay -35443 ms!
+11:27:35,348 - [6] - WARN  - Fighting.Server.Games.GameMgr - Room Mgr is delay -34403 ms!
+11:27:35,352 - [6] - WARN  - Fighting.Server.Games.GameMgr - Room Mgr is delay -33363 ms!
+11:27:35,355 - [6] - WARN  - Fighting.Server.Games.GameMgr - Room Mgr is delay -32323 ms!
+11:27:35,356 - [6] - WARN  - Fighting.Server.Games.GameMgr - Room Mgr is delay -31283 ms!
+11:27:35,357 - [6] - WARN  - Fighting.Server.Games.GameMgr - Room Mgr is delay -30243 ms!
+11:27:35,357 - [6] - WARN  - Fighting.Server.Games.GameMgr - Room Mgr is delay -29203 ms!
+11:27:35,358 - [6] - WARN  - Fighting.Server.Games.GameMgr - Room Mgr is delay -28163 ms!
+11:27:35,361 - [6] - WARN  - Fighting.Server.Games.GameMgr - Room Mgr is delay -27123 ms!
+11:27:35,362 - [6] - WARN  - Fighting.Server.Games.GameMgr - Room Mgr is delay -26083 ms!
+11:27:35,363 - [6] - WARN  - Fighting.Server.Games.GameMgr - Room Mgr is delay -25043 ms!
+11:27:35,364 - [6] - WARN  - Fighting.Server.Games.GameMgr - Room Mgr is delay -24003 ms!
+11:27:35,364 - [6] - WARN  - Fighting.Server.Games.GameMgr - Room Mgr is delay -22963 ms!
+11:27:35,365 - [6] - WARN  - Fighting.Server.Games.GameMgr - Room Mgr is delay -21923 ms!
+11:27:35,367 - [6] - WARN  - Fighting.Server.Games.GameMgr - Room Mgr is delay -20883 ms!
+11:27:35,369 - [6] - WARN  - Fighting.Server.Games.GameMgr - Room Mgr is delay -19843 ms!
+11:27:35,371 - [6] - WARN  - Fighting.Server.Games.GameMgr - Room Mgr is delay -18803 ms!
+11:27:35,372 - [6] - WARN  - Fighting.Server.Games.GameMgr - Room Mgr is delay -17763 ms!
+11:27:35,374 - [6] - WARN  - Fighting.Server.Games.GameMgr - Room Mgr is delay -16723 ms!
+11:27:35,376 - [6] - WARN  - Fighting.Server.Games.GameMgr - Room Mgr is delay -15683 ms!
+11:27:35,378 - [6] - WARN  - Fighting.Server.Games.GameMgr - Room Mgr is delay -14643 ms!
+11:27:35,383 - [6] - WARN  - Fighting.Server.Games.GameMgr - Room Mgr is delay -13603 ms!
+11:27:35,386 - [6] - WARN  - Fighting.Server.Games.GameMgr - Room Mgr is delay -12564 ms!
+11:27:35,387 - [6] - WARN  - Fighting.Server.Games.GameMgr - Room Mgr is delay -11524 ms!
+11:27:35,388 - [6] - WARN  - Fighting.Server.Games.GameMgr - Room Mgr is delay -10484 ms!
+11:27:35,389 - [6] - WARN  - Fighting.Server.Games.GameMgr - Room Mgr is delay -9444 ms!
+11:27:35,389 - [6] - WARN  - Fighting.Server.Games.GameMgr - Room Mgr is delay -8404 ms!
+11:27:35,390 - [6] - WARN  - Fighting.Server.Games.GameMgr - Room Mgr is delay -7364 ms!
+11:27:35,390 - [6] - WARN  - Fighting.Server.Games.GameMgr - Room Mgr is delay -6324 ms!
+11:27:35,391 - [6] - WARN  - Fighting.Server.Games.GameMgr - Room Mgr is delay -5284 ms!
+11:27:35,391 - [6] - WARN  - Fighting.Server.Games.GameMgr - Room Mgr is delay -4244 ms!
+11:27:35,393 - [6] - WARN  - Fighting.Server.Games.GameMgr - Room Mgr is delay -3204 ms!
+11:27:35,394 - [6] - WARN  - Fighting.Server.Games.GameMgr - Room Mgr is delay -2164 ms!
+11:27:35,395 - [6] - WARN  - Fighting.Server.Games.GameMgr - Room Mgr is delay -1124 ms!
+11:27:35,608 - [3] - INFO  - Game.Logic.BaseGame - Game.Logic.Actions.ProcessPacketAction
+11:27:43,526 - [3] - INFO  - Game.Logic.BaseGame - Game.Logic.Actions.ProcessPacketAction
+11:27:43,775 - [3] - INFO  - Game.Logic.BaseGame - Game.Logic.Actions.ProcessPacketAction
+11:27:43,777 - [3] - INFO  - Game.Logic.BaseGame - Game.Logic.Actions.ProcessPacketAction
+11:27:43,779 - [3] - INFO  - Game.Logic.BaseGame - Game.Logic.Actions.ProcessPacketAction
+11:27:45,980 - [6] - INFO  - Game.Logic.BaseGame - Game.Logic.Actions.CheckPVPGameStateAction
+11:27:46,024 - [6] - INFO  - Game.Logic.BaseGame - Game.Logic.Actions.WaitLivingAttackingAction
+11:27:46,372 - [3] - INFO  - Game.Logic.BaseGame - Game.Logic.Actions.ProcessPacketAction
+11:27:54,422 - [3] - INFO  - Game.Logic.BaseGame - Game.Logic.Actions.ProcessPacketAction
+11:28:08,057 - [6] - INFO  - Game.Logic.BaseGame - Game.Logic.Actions.CheckPVPGameStateAction
+11:29:50,413 - [6] - WARN  - Fighting.Server.Games.GameMgr - Room Mgr is delay -102338 ms!
+11:29:50,411 - [3] - INFO  - Game.Logic.BaseGame - Game.Logic.Actions.ProcessPacketAction
+11:29:50,418 - [6] - INFO  - Game.Logic.BaseGame - Game.Logic.Actions.WaitLivingAttackingAction
+11:29:50,418 - [6] - WARN  - Fighting.Server.Games.GameMgr - Room Mgr is delay -101303 ms!
+11:29:50,418 - [6] - WARN  - Fighting.Server.Games.GameMgr - Room Mgr is delay -100263 ms!
+11:29:50,419 - [6] - WARN  - Fighting.Server.Games.GameMgr - Room Mgr is delay -99223 ms!
+11:29:50,419 - [6] - WARN  - Fighting.Server.Games.GameMgr - Room Mgr is delay -98183 ms!
+11:29:50,419 - [6] - WARN  - Fighting.Server.Games.GameMgr - Room Mgr is delay -97143 ms!
+11:29:50,419 - [6] - WARN  - Fighting.Server.Games.GameMgr - Room Mgr is delay -96103 ms!
+11:29:50,430 - [6] - WARN  - Fighting.Server.Games.GameMgr - Room Mgr is delay -95063 ms!
+11:29:50,431 - [6] - WARN  - Fighting.Server.Games.GameMgr - Room Mgr is delay -94023 ms!
+11:29:50,431 - [6] - WARN  - Fighting.Server.Games.GameMgr - Room Mgr is delay -92983 ms!
+11:29:50,431 - [6] - WARN  - Fighting.Server.Games.GameMgr - Room Mgr is delay -91943 ms!
+11:29:50,431 - [6] - WARN  - Fighting.Server.Games.GameMgr - Room Mgr is delay -90903 ms!
+11:29:50,431 - [6] - WARN  - Fighting.Server.Games.GameMgr - Room Mgr is delay -89863 ms!
+11:29:50,432 - [6] - WARN  - Fighting.Server.Games.GameMgr - Room Mgr is delay -88823 ms!
+11:29:50,432 - [6] - WARN  - Fighting.Server.Games.GameMgr - Room Mgr is delay -87783 ms!
+11:29:50,432 - [6] - WARN  - Fighting.Server.Games.GameMgr - Room Mgr is delay -86743 ms!
+11:29:50,432 - [6] - WARN  - Fighting.Server.Games.GameMgr - Room Mgr is delay -85703 ms!
+11:29:50,432 - [6] - WARN  - Fighting.Server.Games.GameMgr - Room Mgr is delay -84663 ms!
+11:29:50,433 - [6] - WARN  - Fighting.Server.Games.GameMgr - Room Mgr is delay -83623 ms!
+11:29:50,434 - [6] - WARN  - Fighting.Server.Games.GameMgr - Room Mgr is delay -82583 ms!
+11:29:50,442 - [6] - WARN  - Fighting.Server.Games.GameMgr - Room Mgr is delay -81543 ms!
+11:29:50,446 - [6] - WARN  - Fighting.Server.Games.GameMgr - Room Mgr is delay -80503 ms!
+11:29:50,447 - [6] - WARN  - Fighting.Server.Games.GameMgr - Room Mgr is delay -79463 ms!
+11:29:50,448 - [6] - WARN  - Fighting.Server.Games.GameMgr - Room Mgr is delay -78423 ms!
+11:29:50,449 - [6] - WARN  - Fighting.Server.Games.GameMgr - Room Mgr is delay -77383 ms!
+11:29:50,451 - [6] - WARN  - Fighting.Server.Games.GameMgr - Room Mgr is delay -76343 ms!
+11:29:50,460 - [6] - WARN  - Fighting.Server.Games.GameMgr - Room Mgr is delay -75303 ms!
+11:29:50,463 - [6] - WARN  - Fighting.Server.Games.GameMgr - Room Mgr is delay -74263 ms!
+11:29:50,464 - [6] - WARN  - Fighting.Server.Games.GameMgr - Room Mgr is delay -73223 ms!
+11:29:50,465 - [6] - WARN  - Fighting.Server.Games.GameMgr - Room Mgr is delay -72183 ms!
+11:29:50,466 - [6] - WARN  - Fighting.Server.Games.GameMgr - Room Mgr is delay -71143 ms!
+11:29:50,467 - [6] - WARN  - Fighting.Server.Games.GameMgr - Room Mgr is delay -70103 ms!
+11:29:50,478 - [6] - WARN  - Fighting.Server.Games.GameMgr - Room Mgr is delay -69063 ms!
+11:29:50,478 - [6] - WARN  - Fighting.Server.Games.GameMgr - Room Mgr is delay -68023 ms!
+11:29:50,480 - [6] - WARN  - Fighting.Server.Games.GameMgr - Room Mgr is delay -66983 ms!
+11:29:50,480 - [6] - WARN  - Fighting.Server.Games.GameMgr - Room Mgr is delay -65943 ms!
+11:29:50,481 - [6] - WARN  - Fighting.Server.Games.GameMgr - Room Mgr is delay -64903 ms!
+11:29:50,482 - [6] - WARN  - Fighting.Server.Games.GameMgr - Room Mgr is delay -63863 ms!
+11:29:50,482 - [6] - WARN  - Fighting.Server.Games.GameMgr - Room Mgr is delay -62823 ms!
+11:29:50,483 - [6] - WARN  - Fighting.Server.Games.GameMgr - Room Mgr is delay -61783 ms!
+11:29:50,484 - [6] - WARN  - Fighting.Server.Games.GameMgr - Room Mgr is delay -60743 ms!
+11:29:50,493 - [6] - WARN  - Fighting.Server.Games.GameMgr - Room Mgr is delay -59703 ms!
+11:29:50,497 - [6] - WARN  - Fighting.Server.Games.GameMgr - Room Mgr is delay -58663 ms!
+11:29:50,499 - [6] - WARN  - Fighting.Server.Games.GameMgr - Room Mgr is delay -57623 ms!
+11:29:50,500 - [6] - WARN  - Fighting.Server.Games.GameMgr - Room Mgr is delay -56583 ms!
+11:29:50,501 - [6] - WARN  - Fighting.Server.Games.GameMgr - Room Mgr is delay -55543 ms!
+11:29:50,509 - [6] - WARN  - Fighting.Server.Games.GameMgr - Room Mgr is delay -54503 ms!
+11:29:50,509 - [6] - WARN  - Fighting.Server.Games.GameMgr - Room Mgr is delay -53463 ms!
+11:29:50,513 - [6] - WARN  - Fighting.Server.Games.GameMgr - Room Mgr is delay -52423 ms!
+11:29:50,514 - [6] - WARN  - Fighting.Server.Games.GameMgr - Room Mgr is delay -51383 ms!
+11:29:50,515 - [6] - WARN  - Fighting.Server.Games.GameMgr - Room Mgr is delay -50343 ms!
+11:29:50,516 - [6] - WARN  - Fighting.Server.Games.GameMgr - Room Mgr is delay -49303 ms!
+11:29:50,516 - [6] - WARN  - Fighting.Server.Games.GameMgr - Room Mgr is delay -48263 ms!
+11:29:50,526 - [6] - WARN  - Fighting.Server.Games.GameMgr - Room Mgr is delay -47223 ms!
+11:29:50,528 - [6] - WARN  - Fighting.Server.Games.GameMgr - Room Mgr is delay -46183 ms!
+11:29:50,530 - [6] - WARN  - Fighting.Server.Games.GameMgr - Room Mgr is delay -45143 ms!
+11:29:50,531 - [6] - WARN  - Fighting.Ser13:46:53,869 - [MAIN] - INFO  - Fighting.Server.FightServer - InitSocket Port:9208: True
+13:46:53,944 - [MAIN] - INFO  - Fighting.Server.FightServer - Registering global event handlers: true
+13:46:53,944 - [MAIN] - INFO  - Fighting.Server.FightServer - Script components: True
+13:46:53,946 - [MAIN] - INFO  - Fighting.Server.FightServer - RoomMgr.Setup: True
+13:46:53,948 - [MAIN] - INFO  - Fighting.Server.FightServer - GameMgr.Setup: True
+13:46:54,583 - [MAIN] - INFO  - Fighting.Server.FightServer - MapMgr Init: True
+13:46:55,046 - [MAIN] - INFO  - Fighting.Server.FightServer - ItemMgr Init: True
+13:46:55,066 - [MAIN] - INFO  - Fighting.Server.FightServer - ItemMgr Init: True
+13:46:55,545 - [MAIN] - INFO  - Fighting.Server.FightServer - BallMgr Init: True
+13:46:55,591 - [MAIN] - INFO  - Fighting.Server.FightServer - BallConfigMgr Init: True
+13:46:55,660 - [MAIN] - INFO  - Fighting.Server.FightServer - DropMgr Init: True
+13:46:55,712 - [MAIN] - INFO  - Fighting.Server.FightServer - NPCInfoMgr Init: True
+13:46:55,723 - [MAIN] - INFO  - Fighting.Server.FightServer - LanguageMgr Init: True
+13:46:55,738 - [MAIN] - INFO  - Game.Logic.Spells.SpellMgr - SpellMgr: Loaded 15 spell handlers from GameServer Assembly!
+13:46:55,750 - [MAIN] - INFO  - Fighting.Server.FightServer - base.Start(): True
+13:46:55,761 - [MAIN] - INFO  - Fighting.Server.FightServer - GameServer is now open for connections!
+13:47:01,552 - [3] - INFO  - Game.Base.BaseServer - Incoming connection from 127.0.0.1:65143
+13:50:05,841 - [5] - INFO  - Game.Logic.BaseGame - Game.Logic.Actions.CheckPVPGameStateAction
+13:50:05,841 - [6] - INFO  - Game.Logic.BaseGame - Game.Logic.Actions.CheckPVPGameStateAction
+13:50:05,882 - [6] - INFO  - Game.Logic.BaseGame - Game.Logic.Actions.WaitPlayerLoadingAction
+13:50:11,436 - [3] - INFO  - Game.Logic.BaseGame - Game.Logic.Actions.ProcessPacketAction
+13:50:11,437 - [3] - INFO  - Game.Logic.BaseGame - Game.Logic.Actions.ProcessPacketAction
+13:50:11,442 - [3] - INFO  - Game.Logic.BaseGame - Game.Logic.Actions.ProcessPacketAction
+13:50:11,443 - [3] - INFO  - Game.Logic.BaseGame - Game.Logic.Actions.ProcessPacketAction
+13:50:11,447 - [3] - INFO  - Game.Logic.BaseGame - Game.Logic.Actions.ProcessPacketAction
+13:50:11,456 - [3] - INFO  - Game.Logic.BaseGame - Game.Logic.Actions.ProcessPacketAction
+13:50:11,466 - [3] - INFO  - Game.Logic.BaseGame - Game.Logic.Actions.ProcessPacketAction
+13:50:11,469 - [3] - INFO  - Game.Logic.BaseGame - Game.Logic.Actions.ProcessPacketAction
+13:50:11,472 - [6] - INFO  - Game.Logic.BaseGame - Game.Logic.Actions.CheckPVPGameStateAction
+13:50:11,473 - [6] - INFO  - Game.Logic.BaseGame - Game.Logic.Actions.CheckPVPGameStateAction
+13:50:11,473 - [6] - INFO  - Game.Logic.BaseGame - Game.Logic.Actions.CheckPVPGameStateAction
+13:50:11,474 - [6] - INFO  - Game.Logic.BaseGame - Game.Logic.Actions.CheckPVPGameStateAction
+13:50:11,475 - [6] - INFO  - Game.Logic.BaseGame - Game.Logic.Actions.CheckPVPGameStateAction
+13:50:11,476 - [6] - INFO  - Game.Logic.BaseGame - Game.Logic.Actions.CheckPVPGameStateAction
+13:50:11,477 - [6] - INFO  - Game.Logic.BaseGame - Game.Logic.Actions.CheckPVPGameStateAction
+13:50:11,508 - [6] - INFO  - Game.Logic.BaseGame - Game.Logic.Actions.CheckPVPGameStateAction
+13:50:11,588 - [6] - INFO  - Game.Logic.BaseGame - Game.Logic.Actions.WaitLivingAttackingAction
+13:50:11,697 - [3] - INFO  - Game.Logic.BaseGame - Game.Logic.Actions.ProcessPacketAction
+13:50:11,820 - [3] - INFO  - Game.Logic.BaseGame - Game.Logic.Actions.ProcessPacketAction
+13:50:15,736 - [3] - INFO  - Game.Logic.BaseGame - Game.Logic.Actions.ProcessPacketAction
+13:50:17,141 - [3] - INFO  - Game.Logic.BaseGame - Game.Logic.Actions.ProcessPacketAction
+13:50:17,144 - [3] - INFO  - Game.Logic.BaseGame - Game.Logic.Actions.ProcessPacketAction
+13:50:17,147 - [3] - INFO  - Game.Logic.BaseGame - Game.Logic.Actions.ProcessPacketAction
+13:50:20,563 - [6] - INFO  - Game.Logic.BaseGame - Game.Logic.Actions.CheckPVPGameStateAction
+13:50:20,607 - [6] - INFO  - Game.Logic.BaseGame - Game.Logic.Actions13:56:08,725 - [MAIN] - INFO  - Fighting.Server.FightServer - InitSocket Port:9208: True
+13:56:08,809 - [MAIN] - INFO  - Fighting.Server.FightServer - Registering global event handlers: true
+13:56:08,809 - [MAIN] - INFO  - Fighting.Server.FightServer - Script components: True
+13:56:08,811 - [MAIN] - INFO  - Fighting.Server.FightServer - RoomMgr.Setup: True
+13:56:08,813 - [MAIN] - INFO  - Fighting.Server.FightServer - GameMgr.Setup: True
+13:56:09,061 - [MAIN] - INFO  - Fighting.Server.FightServer - MapMgr Init: True
+13:56:09,336 - [MAIN] - INFO  - Fighting.Server.FightServer - ItemMgr Init: True
+13:56:09,353 - [MAIN] - INFO  - Fighting.Server.FightServer - ItemMgr Init: True
+13:56:09,779 - [MAIN] - INFO  - Fighting.Server.FightServer - BallMgr Init: True
+13:56:09,790 - [MAIN] - INFO  - Fighting.Server.FightServer - BallConfigMgr Init: True
+13:56:09,816 - [MAIN] - INFO  - Fighting.Server.FightServer - DropMgr Init: True
+13:56:09,842 - [MAIN] - INFO  - Fighting.Server.FightServer - NPCInfoMgr Init: True
+13:56:09,858 - [MAIN] - INFO  - Fighting.Server.FightServer - LanguageMgr Init: True
+13:56:09,876 - [MAIN] - INFO  - Game.Logic.Spells.SpellMgr - SpellMgr: Loaded 15 spell handlers from GameServer Assembly!
+13:56:09,891 - [MAIN] - INFO  - Fighting.Server.FightServer - base.Start(): True
+13:56:09,902 - [MAIN] - INFO  - Fighting.Server.FightServer - GameServer is now open for connections!
+13:56:20,815 - [3] - INFO  - Game.Base.BaseServer - Incoming connection from 127.0.0.1:65304
+13:57:39,964 - [5] - INFO  - Game.Logic.BaseGame - Game.Logic.Actions.CheckPVPGameStateAction
+13:57:39,984 - [6] - INFO  - Game.Logic.BaseGame - Game.Logic.Actions.WaitPlayerLoadingAction
+13:57:41,803 - [3] - INFO  - Game.Logic.BaseGame - Game.Logic.Actions.ProcessPacketAction
+13:57:51,049 - [8] - INFO  - Game.Logic.BaseGame - Game.Logic.Actions.ProcessPacketAction
+13:57:51,050 - [8] - INFO  - Game.Logic.BaseGame - Game.Logic.Actions.ProcessPacketAction
+13:57:51,051 - [8] - INFO  - Game.Logic.BaseGame - Game.Logic.Actions.ProcessPacketAction
+13:57:51,057 - [8] - INFO  - Game.Logic.BaseGame - Game.Logic.Actions.ProcessPacketAction
+13:57:51,062 - [8] - INFO  - Game.Logic.BaseGame - Game.Logic.Actions.ProcessPacketAction
+13:57:51,064 - [8] - INFO  - Game.Logic.BaseGame - Game.Logic.Actions.ProcessPacketAction
+13:57:51,065 - [8] - INFO  - Game.Logic.BaseGame - Game.Logic.Actions.ProcessPacketAction
+13:57:51,065 - [8] - INFO  - Game.Logic.BaseGame - Game.Logic.Actions.ProcessPacketAction
+13:57:51,066 - [8] - INFO  - Game.Logic.BaseGame - Game.Logic.Actions.ProcessPacketAction
+13:57:51,066 - [8] - INFO  - Game.Logic.BaseGame - Game.Logic.Actions.ProcessPacketAction
+13:57:51,068 - [8] - INFO  - Game.Logic.BaseGame - Game.Logic.Actions.ProcessPacketAction
+13:57:51,073 - [8] - INFO  - Game.Logic.BaseGame - Game.Logic.Actions.ProcessPacketAction
+13:57:51,075 - [8] - INFO  - Game.Logic.BaseGame - Game.Logic.Actions.ProcessPacketAction
+13:57:51,076 - [8] - INFO  - Game.Logic.BaseGame - Game.Logic.Actions.ProcessPacketAction
+13:57:51,076 - [6] - INFO  - Game.Logic.BaseGame - Game.Logic.Actions.CheckPVPGameStateAction
+13:57:51,079 - [8] - INFO  - Game.Logic.BaseGame - Game.Logic.Actions.ProcessPacketAction
+13:57:51,086 - [6] - INFO  - Game.Logic.BaseGame - Game.Logic.Actions.CheckPVPGameStateAction
+13:57:51,088 - [6] - INFO  - Game.Logic.BaseGame - Game.Logic.Actions.CheckPVPGameStateAction
+13:57:51,090 - [6] - INFO  - Game.Logic.BaseGame - Game.Logic.Actions.CheckPVPGameStateAction
+13:57:51,091 - [6] - INFO  - Game.Logic.BaseGame - Game.Logic.Actions.CheckPVPGameStateAction
+13:57:51,096 - [6] - INFO  - Game.Logic.BaseGame - Game.Logic.Actions.CheckPVPGameStateAction
+13:57:51,088 - [8] - INFO  - Game.Logic.BaseGame - Game.Logic.Actions.ProcessPacketAction
+13:57:51,098 - [8] - INFO  - Game.Logic.BaseGame - Game.Logic.Actions.ProcessPacketAction
+13:57:51,097 - [6] - INFO  - Game.Logic.BaseGame - Game.Logic.Actions.CheckPVPGameStateAction
+13:57:51,099 - [8] - INFO  - Game.Logic.BaseGame - Game.Logic.Actions.ProcessPacketActi14:05:14,384 - [MAIN] - INFO  - Fighting.Server.FightServer - InitSocket Port:9208: True
+14:05:14,502 - [MAIN] - INFO  - Fighting.Server.FightServer - Registering global event handlers: true
+14:05:14,502 - [MAIN] - INFO  - Fighting.Server.FightServer - Script components: True
+14:05:14,504 - [MAIN] - INFO  - Fighting.Server.FightServer - RoomMgr.Setup: True
+14:05:14,505 - [MAIN] - INFO  - Fighting.Server.FightServer - GameMgr.Setup: True
+14:05:14,718 - [MAIN] - INFO  - Fighting.Server.FightServer - MapMgr Init: True
+14:05:14,970 - [MAIN] - INFO  - Fighting.Server.FightServer - ItemMgr Init: True
+14:05:14,982 - [MAIN] - INFO  - Fighting.Server.FightServer - ItemMgr Init: True
+14:05:15,462 - [MAIN] - INFO  - Fighting.Server.FightServer - BallMgr Init: True
+14:05:15,474 - [MAIN] - INFO  - Fighting.Server.FightServer - BallConfigMgr Init: True
+14:05:15,497 - [MAIN] - INFO  - Fighting.Server.FightServer - DropMgr Init: True
+14:05:15,518 - [MAIN] - INFO  - Fighting.Server.FightServer - NPCInfoMgr Init: True
+14:05:15,529 - [MAIN] - INFO  - Fighting.Server.FightServer - LanguageMgr Init: True
+14:05:15,544 - [MAIN] - INFO  - Game.Logic.Spells.SpellMgr - SpellMgr: Loaded 15 spell handlers from GameServer Assembly!
+14:05:15,562 - [MAIN] - INFO  - Fighting.Server.FightServer - base.Start(): True
+14:05:15,574 - [MAIN] - INFO  - Fighting.Server.FightServer - GameServer is now open for connections!
+14:05:20,454 - [3] - INFO  - Game.Base.BaseServer - Incoming connection from 127.0.0.1:65483
+14:06:15,658 - [6] - INFO  - Game.Logic.BaseGame - Game.Logic.Actions.CheckPVPGameStateAction
+14:06:15,658 - [5] - INFO  - Game.Logic.BaseGame - Game.Logic.Actions.CheckPVPGameStateAction
+14:06:15,699 - [6] - INFO  - Game.Logic.BaseGame - Game.Logic.Actions.WaitPlayerLoadingAction
+14:06:17,612 - [3] - INFO  - Game.Logic.BaseGame - Game.Logic.Actions.ProcessPacketAction
+14:06:17,644 - [6] - INFO  - Game.Logic.BaseGame - Game.Logic.Actions.CheckPVPGameStateAction
+14:06:17,774 - [3] - INFO  - Game.Logic.BaseGame - Game.Logic.Actions.ProcessPacketAction
+14:06:17,801 - [6] - INFO  - Game.Logic.BaseGame - Game.Logic.Actions.CheckPVPGameStateAction
+14:06:19,926 - [6] - INFO  - Game.Logic.BaseGame - Game.Logic.Actions.CheckPVPGameStateAction
+14:06:20,006 - [6] - INFO  - Game.Logic.BaseGame - Game.Logic.Actions.WaitLivingAttackingAction
+14:06:22,211 - [3] - INFO  - Game.Logic.BaseGame - Game.Logic.Actions.ProcessPacketAction
+14:06:26,811 - [3] - INFO  - Game.Logic.BaseGame - Game.Logic.Actions.ProcessPacketAction
+14:06:26,813 - [3] - INFO  - Game.Logic.BaseGame - Game.Logic.Actions.ProcessPacketAction
+14:06:26,819 - [3] - INFO  - Game.Logic.BaseGame - Game.Logic.Actions.ProcessPacketAction
+14:06:27,968 - [6] - WARN  - Fighting.Server.Games.GameMgr - Room Mgr is delay -1073 ms!
+14:06:30,289 - [6] - INFO  - Game.Logic.BaseGame - Game.Logic.Actions.CheckPVPGameStateAction
+14:06:37,727 - [6] - WARN  - Fighting.Server.Games.GameMgr - Room Mgr is delay -7400 ms!
+14:06:37,731 - [6] - INFO  - Game.Logic.BaseGame - Game.Logic.Actions.WaitLivingAttackingAction
+14:06:37,731 - [6] - WARN  - Fighting.Server.Games.GameMgr - Room Mgr is delay -6365 ms!
+14:06:37,731 - [6] - WARN  - Fighting.Server.Games.GameMgr - Room Mgr is delay -5325 ms!
+14:06:37,732 - [6] - WARN  - Fighting.Server.Games.GameMgr - Room Mgr is delay -4285 ms!
+14:06:37,732 - [6] - WARN  - Fighting.Server.Games.GameMgr - Room Mgr is delay -3245 ms!
+14:06:37,732 - [6] - WARN  - Fighting.Server.Games.GameMgr - Room Mgr is delay -2205 ms!
+14:06:37,733 - [6] - WARN  - Fighting.Server.Games.GameMgr - Room Mgr is delay -1165 ms!
+14:06:37,998 - [3] - INFO  - Game.Logic.BaseGame - Game.Logic.Actions.ProcessPacketAction
+14:06:46,117 - [3] - INFO  - Game.Logic.BaseGame - Game.Logic.Actions.ProcessPacketAction
+14:06:46,157 - [6] - INFO  - Game.Logic.BaseGame - Game.Logic.Actions.CheckPVPGameStateAction
+14:06:46,168 - [3] - INFO  - Game.Logic.BaseGame - Game.Logic.Actions.ProcessPacketAction
+14:06:46,198 - [6] - INFO  - Game.Logic.BaseGame - Game.Logic.Actions.WaitLivingAttacki14:32:52,902 - [MAIN] - INFO  - Fighting.Server.FightServer - InitSocket Port:9208: True
+14:32:52,987 - [MAIN] - INFO  - Fighting.Server.FightServer - Registering global event handlers: true
+14:32:52,988 - [MAIN] - INFO  - Fighting.Server.FightServer - Script components: True
+14:32:52,991 - [MAIN] - INFO  - Fighting.Server.FightServer - RoomMgr.Setup: True
+14:32:52,993 - [MAIN] - INFO  - Fighting.Server.FightServer - GameMgr.Setup: True
+14:32:53,245 - [MAIN] - INFO  - Fighting.Server.FightServer - MapMgr Init: True
+14:32:53,556 - [MAIN] - INFO  - Fighting.Server.FightServer - ItemMgr Init: True
+14:32:53,571 - [MAIN] - INFO  - Fighting.Server.FightServer - ItemMgr Init: True
+14:32:55,299 - [MAIN] - INFO  - Fighting.Server.FightServer - BallMgr Init: True
+14:32:55,314 - [MAIN] - INFO  - Fighting.Server.FightServer - BallConfigMgr Init: True
+14:32:55,340 - [MAIN] - INFO  - Fighting.Server.FightServer - DropMgr Init: True
+14:32:55,361 - [MAIN] - INFO  - Fighting.Server.FightServer - NPCInfoMgr Init: True
+14:32:55,374 - [MAIN] - INFO  - Fighting.Server.FightServer - LanguageMgr Init: True
+14:32:55,393 - [MAIN] - INFO  - Game.Logic.Spells.SpellMgr - SpellMgr: Loaded 15 spell handlers from GameServer Assembly!
+14:32:55,409 - [MAIN] - INFO  - Fighting.Server.FightServer - base.Start(): True
+14:32:55,420 - [MAIN] - INFO  - Fighting.Server.FightServer - GameServer is now open for connections!
+14:33:00,210 - [3] - INFO  - Game.Base.BaseServer - Incoming connection from 127.0.0.1:49774
+14:34:05,533 - [5] - INFO  - Game.Logic.BaseGame - Game.Logic.Actions.CheckPVPGameStateAction
+14:34:05,539 - [6] - INFO  - Game.Logic.BaseGame - Game.Logic.Actions.CheckPVPGameStateAction
+14:34:05,582 - [6] - INFO  - Game.Logic.BaseGame - Game.Logic.Actions.WaitPlayerLoadingAction
+14:34:07,464 - [3] - INFO  - Game.Logic.BaseGame - Game.Logic.Actions.ProcessPacketAction
+14:34:07,465 - [3] - INFO  - Game.Logic.BaseGame - Game.Logic.Actions.ProcessPacketAction
+14:34:07,486 - [6] - INFO  - Game.Logic.BaseGame - Game.Logic.Actions.CheckPVPGameStateAction
+14:34:07,487 - [6] - INFO  - Game.Logic.BaseGame - Game.Logic.Actions.CheckPVPGameStateAction
+14:34:07,620 - [6] - INFO  - Game.Logic.BaseGame - Game.Logic.Actions.WaitLivingAttackingAction
+14:34:11,923 - [3] - INFO  - Game.Logic.BaseGame - Game.Logic.Actions.ProcessPacketAction
+14:34:14,914 - [3] - INFO  - Game.Logic.BaseGame - Game.Logic.Actions.ProcessPacketAction
+14:34:15,953 - [3] - INFO  - Game.Logic.BaseGame - Game.Logic.Actions.ProcessPacketAction
+14:34:15,955 - [3] - INFO  - Game.Logic.BaseGame - Game.Logic.Actions.ProcessPacketAction
+14:34:15,958 - [3] - INFO  - Game.Logic.BaseGame - Game.Logic.Actions.ProcessPacketAction
+14:34:18,443 - [6] - INFO  - Game.Logic.BaseGame - Game.Logic.Actions.CheckPVPGameStateAction
+14:34:18,509 - [6] - INFO  - Game.Logic.BaseGame - Game.Logic.Actions.WaitLivingAttackingAction
+14:34:18,796 - [3] - INFO  - Game.Logic.BaseGame - Game.Logic.Actions.ProcessPacketAction
+14:34:26,836 - [3] - INFO  - Game.Logic.BaseGame - Game.Logic.Actions.ProcessPacketAction
+14:34:40,514 - [6] - INFO  - Game.Logic.BaseGame - Game.Logic.Actions.CheckPVPGameStateAction
+14:34:43,434 - [3] - INFO  - Game.Logic.BaseGame - Game.Logic.Actions.ProcessPacketAction
+14:34:43,438 - [6] - WARN  - Fighting.Server.Games.GameMgr - Room Mgr is delay -2883 ms!
+14:34:43,447 - [6] - INFO  - Game.Logic.BaseGame - Game.Logic.Actions.WaitLivingAttackingAction
+14:34:43,449 - [6] - INFO  - Game.Logic.BaseGame - Game.Logic.Actions.CheckPVPGameStateAction
+14:34:43,450 - [6] - WARN  - Fighting.Server.Games.GameMgr - Room Mgr is delay -1852 ms!
+14:34:43,453 - [6] - INFO  - Game.Logic.BaseGame - Game.Logic.Actions.WaitLivingAttackingAction
+14:34:43,712 - [3] - INFO  - Game.Logic.BaseGame - Game.Logic.Actions.ProcessPacketAction
+14:34:43,801 - [3] - INFO  - Game.Logic.BaseGame - Game.Logic.Actions.ProcessPacketAction
+14:34:46,749 - [3] - INFO  - Game.Logic.BaseGame - Game.Logic.Actions.ProcessPacketAction
+14:34:46,751 - [3] - INFO  - Game.Logic.BaseGame - Game.Logic.Actions14:46:52,574 - [MAIN] - INFO  - Fighting.Server.FightServer - InitSocket Port:9208: True
+14:46:52,673 - [MAIN] - INFO  - Fighting.Server.FightServer - Registering global event handlers: true
+14:46:52,696 - [MAIN] - INFO  - Fighting.Server.FightServer - Script components: True
+14:46:52,700 - [MAIN] - INFO  - Fighting.Server.FightServer - RoomMgr.Setup: True
+14:46:52,703 - [MAIN] - INFO  - Fighting.Server.FightServer - GameMgr.Setup: True
+14:46:55,474 - [MAIN] - INFO  - Fighting.Server.FightServer - MapMgr Init: True
+14:46:55,754 - [MAIN] - INFO  - Fighting.Server.FightServer - ItemMgr Init: True
+14:46:55,766 - [MAIN] - INFO  - Fighting.Server.FightServer - ItemMgr Init: True
+14:46:59,903 - [MAIN] - INFO  - Fighting.Server.FightServer - BallMgr Init: True
+14:46:59,923 - [MAIN] - INFO  - Fighting.Server.FightServer - BallConfigMgr Init: True
+14:46:59,955 - [MAIN] - INFO  - Fighting.Server.FightServer - DropMgr Init: True
+14:46:59,987 - [MAIN] - INFO  - Fighting.Server.FightServer - NPCInfoMgr Init: True
+14:47:00,057 - [MAIN] - INFO  - Fighting.Server.FightServer - LanguageMgr Init: True
+14:47:00,072 - [MAIN] - INFO  - Game.Logic.Spells.SpellMgr - SpellMgr: Loaded 15 spell handlers from GameServer Assembly!
+14:47:00,085 - [MAIN] - INFO  - Fighting.Server.FightServer - base.Start(): True
+14:47:00,096 - [MAIN] - INFO  - Fighting.Server.FightServer - GameServer is now open for connections!
+14:47:02,145 - [3] - INFO  - Game.Base.BaseServer - Incoming connection from 127.0.0.1:50044
+14:48:00,202 - [5] - INFO  - Game.Logic.BaseGame - Game.Logic.Actions.CheckPVPGameStateAction
+14:48:00,227 - [6] - INFO  - Game.Logic.BaseGame - Game.Logic.Actions.WaitPlayerLoadingAction
+14:48:02,061 - [3] - INFO  - Game.Logic.BaseGame - Game.Logic.Actions.ProcessPacketAction
+14:48:02,123 - [3] - INFO  - Game.Logic.BaseGame - Game.Logic.Actions.ProcessPacketAction
+14:48:03,065 - [3] - INFO  - Game.Logic.BaseGame - Game.Logic.Actions.ProcessPacketAction
+14:48:03,097 - [6] - INFO  - Game.Logic.BaseGame - Game.Logic.Actions.CheckPVPGameStateAction
+14:48:03,129 - [3] - INFO  - Game.Logic.BaseGame - Game.Logic.Actions.ProcessPacketAction
+14:48:03,138 - [6] - INFO  - Game.Logic.BaseGame - Game.Logic.Actions.CheckPVPGameStateAction
+14:48:05,244 - [6] - INFO  - Game.Logic.BaseGame - Game.Logic.Actions.CheckPVPGameStateAction
+14:48:05,323 - [6] - INFO  - Game.Logic.BaseGame - Game.Logic.Actions.WaitLivingAttackingAction
+14:48:07,703 - [3] - INFO  - Game.Logic.BaseGame - Game.Logic.Actions.ProcessPacketAction
+14:48:10,670 - [3] - INFO  - Game.Logic.BaseGame - Game.Logic.Actions.ProcessPacketAction
+14:48:10,674 - [3] - INFO  - Game.Logic.BaseGame - Game.Logic.Actions.ProcessPacketAction
+14:48:10,678 - [3] - INFO  - Game.Logic.BaseGame - Game.Logic.Actions.ProcessPacketAction
+14:48:13,904 - [6] - INFO  - Game.Logic.BaseGame - Game.Logic.Actions.CheckPVPGameStateAction
+14:48:13,946 - [6] - INFO  - Game.Logic.BaseGame - Game.Logic.Actions.WaitLivingAttackingAction
+14:48:14,197 - [3] - INFO  - Game.Logic.BaseGame - Game.Logic.Actions.ProcessPacketAction
+14:48:22,200 - [3] - INFO  - Game.Logic.BaseGame - Game.Logic.Actions.ProcessPacketAction
+14:48:22,238 - [6] - INFO  - Game.Logic.BaseGame - Game.Logic.Actions.CheckPVPGameStateAction
+14:48:22,255 - [3] - INFO  - Game.Logic.BaseGame - Game.Logic.Actions.ProcessPacketAction
+14:48:22,279 - [6] - INFO  - Game.Logic.BaseGame - Game.Logic.Actions.WaitLivingAttackingAction
+14:48:22,548 - [3] - INFO  - Game.Logic.BaseGame - Game.Logic.Actions.ProcessPacketAction
+14:48:30,586 - [3] - INFO  - Game.Logic.BaseGame - Game.Logic.Actions.ProcessPacketAction
+14:48:30,617 - [6] - INFO  - Game.Logic.BaseGame - Game.Logic.Actions.CheckPVPGameStateAction
+14:48:30,639 - [3] - INFO  - Game.Logic.BaseGame - Game.Logic.Actions.ProcessPacketAction
+14:48:30,661 - [6] - INFO  - Game.Logic.BaseGame - Game.Logic.Actions.WaitLivingAttackingAction
+14:48:30,930 - [3] - INFO  - Game.Logic.BaseGame - Game.Logic.Actions.ProcessPacketAction
+14:48:38,964 - [3] - INFO  - Game.Logic.BaseGame - Game.Logic.Actions.ProcessPacketAction
+14:48:38,995 - [3] - INFO  - Game.Logic.BaseGame - Game.Logic.Actions.ProcessPacketAction
+14:48:39,000 - [6] - INFO  - Game.Logic.BaseGame - Game.Logic.Actions.CheckPVPGameStateAction
+14:48:39,043 - [6] - INFO  - Game.Logic.BaseGame - Game.Logic.Actions.WaitLivingAttackingAction
+14:48:39,297 - [3] - INFO  - Game.Logic.BaseGame - Game.Logic.Actions.ProcessPacketAction
+14:48:47,383 - [3] - INFO  - Game.Logic.BaseGame - Game.Logic.Actions.ProcessPacketAction
+14:48:47,423 - [6] - INFO  - Game.Logic.BaseGame - Game.Logic.Actions.CheckPVPGameStateAction
+14:48:47,440 - [3] - INFO  - Game.Logic.BaseGame - Game.Logic.Actions.ProcessPacketAction
+14:48:47,465 - [6] - INFO  - Game.Logic.BaseGame - Game.Logic.Actions.WaitLivingAttackingAction
+14:48:47,726 - [3] - INFO  - Game.Logic.BaseGame - Game.Logic.Actions.ProcessPacketAction
+14:48:55,729 - [3] - INFO  - Game.Logic.BaseGame - Game.Logic.Actions.ProcessPacketAction
+14:48:55,736 - [6] - INFO  - Game.Logic.BaseGame - Game.Logic.Actions.CheckPVPGameStateAction
+14:48:55,769 - [3] - INFO  - Game.Logic.BaseGame - Game.Logic.Actions.ProcessPacketAction
+14:48:55,783 - [6] - INFO  - Game.Logic.BaseGame - Game.Logic.Actions.WaitLivingAttackingAction
+14:48:56,065 - [3] - INFO  - Game.Logic.BaseGame - Game.Logic.Actions.ProcessPacketAction
+14:49:04,066 - [3] - INFO  - Game.Logic.BaseGame - Game.Logic.Actions.ProcessPacketAction
+14:49:04,071 - [6] - INFO  - Game.Logic.BaseGame - Game.Logic.Actions.CheckPVPGameStateAction
+14:49:04,097 - [3] - INFO  - Game.Logic.BaseGame - Game.Logic.Actions.ProcessPacketAction
+14:49:04,116 - [6] - INFO  - Game.Logic.BaseGame - Game.Logic.Actions.WaitLivingAttackingAction
+14:49:04,360 - [3] - INFO  - Game.Logic.BaseGame - Game.Logic.Actions.ProcessPacketAction
+14:49:12,363 - [3] - INFO  - Game.Logic.BaseGame - Game.Logic.Actions.ProcessPacketAction
+14:49:12,374 - [6] - INFO  - Game.Logic.BaseGame - Game.Logic.Actions.CheckPVPGameStateAction
+14:49:12,399 - [3] - INFO  - Game.Logic.BaseGame - Game.Logic.Actions.ProcessPacketAction
+14:49:12,417 - [6] - INFO  - Game.Logic.BaseGame - Game.Logic.Actions.WaitLivingAttackingAction
+14:49:12,663 - [3] - INFO  - Game.Logic.BaseGame - Game.Logic.Actions.ProcessPacketAction
+14:49:20,664 - [3] - INFO  - Game.Logic.BaseGame - Game.Logic.Actions.ProcessPacketAction
+14:49:20,680 - [6] - INFO  - Game.Logic.BaseGame - Game.Logic.Actions.CheckPVPGameStateAction
+14:49:20,695 - [3] - INFO  - Game.Logic.BaseGame - Game.Logic.Actions.ProcessPacketAction
+14:49:20,723 - [6] - INFO  - Game.Logic.BaseGame - Game.Logic.Actions.WaitLivingAttackingAction
+14:49:20,960 - [3] - INFO  - Game.Logic.BaseGame - Game.Logic.Actions.ProcessPacketAction
+14:49:29,046 - [3] - INFO  - Game.Logic.BaseGame - Game.Logic.Actions.ProcessPacketAction
+14:49:29,053 - [6] - INFO  - Game.Logic.BaseGame - Game.Logic.Actions.CheckPVPGameStateAction
+14:49:29,083 - [3] - INFO  - Game.Logic.BaseGame - Game.Logic.Actions.ProcessPacketAction
+14:49:29,095 - [6] - INFO  - Game.Logic.BaseGame - Game.Logic.Actions.WaitLivingAttackingAction
+14:49:29,381 - [3] - INFO  - Game.Logic.BaseGame - Game.Logic.Actions.ProcessPacketAction
+14:49:37,349 - [3] - INFO  - Game.Logic.BaseGame - Game.Logic.Actions.ProcessPacketAction
+14:49:37,381 - [3] - INFO  - Game.Logic.BaseGame - Game.Logic.Actions.ProcessPacketAction
+14:49:37,389 - [6] - INFO  - Game.Logic.BaseGame - Game.Logic.Actions.CheckPVPGameStateAction
+14:49:37,431 - [6] - INFO  - Game.Logic.BaseGame - Game.Logic.Actions.WaitLivingAttackingAction
+14:49:37,677 - [3] - INFO  - Game.Logic.BaseGame - Game.Logic.Actions.ProcessPacketAction
+14:49:45,729 - [3] - INFO  - Game.Logic.BaseGame - Game.Logic.Actions.ProcessPacketAction
+14:49:45,762 - [3] - INFO  - Game.Logic.BaseGame - Game.Logic.Actions.ProcessPacketAction
+14:49:45,769 - [6] - INFO  - Game.Logic.BaseGame - Game.Logic.Actions.CheckPVPGameStateAction
+14:49:45,812 - [6] - INFO  - Game.Logic.BaseGame - Game.Logic.Actions.WaitLivingAttackingAction
+14:49:46,063 - [3] - INFO  - Game.Logic.BaseGame - Game.Logic.Actions.ProcessPacketAction
+14:49:54,103 - [3] - INFO  - Game.Logic.BaseGame - Game.Logic.Actions.ProcessPacketAction
+14:49:54,108 - [6] - INFO  - Game.Logic.BaseGame - Game.Logic.Actions.CheckPVPGameStateAction
+14:49:54,145 - [3] - INFO  - Game.Logic.BaseGame - Game.Logic.Actions.ProcessPacketAction
+14:49:54,149 - [6] - INFO  - Game.Logic.BaseGame - Game.Logic.Actions.WaitLivingAttackingAction
+14:49:54,393 - [3] - INFO  - Game.Logic.BaseGame - Game.Logic.Actions.ProcessPacketAction
+14:50:02,445 - [3] - INFO  - Game.Logic.BaseGame - Game.Logic.Actions.ProcessPacketAction
+14:50:02,477 - [3] - INFO  - Game.Logic.BaseGame - Game.Logic.Actions.ProcessPacketAction
+14:50:02,486 - [6] - INFO  - Game.Logic.BaseGame - Game.Logic.Actions.CheckPVPGameStateAction
+14:50:02,530 - [6] - INFO  - Game.Logic.BaseGame - Game.Logic.Actions.WaitLivingAttackingAction
+14:50:02,780 - [3] - INFO  - Game.Logic.BaseGame - Game.Logic.Actions.ProcessPacketAction
+14:50:10,832 - [3] - INFO  - Game.Logic.BaseGame - Game.Logic.Actions.ProcessPacketAction
+14:50:10,860 - [6] - INFO  - Game.Logic.BaseGame - Game.Logic.Actions.CheckPVPGameStateAction
+14:50:10,864 - [3] - INFO  - Game.Logic.BaseGame - Game.Logic.Actions.ProcessPacketAction
+14:50:10,905 - [6] - INFO  - Game.Logic.BaseGame - Game.Logic.Actions.WaitLivingAttackingAction
+14:50:11,162 - [3] - INFO  - Game.Logic.BaseGame - Game.Logic.Actions.ProcessPacketAction
+14:50:19,277 - [3] - INFO  - Game.Logic.BaseGame - Game.Logic.Actions.ProcessPacketAction
+14:50:19,313 - [6] - INFO  - Game.Logic.BaseGame - Game.Logic.Actions.CheckPVPGameStateAction
+14:50:19,328 - [3] - INFO  - Game.Logic.BaseGame - Game.Logic.Actions.ProcessPacketAction
+14:50:19,357 - [6] - INFO  - Game.Logic.BaseGame - Game.Logic.Actions.WaitLivingAttackingAction
+14:50:19,630 - [3] - INFO  - Game.Logic.BaseGame - Game.Logic.Actions.ProcessPacketAction
+14:50:27,701 - [3] - INFO  - Game.Logic.BaseGame - Game.Logic.Actions.ProcessPacketAction
+14:50:27,709 - [6] - INFO  - Game.Logic.BaseGame - Game.Logic.Actions.CheckPVPGameStateAction
+14:50:27,748 - [3] - INFO  - Game.Logic.BaseGame - Game.Logic.Actions.ProcessPacketAction
+14:50:27,756 - [6] - INFO  - Game.Logic.BaseGame - Game.Logic.Actions.WaitLivingAttackingAction
+14:50:27,995 - [3] - INFO  - Game.Logic.BaseGame - Game.Logic.Actions.ProcessPacketAction
+14:50:36,129 - [3] - INFO  - Game.Logic.BaseGame - Game.Logic.Actions.ProcessPacketAction
+14:50:36,137 - [6] - INFO  - Game.Logic.BaseGame - Game.Logic.Actions.CheckPVPGameStateAction
+14:50:36,162 - [3] - INFO  - Game.Logic.BaseGame - Game.Logic.Actions.ProcessPacketAction
+14:50:36,181 - [6] - INFO  - Game.Logic.BaseGame - Game.Logic.Actions.WaitLivingAttackingAction
+14:50:36,463 - [3] - INFO  - Game.Logic.BaseGame - Game.Logic.Actions.ProcessPacketAction
+14:50:44,632 - [3] - INFO  - Game.Logic.BaseGame - Game.Logic.Actions.ProcessPacketAction
+14:50:44,663 - [6] - INFO  - Game.Logic.BaseGame - Game.Logic.Actions.CheckPVPGameStateAction
+14:50:44,664 - [3] - INFO  - Game.Logic.BaseGame - Game.Logic.Actions.ProcessPacketAction
+14:50:44,708 - [6] - INFO  - Game.Logic.BaseGame - Game.Logic.Actions.WaitLivingAttackingAction
+14:50:44,962 - [3] - INFO  - Game.Logic.BaseGame - Game.Logic.Actions.ProcessPacketAction
+14:50:52,996 - [3] - INFO  - Game.Logic.BaseGame - Game.Logic.Actions.ProcessPacketAction
+14:50:53,004 - [6] - INFO  - Game.Logic.BaseGame - Game.Logic.Actions.CheckPVPGameStateAction
+14:50:53,044 - [3] - INFO  - Game.Logic.BaseGame - Game.Logic.Actions.ProcessPacketAction
+14:50:53,048 - [6] - INFO  - Game.Logic.BaseGame - Game.Logic.Actions.WaitLivingAttackingAction
+14:50:53,295 - [3] - INFO  - Game.Logic.BaseGame - Game.Logic.Actions.ProcessPacketAction
+14:51:01,265 - [3] - INFO  - Game.Logic.BaseGame - Game.Logic.Actions.ProcessPacketAction
+14:51:01,284 - [6] - INFO  - Game.Logic.BaseGame - Game.Logic.Actions.CheckPVPGameStateAction
+14:51:01,296 - [3] - INFO  - Game.Logic.BaseGame - Game.Logic.Actions.ProcessPacketAction
+14:51:01,327 - [6] - INFO  - Game.Logic.BaseGame - Game.Logic.Actions.WaitLivingAttackingAction
+14:51:01,593 - [3] - INFO  - Game.Logic.BaseGame - Game.Logic.Actions.ProcessPacketAction
+14:51:09,678 - [3] - INFO  - Game.Logic.BaseGame - Game.Logic.Actions.ProcessPacketAction
+14:51:09,708 - [6] - INFO  - Game.Logic.BaseGame - Game.Logic.Actions.CheckPVPGameStateAction
+14:51:09,727 - [3] - INFO  - Game.Logic.BaseGame - Game.Logic.Actions.ProcessPacketAction
+14:51:09,752 - [6] - INFO  - Game.Logic.BaseGame - Game.Logic.Actions.WaitLivingAttackingAction
+14:51:10,030 - [3] - INFO  - Game.Logic.BaseGame - Game.Logic.Actions.ProcessPacketAction
+14:51:18,097 - [3] - INFO  - Game.Logic.BaseGame - Game.Logic.Actions.ProcessPacketAction
+14:51:18,126 - [6] - INFO  - Game.Logic.BaseGame - Game.Logic.Actions.CheckPVPGameStateAction
+14:51:18,147 - [3] - INFO  - Game.Logic.BaseGame - Game.Logic.Actions.ProcessPacketAction
+14:51:18,168 - [6] - INFO  - Game.Logic.BaseGame - Game.Logic.Actions.WaitLivingAttackingAction
+14:51:18,443 - [3] - INFO  - Game.Logic.BaseGame - Game.Logic.Actions.ProcessPacketAction
+14:51:26,562 - [3] - INFO  - Game.Logic.BaseGame - Game.Logic.Actions.ProcessPacketAction
+14:51:26,594 - [3] - INFO  - Game.Logic.BaseGame - Game.Logic.Actions.ProcessPacketAction
+14:51:26,595 - [6] - INFO  - Game.Logic.BaseGame - Game.Logic.Actions.CheckPVPGameStateAction
+14:51:26,638 - [6] - INFO  - Game.Logic.BaseGame - Game.Logic.Actions.WaitLivingAttackingAction
+14:51:26,897 - [3] - INFO  - Game.Logic.BaseGame - Game.Logic.Actions.ProcessPacketAction
+14:51:35,035 - [3] - INFO  - Game.Logic.BaseGame - Game.Logic.Actions.ProcessPacketAction
+14:51:35,045 - [6] - INFO  - Game.Logic.BaseGame - Game.Logic.Actions.CheckPVPGameStateAction
+14:51:35,064 - [3] - INFO  - Game.Logic.BaseGame - Game.Logic.Actions.ProcessPacketAction
+14:51:35,087 - [6] - INFO  - Game.Logic.BaseGame - Game.Logic.Actions.WaitLivingAttackingAction
+14:51:35,363 - [3] - INFO  - Game.Logic.BaseGame - Game.Logic.Actions.ProcessPacketAction
+14:51:43,445 - [3] - INFO  - Game.Logic.BaseGame - Game.Logic.Actions.ProcessPacketAction
+14:51:43,465 - [6] - INFO  - Game.Logic.BaseGame - Game.Logic.Actions.CheckPVPGameStateAction
+14:51:43,477 - [3] - INFO  - Game.Logic.BaseGame - Game.Logic.Actions.ProcessPacketAction
+14:51:43,508 - [6] - INFO  - Game.Logic.BaseGame - Game.Logic.Actions.WaitLivingAttackingAction
+14:51:43,780 - [3] - INFO  - Game.Logic.BaseGame - Game.Logic.Actions.ProcessPacketAction
+14:51:51,832 - [3] - INFO  - Game.Logic.BaseGame - Game.Logic.Actions.ProcessPacketAction
+14:51:51,849 - [6] - INFO  - Game.Logic.BaseGame - Game.Logic.Actions.CheckPVPGameStateAction
+14:51:51,864 - [3] - INFO  - Game.Logic.BaseGame - Game.Logic.Actions.ProcessPacketAction
+14:51:51,893 - [6] - INFO  - Game.Logic.BaseGame - Game.Logic.Actions.WaitLivingAttackingAction
+14:51:52,162 - [3] - INFO  - Game.Logic.BaseGame - Game.Logic.Actions.ProcessPacketAction
+14:52:00,245 - [3] - INFO  - Game.Logic.BaseGame - Game.Logic.Actions.ProcessPacketAction
+14:52:00,268 - [6] - INFO  - Game.Logic.BaseGame - Game.Logic.Actions.CheckPVPGameStateAction
+14:52:00,277 - [3] - INFO  - Game.Logic.BaseGame - Game.Logic.Actions.ProcessPacketAction
+14:52:00,310 - [6] - INFO  - Game.Logic.BaseGame - Game.Logic.Actions.WaitLivingAttackingAction
+14:52:00,581 - [3] - INFO  - Game.Logic.BaseGame - Game.Logic.Actions.ProcessPacketAction
+14:52:08,717 - [3] - INFO  - Game.Logic.BaseGame - Game.Logic.Actions.ProcessPacketAction
+14:52:08,723 - [6] - INFO  - Game.Logic.BaseGame - Game.Logic.Actions.CheckPVPGameStateAction
+14:52:08,727 - [3] - INFO  - Game.Logic.BaseGame - Game.Logic.Actions.ProcessPacketAction
+14:52:08,765 - [6] - INFO  - Game.Logic.BaseGame - Game.Logic.Actions.WaitLivingAttackingAction
+14:52:09,044 - [3] - INFO  - Game.Logic.BaseGame - Game.Logic.Actions.ProcessPacketAction
+14:52:17,129 - [3] - INFO  - Game.Logic.BaseGame - Game.Logic.Actions.ProcessPacketAction
+14:52:17,162 - [3] - INFO  - Game.Logic.BaseGame - Game.Logic.Actions.ProcessPacketAction
+14:52:17,165 - [6] - INFO  - Game.Logic.BaseGame - Game.Logic.Actions.CheckPVPGameStateAction
+14:52:17,208 - [6] - INFO  - Game.Logic.BaseGame - Game.Logic.Actions.WaitLivingAttackingAction
+14:52:17,463 - [3] - INFO  - Game.Logic.BaseGame - Game.Logic.Actions.ProcessPacketAction
+14:52:25,498 - [3] - INFO  - Game.Logic.BaseGame - Game.Logic.Actions.ProcessPacketAction
+14:52:25,503 - [6] - INFO  - Game.Logic.BaseGame - Game.Logic.Actions.CheckPVPGameStateAction
+14:52:25,546 - [6] - INFO  - Game.Logic.BaseGame - Game.Logic.Actions.WaitLivingAttackingAction
+14:52:25,546 - [3] - INFO  - Game.Logic.BaseGame - Game.Logic.Actions.ProcessPacketAction
+14:52:25,795 - [3] - INFO  - Game.Logic.BaseGame - Game.Logic.Actions.ProcessPacketAction
+14:52:33,762 - [3] - INFO  - Game.Logic.BaseGame - Game.Logic.Actions.ProcessPacketAction
+14:52:33,769 - [6] - INFO  - Game.Logic.BaseGame - Game.Logic.Actions.CheckPVPGameStateAction
+14:52:33,794 - [3] - INFO  - Game.Logic.BaseGame - Game.Logic.Actions.ProcessPacketAction
+14:52:33,812 - [6] - INFO  - Game.Logic.BaseGame - Game.Logic.Actions.WaitLivingAttackingAction
+14:52:34,064 - [3] - INFO  - Game.Logic.BaseGame - Game.Logic.Actions.ProcessPacketAction
+14:52:42,065 - [3] - INFO  - Game.Logic.BaseGame - Game.Logic.Actions.ProcessPacketAction
+14:52:42,084 - [6] - INFO  - Game.Logic.BaseGame - Game.Logic.Actions.CheckPVPGameStateAction
+14:52:42,098 - [3] - INFO  - Game.Logic.BaseGame - Game.Logic.Actions.ProcessPacketAction
+14:52:42,126 - [6] - INFO  - Game.Logic.BaseGame - Game.Logic.Actions.WaitLivingAttackingAction
+14:52:42,395 - [3] - INFO  - Game.Logic.BaseGame - Game.Logic.Actions.ProcessPacketAction
+14:52:50,477 - [3] - INFO  - Game.Logic.BaseGame - Game.Logic.Actions.ProcessPacketAction
+14:52:50,509 - [6] - INFO  - Game.Logic.BaseGame - Game.Logic.Actions.CheckPVPGameStateAction
+14:52:50,528 - [3] - INFO  - Game.Logic.BaseGame - Game.Logic.Actions.ProcessPacketAction
+14:52:50,551 - [6] - INFO  - Game.Logic.BaseGame - Game.Logic.Actions.WaitLivingAttackingAction
+14:52:50,831 - [3] - INFO  - Game.Logic.BaseGame - Game.Logic.Actions.ProcessPacketAction
+14:52:58,865 - [3] - INFO  - Game.Logic.BaseGame - Game.Logic.Actions.ProcessPacketAction
+14:52:58,889 - [6] - INFO  - Game.Logic.BaseGame - Game.Logic.Actions.CheckPVPGameStateAction
+14:52:58,896 - [3] - INFO  - Game.Logic.BaseGame - Game.Logic.Actions.ProcessPacketAction
+14:52:58,932 - [6] - INFO  - Game.Logic.BaseGame - Game.Logic.Actions.WaitLivingAttackingAction
+14:52:59,194 - [3] - INFO  - Game.Logic.BaseGame - Game.Logic.Actions.ProcessPacketAction
+14:53:07,245 - [3] - INFO  - Game.Logic.BaseGame - Game.Logic.Actions.ProcessPacketAction
+14:53:07,252 - [6] - INFO  - Game.Logic.BaseGame - Game.Logic.Actions.CheckPVPGameStateAction
+14:53:07,279 - [3] - INFO  - Game.Logic.BaseGame - Game.Logic.Actions.ProcessPacketAction
+14:53:07,296 - [6] - INFO  - Game.Logic.BaseGame - Game.Logic.Actions.WaitLivingAttackingAction
+14:53:07,582 - [3] - INFO  - Game.Logic.BaseGame - Game.Logic.Actions.ProcessPacketAction
+14:53:15,548 - [3] - INFO  - Game.Logic.BaseGame - Game.Logic.Actions.ProcessPacketAction
+14:53:15,574 - [6] - INFO  - Game.Logic.BaseGame - Game.Logic.Actions.CheckPVPGameStateAction
+14:53:15,581 - [3] - INFO  - Game.Logic.BaseGame - Game.Logic.Actions.ProcessPacketAction
+14:53:15,618 - [6] - INFO  - Game.Logic.BaseGame - Game.Logic.Actions.WaitLivingAttackingAction
+14:53:15,878 - [3] - INFO  - Game.Logic.BaseGame - Game.Logic.Actions.ProcessPacketAction
+14:53:23,879 - [3] - INFO  - Game.Logic.BaseGame - Game.Logic.Actions.ProcessPacketAction
+14:53:23,882 - [6] - INFO  - Game.Logic.BaseGame - Game.Logic.Actions.CheckPVPGameStateAction
+14:53:23,928 - [3] - INFO  - Game.Logic.BaseGame - Game.Logic.Actions.ProcessPacketAction
+14:53:23,931 - [6] - INFO  - Game.Logic.BaseGame - Game.Logic.Actions.WaitLivingAttackingAction
+14:53:24,181 - [3] - INFO  - Game.Logic.BaseGame - Game.Logic.Actions.ProcessPacketAction
+14:53:32,237 - [3] - INFO  - Game.Logic.BaseGame - Game.Logic.Actions.ProcessPacketAction
+14:53:32,244 - [6] - INFO  - Game.Logic.BaseGame - Game.Logic.Actions.CheckPVPGameStateAction
+14:53:32,263 - [3] - INFO  - Game.Logic.BaseGame - Game.Logic.Actions.ProcessPacketAction
+14:53:32,287 - [6] - INFO  - Game.Logic.BaseGame - Game.Logic.Actions.WaitLivingAttackingAction
+14:53:32,561 - [3] - INFO  - Game.Logic.BaseGame - Game.Logic.Actions.ProcessPacketAction
+14:53:40,563 - [3] - INFO  - Game.Logic.BaseGame - Game.Logic.Actions.ProcessPacketAction
+14:53:40,593 - [3] - INFO  - Game.Logic.BaseGame - Game.Logic.Actions.ProcessPacketAction
+14:53:40,602 - [6] - INFO  - Game.Logic.BaseGame - Game.Logic.Actions.CheckPVPGameStateAction
+14:53:40,645 - [6] - INFO  - Game.Logic.BaseGame - Game.Logic.Actions.WaitLivingAttackingAction
+14:53:40,897 - [3] - INFO  - Game.Logic.BaseGame - Game.Logic.Actions.ProcessPacketAction
+14:53:49,031 - [3] - INFO  - Game.Logic.BaseGame - Game.Logic.Actions.ProcessPacketAction
+14:53:49,047 - [6] - INFO  - Game.Logic.BaseGame - Game.Logic.Actions.CheckPVPGameStateAction
+14:53:49,065 - [3] - INFO  - Game.Logic.BaseGame - Game.Logic.Actions.ProcessPacketAction
+14:53:49,090 - [6] - INFO  - Game.Logic.BaseGame - Game.Logic.Actions.WaitLivingAttackingAction
+14:53:49,361 - [3] - INFO  - Game.Logic.BaseGame - Game.Logic.Actions.ProcessPacketAction
+14:53:57,363 - [3] - INFO  - Game.Logic.BaseGame - Game.Logic.Actions.ProcessPacketAction
+14:53:57,395 - [3] - INFO  - Game.Logic.BaseGame - Game.Logic.Actions.ProcessPacketAction
+14:53:57,395 - [6] - INFO  - Game.Logic.BaseGame - Game.Logic.Actions.CheckPVPGameStateAction
+14:53:57,438 - [6] - INFO  - Game.Logic.BaseGame - Game.Logic.Actions.WaitLivingAttackingAction
+14:53:57,698 - [3] - INFO  - Game.Logic.BaseGame - Game.Logic.Actions.ProcessPacketAction
+14:54:05,781 - [3] - INFO  - Game.Logic.BaseGame - Game.Logic.Actions.ProcessPacketAction
+14:54:05,791 - [6] - INFO  - Game.Logic.BaseGame - Game.Logic.Actions.CheckPVPGameStateAction
+14:54:05,831 - [3] - INFO  - Game.Logic.BaseGame - Game.Logic.Actions.ProcessPacketAction
+14:54:05,833 - [6] - INFO  - Game.Logic.BaseGame - Game.Logic.Actions.WaitLivingAttackingAction
+14:54:06,076 - [3] - INFO  - Game.Logic.BaseGame - Game.Logic.Actions.ProcessPacketAction
+14:54:14,079 - [3] - INFO  - Game.Logic.BaseGame - Game.Logic.Actions.ProcessPacketAction
+14:54:14,110 - [6] - INFO  - Game.Logic.BaseGame - Game.Logic.Actions.CheckPVPGameStateAction
+14:54:14,128 - [3] - INFO  - Game.Logic.BaseGame - Game.Logic.Actions.ProcessPacketAction
+14:54:14,152 - [6] - INFO  - Game.Logic.BaseGame - Game.Logic.Actions.WaitLivingAttackingAction
+14:54:14,430 - [3] - INFO  - Game.Logic.BaseGame - Game.Logic.Actions.ProcessPacketAction
+14:54:22,548 - [3] - INFO  - Game.Logic.BaseGame - Game.Logic.Actions.ProcessPacketAction
+14:54:22,568 - [6] - INFO  - Game.Logic.BaseGame - Game.Logic.Actions.CheckPVPGameStateAction
+14:54:22,581 - [3] - INFO  - Game.Logic.BaseGame - Game.Logic.Actions.ProcessPacketAction
+14:54:22,614 - [6] - INFO  - Game.Logic.BaseGame - Game.Logic.Actions.WaitLivingAttackingAction
+14:54:22,878 - [3] - INFO  - Game.Logic.BaseGame - Game.Logic.Actions.ProcessPacketAction
+14:54:30,929 - [3] - INFO  - Game.Logic.BaseGame - Game.Logic.Actions.ProcessPacketAction
+14:54:30,961 - [3] - INFO  - Game.Logic.BaseGame - Game.Logic.Actions.ProcessPacketAction
+14:54:30,964 - [6] - INFO  - Game.Logic.BaseGame - Game.Logic.Actions.CheckPVPGameStateAction
+14:54:31,007 - [6] - INFO  - Game.Logic.BaseGame - Game.Logic.Actions.WaitLivingAttackingAction
+14:54:31,265 - [3] - INFO  - Game.Logic.BaseGame - Game.Logic.Actions.ProcessPacketAction
+14:54:39,265 - [3] - INFO  - Game.Logic.BaseGame - Game.Logic.Actions.ProcessPacketAction
+14:54:39,297 - [3] - INFO  - Game.Logic.BaseGame - Game.Logic.Actions.ProcessPacketAction
+14:54:39,306 - [6] - INFO  - Game.Logic.BaseGame - Game.Logic.Actions.CheckPVPGameStateAction
+14:54:39,348 - [6] - INFO  - Game.Logic.BaseGame - Game.Logic.Actions.WaitLivingAttackingAction
+14:54:39,595 - [3] - INFO  - Game.Logic.BaseGame - Game.Logic.Actions.ProcessPacketAction
+14:54:47,645 - [3] - INFO  - Game.Logic.BaseGame - Game.Logic.Actions.ProcessPacketActi10:10:55,819 - [MAIN] - INFO  - Fighting.Server.FightServer - InitSocket Port:9208: True
+10:10:55,945 - [MAIN] - INFO  - Fighting.Server.FightServer - Registering global event handlers: true
+10:10:55,946 - [MAIN] - INFO  - Fighting.Server.FightServer - Script components: True
+10:10:55,949 - [MAIN] - INFO  - Fighting.Server.FightServer - RoomMgr.Setup: True
+10:10:55,950 - [MAIN] - INFO  - Fighting.Server.FightServer - GameMgr.Setup: True
+10:10:56,120 - [MAIN] - INFO  - Fighting.Server.FightServer - MapMgr Init: True
+10:10:56,370 - [MAIN] - INFO  - Fighting.Server.FightServer - ItemMgr Init: True
+10:10:56,384 - [MAIN] - INFO  - Fighting.Server.FightServer - ItemMgr Init: True
+10:10:57,980 - [MAIN] - INFO  - Fighting.Server.FightServer - BallMgr Init: True
+10:10:57,990 - [MAIN] - INFO  - Fighting.Server.FightServer - BallConfigMgr Init: True
+10:10:58,014 - [MAIN] - INFO  - Fighting.Server.FightServer - DropMgr Init: True
+10:10:58,057 - [MAIN] - INFO  - Fighting.Server.FightServer - NPCInfoMgr Init: True
+10:10:58,073 - [MAIN] - INFO  - Fighting.Server.FightServer - LanguageMgr Init: True
+10:10:58,095 - [MAIN] - INFO  - Game.Logic.Spells.SpellMgr - SpellMgr: Loaded 15 spell handlers from GameServer Assembly!
+10:10:58,119 - [MAIN] - INFO  - Fighting.Server.FightServer - base.Start(): True
+10:10:58,136 - [MAIN] - INFO  - Fighting.Server.FightServer - GameServer is now open for connections!
+10:11:02,228 - [3] - INFO  - Game.Base.BaseServer - Incoming connection from 127.0.0.1:50958
+10:14:38,210 - [6] - INFO  - Game.Logic.BaseGame - Game.Logic.Actions.CheckPVPGameStateAction
+10:14:38,215 - [5] - INFO  - Game.Logic.BaseGame - Game.Logic.Actions.CheckPVPGameStateAction
+10:14:38,251 - [6] - INFO  - Game.Logic.BaseGame - Game.Logic.Actions.WaitPlayerLoadingAction
+10:14:39,881 - [3] - INFO  - Game.Logic.BaseGame - Game.Logic.Actions.ProcessPacketAction
+10:14:41,198 - [3] - INFO  - Game.Logic.BaseGame - Game.Logic.Actions.ProcessPacketAction
+10:14:41,200 - [6] - INFO  - Game.Logic.BaseGame - Game.Logic.Actions.CheckPVPGameStateAction
+10:14:41,492 - [3] - INFO  - Game.Logic.BaseGame - Game.Logic.Actions.ProcessPacketAction
+10:14:42,225 - [3] - INFO  - Game.Logic.BaseGame - Game.Logic.Actions.ProcessPacketAction
+10:14:42,256 - [6] - INFO  - Game.Logic.BaseGame - Game.Logic.Actions.CheckPVPGameStateAction
+10:14:42,533 - [3] - INFO  - Game.Logic.BaseGame - Game.Logic.Actions.ProcessPacketAction
+10:14:42,540 - [6] - INFO  - Game.Logic.BaseGame - Game.Logic.Actions.CheckPVPGameStateAction
+10:14:43,536 - [3] - INFO  - Game.Logic.BaseGame - Game.Logic.Actions.ProcessPacketAction
+10:14:44,781 - [6] - INFO  - Game.Logic.BaseGame - Game.Logic.Actions.CheckPVPGameStateAction
+10:14:44,865 - [6] - INFO  - Game.Logic.BaseGame - Game.Logic.Actions.WaitLivingAttackingAction
+10:14:47,831 - [3] - INFO  - Game.Logic.BaseGame - Game.Logic.Actions.ProcessPacketAction
+10:14:55,834 - [3] - INFO  - Game.Logic.BaseGame - Game.Logic.Actions.ProcessPacketAction
+10:14:55,845 - [6] - INFO  - Game.Logic.BaseGame - Game.Logic.Actions.CheckPVPGameStateAction
+10:14:55,873 - [3] - INFO  - Game.Logic.BaseGame - Game.Logic.Actions.ProcessPacketAction
+10:14:55,884 - [6] - INFO  - Game.Logic.BaseGame - Game.Logic.Actions.WaitLivingAttackingAction
+10:14:56,635 - [3] - INFO  - Game.Logic.BaseGame - Game.Logic.Actions.ProcessPacketAction
+10:15:04,707 - [3] - INFO  - Game.Logic.BaseGame - Game.Logic.Actions.ProcessPacketAction
+10:15:04,711 - [6] - INFO  - Game.Logic.BaseGame - Game.Logic.Actions.CheckPVPGameStateAction
+10:15:04,754 - [6] - INFO  - Game.Logic.BaseGame - Game.Logic.Actions.WaitLivingAttackingAction
+10:15:04,820 - [3] - INFO  - Game.Logic.BaseGame - Game.Logic.Actions.ProcessPacketAction
+10:15:05,027 - [3] - INFO  - Game.Logic.BaseGame - Game.Logic.Actions.ProcessPacketAction
+10:15:13,062 - [3] - INFO  - Game.Logic.BaseGame - Game.Logic.Actions.ProcessPacketAction
+10:15:13,074 - [6] - INFO  - Game.Logic.BaseGame - Game.Logic.Actions.CheckPVPGameStateAction
+10:15:13,120 - [6] - INFO  - Game.Logic.BaseGame - Game.Logic.Actions.WaitLivingAttackingAction
+10:15:13,120 - [3] - INFO  - Game.Logic.BaseGame - Game.Logic.Actions.ProcessPacketAction
+10:15:13,838 - [3] - INFO  - Game.Logic.BaseGame - Game.Logic.Actions.ProcessPacketAction
+10:15:21,900 - [3] - INFO  - Game.Logic.BaseGame - Game.Logic.Actions.ProcessPacketAction
+10:15:21,936 - [6] - INFO  - Game.Logic.BaseGame - Game.Logic.Actions.CheckPVPGameStateAction
+10:15:21,980 - [6] - INFO  - Game.Logic.BaseGame - Game.Logic.Actions.WaitLivingAttackingAction
+10:15:22,014 - [3] - INFO  - Game.Logic.BaseGame - Game.Logic.Actions.ProcessPacketAction
+10:15:22,227 - [3] - INFO  - Game.Logic.BaseGame - Game.Logic.Actions.ProcessPacketAction
+10:15:30,262 - [3] - INFO  - Game.Logic.BaseGame - Game.Logic.Actions.ProcessPacketAction
+10:15:30,283 - [6] - INFO  - Game.Logic.BaseGame - Game.Logic.Actions.CheckPVPGameStateAction
+10:15:30,318 - [3] - INFO  - Game.Logic.BaseGame - Game.Logic.Actions.ProcessPacketAction
+10:15:30,327 - [6] - INFO  - Game.Logic.BaseGame - Game.Logic.Actions.WaitLivingAttackingAction
+10:15:31,032 - [3] - INFO  - Game.Logic.BaseGame - Game.Logic.Actions.ProcessPacketAction
+10:15:39,092 - [3] - INFO  - Game.Logic.BaseGame - Game.Logic.Actions.ProcessPacketAction
+10:15:39,127 - [6] - INFO  - Game.Logic.BaseGame - Game.Logic.Actions.CheckPVPGameStateAction
+10:15:39,171 - [6] - INFO  - Game.Logic.BaseGame - Game.Logic.Actions.WaitLivingAttackingAction
+10:15:39,200 - [3] - INFO  - Game.Logic.BaseGame - Game.Logic.Actions.ProcessPacketAction
+10:15:39,426 - [3] - INFO  - Game.Logic.BaseGame - Game.Logic.Actions.ProcessPacketAction
+10:15:47,201 - [3] - INFO  - Game.Logic.BaseGame - Game.Logic.Actions.ProcessPacketAction
+10:15:47,209 - [3] - INFO  - Game.Logic.BaseGame - Game.Logic.Actions.ProcessPacketAction
+10:15:47,211 - [3] - INFO  - Game.Logic.BaseGame - Game.Logic.Actions.ProcessPacketAction
+10:15:50,112 - [6] - INFO  - Game.Logic.BaseGame - Game.Logic.Actions.CheckPVPGameStateAction
+10:15:50,156 - [6] - INFO  - Game.Logic.BaseGame - Game.Logic.Actions.WaitLivingAttackingAction
+10:15:50,442 - [3] - INFO  - Game.Logic.BaseGame - Game.Logic.Actions.ProcessPacketAction
+10:15:53,581 - [3] - INFO  - Game.Logic.BaseGame - Game.Logic.Actions.ProcessPacketAction
+10:15:55,246 - [3] - INFO  - Game.Logic.BaseGame - Game.Logic.Actions.ProcessPacketAction
+10:15:55,254 - [3] - INFO  - Game.Logic.BaseGame - Game.Logic.Actions.ProcessPacketAction
+10:15:55,258 - [3] - INFO  - Game.Logic.BaseGame - Game.Logic.Actions.ProcessPacketAction
+10:15:58,623 - [6] - INFO  - Game.Logic.BaseGame - Game.Logic.Actions.CheckPVPGameStateAction
+10:15:58,668 - [6] - INFO  - Game.Logic.BaseGame - Game.Logic.Actions.WaitLivingAttackingAction
+10:15:59,033 - [3] - INFO  - Game.Logic.BaseGame - Game.Logic.Actions.ProcessPacketAction
+10:16:07,061 - [3] - INFO  - Game.Logic.BaseGame - Game.Logic.Actions.ProcessPacketAction
+10:16:07,065 - [6] - INFO  - Game.Logic.BaseGame - Game.Logic.Actions.CheckPVPGameStateAction
+10:16:07,108 - [6] - INFO  - Game.Logic.BaseGame - Game.Logic.Actions.WaitLivingAttackingAction
+10:16:07,117 - [3] - INFO  - Game.Logic.BaseGame - Game.Logic.Actions.ProcessPacketAction
+10:16:07,362 - [3] - INFO  - Game.Logic.BaseGame - Game.Logic.Actions.ProcessPacketAction
+10:16:12,204 - [3] - INFO  - Game.Logic.BaseGame - Game.Logic.Actions.ProcessPacketAction
+10:16:12,212 - [6] - INFO  - Game.Logic.BaseGame - Game.Logic.Actions.CheckPVPGameStateAction
+10:16:12,247 - [3] - INFO  - Game.Logic.BaseGame - Game.Logic.Actions.ProcessPacketAction
+10:16:12,254 - [6] - INFO  - Game.Logic.BaseGame - Game.Logic.Actions.WaitLivingAttackingAction
+10:16:12,542 - [3] - INFO  - Game.Logic.BaseGame - Game.Logic.Actions.ProcessPacketAction
+10:16:14,799 - [3] - INFO  - Game.Logic.BaseGame - Game.Logic.Actions.ProcessPacketAction
+10:16:14,934 - [3] - INFO  - Game.Logic.BaseGame - Game.Logic.Actions.ProcessPacketAction
+10:16:17,312 - [3] - INFO  - Game.Logic.BaseGame - Game.Logic.Actions.ProcessPacketAction
+10:16:17,318 - [3] - INFO  - Game.Logic.BaseGame - Game.Logic.Actions.ProcessPack10:58:59,948 - [MAIN] - INFO  - Fighting.Server.FightServer - InitSocket Port:9208: True
+10:59:00,097 - [MAIN] - INFO  - Fighting.Server.FightServer - Registering global event handlers: true
+10:59:00,098 - [MAIN] - INFO  - Fighting.Server.FightServer - Script components: True
+10:59:00,100 - [MAIN] - INFO  - Fighting.Server.FightServer - RoomMgr.Setup: True
+10:59:00,101 - [MAIN] - INFO  - Fighting.Server.FightServer - GameMgr.Setup: True
+10:59:00,308 - [MAIN] - INFO  - Fighting.Server.FightServer - MapMgr Init: True
+10:59:00,756 - [MAIN] - INFO  - Fighting.Server.FightServer - ItemMgr Init: True
+10:59:00,775 - [MAIN] - INFO  - Fighting.Server.FightServer - ItemMgr Init: True
+10:59:02,580 - [MAIN] - INFO  - Fighting.Server.FightServer - BallMgr Init: True
+10:59:02,604 - [MAIN] - INFO  - Fighting.Server.FightServer - BallConfigMgr Init: True
+10:59:02,701 - [MAIN] - INFO  - Fighting.Server.FightServer - DropMgr Init: True
+10:59:02,727 - [MAIN] - INFO  - Fighting.Server.FightServer - NPCInfoMgr Init: True
+10:59:02,741 - [MAIN] - INFO  - Fighting.Server.FightServer - LanguageMgr Init: True
+10:59:02,758 - [MAIN] - INFO  - Game.Logic.Spells.SpellMgr - SpellMgr: Loaded 15 spell handlers from GameServer Assembly!
+10:59:02,774 - [MAIN] - INFO  - Fighting.Server.FightServer - base.Start(): True
+10:59:02,786 - [MAIN] - INFO  - Fighting.Server.FightServer - GameServer is now open for connections!
+10:59:07,401 - [3] - INFO  - Game.Base.BaseServer - Incoming connection from 127.0.0.1:52291
+11:04:22,828 - [5] - INFO  - Game.Logic.BaseGame - Game.Logic.Actions.CheckPVPGameStateAction
+11:04:22,842 - [6] - INFO  - Game.Logic.BaseGame - Game.Logic.Actions.CheckPVPGameStateAction
+11:04:22,882 - [6] - INFO  - Game.Logic.BaseGame - Game.Logic.Actions.WaitPlayerLoadingAction
+11:04:25,249 - [3] - INFO  - Game.Logic.BaseGame - Game.Logic.Actions.ProcessPacketAction
+11:04:25,291 - [6] - INFO  - Game.Logic.BaseGame - Game.Logic.Actions.CheckPVPGameStateAction
+11:04:26,162 - [3] - INFO  - Game.Logic.BaseGame - Game.Logic.Actions.ProcessPacketAction
+11:04:26,302 - [3] - INFO  - Game.Logic.BaseGame - Game.Logic.Actions.ProcessPacketAction
+11:04:26,310 - [6] - INFO  - Game.Logic.BaseGame - Game.Logic.Actions.CheckPVPGameStateAction
+11:04:27,185 - [3] - INFO  - Game.Logic.BaseGame - Game.Logic.Actions.ProcessPacketAction
+11:04:27,206 - [6] - INFO  - Game.Logic.BaseGame - Game.Logic.Actions.CheckPVPGameStateAction
+11:04:27,340 - [3] - INFO  - Game.Logic.BaseGame - Game.Logic.Actions.ProcessPacketAction
+11:04:29,328 - [6] - INFO  - Game.Logic.BaseGame - Game.Logic.Actions.CheckPVPGameStateAction
+11:04:29,412 - [6] - INFO  - Game.Logic.BaseGame - Game.Logic.Actions.WaitLivingAttackingAction
+11:04:32,482 - [3] - INFO  - Game.Logic.BaseGame - Game.Logic.Actions.ProcessPacketAction
+11:04:40,570 - [3] - INFO  - Game.Logic.BaseGame - Game.Logic.Actions.ProcessPacketAction
+11:04:40,601 - [6] - INFO  - Game.Logic.BaseGame - Game.Logic.Actions.CheckPVPGameStateAction
+11:04:40,605 - [3] - INFO  - Game.Logic.BaseGame - Game.Logic.Actions.ProcessPacketAction
+11:04:40,639 - [6] - INFO  - Game.Logic.BaseGame - Game.Logic.Actions.WaitLivingAttackingAction
+11:04:40,880 - [3] - INFO  - Game.Logic.BaseGame - Game.Logic.Actions.ProcessPacketAction
+11:04:48,921 - [3] - INFO  - Game.Logic.BaseGame - Game.Logic.Actions.ProcessPacketAction
+11:04:48,939 - [6] - INFO  - Game.Logic.BaseGame - Game.Logic.Actions.CheckPVPGameStateAction
+11:04:48,972 - [3] - INFO  - Game.Logic.BaseGame - Game.Logic.Actions.ProcessPacketAction
+11:04:48,983 - [6] - INFO  - Game.Logic.BaseGame - Game.Logic.Actions.WaitLivingAttackingAction
+11:04:49,253 - [3] - INFO  - Game.Logic.BaseGame - Game.Logic.Actions.ProcessPacketAction
+11:05:03,802 - [3] - INFO  - Game.Logic.BaseGame - Game.Logic.Actions.ProcessPacketAction
+11:05:03,811 - [3] - INFO  - Game.Logic.BaseGame - Game.Logic.Actions.ProcessPacketAction
+11:05:03,813 - [3] - INFO  - Game.Logic.BaseGame - Game.Logic.Actions.ProcessPacketAction
+11:05:07,176 - [6] - INFO  - Game.Logic.BaseGame - Game.Logic.Actions11:13:33,772 - [MAIN] - INFO  - Fighting.Server.FightServer - InitSocket Port:9208: True
+11:13:33,842 - [MAIN] - INFO  - Fighting.Server.FightServer - Registering global event handlers: true
+11:13:33,842 - [MAIN] - INFO  - Fighting.Server.FightServer - Script components: True
+11:13:33,844 - [MAIN] - INFO  - Fighting.Server.FightServer - RoomMgr.Setup: True
+11:13:33,845 - [MAIN] - INFO  - Fighting.Server.FightServer - GameMgr.Setup: True
+11:13:36,489 - [MAIN] - INFO  - Fighting.Server.FightServer - MapMgr Init: True
+11:13:36,801 - [MAIN] - INFO  - Fighting.Server.FightServer - ItemMgr Init: True
+11:13:36,813 - [MAIN] - INFO  - Fighting.Server.FightServer - ItemMgr Init: True
+11:13:37,858 - [MAIN] - INFO  - Fighting.Server.FightServer - BallMgr Init: True
+11:13:37,871 - [MAIN] - INFO  - Fighting.Server.FightServer - BallConfigMgr Init: True
+11:13:37,913 - [MAIN] - INFO  - Fighting.Server.FightServer - DropMgr Init: True
+11:13:37,940 - [MAIN] - INFO  - Fighting.Server.FightServer - NPCInfoMgr Init: True
+11:13:37,952 - [MAIN] - INFO  - Fighting.Server.FightServer - LanguageMgr Init: True
+11:13:37,965 - [MAIN] - INFO  - Game.Logic.Spells.SpellMgr - SpellMgr: Loaded 15 spell handlers from GameServer Assembly!
+11:13:37,976 - [MAIN] - INFO  - Fighting.Server.FightServer - base.Start(): True
+11:13:37,992 - [MAIN] - INFO  - Fighting.Server.FightServer - GameServer is now open for connections!
+11:13:41,237 - [3] - INFO  - Game.Base.BaseServer - Incoming connection from 127.0.0.1:52579
+11:19:17,976 - [5] - ERROR - Fighting.Server.Rooms.ProxyRoomMgr - Room Mgr Thread Error:
+System.NullReferenceException: Referência de objeto não definida para uma instância de um objeto.
+   em Game.Logic.MapMgr.GetMapIndex(Int32 index, Byte type, Int32 serverId) na D:\DDT\DDTank-3.0\Game.Logic\MapMgr.cs:linha 245
+   em Fighting.Server.Rooms.ProxyRoomMgr.StartMatchGame(ProxyRoom red, ProxyRoom blue) na D:\DDT\DDTank-3.0\Fighting.Server\Rooms\ProxyRoomMgr.cs:linha 273
+   em Fighting.Server.Rooms.ProxyRoomMgr.PickUpRooms(Int64 tick) na D:\DDT\DDTank-3.0\Fighting.Server\Rooms\ProxyRoomMgr.cs:linha 241
+   em Fighting.Server.Rooms.ProxyRoomMgr.RoomThread() na D:\DDT\DDTank-3.0\Fighting.Server\Rooms\ProxyRoomMgr.cs:linha 96
+11:19:27,934 - [5] - ERROR - Fighting.Server.Rooms.ProxyRoomMgr - Room Mgr Thread Error:
+System.NullReferenceException: Referência de objeto não definida para uma instância de um objeto.
+   em Game.Logic.MapMgr.GetMapIndex(Int32 index, Byte type, Int32 serverId) na D:\DDT\DDTank-3.0\Game.Logic\MapMgr.cs:linha 245
+   em Fighting.Server.Rooms.ProxyRoomMgr.StartMatchGame(ProxyRoom red, ProxyRoom blue) na D:\DDT\DDTank-3.0\Fighting.Server\Rooms\ProxyRoomMgr.cs:linha 273
+   em Fighting.Server.Rooms.ProxyRoomMgr.PickUpRooms(Int64 tick) na D:\DDT\DDTank-3.0\Fighting.Server\Rooms\ProxyRoomMgr.cs:linha 241
+   em Fighting.Server.Rooms.ProxyRoomMgr.RoomThread() na D:\DDT\DDTank-3.0\Fighting.Server\Rooms\ProxyRoomMgr.cs:linha 96
+11:19:37,932 - [5] - ERROR - Fighting.Server.Rooms.ProxyRoomMgr - Room Mgr Thread Error:
+System.NullReferenceException: Referência de objeto não definida para uma instância de um objeto.
+   em Game.Logic.MapMgr.GetMapIndex(Int32 index, Byte type, Int32 serverId) na D:\DDT\DDTank-3.0\Game.Logic\MapMgr.cs:linha 245
+   em Fighting.Server.Rooms.ProxyRoomMgr.StartMatchGame(ProxyRoom red, ProxyRoom blue) na D:\DDT\DDTank-3.0\Fighting.Server\Rooms\ProxyRoomMgr.cs:linha 273
+   em Fighting.Server.Rooms.ProxyRoomMgr.PickUpRooms(Int64 tick) na D:\DDT\DDTank-3.0\Fighting.Server\Rooms\ProxyRoomMgr.cs:linha 241
+   em Fighting.Server.Rooms.ProxyRoomMgr.RoomThread() na D:\DDT\DDTank-3.0\Fighting.Server\Rooms\ProxyRoomMgr.cs:linha 96
+11:19:47,941 - [5] - ERROR - Fighting.Server.Rooms.ProxyRoomMgr - Room Mgr Thread Error:
+System.NullReferenceException: Referência de objeto não definida para uma instância de um objeto.
+   em Game.Logic.MapMgr.GetMapIndex(Int32 index, Byte type, Int32 serverId) na D:\DDT\DDTank-3.0\Game.Logic\MapMgr.cs:linha 245
+   em Fighting.Server.Rooms.ProxyRoomMgr.StartMatchGame(ProxyRoom red, ProxyRoom blue) na D:\DDT\DDTank-3.0\Fighting.Server\Rooms\ProxyRoomMgr.cs:linha 273
+   em Fighting.Server.Rooms.ProxyRoomMgr.PickUpRooms(Int64 tick) na D:\DDT\DDTank-3.0\Fighting.Server\Rooms\ProxyRoomMgr.cs:linha 241
+   em Fighting.Server.Rooms.ProxyRoomMgr.RoomThread() na D:\DDT\DDTank-3.0\Fighting.Server\Rooms\ProxyRoomMgr.cs:linha 96
+11:19:57,946 - [5] - ERROR - Fighting.Server.Rooms.ProxyRoomMgr - Room Mgr Thread Error:
+System.NullReferenceException: Referência de objeto não definida para uma instância de um objeto.
+   em Game.Logic.MapMgr.GetMapIndex(Int32 index, Byte type, Int32 serverId) na D:\DDT\DDTank-3.0\Game.Logic\MapMgr.cs:linha 245
+   em Fighting.Server.Rooms.ProxyRoomMgr.StartMatchGame(ProxyRoom red, ProxyRoom blue) na D:\DDT\DDTank-3.0\Fighting.Server\Rooms\ProxyRoomMgr.cs:linha 273
+   em Fighting.Server.Rooms.ProxyRoomMgr.PickUpRooms(Int64 tick) na D:\DDT\DDTank-3.0\Fighting.Server\Rooms\ProxyRoomMgr.cs:linha 241
+   em Fighting.Server.Rooms.ProxyRoomMgr.RoomThread() na D:\DDT\DDTank-3.0\Fighting.Server\Rooms\ProxyRoomMgr.cs:linha 96
+11:20:07,955 - [5] - ERROR - Fighting.Server.Rooms.ProxyRoomMgr - Room Mgr Thread Error:
+System.NullReferenceException: Referência de objeto não definida para uma instância de um objeto.
+   em Game.Logic.MapMgr.GetMapIndex(Int32 index, Byte type, Int32 serverId) na D:\DDT\DDTank-3.0\Game.Logic\MapMgr.cs:linha 245
+   em Fighting.Server.Rooms.ProxyRoomMgr.StartMatchGame(ProxyRoom red, ProxyRoom blue) na D:\DDT\DDTank-3.0\Fighting.Server\Rooms\ProxyRoomMgr.cs:linha 273
+   em Fighting.Server.Rooms.ProxyRoomMgr.PickUpRooms(Int64 tick) na D:\DDT\DDTank-3.0\Fighting.Server\Rooms\ProxyRoomMgr.cs:linha 241
+   em Fighting.Server.Rooms.ProxyRoomMgr.RoomThread() na D:\DDT\DDTank-3.0\Fighting.Server\Rooms\ProxyRoomMgr.cs:linha 96
+11:20:17,948 - [5] - ERROR - Fighting.Server.Rooms.ProxyRoomMgr - Room Mgr Thread Error:
+System.NullReferenceException: Referência de objeto não definida para uma instância de um objeto.
+   em Game.Logic.MapMgr.GetMapIndex(Int32 index, Byte type, Int32 serverId) na D:\DDT\DDTank-3.0\Game.Logic\MapMgr.cs:linha 245
+   em Fighting.Server.Rooms.ProxyRoomMgr.StartMatchGame(ProxyRoom red, ProxyRoom blue) na D:\DDT\DDTank-3.0\Fighting.Server\Rooms\ProxyRoomMgr.cs:linha 273
+   em Fighting.Server.Rooms.ProxyRoomMgr.PickUpRooms(Int64 tick) na D:\DDT\DDTank-3.0\Fighting.Server\Rooms\ProxyRoomMgr.cs:linha 241
+   em Fighting.Server.Rooms.ProxyRoomMgr.RoomThread() na D:\DDT\DDTank-3.0\Fighting.Server\Rooms\ProxyRoomMgr.cs:linha 96
+11:21:30,972 - [5] - WARN  - Fighting.Server.Rooms.ProxyRoomMgr - Room Mgr is delay -72996 ms!
+11:21:30,975 - [5] - ERROR - Fighting.Server.Rooms.ProxyRoomMgr - Room Mgr Thread Error:
+System.NullReferenceException: Referência de objeto não definida para uma instância de um objeto.
+   em Game.Logic.MapMgr.GetMapIndex(Int32 index, Byte type, Int32 serverId) na D:\DDT\DDTank-3.0\Game.Logic\MapMgr.cs:linha 245
+   em Fighting.Server.Rooms.ProxyRoomMgr.StartMatchGame(ProxyRoom red, ProxyRoom blue) na D:\DDT\DDTank-3.0\Fighting.Server\Rooms\ProxyRoomMgr.cs:linha 273
+   em Fighting.Server.Rooms.ProxyRoomMgr.PickUpRooms(Int64 tick) na D:\DDT\DDTank-3.0\Fighting.Server\Rooms\ProxyRoomMgr.cs:linha 241
+   em Fighting.Server.Rooms.ProxyRoomMgr.RoomThread() na D:\DDT\DDTank-3.0\Fighting.Server\Rooms\ProxyRoomMgr.cs:linha 96
+11:21:30,977 - [5] - WARN  - Fighting.Server.Rooms.ProxyRoomMgr - Room Mgr is delay -71959 ms!
+11:21:30,980 - [5] - ERROR - Fighting.Server.Rooms.ProxyRoomMgr - Room Mgr Thread Error:
+System.NullReferenceException: Referência de objeto não definida para uma instância de um objeto.
+   em Game.Logic.MapMgr.GetMapIndex(Int32 index, Byte type, Int32 serverId) na D:\DDT\DDTank-3.0\Game.Logic\MapMgr.cs:linha 245
+   em Fighting.Server.Rooms.ProxyRoomMgr.StartMatchGame(ProxyRoom red, ProxyRoom blue) na D:\DDT\DDTank-3.0\Fighting.Server\Rooms\ProxyRoomMgr.cs:linha 273
+   em Fighting.Server.Rooms.ProxyRoomMgr.PickUpRooms(Int64 tick) na D:\DDT\DDTank-3.0\Fighting.Server\Rooms\ProxyRoomMgr.cs:linha 241
+   em Fighting.Server.Rooms.ProxyRoomMgr.RoomThread() na D:\DDT\DDTank-3.0\Fighting.Server\Rooms\ProxyRoomMgr.cs:linha 96
+11:21:30,983 - [5] - WARN  - Fighting.Server.Rooms.ProxyRoomMgr - Room Mgr is delay -70921 ms!
+11:21:30,984 - [5] - ERROR - Fighting.Server.Rooms.ProxyRoomMgr - Room Mgr Thread Error:
+System.NullReferenceException: Referência de objeto não definida para uma instância de um objeto.
+   em Game.Logic.MapMgr.GetMapIndex(Int32 index, Byte type, Int32 serverId) na D:\DDT\DDTank-3.0\Game.Logic\MapMgr.cs:linha 245
+   em Fighting.Server.Rooms.ProxyRoomMgr.StartMatchGame(ProxyRoom red, ProxyRoom blue) na D:\DDT\DDTank-3.0\Fighting.Server\Rooms\ProxyRoomMgr.cs:linha 273
+   em Fighting.Server.Rooms.ProxyRoomMgr.PickUpRooms(Int64 tick) na D:\DDT\DDTank-3.0\Fighting.Server\Rooms\ProxyRoomMgr.cs:linha 241
+   em Fighting.Server.Rooms.ProxyRoomMgr.RoomThread() na D:\DDT\DDTank-3.0\Fighting.Server\Rooms\ProxyRoomMgr.cs:linha 96
+11:21:30,987 - [5] - WARN  - Fighting.Server.Rooms.ProxyRoomMgr - Room Mgr is delay -69884 ms!
+11:21:30,988 - [5] - ERROR - Fighting.Server.Rooms.ProxyRoomMgr - Room Mgr Thread Error:
+System.NullReferenceException: Referência de objeto não definida para uma instância de um objeto.
+   em Game.Logic.MapMgr.GetMapIndex(Int32 index, Byte type, Int32 serverId) na D:\DDT\DDTank-3.0\Game.Logic\MapMgr.cs:linha 245
+   em Fighting.Server.Rooms.ProxyRoomMgr.StartMatchGame(ProxyRoom red, ProxyRoom blue) na D:\DDT\DDTank-3.0\Fighting.Server\Rooms\ProxyRoomMgr.cs:linha 273
+   em Fighting.Server.Rooms.ProxyRoomMgr.PickUpRooms(Int64 tick) na D:\DDT\DDTank-3.0\Fighting.Server\Rooms\ProxyRoomMgr.cs:linha 241
+   em Fighting.Server.Rooms.ProxyRoomMgr.RoomThread() na D:\DDT\DDTank-3.0\Fighting.Server\Rooms\ProxyRoomMgr.cs:linha 96
+11:21:30,993 - [5] - WARN  - Fighting.Server.Rooms.ProxyRoomMgr - Room Mgr is delay -68850 ms!
+11:21:30,994 - [5] - ERROR - Fighting.Server.Rooms.ProxyRoomMgr - Room Mgr Thread Error:
+System.NullReferenceException: Referência de objeto não definida para uma instância de um objeto.
+   em Game.Logic.MapMgr.GetMapIndex(Int32 index, Byte type, Int32 serverId) na D:\DDT\DDTank-3.0\Game.Logic\MapMgr.cs:linha 245
+   em Fighting.Server.Rooms.ProxyRoomMgr.StartMatchGame(ProxyRoom red, ProxyRoom blue) na D:\DDT\DDTank-3.0\Fighting.Server\Rooms\ProxyRoomMgr.cs:linha 273
+   em Fighting.Server.Rooms.ProxyRoomMgr.PickUpRooms(Int64 tick) na D:\DDT\DDTank-3.0\Fighting.Server\Rooms\ProxyRoomMgr.cs:linha 241
+   em Fighting.Server.Rooms.ProxyRoomMgr.RoomThread() na D:\DDT\DDTank-3.0\Fighting.Server\Rooms\ProxyRoomMgr.cs:linha 96
+11:21:30,996 - [5] - WARN  - Fighting.Server.Rooms.ProxyRoomMgr - Room Mgr is delay -67812 ms!
+11:21:30,997 - [5] - ERROR - Fighting.Server.Rooms.ProxyRoomMgr - Room Mgr Thread Error:
+System.NullReferenceException: Referência de objeto não definida para uma instância de um objeto.
+   em Game.Logic.MapMgr.GetMapIndex(Int32 index, Byte type, Int32 serverId) na D:\DDT\DDTank-3.0\Game.Logic\MapMgr.cs:linha 245
+   em Fighting.Server.Rooms.ProxyRoomMgr.StartMatchGame(ProxyRoom red, ProxyRoom blue) na D:\DDT\DDTank-3.0\Fighting.Server\Rooms\ProxyRoomMgr.cs:linha 273
+   em Fighting.Server.Rooms.ProxyRoomMgr.PickUpRooms(Int64 tick) na D:\DDT\DDTank-3.0\Fighting.Server\Rooms\ProxyRoomMgr.cs:linha 241
+   em Fighting.Server.Rooms.ProxyRoomMgr.RoomThread() na D:\DDT\DDTank-3.0\Fighting.Server\Rooms\ProxyRoomMgr.cs:linha 96
+11:21:30,999 - [5] - WARN  - Fighting.Server.Rooms.ProxyRoomMgr - Room Mgr is delay -66775 ms!
+11:21:30,999 - [5] - ERROR - Fighting.Server.Rooms.ProxyRoomMgr - Room Mgr Thread Error:
+System.NullReferenceException: Referência de objeto não definida para uma instância de um objeto.
+   em Game.Logic.MapMgr.GetMapIndex(Int32 index, Byte type, Int32 serverId) na D:\DDT\DDTank-3.0\Game.Logic\MapMgr.cs:linha 245
+   em Fighting.Server.Rooms.ProxyRoomMgr.StartMatchGame(ProxyRoom red, ProxyRoom blue) na D:\DDT\DDTank-3.0\Fighting.Server\Rooms\ProxyRoomMgr.cs:linha 273
+   em Fighting.Server.Rooms.ProxyRoomMgr.PickUpRooms(Int64 tick) na D:\DDT\DDTank-3.0\Fighting.Server\Rooms\ProxyRoomMgr.cs:linha 241
+   em Fighting.Server.Rooms.ProxyRoomMgr.RoomThread() na D:\DDT\DDTank-3.0\Fighting.Server\Rooms\ProxyRoomMgr.cs:linha 96
+11:21:31,006 - [5] - WARN  - Fighting.Server.Rooms.ProxyRoomMgr - Room Mgr is delay -65741 ms!
+11:21:31,006 - [5] - WARN  - Fighting.Server.Rooms.ProxyRoomMgr - Room Mgr is delay -64701 ms!
+11:21:31,006 - [5] - WARN  - Fighting.Server.Rooms.ProxyRoomMgr - Room Mgr is delay -63661 ms!
+11:21:31,007 - [5] - WARN  - Fighting.Server.Rooms.ProxyRoomMgr - Room Mgr is delay -62621 ms!
+11:21:31,008 - [5] - WARN  - Fighting.Server.Rooms.ProxyRoomMgr - Room Mgr is delay -61581 ms!
+11:21:31,008 - [5] - WARN  - Fighting.Server.Rooms.ProxyRoomMgr - Room Mgr is delay -60541 ms!
+11:21:31,009 - [5] - WARN  - Fighting.Server.Rooms.ProxyRoomMgr - Room Mgr is delay -59501 ms!
+11:21:31,010 - [5] - WARN  - Fighting.Server.Rooms.ProxyRoomMgr - Room Mgr is delay -58461 ms!
+11:21:31,010 - [5] - WARN  - Fighting.Server.Rooms.ProxyRoomMgr - Room Mgr is delay -57421 ms!
+11:21:31,011 - [5] - WARN  - Fighting.Server.Rooms.ProxyRoomMgr - Room Mgr is delay -56381 ms!
+11:21:31,012 - [5] - WARN  - Fighting.Server.Rooms.ProxyRoomMgr - Room Mgr is delay -55341 ms!
+11:21:31,013 - [5] - WARN  - Fighting.Server.Rooms.ProxyRoomMgr - Room Mgr is delay -54301 ms!
+11:21:31,013 - [5] - WARN  - Fighting.Server.Rooms.ProxyRoomMgr - Room Mgr is delay -53261 ms!
+11:21:31,017 - [5] - WARN  - Fighting.Server.Rooms.ProxyRoomMgr - Room Mgr is delay -52221 ms!
+11:21:31,017 - [5] - WARN  - Fighting.Server.Rooms.ProxyRoomMgr - Room Mgr is delay -51181 ms!
+11:21:31,018 - [5] - WARN  - Fighting.Server.Rooms.ProxyRoomMgr - Room Mgr is delay -50141 ms!
+11:21:31,018 - [5] - WARN  - Fighting.Server.Rooms.ProxyRoomMgr - Room Mgr is delay -49101 ms!
+11:21:31,019 - [5] - WARN  - Fighting.Server.Rooms.ProxyRoomMgr - Room Mgr is delay -48061 ms!
+11:21:31,020 - [5] - WARN  - Fighting.Server.Rooms.ProxyRoomMgr - Room Mgr is delay -47021 ms!
+11:21:31,021 - [5] - WARN  - Fighting.Server.Rooms.ProxyRoomMgr - Room Mgr is delay -45981 ms!
+11:21:31,021 - [5] - WARN  - Fighting.Server.Rooms.ProxyRoomMgr - Room Mgr is delay -44941 ms!
+11:21:31,022 - [5] - WARN  - Fighting.Server.Rooms.ProxyRoomMgr - Room Mgr is delay -43901 ms!
+11:21:31,022 - [5] - WARN  - Fighting.Server.Rooms.ProxyRoomMgr - Room Mgr is delay -42861 ms!
+11:21:31,023 - [5] - WARN  - Fighting.Server.Rooms.ProxyRoomMgr - Room Mgr is delay -41821 ms!
+11:21:31,023 - [5] - WARN  - Fighting.Server.Rooms.ProxyRoomMgr - Room Mgr is delay -40781 ms!
+11:21:31,024 - [5] - WARN  - Fighting.Server.Rooms.ProxyRoomMgr - Room Mgr is delay -39741 ms!
+11:21:31,024 - [5] - WARN  - Fighting.Server.Rooms.ProxyRoomMgr - Room Mgr is delay -38701 ms!
+11:21:31,025 - [5] - WARN  - Fighting.Server.Rooms.ProxyRoomMgr - Room Mgr is delay -37661 ms!
+11:21:31,026 - [5] - WARN  - Fighting.Server.Rooms.ProxyRoomMgr - Room Mgr is delay -36621 ms!
+11:21:31,028 - [5] - WARN  - Fighting.Server.Rooms.ProxyRoomMgr - Room Mgr is delay -35581 ms!
+11:21:31,029 - [5] - WARN  - Fighting.Server.Rooms.ProxyRoomMgr - Room Mgr is delay -34541 ms!
+11:21:31,030 - [5] - WARN  - Fighting.Server.Rooms.ProxyRoomMgr - Room Mgr is delay -33501 ms!
+11:21:31,030 - [5] - WARN  - Fighting.Server.Rooms.ProxyRoomMgr - Room Mgr is delay -32461 ms!
+11:21:31,031 - [5] - WARN  - Fighting.Server.Rooms.ProxyRoomMgr - Room Mgr is delay -31421 ms!
+11:21:31,032 - [5] - WARN  - Fighting.Server.Rooms.ProxyRoomMgr - Room Mgr is delay -30381 ms!
+11:21:31,032 - [5] - WARN  - Fighting.Server.Rooms.ProxyRoomMgr - Room Mgr is delay -29341 ms!
+11:21:31,033 - [5] - WARN  - Fighting.Server.Rooms.ProxyRoomMgr - Room Mgr is delay -28301 ms!
+11:21:31,034 - [5] - WARN  - Fighting.Server.Rooms.ProxyRoomMgr - Room Mgr is delay -27261 ms!
+11:21:31,034 - [5] - WARN  - Fighting.Server.Rooms.ProxyRoomMgr - Room Mgr is delay -26221 ms!
+11:21:31,035 - [5] - WARN  - Fighting.Server.Rooms.ProxyRoomMgr - Room Mgr is delay -25181 ms!
+11:21:31,036 - [5] - WARN  - Fighting.Server.Rooms.ProxyRoomMgr - Room Mgr is delay -24141 ms!
+11:21:31,039 - [5] - WARN  - Fighting.Server.Rooms.ProxyRoomMgr - Room Mgr is delay -23101 ms!
+11:21:31,040 - [5] - WARN  - Fighting.Server.Rooms.ProxyRoomMgr - Room Mgr is delay -22061 ms!
+11:21:31,041 - [5] - WARN  - Fighting.Server.Rooms.ProxyRoomMgr - Room Mgr is delay -21021 ms!
+11:21:31,042 - [5] - WARN  - Fighting.Server.Rooms.ProxyRoomMgr - Room Mgr is delay -19981 ms!
+11:21:31,042 - [5] - WARN  - Fighting.Server.Rooms.ProxyRoomMgr - Room Mgr is delay -18941 ms!
+11:21:31,043 - [5] - WARN  - Fighting.Server.Rooms.ProxyRoomMgr - Room Mgr is delay -17901 ms!
+11:21:31,043 - [5] - WARN  - Fighting.Server.Rooms.ProxyRoomMgr - Room Mgr is delay -16861 ms!
+11:21:31,044 - [5] - WARN  - Fighting.Server.Rooms.ProxyRoomMgr - Room Mgr is delay -15821 ms!
+11:21:31,044 - [5] - WARN  - Fighting.Server.Rooms.ProxyRoomMgr - Room Mgr is delay -14781 ms!
+11:21:31,045 - [5] - WARN  - Fighting.Server.Rooms.ProxyRoomMgr - Room Mgr is delay -13741 ms!
+11:21:31,045 - [5] - WARN  - Fighting.Server.Rooms.ProxyRoomMgr - Room Mgr is delay -12701 ms!
+11:21:31,046 - [5] - WARN  - Fighting.Server.Rooms.ProxyRoomMgr - Room Mgr is delay -11661 ms!
+11:21:31,047 - [5] - WARN  - Fighting.Server.Rooms.ProxyRoomMgr - Room Mgr is delay -10621 ms!
+11:21:31,047 - [5] - WARN  - Fighting.Server.Rooms.ProxyRoomMgr - Room Mgr is delay -9581 ms!
+11:21:31,050 - [5] - WARN  - Fighting.Server.Rooms.ProxyRoomMgr - Room Mgr is delay -8541 ms!
+11:21:31,051 - [5] - WARN  - Fighting.Server.Rooms.ProxyRoomMgr - Room Mgr is delay -7501 ms!
+11:21:31,051 - [5] - WARN  - Fighting.Server.Rooms.ProxyRoomMgr - Room Mgr is delay -6461 ms!
+11:21:31,052 - [5] - WARN  - Fighting.Server.Rooms.ProxyRoomMgr - Room Mgr is delay -5421 ms!
+11:21:31,052 - [5] - WARN  - Fighting.Server.Rooms.ProxyRoomMgr - Room Mgr is delay -4381 ms!
+11:21:31,053 - [5] - WARN  - Fighting.Server.Rooms.ProxyRoomMgr - Room Mgr is delay -3341 ms!
+11:21:31,053 - [5] - WARN  - Fighting.Server.Rooms.ProxyRoomMgr - Room Mgr is delay -2301 ms!
+11:21:31,054 - [5] - WARN  - Fighting.Server.Rooms.ProxyRoomMgr - Room Mgr is delay -1261 ms!
+11:21:37,918 - [5] - ERROR - Fighting.Server.Rooms.ProxyRoomMgr - Room Mgr Thread Error:
+System.NullReferenceException: Referência de objeto não definida para uma instância de um objeto.
+   em Game.Logic.MapMgr.GetMapIndex(Int32 index, Byte type, Int32 serverId) na D:\DDT\DDTank-3.0\Game.Logic\MapMgr.cs:linha 245
+   em Fighting.Server.Rooms.ProxyRoomMgr.StartMatchGame(ProxyRoom red, ProxyRoom blue) na D:\DDT\DDTank-3.0\Fighting.Server\Rooms\ProxyRoomMgr.cs:linha 273
+   em Fighting.Server.Rooms.ProxyRoomMgr.PickUpRooms(Int64 tick) na D:\DDT\DDTank-3.0\Fighting.Server\Rooms\ProxyRoomMgr.cs:linha 241
+   em Fighting.Server.Rooms.ProxyRoomMgr.RoomThread() na D:\DDT\DDTank-3.0\Fighting.Server\Rooms\ProxyRoomMgr.cs:linha 96
+11:27:23,378 - [5] - WARN  - Fighting.Server.Rooms.ProxyRoomMgr - Room Mgr is delay -345488 ms!
+11:27:23,382 - [5] - WARN  - Fighting.Server.Rooms.ProxyRoomMgr - Room Mgr is delay -344451 ms!
+11:27:23,382 - [5] - WARN  - Fighting.Server.Rooms.ProxyRoomMgr - Room Mgr is delay -343411 ms!
+11:27:23,383 - [5] - WARN  - Fighting.Server.Rooms.ProxyRoomMgr - Room Mgr is delay -342371 ms!
+11:27:23,386 - [5] - WARN  - Fighting.Server.Rooms.ProxyRoomMgr - Room Mgr is delay -341331 ms!
+11:27:23,387 - [5] - WARN  - Fighting.Server.Rooms.ProxyRoomMgr - Room Mgr is delay -340291 ms!
+11:27:23,387 - [5] - WARN  - Fighting.Server.Rooms.ProxyRoomMgr - Room Mgr is delay -339251 ms!
+11:27:23,388 - [5] - WARN  - Fighting.Server.Rooms.ProxyRoomMgr - Room Mgr is delay -338211 ms!
+11:27:23,389 - [5] - WARN  - Fighting.Server.Rooms.ProxyRoomMgr - Room Mgr is delay -337171 ms!
+11:27:23,389 - [5] - WARN  - Fighting.Server.Rooms.ProxyRoomMgr - Room Mgr is delay -336131 ms!
+11:27:23,391 - [5] - WARN  - Fighting.Server.Rooms.ProxyRoomMgr - Room Mgr is delay -335091 ms!
+11:27:23,391 - [5] - WARN  - Fighting.Server.Rooms.ProxyRoomMgr - Room Mgr is delay -334051 ms!
+11:27:23,392 - [5] - WARN  - Fighting.Server.Rooms.ProxyRoomMgr - Room Mgr is delay -333011 ms!
+11:27:23,392 - [5] - WARN  - Fighting.Server.Rooms.ProxyRoomMgr - Room Mgr is delay -331971 ms!
+11:27:23,393 - [5] - WARN  - Fighting.Server.Rooms.ProxyRoomMgr - Room Mgr is delay -330931 ms!
+11:27:23,394 - [5] - WARN  - Fighting.Server.Rooms.ProxyRoomMgr - Room Mgr is delay -329891 ms!
+11:27:23,394 - [5] - WARN  - Fighting.Server.Rooms.ProxyRoomMgr - Room Mgr is delay -328851 ms!
+11:27:23,397 - [5] - WARN  - Fighting.Server.Rooms.ProxyRoomMgr - Room Mgr is delay -327811 ms!
+11:27:23,397 - [5] - WARN  - Fighting.Server.Rooms.ProxyRoomMgr - Room Mgr is delay -326771 ms!
+11:27:23,398 - [5] - WARN  - Fighting.Server.Rooms.ProxyRoomMgr - Room Mgr is delay -325731 ms!
+11:27:23,399 - [5] - WARN  - Fighting.Server.Rooms.ProxyRoomMgr - Room Mgr is delay -324691 ms!
+11:27:23,399 - [5] - WARN  - Fighting.Server.Rooms.ProxyRoomMgr - Room Mgr is delay -323651 ms!
+11:27:23,400 - [5] - WARN  - Fighting.Server.Rooms.ProxyRoomMgr - Room Mgr is delay -322611 ms!
+11:27:23,401 - [5] - WARN  - Fighting.Server.Rooms.ProxyRoomMgr - Room Mgr is delay -321571 ms!
+11:27:23,402 - [5] - WARN  - Fighting.Server.Rooms.ProxyRoomMgr - Room Mgr is delay -320531 ms!
+11:27:23,402 - [5] - WARN  - Fighting.Server.Rooms.ProxyRoomMgr - Room Mgr is delay -319491 ms!
+11:27:23,403 - [5] - WARN  - Fighting.Server.Rooms.ProxyRoomMgr - Room Mgr is delay -318451 ms!
+11:27:23,404 - [5] - WARN  - Fighting.Server.Rooms.ProxyRoomMgr - Room Mgr is delay -317411 ms!
+11:27:23,404 - [5] - WARN  - Fighting.Server.Rooms.ProxyRoomMgr - Room Mgr is delay -316371 ms!
+11:27:23,405 - [5] - WARN  - Fighting.Server.Rooms.ProxyRoomMgr - Room Mgr is delay -315331 ms!
+11:27:23,405 - [5] - WARN  - Fighting.Server.Rooms.ProxyRoomMgr - Room Mgr is delay -314291 ms!
+11:27:23,408 - [5] - WARN  - Fighting.Server.Rooms.ProxyRoomMgr - Room Mgr is delay -313251 ms!
+11:27:23,409 - [5] - WARN  - Fighting.Server.Rooms.ProxyRoomMgr - Room Mgr is delay -312211 ms!
+11:27:23,409 - [5] - WARN  - Fighting.Server.Rooms.ProxyRoomMgr - Room Mgr is delay -311171 ms!
+11:27:23,410 - [5] - WARN  - Fighting.Server.Rooms.ProxyRoomMgr - Room Mgr is delay -310131 ms!
+11:27:23,411 - [5] - WARN  - Fighting.Server.Rooms.ProxyRoomMgr - Room Mgr is delay -309091 ms!
+11:27:23,411 - [5] - WARN  - Fighting.Server.Rooms.ProxyRoomMgr - Room Mgr is delay -308051 ms!
+11:27:23,412 - [5] - WARN  - Fighting.Server.Rooms.ProxyRoomMgr - Room Mgr is delay -307011 ms!
+11:27:23,413 - [5] - WARN  - Fighting.Server.Rooms.ProxyRoomMgr - Room Mgr is delay -305971 ms!
+11:27:23,413 - [5] - WARN  - Fighting.Server.Rooms.ProxyRoomMgr - Room Mgr is delay -304931 ms!
+11:27:23,414 - [5] - WARN  - Fighting.Server.Rooms.ProxyRoomMgr - Room Mgr is delay -303891 ms!
+11:27:23,414 - [5] - WARN  - Fighting.Server.Rooms.ProxyRoomMgr - Room Mgr is delay -302851 ms!
+11:27:23,415 - [5] - WARN  - Fighting.Server.Rooms.ProxyRoomMgr - Room Mgr is delay -301811 ms!
+11:27:23,416 - [5] - WARN  - Fighting.Server.Rooms.ProxyRoomMgr - Room Mgr is delay -300771 ms!
+11:27:23,416 - [5] - WARN  - Fighting.Server.Rooms.ProxyRoomMgr - Room Mgr is delay -299731 ms!
+11:27:23,420 - [5] - WARN  - Fighting.Server.Rooms.ProxyRoomMgr - Room Mgr is delay -298691 ms!
+11:27:23,420 - [5] - WARN  - Fighting.Server.Rooms.ProxyRoomMgr - Room Mgr is delay -297651 ms!
+11:27:23,421 - [5] - WARN  - Fighting.Server.Rooms.ProxyRoomMgr - Room Mgr is delay -296611 ms!
+11:27:23,422 - [5] - WARN  - Fighting.Server.Rooms.ProxyRoomMgr - Room Mgr is delay -295571 ms!
+11:27:23,423 - [5] - WARN  - Fighting.Server.Rooms.ProxyRoomMgr - Room Mgr is delay -294531 ms!
+11:27:23,423 - [5] - WARN  - Fighting.Server.Rooms.ProxyRoomMgr - Room Mgr is delay -293491 ms!
+11:27:23,424 - [5] - WARN  - Fighting.Server.Rooms.ProxyRoomMgr - Room Mgr is delay -292451 ms!
+11:27:23,425 - [5] - WARN  - Fighting.Server.Rooms.ProxyRoomMgr - Room Mgr is delay -291411 ms!
+11:27:23,425 - [5] - WARN  - Fighting.Server.Rooms.ProxyRoomMgr - Room Mgr is delay -290371 ms!
+11:27:23,426 - [5] - WARN  - Fighting.Server.Rooms.ProxyRoomMgr - Room Mgr is delay -289331 ms!
+11:27:23,427 - [5] - WARN  - Fighting.Server.Rooms.ProxyRoomMgr - Room Mgr is delay -288291 ms!
+11:27:23,427 - [5] - WARN  - Fighting.Server.Rooms.ProxyRoomMgr - Room Mgr is delay -287251 ms!
+11:27:23,430 - [5] - WARN  - Fighting.Server.Rooms.ProxyRoomMgr - Room Mgr is delay -286211 ms!
+11:27:23,430 - [5] - WARN  - Fighting.Server.Rooms.ProxyRoomMgr - Room Mgr is delay -285171 ms!
+11:27:23,430 - [5] - WARN  - Fighting.Server.Rooms.ProxyRoomMgr - Room Mgr is delay -284131 ms!
+11:27:23,431 - [5] - WARN  - Fighting.Server.Rooms.ProxyRoomMgr - Room Mgr is delay -283091 ms!
+11:27:23,431 - [5] - WARN  - Fighting.Server.Rooms.ProxyRoomMgr - Room Mgr is delay -282051 ms!
+11:27:23,432 - [5] - WARN  - Fighting.Server.Rooms.ProxyRoomMgr - Room Mgr is delay -281011 ms!
+11:27:23,433 - [5] - WARN  - Fighting.Server.Rooms.ProxyRoomMgr - Room Mgr is delay -279971 ms!
+11:27:23,434 - [5] - WARN  - Fighting.Server.Rooms.ProxyRoomMgr - Room Mgr is delay -278931 ms!
+11:27:23,434 - [5] - WARN  - Fighting.Server.Rooms.ProxyRoomMgr - Room Mgr is delay -277891 ms!
+11:27:23,435 - [5] - WARN  - Fighting.Server.Rooms.ProxyRoomMgr - Room Mgr is delay -276851 ms!
+11:27:23,436 - [5] - WARN  - Fighting.Server.Rooms.ProxyRoomMgr - Room Mgr is delay -275811 ms!
+11:27:23,436 - [5] - WARN  - Fighting.Server.Rooms.ProxyRoomMgr - Room Mgr is delay -274771 ms!
+11:27:23,437 - [5] - WARN  - Fighting.Server.Rooms.ProxyRoomMgr - Room Mgr is delay -273731 ms!
+11:27:23,438 - [5] - WARN  - Fighting.Server.Rooms.ProxyRoomMgr - Room Mgr is delay -272691 ms!
+11:27:23,440 - [5] - WARN  - Fighting.Server.Rooms.ProxyRoomMgr - Room Mgr is delay -271651 ms!
+11:27:23,441 - [5] - WARN  - Fighting.Server.Rooms.ProxyRoomMgr - Room Mgr is delay -270611 ms!
+11:27:23,442 - [5] - WARN  - Fighting.Server.Rooms.ProxyRoomMgr - Room Mgr is delay -269571 ms!
+11:27:23,442 - [5] - WARN  - Fighting.Server.Rooms.ProxyRoomMgr - Room Mgr is delay -268531 ms!
+11:27:23,443 - [5] - WARN  - Fighting.Server.Rooms.ProxyRoomMgr - Room Mgr is delay -267491 ms!
+11:27:23,443 - [5] - WARN  - Fighting.Server.Rooms.ProxyRoomMgr - Room Mgr is delay -266451 ms!
+11:27:23,444 - [5] - WARN  - Fighting.Server.Rooms.ProxyRoomMgr - Room Mgr is delay -265411 ms!
+11:27:23,445 - [5] - WARN  - Fighting.Server.Rooms.ProxyRoomMgr - Room Mgr is delay -264371 ms!
+11:27:23,445 - [5] - WARN  - Fighting.Server.Rooms.ProxyRoomMgr - Room Mgr is delay -263331 ms!
+11:27:23,446 - [5] - WARN  - Fighting.Server.Rooms.ProxyRoomMgr - Room Mgr is delay -262291 ms!
+11:27:23,446 - [5] - WARN  - Fighting.Server.Rooms.ProxyRoomMgr - Room Mgr is delay -261251 ms!
+11:27:23,447 - [5] - WARN  - Fighting.Server.Rooms.ProxyRoomMgr - Room Mgr is delay -260211 ms!
+11:27:23,448 - [5] - WARN  - Fighting.Server.Rooms.ProxyRoomMgr - Room Mgr is delay -259171 ms!
+11:27:23,448 - [5] - WARN  - Fighting.Server.Rooms.ProxyRoomMgr - Room Mgr is delay -258131 ms!
+11:27:23,452 - [5] - WARN  - Fighting.Server.Rooms.ProxyRoomMgr - Room Mgr is delay -257091 ms!
+11:27:23,452 - [5] - WARN  - Fighting.Server.Rooms.ProxyRoomMgr - Room Mgr is delay -256051 ms!
+11:27:23,453 - [5] - WARN  - Fighting.Server.Rooms.ProxyRoomMgr - Room Mgr is delay -255011 ms!
+11:27:23,454 - [5] - WARN  - Fighting.Server.Rooms.ProxyRoomMgr - Room Mgr is delay -253971 ms!
+11:27:23,455 - [5] - WARN  - Fighting.Server.Rooms.ProxyRoomMgr - Room Mgr is delay -252931 ms!
+11:27:23,456 - [5] - WARN  - Fighting.Server.Rooms.ProxyRoomMgr - Room Mgr is delay -251891 ms!
+11:27:23,457 - [5] - WARN  - Fighting.Server.Rooms.ProxyRoomMgr - Room Mgr is delay -250851 ms!
+11:27:23,457 - [5] - WARN  - Fighting.Server.Rooms.ProxyRoomMgr - Room Mgr is delay -249811 ms!
+11:27:23,458 - [5] - WARN  - Fighting.Server.Rooms.ProxyRoomMgr - Room Mgr is delay -248771 ms!
+11:27:23,459 - [5] - WARN  - Fighting.Server.Rooms.ProxyRoomMgr - Room Mgr is delay -247731 ms!
+11:27:23,459 - [5] - WARN  - Fighting.Server.Rooms.ProxyRoomMgr - Room Mgr is delay -246691 ms!
+11:27:23,460 - [5] - WARN  - Fighting.Server.Rooms.ProxyRoomMgr - Room Mgr is delay -245651 ms!
+11:27:23,464 - [5] - WARN  - Fighting.Server.Rooms.ProxyRoomMgr - Room Mgr is delay -244611 ms!
+11:27:23,465 - [5] - WARN  - Fighting.Server.Rooms.ProxyRoomMgr - Room Mgr is delay -243571 ms!
+11:27:23,465 - [5] - WARN  - Fighting.Server.Rooms.ProxyRoomMgr - Room Mgr is delay -242531 ms!
+11:27:23,466 - [5] - WARN  - Fighting.Server.Rooms.ProxyRoomMgr - Room Mgr is delay -241491 ms!
+11:27:23,467 - [5] - WARN  - Fighting.Server.Rooms.ProxyRoomMgr - Room Mgr is delay -240451 ms!
+11:27:23,467 - [5] - WARN  - Fighting.Server.Rooms.ProxyRoomMgr - Room Mgr is delay -239411 ms!
+11:27:23,468 - [5] - WARN  - Fighting.Server.Rooms.ProxyRoomMgr - Room Mgr is delay -238371 ms!
+11:27:23,470 - [5] - WARN  - Fighting.Server.Rooms.ProxyRoomMgr - Room Mgr is delay -237331 ms!
+11:27:23,470 - [5] - WARN  - Fighting.Server.Rooms.ProxyRoomMgr - Room Mgr is delay -236291 ms!
+11:27:23,470 - [5] - WARN  - Fighting.Server.Rooms.ProxyRoomMgr - Room Mgr is delay -235251 ms!
+11:27:23,471 - [5] - WARN  - Fighting.Server.Rooms.ProxyRoomMgr - Room Mgr is delay -234211 ms!
+11:27:23,471 - [5] - WARN  - Fighting.Server.Rooms.ProxyRoomMgr - Room Mgr is delay -233171 ms!
+11:27:23,472 - [5] - WARN  - Fighting.Server.Rooms.ProxyRoomMgr - Room Mgr is delay -232131 ms!
+11:27:23,472 - [5] - WARN  - Fighting.Server.Rooms.ProxyRoomMgr - Room Mgr is delay -231091 ms!
+11:27:23,475 - [5] - WARN  - Fighting.Server.Rooms.ProxyRoomMgr - Room Mgr is delay -230051 ms!
+11:27:23,475 - [5] - WARN  - Fighting.Server.Rooms.ProxyRoomMgr - Room Mgr is delay -229011 ms!
+11:27:23,476 - [5] - WARN  - Fighting.Server.Rooms.ProxyRoomMgr - Room Mgr is delay -227971 ms!
+11:27:23,477 - [5] - WARN  - Fighting.Server.Rooms.ProxyRoomMgr - Room Mgr is delay -226931 ms!
+11:27:23,477 - [5] - WARN  - Fighting.Server.Rooms.ProxyRoomMgr - Room Mgr is delay -225891 ms!
+11:27:23,478 - [5] - WARN  - Fighting.Server.Rooms.ProxyRoomMgr - Room Mgr is delay -224851 ms!
+11:27:23,478 - [5] - WARN  - Fighting.Server.Rooms.ProxyRoomMgr - Room Mgr is delay -223811 ms!
+11:27:23,479 - [5] - WARN  - Fighting.Server.Rooms.ProxyRoomMgr - Room Mgr is delay -222771 ms!
+11:27:23,479 - [5] - WARN  - Fighting.Server.Rooms.ProxyRoomMgr - Room Mgr is delay -221731 ms!
+11:27:23,480 - [5] - WARN  - Fighting.Server.Rooms.ProxyRoomMgr - Room Mgr is delay -220691 ms!
+11:27:23,480 - [5] - WARN  - Fighting.Server.Rooms.ProxyRoomMgr - Room Mgr is delay -219651 ms!
+11:27:23,481 - [5] - WARN  - Fighting.Server.Rooms.ProxyRoomMgr - Room Mgr is delay -218611 ms!
+11:27:23,481 - [5] - WARN  - Fighting.Server.Rooms.ProxyRoomMgr - Room Mgr is delay -217571 ms!
+11:27:23,482 - [5] - WARN  - Fighting.Server.Rooms.ProxyRoomMgr - Room Mgr is delay -216531 ms!
+11:27:23,483 - [5] - WARN  - Fighting.Server.Rooms.ProxyRoomMgr - Room Mgr is delay -215491 ms!
+11:27:23,483 - [5] - WARN  - Fighting.Server.Rooms.ProxyRoomMgr - Room Mgr is delay -214451 ms!
+11:27:23,487 - [5] - WARN  - Fighting.Server.Rooms.ProxyRoomMgr - Room Mgr is delay -213411 ms!
+11:27:23,487 - [5] - WARN  - Fighting.Server.Rooms.ProxyRoomMgr - Room Mgr is delay -212371 ms!
+11:27:23,488 - [5] - WARN  - Fighting.Server.Rooms.ProxyRoomMgr - Room Mgr is delay -211331 ms!
+11:27:23,489 - [5] - WARN  - Fighting.Server.Rooms.ProxyRoomMgr - Room Mgr is delay -210291 ms!
+11:27:23,490 - [5] - WARN  - Fighting.Server.Rooms.ProxyRoomMgr - Room Mgr is delay -209251 ms!
+11:27:23,491 - [5] - WARN  - Fighting.Server.Rooms.ProxyRoomMgr - Room Mgr is delay -208211 ms!
+11:27:23,492 - [5] - WARN  - Fighting.Server.Rooms.ProxyRoomMgr - Room Mgr is delay -207171 ms!
+11:27:23,493 - [5] - WARN  - Fighting.Server.Rooms.ProxyRoomMgr - Room Mgr is delay -206131 ms!
+11:27:23,493 - [5] - WARN  - Fighting.Server.Rooms.ProxyRoomMgr - Room Mgr is delay -205091 ms!
+11:27:23,494 - [5] - WARN  - Fighting.Server.Rooms.ProxyRoomMgr - Room Mgr is delay -204051 ms!
+11:27:23,496 - [5] - WARN  - Fighting.Server.Rooms.ProxyRoomMgr - Room Mgr is delay -203011 ms!
+11:27:23,497 - [5] - WARN  - Fighting.Server.Rooms.ProxyRoomMgr - Room Mgr is delay -201971 ms!
+11:27:23,497 - [5] - WARN  - Fighting.Server.Rooms.ProxyRoomMgr - Room Mgr is delay -200931 ms!
+11:27:23,498 - [5] - WARN  - Fighting.Server.Rooms.ProxyRoomMgr - Room Mgr is delay -199891 ms!
+11:27:23,499 - [5] - WARN  - Fighting.Server.Rooms.ProxyRoomMgr - Room Mgr is delay -198851 ms!
+11:27:23,499 - [5] - WARN  - Fighting.Server.Rooms.ProxyRoomMgr - Room Mgr is delay -197811 ms!
+11:27:23,500 - [5] - WARN  - Fighting.Server.Rooms.ProxyRoomMgr - Room Mgr is delay -196771 ms!
+11:27:23,500 - [5] - WARN  - Fighting.Server.Rooms.ProxyRoomMgr - Room Mgr is delay -195731 ms!
+11:27:23,501 - [5] - WARN  - Fighting.Server.Rooms.ProxyRoomMgr - Room Mgr is delay -194691 ms!
+11:27:23,501 - [5] - WARN  - Fighting.Server.Rooms.ProxyRoomMgr - Room Mgr is delay -193651 ms!
+11:27:23,502 - [5] - WARN  - Fighting.Server.Rooms.ProxyRoomMgr - Room Mgr is delay -192611 ms!
+11:27:23,503 - [5] - WARN  - Fighting.Server.Rooms.ProxyRoomMgr - Room Mgr is delay -191571 ms!
+11:27:23,503 - [5] - WARN  - Fighting.Server.Rooms.ProxyRoomMgr - Room Mgr is delay -190531 ms!
+11:27:23,504 - [5] - WARN  - Fighting.Server.Rooms.ProxyRoomMgr - Room Mgr is delay -189491 ms!
+11:27:23,505 - [5] - WARN  - Fighting.Server.Rooms.ProxyRoomMgr - Room Mgr is delay -188451 ms!
+11:27:23,508 - [5] - WARN  - Fighting.Server.Rooms.ProxyRoomMgr - Room Mgr is delay -187411 ms!
+11:27:23,508 - [5] - WARN  - Fighting.Server.Rooms.ProxyRoomMgr - Room Mgr is delay -186371 ms!
+11:27:23,509 - [5] - WARN  - Fighting.Server.Rooms.ProxyRoomMgr - Room Mgr is delay -185331 ms!
+11:27:23,509 - [5] - WARN  - Fighting.Server.Rooms.ProxyRoomMgr - Room Mgr is delay -184291 ms!
+11:27:23,510 - [5] - WARN  - Fighting.Server.Rooms.ProxyRoomMgr - Room Mgr is delay -183251 ms!
+11:27:23,511 - [5] - WARN  - Fighting.Server.Rooms.ProxyRoomMgr - Room Mgr is delay -182211 ms!
+11:27:23,512 - [5] - WARN  - Fighting.Server.Rooms.ProxyRoomMgr - Room Mgr is delay -181171 ms!
+11:27:23,512 - [5] - WARN  - Fighting.Server.Rooms.ProxyRoomMgr - Room Mgr is delay -180131 ms!
+11:27:23,513 - [5] - WARN  - Fighting.Server.Rooms.ProxyRoomMgr - Room Mgr is delay -179091 ms!
+11:27:23,514 - [5] - WARN  - Fighting.Server.Rooms.ProxyRoomMgr - Room Mgr is delay -178051 ms!
+11:27:23,514 - [5] - WARN  - Fighting.Server.Rooms.ProxyRoomMgr - Room Mgr is delay -177011 ms!
+11:27:23,515 - [5] - WARN  - Fighting.Server.Rooms.ProxyRoomMgr - Room Mgr is delay -175971 ms!
+11:27:23,515 - [5] - WARN  - Fighting.Server.Rooms.ProxyRoomMgr - Room Mgr is delay -174931 ms!
+11:27:23,518 - [5] - WARN  - Fighting.Server.Rooms.ProxyRoomMgr - Room Mgr is delay -173891 ms!
+11:27:23,519 - [5] - WARN  - Fighting.Server.Rooms.ProxyRoomMgr - Room Mgr is delay -172851 ms!
+11:27:23,520 - [5] - WARN  - Fighting.Server.Rooms.ProxyRoomMgr - Room Mgr is delay -171811 ms!
+11:27:23,520 - [5] - WARN  - Fighting.Server.Rooms.ProxyRoomMgr - Room Mgr is delay -170771 ms!
+11:27:23,521 - [5] - WARN  - Fighting.Server.Rooms.ProxyRoomMgr - Room Mgr is delay -169731 ms!
+11:27:23,521 - [5] - WARN  - Fighting.Server.Rooms.ProxyRoomMgr - Room Mgr is delay -168691 ms!
+11:27:23,523 - [5] - WARN  - Fighting.Server.Rooms.ProxyRoomMgr - Room Mgr is delay -167651 ms!
+11:27:23,523 - [5] - WARN  - Fighting.Server.Rooms.ProxyRoomMgr - Room Mgr is delay -166611 ms!
+11:27:23,524 - [5] - WARN  - Fighting.Server.Rooms.ProxyRoomMgr - Room Mgr is delay -165571 ms!
+11:27:23,524 - [5] - WARN  - Fighting.Server.Rooms.ProxyRoomMgr - Room Mgr is delay -164531 ms!
+11:27:23,525 - [5] - WARN  - Fighting.Server.Rooms.ProxyRoomMgr - Room Mgr is delay -163491 ms!
+11:27:23,525 - [5] - WARN  - Fighting.Server.Rooms.ProxyRoomMgr - Room Mgr is delay -162451 ms!
+11:27:23,526 - [5] - WARN  - Fighting.Server.Rooms.ProxyRoomMgr - Room Mgr is delay -161411 ms!
+11:27:23,526 - [5] - WARN  - Fighting.Server.Rooms.ProxyRoomMgr - Room Mgr is delay -160371 ms!
+11:27:23,529 - [5] - WARN  - Fighting.Server.Rooms.ProxyRoomMgr - Room Mgr is delay -159331 ms!
+11:27:23,530 - [5] - WARN  - Fighting.Server.Rooms.ProxyRoomMgr - Room Mgr is delay -158291 ms!
+11:27:23,530 - [5] - WARN  - Fighting.Server.Rooms.ProxyRoomMgr - Room Mgr is delay -157251 ms!
+11:27:23,531 - [5] - WARN  - Fighting.Server.Rooms.ProxyRoomMgr - Room Mgr is delay -156211 ms!
+11:27:23,531 - [5] - WARN  - Fighting.Server.Rooms.ProxyRoomMgr - Room Mgr is delay -155171 ms!
+11:27:23,532 - [5] - WARN  - Fighting.Server.Rooms.ProxyRoomMgr - Room Mgr is delay -154131 ms!
+11:27:23,532 - [5] - WARN  - Fighting.Server.Rooms.ProxyRoomMgr - Room Mgr is delay -153091 ms!
+11:27:23,533 - [5] - WARN  - Fighting.Server.Rooms.ProxyRoomMgr - Room Mgr is delay -152051 ms!
+11:27:23,534 - [5] - WARN  - Fighting.Server.Rooms.ProxyRoomMgr - Room Mgr is delay -151011 ms!
+11:27:23,534 - [5] - WARN  - Fighting.Server.Rooms.ProxyRoomMgr - Room Mgr is delay -149971 ms!
+11:27:23,535 - [5] - WARN  - Fighting.Server.Rooms.ProxyRoomMgr - Room Mgr is delay -148931 ms!
+11:27:23,536 - [5] - WARN  - Fighting.Server.Rooms.ProxyRoomMgr - Room Mgr is delay -147891 ms!
+11:27:23,536 - [5] - WARN  - Fighting.Server.Rooms.ProxyRoomMgr - Room Mgr is delay -146851 ms!
+11:27:23,537 - [5] - WARN  - Fighting.Server.Rooms.ProxyRoomMgr - Room Mgr is delay -145811 ms!
+11:27:23,540 - [5] - WARN  - Fighting.Server.Rooms.ProxyRoomMgr - Room Mgr is delay -144771 ms!
+11:27:23,541 - [5] - WARN  - Fighting.Server.Rooms.ProxyRoomMgr - Room Mgr is delay -143731 ms!
+11:27:23,542 - [5] - WARN  - Fighting.Server.Rooms.ProxyRoomMgr - Room Mgr is delay -142691 ms!
+11:27:23,542 - [5] - WARN  - Fighting.Server.Rooms.ProxyRoomMgr - Room Mgr is delay -141651 ms!
+11:27:23,543 - [5] - WARN  - Fighting.Server.Rooms.ProxyRoomMgr - Room Mgr is delay -140611 ms!
+11:27:23,543 - [5] - WARN  - Fighting.Server.Rooms.ProxyRoomMgr - Room Mgr is delay -139571 ms!
+11:27:23,544 - [5] - WARN  - Fighting.Server.Rooms.ProxyRoomMgr - Room Mgr is delay -138531 ms!
+11:27:23,544 - [5] - WARN  - Fighting.Server.Rooms.ProxyRoomMgr - Room Mgr is delay -137491 ms!
+11:27:23,545 - [5] - WARN  - Fighting.Server.Rooms.ProxyRoomMgr - Room Mgr is delay -136451 ms!
+11:27:23,546 - [5] - WARN  - Fighting.Server.Rooms.ProxyRoomMgr - Room Mgr is delay -135411 ms!
+11:27:23,547 - [5] - WARN  - Fighting.Server.Rooms.ProxyRoomMgr - Room Mgr is delay -134371 ms!
+11:27:23,547 - [5] - WARN  - Fighting.Server.Rooms.ProxyRoomMgr - Room Mgr is delay -133331 ms!
+11:27:23,548 - [5] - WARN  - Fighting.Server.Rooms.ProxyRoomMgr - Room Mgr is delay -132291 ms!
+11:27:23,551 - [5] - WARN  - Fighting.Server.Rooms.ProxyRoomMgr - Room Mgr is delay -131251 ms!
+11:27:23,552 - [5] - WARN  - Fighting.Server.Rooms.ProxyRoomMgr - Room Mgr is delay -130211 ms!
+11:27:23,552 - [5] - WARN  - Fighting.Server.Rooms.ProxyRoomMgr - Room Mgr is delay -129171 ms!
+11:27:23,553 - [5] - WARN  - Fighting.Server.Rooms.ProxyRoomMgr - Room Mgr is delay -128131 ms!
+11:27:23,553 - [5] - WARN  - Fighting.Server.Rooms.ProxyRoomMgr - Room Mgr is delay -127091 ms!
+11:27:23,554 - [5] - WARN  - Fighting.Server.Rooms.ProxyRoomMgr - Room Mgr is delay -126051 ms!
+11:27:23,555 - [5] - WARN  - Fighting.Server.Rooms.ProxyRoomMgr - Room Mgr is delay -125011 ms!
+11:27:23,555 - [5] - WARN  - Fighting.Server.Rooms.ProxyRoomMgr - Room Mgr is delay -123971 ms!
+11:27:23,555 - [5] - WARN  - Fighting.Server.Rooms.ProxyRoomMgr - Room Mgr is delay -122931 ms!
+11:27:23,556 - [5] - WARN  - Fighting.Server.Rooms.ProxyRoomMgr - Room Mgr is delay -121891 ms!
+11:27:23,556 - [5] - WARN  - Fighting.Server.Rooms.ProxyRoomMgr - Room Mgr is delay -120851 ms!
+11:27:23,557 - [5] - WARN  - Fighting.Server.Rooms.ProxyRoomMgr - Room Mgr is delay -119811 ms!
+11:27:23,558 - [5] - WARN  - Fighting.Server.Rooms.ProxyRoomMgr - Room Mgr is delay -118771 ms!
+11:27:23,558 - [5] - WARN  - Fighting.Server.Rooms.ProxyRoomMgr - Room Mgr is delay -117731 ms!
+11:27:23,559 - [5] - WARN  - Fighting.Server.Rooms.ProxyRoomMgr - Room Mgr is delay -116691 ms!
+11:27:23,559 - [5] - WARN  - Fighting.Server.Rooms.ProxyRoomMgr - Room Mgr is delay -115651 ms!
+11:27:23,562 - [5] - WARN  - Fighting.Server.Rooms.ProxyRoomMgr - Room Mgr is delay -114611 ms!
+11:27:23,563 - [5] - WARN  - Fighting.Server.Rooms.ProxyRoomMgr - Room Mgr is delay -113571 ms!
+11:27:23,563 - [5] - WARN  - Fighting.Server.Rooms.ProxyRoomMgr - Room Mgr is delay -112531 ms!
+11:27:23,564 - [5] - WARN  - Fighting.Server.Rooms.ProxyRoomMgr - Room Mgr is delay -111491 ms!
+11:27:23,564 - [5] - WARN  - Fighting.Server.Rooms.ProxyRoomMgr - Room Mgr is delay -110451 ms!
+11:27:23,565 - [5] - WARN  - Fighting.Server.Rooms.ProxyRoomMgr - Room Mgr is delay -109411 ms!
+11:27:23,565 - [5] - WARN  - Fighting.Server.Rooms.ProxyRoomMgr - Room Mgr is delay -108371 ms!
+11:27:23,566 - [5] - WARN  - Fighting.Server.Rooms.ProxyRoomMgr - Room Mgr is delay -107331 ms!
+11:27:23,567 - [5] - WARN  - Fighting.Server.Rooms.ProxyRoomMgr - Room Mgr is delay -106291 ms!
+11:27:23,567 - [5] - WARN  - Fighting.Server.Rooms.ProxyRoomMgr - Room Mgr is delay -105251 ms!
+11:27:23,568 - [5] - WARN  - Fighting.Server.Rooms.ProxyRoomMgr - Room Mgr is delay -104211 ms!
+11:27:23,569 - [5] - WARN  - Fighting.Server.Rooms.ProxyRoomMgr - Room Mgr is delay -103171 ms!
+11:27:23,569 - [5] - WARN  - Fighting.Server.Rooms.ProxyRoomMgr - Room Mgr is delay -102131 ms!
+11:27:23,570 - [5] - WARN  - Fighting.Server.Rooms.ProxyRoomMgr - Room Mgr is delay -101091 ms!
+11:27:23,571 - [5] - WARN  - Fighting.Server.Rooms.ProxyRoomMgr - Room Mgr is delay -100051 ms!
+11:27:23,574 - [5] - WARN  - Fighting.Server.Rooms.ProxyRoomMgr - Room Mgr is delay -99011 ms!
+11:27:23,574 - [5] - WARN  - Fighting.Server.Rooms.ProxyRoomMgr - Room Mgr is delay -97971 ms!
+11:27:23,575 - [5] - WARN  - Fighting.Server.Rooms.ProxyRoomMgr - Room Mgr is delay -96931 ms!
+11:27:23,575 - [5] - WARN  - Fighting.Server.Rooms.ProxyRoomMgr - Room Mgr is delay -95891 ms!
+11:27:23,576 - [5] - WARN  - Fighting.Server.Rooms.ProxyRoomMgr - Room Mgr is delay -94851 ms!
+11:27:23,576 - [5] - WARN  - Fighting.Server.Rooms.ProxyRoomMgr - Room Mgr is delay -93811 ms!
+11:27:23,577 - [5] - WARN  - Fighting.Server.Rooms.ProxyRoomMgr - Room Mgr is delay -92771 ms!
+11:27:23,577 - [5] - WARN  - Fighting.Server.Rooms.ProxyRoomMgr - Room Mgr is delay -91731 ms!
+11:27:23,578 - [5] - WARN  - Fighting.Server.Rooms.ProxyRoomMgr - Room Mgr is delay -90691 ms!
+11:27:23,579 - [5] - WARN  - Fighting.Server.Rooms.ProxyRoomMgr - Room Mgr is delay -89651 ms!
+11:27:23,580 - [5] - WARN  - Fighting.Server.Rooms.ProxyRoomMgr - Room Mgr is delay -88611 ms!
+11:27:23,580 - [5] - WARN  - Fighting.Server.Rooms.ProxyRoomMgr - Room Mgr is delay -87571 ms!
+11:27:23,581 - [5] - WARN  - Fighting.Server.Rooms.ProxyRoomMgr - Room Mgr is delay -86531 ms!
+11:27:23,582 - [5] - WARN  - Fighting.Server.Rooms.ProxyRoomMgr - Room Mgr is delay -85491 ms!
+11:27:23,586 - [5] - WARN  - Fighting.Server.Rooms.ProxyRoomMgr - Room Mgr is delay -84451 ms!
+11:27:23,587 - [5] - WARN  - Fighting.Server.Rooms.ProxyRoomMgr - Room Mgr is delay -83411 ms!
+11:27:23,588 - [5] - WARN  - Fighting.Server.Rooms.ProxyRoomMgr - Room Mgr is delay -82371 ms!
+11:27:23,588 - [5] - WARN  - Fighting.Server.Rooms.ProxyRoomMgr - Room Mgr is delay -81331 ms!
+11:27:23,589 - [5] - WARN  - Fighting.Server.Rooms.ProxyRoomMgr - Room Mgr is delay -80291 ms!
+11:27:23,589 - [5] - WARN  - Fighting.Server.Rooms.ProxyRoomMgr - Room Mgr is delay -79251 ms!
+11:27:23,590 - [5] - WARN  - Fighting.Server.Rooms.ProxyRoomMgr - Room Mgr is delay -78211 ms!
+11:27:23,590 - [5] - WARN  - Fighting.Server.Rooms.ProxyRoomMgr - Room Mgr is delay -77171 ms!
+11:27:23,591 - [5] - WARN  - Fighting.Server.Rooms.ProxyRoomMgr - Room Mgr is delay -76131 ms!
+11:27:23,592 - [5] - WARN  - Fighting.Server.Rooms.ProxyRoomMgr - Room Mgr is delay -75091 ms!
+11:27:23,592 - [5] - WARN  - Fighting.Server.Rooms.ProxyRoomMgr - Room Mgr is delay -74051 ms!
+11:27:23,592 - [5] - WARN  - Fighting.Server.Rooms.ProxyRoomMgr - Room Mgr is delay -73011 ms!
+11:27:23,593 - [5] - WARN  - Fighting.Server.Rooms.ProxyRoomMgr - Room Mgr is delay -71971 ms!
+11:27:23,593 - [5] - WARN  - Fighting.Server.Rooms.ProxyRoomMgr - Room Mgr is delay -70931 ms!
+11:27:23,596 - [5] - WARN  - Fighting.Server.Rooms.ProxyRoomMgr - Room Mgr is delay -69891 ms!
+11:27:23,597 - [5] - WARN  - Fighting.Server.Rooms.ProxyRoomMgr - Room Mgr is delay -68851 ms!
+11:27:23,597 - [5] - WARN  - Fighting.Server.Rooms.ProxyRoomMgr - Room Mgr is delay -67811 ms!
+11:27:23,598 - [5] - WARN  - Fighting.Server.Rooms.ProxyRoomMgr - Room Mgr is delay -66771 ms!
+11:27:23,598 - [5] - WARN  - Fighting.Server.Rooms.ProxyRoomMgr - Room Mgr is delay -65731 ms!
+11:27:23,599 - [5] - WARN  - Fighting.Server.Rooms.ProxyRoomMgr - Room Mgr is delay -64691 ms!
+11:27:23,599 - [5] - WARN  - Fighting.Server.Rooms.ProxyRoomMgr - Room Mgr is delay -63651 ms!
+11:27:23,600 - [5] - WARN  - Fighting.Server.Rooms.ProxyRoomMgr - Room Mgr is delay -62611 ms!
+11:27:23,601 - [5] - WARN  - Fighting.Server.Rooms.ProxyRoomMgr - Room Mgr is delay -61571 ms!
+11:27:23,601 - [5] - WARN  - Fighting.Server.Rooms.ProxyRoomMgr - Room Mgr is delay -60531 ms!
+11:27:23,602 - [5] - WARN  - Fighting.Server.Rooms.ProxyRoomMgr - Room Mgr is delay -59491 ms!
+11:27:23,603 - [5] - WARN  - Fighting.Server.Rooms.ProxyRoomMgr - Room Mgr is delay -58451 ms!
+11:27:23,603 - [5] - WARN  - Fighting.Server.Rooms.ProxyRoomMgr - Room Mgr is delay -57411 ms!
+11:27:23,604 - [5] - WARN  - Fighting.Server.Rooms.ProxyRoomMgr - Room Mgr is delay -56371 ms!
+11:27:23,607 - [5] - WARN  - Fighting.Server.Rooms.ProxyRoomMgr - Room Mgr is delay -55331 ms!
+11:27:23,608 - [5] - WARN  - Fighting.Server.Rooms.ProxyRoomMgr - Room Mgr is delay -54291 ms!
+11:27:23,608 - [5] - WARN  - Fighting.Server.Rooms.ProxyRoomMgr - Room Mgr is delay -53251 ms!
+11:27:23,609 - [5] - WARN  - Fighting.Server.Rooms.ProxyRoomMgr - Room Mgr is delay -52211 ms!
+11:27:23,609 - [5] - WARN  - Fighting.Server.Rooms.ProxyRoomMgr - Room Mgr is delay -51171 ms!
+11:27:23,610 - [5] - WARN  - Fighting.Server.Rooms.ProxyRoomMgr - Room Mgr is delay -50131 ms!
+11:27:23,611 - [5] - WARN  - Fighting.Server.Rooms.ProxyRoomMgr - Room Mgr is delay -49091 ms!
+11:27:23,611 - [5] - WARN  - Fighting.Server.Rooms.ProxyRoomMgr - Room Mgr is delay -48051 ms!
+11:27:23,612 - [5] - WARN  - Fighting.Server.Rooms.ProxyRoomMgr - Room Mgr is delay -47011 ms!
+11:27:23,612 - [5] - WARN  - Fighting.Server.Rooms.ProxyRoomMgr - Room Mgr is delay -45971 ms!
+11:27:23,613 - [5] - WARN  - Fighting.Server.Rooms.ProxyRoomMgr - Room Mgr is delay -44931 ms!
+11:27:23,613 - [5] - WARN  - Fighting.Server.Rooms.ProxyRoomMgr - Room Mgr is delay -43891 ms!
+11:27:23,614 - [5] - WARN  - Fighting.Server.Rooms.ProxyRoomMgr - Room Mgr is delay -42851 ms!
+11:27:23,614 - [5] - WARN  - Fighting.Server.Rooms.ProxyRoomMgr - Room Mgr is delay -41811 ms!
+11:27:23,615 - [5] - WARN  - Fighting.Server.Rooms.ProxyRoomMgr - Room Mgr is delay -40771 ms!
+11:27:23,615 - [5] - WARN  - Fighting.Server.Rooms.ProxyRoomMgr - Room Mgr is delay -39731 ms!
+11:27:23,619 - [5] - WARN  - Fighting.Server.Rooms.ProxyRoomMgr - Room Mgr is delay -38691 ms!
+11:27:23,619 - [5] - WARN  - Fighting.Server.Rooms.ProxyRoomMgr - Room Mgr is delay -37651 ms!
+11:27:23,620 - [5] - WARN  - Fighting.Server.Rooms.ProxyRoomMgr - Room Mgr is delay -36611 ms!
+11:27:23,621 - [5] - WARN  - Fighting.Server.Rooms.ProxyRoomMgr - Room Mgr is delay -35571 ms!
+11:27:23,621 - [5] - WARN  - Fighting.Server.Rooms.ProxyRoomMgr - Room Mgr is delay -34531 ms!
+11:27:23,622 - [5] - WARN  - Fighting.Server.Rooms.ProxyRoomMgr - Room Mgr is delay -33491 ms!
+11:27:23,622 - [5] - WARN  - Fighting.Server.Rooms.ProxyRoomMgr - Room Mgr is delay -32451 ms!
+11:27:23,623 - [5] - WARN  - Fighting.Server.Rooms.ProxyRoomMgr - Room Mgr is delay -31411 ms!
+11:27:23,624 - [5] - WARN  - Fighting.Server.Rooms.ProxyRoomMgr - Room Mgr is delay -30371 ms!
+11:27:23,624 - [5] - WARN  - Fighting.Server.Rooms.ProxyRoomMgr - Room Mgr is delay -29331 ms!
+11:27:23,625 - [5] - WARN  - Fighting.Server.Rooms.ProxyRoomMgr - Room Mgr is delay -28291 ms!
+11:27:23,625 - [5] - WARN  - Fighting.Server.Rooms.ProxyRoomMgr - Room Mgr is delay -27251 ms!
+11:27:23,626 - [5] - WARN  - Fighting.Server.Rooms.ProxyRoomMgr - Room Mgr is delay -26211 ms!
+11:27:23,626 - [5] - WARN  - Fighting.Server.Rooms.ProxyRoomMgr - Room Mgr is delay -25171 ms!
+11:27:23,630 - [5] - WARN  - 

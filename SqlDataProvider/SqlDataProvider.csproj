@@ -90,6 +90,14 @@
     <Compile Include="BaseClass\ApplicationLog.cs" />
     <Compile Include="BaseClass\Sql_DbObject.cs" />
     <Compile Include="Data\AASInfo.cs" />
+    <Compile Include="Data\AchievementCondictionInfo.cs" />
+    <Compile Include="Data\AchievementConditionInfo.cs" />
+    <Compile Include="Data\AchievementData.cs" />
+    <Compile Include="Data\AchievementDataInfo.cs" />
+    <Compile Include="Data\AchievementGoodsInfo.cs" />
+    <Compile Include="Data\AchievementInfo.cs" />
+    <Compile Include="Data\AchievementProcessInfo.cs" />
+    <Compile Include="Data\AchievementRewardInfo.cs" />
     <Compile Include="Data\ActiveInfo.cs" />
     <Compile Include="Data\AuctionInfo.cs" />
     <Compile Include="Data\BallInfo.cs" />
@@ -114,6 +122,7 @@
     <Compile Include="Data\DropCondiction.cs" />
     <Compile Include="Data\DropItem.cs" />
     <Compile Include="Data\ItemBoxInfo.cs" />
+    <Compile Include="Data\ItemRecordTypeInfo.cs" />
     <Compile Include="Data\LogFight.cs" />
     <Compile Include="Data\LogItem.cs" />
     <Compile Include="Data\LogMoney.cs" />

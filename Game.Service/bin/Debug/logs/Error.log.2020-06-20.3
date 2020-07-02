@@ -1,0 +1,5 @@
+15:52:11,003 - [14] - ERROR - Game.Server.Games.GameMgr - Create game error:
+System.NullReferenceException: Referência de objeto não definida para uma instância de um objeto.
+   em Game.Logic.Phy.Object.Player..ctor(IGamePlayer player, Int32 id, BaseGame game, Int32 team) na D:\DDT\DDTank-3.0\Game.Logic\Phy\Object\Player.cs:linha 90
+   em Game.Logic.PVPGame..ctor(Int32 id, Int32 roomId, List`1 red, List`1 blue, Map map, eRoomType roomType, eGameType gameType, Int32 timeType) na D:\DDT\DDTank-3.0\Game.Logic\PVPGame.cs:linha 71
+   em Game.Server.Games.GameMgr.StartPVPGame(Int32 roomId, List`1 red, List`1 blue, Int32 mapIndex, eRoomType roomType, eGameType gameType, Int32 timeType) na D:\DDT\DDTank-3.0\Game.Server\Games\GameMgr.cs:linha 193

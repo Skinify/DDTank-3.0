@@ -8,6 +8,7 @@ using Game.Server.SceneMarryRooms;
 using Game.Server.Quests;
 using Game.Server.Buffer;
 using Game.Server.HotSpringRooms;
+using Game.Server.Achievement;
 
 namespace Game.Base.Packets
 {
@@ -114,5 +115,20 @@ namespace Game.Base.Packets
         GSPacketIn SendMarryProp(GamePlayer player, MarryProp info);
 
         GSPacketIn SendRoomType(GamePlayer player, BaseRoom game);
+
+
+        //Conquistas
+
+        GSPacketIn SendAchievementDataInfo(List<AchievementData> data);
+
+        GSPacketIn SendAchievementDatas(GamePlayer player, BaseAchievement[] infos);
+
+        GSPacketIn SendAchievementSuccess(AchievementData d);
+
+        GSPacketIn SendUpdateAchievementInfo(List<AchievementProcessInfo> process);
+
+        GSPacketIn SendUpdateAchievements(GamePlayer player, BaseAchievement[] infos);
+
+
     }
 }

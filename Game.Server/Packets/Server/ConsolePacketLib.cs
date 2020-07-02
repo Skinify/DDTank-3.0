@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using Game.Base.Packets;
+using Game.Server.Achievement;
 using Game.Server.GameObjects;
 using Game.Server.HotSpringRooms;
 using SqlDataProvider.Data;
@@ -337,6 +338,32 @@ namespace Game.Server.Packets.Server
         {
             throw new NotImplementedException();
         }
+
+        public GSPacketIn SendAchievementDataInfo(List<AchievementData> data)
+        {
+            throw new NotImplementedException();
+        }
+
+        public GSPacketIn SendAchievementDatas(GamePlayer player, BaseAchievement[] infos)
+        {
+            throw new NotImplementedException();
+        }
+
+        public GSPacketIn SendAchievementSuccess(AchievementData d)
+        {
+            throw new NotImplementedException();
+        }
+
+        public GSPacketIn SendUpdateAchievementInfo(List<AchievementProcessInfo> process)
+        {
+            throw new NotImplementedException();
+        }
+
+        public GSPacketIn SendUpdateAchievements(GamePlayer player, BaseAchievement[] infos)
+        {
+            throw new NotImplementedException();
+        }
+
 
         #endregion
     }

@@ -100,7 +100,7 @@ namespace Bussiness
             }
             return infos.ToArray();
         }
-
+            
         public ItemTemplateInfo InitItemTemplateInfo(SqlDataReader reader)
         {
             ItemTemplateInfo info = new ItemTemplateInfo();
@@ -1099,6 +1099,377 @@ namespace Bussiness
 
             return "";
         }
+
+        public AchievementInfo InitAchievement(SqlDataReader reader)
+        {
+            return new AchievementInfo
+            {
+                ID = (int)reader["ID"],
+                PlaceID = (int)reader["PlaceID"],
+                Title = (reader["Title"] == null) ? "" : reader["Title"].ToString(),
+                Detail = (reader["Detail"] == null) ? "" : reader["Detail"].ToString(),
+                NeedMinLevel = (int)reader["NeedMinLevel"],
+                NeedMaxLevel = (int)reader["NeedMaxLevel"],
+                PreAchievementID = (reader["PreAchievementID"] == null) ? "" : reader["PreAchievementID"].ToString(),
+                IsOther = (int)reader["IsOther"],
+                AchievementType = (int)reader["AchievementType"],
+                CanHide = (bool)reader["CanHide"],
+                StartDate = (DateTime)reader["StartDate"],
+                EndDate = (DateTime)reader["EndDate"],
+                AchievementPoint = (int)reader["AchievementPoint"],
+                IsActive = (int)reader["IsActive"],
+                PicID = (int)reader["PicID"],
+                IsShare = (bool)reader["IsShare"]
+            };
+        }
+
+        public AchievementConditionInfo InitAchievementCondition(SqlDataReader reader)
+        {
+            return new AchievementConditionInfo
+            {
+                AchievementID = (int)reader["AchievementID"],
+                CondictionID = (int)reader["CondictionID"],
+                CondictionType = (int)reader["CondictionType"],
+                Condiction_Para1 = (reader["Condiction_Para1"] == null) ? "" : reader["Condiction_Para1"].ToString(),
+                Condiction_Para2 = (int)reader["Condiction_Para2"]
+            };
+        }
+
+        public AchievementDataInfo InitAchievementData(SqlDataReader reader)
+        {
+            return new AchievementDataInfo
+            {
+                UserID = (int)reader["UserID"],
+                AchievementID = (int)reader["AchievementID"],
+                IsComplete = (bool)reader["IsComplete"],
+                CompletedDate = (DateTime)reader["CompletedDate"]
+            };
+        }
+
+        public AchievementRewardInfo InitAchievementReward(SqlDataReader reader)
+        {
+            return new AchievementRewardInfo
+            {
+                AchievementID = (int)reader["AchievementID"],
+                RewardType = (int)reader["RewardType"],
+                RewardPara = (reader["RewardPara"] == null) ? "" : reader["RewardPara"].ToString(),
+                RewardValueId = (int)reader["RewardValueId"],
+                RewardCount = (int)reader["RewardCount"]
+            };
+        }
+
+
+
+        public AchievementInfo[] GetAllAchievement()
+        {
+            List<AchievementInfo> list = new List<AchievementInfo>();
+            SqlDataReader resultDataReader = null;
+            try
+            {
+                base.db.GetReader(ref resultDataReader, "SP_Get_Achievement");
+                while (true)
+                {
+                    if (!resultDataReader.Read())
+                    {
+                        break;
+                    }
+                    AchievementInfo item = new AchievementInfo
+                    {
+                        ID = (int)resultDataReader["ID"],
+                        PlaceID = (int)resultDataReader["PlaceID"],
+                        Title = (string)resultDataReader["Title"],
+                        Detail = (string)resultDataReader["Detail"],
+                        NeedMinLevel = (int)resultDataReader["NeedMinLevel"],
+                        NeedMaxLevel = (int)resultDataReader["NeedMaxLevel"],
+                        PreAchievementID = (string)resultDataReader["PreAchievementID"],
+                        IsOther = (int)resultDataReader["IsOther"],
+                        AchievementType = (int)resultDataReader["AchievementType"],
+                        CanHide = (bool)resultDataReader["CanHide"],
+                        StartDate = (DateTime)resultDataReader["StartDate"],
+                        EndDate = (DateTime)resultDataReader["EndDate"],
+                        AchievementPoint = (int)resultDataReader["AchievementPoint"],
+                        IsActive = (int)resultDataReader["IsActive"],
+                        PicID = (int)resultDataReader["PicID"],
+                        IsShare = (bool)resultDataReader["IsShare"]
+                    };
+                    list.Add(item);
+                }
+            }
+            catch (Exception exception)
+            {
+                if (BaseBussiness.log.IsErrorEnabled)
+                {
+                    BaseBussiness.log.Error("Init", exception);
+                }
+            }
+            finally
+            {
+                if (!((resultDataReader == null) || resultDataReader.IsClosed))
+                {
+                    resultDataReader.Close();
+                }
+            }
+            return list.ToArray();
+        }
+
+        public AchievementInfo[] GetALlAchievement()
+        {
+            List<AchievementInfo> list = new List<AchievementInfo>();
+            SqlDataReader resultDataReader = null;
+            try
+            {
+                base.db.GetReader(ref resultDataReader, "SP_Achievement_All");
+                while (true)
+                {
+                    if (!resultDataReader.Read())
+                    {
+                        break;
+                    }
+                    list.Add(this.InitAchievement(resultDataReader));
+                }
+            }
+            catch (Exception exception)
+            {
+                if (BaseBussiness.log.IsErrorEnabled)
+                {
+                    BaseBussiness.log.Error("GetALlAchievement:", exception);
+                }
+            }
+            finally
+            {
+                if (!((resultDataReader == null) || resultDataReader.IsClosed))
+                {
+                    resultDataReader.Close();
+                }
+            }
+            return list.ToArray();
+        }
+
+
+        public AchievementCondictionInfo[] GetAllAchievementCondiction()
+        {
+            List<AchievementCondictionInfo> list = new List<AchievementCondictionInfo>();
+            SqlDataReader resultDataReader = null;
+            try
+            {
+                base.db.GetReader(ref resultDataReader, "SP_Get_AchievementCondiction");
+                while (true)
+                {
+                    if (!resultDataReader.Read())
+                    {
+                        break;
+                    }
+                    AchievementCondictionInfo item = new AchievementCondictionInfo
+                    {
+                        AchievementID = (int)resultDataReader["AchievementID"],
+                        CondictionID = (int)resultDataReader["CondictionID"],
+                        CondictionType = (int)resultDataReader["CondictionType"],
+                        Condiction_Para1 = (int)resultDataReader["Condiction_Para1"],
+                        Condiction_Para2 = (int)resultDataReader["Condiction_Para2"]
+                    };
+                    list.Add(item);
+                }
+            }
+            catch (Exception exception)
+            {
+                if (BaseBussiness.log.IsErrorEnabled)
+                {
+                    BaseBussiness.log.Error("Init", exception);
+                }
+            }
+            finally
+            {
+                if (!((resultDataReader == null) || resultDataReader.IsClosed))
+                {
+                    resultDataReader.Close();
+                }
+            }
+            return list.ToArray();
+        }
+
+        public AchievementConditionInfo[] GetALlAchievementCondition()
+        {
+            List<AchievementConditionInfo> list = new List<AchievementConditionInfo>();
+            SqlDataReader resultDataReader = null;
+            try
+            {
+                base.db.GetReader(ref resultDataReader, "SP_Achievement_Condition_All");
+                while (true)
+                {
+                    if (!resultDataReader.Read())
+                    {
+                        break;
+                    }
+                    list.Add(this.InitAchievementCondition(resultDataReader));
+                }
+            }
+            catch (Exception exception)
+            {
+                if (BaseBussiness.log.IsErrorEnabled)
+                {
+                    BaseBussiness.log.Error("GetALlAchievementCondition:", exception);
+                }
+            }
+            finally
+            {
+                if (!((resultDataReader == null) || resultDataReader.IsClosed))
+                {
+                    resultDataReader.Close();
+                }
+            }
+            return list.ToArray();
+        }
+
+        public AchievementDataInfo[] GetAllAchievementData(int userID)
+        {
+            List<AchievementDataInfo> list = new List<AchievementDataInfo>();
+            SqlDataReader resultDataReader = null;
+            try
+            {
+                SqlParameter[] sqlParameters = new SqlParameter[] { new SqlParameter("@UserID", userID) };
+                base.db.GetReader(ref resultDataReader, "SP_Achievement_Data_All", sqlParameters);
+                while (true)
+                {
+                    if (!resultDataReader.Read())
+                    {
+                        break;
+                    }
+                    list.Add(this.InitAchievementData(resultDataReader));
+                }
+            }
+            catch (Exception exception)
+            {
+                if (BaseBussiness.log.IsErrorEnabled)
+                {
+                    BaseBussiness.log.Error("GetAllAchievementData", exception);
+                }
+            }
+            finally
+            {
+                if (!((resultDataReader == null) || resultDataReader.IsClosed))
+                {
+                    resultDataReader.Close();
+                }
+            }
+            return list.ToArray();
+        }
+
+        public AchievementGoodsInfo[] GetAllAchievementGoods()
+        {
+            List<AchievementGoodsInfo> list = new List<AchievementGoodsInfo>();
+            SqlDataReader resultDataReader = null;
+            try
+            {
+                base.db.GetReader(ref resultDataReader, "SP_Get_AchievementGoods");
+                while (true)
+                {
+                    if (!resultDataReader.Read())
+                    {
+                        break;
+                    }
+                    AchievementGoodsInfo item = new AchievementGoodsInfo
+                    {
+                        AchievementID = (int)resultDataReader["AchievementID"],
+                        RewardType = (int)resultDataReader["RewardType"],
+                        RewardPara = (string)resultDataReader["RewardPara"],
+                        RewardValueId = (int)resultDataReader["RewardValueId"],
+                        RewardCount = (int)resultDataReader["RewardCount"]
+                    };
+                    list.Add(item);
+                }
+            }
+            catch (Exception exception)
+            {
+                if (BaseBussiness.log.IsErrorEnabled)
+                {
+                    BaseBussiness.log.Error("Init", exception);
+                }
+            }
+            finally
+            {
+                if (!((resultDataReader == null) || resultDataReader.IsClosed))
+                {
+                    resultDataReader.Close();
+                }
+            }
+            return list.ToArray();
+        }
+
+        public AchievementRewardInfo[] GetALlAchievementReward()
+        {
+            List<AchievementRewardInfo> list = new List<AchievementRewardInfo>();
+            SqlDataReader resultDataReader = null;
+            try
+            {
+                base.db.GetReader(ref resultDataReader, "SP_Achievement_Reward_All");
+                while (true)
+                {
+                    if (!resultDataReader.Read())
+                    {
+                        break;
+                    }
+                    list.Add(this.InitAchievementReward(resultDataReader));
+                }
+            }
+            catch (Exception exception)
+            {
+                if (BaseBussiness.log.IsErrorEnabled)
+                {
+                    BaseBussiness.log.Error("GetALlAchievementReward", exception);
+                }
+            }
+            finally
+            {
+                if (!((resultDataReader == null) || resultDataReader.IsClosed))
+                {
+                    resultDataReader.Close();
+                }
+            }
+            return list.ToArray();
+        }
+
+        public ItemRecordTypeInfo[] GetAllItemRecordType()
+        {
+            List<ItemRecordTypeInfo> list = new List<ItemRecordTypeInfo>();
+            SqlDataReader resultDataReader = null;
+            try
+            {
+                base.db.GetReader(ref resultDataReader, "SP_Item_Record_Type_All");
+                while (true)
+                {
+                    if (!resultDataReader.Read())   
+                    {
+                        break;
+                    }
+                    list.Add(this.InitItemRecordType(resultDataReader));
+                }
+            }
+            catch (Exception exception)
+            {
+                if (BaseBussiness.log.IsErrorEnabled)
+                {
+                    BaseBussiness.log.Error("GetAllItemRecordType:", exception);
+                }
+            }
+            finally
+            {
+                if (!((resultDataReader == null) || resultDataReader.IsClosed))
+                {
+                    resultDataReader.Close();
+                }
+            }
+            return list.ToArray();
+        }
+
+        public ItemRecordTypeInfo InitItemRecordType(SqlDataReader reader) =>
+        new ItemRecordTypeInfo
+        {
+            RecordID = (int)reader["RecordID"],
+            Name = (reader["Name"] == null) ? "" : reader["Name"].ToString(),
+            Description = (reader["Description"] == null) ? "" : reader["Description"].ToString()
+        };
+
+
 
         #region Award
 
